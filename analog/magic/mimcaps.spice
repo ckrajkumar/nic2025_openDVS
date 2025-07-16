@@ -1,0 +1,6 @@
+* SPICE3 file created from mimcaps.ext - technology: sky130A
+
+X0 bigtop bottom sky130_fd_pr__cap_mim_m3_1 l=4 w=8
+X1 liltop bottom sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+C0 bottom bigtop 3.220517f
+C1 bottom VSUBS 2.409449f

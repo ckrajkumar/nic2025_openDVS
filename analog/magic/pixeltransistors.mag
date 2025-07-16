@@ -1,0 +1,21 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1752686468
+use nmos_triplet  nmos_triplet_0
+timestamp 1752622656
+transform 1 0 161 0 1 76
+box -161 -76 161 76
+use select_nmos  select_nmos_0
+timestamp 1752626262
+transform 0 1 621 -1 0 247
+box -73 -253 73 253
+use sky130_fd_pr__nfet_01v8_JB3UY8  sky130_fd_pr__nfet_01v8_JB3UY8_0
+timestamp 1752626882
+transform 0 1 582 -1 0 5
+box -73 -226 73 226
+use sky130_fd_pr__nfet_01v8_QQ7V57  sky130_fd_pr__nfet_01v8_QQ7V57_0
+timestamp 1752626262
+transform -1 0 247 0 1 -178
+box -73 -126 73 126
+<< end >>

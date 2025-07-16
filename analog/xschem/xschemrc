@@ -1,2 +1,2 @@
-source /home/rpgraca/eda_tools/share/pdk/sky130B/libs.tech/xschem/xschemrc
+source /usr/local/share/pdk/sky130B/libs.tech/xschem/xschemrc
 append XSCHEM_LIBRARY_PATH :[pwd]/

@@ -1,9 +1,31 @@
 magic
 tech sky130A
-magscale 1 2
-timestamp 1752329519
-use sky130_fd_pr__photodiode_X26FU3  sky130_fd_pr__photodiode_X26FU3_0
-timestamp 1752329519
-transform 1 0 2440 0 1 2694
-box -2947 -2947 2947 2947
+timestamp 1752702992
+<< error_s >>
+rect 847 1064 947 1093
+rect 974 1064 1074 1093
+rect 847 1020 947 1049
+rect 974 1020 1074 1049
+rect 650 946 679 996
+rect 694 946 723 996
+rect 738 946 767 996
+rect 788 952 805 990
+rect 841 943 1041 972
+rect 841 899 1041 928
+rect 737 794 766 894
+rect 781 794 810 894
+<< isosubstrate >>
+rect 0 0 1200 1200
+use mimcaps  mimcaps_0
+timestamp 1752702992
+transform 1 0 187 0 1 448
+box 0 0 986 724
+use pixeltransistors  pixeltransistors_0
+timestamp 1752702992
+transform 1 0 650 0 1 933
+box 0 -152 437 160
+use wires  wires_0
+timestamp 1752702992
+transform 1 0 0 0 1 0
+box 0 0 1200 1200
 << end >>
