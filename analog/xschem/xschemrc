@@ -1,2 +1,7 @@
-source /home/rpgraca/eda_tools/share/pdk/sky130B/libs.tech/xschem/xschemrc
+# Debug environment variables
+if {[info exists env(PDK_ROOT)]} { puts "PDK_ROOT = $env(PDK_ROOT)" }
+if {[info exists env(PDK)]} { puts "PDK = $env(PDK)" }
+
+# Check if PDK xschemrc exists before sourcing
+source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
 append XSCHEM_LIBRARY_PATH :[pwd]/
