@@ -66,6 +66,12 @@ N 880 30 880 60 {lab=bias_comp}
 N 880 60 880 90 {lab=bias_comp}
 N 980 -30 1100 -30 {lab=vcomp}
 N 730 -50 830 -50 {lab=vcm}
+N 610 270 730 270 {lab=feedback}
+N 760 230 760 275 {lab=gnd}
+N 760 310 760 330 {lab=n_pix_rst}
+N 760 330 760 340 {lab=n_pix_rst}
+N 790 270 910 270 {lab=vcm}
+N 910 270 920 270 {lab=vcm}
 C {sky130_fd_pr/pfet_01v8.sym} 400 -420 0 0 {name=Mpb
 W=3
 L=0.5
@@ -166,3 +172,20 @@ C {opin.sym} 1100 -30 0 0 {name=p26 lab=vcomp}
 C {ipin.sym} 730 -50 0 0 {name=p27 lab=vcm}
 C {lab_wire.sym} 550 -10 0 0 {name=p14 sig_type=std_logic lab=vout_sense}
 C {lab_wire.sym} 420 -360 0 0 {name=p8 sig_type=std_logic lab=pbchk}
+C {sky130_fd_pr/nfet_01v8.sym} 760 290 3 0 {name=Mrst
+W=1
+L=0.15
+nf=1 
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 760 230 3 0 {name=p40 sig_type=std_logic lab=gnd}
+C {ipin.sym} 760 340 3 0 {name=p28 lab=n_pix_rst}
+C {ipin.sym} 920 270 2 0 {name=p30 lab=fb_idle_lvl}

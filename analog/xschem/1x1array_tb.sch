@@ -20,24 +20,24 @@ N 1880 -220 1890 -220 {lab=sf_bias}
 N 1840 -280 1890 -280 {lab=sf_bias}
 N 1890 -220 1940 -220 {lab=sf_bias}
 N 1840 -380 1840 -350 {lab=vdd}
-N 940 -125 940 -95 {lab=gnd}
-N 1260 -220 1260 -170 {lab=gnd}
-N 1260 -310 1260 -280 {lab=vph_bias}
+N 710 -125 710 -95 {lab=gnd}
+N 1030 -220 1030 -170 {lab=gnd}
+N 1030 -310 1030 -280 {lab=vph_bias}
 N 450 -340 450 -310 {lab=gnd}
 N 450 -450 450 -400 {lab=vpd}
 N 450 -450 480 -450 {lab=vpd}
 N 430 -510 480 -510 {lab=sf_bias}
 N 430 -490 480 -490 {lab=vref}
 N 430 -530 480 -530 {lab=vph_bias}
-N 690 -130 690 -120 {lab=GND!}
-N 690 -130 770 -130 {lab=GND!}
-N 770 -140 770 -130 {lab=GND!}
-N 770 -220 770 -200 {lab=vdd}
-N 690 -220 690 -200 {lab=gnd}
+N 460 -130 460 -120 {lab=GND!}
+N 460 -130 540 -130 {lab=GND!}
+N 540 -140 540 -130 {lab=GND!}
+N 540 -220 540 -200 {lab=vdd}
+N 460 -220 460 -200 {lab=gnd}
 N 540 -400 540 -380 {lab=gnd}
 N 570 -400 570 -380 {lab=vdd}
-N 720 -850 720 -830 {lab=gnd}
-N 700 -850 700 -830 {lab=vdd}
+N 740 -850 740 -830 {lab=gnd}
+N 720 -850 720 -830 {lab=vdd}
 N 780 -770 830 -770 {lab=vcomp}
 N 650 -850 650 -830 {lab=pbias}
 N 630 -850 630 -830 {lab=nbias}
@@ -66,13 +66,8 @@ N 1860 -740 1860 -710 {lab=vdd}
 N 1780 -680 1820 -680 {lab=bias_amp_cascn}
 N 1780 -680 1780 -630 {lab=bias_amp_cascn}
 N 1780 -630 1860 -630 {lab=bias_amp_cascn}
-N 1450 -1070 1580 -1070 {lab=vcm}
-N 1420 -1030 1420 -1010 {lab=#net1}
-N 1270 -1070 1390 -1070 {lab=feedback}
-N 1580 -1070 1580 -1010 {lab=vcm}
-N 1420 -950 1420 -900 {lab=gnd}
-N 1580 -950 1580 -900 {lab=gnd}
-N 1580 -1070 1660 -1070 {lab=vcm}
+N 940 -590 940 -530 {lab=vcm}
+N 940 -470 940 -420 {lab=gnd}
 N 670 -850 670 -830 {lab=vcm}
 N 2150 -620 2150 -590 {lab=bias_comp}
 N 2150 -530 2150 -480 {lab=gnd}
@@ -85,19 +80,23 @@ N 2150 -740 2150 -710 {lab=vdd}
 N 1860 -680 1895 -680 {lab=vdd}
 N 1800 -220 1840 -220 {lab=gnd}
 N 1550 -140 1550 -110 {lab=gnd}
-N 940 -195 940 -185 {lab=#net2}
-N 940 -325 940 -255 {lab=vref}
-N 1420 -1110 1420 -1065 {lab=gnd}
+N 710 -195 710 -185 {lab=#net1}
+N 710 -325 710 -255 {lab=vref}
 N 1590 -320 1630 -320 {lab=pbias}
 N 1550 -290 1550 -260 {lab=pbias}
 N 1840 -290 1840 -280 {lab=sf_bias}
-N 690 -140 690 -130 {lab=GND!}
+N 460 -140 460 -130 {lab=GND!}
 N 1860 -650 1860 -630 {lab=bias_amp_cascn}
 N 270 -550 480 -550 {lab=row_sel}
 N 270 -550 270 -540 {lab=row_sel}
 N 270 -480 270 -450 {lab=gnd}
-N 1080 -285 1080 -255 {lab=gnd}
-N 1080 -400 1080 -340 {lab=pix_rst}
+N 1170 -205 1170 -175 {lab=gnd}
+N 1170 -320 1170 -260 {lab=pix_rst}
+N 690 -850 690 -830 {lab=vcm}
+N 1400 -280 1400 -260 {lab=n_pix_rst}
+N 1400 -200 1400 -150 {lab=gnd}
+N 1400 -340 1400 -280 {lab=n_pix_rst}
+N 630 -670 630 -610 {lab=n_pix_rst}
 C {devices/code.sym} 970 -830 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -181,27 +180,27 @@ C {isource.sym} 1840 -320 0 0 {name=Iipd1 value=xisf_bias}
 C {lab_wire.sym} 1840 -140 0 0 {name=p3 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1940 -220 0 0 {name=p5 sig_type=std_logic lab=sf_bias}
 C {lab_wire.sym} 1840 -380 0 0 {name=p6 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 940 -95 0 0 {name=Vvref1 sig_type=std_logic lab=gnd
+C {lab_wire.sym} 710 -95 0 0 {name=Vvref1 sig_type=std_logic lab=gnd
 value=vref}
-C {vsource.sym} 1260 -250 0 0 {name=Vvph_bias value=xvph_bias savecurrent=false}
-C {lab_wire.sym} 1260 -170 0 0 {name=Vvref4 sig_type=std_logic lab=gnd
+C {vsource.sym} 1030 -250 0 0 {name=Vvph_bias value=xvph_bias savecurrent=false}
+C {lab_wire.sym} 1030 -170 0 0 {name=Vvref4 sig_type=std_logic lab=gnd
 value=vref}
-C {lab_wire.sym} 1260 -310 0 0 {name=Vvref5 sig_type=std_logic lab=vph_bias
+C {lab_wire.sym} 1030 -310 0 0 {name=Vvref5 sig_type=std_logic lab=vph_bias
 value=vph_bias}
 C {lab_wire.sym} 450 -310 0 0 {name=p2 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 430 -510 0 0 {name=p7 sig_type=std_logic lab=sf_bias}
 C {lab_wire.sym} 430 -490 0 0 {name=p10 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 430 -530 0 0 {name=p15 sig_type=std_logic lab=vph_bias}
 C {lab_wire.sym} 450 -430 0 0 {name=p8 sig_type=std_logic lab=vpd}
-C {vsource.sym} 690 -170 0 0 {name=Vgnd value=0 savecurrent=false}
-C {gnd.sym} 690 -120 0 0 {name=l1 lab=GND!}
-C {vsource.sym} 770 -170 0 0 {name=Vvdd value=xvdd savecurrent=false}
-C {lab_wire.sym} 690 -220 0 0 {name=p1 sig_type=std_logic lab=gnd}
-C {lab_wire.sym} 770 -220 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {vsource.sym} 460 -170 0 0 {name=Vgnd value=0 savecurrent=false}
+C {gnd.sym} 460 -120 0 0 {name=l1 lab=GND!}
+C {vsource.sym} 540 -170 0 0 {name=Vvdd value=xvdd savecurrent=false}
+C {lab_wire.sym} 460 -220 0 0 {name=p1 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 540 -220 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 540 -380 3 0 {name=p9 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 570 -380 3 0 {name=p11 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 720 -850 3 1 {name=p12 sig_type=std_logic lab=gnd}
-C {lab_wire.sym} 700 -850 3 1 {name=p14 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 740 -850 3 1 {name=p12 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 720 -850 3 1 {name=p14 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 570 -650 3 0 {name=p16 sig_type=std_logic lab=sense}
 C {lab_wire.sym} 610 -650 3 0 {name=p17 sig_type=std_logic lab=pix_rst}
 C {lab_wire.sym} 590 -650 3 0 {name=p18 sig_type=std_logic lab=feedback}
@@ -267,29 +266,11 @@ C {lab_wire.sym} 1860 -480 0 0 {name=vcascp7 sig_type=std_logic lab=gnd
 value=xcascp}
 C {lab_wire.sym} 1860 -740 0 0 {name=p29 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1810 -630 2 1 {name=vcascp8 sig_type=std_logic lab=bias_amp_cascn}
-C {sky130_fd_pr/nfet_01v8.sym} 1420 -1050 3 0 {name=M10
-W=1
-L=0.15
-nf=1 
-mult=1
-ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
-pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
-as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
-ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
-nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {vsource.sym} 1420 -980 0 0 {name=vrstb value="pulse(0 1.8 1.7u 100n 100n 2.3u 3u)" savecurrent=false}
-C {vsource.sym} 1580 -980 0 0 {name=vrst_dc value=xvcm savecurrent=false}
-C {lab_wire.sym} 1270 -1070 0 0 {name=p30 sig_type=std_logic lab=feedback}
-C {lab_wire.sym} 1420 -900 0 0 {name=vcascp9 sig_type=std_logic lab=gnd
-value=xcascp}
-C {lab_wire.sym} 1580 -900 0 0 {name=vcascp10 sig_type=std_logic lab=gnd
+C {vsource.sym} 940 -500 0 0 {name=vrst_dc value=xvcm savecurrent=false}
+C {lab_wire.sym} 940 -420 0 0 {name=vcascp10 sig_type=std_logic lab=gnd
 value=xcascp}
 C {lab_wire.sym} 670 -850 3 1 {name=p31 sig_type=std_logic lab=vcm}
-C {lab_wire.sym} 1660 -1070 0 1 {name=p32 sig_type=std_logic lab=vcm}
+C {lab_wire.sym} 940 -590 0 1 {name=p32 sig_type=std_logic lab=vcm}
 C {lab_wire.sym} 2190 -560 0 0 {name=p33 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 2150 -480 0 0 {name=vcascp11 sig_type=std_logic lab=gnd
 value=xcascp}
@@ -315,16 +296,21 @@ C {lab_wire.sym} 1520 -320 0 0 {name=p35 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1895 -680 0 0 {name=p36 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1800 -220 0 0 {name=p37 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1550 -110 0 0 {name=p38 sig_type=std_logic lab=gnd}
-C {vsource.sym} 940 -225 0 0 {name=vref_on value="pulse(0.5 0.6 2u 100n 100n 0.7u 3u)" savecurrent=false}
-C {vsource.sym} 940 -155 0 0 {name=vref_off value="pulse(0.5 0.4 3u 100n 100n 0.7u 3u)" savecurrent=false}
-C {lab_wire.sym} 940 -325 3 0 {name=p39 sig_type=std_logic lab=vref}
+C {vsource.sym} 710 -225 0 0 {name=vref_on value="pulse(0.5 0.6 2u 100n 100n 0.7u 3u)" savecurrent=false}
+C {vsource.sym} 710 -155 0 0 {name=vref_off value="pulse(0.5 0.4 3u 100n 100n 0.7u 3u)" savecurrent=false}
+C {lab_wire.sym} 710 -325 3 0 {name=p39 sig_type=std_logic lab=vref}
 C {noconn.sym} 830 -770 2 0 {name=l2}
-C {lab_wire.sym} 1420 -1110 3 0 {name=p40 sig_type=std_logic lab=gnd}
 C {isource.sym} 450 -370 0 0 {name=Iphoto value="pulse(1e-9 1e-8 10u 1n 1n 12u 24u)"}
 C {vsource.sym} 270 -510 0 0 {name=vrowsel value="pulse(1.8 0 1.8u 100n 100n 3u 6u)" savecurrent=false}
 C {lab_wire.sym} 270 -450 0 0 {name=p13 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 430 -550 0 0 {name=p41 sig_type=std_logic lab=row_sel}
-C {vsource.sym} 1080 -310 0 0 {name=vrst value="pulse(1.8 0 1.7u 100n 100n 2.3u 3u)" savecurrent=false}
-C {lab_wire.sym} 1080 -255 0 0 {name=Vvref2 sig_type=std_logic lab=gnd
+C {vsource.sym} 1170 -230 0 0 {name=vrst value="pulse(1.8 0 1.7u 100n 100n 2.3u 3u)" savecurrent=false}
+C {lab_wire.sym} 1170 -175 0 0 {name=Vvref2 sig_type=std_logic lab=gnd
 value=vref}
-C {lab_wire.sym} 1080 -380 3 0 {name=p42 sig_type=std_logic lab=pix_rst}
+C {lab_wire.sym} 1170 -300 3 0 {name=p42 sig_type=std_logic lab=pix_rst}
+C {lab_wire.sym} 690 -850 3 1 {name=p43 sig_type=std_logic lab=vcm}
+C {vsource.sym} 1400 -230 0 0 {name=vrstb1 value="pulse(0 1.8 1.7u 100n 100n 2.3u 3u)" savecurrent=false}
+C {lab_wire.sym} 1400 -150 0 0 {name=vrstb2 sig_type=std_logic lab=gnd
+value=xcascp}
+C {lab_wire.sym} 1400 -340 3 0 {name=p44 sig_type=std_logic lab=n_pix_rst}
+C {lab_wire.sym} 630 -660 3 0 {name=p45 sig_type=std_logic lab=n_pix_rst}
