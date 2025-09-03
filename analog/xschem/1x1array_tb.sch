@@ -23,9 +23,9 @@ N 1840 -380 1840 -350 {lab=vdd}
 N 710 -125 710 -95 {lab=gnd}
 N 1030 -220 1030 -170 {lab=gnd}
 N 1030 -310 1030 -280 {lab=vph_bias}
-N 450 -340 450 -310 {lab=gnd}
-N 450 -450 450 -400 {lab=vpd}
-N 450 -450 480 -450 {lab=vpd}
+N 340 -340 340 -310 {lab=gnd}
+N 340 -450 340 -400 {lab=vpd}
+N 340 -450 370 -450 {lab=vpd}
 N 430 -510 480 -510 {lab=sf_bias}
 N 430 -490 480 -490 {lab=vref}
 N 430 -530 480 -530 {lab=vph_bias}
@@ -93,10 +93,10 @@ N 270 -480 270 -450 {lab=gnd}
 N 1170 -205 1170 -175 {lab=gnd}
 N 1170 -320 1170 -260 {lab=pix_rst}
 N 690 -850 690 -830 {lab=vcm}
-N 1400 -280 1400 -260 {lab=n_pix_rst}
 N 1400 -200 1400 -150 {lab=gnd}
-N 1400 -340 1400 -280 {lab=n_pix_rst}
+N 1400 -340 1400 -260 {lab=n_pix_rst}
 N 630 -670 630 -610 {lab=n_pix_rst}
+N 420 -450 480 -450 {lab=#net2}
 C {devices/code.sym} 970 -830 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -111,7 +111,6 @@ value="* sim
 *.option reltol=1e-3 abstol=1e-12 vntol=1e-5 gmin=1e-10 
 *.option trtol=6 chgtol=1e-12
 
-.control
 .param xipd = 1e-9
 .param xvph_bias = 1.5
 .param xisf_bias = 9.2n
@@ -124,11 +123,15 @@ value="* sim
 .param xibias_cascp = 50n
 .param xibias_cascn = 50n
 .param xibias_comp = 50n
-tran .1n 29u
+
+
+.control
 * plot v(vref) v(sense) v(feedback) v(pix_rst)
 save v(vref) v(sense) v(feedback) v(pix_rst)
 save v(vcomp) v(xcol_amp.vout_sense)
-*save i(xpix:vpd)
+save all
+tran .1n 29u
+
 
 * save v(vphoto) v(vph_sf) v(vin) v(sense) v(feedback) v(vcomp)
 * save v(pix_rst) v(vout) v(pbchk) v(vref) v(row_sel) v(lrst)
@@ -187,11 +190,11 @@ C {lab_wire.sym} 1030 -170 0 0 {name=Vvref4 sig_type=std_logic lab=gnd
 value=vref}
 C {lab_wire.sym} 1030 -310 0 0 {name=Vvref5 sig_type=std_logic lab=vph_bias
 value=vph_bias}
-C {lab_wire.sym} 450 -310 0 0 {name=p2 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 340 -310 0 0 {name=p2 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 430 -510 0 0 {name=p7 sig_type=std_logic lab=sf_bias}
 C {lab_wire.sym} 430 -490 0 0 {name=p10 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 430 -530 0 0 {name=p15 sig_type=std_logic lab=vph_bias}
-C {lab_wire.sym} 450 -430 0 0 {name=p8 sig_type=std_logic lab=vpd}
+C {lab_wire.sym} 340 -430 0 0 {name=p8 sig_type=std_logic lab=vpd}
 C {vsource.sym} 460 -170 0 0 {name=Vgnd value=0 savecurrent=false}
 C {gnd.sym} 460 -120 0 0 {name=l1 lab=GND!}
 C {vsource.sym} 540 -170 0 0 {name=Vvdd value=xvdd savecurrent=false}
@@ -300,7 +303,7 @@ C {vsource.sym} 710 -225 0 0 {name=vref_on value="pulse(0.5 0.6 2u 100n 100n 0.7
 C {vsource.sym} 710 -155 0 0 {name=vref_off value="pulse(0.5 0.4 3u 100n 100n 0.7u 3u)" savecurrent=false}
 C {lab_wire.sym} 710 -325 3 0 {name=p39 sig_type=std_logic lab=vref}
 C {noconn.sym} 830 -770 2 0 {name=l2}
-C {isource.sym} 450 -370 0 0 {name=Iphoto value="pulse(1e-9 1e-8 10u 1n 1n 12u 24u)"}
+C {isource.sym} 340 -370 0 0 {name=Iphoto value="pulse(1e-9 1e-8 10u 1n 1n 12u 24u)"}
 C {vsource.sym} 270 -510 0 0 {name=vrowsel value="pulse(1.8 0 1.8u 100n 100n 3u 6u)" savecurrent=false}
 C {lab_wire.sym} 270 -450 0 0 {name=p13 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 430 -550 0 0 {name=p41 sig_type=std_logic lab=row_sel}
@@ -314,3 +317,4 @@ C {lab_wire.sym} 1400 -150 0 0 {name=vrstb2 sig_type=std_logic lab=gnd
 value=xcascp}
 C {lab_wire.sym} 1400 -340 3 0 {name=p44 sig_type=std_logic lab=n_pix_rst}
 C {lab_wire.sym} 630 -660 3 0 {name=p45 sig_type=std_logic lab=n_pix_rst}
+C {vsource.sym} 395 -450 1 0 {name=vmeas_ipd value=0 savecurrent=false}
