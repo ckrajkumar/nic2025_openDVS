@@ -36,17 +36,3 @@ T {BiasPowerDown} -125 -4 0 0 0.2 0.2 {}
 T {VddA18} 5 -24 1 1 0.2 0.2 {}
 T {GndA} 5 66 1 1 0.2 0.2 {}
 T {IR} -65 66 1 1 0.2 0.2 {}
-C {sky130_fd_pr/pfet_01v8.sym} -120 -270 0 0 {name=M20
-W=1
-L=0.5
-nf=1
-mult=1
-ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
-pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
-as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
-ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
-nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
