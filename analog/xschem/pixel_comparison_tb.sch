@@ -95,7 +95,7 @@ N 670 -1620 670 -1600 {lab=vcm}
 N 1400 -200 1400 -150 {lab=gnd}
 N 1400 -340 1400 -260 {lab=n_pix_rst}
 N 610 -1440 610 -1380 {lab=n_pix_rst}
-N 400 -1220 460 -1220 {lab=#net2}
+N 430 -1220 460 -1220 {lab=#net2}
 N 1250 -1430 1250 -1370 {lab=sense_tia}
 N 1270 -1430 1270 -1370 {lab=feedback_tia}
 N 1290 -1430 1290 -1370 {lab=pix_rst}
@@ -122,7 +122,7 @@ N 950 -1310 1160 -1310 {lab=row_sel}
 N 950 -1310 950 -1300 {lab=row_sel}
 N 1370 -1610 1370 -1590 {lab=vcm}
 N 1310 -1430 1310 -1370 {lab=n_pix_rst}
-N 1100 -1210 1160 -1210 {lab=#net3}
+N 1130 -1210 1160 -1210 {lab=#net3}
 N 2190 -270 2190 -240 {lab=pr_bias_prebuf}
 N 2240 -300 2240 -240 {lab=pr_bias_prebuf}
 N 2190 -380 2190 -330 {lab=vdd}
@@ -136,33 +136,32 @@ N 430 -1060 430 -1040 {lab=gnd}
 N 1130 -1210 1130 -1110 {lab=#net3}
 N 1130 -1050 1130 -1030 {lab=gnd}
 N 1890 -220 1920 -220 {lab=sf_bias_prebuf}
-N 1960 -170 1960 -120 {lab=gnd}
+N 1960 -140 1960 -120 {lab=gnd}
 N 1920 -140 1960 -140 {lab=gnd}
 N 1920 -180 1920 -140 {lab=gnd}
 N 2330 -310 2380 -310 {lab=pr_bias}
-N 2260 -300 2290 -300 {lab=pr_bias_prebuf}
-N 2330 -250 2330 -200 {lab=gnd}
+N 2330 -220 2330 -200 {lab=gnd}
 N 2290 -220 2330 -220 {lab=gnd}
 N 2290 -260 2290 -220 {lab=gnd}
-N 2240 -300 2260 -300 {lab=pr_bias_prebuf}
+N 2240 -300 2290 -300 {lab=pr_bias_prebuf}
 N 2310 -570 2360 -570 {lab=bias_comp}
 N 2240 -560 2270 -560 {lab=bias_comp_prebuf}
-N 2310 -510 2310 -460 {lab=gnd}
+N 2310 -480 2310 -460 {lab=gnd}
 N 2270 -480 2310 -480 {lab=gnd}
 N 2270 -520 2270 -480 {lab=gnd}
 N 2010 -640 2060 -640 {lab=bias_amp_cascn}
 N 1940 -630 1970 -630 {lab=bias_amp_cascn_prebuf}
-N 2010 -580 2010 -530 {lab=gnd}
+N 2010 -550 2010 -530 {lab=gnd}
 N 1970 -550 2010 -550 {lab=gnd}
 N 1970 -590 1970 -550 {lab=gnd}
 N 1720 -570 1770 -570 {lab=bias_amp_cascp}
 N 1650 -560 1680 -560 {lab=bias_amp_cascp_prebuf}
-N 1720 -510 1720 -460 {lab=gnd}
+N 1720 -480 1720 -460 {lab=gnd}
 N 1680 -480 1720 -480 {lab=gnd}
 N 1680 -520 1680 -480 {lab=gnd}
 N 1700 -330 1750 -330 {lab=pbias}
 N 1630 -320 1660 -320 {lab=pbias_prebuf}
-N 1700 -270 1700 -220 {lab=gnd}
+N 1700 -240 1700 -220 {lab=gnd}
 N 1660 -240 1700 -240 {lab=gnd}
 N 1660 -280 1660 -240 {lab=gnd}
 N 520 -2250 520 -2190 {lab=sense_notia_gatedbias}
@@ -191,11 +190,11 @@ N 220 -2130 430 -2130 {lab=row_sel}
 N 220 -2130 220 -2120 {lab=row_sel}
 N 640 -2430 640 -2410 {lab=vcm}
 N 580 -2250 580 -2190 {lab=n_pix_rst}
-N 370 -2030 430 -2030 {lab=#net4}
+N 400 -2030 430 -2030 {lab=#net4}
 N 400 -2030 400 -1930 {lab=#net4}
 N 400 -1870 400 -1850 {lab=gnd}
 N -130 -840 -130 -790 {lab=sf_bias}
-N -130 -950 -130 -900 {lab=sf_bias_gated}
+N -130 -930 -130 -900 {lab=sf_bias_gated}
 N -230 -870 -170 -870 {lab=row_sel}
 N -130 -930 40 -930 {lab=sf_bias_gated}
 N 40 -930 40 -900 {lab=sf_bias_gated}
@@ -204,7 +203,7 @@ N -60 -870 0 -870 {lab=vdd}
 N 40 -840 40 -790 {lab=gnd}
 N -230 -850 -170 -850 {lab=gnd}
 N -140 -610 -140 -560 {lab=pr_bias}
-N -140 -720 -140 -670 {lab=pr_bias_gated}
+N -140 -700 -140 -670 {lab=pr_bias_gated}
 N -240 -640 -180 -640 {lab=row_sel}
 N -140 -700 30 -700 {lab=pr_bias_gated}
 N 30 -700 30 -670 {lab=pr_bias_gated}
@@ -217,7 +216,7 @@ N 1260 -2250 1260 -2190 {lab=feedback_tia_gatedbias}
 N 1280 -2250 1280 -2190 {lab=pix_rst}
 N 890 -1920 890 -1890 {lab=gnd}
 N 890 -2030 890 -1980 {lab=vpd_tia_gatedbias}
-N 890 -2030 920 -2030 {lab=vpd_tia_gatedbias}
+N 890 -2030 1000 -2030 {lab=vpd_tia_gatedbias}
 N 1100 -2090 1150 -2090 {lab=sf_bias_gated}
 N 1100 -2070 1150 -2070 {lab=vref}
 N 1100 -2050 1150 -2050 {lab=pr_bias_gated}
@@ -238,15 +237,25 @@ N 940 -2130 1150 -2130 {lab=row_sel}
 N 940 -2130 940 -2120 {lab=row_sel}
 N 1360 -2430 1360 -2410 {lab=vcm}
 N 1300 -2250 1300 -2190 {lab=n_pix_rst}
-N 970 -2030 1030 -2030 {lab=vpd_tia_gatedbias}
-N 1000 -2030 1000 -1930 {lab=vpd_tia_gatedbias}
+N 1000 -2030 1050 -2030 {lab=vpd_tia_gatedbias}
+N 1000 -1980 1000 -1930 {lab=vpd_tia_gatedbias}
 N 1000 -1870 1000 -1850 {lab=gnd}
 N 1050 -1890 1050 -1870 {lab=gnd}
 N 1050 -1980 1050 -1950 {lab=vpd_tia_gatedbias}
 N 1000 -1980 1050 -1980 {lab=vpd_tia_gatedbias}
 N 1110 -2030 1150 -2030 {lab=#net5}
-N 1030 -2030 1050 -2030 {lab=vpd_tia_gatedbias}
-N 920 -2030 970 -2030 {lab=vpd_tia_gatedbias}
+N 400 -1220 430 -1220 {lab=#net2}
+N 1100 -1210 1130 -1210 {lab=#net3}
+N 1960 -170 1960 -140 {lab=gnd}
+N 2330 -250 2330 -220 {lab=gnd}
+N 2310 -510 2310 -480 {lab=gnd}
+N 2010 -580 2010 -550 {lab=gnd}
+N 1720 -510 1720 -480 {lab=gnd}
+N 1700 -270 1700 -240 {lab=gnd}
+N 370 -2030 400 -2030 {lab=#net4}
+N -130 -950 -130 -930 {lab=sf_bias_gated}
+N -140 -720 -140 -700 {lab=pr_bias_gated}
+N 1000 -2030 1000 -1980 {lab=vpd_tia_gatedbias}
 C {devices/code.sym} 970 -830 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -265,7 +274,7 @@ value="* sim
 .param xipd = 1e-9
 .param xvph_bias = 1.5
 .param xipr_bias = 10n
-.param xisf_bias = 9.2n
+.param xisf_bias = 20f
 .param xvcascn = 0.2
 .param xvcascp = 1.6
 .param xicol_bias = 5e-7
@@ -292,7 +301,7 @@ tran .1n 29u
 * dc vph 0 1.8 10m
 *save all
 * op
-write 1x1array_tb.raw
+* write 1x1array_tb.raw
 .endc
 "}
 C {devices/launcher.sym} 1040 -910 2 1 {name=h1
@@ -468,7 +477,6 @@ C {lab_wire.sym} 1400 -150 0 0 {name=vrstb2 sig_type=std_logic lab=gnd
 value=xcascp}
 C {lab_wire.sym} 1400 -340 3 0 {name=p44 sig_type=std_logic lab=n_pix_rst}
 C {lab_wire.sym} 610 -1430 3 0 {name=p45 sig_type=std_logic lab=n_pix_rst}
-C {vsource.sym} 375 -1220 1 0 {name=vmeas_ipd_notia value=0 savecurrent=false}
 C {col_amp.sym} 1310 -1470 0 0 {name=xcol_amp_tia}
 C {openDVS_pixel_tia.sym} 1310 -1240 0 0 {name=xpix_tia}
 C {lab_wire.sym} 1020 -1070 0 0 {name=p30 sig_type=std_logic lab=gnd}
@@ -499,7 +507,6 @@ C {isource.sym} 1020 -1130 0 0 {name=Iphoto_tia value="pulse(1e-9 1e-8 10u 1n 1n
 C {lab_wire.sym} 1110 -1310 0 0 {name=p63 sig_type=std_logic lab=row_sel}
 C {lab_wire.sym} 1370 -1610 3 1 {name=p64 sig_type=std_logic lab=vcm}
 C {lab_wire.sym} 1310 -1420 3 0 {name=p65 sig_type=std_logic lab=n_pix_rst}
-C {vsource.sym} 1075 -1210 1 0 {name=vmeas_ipd_tia value=0 savecurrent=false}
 C {sky130_fd_pr/pfet_01v8.sym} 2210 -300 0 1 {name=M2
 W=0.5
 L=0.15
@@ -584,7 +591,6 @@ C {isource.sym} 290 -1950 0 0 {name=Iphoto_notia_gatedbias value="pulse(1e-9 1e-
 C {lab_wire.sym} 380 -2130 0 0 {name=p101 sig_type=std_logic lab=row_sel}
 C {lab_wire.sym} 640 -2430 3 1 {name=p102 sig_type=std_logic lab=vcm}
 C {lab_wire.sym} 580 -2240 3 0 {name=p103 sig_type=std_logic lab=n_pix_rst}
-C {vsource.sym} 345 -2030 1 0 {name=vmeas_ipd_notia_gatedbias value=0 savecurrent=false}
 C {capa.sym} 400 -1900 0 0 {name=C3
 m=1
 value=20f
@@ -635,7 +641,6 @@ C {isource.sym} 890 -1950 0 0 {name=Iphoto_tia_gatedbias value="pulse(1e-9 1e-8 
 C {lab_wire.sym} 1100 -2130 0 0 {name=p136 sig_type=std_logic lab=row_sel}
 C {lab_wire.sym} 1360 -2430 3 1 {name=p137 sig_type=std_logic lab=vcm}
 C {lab_wire.sym} 1300 -2240 3 0 {name=p138 sig_type=std_logic lab=n_pix_rst}
-C {vsource.sym} 1085 -2030 1 0 {name=vmeas_ipd_tia_gatedbias value=0 savecurrent=false}
 C {capa.sym} 1000 -1900 0 0 {name=C4
 m=1
 value=20f
@@ -664,3 +669,7 @@ footprint=1206
 device=resistor
 m=1}
 C {lab_wire.sym} 1050 -1870 3 0 {name=p140 sig_type=std_logic lab=gnd}
+C {vsource.sym} 1080 -2030 1 0 {name=vmeas_ipd_tia_gated value=0 savecurrent=false}
+C {vsource.sym} 1070 -1210 1 0 {name=vmeas_ipd_tia value=0 savecurrent=false}
+C {vsource.sym} 370 -1220 1 0 {name=vmeas_ipd_notia value=0 savecurrent=false}
+C {vsource.sym} 350 -2030 1 0 {name=vmeas_ipd_notia_gated value=0 savecurrent=false}
