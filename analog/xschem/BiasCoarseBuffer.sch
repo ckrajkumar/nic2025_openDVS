@@ -46,7 +46,7 @@ N 580 -40 610 -40 {lab=CoarseOut}
 N -100 -70 280 -70 {lab=#net16}
 C {BiasCoarseSel8to1.sym} 120 -20 0 0 {name=xSel}
 C {BiasDec3to8.sym} -560 -20 0 0 {name=xDec}
-C {sky130_stdcells/inv_1.sym} -280 -110 0 0 {name=xinv0 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -280 -110 0 0 {name=xinv0 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {iopin.sym} -300 -310 0 0 {name=p75 lab=VddA18}
 C {iopin.sym} -300 -290 0 0 {name=p76 lab=GndA}
 C {lab_wire.sym} -410 -200 3 0 {name=p37 sig_type=std_logic lab=VddA18}
@@ -97,10 +97,10 @@ C {lab_wire.sym} 260 -70 0 0 {name=p29 sig_type=std_logic lab=TO2
 spice_ignore=true}
 C {lab_wire.sym} -330 -70 0 0 {name=p30 sig_type=std_logic lab=TI2
 spice_ignore=true}
-C {sky130_stdcells/inv_1.sym} -210 -90 0 0 {name=xinv1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} -140 -70 0 0 {name=xinv2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} -70 -50 0 0 {name=xinv3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 0 -30 0 0 {name=xinv4 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 70 -10 0 0 {name=xinv5 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 140 10 0 0 {name=xinv6 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 210 30 0 0 {name=xinv7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -210 -90 0 0 {name=xinv1 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -140 -70 0 0 {name=xinv2 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} -70 -50 0 0 {name=xinv3 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 0 -30 0 0 {name=xinv4 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 70 -10 0 0 {name=xinv5 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 140 10 0 0 {name=xinv6 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 210 30 0 0 {name=xinv7 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
