@@ -5,6 +5,11 @@ V {}
 S {}
 F {}
 E {}
+T {Buffers from coarse divider to
+Coarse2FineInterface
+Inuts are coarse bias voltages
+and 1-hot selection bit.
+Output is n-type current sunk from CoarseBias.} -1830 -220 0 0 0.4 0.4 {}
 N -950 -210 -920 -210 {lab=IBIT4}
 N -950 -90 -920 -90 {lab=IBIT7}
 N -950 -130 -920 -130 {lab=IBIT6}
@@ -204,7 +209,7 @@ N -940 70 -940 90 {lab=CoarseBias}
 N -1190 70 -940 70 {lab=CoarseBias}
 N -700 70 -700 90 {lab=CoarseBias}
 N -940 70 -700 70 {lab=CoarseBias}
-C {sky130_stdcells/or4_1.sym} -860 -150 0 0 {name=xOR VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/or4_1.sym} -860 -150 0 0 {name=xOR VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {lab_wire.sym} -750 -130 3 0 {name=p27 sig_type=std_logic lab=IBIT4o5o6o7}
 C {lab_wire.sym} -1800 120 2 0 {name=p54 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -1780 40 3 0 {name=p4 sig_type=std_logic lab=VddA18}
