@@ -1,0 +1,38 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 70 -90 70 -70 {}
+L 4 70 70 70 90 {}
+L 4 -150 0 -130 0 {}
+L 7 130 20 150 20 {}
+L 7 130 -20 150 -20 {}
+L 7 0 -90 0 -70 {}
+L 7 0 70 0 90 {}
+L 7 -70 70 -70 90 {}
+B 5 67.5 -92.5 72.5 -87.5 {name=VMasterBiasP dir=out}
+B 5 147.5 17.5 152.5 22.5 {name=ICoarse2 dir=inout}
+B 5 147.5 -22.5 152.5 -17.5 {name=ICoarse1 dir=inout}
+B 5 67.5 87.5 72.5 92.5 {name=VMasterBiasN dir=out}
+B 5 -152.5 -2.5 -147.5 2.5 {name=BiasPowerDown dir=in}
+B 5 -2.5 -92.5 2.5 -87.5 {name=VddA18 dir=inout}
+B 5 -2.5 87.5 2.5 92.5 {name=GndA dir=inout}
+B 5 -72.5 87.5 -67.5 92.5 {name=IR dir=inout}
+P 4 5 130 -70 -130 -70 -130 70 130 70 130 -70 {}
+P 4 1 330 40 {}
+T {@symname} -121 14 0 0 0.3 0.3 {}
+T {@name} -125 -62 0 0 0.2 0.2 {}
+T {VMasterBiasP} 75 -14 1 1 0.15 0.15 {}
+T {ICoarse2} 125 16 0 1 0.2 0.2 {}
+T {ICoarse1} 125 -24 0 1 0.2 0.2 {}
+T {VMasterBiasN} 75 66 1 1 0.15 0.15 {}
+T {BiasPowerDown} -125 -4 0 0 0.2 0.2 {}
+T {VddA18} 5 -24 1 1 0.2 0.2 {}
+T {GndA} 5 66 1 1 0.2 0.2 {}
+T {IR} -65 66 1 1 0.2 0.2 {}
