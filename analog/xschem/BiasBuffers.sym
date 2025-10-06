@@ -1,0 +1,59 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 250 70 250 90 {}
+L 4 310 70 310 90 {}
+L 4 290 70 290 90 {}
+L 4 350 70 350 90 {}
+L 4 330 70 330 90 {}
+L 4 390 70 390 90 {}
+L 4 370 70 370 90 {}
+L 4 410 70 410 90 {}
+L 4 250 -130 250 -110 {}
+L 4 290 -130 290 -110 {}
+L 4 460 -20 480 -20 {}
+L 7 230 -130 230 -110 {}
+L 7 230 70 230 90 {}
+L 7 160 -20 180 -20 {}
+L 7 310 -130 310 -110 {}
+B 5 227.5 -132.5 232.5 -127.5 {name=VddA18 dir=inout}
+B 5 227.5 87.5 232.5 92.5 {name=GndA dir=inout}
+B 5 247.5 87.5 252.5 92.5 {name=BufferNBias dir=in}
+B 5 157.5 -22.5 162.5 -17.5 {name=SplitterOutput dir=inout}
+B 5 287.5 87.5 292.5 92.5 {name=BIT0 dir=in}
+B 5 307.5 87.5 312.5 92.5 {name=BIT1 dir=in}
+B 5 327.5 87.5 332.5 92.5 {name=BIT2 dir=in}
+B 5 347.5 87.5 352.5 92.5 {name=BiasDisabled dir=in}
+B 5 367.5 87.5 372.5 92.5 {name=BiasEnabled dir=in}
+B 5 387.5 87.5 392.5 92.5 {name=NBiasEnabled dir=in}
+B 5 407.5 87.5 412.5 92.5 {name=PBiasEnabled dir=in}
+B 5 247.5 -132.5 252.5 -127.5 {name=BufferPBias dir=in}
+B 5 287.5 -132.5 292.5 -127.5 {name=PowerDown dir=in}
+B 5 307.5 -132.5 312.5 -127.5 {name=Rail dir=inout}
+B 5 477.5 -22.5 482.5 -17.5 {name=VBiasOut dir=out}
+P 4 5 180 -110 460 -110 460 70 180 70 180 -110 {}
+P 4 1 300 40 {}
+T {@symname} 347.125 -82.125 2 1 0.2 0.2 {}
+T {@name} 347.5 -93.625 2 1 0.2 0.2 {}
+T {VddA18} 225 -64 3 0 0.2 0.2 {}
+T {GndA} 225 66 3 0 0.2 0.2 {}
+T {BufferNBias} 255 66 1 1 0.2 0.2 {}
+T {SplitterOutput} 257.25 -26.5625 0 1 0.2 0.2 {}
+T {BIT0} 295 66 1 1 0.2 0.2 {}
+T {BIT1} 315 66 1 1 0.2 0.2 {}
+T {BIT2} 335 66 1 1 0.2 0.2 {}
+T {BiasDisabled} 355 66 1 1 0.2 0.2 {}
+T {BiasEnabled} 375 66 1 1 0.2 0.2 {}
+T {NBiasEnabled} 395 66 1 1 0.2 0.2 {}
+T {PBiasEnabled} 415 66 1 1 0.2 0.2 {}
+T {BufferPBias} 255 -106 1 0 0.2 0.2 {}
+T {PowerDown} 295 -106 1 0 0.2 0.2 {}
+T {Rail} 315 -106 1 0 0.2 0.2 {}
+T {VBiasOut} 456 -25 0 1 0.2 0.2 {}

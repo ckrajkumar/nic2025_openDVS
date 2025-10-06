@@ -52,7 +52,7 @@ N 850 140 850 190 {lab=GndA}
 N 690 50 850 50 {lab=OutMirr}
 N 690 20 690 50 {lab=OutMirr}
 N 850 50 850 80 {lab=OutMirr}
-N 750 370 750 430 {lab=IIn-VBias}
+N 750 370 750 430 {lab=IIn}
 N 700 330 750 330 {lab=VddA18}
 N 440 210 440 270 {lab=#net2}
 N 750 270 1100 270 {lab=#net2}
@@ -80,10 +80,10 @@ N 890 230 890 430 {lab=IOut}
 N 890 230 1350 230 {lab=IOut}
 N 440 270 750 270 {lab=#net2}
 N 690 230 890 230 {lab=IOut}
-N 790 330 800 330 {lab=IIn-VBias}
-N 750 370 800 370 {lab=IIn-VBias}
-N 750 360 750 370 {lab=IIn-VBias}
-N 800 330 800 370 {lab=IIn-VBias}
+N 790 330 800 330 {lab=IIn}
+N 750 370 800 370 {lab=IIn}
+N 750 360 750 370 {lab=IIn}
+N 800 330 800 370 {lab=IIn}
 N 1100 120 1230 120 {lab=nOutDio}
 N 1100 110 1100 120 {lab=nOutDio}
 N 1230 80 1230 120 {lab=nOutDio}
@@ -251,7 +251,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {iopin.sym} 750 430 1 0 {name=p24 lab=IIn-VBias}
+C {iopin.sym} 750 430 1 0 {name=p24 lab=IIn}
 C {lab_wire.sym} 700 330 2 0 {name=p25 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} 1120 0 0 1 {name=MpDionOut1
 W=4
@@ -458,7 +458,7 @@ C {noconn.sym} 1330 -170 3 0 {name=l5}
 C {noconn.sym} 1460 -170 3 0 {name=l6}
 C {noconn.sym} 1560 -170 3 0 {name=l7}
 C {sky130_stdcells/nor2_1.sym} 270 -160 0 0 {name=xnor VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 400 -160 0 0 {name=x1 VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 400 -160 0 0 {name=xinv VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {lab_wire.sym} 340 -160 2 0 {name=p40 sig_type=std_logic lab=Out}
 C {lab_wire.sym} 450 -160 2 0 {name=p41 sig_type=std_logic lab=nOut}
 C {ipin.sym} 190 -180 0 0 {name=p42 lab=S2}
