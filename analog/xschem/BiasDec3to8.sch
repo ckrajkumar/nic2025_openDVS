@@ -136,7 +136,7 @@ C {BiasDecCB0.sym} 10 -1090 0 0 {name=xDec000_bit2}
 C {BiasDecCB1.sym} 310 -940 0 0 {name=xDec001_bit0}
 C {BiasDecCB0.sym} 160 -1090 0 0 {name=xDec000_bit1}
 C {BiasDecCB0.sym} 310 -1090 0 0 {name=xDec000_bit0}
-C {BiasDecCB0.sym} 160 -940 0 0 {name=name=xDec001_bit1}
+C {BiasDecCB0.sym} 160 -940 0 0 {name=xDec001_bit1}
 C {BiasDecCB0.sym} 10 -940 0 0 {name=xDec001_bit2}
 C {BiasDecCB0.sym} 10 -790 0 0 {name=xDec010_bit2}
 C {BiasDecCB1.sym} 310 -640 0 0 {name=xDec011_bit0}

@@ -71,6 +71,7 @@ value="
 .param xpowerdown = 0
 .param xIR = 100k
 .save all
+.probe alli
 .op
 "}
 C {lab_wire.sym} 120 -40 3 1 {name=p12 sig_type=std_logic lab=IR}
