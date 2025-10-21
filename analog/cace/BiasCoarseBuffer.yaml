@@ -1,0 +1,480 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           BiasCoarseBuffer
+description:    Divides master current to 3 coarse config bits
+PDK:            sky130B
+dependencies:   
+    BiasMasternCoarse:
+      path: xschem
+      name: BiasMasternCoarse 
+    BiasCoarseFineInterface:
+      path: xschem
+      name: BiasCoarseFineInterface 
+
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    21 Oct, 2025
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  VddA18:
+    description: Positive analog power supply
+    type: power
+    direction: inout
+    Vmin: 1.7
+    Vmax: 1.9
+  GndA:
+    description: Analog ground
+    type: ground
+    direction: inout
+  BiasCB0:
+    description: Bias current input, bit0
+    type: signal
+    direction: input
+  BiasCB1:
+    description: Bias current input, bit1
+    type: signa1
+    direction: input
+  BiasCB2:
+    description: Bias current input, bit2
+    type: signal
+    direction: input
+  BiasCB3:
+    description: Bias current input, bit3
+    type: signal
+    direction: input
+  BiasCB4:
+    description: Bias current input, bit4
+    type: signal
+    direction: input
+  BiasCB5:
+    description: Bias current input, bit5
+    type: signal
+    direction: input
+  BiasCB6:
+    description: Bias current input, bit6
+    type: signal
+    direction: input
+  BiasCB7:
+    description: Bias current input, bit7
+    type: signal
+    direction: input
+  IBIT0:
+    description: Coarse code, bit0
+    type: signal
+    direction: input
+  IBIT1:
+    description: Coarse code, bit1
+    type: signal
+    direction: input
+  IBIT2:
+    description: Coarse code, bit2
+    type: signal
+    direction: input
+
+default_conditions:
+  vdd:
+    description: Analog power supply voltage
+    display: Vdd
+    unit: V
+    typical: 1.8
+  coarseCode:
+    description: Coarse config code (3 bits, 0 to 7)
+    display: Coarse Code
+    unit: V
+    typical: 7
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    typical: 27
+
+parameters:
+  op_sweep_code:
+    display: Operating point for different coarse codes
+    spec:
+      in_code:
+        display: Coarse Code
+        description: Input coarse code
+        unit: none
+        minimum:
+          value: 0
+        typical:
+          value: any
+        maximum:
+          value: 7
+      right_bit_is_set:
+        display: Right bit is set
+        description: Tests if the right bit was set by the one-hot decoder
+        unit: none
+        minimum:
+          value: 1
+        typical:
+          value: 1
+        maximum:
+          value: 1
+      other_bits_are_zero:
+        display: Other bits are zero
+        description: Tests if bits other than the right one were left at zero by the one-hot decoder
+        unit: none
+        minimum:
+          value: 1
+        typical:
+          value: 1
+        maximum:
+          value: 1
+      vds_mirr_selected:
+        display: Vds mirr selected
+        description: Drain-to-source voltage at the mirror transistor for the selected bit
+        unit: V
+        minimum:
+          value: 0.1
+        typical:
+          value: any
+        maximum:
+          value: 1.8
+      max_vds_mirr_not_selected:
+        display: Max Vds mirr not selected
+        description: Maximum drain-to-source voltage at the mirror transistor for the not selected bits
+        unit: V
+        minimum:
+          value: 0
+        typical:
+          value: any
+        maximum:
+          value: 0.02
+      vcoarse_diff_to_drain_selected:
+        display: VCoarse diff to drain selected
+        description: Difference between coarse buffer output voltage and drain voltage at mirror transistor for the selected bit
+        unit: V
+        minimum:
+          value: 0
+        typical:
+          value: any
+        maximum:
+          value: 0.02
+      vgate_bit4o5o6o7_to_vbias_selected:
+        display: VGate bit4o5o6o7 to vbias selected
+        description: Difference between gate votlage of mirror transistor for bits 4,5,6,7 and the intended gate voltage (valid only for bits 4,5,6,7)
+        unit: V
+        minimum:
+          value: 0
+        typical:
+          value: any
+        maximum:
+          value: 0.02
+      dec_bit0:
+        display: dec_bit0
+        description: Decoded bit 0
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit1:
+        display: dec_bit1
+        description: Decoded bit 1
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit2:
+        display: dec_bit2
+        description: Decoded bit 2
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit3:
+        display: dec_bit3
+        description: Decoded bit 3
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit4:
+        display: dec_bit4
+        description: Decoded bit 4
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit5:
+        display: dec_bit5
+        description: Decoded bit 5
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit6:
+        display: dec_bit6
+        description: Decoded bit 6
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      dec_bit7:
+        display: dec_bit7
+        description: Decoded bit 7
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      icoarse:
+        display: ICoarse
+        description: Output coarse current
+        unit: A
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vds_mirr_bit0:
+        display: Vds mirr Bit0
+        description: Drain to source voltage at bit0 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vds_mirr_bit1:
+        display: Vds mirr Bit1
+        description: Drain to source voltage at bit1 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vds_mirr_bit2:
+        display: Vds mirr Bit2
+        description: Drain to source voltage at bit2 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vds_mirr_bit3:
+        display: Vds mirr Bit3
+        description: Drain to source voltage at bit3 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vds_mirr_bit4o5o6o7:
+        display: Vds mirr Bit4o5o6o7
+        description: Drain to source voltage at bit 4,5,6 or 7 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_mirr_bit0:
+        display: Vgate mirr Bit0
+        description: Gate voltage at bit0 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_mirr_bit1:
+        display: Vgate mirr Bit1
+        description: Gate voltage at bit1 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_mirr_bit2:
+        display: Vgate mirr Bit2
+        description: Gate voltage at bit2 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_mirr_bit3:
+        display: Vgate mirr Bit3
+        description: Gate voltage at bit3 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_mirr_bit4o5o6o7:
+        display: Vgate mirr Bit4o5o6o7
+        description: Gate voltage at bit 4,5,6 or 7 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vcoarse_diff_to_drain_bit0:
+        display: VCoarse diff to drain Bit0
+        description: Voltage difference between output voltage and drain of bit0 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vcoarse_diff_to_drain_bit1:
+        display: VCoarse diff to drain Bit1
+        description: Voltage difference between output voltage and drain of bit1 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vcoarse_diff_to_drain_bit2:
+        display: VCoarse diff to drain Bit2
+        description: Voltage difference between output voltage and drain of bit2 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vcoarse_diff_to_drain_bit3:
+        display: VCoarse diff to drain Bit3
+        description: Voltage difference between output voltage and drain of bit3 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vcoarse_diff_to_drain_bit4o5o6o7:
+        display: VCoarse diff to drain bit4o5o6o7
+        description: Voltage difference between output voltage and drain of 4,5,6 or 7 mirror transistor
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_bit4o5o6o7_to_vbiascb4:
+        display: VGate bit4o5o6o7 to vbiascb4 diff
+        description: Voltage difference between gate of 4,5,6 or 7 mirror transistor and vbiascb4
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_bit4o5o6o7_to_vbiascb5:
+        display: VGate bit4o5o6o7 to vbiascb5 diff
+        description: Voltage difference between gate of 4,5,6 or 7 mirror transistor and vbiascb5
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_bit4o5o6o7_to_vbiascb6:
+        display: VGate bit4o5o6o7 to vbiascb6 diff
+        description: Voltage difference between gate of 4,5,6 or 7 mirror transistor and vbiascb6
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vgate_bit4o5o6o7_to_vbiascb7:
+        display: VGate bit4o5o6o7 to vbiascb7 diff
+        description: Voltage difference between gate of 4,5,6 or 7 mirror transistor and vbiascb7
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+    tool:
+      ngspice:
+        template: tb_BiasCoarseBuffer.sch
+        format: ascii
+        suffix: .data
+        variables: [in_code, right_bit_is_set, other_bits_are_zero, icoarse, vds_mirr_selected, max_vds_mirr_not_selected, vcoarse_diff_to_drain_selected, vgate_bit4o5o6o7_to_vbias_selected, dec_bit0, dec_bit1, dec_bit2, dec_bit3, dec_bit4, dec_bit5, dec_bit6, dec_bit7, vds_mirr_bit0, vds_mirr_bit1, vds_mirr_bit2, vds_mirr_bit3, vds_mirr_bit4o5o6o7, vgate_mirr_bit0, vgate_mirr_bit1, vgate_mirr_bit2, vgate_mirr_bit3, vgate_mirr_bit4o5o6o7, vgate_bit4o5o6o7_to_vbiascb4, vgate_bit4o5o6o7_to_vbiascb5, vgate_bit4o5o6o7_to_vbiascb6, vgate_bit4o5o6o7_to_vbiascb7, vcoarse_diff_to_drain_bit0, vcoarse_diff_to_drain_bit1, vcoarse_diff_to_drain_bit2, vcoarse_diff_to_drain_bit3, vcoarse_diff_to_drain_bit4o5o6o7]
+    plot:
+      icoarse_vs_code:
+        type: xyplot
+        xaxis: coarseCode
+        yaxis: icoarse
+        limits: auto
+    conditions:
+      corner:
+        enumerate: [tt]
+      coarseCode:
+        enumerate: [0,1,2,3,4,5,6,7]
+      vdd:
+        typical: 1.8
+      temperature:
+        typical: 27
+
