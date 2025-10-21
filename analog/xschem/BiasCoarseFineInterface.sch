@@ -22,26 +22,26 @@ N 560 -140 560 -90 {lab=VddA18}
 N 510 -60 560 -60 {lab=VddA18}
 N 390 -10 440 -10 {lab=VddA18}
 N 690 -10 740 -10 {lab=VddA18}
-N 560 -10 650 -10 {lab=#net1}
-N 560 -30 560 -10 {lab=#net1}
-N 530 -10 560 -10 {lab=#net1}
+N 560 -10 650 -10 {lab=OutDioGate}
+N 560 -30 560 -10 {lab=OutDioGate}
+N 530 -10 560 -10 {lab=OutDioGate}
 N 600 -60 630 -60 {lab=Out}
 N 440 -100 440 -40 {lab=VddA18}
 N 240 130 270 130 {lab=nOut}
 N 690 -90 690 -40 {lab=VddA18}
 N 490 0 490 50 {lab=VddA18}
 N 310 130 360 130 {lab=GndA}
-N 310 80 310 100 {lab=OutDio}
-N 310 80 440 80 {lab=OutDio}
+N 310 80 310 100 {lab=OutDioDrain}
+N 310 80 440 80 {lab=OutDioDrain}
 N 310 160 310 210 {lab=GndA}
-N 530 -10 530 50 {lab=#net1}
-N 480 -10 530 -10 {lab=#net1}
-N 520 50 530 50 {lab=#net1}
-N 440 50 460 50 {lab=OutDio}
-N 440 20 440 50 {lab=OutDio}
+N 530 -10 530 50 {lab=OutDioGate}
+N 480 -10 530 -10 {lab=OutDioGate}
+N 520 50 530 50 {lab=OutDioGate}
+N 440 50 460 50 {lab=OutDioDrain}
+N 440 20 440 50 {lab=OutDioDrain}
 N 490 90 490 130 {lab=nOut}
-N 440 50 440 80 {lab=OutDio}
-N 440 80 440 150 {lab=OutDio}
+N 440 50 440 80 {lab=OutDioDrain}
+N 440 80 440 150 {lab=OutDioDrain}
 N 690 50 690 150 {lab=OutMirr}
 N 690 180 740 180 {lab=VddA18}
 N 390 180 440 180 {lab=VddA18}
@@ -54,9 +54,9 @@ N 690 20 690 50 {lab=OutMirr}
 N 850 50 850 80 {lab=OutMirr}
 N 750 370 750 430 {lab=IIn}
 N 700 330 750 330 {lab=VddA18}
-N 440 210 440 270 {lab=#net2}
-N 750 270 1100 270 {lab=#net2}
-N 750 270 750 300 {lab=#net2}
+N 440 210 440 270 {lab=#net1}
+N 750 270 1100 270 {lab=#net1}
+N 750 270 750 300 {lab=#net1}
 N 690 210 690 230 {lab=IOut}
 N 1350 0 1400 0 {lab=VddA18}
 N 1350 -80 1350 -30 {lab=VddA18}
@@ -74,11 +74,11 @@ N 1140 80 1230 80 {lab=nOutDio}
 N 1100 120 1100 130 {lab=nOutDio}
 N 1350 110 1350 130 {lab=nOutMirr}
 N 1140 160 1310 160 {lab=Out}
-N 1100 190 1100 270 {lab=#net2}
+N 1100 190 1100 270 {lab=#net1}
 N 1350 190 1350 230 {lab=IOut}
 N 890 230 890 430 {lab=IOut}
 N 890 230 1350 230 {lab=IOut}
-N 440 270 750 270 {lab=#net2}
+N 440 270 750 270 {lab=#net1}
 N 690 230 890 230 {lab=IOut}
 N 790 330 800 330 {lab=IIn}
 N 750 370 800 370 {lab=IIn}
@@ -91,20 +91,22 @@ N 1050 160 1100 160 {lab=VddA18}
 N 1350 160 1400 160 {lab=VddA18}
 N 770 -240 770 -210 {lab=VddA18}
 N 770 -240 1560 -240 {lab=VddA18}
-N 800 -180 800 -170 {lab=#net3}
-N 930 -180 930 -170 {lab=#net4}
-N 1100 -180 1100 -170 {lab=#net5}
-N 1220 -180 1220 -170 {lab=#net6}
-N 1330 -180 1330 -170 {lab=#net7}
-N 1460 -180 1460 -170 {lab=#net8}
-N 1560 -180 1560 -170 {lab=#net9}
+N 800 -180 800 -170 {lab=#net2}
+N 930 -180 930 -170 {lab=#net3}
+N 1100 -180 1100 -170 {lab=#net4}
+N 1220 -180 1220 -170 {lab=#net5}
+N 1330 -180 1330 -170 {lab=#net6}
+N 1460 -180 1460 -170 {lab=#net7}
+N 1560 -180 1560 -170 {lab=#net8}
 N 330 -160 360 -160 {lab=Out}
 N 440 -160 480 -160 {lab=nOut}
 N 190 -180 210 -180 {lab=S2}
 N 190 -140 210 -140 {lab=S1}
 N 770 -210 1560 -210 {lab=VddA18}
+N 250 -170 420 -170 {lab=VddA18}
+N 250 -150 420 -150 {lab=GndA}
 C {sky130_fd_pr/pfet_01v8.sym} 580 -60 0 1 {name=MpDisableOut
-W=0.24
+W=0.42
 L=0.15
 nf=1
 mult=1
@@ -154,7 +156,7 @@ spiceprefix=X
 C {lab_wire.sym} 440 -100 3 0 {name=p5 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 690 -90 3 0 {name=p6 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} 490 70 3 0 {name=MpswDioOut
-W=64
+W=0.42
 L=0.5
 nf=1
 mult=1
@@ -168,7 +170,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 290 130 0 0 {name=MnDisableOutDio
-W=0.24
+W=0.42
 L=0.15
 nf=1 
 mult=1
@@ -219,7 +221,7 @@ C {lab_wire.sym} 740 180 0 0 {name=p15 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 390 180 0 1 {name=p16 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 540 180 0 1 {name=p18 sig_type=std_logic lab=nOut}
 C {sky130_fd_pr/nfet_01v8.sym} 830 110 0 0 {name=MnDisableOutMirr
-W=0.24
+W=0.42
 L=0.15
 nf=1 
 mult=1
@@ -235,7 +237,7 @@ spiceprefix=X
 C {lab_wire.sym} 780 110 2 0 {name=p19 sig_type=std_logic lab=nOut}
 C {lab_wire.sym} 900 110 0 0 {name=p20 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 850 190 1 0 {name=p21 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 440 90 3 0 {name=p22 sig_type=std_logic lab=OutDio}
+C {lab_wire.sym} 440 90 3 0 {name=p22 sig_type=std_logic lab=OutDioDrain}
 C {lab_wire.sym} 690 80 3 0 {name=p23 sig_type=std_logic lab=OutMirr}
 C {sky130_fd_pr/pfet_01v8.sym} 770 330 0 1 {name=MpSelOutDio1
 W=9
@@ -457,9 +459,12 @@ C {noconn.sym} 1220 -170 3 0 {name=l4}
 C {noconn.sym} 1330 -170 3 0 {name=l5}
 C {noconn.sym} 1460 -170 3 0 {name=l6}
 C {noconn.sym} 1560 -170 3 0 {name=l7}
-C {sky130_stdcells/nor2_1.sym} 270 -160 0 0 {name=xnor VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 400 -160 0 0 {name=xinv VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {lab_wire.sym} 340 -160 2 0 {name=p40 sig_type=std_logic lab=Out}
 C {lab_wire.sym} 450 -160 2 0 {name=p41 sig_type=std_logic lab=nOut}
 C {ipin.sym} 190 -180 0 0 {name=p42 lab=S2}
 C {ipin.sym} 190 -140 0 0 {name=p43 lab=S1}
+C {lab_wire.sym} 620 -10 0 0 {name=p44 sig_type=std_logic lab=OutDioGate}
+C {sky130_fd_sc_hd__nor2_1.sym} 270 -160 0 0 {name=xnor}
+C {sky130_fd_sc_hd__inv_1.sym} 400 -160 0 0 {name=xinv}
+C {lab_wire.sym} 350 -170 0 0 {name=p45 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 330 -150 2 1 {name=p46 sig_type=std_logic lab=GndA}
