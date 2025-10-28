@@ -21,7 +21,7 @@ as follows:
 111: smallest bias current (11pA)
 This is dealt with on the host side
 in software.} -60 -270 0 0 0.3 0.3 {}
-T {The complte circuit for one configurable bias current} -570 -1120 0 0 1.3 1.3 {}
+T {The complete circuit for one configurable bias current} -570 -1120 0 0 1.3 1.3 {}
 T {Fine bits are encoded linearly} 300 -660 0 0 0.3 0.3 {}
 N 40 -820 50 -820 {lab=BiasVGate}
 N 200 -860 240 -860 {lab=IInDiv}
