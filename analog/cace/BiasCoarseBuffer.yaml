@@ -464,7 +464,7 @@ parameters:
         variables: [in_code, right_bit_is_set, other_bits_are_zero, icoarse, vds_mirr_selected, max_vds_mirr_not_selected, vcoarse_diff_to_drain_selected, vgate_bit4o5o6o7_to_vbias_selected, dec_bit0, dec_bit1, dec_bit2, dec_bit3, dec_bit4, dec_bit5, dec_bit6, dec_bit7, vds_mirr_bit0, vds_mirr_bit1, vds_mirr_bit2, vds_mirr_bit3, vds_mirr_bit4o5o6o7, vgate_mirr_bit0, vgate_mirr_bit1, vgate_mirr_bit2, vgate_mirr_bit3, vgate_mirr_bit4o5o6o7, vgate_bit4o5o6o7_to_vbiascb4, vgate_bit4o5o6o7_to_vbiascb5, vgate_bit4o5o6o7_to_vbiascb6, vgate_bit4o5o6o7_to_vbiascb7, vcoarse_diff_to_drain_bit0, vcoarse_diff_to_drain_bit1, vcoarse_diff_to_drain_bit2, vcoarse_diff_to_drain_bit3, vcoarse_diff_to_drain_bit4o5o6o7]
     plot:
       icoarse_vs_code:
-        type: xyplot
+        type: semilogy
         xaxis: coarseCode
         yaxis: icoarse
         limits: auto
