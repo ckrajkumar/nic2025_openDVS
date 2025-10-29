@@ -203,7 +203,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 670 180 0 0 {name=MpSelOutMirr1
+C {sky130_fd_pr/pfet_01v8.sym} 670 180 0 0 {name=MpSelOutMirr
 W=5
 L=1
 nf=1

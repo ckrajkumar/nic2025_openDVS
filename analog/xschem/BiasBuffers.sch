@@ -199,7 +199,7 @@ C {iopin.sym} 950 -200 2 0 {name=p11 lab=GndA}
 C {iopin.sym} 950 -220 2 0 {name=p12 lab=VddA18}
 C {sky130_fd_pr/nfet_01v8.sym} 1080 120 0 1 {name=MnDio
 W=6
-L=24
+L=6
 nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -311,7 +311,7 @@ C {lab_wire.sym} 1340 -50 2 1 {name=p14 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 1580 -50 2 1 {name=p16 sig_type=std_logic lab=GndA}
 C {sky130_fd_pr/nfet_01v8.sym} 1700 120 0 0 {name=MnMirr
 W=6
-L=24
+L=6
 nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -328,7 +328,7 @@ C {sky130_fd_pr/nfet_01v8_lvt.sym} 1390 160 0 0 {name=MnMirrBuffBias
 W=6
 L=6
 nf=1 
-mult=4
+mult=16
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"

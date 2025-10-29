@@ -163,7 +163,7 @@ C {lab_wire.sym} 30 -270 3 1 {name=p16 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 60 -270 3 1 {name=p17 sig_type=std_logic lab=ICoarse1}
 C {lab_wire.sym} 300 -270 3 1 {name=p15 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 330 -270 3 1 {name=p18 sig_type=std_logic lab=ICoarse2}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 70 -190 0 0 {name=M1
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 70 -190 0 0 {name=MNDioCB0
 W=1.98
 L=5
 nf=1 
@@ -180,7 +180,7 @@ spiceprefix=X
 C {lab_wire.sym} 90 -120 3 1 {name=p19 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 100 -190 2 1 {name=p20 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 90 -270 3 1 {name=p21 sig_type=std_logic lab=BiasCB0}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 140 -190 0 0 {name=M2
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 140 -190 0 0 {name=MNDioCB1
 W=1	
 L=10
 nf=1 
@@ -197,7 +197,7 @@ spiceprefix=X
 C {lab_wire.sym} 160 -120 3 1 {name=p22 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 170 -190 2 1 {name=p23 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 160 -270 3 1 {name=p24 sig_type=std_logic lab=BiasCB1}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 340 -190 0 0 {name=M3
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 340 -190 0 0 {name=MNDioCB2
 W=1.98
 L=5
 nf=1 
@@ -213,7 +213,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 370 -190 2 1 {name=p26 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 360 -270 3 1 {name=p27 sig_type=std_logic lab=BiasCB2}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 410 -190 0 0 {name=M4
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 410 -190 0 0 {name=MNDioCB3
 W=1	
 L=10
 nf=1 
@@ -229,7 +229,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 440 -190 2 1 {name=p29 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 430 -270 3 1 {name=p30 sig_type=std_logic lab=BiasCB3}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 480 -190 0 0 {name=M5
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 480 -190 0 0 {name=MNDioCB4
 W=0.5
 L=20
 nf=1 
@@ -562,7 +562,7 @@ spiceprefix=X
 C {lab_wire.sym} 510 370 2 1 {name=p62 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 500 440 3 1 {name=p63 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 510 -190 2 1 {name=p35 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 550 -190 0 0 {name=M6
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 550 -190 0 0 {name=MNDioCB5
 W=0.5
 L=20
 nf=1 
@@ -685,7 +685,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 580 370 2 1 {name=p72 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 570 440 3 1 {name=p73 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -190 0 0 {name=M35
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -190 0 0 {name=MNDioCB6
 W=0.5
 L=20
 nf=1 
@@ -804,7 +804,7 @@ spiceprefix=X
 C {lab_wire.sym} 650 370 2 1 {name=p86 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 640 440 3 1 {name=p87 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 650 -190 2 1 {name=p88 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 690 -190 0 0 {name=M43
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 690 -190 0 0 {name=MNDioCB7
 W=0.5
 L=20
 nf=1 

@@ -87,6 +87,8 @@ N 810 -950 810 -890 {lab=VddA18}
 N 750 -860 810 -860 {lab=VddA18}
 N -570 -560 -510 -560 {lab=PowerDown}
 N -570 -530 -510 -530 {lab=BiasCB[7:0]}
+N -70 -580 100 -580 {lab=VddA18}
+N -70 -560 100 -560 {lab=GndA}
 C {iopin.sym} -360 -970 0 1 {name=p75 lab=VddA18}
 C {iopin.sym} -360 -950 0 1 {name=p76 lab=GndA}
 C {BiasCoarseBuffer.sym} -320 -800 0 0 {name=xCoarseBuf}
@@ -125,8 +127,6 @@ C {lab_wire.sym} 450 -670 3 1 {name=p32 sig_type=std_logic lab=IBIT[10]}
 C {lab_wire.sym} 470 -670 3 1 {name=p33 sig_type=std_logic lab=IBIT[11]}
 C {lab_wire.sym} 490 -670 3 1 {name=p34 sig_type=std_logic lab=Latch}
 C {lab_wire.sym} 510 -670 3 1 {name=p35 sig_type=std_logic lab=nLatch}
-C {sky130_stdcells/inv_12.sym} -50 -570 0 0 {name=xInvLatch VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 80 -570 0 0 {name=xInvnLatch VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {ipin.sym} -120 -570 2 1 {name=p48 lab=BiasLatchEnable}
 C {lab_wire.sym} 0 -570 0 1 {name=p49 sig_type=std_logic lab=nLatch}
 C {lab_wire.sym} 160 -570 0 0 {name=p50 sig_type=std_logic lab=Latch}
@@ -171,7 +171,7 @@ C {lab_wire.sym} -570 -620 0 1 {name=p5 sig_type=std_logic lab=IBIT[1]}
 C {noconn.sym} -510 -590 2 0 {name=l8}
 C {lab_wire.sym} -570 -590 0 1 {name=p36 sig_type=std_logic lab=IBIT[0]}
 C {opin.sym} -380 -770 2 1 {name=p37 lab=BufferP}
-C {sky130_fd_pr/pfet_01v8.sym} 830 -860 0 1 {name=MpDio
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -860 0 1 {name=MpDio
 W=6
 L=3
 nf=1
@@ -182,37 +182,37 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 710 -750 0 1 {name=MnDio
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 710 -750 0 1 {name=MnDio
 W=6
 L=6
 nf=1 
-mult=1
+mult=16
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 690 -680 3 1 {name=p38 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 650 -750 0 1 {name=p39 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8.sym} 790 -750 0 0 {name=MnMirr
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 790 -750 0 0 {name=MnMirr
 W=6
 L=6
 nf=1 
-mult=1
+mult=16
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 810 -680 1 0 {name=p40 sig_type=std_logic lab=GndA}
@@ -225,3 +225,7 @@ C {lab_wire.sym} -570 -560 0 1 {name=p45 sig_type=std_logic lab=PowerDown}
 C {noconn.sym} -510 -530 2 0 {name=l10}
 C {lab_wire.sym} -570 -530 0 1 {name=p46 sig_type=std_logic lab=BiasCB[7:0]}
 C {noconn.sym} -360 -820 2 0 {name=l11}
+C {sky130_fd_sc_hd__inv_1.sym} -50 -570 0 0 {name=xInvLatch}
+C {sky130_fd_sc_hd__inv_1.sym} 80 -570 0 0 {name=xInvnLatch}
+C {lab_wire.sym} 40 -560 2 1 {name=p47 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} -10 -580 0 1 {name=p68 sig_type=std_logic lab=VddA18}

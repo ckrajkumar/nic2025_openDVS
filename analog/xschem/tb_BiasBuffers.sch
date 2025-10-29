@@ -105,19 +105,26 @@ value="
 .param xvdd = 1.8
 .param xpowerdown = 0
 .param xIR = 100k
-.param xcoarseCode = 7
+.param xcoarseCode = 0
 .param xBiasEnabled = 1
 .param xNBias = 0
-.param xIin = 10p
+.param xIin = 100n
 .param xIBufferN = 400n
 .param xIBufferP = 400n
 .param xbit0 = (xcoarseCode%2 >= 1)?1:0
 .param xbit1 = ((xcoarseCode/2)%2 >= 1)?1:0
 .param xbit2 = ((xcoarseCode/4)%2 >= 1)?1:0
 
+
+.save v(@m.xbuf.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xbuf.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[vth])
+.save @m.xbuf.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xbuf.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[vgs])
+.save i(@x.xbuf[SplitterOutput])
+
 .save all
 
-*.dc Iin 0 10u 1000p
+*.dc Iin 1p 10u 1000p
 .op
 "}
 C {vsource.sym} 1000 -270 0 0 {name=Vbit0 value='xbit0*xvdd' savecurrent=true}
@@ -176,7 +183,7 @@ C {sky130_fd_pr/nfet_01v8_lvt.sym} 510 -300 0 0 {name=MnMirrBuffBias
 W=6
 L=6
 nf=1 
-mult=4
+mult=16
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
