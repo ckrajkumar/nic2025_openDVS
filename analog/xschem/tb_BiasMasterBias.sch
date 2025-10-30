@@ -249,7 +249,7 @@ C {vsource.sym} 1000 -280 0 0 {name=Vmeas_ICoarse2 value=0 savecurrent=true}
 C {lab_wire.sym} 640 -240 0 0 {name=p23 sig_type=std_logic lab=ICoarse1}
 C {lab_wire.sym} 640 -200 0 0 {name=p24 sig_type=std_logic lab=ICoarse2}
 C {lab_wire.sym} 190 -220 0 1 {name=p25 sig_type=std_logic lab=PowerDown}
-C {sky130_fd_pr/nfet_01v8.sym} 750 40 0 0 {name=M1
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 750 40 0 0 {name=M1
 W=1.98
 L=5
 nf=1 
@@ -260,10 +260,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 820 40 0 0 {name=M2
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 820 40 0 0 {name=M2
 W=1	
 L=10
 nf=1 
@@ -274,7 +274,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {vsource.sym} 740 -50 0 0 {name=Vmeas_Iout1 value=0 savecurrent=true}
@@ -285,7 +285,7 @@ C {lab_wire.sym} 780 40 0 0 {name=p28 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 850 40 0 0 {name=p29 sig_type=std_logic lab=gnd}
 C {vsource.sym} 1030 -220 0 0 {name=Vmeas_Iout2 value=0 savecurrent=true}
 C {vsource.sym} 1100 -220 0 0 {name=Vmeas_Iout3 value=0 savecurrent=true}
-C {sky130_fd_pr/nfet_01v8.sym} 1010 10 0 0 {name=M3
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 10 0 0 {name=M3
 W=1.98
 L=5
 nf=1 
@@ -296,11 +296,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1040 10 2 1 {name=p35 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 10 0 0 {name=M4
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 10 0 0 {name=M4
 W=1	
 L=10
 nf=1 
@@ -311,11 +311,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 10 2 1 {name=p37 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1150 10 0 0 {name=M5
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 10 0 0 {name=M5
 W=0.5
 L=20
 nf=1 
@@ -326,10 +326,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 90 0 0 {name=M10
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 90 0 0 {name=M10
 W=1.98
 L=5
 nf=1 
@@ -340,10 +340,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 170 0 0 {name=M11
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 170 0 0 {name=M11
 W=1.98
 L=5
 nf=1 
@@ -354,10 +354,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 250 0 0 {name=M12
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 250 0 0 {name=M12
 W=1.98
 L=5
 nf=1 
@@ -368,10 +368,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 330 0 0 {name=M13
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 330 0 0 {name=M13
 W=1.98
 L=5
 nf=1 
@@ -382,10 +382,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 410 0 0 {name=M14
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 410 0 0 {name=M14
 W=1.98
 L=5
 nf=1 
@@ -396,10 +396,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 490 0 0 {name=M15
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 490 0 0 {name=M15
 W=1.98
 L=5
 nf=1 
@@ -410,10 +410,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1010 570 0 0 {name=M16
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1010 570 0 0 {name=M16
 W=1.98
 L=5
 nf=1 
@@ -424,7 +424,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1040 90 2 1 {name=p38 sig_type=std_logic lab=gnd}
@@ -435,7 +435,7 @@ C {lab_wire.sym} 1040 410 2 1 {name=p44 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1040 490 2 1 {name=p45 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1040 570 2 1 {name=p46 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1030 640 3 1 {name=p47 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 90 0 0 {name=M17
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 90 0 0 {name=M17
 W=1	
 L=10
 nf=1 
@@ -446,11 +446,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 90 2 1 {name=p48 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 170 0 0 {name=M18
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 170 0 0 {name=M18
 W=1	
 L=10
 nf=1 
@@ -461,11 +461,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 170 2 1 {name=p49 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 250 0 0 {name=M19
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 250 0 0 {name=M19
 W=1	
 L=10
 nf=1 
@@ -476,11 +476,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 250 2 1 {name=p50 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 330 0 0 {name=M20
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 330 0 0 {name=M20
 W=1	
 L=10
 nf=1 
@@ -491,11 +491,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 330 2 1 {name=p51 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 410 0 0 {name=M21
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 410 0 0 {name=M21
 W=1	
 L=10
 nf=1 
@@ -506,11 +506,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 410 2 1 {name=p52 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 490 0 0 {name=M22
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 490 0 0 {name=M22
 W=1	
 L=10
 nf=1 
@@ -521,11 +521,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 490 2 1 {name=p53 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1080 570 0 0 {name=M23
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 570 0 0 {name=M23
 W=1	
 L=10
 nf=1 
@@ -536,12 +536,12 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1110 570 2 1 {name=p54 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1100 640 3 1 {name=p55 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1150 90 0 0 {name=M24
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 90 0 0 {name=M24
 W=0.5
 L=20
 nf=1 
@@ -552,10 +552,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1150 170 0 0 {name=M25
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 170 0 0 {name=M25
 W=0.5
 L=20
 nf=1 
@@ -566,10 +566,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1150 250 0 0 {name=M26
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 250 0 0 {name=M26
 W=0.5
 L=20
 nf=1 
@@ -580,10 +580,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1150 330 0 0 {name=M27
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 330 0 0 {name=M27
 W=0.5
 L=20
 nf=1 
@@ -594,10 +594,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1150 410 0 0 {name=M28
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 410 0 0 {name=M28
 W=0.5
 L=20
 nf=1 
@@ -608,11 +608,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1180 410 2 1 {name=p60 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1150 490 0 0 {name=M29
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 490 0 0 {name=M29
 W=0.5
 L=20
 nf=1 
@@ -623,11 +623,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1180 490 2 1 {name=p61 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1150 570 0 0 {name=M30
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 570 0 0 {name=M30
 W=0.5
 L=20
 nf=1 
@@ -638,13 +638,13 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1180 570 2 1 {name=p62 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1170 640 3 1 {name=p63 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1180 10 2 1 {name=p56 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 10 0 0 {name=M6
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 10 0 0 {name=M6
 W=0.5
 L=20
 nf=1 
@@ -655,7 +655,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 10 2 1 {name=p57 sig_type=std_logic lab=gnd}
@@ -663,7 +663,7 @@ C {lab_wire.sym} 1180 90 2 1 {name=p58 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1180 170 2 1 {name=p59 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1180 250 2 1 {name=p64 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1180 330 2 1 {name=p65 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 90 0 0 {name=M7
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 90 0 0 {name=M7
 W=0.5
 L=20
 nf=1 
@@ -674,10 +674,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1220 170 0 0 {name=M8
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 170 0 0 {name=M8
 W=0.5
 L=20
 nf=1 
@@ -688,10 +688,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1220 250 0 0 {name=M9
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 250 0 0 {name=M9
 W=0.5
 L=20
 nf=1 
@@ -702,11 +702,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 250 2 1 {name=p68 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 330 0 0 {name=M31
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 330 0 0 {name=M31
 W=0.5
 L=20
 nf=1 
@@ -717,11 +717,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 330 2 1 {name=p69 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 410 0 0 {name=M32
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 410 0 0 {name=M32
 W=0.5
 L=20
 nf=1 
@@ -732,11 +732,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 410 2 1 {name=p70 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 490 0 0 {name=M33
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 490 0 0 {name=M33
 W=0.5
 L=20
 nf=1 
@@ -747,11 +747,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 490 2 1 {name=p71 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 570 0 0 {name=M34
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 570 0 0 {name=M34
 W=0.5
 L=20
 nf=1 
@@ -762,12 +762,12 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 570 2 1 {name=p72 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1240 640 3 1 {name=p73 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1290 10 0 0 {name=M35
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 10 0 0 {name=M35
 W=0.5
 L=20
 nf=1 
@@ -778,12 +778,12 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1250 90 2 1 {name=p76 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1250 170 2 1 {name=p77 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1290 90 0 0 {name=M36
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 90 0 0 {name=M36
 W=0.5
 L=20
 nf=1 
@@ -794,10 +794,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1290 170 0 0 {name=M37
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 170 0 0 {name=M37
 W=0.5
 L=20
 nf=1 
@@ -808,10 +808,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1290 250 0 0 {name=M38
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 250 0 0 {name=M38
 W=0.5
 L=20
 nf=1 
@@ -822,10 +822,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1290 330 0 0 {name=M39
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 330 0 0 {name=M39
 W=0.5
 L=20
 nf=1 
@@ -836,10 +836,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1290 410 0 0 {name=M40
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 410 0 0 {name=M40
 W=0.5
 L=20
 nf=1 
@@ -850,11 +850,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1320 410 2 1 {name=p84 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1290 490 0 0 {name=M41
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 490 0 0 {name=M41
 W=0.5
 L=20
 nf=1 
@@ -865,11 +865,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1320 490 2 1 {name=p85 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1290 570 0 0 {name=M42
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 570 0 0 {name=M42
 W=0.5
 L=20
 nf=1 
@@ -880,13 +880,13 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1320 570 2 1 {name=p86 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1310 640 3 1 {name=p87 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1320 10 2 1 {name=p88 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 10 0 0 {name=M43
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 10 0 0 {name=M43
 W=0.5
 L=20
 nf=1 
@@ -897,7 +897,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 10 2 1 {name=p89 sig_type=std_logic lab=gnd}
@@ -905,7 +905,7 @@ C {lab_wire.sym} 1320 90 2 1 {name=p90 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1320 170 2 1 {name=p91 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1320 250 2 1 {name=p92 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1320 330 2 1 {name=p93 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 90 0 0 {name=M44
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 90 0 0 {name=M44
 W=0.5
 L=20
 nf=1 
@@ -916,11 +916,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 90 2 1 {name=p94 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 170 0 0 {name=M45
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 170 0 0 {name=M45
 W=0.5
 L=20
 nf=1 
@@ -931,11 +931,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 170 2 1 {name=p95 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 250 0 0 {name=M46
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 250 0 0 {name=M46
 W=0.5
 L=20
 nf=1 
@@ -946,11 +946,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 250 2 1 {name=p96 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 330 0 0 {name=M47
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 330 0 0 {name=M47
 W=0.5
 L=20
 nf=1 
@@ -961,11 +961,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 330 2 1 {name=p97 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 410 0 0 {name=M48
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 410 0 0 {name=M48
 W=0.5
 L=20
 nf=1 
@@ -976,11 +976,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 410 2 1 {name=p98 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 490 0 0 {name=M49
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 490 0 0 {name=M49
 W=0.5
 L=20
 nf=1 
@@ -991,11 +991,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 490 2 1 {name=p99 sig_type=std_logic lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 1360 570 0 0 {name=M50
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 570 0 0 {name=M50
 W=0.5
 L=20
 nf=1 
@@ -1006,7 +1006,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1390 570 2 1 {name=p100 sig_type=std_logic lab=gnd}

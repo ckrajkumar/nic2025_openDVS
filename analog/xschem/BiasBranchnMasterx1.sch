@@ -16,9 +16,9 @@ N 190 -750 190 -690 {lab=BiasCB[7:0]}
 N 210 -750 210 -690 {lab=IBIT[15:0]}
 N 290 -750 290 -690 {lab=BufferN}
 N 310 -750 310 -690 {lab=BufferP}
-N 440 -620 500 -620 {lab=Bias[30:0]}
-N 440 -540 500 -540 {lab=#net1}
-N -20 -580 70 -580 {lab=LatchEnable[30:0]}
+N 440 -620 500 -620 {lab=Bias}
+N 440 -540 500 -540 {lab=GndA}
+N -20 -580 70 -580 {lab=LatchEnable[0]}
 N 160 -140 160 -80 {lab=rx}
 N 190 -140 190 -80 {lab=BiasCB[0]}
 N 220 -140 220 -80 {lab=BiasCB[1]}
@@ -42,17 +42,17 @@ N 280 -1120 280 -1060 {lab=BufferN}
 N 300 -1120 300 -1060 {lab=BufferP}
 N 430 -940 490 -940 {lab=BufferN}
 N 430 -970 490 -970 {lab=BufferP}
-N -20 -950 70 -950 {lab=LatchEnable[31]}
+N -20 -950 70 -950 {lab=LatchEnable[1]}
 C {iopin.sym} -360 -970 0 1 {name=p75 lab=VddA18}
 C {iopin.sym} -360 -950 0 1 {name=p76 lab=GndA}
 C {lab_wire.sym} 110 -750 3 0 {name=p2 sig_type=std_logic lab=VddA18}
-C {ipin.sym} -360 -920 2 1 {name=p87 lab=LatchEnable[31:0]}
+C {ipin.sym} -360 -920 2 1 {name=p87 lab=LatchEnable[1:0]}
 C {ipin.sym} -360 -900 2 1 {name=p88 lab=IBIT[15:0]}
 C {ipin.sym} -360 -880 2 1 {name=p89 lab=PowerDown}
 C {opin.sym} -360 -860 2 1 {name=p90 lab=BufferN}
 C {opin.sym} -360 -840 2 1 {name=p91 lab=BufferP}
 C {iopin.sym} -360 -700 0 1 {name=p92 lab=rx}
-C {BiasBranch.sym} -90 -560 0 0 {name=xBiasBranch[30:0]}
+C {BiasBranch.sym} -90 -560 0 0 {name=xBiasBranch}
 C {BiasMasternCoarse.sym} 230 -230 0 0 {name=xBiasMasternCoarse}
 C {lab_wire.sym} 130 -750 3 0 {name=p1 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 170 -750 3 0 {name=p3 sig_type=std_logic lab=PowerDown}
@@ -60,8 +60,7 @@ C {lab_wire.sym} 190 -750 3 0 {name=p4 sig_type=std_logic lab=BiasCB[7:0]}
 C {lab_wire.sym} 210 -750 3 0 {name=p6 sig_type=std_logic lab=IBIT[15:0]}
 C {lab_wire.sym} 290 -750 3 0 {name=p7 sig_type=std_logic lab=BufferN}
 C {lab_wire.sym} 310 -750 3 0 {name=p8 sig_type=std_logic lab=BufferP}
-C {opin.sym} 500 -620 2 1 {name=p9 lab=Bias[30:0]}
-C {lab_wire.sym} -20 -580 0 1 {name=p10 sig_type=std_logic lab=LatchEnable[30:0]}
+C {lab_wire.sym} -20 -580 0 1 {name=p10 sig_type=std_logic lab=LatchEnable[0]}
 C {lab_wire.sym} 160 -80 3 1 {name=p11 sig_type=std_logic lab=rx}
 C {lab_wire.sym} 190 -80 3 1 {name=p12 sig_type=std_logic lab=BiasCB[0]}
 C {lab_wire.sym} 220 -80 3 1 {name=p13 sig_type=std_logic lab=BiasCB[1]}
@@ -86,8 +85,10 @@ C {lab_wire.sym} 280 -1120 3 0 {name=p29 sig_type=std_logic lab=BufferN}
 C {lab_wire.sym} 300 -1120 3 0 {name=p30 sig_type=std_logic lab=BufferP}
 C {lab_wire.sym} 490 -940 0 0 {name=p31 sig_type=std_logic lab=BufferN}
 C {lab_wire.sym} 490 -970 0 0 {name=p32 sig_type=std_logic lab=BufferP}
-C {lab_wire.sym} -20 -950 0 1 {name=p33 sig_type=std_logic lab=LatchEnable[31]}
+C {lab_wire.sym} -20 -950 0 1 {name=p33 sig_type=std_logic lab=LatchEnable[1]}
 C {opin.sym} -360 -820 2 1 {name=p34 lab=VMasterBiasN}
 C {opin.sym} -360 -800 2 1 {name=p35 lab=VMasterBiasP}
 C {opin.sym} -360 -780 2 1 {name=p36 lab=BiasCB[7:0]}
-C {opin.sym} -360 -760 2 1 {name=p37 lab=Bias[30:0]}
+C {opin.sym} -360 -760 2 1 {name=p37 lab=Bias}
+C {lab_wire.sym} 500 -540 0 0 {name=p38 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 500 -620 0 0 {name=p9 sig_type=std_logic lab=Bias}

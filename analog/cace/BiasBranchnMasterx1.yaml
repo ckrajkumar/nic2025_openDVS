@@ -1,0 +1,650 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           BiasBranchnMasterx1
+description:    Single bias branch with master bias and buffer bias
+PDK:            sky130B
+
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    29 Oct, 2025
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  VddA18:
+    description: Positive analog power supply
+    type: power
+    direction: inout
+    Vmin: 1.7
+    Vmax: 1.9
+  GndA:
+    description: Analog ground
+    type: ground
+    direction: inout
+  PowerDown:
+    description: If high, powers down bias generator
+    type: ground
+    direction: inout
+  BiasCB[7:0]:
+    description: Master bias current output, bit0
+    type: signal
+    direction: output
+  Bias:
+    description: Generated bias
+    type: signal
+    direction: output
+  BufferN:
+    description: N-buffer source-follower bias
+    type: signal
+    direction: output
+  BufferP:
+    description: N-buffer source-follower bias
+    type: signal
+    direction: output
+  VMasterBiasN:
+    description: N-type master bias
+    type: signal
+    direction: output
+  VMasterBiasP:
+    description: P-type master bias
+    type: signal
+    direction: output
+  IR:
+    description: External resistor for the bias generator
+    type: signal
+    direction: inout
+  IBIT[15:0]:
+    description: Bias code, 16 bits
+    type: signal
+    direction: input
+  LatchEnable[1:0]:
+    description: Latch enable for bias codes
+    type: signal
+    direction: input
+
+default_conditions:
+  vdd:
+    description: Analog power supply voltage
+    display: Vdd
+    unit: V
+    typical: 1.8
+  coarseCode:
+    description: Coarse config code (3 bits, 0 to 7)
+    display: Coarse Code
+    unit: V
+    typical: 7
+  fineCode:
+    description: Fine config code (7 bits, 0 to 255)
+    display: Coarse Code
+    unit: V
+    typical: 128
+  fineCode:
+    description: Fine config code (7 bits, 0 to 255)
+    display: Coarse Code
+    unit: V
+    typical: 128
+  NBias:
+    description: Generated bias is N-type if 1, P-type if 0
+    display: Coarse Code
+    unit: V
+    typical: 0
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    typical: 27
+
+parameters:
+  op_sweep_code:
+    display: Operating point for different coarse codes
+    spec:
+      coarse_code:
+        display: coarse_code
+        description: coarse_code
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      fine_code:
+        display: fine_code
+        description: fine_code
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      iout:
+        display: iout
+        description: iout
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnbias:
+        display: vdsat_masterbias_mnbias
+        description: vdsat_masterbias_mnbias
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnbiasdio:
+        display: vdsat_masterbias_mnbiasdio
+        description: vdsat_masterbias_mnbiasdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnbiascascdio:
+        display: vdsat_masterbias_mnbiascascdio
+        description: vdsat_masterbias_mnbiascascdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnbiascasc:
+        display: vdsat_masterbias_mnbiascasc
+        description: vdsat_masterbias_mnbiascasc
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mpbias:
+        display: vdsat_masterbias_mpbias
+        description: vdsat_masterbias_mpbias
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mpbiasdio:
+        display: vdsat_masterbias_mpbiasdio
+        description: vdsat_masterbias_mpbiasdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnmirr1:
+        display: vdsat_masterbias_mnmirr1
+        description: vdsat_masterbias_mnmirr1
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnmirr2:
+        display: vdsat_masterbias_mnmirr2
+        description: vdsat_masterbias_mnmirr2
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnmirrcasc2:
+        display: vdsat_masterbias_mnmirrcasc2
+        description: vdsat_masterbias_mnmirrcasc2
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_masterbias_mnmirrcasc2:
+        display: vdsat_masterbias_mnmirrcasc2
+        description: vdsat_masterbias_mnmirrcasc2
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_coarsebuf_mmirr:
+        display: vdsat_coarsebuf_mmirr
+        description: vdsat_coarsebuf_mmirr
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_coarse2fine_mpdio:
+        display: vdsat_coarse2fine_mpdio
+        description: vdsat_coarse2fine_mpdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_coarse2fine_mpmirr:
+        display: vdsat_coarse2fine_mpmirr
+        description: vdsat_coarse2fine_mpmirr
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mndio:
+        display: vdsat_buffs_mndio
+        description: vdsat_buffs_mndio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mnmirr:
+        display: vdsat_buffs_mnmirr
+        description: vdsat_buffs_mnmirr
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mnmirrbuffbias:
+        display: vdsat_buffs_mnmirrbuffbias
+        description: vdsat_buffs_mnmirrbuffbias
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mnmirrbuff:
+        display: vdsat_buffs_mnmirrbuff
+        description: vdsat_buffs_mnmirrbuff
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mpdio:
+        display: vdsat_buffs_mpdio
+        description: vdsat_buffs_mpdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mpmirrbuffbias:
+        display: vdsat_buffs_mpmirrbuffbias
+        description: vdsat_buffs_mpmirrbuffbias
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_buffs_mpmirrbuff:
+        display: vdsat_buffs_mpmirrbuff
+        description: vdsat_buffs_mpmirrbuff
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_biasbuffer_mndio:
+        display: vdsat_biasbuffer_mndio
+        description: vdsat_biasbuffer_mndio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_biasbuffer_mnmirr:
+        display: vdsat_biasbuffer_mnmirr
+        description: vdsat_biasbuffer_mnmirr
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      vdsat_biasbuffer_mnpdio:
+        display: vdsat_biasbuffer_mnpdio
+        description: vdsat_biasbuffer_mnpdio
+        unit: V
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_masterbias_mnbias:
+        display: id_masterbias_mnbias
+        description: id_masterbias_mnbias
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_masterbias_mnbiasdio:
+        display: id_masterbias_mnbiasdio
+        description: id_masterbias_mnbiasdio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_masterbias_xmnmirr1:
+        display: id_masterbias_xmnmirr1
+        description: id_masterbias_xmnmirr1
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_masterbias_xmnmirr2:
+        display: id_masterbias_xmnmirr2
+        description: id_masterbias_xmnmirr2
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb0:
+        display: id_mbdiv_cb0
+        description: id_mbdiv_cb0
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb1:
+        display: id_mbdiv_cb1
+        description: id_mbdiv_cb1
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb2:
+        display: id_mbdiv_cb2
+        description: id_mbdiv_cb2
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb3:
+        display: id_mbdiv_cb3
+        description: id_mbdiv_cb3
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb4:
+        display: id_mbdiv_cb4
+        description: id_mbdiv_cb4
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb5:
+        display: id_mbdiv_cb5
+        description: id_mbdiv_cb5
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb6:
+        display: id_mbdiv_cb6
+        description: id_mbdiv_cb6
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_mbdiv_cb7:
+        display: id_mbdiv_cb7
+        description: id_mbdiv_cb7
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_coarsebuf_mmirr:
+        display: id_coarsebuf_mmirr
+        description: id_coarsebuf_mmirr
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_coarse2fine_mpdio:
+        display: id_coarse2fine_mpdio
+        description: id_coarse2fine_mpdio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_coarse2fine_mpmirr:
+        display: id_coarse2fine_mpmirr
+        description: id_coarse2fine_mpmirr
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_coarse2fine_mpindio:
+        display: id_coarse2fine_mpindio
+        description: id_coarse2fine_mpindio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mndio:
+        display: id_buffs_mndio
+        description: id_buffs_mndio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mnmirr:
+        display: id_buffs_mnmirr
+        description: id_buffs_mnmirr
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mnmirrbuffbias:
+        display: id_buffs_mnmirrbuffbias
+        description: id_buffs_mnmirrbuffbias
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mnmirrbuff:
+        display: id_buffs_mnmirrbuff
+        description: id_buffs_mnmirrbuff
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mpdio:
+        display: id_buffs_mpdio
+        description: id_buffs_mpdio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mpmirrbuffbias:
+        display: id_buffs_mpmirrbuffbias
+        description: id_buffs_mpmirrbuffbias
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_buffs_mpmirrbuff:
+        display: id_buffs_mpmirrbuff
+        description: id_buffs_mpmirrbuff
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_biasbuffer_mndio:
+        display: id_biasbuffer_mndio
+        description: id_biasbuffer_mndio
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+      id_biasbuffer_mnmirr:
+        display: id_biasbuffer_mnmirr
+        description: id_biasbuffer_mnmirr
+        unit: A
+        minimum:
+          value: any
+        maximum:
+          value: any
+        typical:
+          value: any
+    tool:
+      ngspice:
+        template: tb_BiasBranchnMasterx1_op.sch
+        format: ascii
+        suffix: .data
+        variables: [coarse_code, fine_code, iout, vdsat_masterbias_mnbias, vdsat_masterbias_mnbiasdio, vdsat_masterbias_mnbiascascdio, vdsat_masterbias_mnbiascasc, vdsat_masterbias_mpbias, vdsat_masterbias_mpbiasdio, vdsat_masterbias_mnmirr1, vdsat_masterbias_mnmirr2, vdsat_masterbias_mnmirrcasc2, vdsat_masterbias_mnmirrcasc2, vdsat_coarsebuf_mmirr, vdsat_coarse2fine_mpdio, vdsat_coarse2fine_mpmirr, vdsat_buffs_mndio, vdsat_buffs_mnmirr, vdsat_buffs_mnmirrbuffbias, vdsat_buffs_mnmirrbuff, vdsat_buffs_mpdio, vdsat_buffs_mpmirrbuffbias, vdsat_buffs_mpmirrbuff, vdsat_biasbuffer_mndio, vdsat_biasbuffer_mnmirr, vdsat_biasbuffer_mnpdio, id_masterbias_mnbias, id_masterbias_mnbiasdio, id_masterbias_xmnmirr1, id_masterbias_xmnmirr2, id_mbdiv_cb0, id_mbdiv_cb1, id_mbdiv_cb2, id_mbdiv_cb3, id_mbdiv_cb4, id_mbdiv_cb5, id_mbdiv_cb6, id_mbdiv_cb7, id_coarsebuf_mmirr, id_coarse2fine_mpdio, id_coarse2fine_mpmirr, id_coarse2fine_mpindio, id_buffs_mndio, id_buffs_mnmirr, id_buffs_mnmirrbuffbias, id_buffs_mnmirrbuff, id_buffs_mpdio, id_buffs_mpmirrbuffbias, id_buffs_mpmirrbuff, id_biasbuffer_mndio, id_biasbuffer_mnmirr]
+    plot:
+      iout_vs_fine:
+        type: semilogy
+        xaxis: fineCode
+        yaxis: iout
+        limits: auto
+    conditions:
+      fineCode:
+        minimum: 0
+        maximum: 255
+        step: linear
+      coarseCode:
+        minimum: 0
+        maximum: 7
+        step: linear
+      vdd:
+        typical: 1.8
+      temperature:
+        typical: 27
+      corner:
+        enumerate: [tt]
+    

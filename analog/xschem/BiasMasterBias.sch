@@ -95,18 +95,18 @@ N -550 60 -410 60 {lab=BiasPowerDown}
 N -580 30 -580 130 {lab=GndA}
 N -580 -110 -580 -40 {lab=bootstrap}
 N -460 -130 -460 -90 {lab=VMasterBiasP}
-C {sky130_fd_pr/nfet_01v8.sym} 30 70 0 0 {name=MNBiasDio
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 30 70 0 0 {name=MNBiasDio
 W=20
 L=5
 nf=1 
-mult=4
+mult=12
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 30 -180 0 0 {name=MPBias
@@ -123,9 +123,23 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} -140 70 0 1 {name=MNBias
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -140 70 0 1 {name=MNBias
 W=20
 L=5
+nf=1
+mult=16
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 30 -40 0 0 {name=MnBiasCascDio
+W=1
+L=20
 nf=1
 mult=12
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -134,35 +148,21 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 30 -40 0 0 {name=MnBiasCascDio
-W=1
-L=20
-nf=1
-mult=2
-ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
-pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
-as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
-ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
-nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} -140 -40 0 1 {name=MnBiasCasc
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -140 -40 0 1 {name=MnBiasCasc
 W=1
 L=20
 nf=1 
-mult=8
+mult=16
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -140 -180 0 1 {name=MPBiasDio
@@ -195,71 +195,71 @@ C {iopin.sym} 560 110 1 0 {name=p12 lab=GndA
 C {lab_wire.sym} 50 150 1 0 {name=p10 sig_type=std_logic lab=GndA}
 C {opin.sym} -90 30 0 0 {name=p13 lab=VMasterBiasN}
 C {lab_wire.sym} -90 -40 1 0 {name=p14 sig_type=std_logic lab=VCasc}
-C {sky130_fd_pr/nfet_01v8.sym} 190 70 0 0 {name=MNMirr1
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 190 70 0 0 {name=MNMirr1
 W=20
 L=5
 nf=1 
-mult=4
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 260 70 0 0 {name=p15 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 210 150 1 0 {name=p16 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8.sym} 190 -40 0 0 {name=MNMirrCasc1
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 190 -40 0 0 {name=MNMirrCasc1
 W=1
 L=20
 nf=1
-mult=2
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 260 -40 0 0 {name=p17 sig_type=std_logic lab=GndA}
 C {iopin.sym} 210 -190 3 0 {name=p18 lab=ICoarse1}
-C {sky130_fd_pr/nfet_01v8.sym} 370 70 0 0 {name=MNMirr2
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 370 70 0 0 {name=MNMirr2
 W=20
 L=5
 nf=1 
-mult=4
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 440 70 0 0 {name=p19 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 390 150 1 0 {name=p20 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8.sym} 370 -40 0 0 {name=MNMirrCasc2
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 370 -40 0 0 {name=MNMirrCasc2
 W=1
 L=20
 nf=1
-mult=2
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 440 -40 0 0 {name=p21 sig_type=std_logic lab=GndA}
 C {iopin.sym} 390 -190 3 0 {name=p22 lab=ICoarse2}
-C {sky130_fd_pr/nfet_01v8.sym} -390 60 0 0 {name=MNBS
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -390 60 0 0 {name=MNBS
 W=2
 L=0.2
 nf=1
@@ -270,7 +270,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} -370 140 1 0 {name=p23 sig_type=std_logic lab=GndA}

@@ -124,33 +124,33 @@ C {iopin.sym} 230 -90 2 0 {name=p12 lab=VddA18}
 C {lab_wire.sym} 560 -140 3 0 {name=p1 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 510 -60 2 0 {name=p2 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 630 -60 0 0 {name=p3 sig_type=std_logic lab=Out}
-C {sky130_fd_pr/pfet_01v8.sym} 460 -10 0 1 {name=MpDioOut
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -10 0 1 {name=MpDioOut
 W=64
 L=0.5
 nf=1
-mult=1
+mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 390 -10 2 0 {name=p4 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 670 -10 0 0 {name=MpMirrOut
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 670 -10 0 0 {name=MpMirrOut
 W=64
 L=0.5
 nf=1
-mult=1
+mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 440 -100 3 0 {name=p5 sig_type=std_logic lab=VddA18}
@@ -189,7 +189,7 @@ C {lab_wire.sym} 490 0 3 0 {name=p9 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 360 130 0 0 {name=p10 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 310 210 1 0 {name=p13 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 490 130 1 0 {name=p14 sig_type=std_logic lab=nOut}
-C {sky130_fd_pr/pfet_01v8.sym} 460 180 0 1 {name=MpSelOutDio
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 460 180 0 1 {name=MpSelOutDio
 W=5
 L=1
 nf=1
@@ -200,10 +200,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 670 180 0 0 {name=MpSelOutMirr1
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 670 180 0 0 {name=MpSelOutMirr
 W=5
 L=1
 nf=1
@@ -214,7 +214,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {lab_wire.sym} 740 180 0 0 {name=p15 sig_type=std_logic lab=VddA18}
@@ -239,7 +239,7 @@ C {lab_wire.sym} 900 110 0 0 {name=p20 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 850 190 1 0 {name=p21 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 440 90 3 0 {name=p22 sig_type=std_logic lab=OutDioDrain}
 C {lab_wire.sym} 690 80 3 0 {name=p23 sig_type=std_logic lab=OutMirr}
-C {sky130_fd_pr/pfet_01v8.sym} 770 330 0 1 {name=MpSelOutDio1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 770 330 0 1 {name=MpInDio
 W=9
 L=1
 nf=1
@@ -250,74 +250,74 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {iopin.sym} 750 430 1 0 {name=p24 lab=IIn}
 C {lab_wire.sym} 700 330 2 0 {name=p25 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 0 0 1 {name=MpDionOut1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 0 0 1 {name=MpDionOut1
 W=4
 L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1330 0 0 0 {name=MpMirrnOut1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1330 0 0 0 {name=MpMirrnOut1
 W=4
 L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1400 0 0 0 {name=p27 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1350 -80 3 0 {name=p28 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1100 -80 3 0 {name=p29 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1050 0 0 1 {name=p30 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 80 0 1 {name=MpDionOut2
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 80 0 1 {name=MpDionOut2
 W=4
 L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1330 80 0 0 {name=MpMirrnOut2
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1330 80 0 0 {name=MpMirrnOut2
 W=4
 L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1400 80 0 0 {name=p31 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1050 80 0 1 {name=p32 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 160 0 1 {name=MpSelnOutDio
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1120 160 0 1 {name=MpSelnOutDio
 W=1
 L=1
 nf=1
@@ -328,10 +328,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1330 160 0 0 {name=MpSelnOutMirr
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1330 160 0 0 {name=MpSelnOutMirr
 W=1
 L=1
 nf=1
@@ -342,7 +342,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {iopin.sym} 890 430 1 0 {name=p33 lab=IOut}

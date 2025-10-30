@@ -21,7 +21,7 @@ as follows:
 111: smallest bias current (11pA)
 This is dealt with on the host side
 in software.} -60 -270 0 0 0.3 0.3 {}
-T {The complte circuit for one configurable bias current} -570 -1120 0 0 1.3 1.3 {}
+T {The complete circuit for one configurable bias current} -570 -1120 0 0 1.3 1.3 {}
 T {Fine bits are encoded linearly} 300 -660 0 0 0.3 0.3 {}
 N 40 -820 50 -820 {lab=BiasVGate}
 N 200 -860 240 -860 {lab=IInDiv}
@@ -112,6 +112,8 @@ N 860 -500 860 -460 {lab=BiasDisable}
 N -570 -710 -510 -710 {lab=IBIT[15]}
 N -570 -680 -510 -680 {lab=IBIT[3]}
 N -570 -650 -510 -650 {lab=IBIT[2]}
+N -70 -580 100 -580 {lab=VddA18}
+N -70 -560 100 -560 {lab=GndA}
 C {iopin.sym} -360 -970 0 1 {name=p75 lab=VddA18}
 C {iopin.sym} -360 -950 0 1 {name=p76 lab=GndA}
 C {BiasCoarseBuffer.sym} -320 -800 0 0 {name=xCoarseBuf}
@@ -164,8 +166,6 @@ C {lab_wire.sym} 780 -670 3 1 {name=p44 sig_type=std_logic lab=BiasDisable}
 C {lab_wire.sym} 800 -670 3 1 {name=p45 sig_type=std_logic lab=BiasEnable}
 C {lab_wire.sym} 820 -670 3 1 {name=p46 sig_type=std_logic lab=NBias}
 C {lab_wire.sym} 840 -670 3 1 {name=p47 sig_type=std_logic lab=PBias}
-C {sky130_stdcells/inv_12.sym} -50 -570 0 0 {name=xInvLatch VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 80 -570 0 0 {name=xInvnLatch VGND=GndA VNB=GndA VPB=VddA18 VPWR=VddA18 prefix=sky130_fd_sc_hd__ }
 C {ipin.sym} -120 -570 2 1 {name=p48 lab=BiasLatchEnable}
 C {lab_wire.sym} 0 -570 0 1 {name=p49 sig_type=std_logic lab=nLatch}
 C {lab_wire.sym} 160 -570 0 0 {name=p50 sig_type=std_logic lab=Latch}
@@ -221,3 +221,7 @@ C {ipin.sym} -360 -880 2 1 {name=p89 lab=PowerDown}
 C {ipin.sym} -360 -860 2 1 {name=p90 lab=BufferN}
 C {ipin.sym} -360 -840 2 1 {name=p91 lab=BufferP}
 C {iopin.sym} -360 -820 0 1 {name=p92 lab=Rail}
+C {sky130_fd_sc_hd__inv_1.sym} -50 -570 0 0 {name=xInvLatch}
+C {sky130_fd_sc_hd__inv_1.sym} 80 -570 0 0 {name=xInvnLatch}
+C {lab_wire.sym} -10 -580 0 1 {name=p93 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} -10 -560 2 0 {name=p94 sig_type=std_logic lab=GndA}

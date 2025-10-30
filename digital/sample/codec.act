@@ -1,0 +1,197 @@
+import std;
+import sim;
+
+
+/*
+ * This returns the popcount-1, and should only be used
+ * when there is at least one bit set in the integer
+ */
+template<pint N>
+function popcount (int<N> x) : int<std::ceil_log2(N)>
+{
+  chp {
+    self := (+ i : N : x{i}) + ~int(1,std::ceil_log2(N)) + 1
+   }
+}
+
+/*
+ * Used for variable length encoding
+ */
+template<pint N>
+function logcode (int<N> x) : int<std::ceil_log2(N+1)>
+{
+  chp {
+   [ x = 0 -> self := 0
+   [] x = 1 -> self := 1
+   [] x > 1 -> self := std::bit::find_msb_pos<N>(x) + 1
+   ]
+  }
+}
+
+template<pint N>
+function logcode2(int<N> x) : int<std::ceil_log2(N)>
+{
+  chp {
+   [ x = 0 -> self := 0
+   [] x = 1 -> self := 0
+   [] x > 1 -> self := std::bit::find_msb_pos<N>(x)
+   ]
+  }
+}
+
+
+/* read a 64-bit value and send it out a sequence of indices that are
+   non-zero.
+
+   Encoding: <rowid, odd-even-bit> <count-of-non-zero> <idx> <idx> ...
+
+   Each idx is the gap to the next non-zero value.
+*/
+defproc rawbits(chan?(int<64>) L; chan!(int<7>) R)
+{
+  bool odd;
+  int<6> row;
+  int<64> x;
+  int<6> pos;
+
+ chp {
+  odd-;
+  row := 0;
+ *[ L?x;
+   [ x = 0 -> skip
+  [] else ->
+       R!{row,int(odd)};
+       R!popcount<64>(x);
+      *[ x != 0 ->
+	 pos := std::bit::find_msb_pos<64> (x);
+         x := x << (64-pos);
+	 R!(~pos)
+       ]
+   ];
+   row := row + int(odd);
+   odd := ~odd
+ ]
+ }
+}
+
+/*
+ * Serializes the encoding above. Note that this version includes
+ * extra variables to print stats of a standard serial encoding v/s
+ * this encoding. They should be stripped out for synthesis.
+ */
+defproc encoder(chan?(int<7>) I; chan!(int<1>) O)
+{
+  int<7> x, n;
+  int<6> v, newv;
+  int<3> c;
+  int debug;
+  int orig;
+  chp {
+    *[ debug := 0; // only for instrumentation
+       I?x;
+       c := 0;
+       log ("enc row number: ", x{6..1}, "; parity: ", x{0});
+      *[ c < 7 -> O!x{0}; x := x >> 1; c := c + 1 ];
+       I?x;
+       x := x + 1;
+       n := x;
+       log ("enc number of non-zeros: ", n);
+       orig := n * 6; // only for instrumentation
+       c := 0;
+      *[ c < 6 -> O!x{0}; x := x >> 1; c := c + 1 ];
+      *[ n != 0 ->
+	 I?x;
+	 log ("%b enc val: ", x, " (", x, ")");
+         v := logcode<6>(x);
+         *[ v != 0 -> O!0; debug := debug + 1; v := v - 1 ];
+          O!1; debug := debug + 1;
+         v := logcode2<6>(x);
+         *[ v != 0 -> O!x{0}; debug := debug + 1; x := x >> 1; v := v - 1  ];
+         n := n - 1
+       ];
+       log ("Orig: ", orig, " bits; other: ", debug, " bits")
+    ]
+  }
+}
+
+
+/*
+ * Decodes the serial bit-stream for debugging purposes
+ */
+defproc decoder(chan?(int<1>) I; chan!(int<7>) O)
+{
+  int<7> x, out, prev;
+  int<1> v;
+  int<6> n;
+  int<6> tmp;
+
+  chp {
+    *[ x := 0;
+       prev := 0;
+       (; i : 7 : I?v; x{i} := v);
+       log ("decoded row: ", x{6..1}, "; parity: ", x{0});
+       O!x;
+       n := 0;
+       (; i : 6 : I?v; n{i} := v);
+       log ("decoded non-zero count: ", n);
+       O!n;
+       *[ n != 0 ->  
+          n := n - 1;
+          x := 0;
+	  *[ I?v; x := x + ~v <- v != 1 ];
+	  [x != 0 -> out := (1 << (x-1)) [] else -> out := 0 ];
+           tmp := 0;
+	  *[ x > 1 -> I?v; out := out | (v << tmp); tmp := tmp + 1; x := x - 1 ];
+	  log ("decoded non-zero location: ", out+prev);
+	  O!(out+prev);
+          prev := prev + out + 1
+       ];
+       log ("** finished **")
+   ]
+ }
+}
+
+
+function dump() : bool
+{
+  int a;
+  chp {
+         log_st("");
+         log_p ("  pos: ");
+         a := 0; *[ a < 64 -> log_p(a % 10); a := a + 1 ];
+         log_nl(""); log_st("");
+         log_p ("     : ");
+         a := 0; *[ a < 64 -> log_p(a / 10); a := a + 1 ];
+         log_nl("")
+  }
+}
+
+defproc test()
+{
+   rawbits r;
+   encoder e(r.R);
+   decoder d(e.O);
+   sim::sink<7,0,false> snk(d.O);
+   pint n = 7;
+   int<64> data[n];
+   int x;
+   bool res;
+   chp {
+      data[0] := 0xf0;
+      data[1] := 0b10111010100;
+      data[2] := 0b1000001001000101001000;
+      data[3] := 0;
+      data[4] := ~data[0];
+      data[5] := ~data[1];
+      data[6] := ~data[2];
+      x := 0;
+     *[ x < n -> 
+         res := dump();
+         log ("%b data: ", int(data[x],64));
+         r.L!data[x];
+         x := x + 1
+      ]
+   }
+}
+
+test t;
