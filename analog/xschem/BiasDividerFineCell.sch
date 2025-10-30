@@ -27,7 +27,7 @@ N 190 90 190 120 {lab=INOut}
 N 170 -10 220 -10 {lab=VGate}
 N 220 -80 220 -10 {lab=VGate}
 N 220 -80 250 -80 {lab=VGate}
-C {sky130_fd_pr/pfet_01v8.sym} 220 -120 3 0 {name=Mr
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 220 -120 3 0 {name=Mr
 W=9
 L=1
 nf=1
@@ -38,10 +38,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 150 -80 0 1 {name=M2ru
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 150 -80 0 1 {name=M2ru
 W=9
 L=1
 nf=1
@@ -52,7 +52,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {iopin.sym} 300 -140 2 1 {name=p1 lab=INext}
@@ -62,7 +62,7 @@ C {ipin.sym} 250 -80 0 1 {name=p4 lab=VGate}
 C {iopin.sym} -20 -60 0 1 {name=p5 lab=VddA18}
 C {lab_wire.sym} 80 -80 2 0 {name=p37 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 220 -190 3 0 {name=p6 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 150 -10 0 1 {name=M2rl
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 150 -10 0 1 {name=M2rl
 W=9
 L=1
 nf=1
@@ -73,11 +73,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 80 -10 2 0 {name=p7 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 210 60 0 1 {name=MswNOut
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 210 60 0 1 {name=MswNOut
 W=2
 L=0.5
 nf=1
@@ -88,11 +88,11 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {lab_wire.sym} 140 60 2 0 {name=p8 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 50 60 0 0 {name=MswOut
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 50 60 0 0 {name=MswOut
 W=2
 L=0.5
 nf=1
@@ -103,7 +103,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {lab_wire.sym} 120 60 2 1 {name=p9 sig_type=std_logic lab=VddA18}

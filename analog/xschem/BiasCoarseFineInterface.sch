@@ -189,7 +189,7 @@ C {lab_wire.sym} 490 0 3 0 {name=p9 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 360 130 0 0 {name=p10 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 310 210 1 0 {name=p13 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 490 130 1 0 {name=p14 sig_type=std_logic lab=nOut}
-C {sky130_fd_pr/pfet_01v8.sym} 460 180 0 1 {name=MpSelOutDio
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 460 180 0 1 {name=MpSelOutDio
 W=5
 L=1
 nf=1
@@ -200,10 +200,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 670 180 0 0 {name=MpSelOutMirr
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 670 180 0 0 {name=MpSelOutMirr
 W=5
 L=1
 nf=1
@@ -214,7 +214,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {lab_wire.sym} 740 180 0 0 {name=p15 sig_type=std_logic lab=VddA18}
@@ -317,7 +317,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 1400 80 0 0 {name=p31 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1050 80 0 1 {name=p32 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 160 0 1 {name=MpSelnOutDio
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1120 160 0 1 {name=MpSelnOutDio
 W=1
 L=1
 nf=1
@@ -328,10 +328,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1330 160 0 0 {name=MpSelnOutMirr
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1330 160 0 0 {name=MpSelnOutMirr
 W=1
 L=1
 nf=1
@@ -342,7 +342,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {iopin.sym} 890 430 1 0 {name=p33 lab=IOut}

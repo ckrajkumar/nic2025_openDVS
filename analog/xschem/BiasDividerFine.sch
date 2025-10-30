@@ -152,8 +152,8 @@ C {BiasLatch.sym} -500 -370 0 0 {name=xlatch6}
 C {BiasDividerFineCell.sym} -700 -500 0 0 {name=xdiv7}
 C {BiasLatch.sym} -700 -370 0 0 {name=xlatch7}
 C {lab_wire.sym} 1150 -580 0 0 {name=p13 sig_type=std_logic lab=termDio}
-C {sky130_fd_pr/pfet_01v8.sym} 980 -560 3 0 {name=MrTerm
-W=91
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 980 -560 3 0 {name=MrTerm
+W=9
 L=1
 nf=1
 mult=2
@@ -163,7 +163,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 980 -630 3 0 {name=p14 sig_type=std_logic lab=VddA18}
@@ -222,7 +222,7 @@ C {lab_wire.sym} 270 -540 0 1 {name=p52 sig_type=std_logic lab=VGate}
 C {lab_wire.sym} 470 -540 0 1 {name=p59 sig_type=std_logic lab=VGate}
 C {lab_wire.sym} 670 -540 0 1 {name=p60 sig_type=std_logic lab=VGate}
 C {lab_wire.sym} 980 -510 3 1 {name=p61 sig_type=std_logic lab=VGate}
-C {sky130_fd_pr/nfet_01v8.sym} 1150 -490 0 0 {name=Mnterm
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1150 -490 0 0 {name=Mnterm
 W=8
 L=0.8
 nf=1 
@@ -233,7 +233,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 1200 -490 0 0 {name=p62 sig_type=std_logic lab=GndA}
