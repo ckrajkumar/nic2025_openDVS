@@ -10,11 +10,13 @@ from bokeh.models import HoverTool, ColumnDataSource
 from bokeh.palettes import Category10
 from bokeh.layouts import layout,grid
 
+run_names = []
 #run_name = 'RUN_2025-10-29_20-16-25'
 #run_name = 'RUN_2025-10-29_21-37-14'
-run_name = 'RUN_2025-10-30_11-03-21'
-#run_name = 'RUN_2025-10-30_11-15-53'
-run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+run_names.append('RUN_2025-10-30_11-03-21') # SVT finediv
+run_names.append('RUN_2025-10-30_11-15-53') # LVT  finediv
+run_names.append('RUN_2025-10-30_12-32-17') # HVT finediv
+
 measfile_name = 'tb_BiasBranchnMasterx1_op'
 measnames_list=['coarse_code',
                 'fine_code',
@@ -68,10 +70,11 @@ measnames_list=['coarse_code',
                 'id_biasbuffer_mndio',
                 'id_biasbuffer_mnmir']
 
-def parse_run_folders():
+def parse_run_folders(run_name):
     """Parse run folders and extract measurement data into a pandas DataFrame"""
     data_rows = []
     
+    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
     # Find all run folders in the sweep directory
     sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
     run_folders = glob.glob(os.path.join(sweep_dir, 'run_*'))
@@ -112,9 +115,8 @@ def parse_run_folders():
     df = pd.DataFrame(data_rows)
     return df
 
-def plot_iout_vs_fine_code(df):
+def plot_iout_vs_fine_code(df,run_name):
     """Create bokeh plot of iout vs fine_code, grouped by coarse_code"""
-    output_file("iout_vs_fine_code.html")
     
     # Create figure
     p_list = []
@@ -126,7 +128,7 @@ def plot_iout_vs_fine_code(df):
     
     # Plot each coarse code group
     for i, coarse_val in enumerate(unique_coarse):
-        p_list.append(figure(title=f"Iout vs Fine Code for Coarse Code {coarse_val}",
+        p_list.append(figure(title=f"Iout vs Fine Code for Coarse Code {coarse_val} {run_name}",
                    x_axis_label="Fine Code", 
                    y_axis_label="Iout (A)",
                    width=400, height=400))
@@ -159,12 +161,15 @@ def plot_iout_vs_fine_code(df):
     #p_list[-1].legend.click_policy = "hide"
     
     # Save plot
+    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+    sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
+    outfile_name = f"{sweep_dir}/iout_vs_fine_code.html"
+    output_file(outfile_name)
     show(grid(p_list,ncols=4))
-    print("Plot saved as iout_vs_fine_code.html")
+    print(f"Plot saved as {outfile_name}")
 
-def plot_vdsat_vs_fine_code(df, vdsat_var):
+def plot_vdsat_vs_fine_code(df, vdsat_var,run_name):
     """Create bokeh plot of vdsat vs fine_code, with one plot per coarse_code"""
-    output_file(f"{vdsat_var}_vs_fine_code.html")
     
     # Create figure list
     p_list = []
@@ -176,7 +181,7 @@ def plot_vdsat_vs_fine_code(df, vdsat_var):
     
     # Plot each coarse code group
     for i, coarse_val in enumerate(unique_coarse):
-        p_list.append(figure(title=f"{vdsat_var} vs Fine Code for Coarse Code {coarse_val}",
+        p_list.append(figure(title=f"{vdsat_var} vs Fine Code for Coarse Code {coarse_val} {run_name}",
                    x_axis_label="Fine Code", 
                    y_axis_label=f"{vdsat_var} (V)",
                    width=400, height=400))
@@ -204,33 +209,38 @@ def plot_vdsat_vs_fine_code(df, vdsat_var):
         p_list[-1].add_tools(hover_list[-1])
     
     # Save plot
+    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+    sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
+    outfile_name = f"{sweep_dir}/{vdsat_var}_vs_fine_code.html"
+    output_file(outfile_name)
     save(grid(p_list, ncols=4))
-    print(f"Plot saved as {vdsat_var}_vs_fine_code.html")
+    print(f"Plot saved as {outfile_name}")
 
-def plot_all_vdsat_variables(df):
+def plot_all_vdsat_variables(df,run_name):
     """Create plots for all vdsat variables"""
     vdsat_vars = [name for name in measnames_list if name.startswith('vdsat_')]
     
     for vdsat_var in vdsat_vars:
         print(f"Creating plot for {vdsat_var}")
-        plot_vdsat_vs_fine_code(df, vdsat_var)
+        plot_vdsat_vs_fine_code(df, vdsat_var, run_name)
 
 if __name__ == "__main__":
     # Parse data and create DataFrame
-    df = parse_run_folders()
-    
-    if not df.empty:
-        print(f"Successfully loaded {len(df)} measurement points")
-        print(f"Columns: {list(df.columns)}")
-        print(f"Coarse codes: {sorted(df['coarse_code'].unique())}")
-        print(f"Fine code range: {df['fine_code'].min()} to {df['fine_code'].max()}")
+    for run_name in run_names:
+        df = parse_run_folders(run_name)
         
-        # Save DataFrame to CSV for inspection
-        df.to_csv('measurement_data.csv', index=False)
-        print("Data saved to measurement_data.csv")
-        
-        # Create plots
-        plot_iout_vs_fine_code(df)
-        plot_all_vdsat_variables(df)
-    else:
-        print("No measurement data found")
+        if not df.empty:
+            print(f"{run_name}: Successfully loaded {len(df)} measurement points")
+            print(f"{run_name}: Columns: {list(df.columns)}")
+            print(f"{run_name}: Coarse codes: {sorted(df['coarse_code'].unique())}")
+            print(f"{run_name}: Fine code range: {df['fine_code'].min()} to {df['fine_code'].max()}")
+            
+            # Save DataFrame to CSV for inspection
+            #df.to_csv('measurement_data.csv', index=False)
+            #print("Data saved to measurement_data.csv")
+            
+            # Create plots
+            plot_iout_vs_fine_code(df,run_name)
+            plot_all_vdsat_variables(df,run_name)
+        else:
+            print("No measurement data found")
