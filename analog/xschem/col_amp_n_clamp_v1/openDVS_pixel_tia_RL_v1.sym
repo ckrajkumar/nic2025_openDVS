@@ -1,0 +1,41 @@
+v {xschem version=3.4.8RC file_version=1.3}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -121.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -112 0 0 0.2 0.2 {}
+P 4 5 130 -100 -130 -100 -130 100 130 100 130 -100 {}
+B 5 147.5 -92.5 152.5 -87.5 {name=feedback dir=inout}
+L 7 130 -90 150 -90 {}
+T {feedback} 125 -94 0 1 0.2 0.2 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=pix_rst dir=inout}
+L 7 130 -70 150 -70 {}
+T {pix_rst} 125 -74 0 1 0.2 0.2 {}
+B 5 147.5 -52.5 152.5 -47.5 {name=sense dir=inout}
+L 7 130 -50 150 -50 {}
+T {sense} 125 -54 0 1 0.2 0.2 {}
+B 5 -152.5 -92.5 -147.5 -87.5 {name=row_sel dir=in}
+L 4 -150 -90 -130 -90 {}
+T {row_sel} -125 -94 0 0 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=pr_bias dir=inout}
+L 7 130 -30 150 -30 {}
+T {pr_bias} 125 -34 0 1 0.2 0.2 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=vdd dir=inout}
+L 7 130 -10 150 -10 {}
+T {vdd} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=vpd dir=inout}
+L 7 130 10 150 10 {}
+T {vpd} 125 6 0 1 0.2 0.2 {}
+B 5 147.5 27.5 152.5 32.5 {name=sf_bias dir=inout}
+L 7 130 30 150 30 {}
+T {sf_bias} 125 26 0 1 0.2 0.2 {}
+B 5 147.5 47.5 152.5 52.5 {name=vd dir=inout}
+L 7 130 50 150 50 {}
+T {vd} 125 46 0 1 0.2 0.2 {}
+B 5 147.5 67.5 152.5 72.5 {name=vref dir=inout}
+L 7 130 70 150 70 {}
+T {vref} 125 66 0 1 0.2 0.2 {}
+B 5 147.5 87.5 152.5 92.5 {name=gnd dir=inout}
+L 7 130 90 150 90 {}
+T {gnd} 125 86 0 1 0.2 0.2 {}

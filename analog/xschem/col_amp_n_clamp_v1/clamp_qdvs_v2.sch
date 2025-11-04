@@ -358,3 +358,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {lab_wire.sym} -430 -20 0 0 {name=p37 sig_type=std_logic lab=gnd}
