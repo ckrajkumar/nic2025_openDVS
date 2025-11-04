@@ -42,7 +42,7 @@ N 690 -130 690 -80 {lab=gnd}
 N -130 -640 60 -640 {lab=vout_sense}
 N 380 -510 380 -490 {lab=gnd}
 N 340 -510 340 -490 {lab=vdd}
-N 180 -680 280 -680 {lab=vcm}
+N 180 -680 280 -680 {lab=vcm_noise}
 N 240 -610 280 -610 {lab=clk}
 N 240 -710 280 -710 {lab=clk_not}
 N 420 -670 540 -670 {lab=vcompp_dyn}
@@ -55,6 +55,9 @@ N 370 -600 370 -580 {lab=#net3}
 N 370 -580 380 -580 {lab=#net3}
 N 380 -580 380 -570 {lab=#net3}
 N 240 -700 280 -700 {lab=clk}
+N 60 -740 120 -740 {lab=vcm}
+N 120 -680 180 -680 {lab=vcm_noise}
+N 150 -620 150 -600 {lab=gnd}
 C {devices/code.sym} 890 -660 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -65,14 +68,14 @@ value="
 spice_ignore=false}
 C {code_shown.sym} -1015 -480 0 0 {name=NGSPICE
 only_toplevel=true
-value="* sim
-*.option reltol=1e-3 abstol=1e-12 vntol=1e-5 gmin=1e-10 
-*.option trtol=6 chgtol=1e-12
+value="
+.option reltol=1e-6 abstol=1e-15 vntol=1e-9 gmin=1e-15 
+.option trtol=5 chgtol=1e-16
 
 .param big = 0.08
 .param medium = 0.01
 .param small = 0.002
-.param xvcm = 0.6
+.param xvcm = 0.9
 .param xvcm_low = \{xvcm - 0.001\}
 .param xvcm_high = \{xvcm + 0.001\}
 .param xipd = 1e-9
@@ -93,6 +96,7 @@ value="* sim
 * plot v(vout_sense)
 save v(vout_sense)
 save v(vcomp)
+let vnoise_in = v(vcm_noise) - v(vcm)
 save all
 tran .1n 30u
 *ac dec 20 1 1e10
@@ -196,7 +200,7 @@ C {lab_wire.sym} 690 -80 0 0 {name=vcascp10 sig_type=std_logic lab=gnd
 value=xcascp}
 C {lab_wire.sym} 380 -490 3 0 {name=p3 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 340 -490 3 0 {name=p5 sig_type=std_logic lab=vdd}
-C {ipin.sym} 180 -680 0 0 {name=p6 lab=vcm}
+C {ipin.sym} 60 -740 0 0 {name=p6 lab=vcm}
 C {lab_wire.sym} 0 -640 0 0 {name=p7 sig_type=std_logic lab=vout_sense
 }
 C {lab_wire.sym} 240 -610 0 0 {name=vcascp1 sig_type=std_logic lab=clk}
@@ -207,6 +211,19 @@ C {opin.sym} 540 -670 0 0 {name=p14 lab=vcompp_dyn
 C {opin.sym} 540 -650 0 0 {name=p20 lab=vcompn_dyn}
 C {vsource.sym} 340 -540 0 1 {name=Vgnd1 value=0 savecurrent=false}
 C {vsource.sym} 380 -540 0 0 {name=Vgnd2 value=0 savecurrent=false}
-C {dyn_comp.sym} 290 -550 0 0 {name=x1}
 C {lab_wire.sym} 240 -700 0 0 {name=vcascp6 sig_type=std_logic lab=clk
 }
+C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/dyn_comp.sym} 290 -550 0 0 {name=x1}
+C {res.sym} 120 -710 0 0 {name=R1
+value=15
+footprint=1206
+device=resistor
+m=1}
+C {lab_wire.sym} 240 -680 0 0 {name=p2 sig_type=std_logic lab=vcm_noise
+}
+C {capa.sym} 150 -650 0 0 {name=C3
+m=1
+value=300f
+footprint=1206
+device="ceramic capacitor"}
+C {lab_wire.sym} 150 -600 0 0 {name=p8 sig_type=std_logic lab=gnd}
