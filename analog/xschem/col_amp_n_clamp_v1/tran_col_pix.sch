@@ -216,7 +216,7 @@ Vvcm vcm gnd DC 0.9
 	
 	save all
 	op
-	tran 0.2n 39u 
+	tran 0.1n 39u 
 	plot v(vphoto) v(vph_sf) v(vin) v(vout_sense) v(vref) v(vcmp) v(vcm) v(vout)
 
 
@@ -234,7 +234,7 @@ value=30f
 footprint=1206
 device="ceramic capacitor"}
 C {lab_pin.sym} -120 -140 2 0 {name=p1 sig_type=std_logic lab=vphoto}
-C {vsource.sym} -190 50 0 0 {name=vref value="pulse(0 0.084 100n 10n 10n 1.140u 3u)" savecurrent=false}
+C {vsource.sym} -190 50 0 0 {name=vref value="pulse(0 0.082 100n 10n 10n 1.140u 3u)" savecurrent=false}
 C {isource.sym} -120 -90 0 0 {name=Iphoto value=I_PH}
 C {sky130_fd_pr/annotate_fet_params.sym} -480 -10 0 0 {name=annot2 ref=M2}
 C {sky130_fd_pr/annotate_fet_params.sym} -370 -10 0 0 {name=annot3 ref=M3}
@@ -421,8 +421,8 @@ C {vsource.sym} -120 930 0 0 {name=V9 value=0 savecurrent=true}
 C {lab_wire.sym} -120 990 0 0 {name=p62 sig_type=std_logic lab=gnd}
 C {vsource.sym} -40 920 0 0 {name=V10 value=1.8 savecurrent=true}
 C {lab_wire.sym} -40 980 0 0 {name=p59 sig_type=std_logic lab=gnd}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/final/col_amp_n_clamp_v1/col_amp_v1.sym} 270 -250 0 0 {name=x2}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/final/col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 980 -250 0 1 {name=x1}
+C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/col_amp_v1.sym} 270 -250 0 0 {name=x2}
+C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 980 -250 0 1 {name=x1}
 C {lab_wire.sym} -260 -130 0 1 {name=p2 sig_type=std_logic lab=sf_bias}
 C {vsource.sym} -40 -200 0 0 {name=vpix_cur value="DC 0" savecurrent=true}
 C {lab_wire.sym} 20 -230 0 0 {name=p3 sig_type=std_logic lab=vdd}
@@ -558,5 +558,5 @@ footprint=1206
 device="ceramic capacitor"}
 C {lab_wire.sym} 1100 200 0 0 {name=p102 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} -190 -230 0 1 {name=p110 sig_type=std_logic lab=pix_rst}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/final/col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -430 -160 0 0 {name=x4}
+C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -430 -160 0 0 {name=x4}
 C {lab_wire.sym} -250 -110 0 1 {name=p21 sig_type=std_logic lab=vd}
