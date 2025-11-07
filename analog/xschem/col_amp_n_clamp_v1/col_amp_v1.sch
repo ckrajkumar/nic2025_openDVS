@@ -304,4 +304,4 @@ spiceprefix=X
 C {lab_wire.sym} 0 190 0 0 {name=p39 sig_type=std_logic lab=amp_p_vg}
 C {lab_wire.sym} 160 190 0 0 {name=p40 sig_type=std_logic lab=amp_p_vg}
 C {lab_wire.sym} 340 190 0 0 {name=p41 sig_type=std_logic lab=amp_p_vg}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/final/col_amp_n_clamp_v1/amp_p_5T.sym} -240 190 0 0 {name=x1}
+C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/amp_p_5T.sym} -240 190 0 0 {name=x1}
