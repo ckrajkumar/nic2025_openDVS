@@ -60,7 +60,7 @@ N -340 -300 -220 -300 {lab=vdd}
 N -340 -240 -140 -240 {lab=vout}
 N -170 -270 -140 -270 {lab=gnd}
 N -300 -270 -260 -270 {lab=vgn}
-N -700 -20 -140 -20 {lab=#net1}
+N -700 -20 -140 -20 {lab=gnd}
 N -700 -80 -140 -80 {lab=vout}
 N -370 -50 -340 -50 {lab=vdd}
 N -530 -50 -500 -50 {lab=vdd}
@@ -70,6 +70,13 @@ N -460 -50 -420 -50 {lab=vgp}
 N -300 -50 -260 -50 {lab=vgp}
 N -660 -50 -620 -50 {lab=vgp}
 N -740 -180 -140 -180 {lab=vout}
+N 420 -470 500 -470 {lab=clamp_leakp}
+N 290 -440 540 -440 {lab=vgn}
+N 540 -470 620 -470 {lab=vdd}
+N 670 -470 750 -470 {lab=clamp_leakp}
+N 540 -440 790 -440 {lab=vgn}
+N 790 -470 870 -470 {lab=vdd}
+N 290 -500 790 -500 {lab=vdd}
 C {sky130_fd_pr/nfet_01v8.sym} 20 -270 0 0 {name=Mndio
 W=0.75
 L=0.5
@@ -99,7 +106,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 20 -470 0 0 {name=Mpb
-W=1.5
+W=0.75
 L=0.5
 nf=1
 mult=1
@@ -275,7 +282,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 270 -470 0 0 {name=Mpb1
-W=1.5
+W=0.75
 L=0.5
 nf=1
 mult=1
@@ -359,3 +366,35 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} -430 -20 0 0 {name=p37 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 620 -470 0 0 {name=p38 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 500 -470 0 0 {name=p39 sig_type=std_logic lab=clamp_leakp}
+C {sky130_fd_pr/pfet_01v8.sym} 520 -470 0 0 {name=Mpb2
+W=0.75
+L=0.5
+nf=1
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 870 -470 0 0 {name=p40 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 750 -470 0 0 {name=p41 sig_type=std_logic lab=clamp_leakp}
+C {sky130_fd_pr/pfet_01v8.sym} 770 -470 0 0 {name=Mpb3
+W=0.75
+L=0.5
+nf=1
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
