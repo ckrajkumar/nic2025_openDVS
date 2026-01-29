@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -420 -40 -330 -40 {lab=pbias}
 N -420 -20 -330 -20 {lab=pbchk}
@@ -394,8 +393,8 @@ C {lab_wire.sym} 690 760 0 0 {name=p80 sig_type=std_logic lab=pbias}
 C {vsource.sym} 510 900 0 0 {name=V3 value=0.5 savecurrent=true}
 C {iopin.sym} 510 990 2 1 {name=p50 lab=gnd}
 C {lab_wire.sym} 510 820 0 0 {name=p59 sig_type=std_logic lab=vcascp}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/col_amp_v1.sym} -570 40 0 0 {name=x1}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 130 40 0 1 {name=x2}
+C {col_amp_n_clamp_v1/col_amp_v1.sym} -570 40 0 0 {name=x1}
+C {col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 130 40 0 1 {name=x2}
 C {sky130_fd_pr/annotate_fet_params.sym} -1420 630 0 0 {name=annot1 ref=M1}
 C {capa.sym} -900 550 0 0 {name=C3
 m=1
@@ -416,7 +415,7 @@ C {lab_wire.sym} -1040 450 0 0 {name=p66 sig_type=std_logic lab=pr_bias}
 C {lab_wire.sym} -960 630 0 0 {name=p67 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} -1120 600 2 1 {name=p90 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} -1030 410 0 1 {name=p110 sig_type=std_logic lab=pix_rst}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -1270 480 0 0 {name=x4}
+C {col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -1270 480 0 0 {name=x4}
 C {lab_wire.sym} -1090 530 0 1 {name=p68 sig_type=std_logic lab=vin}
 C {sky130_fd_pr/nfet_01v8.sym} -270 990 0 0 {name=M11
 W=0.5

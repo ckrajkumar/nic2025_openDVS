@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 130 180 130 190 {lab=gnd}
 N -350 60 -350 70 {lab=vpd}
@@ -30,7 +29,7 @@ N 320 80 340 80 {lab=vd}
 N 380 80 410 80 {lab=gnd}
 N 380 -40 380 50 {lab=sense_local}
 N 450 120 450 140 {lab=lrst}
-N 450 180 450 210 {lab=gnd}
+N 430 110 430 140 {lab=gnd}
 N 320 180 420 180 {lab=vd}
 N 680 -190 680 30 {lab=feedback}
 N 480 180 530 180 {lab=feedback}
@@ -79,6 +78,23 @@ N -350 70 -180 70 {lab=vpd}
 N -310 10 -80 10 {lab=vpr}
 N -80 -60 -50 -60 {lab=vdd}
 N -80 70 -50 70 {lab=gnd}
+N 450 360 480 360 {lab=gnd}
+N 450 310 450 360 {lab=gnd}
+N 450 310 510 310 {lab=gnd}
+N 510 310 510 320 {lab=gnd}
+N 540 360 570 360 {lab=gnd}
+N 570 310 570 360 {lab=gnd}
+N 510 310 570 310 {lab=gnd}
+N 450 360 450 390 {lab=gnd}
+N 450 390 510 390 {lab=gnd}
+N 510 360 510 390 {lab=gnd}
+N 240 290 260 290 {lab=gnd}
+N 190 330 230 330 {lab=gnd}
+N 190 290 190 330 {lab=gnd}
+N 190 290 240 290 {lab=gnd}
+N 260 290 290 290 {lab=gnd}
+N 290 290 290 330 {lab=gnd}
+N 450 180 450 210 {lab=gnd}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 270 80 3 0 {name=CSAMPLE model=cap_mim_m3_1 W=1 L=1 MF=8 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 270 180 3 0 {name=CREF model=cap_mim_m3_1 W=1 L=1 MF=2 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} -330 10 0 1 {name=Mpd
@@ -110,7 +126,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 450 160 1 0 {name=Msw
+C {sky130_fd_pr/nfet_01v8.sym} 510 340 1 0 {name=Msw
 W=0.75
 L=0.75
 nf=1 
@@ -186,7 +202,7 @@ C {iopin.sym} 630 -220 3 0 {name=p6 lab=pix_rst}
 C {iopin.sym} 680 -220 3 0 {name=p5 lab=feedback}
 C {lab_wire.sym} 580 30 0 0 {name=p12 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 430 -40 0 0 {name=p14 sig_type=std_logic lab=gnd}
-C {lab_wire.sym} 450 210 0 0 {name=p15 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 430 110 2 0 {name=p15 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 160 -50 0 0 {name=p16 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} -380 10 0 1 {name=p17 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 160 120 0 0 {name=p18 sig_type=std_logic lab=gnd}
@@ -242,3 +258,24 @@ perim=20
 spiceprefix=X
 }
 C {iopin.sym} 320 160 0 0 {name=p30 lab=vd}
+C {lab_wire.sym} 470 310 0 0 {name=p3 sig_type=std_logic lab=gnd}
+C {switch_ngspice.sym} 260 330 1 0 {name=S2 model=SW1
+device_model=".MODEL SW1 SW 
++ VT=0.9 VH=0.01
++ RON=0.01 ROFF=10G "}
+C {lab_wire.sym} 220 290 0 0 {name=p31 sig_type=std_logic lab=gnd}
+C {sky130_fd_pr/nfet_01v8.sym} 450 160 1 0 {name=Msw1
+W=0.75
+L=0.75
+nf=1 
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 450 210 0 0 {name=p32 sig_type=std_logic lab=gnd}

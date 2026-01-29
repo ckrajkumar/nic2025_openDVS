@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -120 -50 -120 -40 {lab=gnd}
 N -120 -130 -120 -120 {lab=vphoto}
@@ -94,7 +93,6 @@ N -120 840 -40 840 {lab=#net13}
 N -40 950 -40 980 {lab=gnd}
 N -280 -90 -190 -90 {lab=vref}
 N -280 -130 -230 -130 {lab=sf_bias}
-N -280 -150 -120 -150 {lab=vphoto}
 N -280 -170 -40 -170 {lab=#net14}
 N -40 -230 20 -230 {lab=vdd}
 N -630 -250 -580 -250 {lab=row_sel}
@@ -175,6 +173,14 @@ N 1100 180 1100 200 {lab=gnd}
 N 1080 120 1120 120 {lab=Vthresh}
 N 950 710 1010 710 {lab=pbias}
 N -280 -110 -190 -110 {lab=vd}
+N -280 -150 -180 -150 {lab=#net21}
+N -520 1160 -520 1170 {lab=GND!}
+N -560 1170 -520 1170 {lab=GND!}
+N -590 1160 -590 1170 {lab=GND!}
+N -560 1170 -560 1180 {lab=GND!}
+N -590 1170 -560 1170 {lab=GND!}
+N -590 1070 -590 1100 {lab=gnd}
+N -520 1070 -520 1100 {lab=vdd}
 C {devices/code.sym} -870 -370 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -183,11 +189,15 @@ value="
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
-C {code_shown.sym} -1700 10 0 0 {name=NGSPICE
+C {code_shown.sym} -1670 10 0 0 {name=NGSPICE
 only_toplevel=true
 value="
+.save v(@m.xcolAmp.xamp.xminp.msky130_fd_pr__pfet_01v8[vdsat])
+.save v(@m.xcolAmp.xamp.xminm.msky130_fd_pr__pfet_01v8[vdsat])
+.save v(@m.xcolAmp.xamp.xmdio.msky130_fd_pr__nfet_01v8[vdsat])
+.save v(@m.xcolAmp.xamp.xmmirr.msky130_fd_pr__nfet_01v8[vdsat])
 
-Vvdd vdd gnd DC pwr_volt
+*Vvdd vdd gnd DC xvdd
 
 *Bias Setting
 .param xpr_bias=10n
@@ -197,17 +207,46 @@ Vvdd vdd gnd DC pwr_volt
 .param xclmp_lk_n=10p
 .param xpix_rst_bias=100n 
 .param I_PH = 0
-.param pwr_volt = 1.8
+.param xvdd = 1.8
+
+.param xvcascn = 0.5
+.param xvcomp_thresh = 0.9
+
+.param xvref_dc = 0.6
+.param xvref_low = 78m
+.param xvref_high = 82m
+
+.param xper = 30u
+.param xtr = 20n
+.param xt_vref_high = 1000n
+.param xtd_vref_high = 11.4u
+.param xtd_vref_low = 11.4u
+.param xt_delay_rst = 500n
+.param xtd_rst = 3900n
+.param xtd_detect = 800n
+
+
+
+.param xt_vref_low = 'xt_vref_high + xtd_vref_high + xtr'
+*.param xt_vref_low = 1.25u
+*.param xt_rst = 2400n
+.param xt_rst = 'xt_vref_low + xtd_vref_low + xtr + xt_delay_rst'
+*.param xt_detect1 = 1150n
+.param xt_detect1 = 'xt_vref_high + xtd_vref_high - xtd_detect - 2*xtr '
+.param xt_detect2 = 'xt_vref_low + xtd_vref_low - xtd_detect - 2*xtr'
+*.param xt_detect2 = 2270n
+
+
 
 *Small Iphoto testing
-Iphoto1 vphoto gnd pulse(50n 60n 12u 5n 5n 5.99u 30u) 
-Iphoto2 vphoto gnd pulse(50n 40n 24u 5n 5n 5.99u 30u)
+Iphoto1 vphoto gnd pulse(500n 600n 120u 5n 5n 59.9u 300u) 
+Iphoto2 vphoto gnd pulse(500n 400n 240u 5n 5n 59.9u 300u)
 
 *large Iphoto testing
 *Iphoto1 vphoto gnd pulse(5n 5u 12u 5n 5n 5.99u 30u) 
 *Iphoto2 vphoto gnd pulse(5n 5p 24u 5n 5n 5.99u 30u)
 
-Vrow row_sel gnd DC pwr_volt
+Vrow row_sel gnd DC xvdd
 Vvcm vcm gnd DC 0.9
 
 .option gmin=1e-15 abstol=1e-15 vntol=1e-9 reltol=1e-6 chgtol=1e-16 trtol=6
@@ -216,8 +255,8 @@ Vvcm vcm gnd DC 0.9
 	
 	save all
 	op
-	tran 0.1n 39u 
-	plot v(vphoto) v(vph_sf) v(vin) v(vout_sense) v(vref) v(vcmp) v(vcm) v(vout)
+	tran 0.2n 390u 
+	plot v(vphoto) v(xpixel.vph_sf) v(vin) v(vout_sense) v(vref) v(vcmp) v(vcm) v(vout)
 
 
 	write tran_col_pix.raw
@@ -234,15 +273,15 @@ value=30f
 footprint=1206
 device="ceramic capacitor"}
 C {lab_pin.sym} -120 -140 2 0 {name=p1 sig_type=std_logic lab=vphoto}
-C {vsource.sym} -190 50 0 0 {name=vref value="pulse(0 0.082 100n 10n 10n 1.140u 3u)" savecurrent=false}
+C {vsource.sym} -190 50 0 0 {name=vref value="pulse(0 \{xvref_high\} \{xt_vref_high\} \{xtr\} \{xtr\} \{xtd_vref_high\} \{xper\})" savecurrent=false}
 C {isource.sym} -120 -90 0 0 {name=Iphoto value=I_PH}
 C {sky130_fd_pr/annotate_fet_params.sym} -480 -10 0 0 {name=annot2 ref=M2}
 C {sky130_fd_pr/annotate_fet_params.sym} -370 -10 0 0 {name=annot3 ref=M3}
-C {vsource.sym} -490 120 0 0 {name=vref1 value="pulse(0 \{pwr_volt\} 2400n 10n 10n 390n 3u)" savecurrent=false}
+C {vsource.sym} -490 120 0 0 {name=vref1 value="pulse(0 \{xvdd\} \{xt_rst\} \{xtr\} \{xtr\} \{xtd_rst\} \{xper\})" savecurrent=false}
 C {lab_pin.sym} -410 90 2 0 {name=p14 sig_type=std_logic lab=pix_rst}
 C {lab_pin.sym} -410 210 2 0 {name=p16 sig_type=std_logic lab=_pix_rst}
-C {vsource.sym} -190 130 0 0 {name=vref3 value="pulse(0 0.078 1.250u 10n 10n 1.140u 3u)" savecurrent=false}
-C {vsource.sym} -190 230 0 0 {name=vref4 value="DC 0.6" savecurrent=false}
+C {vsource.sym} -190 130 0 0 {name=vref3 value="pulse(0 \{xvref_low\} \{xt_vref_low\} \{xtr\} \{xtr\} \{xtd_vref_low\} \{xper\})" savecurrent=false}
+C {vsource.sym} -190 230 0 0 {name=vref4 value="DC \{xvref_dc\}" savecurrent=false}
 C {lab_pin.sym} -190 10 2 1 {name=p18 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 510 -330 0 0 {name=p5 sig_type=std_logic lab=pbias}
 C {lab_wire.sym} 510 -310 0 0 {name=p6 sig_type=std_logic lab=pbchk}
@@ -326,9 +365,9 @@ value=500f
 footprint=1206
 device="ceramic capacitor"}
 C {lab_wire.sym} 650 -270 0 0 {name=p78 sig_type=std_logic lab=gnd}
-C {vsource.sym} -490 240 0 0 {name=vref2 value="pulse(\{pwr_volt\} 0 2400n 10n 10n 390n 3u)" savecurrent=false}
+C {vsource.sym} -490 240 0 0 {name=vref2 value="pulse(\{xvdd\} 0 \{xt_rst\} \{xtr\} \{xtr\} \{xtd_rst\} \{xper\})" savecurrent=false}
 C {lab_wire.sym} 1200 120 0 0 {name=p79 sig_type=std_logic lab=Vthresh}
-C {vsource.sym} 870 190 0 0 {name=vref5 value="DC 0.9" savecurrent=false}
+C {vsource.sym} 870 190 0 0 {name=vref5 value="DC xvcomp_thresh" savecurrent=false}
 C {lab_wire.sym} 760 -250 0 0 {name=p9 sig_type=std_logic lab=vout_sense}
 C {lab_wire.sym} 880 710 0 1 {name=p10 sig_type=std_logic lab=vdd}
 C {sky130_fd_pr/pfet_01v8.sym} 930 710 0 1 {name=Mpb1
@@ -372,7 +411,7 @@ C {lab_wire.sym} 1010 790 0 0 {name=p80 sig_type=std_logic lab=pbias}
 C {vsource.sym} 830 930 0 0 {name=V3 value=0.5 savecurrent=true}
 C {iopin.sym} 830 1020 2 1 {name=p40 lab=gnd}
 C {lab_wire.sym} 830 850 0 0 {name=p41 sig_type=std_logic lab=vcascp}
-C {vsource.sym} 520 850 0 0 {name=V2 value=0.25 savecurrent=true}
+C {vsource.sym} 520 850 0 0 {name=V2 value=xvcascn savecurrent=true}
 C {iopin.sym} 520 940 2 1 {name=p46 lab=gnd}
 C {lab_wire.sym} 520 770 0 0 {name=p50 sig_type=std_logic lab=vcascn}
 C {sky130_fd_pr/nfet_01v8.sym} 100 870 0 0 {name=Mrow_sel2
@@ -391,7 +430,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 150 870 3 0 {name=p81 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 80 900 0 0 {name=p83 sig_type=std_logic lab=gnd}
-C {vsource.sym} 220 920 0 0 {name=V4 value=1.8 savecurrent=true}
+C {vsource.sym} 220 920 0 0 {name=V4 value=xvdd savecurrent=true}
 C {iopin.sym} 220 1010 2 1 {name=p84 lab=gnd}
 C {lab_wire.sym} 120 990 0 0 {name=p85 sig_type=std_logic lab=gnd}
 C {vsource.sym} 120 930 0 0 {name=V5 value=0 savecurrent=true}
@@ -419,10 +458,10 @@ C {lab_wire.sym} -90 870 0 0 {name=p54 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} -190 870 0 1 {name=p61 sig_type=std_logic lab=vdd}
 C {vsource.sym} -120 930 0 0 {name=V9 value=0 savecurrent=true}
 C {lab_wire.sym} -120 990 0 0 {name=p62 sig_type=std_logic lab=gnd}
-C {vsource.sym} -40 920 0 0 {name=V10 value=1.8 savecurrent=true}
+C {vsource.sym} -40 920 0 0 {name=V10 value=xvdd savecurrent=true}
 C {lab_wire.sym} -40 980 0 0 {name=p59 sig_type=std_logic lab=gnd}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/col_amp_v1.sym} 270 -250 0 0 {name=x2}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 980 -250 0 1 {name=x1}
+C {col_amp_n_clamp_v1/col_amp_v1.sym} 270 -250 0 0 {name=xcolAmp}
+C {col_amp_n_clamp_v1/clamp_qdvs_v2.sym} 980 -250 0 1 {name=xclamp}
 C {lab_wire.sym} -260 -130 0 1 {name=p2 sig_type=std_logic lab=sf_bias}
 C {vsource.sym} -40 -200 0 0 {name=vpix_cur value="DC 0" savecurrent=true}
 C {lab_wire.sym} 20 -230 0 0 {name=p3 sig_type=std_logic lab=vdd}
@@ -452,7 +491,7 @@ C {isource.sym} 480 540 0 0 {name=Iipr1 value=xamp_cascn}
 C {lab_wire.sym} 480 600 2 1 {name=p86 sig_type=std_logic lab=gnd}
 C {isource.sym} 130 480 0 0 {name=Iipr2 value=xsf_bias}
 C {lab_wire.sym} 130 420 0 0 {name=p87 sig_type=std_logic lab=vdd}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/dyn_comp.sym} 1250 210 0 0 {name=x3}
+C {dyn_comp.sym} 1250 210 0 0 {name=xcomp}
 C {lab_wire.sym} 1220 330 3 0 {name=p64 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1440 270 3 1 {name=p65 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1440 90 0 0 {name=p66 sig_type=std_logic lab=voutp}
@@ -460,9 +499,9 @@ C {lab_wire.sym} 1440 110 0 0 {name=p67 sig_type=std_logic lab=voutn}
 C {lab_wire.sym} 1240 190 0 0 {name=p68 sig_type=std_logic lab=DETECT}
 C {lab_wire.sym} 1220 60 0 0 {name=p69 sig_type=std_logic lab=DETECT}
 C {lab_wire.sym} 1240 10 0 0 {name=p71 sig_type=std_logic lab=_DETECT}
-C {vsource.sym} -490 390 0 0 {name=vref12 value="pulse(0 \{pwr_volt\} 1150n 10n 10n 80n 3u)" savecurrent=false}
+C {vsource.sym} -490 390 0 0 {name=vref12 value="pulse(0 \{xvdd\} \{xt_detect1\} \{xtr\} \{xtr\} \{xtd_detect\} \{xper\})" savecurrent=false}
 C {lab_pin.sym} -410 360 2 0 {name=p76 sig_type=std_logic lab=DETECT}
-C {vsource.sym} -490 490 0 0 {name=vref13 value="pulse(0 \{pwr_volt\} 2270n 10n 10n 80n 3u)" savecurrent=false}
+C {vsource.sym} -490 490 0 0 {name=vref13 value="pulse(0 \{xvdd\} \{xt_detect2\} \{xtr\} \{xtr\} \{xtd_detect\} \{xper\})" savecurrent=false}
 C {sky130_fd_pr/pfet_01v8.sym} 1420 530 0 1 {name=M3
 W=1.5
 L=0.5
@@ -500,7 +539,7 @@ C {lab_wire.sym} 1540 760 0 0 {name=p91 sig_type=std_logic lab=vdd}
 C {vcvs.sym} -480 690 0 0 {name=E7 value=-1}
 C {lab_wire.sym} -520 750 0 0 {name=p58 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -400 660 2 0 {name=p60 sig_type=std_logic lab=_DETECT}
-C {vsource.sym} -480 800 0 0 {name=V6 value=1.8 savecurrent=true}
+C {vsource.sym} -480 800 0 0 {name=V6 value=xvdd savecurrent=true}
 C {lab_wire.sym} -480 860 0 0 {name=p88 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -600 670 2 1 {name=p95 sig_type=std_logic lab=DETECT}
 C {lab_pin.sym} 1450 530 2 0 {name=p57 sig_type=std_logic lab=clamp_leakp
@@ -558,5 +597,11 @@ footprint=1206
 device="ceramic capacitor"}
 C {lab_wire.sym} 1100 200 0 0 {name=p102 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} -190 -230 0 1 {name=p110 sig_type=std_logic lab=pix_rst}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -430 -160 0 0 {name=x4}
+C {col_amp_n_clamp_v1/openDVS_pixel_tia_RL_v1.sym} -430 -160 0 0 {name=xpixel}
 C {lab_wire.sym} -250 -110 0 1 {name=p21 sig_type=std_logic lab=vd}
+C {vsource.sym} -150 -150 1 0 {name=vmeas_ipd value="DC 0.0" savecurrent=true}
+C {vsource.sym} -590 1130 0 0 {name=Vgnd value=0 savecurrent=true}
+C {gnd.sym} -560 1180 0 0 {name=l1 lab=GND!}
+C {vsource.sym} -520 1130 0 0 {name=Vvdd value='xvdd' savecurrent=true}
+C {lab_wire.sym} -590 1070 3 0 {name=p103 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} -520 1070 3 0 {name=p104 sig_type=std_logic lab=vdd}

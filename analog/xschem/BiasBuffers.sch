@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 T {Need to check if headroom and leakage
 is adequate through all the dynamic range.
@@ -421,7 +420,7 @@ spiceprefix=X
 C {lab_wire.sym} 2160 -140 0 1 {name=p38 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 2140 -140 0 0 {name=p39 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 2270 -140 0 0 {name=p40 sig_type=std_logic lab=B0}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1890 -50 2 1 {name=MpMirrBuffnB0
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1890 -50 0 0 {name=MpMirrBuffnB0
 W=2.4
 L=0.38
 nf=1
@@ -435,7 +434,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 2130 -50 2 1 {name=MpMirrBuffB0
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 2130 -50 0 0 {name=MpMirrBuffB0
 W=0.5
 L=2.4
 nf=1

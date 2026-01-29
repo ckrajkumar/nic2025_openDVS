@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -260 170 -220 170 {lab=vdd}
 N -260 80 -260 140 {lab=vdd}
@@ -205,8 +204,8 @@ C {lab_wire.sym} 310 130 0 0 {name=p16 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 270 80 0 0 {name=p17 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 200 370 0 0 {name=p18 sig_type=std_logic lab=vout_pmir}
 C {iopin.sym} 270 440 0 0 {name=p20 lab=Iload_pmir}
-C {/home/user/projects/open_dvs/analog/amp_n_mir.sym} 600 130 0 0 {name=x1}
-C {/home/user/projects/open_dvs/analog/amp_p_mir.sym} 20 370 0 0 {name=x2}
+C {amp_n_mir.sym} 600 130 0 0 {name=x1}
+C {amp_p_mir.sym} 20 370 0 0 {name=x2}
 C {lab_wire.sym} 890 130 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 890 220 0 0 {name=p2 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 770 130 0 0 {name=p3 sig_type=std_logic lab=vout_nmir}
@@ -366,5 +365,5 @@ device="ceramic capacitor"}
 C {lab_wire.sym} 200 290 3 0 {name=p49 sig_type=std_logic lab=gnd}
 C {iopin.sym} -40 380 0 1 {name=p32 lab=Iload_pmir}
 C {iopin.sym} 540 140 0 1 {name=p35 lab=Iload_nmir}
-C {/home/user/projects/nic2025_v2/nic2025_openDVS/analog/xschem/col_amp_n_clamp_v1/amp_p_5T.sym} 150 130 0 0 {name=x3}
-C {/home/user/projects/open_dvs/analog/amp_n_5T.sym} 730 370 0 0 {name=x4}
+C {col_amp_n_clamp_v1/amp_p_5T.sym} 150 130 0 0 {name=x3}
+C {amp_n_5T.sym} 730 370 0 0 {name=x4}
