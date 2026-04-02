@@ -1,0 +1,4 @@
+I am not running xschem through the docker container anymore.
+All of the testbenches contain absolute paths to the corner file. 
+the xschemrc file also contains an absolute path to the xschemrc instanitated on my local system. 
+All of these will need to be changed when running the testbenches. 
