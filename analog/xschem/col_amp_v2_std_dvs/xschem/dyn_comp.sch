@@ -8,7 +8,7 @@ E {}
 N 280 -410 280 -380 {lab=vdd}
 N 280 -350 310 -350 {lab=vdd}
 N 190 -350 240 -350 {lab=DETECT}
-N 280 -320 280 -270 {lab=int_outn}
+N 280 -320 280 -270 {lab=#net1}
 N 110 -410 110 -380 {lab=vdd}
 N 80 -350 110 -350 {lab=vdd}
 N 110 -320 110 -290 {lab=int_outp
@@ -50,7 +50,7 @@ N 640 -200 750 -200 {lab=voutp}
 N 490 -150 610 -150 {lab=gnd}
 N 490 -210 490 -180 {lab=voutp}
 N 490 -210 640 -210 {lab=voutp}
-N 420 -150 450 -150 {lab=int_outn}
+N 420 -150 450 -150 {lab=int_outp}
 N 490 -120 490 -70 {lab=gnd}
 N 490 -70 640 -70 {lab=gnd}
 N 640 -120 640 -70 {lab=gnd}
@@ -60,16 +60,16 @@ N 640 -70 810 -70 {lab=gnd}
 N 840 -150 960 -150 {lab=gnd}
 N 890 -150 890 -70 {lab=gnd}
 N 810 -70 890 -70 {lab=gnd}
-N 1000 -150 1030 -150 {lab=int_outp}
+N 1000 -150 1030 -150 {lab=int_outn}
 N 960 -120 960 -70 {lab=gnd}
 N 890 -70 960 -70 {lab=gnd}
 N 960 -200 960 -180 {lab=voutn}
 N 810 -200 960 -200 {lab=voutn}
-N 640 -350 640 -330 {lab=#net1}
-N 640 -350 720 -350 {lab=#net1}
-N 720 -360 720 -350 {lab=#net1}
-N 720 -350 810 -350 {lab=#net1}
-N 810 -350 810 -330 {lab=#net1}
+N 640 -350 640 -330 {lab=#net2}
+N 640 -350 720 -350 {lab=#net2}
+N 720 -360 720 -350 {lab=#net2}
+N 720 -350 810 -350 {lab=#net2}
+N 810 -350 810 -330 {lab=#net2}
 N 720 -390 770 -390 {lab=vdd}
 N 770 -450 770 -390 {lab=vdd}
 N 720 -450 770 -450 {lab=vdd}
@@ -156,8 +156,6 @@ C {ipin.sym} 50 -240 0 0 {name=p34 lab=vp
 C {ipin.sym} 340 -240 2 0 {name=p35 lab=vm
 }
 C {lab_wire.sym} 190 -180 0 0 {name=p36 sig_type=std_logic lab=vsource}
-C {lab_wire.sym} 110 -290 0 0 {name=p37 sig_type=std_logic lab=int_outp}
-C {lab_wire.sym} 280 -290 0 0 {name=p38 sig_type=std_logic lab=int_outn}
 C {sky130_fd_pr/pfet_01v8.sym} 700 -390 0 0 {name=Mmirr4
 W=1
 L=0.5
@@ -249,7 +247,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 430 -150 0 0 {name=p44 sig_type=std_logic lab=int_outn}
 C {sky130_fd_pr/nfet_01v8.sym} 980 -150 0 1 {name=Minp5
 W=1
 L=0.15
@@ -266,8 +263,14 @@ spiceprefix=X
 }
 C {opin.sym} 900 -240 0 0 {name=p45 lab=voutn}
 C {opin.sym} 570 -240 2 0 {name=p46 lab=voutp}
-C {lab_pin.sym} 1020 -150 2 0 {name=p47 sig_type=std_logic lab=int_outp
-}
 C {ipin.sym} 180 -350 1 0 {name=p1 lab=DETECT
 }
 C {lab_wire.sym} 110 -120 0 0 {name=p2 sig_type=std_logic lab=DETECT}
+C {lab_pin.sym} 1020 -150 2 0 {name=p47 sig_type=std_logic lab=int_outn
+}
+C {lab_pin.sym} 430 -150 2 1 {name=p3 sig_type=std_logic lab=int_outp
+}
+C {lab_pin.sym} 110 -300 2 1 {name=p4 sig_type=std_logic lab=int_outp
+}
+C {lab_pin.sym} 280 -300 2 0 {name=p5 sig_type=std_logic lab=int_outn
+}

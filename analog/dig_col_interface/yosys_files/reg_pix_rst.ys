@@ -1,0 +1,25 @@
+
+
+read_verilog ../v_files/reg_pix_rst.v
+
+#read_verilog /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/verilog/primitives.v
+#read_verilog -lib /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
+read_verilog -lib /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd__blackbox_pp.v
+#read_liberty -lib -ignore_miss_dir -setattr blackbox /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+#hierarchy -top reg_pix_rst
+
+proc
+
+memory 
+
+techmap -extern
+
+dfflibmap -liberty /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+abc -liberty /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+
+opt_clean
+
+write_spice -neg GND -pos VDD -inames ../spice_files/reg_pix_rst.sp
+write_verilog ../v_files/reg_pix_rst_synth.v
