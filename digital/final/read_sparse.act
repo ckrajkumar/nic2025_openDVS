@@ -1,0 +1,110 @@
+//*******************************************************
+// Telluride Neuromorphic Workshop 2025
+// Neuromorphic Integrated Circuits (NIC) Topic Area
+// openDVS Project
+// 
+// Prafull Purohit
+// Brookhaven National Laboratory
+// Email: ppurohit@bnl.gov
+//*******************************************************
+
+import std;
+import std::channel;
+open std::channel;
+import std::data;
+open std::data;
+import sim;
+
+
+/************************************************************
+  This returns the popcount-1, and should only be used
+  when there is at least one bit set in the integer
+************************************************************/
+template<pint N>
+function popcount (int<N> x) : int<std::ceil_log2(N)>
+{
+  chp {
+    self := (+ i : N : x{i}) + ~int(1,std::ceil_log2(N)) + 1
+   }
+}
+
+/************************************************************
+  read a 64-bit value and send it out a sequence of indices that are non-zero.
+  Encoding: <rowid, odd-even-bit> <count-of-non-zero> <idx> <idx> ...
+  Each idx is the gap to the next non-zero value.
+************************************************************/
+defproc rawbits(chan?(int<64>) L; chan!(int<7>) R)
+{
+  int<1> odd;
+  int<6> row;
+  int<64> x;
+  int<6> pos;
+  int<7> ptemp;
+  
+ chp {
+  //odd-;
+  odd := 0;
+  row := 0;
+ *[ L?x;
+   [ x = 0 -> skip
+  [] else ->
+       R!{row,odd};   log("rawbits row: ", {row,odd});
+       ptemp := popcount<64>(x);
+       R!ptemp;  log("rawbits cnt: ", ptemp);
+      *[ x != 0 ->
+         pos := std::bit::find_msb_pos<64> (x);
+         x := x << (64-pos);
+         log("rawbits pos: ", ~pos);
+       	 R!(~pos)
+       ]
+   ];
+   row := row + odd;
+   odd := ~odd
+ ]
+ }
+}
+
+
+
+function dump() : bool
+{
+  int a;
+  chp {
+         log_st("");
+         log_p ("  pos: ");
+         a := 0; *[ a < 64 -> log_p(a % 10); a := a + 1 ];
+         log_nl(""); log_st("");
+         log_p ("     : ");
+         a := 0; *[ a < 64 -> log_p(a / 10); a := a + 1 ];
+         log_nl("")
+  }
+}
+
+defproc test()
+{
+   rawbits r;
+   sim::sink<7,0,false> snk(r.R);
+   pint n = 7;
+   int<64> data[n];
+   int x;
+   bool res;
+   chp {
+      data[0] := 0xf1;
+      data[1] := 0b10111010100;
+      data[2] := 0b1000001001000101001000;
+      data[3] := 0;
+      data[4] := ~data[0];
+      data[5] := ~data[1];
+      data[6] := ~data[2];
+      x := 0;
+     *[ x < 2 -> 
+         res := dump();
+         log ("%b data: ", int(data[x],64));
+         
+         r.L!data[x];
+         x := x + 1
+      ]
+   }
+}
+
+test t;

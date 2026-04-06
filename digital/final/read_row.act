@@ -1,0 +1,84 @@
+//*******************************************************
+// Telluride Neuromorphic Workshop 2025
+// Neuromorphic Integrated Circuits (NIC) Topic Area
+// openDVS Project
+// 
+// Prafull Purohit
+// Brookhaven National Laboratory
+// Email: ppurohit@bnl.gov
+//*******************************************************
+
+import std;
+import std::channel;
+open std::channel;
+import std::data;
+open std::data;
+import sim;
+
+
+defproc rowread(chan?(int<64>) L; chan!(int<8>) R)
+{
+  int<1> send;
+  int<1> odd;
+  int<7> row;
+  int<64> x;
+
+ chp {
+  odd := 0;
+  row := 0;
+*[ L?x; send:=0;
+   [ x = 0 -> skip
+  [] else ->
+      (; i : 8 : [ send=1 -> skip [] else -> R!{row, odd}; log("%b Row: ", {row, odd}) ]; 
+                  send:=1; R!x{8*i+7..8*i}; log("%b Data: ", x{8*i+7..8*i})
+      )
+   ];
+   row := row + odd;
+   odd := ~odd
+ ]
+ }
+}
+
+
+
+function dump() : bool
+{
+  int a;
+  chp {
+         log_st("");
+         log_p ("  pos: ");
+         a := 0; *[ a < 64 -> log_p(a % 10); a := a + 1 ];
+         log_nl(""); log_st("");
+         log_p ("     : ");
+         a := 0; *[ a < 64 -> log_p(a / 10); a := a + 1 ];
+         log_nl("")
+  }
+}
+
+defproc test()
+{
+   rowread r;
+   sim::sink<8,0,false> snk(r.R);
+   pint n = 7;
+   int<64> data[n];
+   int x;
+   bool res;
+   chp {
+      data[0] := 0x1f1;
+      data[1] := 0b10111010100;
+      data[2] := 0b1000001001000101001000;
+      data[3] := 0;
+      data[4] := ~data[0];
+      data[5] := ~data[1];
+      data[6] := ~data[2];
+      x := 0;
+     *[ x < 2 -> 
+         res := dump();
+         log ("%b data: ", int(data[x],64));
+         r.L!data[x];
+         x := x + 1
+      ]
+   }
+}
+
+test t;
