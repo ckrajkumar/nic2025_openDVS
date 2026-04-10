@@ -8,36 +8,66 @@ V {}
 S {}
 F {}
 E {}
-L 4 160 -20 180 -20 {}
-L 4 260 -130 260 -110 {}
+L 4 160 -50 180 -50 {}
+L 4 160 -30 180 -30 {}
+L 4 160 50 180 50 {}
+L 4 160 70 180 70 {}
+L 4 160 90 180 90 {}
+L 4 160 30 180 30 {}
+L 4 160 10 180 10 {}
 L 4 280 -130 280 -110 {}
-L 4 300 -130 300 -110 {}
+L 4 160 -10 180 -10 {}
 L 4 380 -130 380 -110 {}
 L 4 400 -130 400 -110 {}
 L 4 510 -60 530 -60 {}
+L 4 160 110 180 110 {}
+L 4 160 130 180 130 {}
+L 4 160 150 180 150 {}
+L 4 160 170 180 170 {}
 L 7 200 -130 200 -110 {}
 L 7 220 -130 220 -110 {}
 L 7 510 20 530 20 {}
 B 5 197.5 -132.5 202.5 -127.5 {name=VddA18 dir=inout}
-B 5 157.5 -22.5 162.5 -17.5 {name=BiasLatchEnable dir=in}
 B 5 217.5 -132.5 222.5 -127.5 {name=GndA dir=inout}
-B 5 257.5 -132.5 262.5 -127.5 {name=PowerDown dir=in}
 B 5 277.5 -132.5 282.5 -127.5 {name=BiasCB[7:0] dir=in}
-B 5 297.5 -132.5 302.5 -127.5 {name=IBIT[15:0] dir=in}
+B 5 157.5 -12.5 162.5 -7.5 {name=CoarseOneHot[7:0] dir=in}
 B 5 377.5 -132.5 382.5 -127.5 {name=BufferN dir=in}
 B 5 397.5 -132.5 402.5 -127.5 {name=BufferP dir=in}
 B 5 527.5 17.5 532.5 22.5 {name=Rail dir=inout}
 B 5 527.5 -62.5 532.5 -57.5 {name=VBiasOut dir=out}
-P 4 5 180 -110 510 -110 510 70 180 70 180 -110 {}
-T {@symname} 214.78125 37.09375 2 1 0.5 0.5 {}
-T {@name} 220.46875 53.25 2 1 0.2 0.2 {}
+B 5 157.5 7.5 162.5 12.5 {name=LowBiasInterfaceEn dir=in}
+B 5 157.5 27.5 162.5 32.5 {name=nLowBiasInterfaceEn dir=in}
+B 5 157.5 -52.5 162.5 -47.5 {name=FineCode[7:0] dir=in}
+B 5 157.5 -32.5 162.5 -27.5 {name=nFineCode[7:0] dir=in}
+B 5 157.5 47.5 162.5 52.5 {name=CoarseOneHotLowBiasEn dir=in}
+B 5 157.5 67.5 162.5 72.5 {name=LowBiasBufEn dir=in}
+B 5 157.5 87.5 162.5 92.5 {name=nLowBiasBufEn dir=in}
+B 5 157.5 107.5 162.5 112.5 {name=NBiasEn dir=in}
+B 5 157.5 127.5 162.5 132.5 {name=PBiasEn dir=in}
+B 5 157.5 147.5 162.5 152.5 {name=BiasEnable dir=in}
+B 5 157.5 167.5 162.5 172.5 {name=BiasDisable dir=in}
+P 4 5 180 -110 510 -110 510 190 180 190 180 -110 {}
+T {@symname} 344.78125 -2.90625 2 1 0.5 0.5 {}
+T {@name} 350.46875 13.25 2 1 0.2 0.2 {}
 T {VddA18} 192.96875 -68.53125 3 0 0.2 0.2 {}
-T {BiasLatchEnable} 265.21875 -27.34375 0 1 0.2 0.2 {}
 T {GndA} 225.625 -106.625 1 0 0.2 0.2 {}
-T {PowerDown} 265.9375 -46.8125 1 1 0.2 0.2 {}
-T {BiasCB[7:0]} 286.875 -50.875 1 1 0.2 0.2 {}
-T {IBIT[15:0]} 305.78125 -59.625 1 1 0.2 0.2 {}
+T {BiasCB[7:0]} 286.875 -43.375 1 1 0.2 0.2 {}
+T {CoarseOneHot[7:0]} 285.375 -15.78125 0 1 0.2 0.2 {}
 T {BufferN} 386.875 -67.75 1 1 0.2 0.2 {}
 T {BufferP} 406.71875 -68.21875 1 1 0.2 0.2 {}
 T {Rail} 489.3125 13.4375 0 0 0.2 0.2 {}
 T {VBiasOut} 460.71875 -66.71875 0 0 0.2 0.2 {}
+T {LowBiasInterfaceEn} 287.71875 2.65625 0 1 0.2 0.2 {}
+T {nLowBiasInterfaceEn} 292.71875 22.65625 0 1 0.2 0.2 {}
+T {FineCode[7:0]} 257.71875 -57.34375 0 1 0.2 0.2 {}
+T {nFineCode[7:0]} 265.21875 -34.84375 0 1 0.2 0.2 {}
+T {CoarseOneHotLowBiasEn} 315.21875 45.15625 0 1 0.2 0.2 {}
+T {LowBiasBufEn} 257.71875 65.15625 0 1 0.2 0.2 {}
+T {nLowBiasBufEn} 265.21875 85.15625 0 1 0.2 0.2 {}
+T {Important: Rail pin must be assigned
+to gnd for N bias and vdd for P bias.
+This is the reset/powerdown bias level} 307.5 70 0 0 0.2 0.2 {}
+T {NBiasEn} 227.71875 103.90625 0 1 0.2 0.2 {}
+T {PBiasEn} 226.46875 125.15625 0 1 0.2 0.2 {}
+T {BiasEnable} 242.71875 145.15625 0 1 0.2 0.2 {}
+T {BiasDisable} 245.21875 165.15625 0 1 0.2 0.2 {}
