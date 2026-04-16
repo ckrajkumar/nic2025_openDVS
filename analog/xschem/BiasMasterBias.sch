@@ -72,15 +72,8 @@ N -120 -40 -100 -40 {lab=VCasc}
 N -370 10 -100 10 {lab=VCasc}
 N -370 10 -370 30 {lab=VCasc}
 N -370 -10 -370 10 {lab=VCasc}
-N -250 -130 -160 -130 {lab=VMasterBiasP}
 N -160 -150 -160 -130 {lab=VMasterBiasP}
-N -370 -100 -370 -70 {lab=#net4}
-N -420 -130 -370 -130 {lab=GndA}
-N -370 -210 -370 -160 {lab=VddA18}
-N -540 -130 -460 -130 {lab=VMasterBiasP}
-N -460 -90 -250 -90 {lab=VMasterBiasP}
-N -250 -130 -250 -90 {lab=VMasterBiasP}
-N -330 -130 -250 -130 {lab=VMasterBiasP}
+N -430 -250 -430 -190 {lab=GndA}
 N -580 -210 -580 -160 {lab=VddA18}
 N -630 -130 -580 -130 {lab=VddA18}
 N -160 -270 -160 -210 {lab=VddA18}
@@ -94,7 +87,15 @@ N -690 60 -610 60 {lab=BiasPowerDown}
 N -550 60 -410 60 {lab=BiasPowerDown}
 N -580 30 -580 130 {lab=GndA}
 N -580 -110 -580 -40 {lab=bootstrap}
-N -460 -130 -460 -90 {lab=VMasterBiasP}
+N -400 -200 -380 -200 {lab=VddA18}
+N -380 -270 -380 -200 {lab=VddA18}
+N -470 -270 -380 -270 {lab=VddA18}
+N -470 -270 -470 -200 {lab=VddA18}
+N -470 -200 -460 -200 {lab=VddA18}
+N -430 -160 -430 -130 {lab=VMasterBiasP}
+N -430 -130 -160 -130 {lab=VMasterBiasP}
+N -540 -130 -430 -130 {lab=VMasterBiasP}
+N -370 -110 -370 -70 {lab=VddA18}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 30 70 0 0 {name=MNBiasDio
 W=20
 L=5
@@ -259,7 +260,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 440 -40 0 0 {name=p21 sig_type=std_logic lab=GndA}
 C {iopin.sym} 390 -190 3 0 {name=p22 lab=ICoarse2}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} -390 60 0 0 {name=MNBS
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -390 60 0 0 {name=MNBSPD
 W=2
 L=0.2
 nf=1
@@ -275,7 +276,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} -370 140 1 0 {name=p23 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} -320 60 0 0 {name=p24 sig_type=std_logic lab=GndA}
-C {sky130_fd_pr/nfet_01v8.sym} -350 -130 2 0 {name=MNBSPU
+C {sky130_fd_pr/nfet_01v8.sym} -430 -180 3 0 {name=MNBSCapBias
 W=16
 L=16
 nf=1
@@ -289,8 +290,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} -420 -130 0 1 {name=p26 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} -370 -210 1 1 {name=p27 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} -430 -250 1 1 {name=p26 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} -380 -270 2 1 {name=p27 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} -560 -130 0 1 {name=MPBS
 W=2
 L=0.2
@@ -308,7 +309,7 @@ spiceprefix=X
 C {lab_wire.sym} -580 -210 1 1 {name=p28 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -630 -130 0 1 {name=p29 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 50 -270 3 0 {name=p30 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/nfet_01v8.sym} -580 10 1 0 {name=MNBSCap
+C {sky130_fd_pr/nfet_01v8.sym} -580 10 1 0 {name=MNBSCapBS
 W=16
 L=16
 nf=1
@@ -325,7 +326,8 @@ spiceprefix=X
 C {lab_wire.sym} -580 130 1 0 {name=p31 sig_type=std_logic lab=GndA}
 C {ipin.sym} -690 60 0 0 {name=p32 lab=BiasPowerDown}
 C {lab_wire.sym} -460 -40 0 0 {name=p33 sig_type=std_logic lab=bootstrap}
-C {sky130_fd_pr/nfet_01v8.sym} -390 -40 2 1 {name=MNBSPU1
+C {lab_wire.sym} -320 -40 2 1 {name=p25 sig_type=std_logic lab=VddA18}
+C {sky130_fd_pr/pfet_01v8.sym} -390 -40 0 0 {name=MPBSPU
 W=2
 L=0.2
 nf=1
@@ -336,7 +338,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=pfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} -320 -40 2 1 {name=p25 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} -370 -110 1 1 {name=p34 sig_type=std_logic lab=VddA18}
