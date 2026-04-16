@@ -1,0 +1,148 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/BiasBuffers.sch
+**.subckt BiasBuffers GND VddA18 VBiasOut NBiasEnabled PBiasEnabled BiasEnabled BiasDisabled PowerDown BIT0 BIT1 BIT2 BufferNBias
+*+ BufferPBias SplitterOutput Rail
+*.iopin GND
+*.iopin VddA18
+*.opin VBiasOut
+*.ipin NBiasEnabled
+*.ipin PBiasEnabled
+*.ipin BiasEnabled
+*.ipin BiasDisabled
+*.ipin PowerDown
+*.ipin BIT0
+*.ipin BIT1
+*.ipin BIT2
+*.ipin BufferNBias
+*.ipin BufferPBias
+*.iopin SplitterOutput
+*.iopin Rail
+XMnDio SplitterOutput NBias GND GND sky130_fd_pr__nfet_01v8 L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMnswnMirrnB0 net1 nB0 NBias GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswnMirrnB0 NBias B0 net1 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMnMirrBuffB0 nMirrBuffDrain SplitterOutput net2 GND sky130_fd_pr__nfet_01v8_lvt L=2.4 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58
++ ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0 mult=1
+XMpnMirrEnable nMirrBuffDrain disable VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58
++ nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
+XMnswnMirrB0 net2 B0 NBias GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XMpswnMirrB0 NBias nB0 net2 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMnMirr nCopy NBias GND GND sky130_fd_pr__nfet_01v8 L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMnMirrBuffBias NBias BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=16 m=16
+XMpDio nCopy PBias VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=3 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=2 m=2
+XMnswpMirrnB0 PBias nB0 net3 GND sky130_fd_pr__nfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswpMirrnB0 net3 B0 PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMnswpMirrB0 PBias B0 net4 GND sky130_fd_pr__nfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XMpswpMirrB0 net4 nB0 PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpMirrBuffnB0 net3 nCopy pMirrBuffDrain VddA18 sky130_fd_pr__pfet_01v8_lvt L=0.38 W=2.4 nf=1 ad=0.696 as=0.696 pd=5.38 ps=5.38
++ nrd=0.120833333333333 nrs=0.120833333333333 sa=0 sb=0 sd=0 mult=6 m=6
+XMpMirrBuffB0 net4 nCopy pMirrBuffDrain VddA18 sky130_fd_pr__pfet_01v8_lvt L=2.4 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58
++ nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0 mult=1
+XMnpMirrEnable pMirrBuffDrain pMirrEnable GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 mult=1
+XMpMirrBuffBias PBias BufferPBias VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt L=3 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=2 m=2
+XMnswNBias NBias NBiasEnabled net5 GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswNBias net5 PBiasEnabled NBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMnswPBias net5 PBiasEnabled PBias GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswPBias PBias NBiasEnabled net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMnswBias net5 nPowerDown VBiasOut GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswBias VBiasOut PowerDown net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMnswRail VBiasOut PowerDown Rail GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswRail Rail nPowerDown VBiasOut VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+* noconn BiasEnabled
+* noconn BIT1
+* noconn BIT2
+xinvB0 BIT0 nB0 VddA18 VddA18 GND GND sky130_fd_sc_hd__inv_1
+xinnB0 nB0 B0 VddA18 VddA18 GND GND sky130_fd_sc_hd__inv_1
+xnorDisable PowerDown BiasDisabled ndisable VddA18 VddA18 GND GND sky130_fd_sc_hd__nor2_1
+xinvDisable ndisable disable VddA18 VddA18 GND GND sky130_fd_sc_hd__inv_1
+xinvPD PowerDown nPowerDown VddA18 VddA18 GND GND sky130_fd_sc_hd__inv_1
+xandpMirrEnable1 ndisable PBiasEnabled VddA18 VddA18 GND GND pMirrEnable sky130_fd_sc_hd__and2_1
+XMnMirrBuffnB0 nMirrBuffDrain SplitterOutput net1 GND sky130_fd_pr__nfet_01v8_lvt L=0.24 W=2.4 nf=1 ad=0.696 as=0.696 pd=5.38
++ ps=5.38 nrd=0.120833333333333 nrs=0.120833333333333 sa=0 sb=0 sd=0 mult=10 m=10
+**.ends
+
+* expanding   symbol:  sky130_fd_sc_hd__inv_1.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__inv_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__inv_1.sch
+.subckt sky130_fd_sc_hd__inv_1 A Y VPWR VPB VGND VNB
+*.ipin A
+*.opin Y
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.iopin VGND
+XX0 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__nor2_1.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__nor2_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__nor2_1.sch
+.subckt sky130_fd_sc_hd__nor2_1 A B Y VPWR VPB VGND VNB
+*.ipin A
+*.opin Y
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.ipin B
+*.iopin VGND
+XX1 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.64 nf=1 ad=0.1856 as=0.1856 pd=1.86 ps=1.86 nrd=0.453125 nrs=0.453125 sa=0
++ sb=0 sd=0 mult=1
+XX2 Y B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX3 Y B a_109_297# VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XX0 a_109_297# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__and2_1.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__and2_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/dvs_2026/bias_gen/xschem/sky130_fd_sc_hd__and2_1.sch
+.subckt sky130_fd_sc_hd__and2_1 A B VPWR VPB VGND VNB X
+*.ipin A
+*.opin X
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.ipin B
+*.iopin VGND
+XX0 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX4 a_59_75# B VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX1 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX5 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XX2 a_59_75# A a_145_75# VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX3 a_145_75# B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+.ends
+
+.end
