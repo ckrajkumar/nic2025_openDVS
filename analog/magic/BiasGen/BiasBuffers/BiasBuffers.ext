@@ -1,0 +1,666 @@
+timestamp 1776344587
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use scs130hd_nor2_1 scs130hd_nor2_1_0 0 -1 11905 1 0 566
+use scs130hd_inv_1 scs130hd_inv_1_3 0 1 11905 1 0 750
+use scs130hd_inv_1 scs130hd_inv_1_2 0 -1 11905 1 0 842
+use scs130hd_inv_1 scs130hd_inv_1_1 0 1 10817 1 0 842
+use scs130hd_inv_1 scs130hd_inv_1_0 0 1 10817 1 0 566
+use scs130hd_and2_1 scs130hd_and2_1_0 0 -1 12993 1 0 566
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+node "BiasDisabled" 44 277.12 11640 484 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8450 438 27202 1054 0 0 0 0 0 0 0 0 0 0
+node "BIT0" 48 133.921 11032 518 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8544 452 6844 352 0 0 0 0 0 0 0 0 0 0
+node "li_11415_552#" 195 898.939 11415 552 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19979 1162 57516 1958 65104 2608 0 0 0 0 0 0 0 0
+node "SplitterOutput" 10436 4136.22 7624 677 ndif 0 0 0 0 0 0 0 0 63600 2506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 472560 16444 0 0 548522 12600 451024 10698 388324 12428 0 0 0 0 0 0 0 0
+node "a_12920_2597#" 593 581.091 12920 2597 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11454 766 0 0 20220 796 112668 3880 44080 992 0 0 0 0 0 0 0 0
+node "a_13395_4210#" 1293 224.981 13395 4210 pdif 0 0 0 0 0 0 0 0 10600 506 21300 720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28780 996 109148 3864 0 0 0 0 0 0 0 0 0 0
+node "a_11534_4210#" 4251 448.956 11534 4210 pdif 0 0 0 0 0 0 0 0 10600 506 225420 4214 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 213346 4730 303398 10818 84544 2770 0 0 0 0 0 0 0 0
+node "a_11288_2204#" 5853 211.737 11288 2204 ndif 0 0 0 0 0 0 0 0 10600 506 212960 4844 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 227166 5238 300208 10768 89728 2932 0 0 0 0 0 0 0 0
+node "a_10376_2544#" 1285 259.501 10376 2544 ndif 0 0 0 0 0 0 0 0 20100 696 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28372 1004 109638 3894 0 0 0 0 0 0 0 0 0 0
+node "a_7620_2383#" 1655 2256.85 7620 2383 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83730 3124 0 0 55337 2434 417852 14716 550736 17244 0 0 0 0 0 0 0 0
+node "NBiasEnabled" 1975 1516.61 10763 2441 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99146 3952 0 0 19420 1060 223446 8796 195264 5956 0 0 0 0 0 0 0 0
+node "PBiasEnabled" 1925 1191.2 10753 4119 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99146 3952 0 0 110524 2196 216550 7534 132672 4298 0 0 0 0 0 0 0 0
+node "a_9449_4210#" 8046 2268.42 9449 4210 pdif 0 0 0 0 0 0 0 0 63600 2506 177600 2696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 437232 10380 0 0 671498 13332 470698 15724 702560 22642 0 0 0 0 0 0 0 0
+node "Rail" 5007 822.774 8433 4210 pdif 0 0 0 0 0 0 0 0 42400 1706 42400 1706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 155914 3402 240358 6686 674668 11310 0 0 0 0 0 0 0 0
+node "VBiasOut" 7197 686.821 8197 4210 pdif 0 0 0 0 0 0 0 0 118400 1896 84800 3412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196944 3512 200578 7098 736572 11896 0 0 0 0 0 0 0 0
+node "a_7650_2474#" 4742 642.827 7650 2474 ndif 0 0 0 0 0 0 0 0 365800 6786 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 323276 6904 393628 14180 132864 4280 0 0 0 0 0 0 0 0
+node "a_7275_4210#" 5723 750.17 7275 4210 pdif 0 0 0 0 0 0 0 0 344540 7346 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 351588 7628 393156 13856 178944 5720 0 0 0 0 0 0 0 0
+node "a_7620_4119#" 1599 1667.78 7620 4119 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83730 3124 0 0 45740 2032 339866 12184 480482 15990 0 0 0 0 0 0 0 0
+node "a_7292_4119#" 629 663.287 7292 4119 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11454 766 0 0 13900 724 208820 7182 367404 11926 0 0 0 0 0 0 0 0
+node "a_8068_4210#" 6204 627.661 8068 4210 pdif 0 0 0 0 0 0 0 0 160800 3602 160800 3602 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 319328 6832 353204 11728 303108 8782 0 0 0 0 0 0 0 0
+node "a_8357_4119#" 1929 899.568 8357 4119 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99146 3952 0 0 30628 1142 257148 9114 290476 9570 0 0 0 0 0 0 0 0
+node "PowerDown" 1981 1011.37 8121 4119 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99146 3952 0 0 38430 1496 261148 9260 320260 10524 0 0 0 0 0 0 0 0
+node "a_8849_4119#" 9184 1319.88 8849 4119 p 0 0 0 0 0 0 0 0 63600 2718 255200 5154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1658400 7928 0 0 568394 12332 743958 23684 325164 11170 0 0 0 0 0 0 0 0
+node "a_1598_677#" 55912 13640.2 1598 677 ndif 0 0 0 0 0 0 0 0 1081200 42814 72800 2410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3316800 10328 0 0 3071404 37488 2298272 49358 1661576 25992 0 0 0 0 0 0 0 0
+node "BufferNBias" 4180 36607.2 398 586 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27369600 55216 0 0 2963472 51296 2082960 60366 1758270 61210 0 0 0 0 0 0 0 0
+node "BufferPBias" 728 831.343 10493 5237 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1658400 7928 0 0 221136 5152 221616 7924 189776 6752 0 0 0 0 0 0 0 0
+node "VddA18" 33442 57970.9 7068 3810 nw 0 0 0 0 15645804 22682 0 0 1037060 15728 265000 10530 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1567316 16744 5642198 45042 1792692 20058 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 209 677 ppd 0 0 0 0 0 0 0 0 1155400 45614 1472348 37284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3736658 42344 4911840 52334 1549760 27184 0 0 0 0 0 0 0 0
+cap "a_12920_2597#" "a_8849_4119#" 0.835013
+cap "a_7275_4210#" "a_1598_677#" 275.279
+cap "a_7620_2383#" "a_7292_4119#" 59.0479
+cap "a_7620_2383#" "a_13395_4210#" 536.153
+cap "NBiasEnabled" "a_11288_2204#" 22.1761
+cap "PBiasEnabled" "a_7292_4119#" 129.158
+cap "PBiasEnabled" "a_13395_4210#" 0.15333
+cap "a_8849_4119#" "a_10376_2544#" 20.122
+cap "a_8357_4119#" "a_7620_2383#" 49.3292
+cap "VddA18" "a_7620_4119#" 519.993
+cap "PowerDown" "a_11288_2204#" 17.317
+cap "Rail" "VddA18" 886.099
+cap "BufferNBias" "a_7620_4119#" 0.232393
+cap "a_9449_4210#" "a_7620_4119#" 162.274
+cap "a_8357_4119#" "PBiasEnabled" 51.4907
+cap "PowerDown" "BiasDisabled" 20.9501
+cap "Rail" "a_9449_4210#" 58.3873
+cap "a_11534_4210#" "a_11288_2204#" 2595.96
+cap "a_7275_4210#" "NBiasEnabled" 0.380822
+cap "a_12920_2597#" "li_11415_552#" 7.32783
+cap "a_7275_4210#" "PowerDown" 1.73554
+cap "a_10376_2544#" "SplitterOutput" 104.996
+cap "NBiasEnabled" "a_1598_677#" 220.715
+cap "a_7620_4119#" "VBiasOut" 77.4034
+cap "Rail" "VBiasOut" 3019.88
+cap "a_12920_2597#" "a_7620_2383#" 1.2987
+cap "a_8068_4210#" "a_7620_4119#" 1294.98
+cap "a_1598_677#" "PowerDown" 14.2707
+cap "a_8849_4119#" "a_11288_2204#" 988.173
+cap "Rail" "a_8068_4210#" 52.2743
+cap "a_12920_2597#" "PBiasEnabled" 724.347
+cap "BufferPBias" "a_7620_4119#" 4.22308
+cap "a_11534_4210#" "a_1598_677#" 0.0154208
+cap "a_7620_2383#" "a_10376_2544#" 503.189
+cap "BufferPBias" "Rail" 0.496423
+cap "PBiasEnabled" "a_10376_2544#" 2.60021
+cap "NBiasEnabled" "PowerDown" 59.6825
+cap "a_8849_4119#" "a_7275_4210#" 14.9321
+cap "a_11288_2204#" "SplitterOutput" 0.114194
+cap "a_7650_2474#" "a_7620_4119#" 463.439
+cap "a_7650_2474#" "Rail" 3.37828
+cap "a_11534_4210#" "NBiasEnabled" 25.8707
+cap "a_8849_4119#" "a_1598_677#" 18.8125
+cap "BiasDisabled" "li_11415_552#" 100.049
+cap "BiasDisabled" "BIT0" 1.57392
+cap "a_11534_4210#" "PowerDown" 1.58041
+cap "VddA18" "a_13395_4210#" 111.643
+cap "a_7275_4210#" "SplitterOutput" 3194.53
+cap "VddA18" "a_7292_4119#" 575.038
+cap "BufferNBias" "a_7292_4119#" 0.613097
+cap "a_9449_4210#" "a_7292_4119#" 1506.62
+cap "a_7620_2383#" "a_11288_2204#" 314.701
+cap "a_9449_4210#" "a_13395_4210#" 121.08
+cap "a_8357_4119#" "VddA18" 293.576
+cap "PBiasEnabled" "a_11288_2204#" 19.8501
+cap "a_1598_677#" "SplitterOutput" 3537.46
+cap "a_8849_4119#" "NBiasEnabled" 787.719
+cap "a_8357_4119#" "a_9449_4210#" 75.2415
+cap "a_8849_4119#" "PowerDown" 25.4772
+cap "a_1598_677#" "li_11415_552#" 3.31656
+cap "a_1598_677#" "BIT0" 5.98673
+cap "a_7620_2383#" "a_7275_4210#" 373.228
+cap "VBiasOut" "a_13395_4210#" 1.10946
+cap "a_7275_4210#" "PBiasEnabled" 0.836438
+cap "VBiasOut" "a_7292_4119#" 127.017
+cap "a_11534_4210#" "a_8849_4119#" 164.323
+cap "Rail" "a_7620_4119#" 132.893
+cap "a_8068_4210#" "a_7292_4119#" 57.9932
+cap "NBiasEnabled" "SplitterOutput" 12.9978
+cap "a_8357_4119#" "VBiasOut" 2155.8
+cap "a_7620_2383#" "a_1598_677#" 762.135
+cap "a_12920_2597#" "VddA18" 3.9786
+cap "PBiasEnabled" "a_1598_677#" 676.217
+cap "a_8357_4119#" "a_8068_4210#" 98.9684
+cap "PowerDown" "SplitterOutput" 12.4175
+cap "BufferPBias" "a_7292_4119#" 0.569822
+cap "NBiasEnabled" "li_11415_552#" 0.244899
+cap "a_12920_2597#" "a_9449_4210#" 21.3611
+cap "PowerDown" "li_11415_552#" 40.2751
+cap "BufferPBias" "a_8357_4119#" 0.202849
+cap "a_10376_2544#" "VddA18" 238.482
+cap "a_7650_2474#" "a_7292_4119#" 28.8951
+cap "a_10376_2544#" "a_9449_4210#" 29.3646
+cap "a_7620_2383#" "NBiasEnabled" 200.053
+cap "a_7650_2474#" "a_8357_4119#" 6.22407
+cap "a_7620_2383#" "PowerDown" 57.3088
+cap "PBiasEnabled" "NBiasEnabled" 1144.67
+cap "a_12920_2597#" "VBiasOut" 43.3676
+cap "PBiasEnabled" "PowerDown" 48.4825
+cap "a_12920_2597#" "a_8068_4210#" 5.59477
+cap "a_11534_4210#" "a_7620_2383#" 86.4367
+cap "a_8849_4119#" "SplitterOutput" 40.4076
+cap "a_10376_2544#" "VBiasOut" 18.6568
+cap "a_11534_4210#" "PBiasEnabled" 143.86
+cap "a_10376_2544#" "a_8068_4210#" 20.1439
+cap "VddA18" "a_11288_2204#" 537.977
+cap "BufferPBias" "a_10376_2544#" 0.272712
+cap "VddA18" "BiasDisabled" 65.3198
+cap "a_9449_4210#" "a_11288_2204#" 1187.25
+cap "a_7620_2383#" "a_8849_4119#" 537.866
+cap "a_7620_4119#" "a_13395_4210#" 291.511
+cap "a_8849_4119#" "PBiasEnabled" 198.982
+cap "a_7620_4119#" "a_7292_4119#" 133.921
+cap "Rail" "a_7292_4119#" 1609.68
+cap "Rail" "a_13395_4210#" 7.95583
+cap "a_7275_4210#" "VddA18" 705.77
+cap "a_7650_2474#" "a_10376_2544#" 0.0897229
+cap "a_7275_4210#" "BufferNBias" 1.89494
+cap "a_7275_4210#" "a_9449_4210#" 0.0629521
+cap "a_8357_4119#" "a_7620_4119#" 1117.31
+cap "li_11415_552#" "BIT0" 7.35174
+cap "a_11288_2204#" "VBiasOut" 58.8405
+cap "a_8357_4119#" "Rail" 421.467
+cap "BiasDisabled" "VBiasOut" 0.00645542
+cap "a_8068_4210#" "a_11288_2204#" 306.517
+cap "VddA18" "a_1598_677#" 768.715
+cap "a_7620_2383#" "SplitterOutput" 488.178
+cap "BufferNBias" "a_1598_677#" 10746.2
+cap "PBiasEnabled" "SplitterOutput" 3.12391
+cap "a_9449_4210#" "a_1598_677#" 1325.62
+cap "a_7620_2383#" "li_11415_552#" 0.25746
+cap "a_7620_2383#" "BIT0" 37.339
+cap "BufferPBias" "a_11288_2204#" 77.4481
+cap "PBiasEnabled" "li_11415_552#" 3.61452
+cap "a_7275_4210#" "VBiasOut" 3.98881
+cap "a_7275_4210#" "a_8068_4210#" 2.65046
+cap "a_12920_2597#" "a_7620_4119#" 4.80806
+cap "VddA18" "NBiasEnabled" 196.317
+cap "a_12920_2597#" "Rail" 120.668
+cap "NBiasEnabled" "a_9449_4210#" 151.636
+cap "a_1598_677#" "VBiasOut" 16.2412
+cap "a_7620_2383#" "PBiasEnabled" 1008.07
+cap "VddA18" "PowerDown" 249.702
+cap "a_8068_4210#" "a_1598_677#" 941.022
+cap "a_9449_4210#" "PowerDown" 59.7532
+cap "a_10376_2544#" "a_7620_4119#" 364.076
+cap "Rail" "a_10376_2544#" 18.6966
+cap "a_11534_4210#" "VddA18" 813.614
+cap "BufferPBias" "a_1598_677#" 30.6469
+cap "a_7650_2474#" "a_7275_4210#" 4633.12
+cap "a_11534_4210#" "a_9449_4210#" 1596.39
+cap "NBiasEnabled" "VBiasOut" 115.773
+cap "NBiasEnabled" "a_8068_4210#" 1132.11
+cap "PowerDown" "VBiasOut" 714.152
+cap "a_7650_2474#" "a_1598_677#" 364.439
+cap "a_7292_4119#" "a_13395_4210#" 0.0909444
+cap "a_8068_4210#" "PowerDown" 1621.74
+cap "BufferPBias" "NBiasEnabled" 26.3485
+cap "a_8849_4119#" "VddA18" 6158.33
+cap "a_11534_4210#" "VBiasOut" 3.10021
+cap "a_8357_4119#" "a_13395_4210#" 0.0577655
+cap "a_8357_4119#" "a_7292_4119#" 120.353
+cap "a_8849_4119#" "a_9449_4210#" 2911.09
+cap "a_11534_4210#" "a_8068_4210#" 0.0881546
+cap "a_11288_2204#" "a_7620_4119#" 430.087
+cap "Rail" "a_11288_2204#" 28.1136
+cap "a_7650_2474#" "NBiasEnabled" 0.252257
+cap "a_11534_4210#" "BufferPBias" 211.754
+cap "VddA18" "SplitterOutput" 239.387
+cap "a_7650_2474#" "PowerDown" 3.67388
+cap "BufferNBias" "SplitterOutput" 1.99622
+cap "a_9449_4210#" "SplitterOutput" 2.74659
+cap "VddA18" "li_11415_552#" 317.925
+cap "a_8849_4119#" "VBiasOut" 65.5644
+cap "a_7275_4210#" "a_7620_4119#" 16.7465
+cap "VddA18" "BIT0" 21.8629
+cap "a_7275_4210#" "Rail" 0.675141
+cap "a_8849_4119#" "a_8068_4210#" 1054.81
+cap "a_9449_4210#" "BIT0" 0.0593801
+cap "a_9449_4210#" "li_11415_552#" 4.88148
+cap "a_12920_2597#" "a_13395_4210#" 7.06138
+cap "a_12920_2597#" "a_7292_4119#" 658.335
+cap "a_1598_677#" "a_7620_4119#" 627.409
+cap "BufferPBias" "a_8849_4119#" 1378.09
+cap "Rail" "a_1598_677#" 14.0215
+cap "a_12920_2597#" "a_8357_4119#" 2.75316
+cap "a_7620_2383#" "VddA18" 607.392
+cap "a_7620_2383#" "BufferNBias" 1.7871
+cap "a_10376_2544#" "a_7292_4119#" 18.7589
+cap "VBiasOut" "SplitterOutput" 6.24901
+cap "a_7620_2383#" "a_9449_4210#" 710.841
+cap "PBiasEnabled" "VddA18" 166.574
+cap "a_8068_4210#" "SplitterOutput" 22.6499
+cap "VBiasOut" "li_11415_552#" 0.276555
+cap "PBiasEnabled" "a_9449_4210#" 54.3149
+cap "a_8357_4119#" "a_10376_2544#" 18.7139
+cap "a_7650_2474#" "a_8849_4119#" 16.7714
+cap "a_8068_4210#" "li_11415_552#" 1.71941
+cap "NBiasEnabled" "a_7620_4119#" 85.6036
+cap "Rail" "NBiasEnabled" 190.367
+cap "PowerDown" "a_7620_4119#" 403.129
+cap "Rail" "PowerDown" 451.538
+cap "a_7620_2383#" "VBiasOut" 127.909
+cap "PBiasEnabled" "VBiasOut" 83.5756
+cap "a_7650_2474#" "SplitterOutput" 1870.99
+cap "a_7620_2383#" "a_8068_4210#" 96.6941
+cap "a_11534_4210#" "a_7620_4119#" 26.9951
+cap "a_11534_4210#" "Rail" 1.47402
+cap "PBiasEnabled" "a_8068_4210#" 966.553
+cap "a_11288_2204#" "a_13395_4210#" 0.120278
+cap "a_11288_2204#" "a_7292_4119#" 23.6576
+cap "BufferPBias" "a_7620_2383#" 6.90264
+cap "BufferPBias" "PBiasEnabled" 26.5475
+cap "a_8357_4119#" "a_11288_2204#" 276.566
+cap "a_8357_4119#" "BiasDisabled" 0.537232
+cap "a_7650_2474#" "a_7620_2383#" 987.665
+cap "a_7275_4210#" "a_7292_4119#" 98.2418
+cap "a_8849_4119#" "a_7620_4119#" 642.66
+cap "a_7650_2474#" "PBiasEnabled" 2.21924
+cap "a_8849_4119#" "Rail" 86.1283
+cap "a_8357_4119#" "a_7275_4210#" 0.908934
+cap "a_1598_677#" "a_7292_4119#" 85.6699
+cap "a_12920_2597#" "a_11288_2204#" 0.0323214
+cap "a_7620_4119#" "SplitterOutput" 86.938
+cap "a_8357_4119#" "a_1598_677#" 14.1322
+cap "Rail" "SplitterOutput" 5.30824
+cap "a_7620_4119#" "li_11415_552#" 11.0744
+cap "VddA18" "BufferNBias" 18.7515
+cap "a_7620_4119#" "BIT0" 0.920447
+cap "VddA18" "a_9449_4210#" 3642.99
+cap "Rail" "li_11415_552#" 0.178385
+cap "a_10376_2544#" "a_11288_2204#" 0.0586356
+cap "NBiasEnabled" "a_7292_4119#" 42.0787
+cap "NBiasEnabled" "a_13395_4210#" 175.821
+cap "PowerDown" "a_13395_4210#" 0.0715733
+cap "PowerDown" "a_7292_4119#" 1238.3
+cap "a_8357_4119#" "NBiasEnabled" 56.1029
+cap "a_7620_2383#" "a_7620_4119#" 4070.08
+cap "a_7620_2383#" "Rail" 578.623
+cap "PBiasEnabled" "a_7620_4119#" 51.7495
+cap "a_8357_4119#" "PowerDown" 3179.44
+cap "a_11534_4210#" "a_7292_4119#" 124.781
+cap "a_7275_4210#" "a_10376_2544#" 31.6191
+cap "a_11534_4210#" "a_13395_4210#" 32.7355
+cap "VddA18" "VBiasOut" 185.641
+cap "Rail" "PBiasEnabled" 86.8567
+cap "VddA18" "a_8068_4210#" 504.635
+cap "a_9449_4210#" "VBiasOut" 950
+cap "a_11534_4210#" "a_8357_4119#" 0.539955
+cap "a_9449_4210#" "a_8068_4210#" 106.107
+cap "BufferPBias" "VddA18" 4895.83
+cap "a_10376_2544#" "a_1598_677#" 221.421
+cap "BufferPBias" "a_9449_4210#" 55.3792
+cap "a_12920_2597#" "NBiasEnabled" 64.27
+cap "a_8849_4119#" "a_13395_4210#" 273.327
+cap "a_8849_4119#" "a_7292_4119#" 177.293
+cap "a_12920_2597#" "PowerDown" 2.69358
+cap "a_7650_2474#" "VddA18" 133.622
+cap "a_7650_2474#" "BufferNBias" 0.0617359
+cap "a_8068_4210#" "VBiasOut" 894.484
+cap "a_8357_4119#" "a_8849_4119#" 38.3156
+cap "a_7650_2474#" "a_9449_4210#" 0.113339
+cap "a_7275_4210#" "a_11288_2204#" 0.0248659
+cap "a_10376_2544#" "NBiasEnabled" 2.01998
+cap "a_12920_2597#" "a_11534_4210#" 56.694
+cap "a_10376_2544#" "PowerDown" 18.6257
+cap "BufferPBias" "VBiasOut" 1.60921
+cap "SplitterOutput" "a_7292_4119#" 2.43747
+cap "BufferPBias" "a_8068_4210#" 39.6105
+cap "a_1598_677#" "a_11288_2204#" 1.62045
+cap "li_11415_552#" "a_7292_4119#" 74.8721
+cap "a_8357_4119#" "SplitterOutput" 8.62244
+cap "a_1598_677#" "BiasDisabled" 0.458783
+cap "a_7650_2474#" "VBiasOut" 1.24591
+cap "a_8357_4119#" "li_11415_552#" 8.67953
+cap "a_7650_2474#" "a_8068_4210#" 200.081
+device msubckt sky130_fd_pr__nfet_01v8 13555 2444 13556 2445 l=76 w=200 "GND" "a_7620_4119#" 152 0 "a_13395_4210#" 200 10600,506 "a_8849_4119#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 12956 2688 12957 2689 l=30 w=200 "GND" "a_12920_2597#" 60 0 "a_11534_4210#" 200 10600,506 "GND" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 11752 1980 11753 1981 l=30 w=800 "GND" "PowerDown" 60 0 "VBiasOut" 800 59200,948 "Rail" 800 42400,1706
+device msubckt sky130_fd_pr__nfet_01v8 11574 1980 11575 1981 l=30 w=800 "GND" "a_8357_4119#" 60 0 "a_8068_4210#" 800 42400,1706 "VBiasOut" 800 59200,948
+device msubckt sky130_fd_pr__nfet_01v8 11212 2204 11213 2205 l=76 w=200 "GND" "a_7620_2383#" 152 0 "a_8849_4119#" 200 10600,506 "a_11288_2204#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 10977 1604 10978 1605 l=30 w=800 "GND" "PBiasEnabled" 60 0 "a_8068_4210#" 800 59200,948 "a_8849_4119#" 800 42400,1706
+device msubckt sky130_fd_pr__nfet_01v8 10799 1604 10800 1605 l=30 w=800 "GND" "NBiasEnabled" 60 0 "a_1598_677#" 800 42400,1706 "a_8068_4210#" 800 59200,948
+device msubckt sky130_fd_pr__nfet_01v8 9173 677 9174 678 l=1200 w=1200 "GND" "a_1598_677#" 2400 0 "GND" 1200 63600,2506 "a_9449_4210#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8 7677 677 7678 678 l=1200 w=1200 "GND" "a_1598_677#" 2400 0 "SplitterOutput" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4886 677 4887 678 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3390 677 3391 678 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1894 677 1895 678 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 398 677 399 678 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8 10524 2444 10525 2445 l=30 w=200 "GND" "a_7620_4119#" 60 0 "a_10376_2544#" 200 10050,348 "a_1598_677#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9896 2544 9897 2545 l=480 w=100 "GND" "SplitterOutput" 960 0 "a_7275_4210#" 100 17470,628 "a_10376_2544#" 100 10050,348
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9700 2164 9701 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7650_2474#" 480 35520,628 "a_7275_4210#" 480 17470,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9504 2164 9505 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7275_4210#" 480 35520,628 "a_7650_2474#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9308 2164 9309 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7650_2474#" 480 35520,628 "a_7275_4210#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9112 2164 9113 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7275_4210#" 480 35520,628 "a_7650_2474#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8916 2164 8917 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7650_2474#" 480 35520,628 "a_7275_4210#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8720 2164 8721 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7275_4210#" 480 35520,628 "a_7650_2474#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8524 2164 8525 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7650_2474#" 480 35520,628 "a_7275_4210#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8328 2164 8329 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7275_4210#" 480 35520,628 "a_7650_2474#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8132 2164 8133 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7650_2474#" 480 35520,628 "a_7275_4210#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8_lvt 7936 2164 7937 2165 l=48 w=480 "GND" "SplitterOutput" 96 0 "a_7275_4210#" 480 25440,1066 "a_7650_2474#" 480 35520,628
+device msubckt sky130_fd_pr__nfet_01v8 7620 2474 7621 2475 l=30 w=200 "GND" "a_7620_2383#" 60 0 "a_1598_677#" 200 10600,506 "a_7650_2474#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4886 2117 4887 2118 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3390 2117 3391 2118 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1894 2117 1895 2118 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 398 2117 399 2118 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__pfet_01v8 13555 4194 13556 4195 l=76 w=200 "VddA18" "a_7620_2383#" 152 0 "a_13395_4210#" 200 10650,360 "a_8849_4119#" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12915 4210 12916 4211 l=480 w=100 "VddA18" "a_9449_4210#" 960 0 "a_11534_4210#" 100 12300,446 "a_13395_4210#" 100 10650,360
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12578 4210 12579 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11534_4210#" 480 35520,628 "a_11288_2204#" 480 25440,1066
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12354 4210 12355 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11288_2204#" 480 35520,628 "a_11534_4210#" 480 35520,628
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12130 4210 12131 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11534_4210#" 480 35520,628 "a_11288_2204#" 480 35520,628
+device msubckt sky130_fd_pr__pfet_01v8_lvt 11906 4210 11907 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11288_2204#" 480 35520,628 "a_11534_4210#" 480 35520,628
+device msubckt sky130_fd_pr__pfet_01v8_lvt 11682 4210 11683 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11534_4210#" 480 35520,628 "a_11288_2204#" 480 35520,628
+device msubckt sky130_fd_pr__pfet_01v8_lvt 11458 4210 11459 4211 l=76 w=480 "VddA18" "a_9449_4210#" 152 0 "a_11288_2204#" 480 22720,633 "a_11534_4210#" 480 35520,628
+device msubckt sky130_fd_pr__pfet_01v8 11229 4210 11230 4211 l=76 w=200 "VddA18" "a_7620_4119#" 152 0 "a_8849_4119#" 200 33500,976 "a_11288_2204#" 200 22720,633
+device msubckt sky130_fd_pr__pfet_01v8 10977 4210 10978 4211 l=76 w=800 "VddA18" "NBiasEnabled" 152 0 "a_8068_4210#" 800 59200,948 "a_8849_4119#" 800 33500,976
+device msubckt sky130_fd_pr__pfet_01v8 10753 4210 10754 4211 l=76 w=800 "VddA18" "PBiasEnabled" 152 0 "a_1598_677#" 800 31100,952 "a_8068_4210#" 800 59200,948
+device msubckt sky130_fd_pr__pfet_01v8 10525 4210 10526 4211 l=76 w=200 "VddA18" "a_7620_2383#" 152 0 "a_10376_2544#" 200 10600,506 "a_1598_677#" 200 31100,952
+device msubckt sky130_fd_pr__pfet_01v8_lvt 11241 5328 11242 5329 l=600 w=1200 "VddA18" "BufferPBias" 1200 0 "a_8849_4119#" 1200 88800,1348 "VddA18" 1200 63600,2506
+device msubckt sky130_fd_pr__pfet_01v8_lvt 10493 5328 10494 5329 l=600 w=1200 "VddA18" "BufferPBias" 1200 0 "VddA18" 1200 63600,2506 "a_8849_4119#" 1200 88800,1348
+device msubckt sky130_fd_pr__pfet_01v8 9597 4210 9598 4211 l=600 w=1200 "VddA18" "a_8849_4119#" 1200 0 "a_9449_4210#" 1200 88800,1348 "VddA18" 1200 63600,2506
+device msubckt sky130_fd_pr__pfet_01v8 8849 4210 8850 4211 l=600 w=1200 "VddA18" "a_8849_4119#" 1200 0 "VddA18" 1200 63600,2506 "a_9449_4210#" 1200 88800,1348
+device msubckt sky130_fd_pr__pfet_01v8 8357 4210 8358 4211 l=76 w=800 "VddA18" "a_8357_4119#" 152 0 "VBiasOut" 800 42400,1706 "Rail" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 8121 4210 8122 4211 l=76 w=800 "VddA18" "PowerDown" 152 0 "a_8068_4210#" 800 42400,1706 "VBiasOut" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 7620 4210 7621 4211 l=76 w=200 "VddA18" "a_7620_4119#" 152 0 "a_1598_677#" 200 10600,506 "a_7650_2474#" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 7328 4210 7329 4211 l=30 w=200 "VddA18" "a_7292_4119#" 60 0 "a_7275_4210#" 200 10600,506 "VddA18" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4886 3557 4887 3558 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3390 3557 3391 3558 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1894 3557 1895 3558 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 398 3557 399 3558 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4886 4997 4887 4998 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3390 4997 3391 4998 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1894 4997 1895 4998 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "a_1598_677#" 1200 63600,2506 "GND" 1200 63600,2506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 398 4997 399 4998 l=1200 w=1200 "GND" "BufferNBias" 2400 0 "GND" 1200 63600,2506 "a_1598_677#" 1200 63600,2506
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/vnb" 7.23052
+cap "scs130hd_inv_1_1/Y" "scs130hd_nor2_1_0/A" -0.170988
+cap "a_8849_4119#" "scs130hd_inv_1_1/A" 0.693269
+cap "scs130hd_inv_1_1/Y" "scs130hd_nor2_1_0/vnb" 38.4577
+cap "scs130hd_inv_1_2/Y" "scs130hd_inv_1_1/Y" -0.227643
+cap "scs130hd_inv_1_0/A" "a_1598_677#" -2.47124
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vpb" 3.56301
+cap "scs130hd_inv_1_1/Y" "a_1598_677#" -0.192341
+cap "scs130hd_inv_1_0/A" "scs130hd_inv_1_1/Y" 0.964133
+cap "a_9449_4210#" "scs130hd_inv_1_1/A" -10.3791
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/vpb" 57.1033
+cap "a_1598_677#" "scs130hd_nor2_1_0/Y" 0.0925371
+cap "a_9449_4210#" "scs130hd_inv_1_3/Y" 0.139157
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/Y" -2.72039
+cap "scs130hd_inv_1_1/A" "scs130hd_and2_1_0/a_58_74#" 0.0286069
+cap "scs130hd_nor2_1_0/B" "a_1598_677#" 0.264255
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/B" 0.20998
+cap "a_9449_4210#" "scs130hd_nor2_1_0/A" 0.366318
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vnb" 29.9918
+cap "scs130hd_inv_1_2/Y" "a_9449_4210#" 0.387725
+cap "scs130hd_nor2_1_0/vnb" "scs130hd_nor2_1_0/vpb" -46.8136
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/A" -3.74083
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/vnb" 52.5599
+cap "scs130hd_and2_1_0/B" "scs130hd_inv_1_1/A" 0.020402
+cap "scs130hd_inv_1_0/A" "a_9449_4210#" 0.0199478
+cap "a_1598_677#" "scs130hd_nor2_1_0/vpb" 3.00213
+cap "scs130hd_inv_1_1/A" "PBiasEnabled" 0.23608
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/vpb" 23.5127
+cap "scs130hd_inv_1_1/A" "a_1598_677#" -0.390094
+cap "a_9449_4210#" "scs130hd_inv_1_1/Y" -2.12148
+cap "scs130hd_inv_1_0/A" "scs130hd_inv_1_1/A" -1.79805
+cap "scs130hd_inv_1_1/Y" "scs130hd_nor2_1_0/vpb" 44.525
+cap "scs130hd_inv_1_1/A" "a_8068_4210#" 0.190473
+cap "scs130hd_inv_1_1/Y" "scs130hd_inv_1_1/A" 56.6158
+cap "a_9449_4210#" "scs130hd_nor2_1_0/Y" 0.0675901
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/Y" 0.0618936
+cap "scs130hd_inv_1_1/Y" "scs130hd_inv_1_3/Y" -0.135151
+cap "a_12920_2597#" "scs130hd_inv_1_1/Y" -0.556707
+cap "a_1598_677#" "scs130hd_nor2_1_0/vnb" 11.5131
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vnb" 0.202836
+cap "Rail" "scs130hd_nor2_1_0/vnb" 1.17663
+cap "scs130hd_inv_1_1/A" "a_8068_4210#" 0.018257
+cap "scs130hd_inv_1_2/Y" "scs130hd_nor2_1_0/vnb" -3.33203
+cap "scs130hd_nor2_1_0/Y" "scs130hd_nor2_1_0/vnb" 33.8815
+cap "scs130hd_inv_1_3/Y" "scs130hd_and2_1_0/a_58_74#" 1.57017
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_nor2_1_0/vnb" -117.658
+cap "scs130hd_inv_1_0/A" "scs130hd_inv_1_1/A" 1.69106
+cap "a_9449_4210#" "scs130hd_and2_1_0/X" 0.133693
+cap "scs130hd_nor2_1_0/B" "scs130hd_inv_1_0/A" 1.01219
+cap "scs130hd_and2_1_0/X" "Rail" 0.17137
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/A" 9.41406
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/Y" 1.62867
+cap "scs130hd_nor2_1_0/A" "NBiasEnabled" 0.0168486
+cap "scs130hd_nor2_1_0/B" "scs130hd_nor2_1_0/A" -6.3826
+cap "a_9449_4210#" "scs130hd_and2_1_0/a_58_74#" 0.0221869
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/vpb" -2.94544
+cap "scs130hd_inv_1_1/A" "scs130hd_inv_1_1/Y" 1.03653
+cap "scs130hd_and2_1_0/a_58_74#" "Rail" 0.0347443
+cap "scs130hd_nor2_1_0/B" "scs130hd_inv_1_1/Y" 0.320857
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/Y" 12.3875
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/vpb" -2.47241
+cap "scs130hd_inv_1_3/Y" "a_12920_2597#" -1.21928
+cap "scs130hd_nor2_1_0/A" "VBiasOut" 0.486642
+cap "scs130hd_inv_1_1/A" "a_11288_2204#" 0.0171327
+cap "scs130hd_nor2_1_0/B" "a_1598_677#" 0.305434
+cap "a_9449_4210#" "scs130hd_inv_1_3/Y" 0.431255
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/A" -2.04987
+cap "scs130hd_inv_1_3/Y" "Rail" 0.576848
+cap "scs130hd_inv_1_3/Y" "scs130hd_inv_1_2/Y" 4.4752
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/vnb" 1.8293
+cap "scs130hd_inv_1_3/Y" "scs130hd_nor2_1_0/Y" 2.40711
+cap "scs130hd_nor2_1_0/B" "scs130hd_nor2_1_0/vnb" -3.32256
+cap "NBiasEnabled" "scs130hd_nor2_1_0/vnb" 0.000736334
+cap "scs130hd_inv_1_3/Y" "scs130hd_nor2_1_0/vpb" 75.3005
+cap "scs130hd_inv_1_2/Y" "a_12920_2597#" -0.449034
+cap "scs130hd_nor2_1_0/vpb" "a_12920_2597#" 4.53393
+cap "a_9449_4210#" "scs130hd_inv_1_2/Y" 0.777308
+cap "a_9449_4210#" "scs130hd_nor2_1_0/Y" 0.0653806
+cap "scs130hd_inv_1_0/A" "scs130hd_inv_1_1/Y" 0.232907
+cap "scs130hd_inv_1_2/Y" "Rail" 0.959475
+cap "scs130hd_nor2_1_0/Y" "Rail" 0.202933
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vpb" 0.200008
+cap "scs130hd_nor2_1_0/Y" "scs130hd_inv_1_2/Y" 9.78979
+cap "VBiasOut" "scs130hd_nor2_1_0/vnb" 0.789653
+cap "scs130hd_nor2_1_0/A" "scs130hd_inv_1_1/Y" 1.47376
+cap "scs130hd_nor2_1_0/vpb" "Rail" 0.217497
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_inv_1_1/A" 0.00101698
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_inv_1_2/Y" 37.21
+cap "scs130hd_nor2_1_0/Y" "scs130hd_nor2_1_0/vpb" 77.2229
+cap "scs130hd_nor2_1_0/B" "scs130hd_and2_1_0/a_58_74#" 0.00137858
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/vnb" 0.128377
+cap "scs130hd_and2_1_0/X" "VBiasOut" 0.317526
+cap "scs130hd_nor2_1_0/A" "a_11288_2204#" 0.0473209
+cap "scs130hd_nor2_1_0/A" "a_1598_677#" 0.0718832
+cap "scs130hd_nor2_1_0/a_108_296#" "scs130hd_inv_1_1/Y" 0.571464
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/vnb" -0.0770932
+cap "scs130hd_inv_1_3/Y" "scs130hd_inv_1_1/A" 0.912287
+cap "scs130hd_and2_1_0/a_58_74#" "VBiasOut" 0.0581571
+cap "scs130hd_inv_1_3/Y" "NBiasEnabled" -0.013484
+cap "scs130hd_nor2_1_0/A" "scs130hd_nor2_1_0/vnb" 189.461
+cap "scs130hd_inv_1_1/Y" "scs130hd_nor2_1_0/vnb" 3.7212
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/A" 0.25075
+cap "scs130hd_nor2_1_0/a_108_296#" "scs130hd_nor2_1_0/vnb" 0.297178
+cap "scs130hd_inv_1_1/A" "scs130hd_inv_1_2/Y" 0.926322
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/Y" 0.0498108
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_inv_1_0/A" 0.00389796
+cap "scs130hd_inv_1_3/Y" "VBiasOut" 1.04349
+cap "scs130hd_nor2_1_0/vnb" "a_1598_677#" -0.00732129
+cap "scs130hd_nor2_1_0/B" "scs130hd_inv_1_2/Y" 0.700745
+cap "scs130hd_nor2_1_0/Y" "NBiasEnabled" 0.0184463
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/vpb" 25.538
+cap "scs130hd_nor2_1_0/B" "scs130hd_nor2_1_0/Y" -0.794464
+cap "scs130hd_nor2_1_0/vpb" "NBiasEnabled" -0.000923987
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/A" 0.24687
+cap "scs130hd_nor2_1_0/B" "scs130hd_nor2_1_0/vpb" 15.6919
+cap "scs130hd_inv_1_3/Y" "scs130hd_and2_1_0/B" -0.864971
+cap "scs130hd_inv_1_2/Y" "PowerDown" 0.252123
+cap "scs130hd_inv_1_2/Y" "VBiasOut" 2.56152
+cap "scs130hd_nor2_1_0/Y" "VBiasOut" 0.288483
+cap "scs130hd_inv_1_3/Y" "scs130hd_nor2_1_0/A" -7.16542
+cap "scs130hd_nor2_1_0/vpb" "VBiasOut" 0.436945
+cap "scs130hd_nor2_1_0/Y" "scs130hd_and2_1_0/B" -0.885188
+cap "a_8068_4210#" "scs130hd_inv_1_2/Y" 0.590311
+cap "scs130hd_nor2_1_0/Y" "a_8068_4210#" -0.3363
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_and2_1_0/B" 18.9922
+cap "scs130hd_inv_1_3/Y" "scs130hd_inv_1_1/Y" 1.17972
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/vnb" 0.00577121
+cap "a_9449_4210#" "scs130hd_nor2_1_0/A" 0.250389
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/Y" -2.40127
+cap "scs130hd_nor2_1_0/A" "Rail" 0.0790067
+cap "scs130hd_inv_1_0/A" "scs130hd_nor2_1_0/vpb" 8.93521
+cap "scs130hd_nor2_1_0/A" "scs130hd_inv_1_2/Y" 35.0558
+cap "scs130hd_inv_1_3/Y" "a_1598_677#" -0.00512877
+cap "scs130hd_nor2_1_0/Y" "scs130hd_nor2_1_0/A" 11.1333
+cap "scs130hd_inv_1_2/Y" "a_8357_4119#" 0.252123
+cap "scs130hd_nor2_1_0/Y" "a_8357_4119#" -0.0166339
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_nor2_1_0/A" 61.6903
+cap "scs130hd_inv_1_2/Y" "scs130hd_inv_1_1/Y" 2.95549
+cap "scs130hd_nor2_1_0/Y" "scs130hd_inv_1_1/Y" 1.99888
+cap "scs130hd_inv_1_3/Y" "scs130hd_nor2_1_0/vnb" 38.6652
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_inv_1_1/Y" 33.4299
+cap "scs130hd_nor2_1_0/a_108_296#" "scs130hd_nor2_1_0/Y" 2.78403
+cap "a_12920_2597#" "scs130hd_nor2_1_0/vnb" 1.59419
+cap "scs130hd_inv_1_2/Y" "a_1598_677#" -0.0029607
+cap "scs130hd_nor2_1_0/a_108_296#" "scs130hd_nor2_1_0/vpb" 0.54615
+cap "scs130hd_nor2_1_0/Y" "a_1598_677#" 0.0253425
+cap "scs130hd_and2_1_0/X" "scs130hd_inv_1_3/Y" 10.8828
+cap "scs130hd_and2_1_0/X" "scs130hd_and2_1_0/B" 52.813
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_and2_1_0/B" 48.4955
+cap "scs130hd_and2_1_0/X" "VBiasOut" 1.37391
+cap "scs130hd_and2_1_0/X" "a_12920_2597#" 43.8959
+cap "scs130hd_and2_1_0/B" "a_12920_2597#" 1.70755
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/vpb" -0.883377
+cap "VBiasOut" "scs130hd_and2_1_0/B" 0.083825
+cap "VBiasOut" "scs130hd_and2_1_0/a_58_74#" 0.296649
+cap "scs130hd_and2_1_0/a_58_74#" "a_12920_2597#" 2.53432
+cap "Rail" "scs130hd_nor2_1_0/vnb" 0.197902
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/Y" 2.5772
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/Y" 5.97847
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/vpb" 27.8437
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/vpb" 0.905303
+cap "scs130hd_and2_1_0/X" "a_9449_4210#" 0.578478
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/Y" 11.3191
+cap "a_9449_4210#" "scs130hd_and2_1_0/B" 0.0285048
+cap "a_9449_4210#" "scs130hd_and2_1_0/a_58_74#" 0.113283
+cap "scs130hd_and2_1_0/B" "scs130hd_inv_1_3/Y" -2.01495
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/A" -2.52047
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_inv_1_3/Y" 0.464446
+cap "scs130hd_nor2_1_0/vpb" "a_12920_2597#" 20.3596
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/A" 0.135934
+cap "VBiasOut" "scs130hd_nor2_1_0/Y" -0.103375
+cap "a_12920_2597#" "scs130hd_nor2_1_0/Y" -0.0251779
+cap "scs130hd_nor2_1_0/B" "scs130hd_nor2_1_0/Y" 0.131097
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_nor2_1_0/Y" -9.45536
+cap "a_12920_2597#" "scs130hd_inv_1_3/Y" -1.89836
+cap "scs130hd_nor2_1_0/A" "a_12920_2597#" -0.138506
+cap "a_9449_4210#" "scs130hd_nor2_1_0/Y" -0.0384294
+cap "NBiasEnabled" "scs130hd_nor2_1_0/vnb" 0.709558
+cap "Rail" "scs130hd_and2_1_0/X" 0.741505
+cap "Rail" "scs130hd_and2_1_0/B" 0.0558861
+cap "Rail" "scs130hd_and2_1_0/a_58_74#" 0.176953
+cap "scs130hd_inv_1_1/Y" "a_12920_2597#" -0.563546
+cap "scs130hd_inv_1_2/Y" "a_12920_2597#" -0.496357
+cap "scs130hd_and2_1_0/X" "scs130hd_nor2_1_0/vnb" -3.18469
+cap "Rail" "scs130hd_nor2_1_0/Y" -0.0597808
+cap "scs130hd_nor2_1_0/vnb" "scs130hd_and2_1_0/a_144_74#" 0.431621
+cap "scs130hd_and2_1_0/B" "scs130hd_nor2_1_0/vnb" -0.832928
+cap "scs130hd_and2_1_0/a_58_74#" "scs130hd_nor2_1_0/vnb" 2.42683
+cap "NBiasEnabled" "scs130hd_and2_1_0/B" 0.1488
+cap "scs130hd_and2_1_0/a_58_74#" "NBiasEnabled" 0.1587
+cap "a_12920_2597#" "scs130hd_nor2_1_0/vnb" 2.6709
+cap "VBiasOut" "scs130hd_nor2_1_0/vnb" 0.357852
+cap "a_12920_2597#" "scs130hd_inv_1_1/A" -2.26143e-05
+cap "scs130hd_nor2_1_0/vpb" "scs130hd_nor2_1_0/vnb" -37.5384
+cap "scs130hd_nor2_1_0/Y" "scs130hd_nor2_1_0/vnb" 2.34254
+cap "NBiasEnabled" "a_12920_2597#" -0.0172025
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vnb" 0.147842
+cap "scs130hd_nor2_1_0/A" "scs130hd_nor2_1_0/vnb" -0.352057
+cap "NBiasEnabled" "scs130hd_nor2_1_0/Y" 0.10864
+cap "PBiasEnabled" "scs130hd_inv_1_1/Y" 0.0552754
+cap "scs130hd_inv_1_1/A" "PBiasEnabled" 0.0367687
+cap "scs130hd_nor2_1_0/vnb" "a_9449_4210#" 0.646242
+cap "scs130hd_inv_1_1/A" "scs130hd_nor2_1_0/vnb" 0.300002
+cap "scs130hd_nor2_1_0/vpb" "PBiasEnabled" -0.00925358
+cap "a_8068_4210#" "scs130hd_nor2_1_0/vnb" 0.222826
+cap "scs130hd_nor2_1_0/vnb" "NBiasEnabled" -0.0749203
+cap "scs130hd_inv_1_1/Y" "a_9449_4210#" 0.590705
+cap "scs130hd_inv_1_1/A" "a_9449_4210#" 0.519816
+cap "scs130hd_inv_1_1/A" "scs130hd_inv_1_1/Y" 1.14024
+cap "PBiasEnabled" "scs130hd_nor2_1_0/vnb" 0.0163496
+cap "a_8068_4210#" "scs130hd_inv_1_1/Y" 0.183786
+cap "a_8068_4210#" "scs130hd_inv_1_1/A" 0.194003
+cap "scs130hd_inv_1_0/A" "a_9449_4210#" 0.124188
+cap "a_8068_4210#" "scs130hd_inv_1_0/A" 0.0553979
+cap "scs130hd_nor2_1_0/Y" "a_8357_4119#" 0.0193634
+cap "scs130hd_nor2_1_0/vnb" "PowerDown" 0.0279535
+cap "PowerDown" "scs130hd_nor2_1_0/A" -0.0403057
+cap "scs130hd_nor2_1_0/vnb" "Rail" 1.08948
+cap "Rail" "scs130hd_nor2_1_0/A" 0.0365026
+cap "scs130hd_nor2_1_0/Y" "scs130hd_inv_1_1/A" 0.298297
+cap "Rail" "scs130hd_nor2_1_0/B" 0.0129617
+cap "a_9449_4210#" "scs130hd_and2_1_0/a_58_74#" 0.259457
+cap "a_8068_4210#" "scs130hd_nor2_1_0/A" 0.0410752
+cap "a_8357_4119#" "scs130hd_nor2_1_0/vpb" 0.277282
+cap "Rail" "a_9449_4210#" -2.22045e-16
+cap "scs130hd_nor2_1_0/B" "a_8068_4210#" 0.0135674
+cap "scs130hd_nor2_1_0/a_108_296#" "a_8068_4210#" 0.030002
+cap "a_7620_2383#" "scs130hd_inv_1_1/A" 0.0221035
+cap "scs130hd_inv_1_2/Y" "VBiasOut" 1.17998
+cap "scs130hd_and2_1_0/X" "a_9449_4210#" 0.45553
+cap "scs130hd_nor2_1_0/Y" "VBiasOut" -0.0253071
+cap "scs130hd_nor2_1_0/vnb" "scs130hd_inv_1_1/A" 0.850314
+cap "scs130hd_inv_1_1/Y" "a_7620_2383#" 0.0337435
+cap "scs130hd_inv_1_2/Y" "PowerDown" 0.0190255
+cap "a_7620_2383#" "scs130hd_nor2_1_0/vpb" 0.463079
+cap "scs130hd_nor2_1_0/Y" "PowerDown" 0.0106484
+cap "VBiasOut" "scs130hd_nor2_1_0/vpb" 0.0947207
+cap "scs130hd_inv_1_2/Y" "Rail" 0.844586
+cap "scs130hd_nor2_1_0/Y" "a_9449_4210#" 0.0849639
+cap "a_9449_4210#" "scs130hd_and2_1_0/B" 0.0730032
+cap "scs130hd_nor2_1_0/Y" "Rail" -0.00535119
+cap "scs130hd_inv_1_2/Y" "a_8068_4210#" 0.475707
+cap "scs130hd_nor2_1_0/Y" "a_8068_4210#" -0.284348
+cap "a_9449_4210#" "scs130hd_nor2_1_0/vpb" 0.347525
+cap "VBiasOut" "scs130hd_nor2_1_0/A" -0.277239
+cap "scs130hd_nor2_1_0/B" "VBiasOut" -0.00645542
+cap "scs130hd_inv_1_1/A" "scs130hd_inv_1_3/Y" 1.02491
+cap "scs130hd_inv_1_2/Y" "a_8357_4119#" 0.0190255
+cap "a_8068_4210#" "scs130hd_nor2_1_0/vpb" 0.391299
+cap "Rail" "VBiasOut" -2.27374e-13
+cap "scs130hd_and2_1_0/a_58_74#" "a_9449_4210#" 1.78208
+cap "scs130hd_and2_1_0/X" "a_12920_2597#" 0.779927
+cap "scs130hd_nor2_1_0/vnb" "a_9449_4210#" 0.463131
+cap "scs130hd_nor2_1_0/vpb" "a_9449_4210#" 0.650164
+cap "scs130hd_and2_1_0/B" "a_9449_4210#" 0.425356
+cap "a_12920_2597#" "scs130hd_and2_1_0/a_58_74#" 0.0201565
+cap "a_9449_4210#" "scs130hd_and2_1_0/a_144_74#" 0.225095
+cap "a_12920_2597#" "scs130hd_nor2_1_0/vnb" 0.0713579
+cap "a_9449_4210#" "scs130hd_nor2_1_0/Y" 0.748554
+cap "scs130hd_nor2_1_0/vpb" "a_12920_2597#" 0.0075211
+cap "scs130hd_and2_1_0/X" "a_9449_4210#" 2.27249
+merge "scs130hd_and2_1_0/vgnd" "scs130hd_and2_1_0/vnb" -1331.58 0 0 0 0 0 0 0 0 -6000 -2410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8832 -744 -137028 -4040 0 0 0 0 0 0 0 0 0 0
+merge "scs130hd_and2_1_0/vnb" "scs130hd_inv_1_2/vgnd"
+merge "scs130hd_inv_1_2/vgnd" "scs130hd_inv_1_3/vnb"
+merge "scs130hd_inv_1_3/vnb" "scs130hd_inv_1_3/vgnd"
+merge "scs130hd_inv_1_3/vgnd" "scs130hd_nor2_1_0/vgnd"
+merge "scs130hd_nor2_1_0/vgnd" "scs130hd_inv_1_0/vnb"
+merge "scs130hd_inv_1_0/vnb" "scs130hd_inv_1_0/vgnd"
+merge "scs130hd_inv_1_0/vgnd" "scs130hd_inv_1_1/vnb"
+merge "scs130hd_inv_1_1/vnb" "scs130hd_inv_1_1/vgnd"
+merge "scs130hd_inv_1_1/vgnd" "scs130hd_inv_1_2/vnb"
+merge "scs130hd_inv_1_2/vnb" "scs130hd_nor2_1_0/vnb"
+merge "scs130hd_nor2_1_0/vnb" "GND"
+merge "scs130hd_and2_1_0/vpwr" "scs130hd_inv_1_3/vpwr" -4371.36 0 0 0 0 -924670 -12799 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26496 -1920 -145440 -4182 0 0 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_3/vpwr" "scs130hd_and2_1_0/vpb"
+merge "scs130hd_and2_1_0/vpb" "scs130hd_inv_1_3/vpb"
+merge "scs130hd_inv_1_3/vpb" "scs130hd_inv_1_0/vpwr"
+merge "scs130hd_inv_1_0/vpwr" "scs130hd_inv_1_0/vpb"
+merge "scs130hd_inv_1_0/vpb" "scs130hd_inv_1_1/vpwr"
+merge "scs130hd_inv_1_1/vpwr" "scs130hd_inv_1_1/vpb"
+merge "scs130hd_inv_1_1/vpb" "scs130hd_inv_1_2/vpwr"
+merge "scs130hd_inv_1_2/vpwr" "scs130hd_inv_1_2/vpb"
+merge "scs130hd_inv_1_2/vpb" "scs130hd_nor2_1_0/vpb"
+merge "scs130hd_nor2_1_0/vpb" "scs130hd_nor2_1_0/vpwr"
+merge "scs130hd_nor2_1_0/vpwr" "VddA18"
+merge "scs130hd_inv_1_2/Y" "a_8357_4119#" -244.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24090 -1666 0 0 -1156 -136 -10540 -378 -173888 -5562 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_0/Y" "scs130hd_inv_1_1/A" -703.586 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24092 -786 0 0 -20854 -1186 -79044 -3020 -190656 -6110 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_1/A" "a_7620_2383#"
+merge "scs130hd_inv_1_1/Y" "a_7620_4119#" -822.085 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35546 -1552 0 0 -12112 -732 -46272 -1918 -212094 -6928 0 0 0 0 0 0 0 0
+merge "scs130hd_and2_1_0/A" "scs130hd_inv_1_3/A" -274.749 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9444 -848 0 0 0 0 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_3/A" "scs130hd_nor2_1_0/Y"
+merge "scs130hd_nor2_1_0/Y" "li_11415_552#"
+merge "scs130hd_and2_1_0/B" "PBiasEnabled" -572.754 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29454 -1966 0 0 -94668 -1869 -71804 -2592 -31296 -1066 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_3/Y" "a_7292_4119#" -466.599 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -212 0 0 -171712 -5430 0 0 0 0 0 0 0 0
+merge "scs130hd_inv_1_2/A" "scs130hd_nor2_1_0/A" -565.228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24090 -1666 0 0 -6483 -462 -13760 -924 -189184 -6110 0 0 0 0 0 0 0 0
+merge "scs130hd_nor2_1_0/A" "PowerDown"
+merge "scs130hd_inv_1_0/A" "BIT0" -82.8861 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3102 -226 0 0 0 0 0 0 0 0 0 0 0 0
+merge "scs130hd_nor2_1_0/B" "BiasDisabled" -47.8041 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3430 -238 0 0 0 0 0 0 0 0 0 0 0 0

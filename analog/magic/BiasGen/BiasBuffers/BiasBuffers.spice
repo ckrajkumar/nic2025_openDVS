@@ -1,0 +1,92 @@
+* NGSPICE file created from BiasBuffers.ext - technology: sky130B
+
+.subckt scs130hd_nor2_1 vpb vnb vpwr vgnd Y B A
+X0 vgnd A Y vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X1 a_108_296# B Y vpb sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.26 ps=2.52 w=1 l=0.15
+X2 Y B vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 vpwr A a_108_296# vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.105 ps=1.21 w=1 l=0.15
+.ends
+
+.subckt scs130hd_inv_1 vpb vnb vpwr vgnd Y A
+X0 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X1 Y A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+.subckt scs130hd_and2_1 vgnd vpwr A B X vpb vnb
+X0 X a_58_74# vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.1118 ps=1.04 w=0.65 l=0.15
+X1 vpwr B a_58_74# vpb sky130_fd_pr__pfet_01v8_hvt ad=0.16655 pd=1.39 as=0.0567 ps=0.69 w=0.42 l=0.15
+X2 X a_58_74# vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.48 pd=2.96 as=0.16655 ps=1.39 w=1 l=0.15
+X3 a_144_74# A a_58_74# vnb sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+X4 a_58_74# A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+X5 vgnd B a_144_74# vnb sky130_fd_pr__nfet_01v8 ad=0.1118 pd=1.04 as=0.0567 ps=0.69 w=0.42 l=0.15
+.ends
+
+.subckt BiasBuffers
+Xscs130hd_nor2_1_0 VddA18 GND VddA18 GND scs130hd_inv_1_3/A BiasDisabled PowerDown
++ scs130hd_nor2_1
+Xscs130hd_inv_1_0 VddA18 GND VddA18 GND scs130hd_inv_1_1/A BIT0 scs130hd_inv_1
+Xscs130hd_and2_1_0 GND VddA18 scs130hd_inv_1_3/A PBiasEnabled scs130hd_and2_1_0/X
++ VddA18 GND scs130hd_and2_1
+Xscs130hd_inv_1_1 VddA18 GND VddA18 GND scs130hd_inv_1_1/Y scs130hd_inv_1_1/A scs130hd_inv_1
+Xscs130hd_inv_1_2 VddA18 GND VddA18 GND scs130hd_inv_1_2/Y PowerDown scs130hd_inv_1
+Xscs130hd_inv_1_3 VddA18 GND VddA18 GND scs130hd_inv_1_3/Y scs130hd_inv_1_3/A scs130hd_inv_1
+X0 VddA18 scs130hd_inv_1_3/Y a_7275_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X1 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.636 ps=5.33 w=2.4 l=0.24
+X2 a_11534_4210# a_9449_4210# a_11288_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X3 Rail PowerDown VBiasOut GND sky130_fd_pr__nfet_01v8 ad=1.06 pd=8.53 as=1.48 ps=4.74 w=4 l=0.15
+X4 GND a_12920_2597# a_11534_4210# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X5 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X6 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X7 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X8 a_1598_677# scs130hd_inv_1_1/Y a_10376_2544# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.25125 ps=1.74 w=1 l=0.15
+X9 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X10 VBiasOut PowerDown a_8068_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=0.38
+X11 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X12 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X13 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X14 Rail scs130hd_inv_1_2/Y VBiasOut VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=0.38
+X15 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X16 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X17 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X18 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X19 a_7650_2474# scs130hd_inv_1_1/Y a_1598_677# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.38
+X20 a_11534_4210# a_9449_4210# a_11288_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.568 ps=3.165 w=2.4 l=0.38
+X21 a_11288_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.636 pd=5.33 as=0.888 ps=3.14 w=2.4 l=0.38
+X22 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X23 a_11288_2204# scs130hd_inv_1_1/Y a_8849_4119# VddA18 sky130_fd_pr__pfet_01v8 ad=0.568 pd=3.165 as=0.8375 ps=4.88 w=1 l=0.38
+X24 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X25 a_11288_2204# scs130hd_inv_1_1/A a_8849_4119# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.38
+X26 a_11288_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X27 a_11534_4210# a_9449_4210# a_11288_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X28 a_7650_2474# scs130hd_inv_1_1/A a_1598_677# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X29 VBiasOut scs130hd_inv_1_2/Y a_8068_4210# GND sky130_fd_pr__nfet_01v8 ad=1.48 pd=4.74 as=1.06 ps=8.53 w=4 l=0.15
+X30 VddA18 a_8849_4119# a_9449_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=1.59 pd=12.53 as=2.22 ps=6.74 w=6 l=3
+X31 a_8849_4119# BufferPBias VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.22 pd=6.74 as=1.59 ps=12.53 w=6 l=3
+X32 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X33 GND a_1598_677# SplitterOutput GND sky130_fd_pr__nfet_01v8 ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X34 a_8849_4119# PBiasEnabled a_8068_4210# GND sky130_fd_pr__nfet_01v8 ad=1.06 pd=8.53 as=1.48 ps=4.74 w=4 l=0.15
+X35 a_11288_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X36 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X37 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X38 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X39 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X40 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X41 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X42 a_10376_2544# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.25125 pd=1.74 as=0.43675 ps=3.14 w=0.5 l=2.4
+X43 a_8849_4119# scs130hd_inv_1_1/Y a_13395_4210# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.38
+X44 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X45 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X46 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X47 a_1598_677# scs130hd_inv_1_1/A a_10376_2544# VddA18 sky130_fd_pr__pfet_01v8 ad=0.7775 pd=4.76 as=0.265 ps=2.53 w=1 l=0.38
+X48 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.43675 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X49 a_9449_4210# a_8849_4119# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=2.22 pd=6.74 as=1.59 ps=12.53 w=6 l=3
+X50 a_8849_4119# NBiasEnabled a_8068_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.8375 pd=4.88 as=1.48 ps=4.74 w=4 l=0.38
+X51 a_8849_4119# scs130hd_inv_1_1/A a_13395_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.26625 ps=1.8 w=1 l=0.38
+X52 a_9449_4210# a_1598_677# GND GND sky130_fd_pr__nfet_01v8 ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X53 VddA18 BufferPBias a_8849_4119# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.59 pd=12.53 as=2.22 ps=6.74 w=6 l=3
+X54 a_8068_4210# PBiasEnabled a_1598_677# VddA18 sky130_fd_pr__pfet_01v8 ad=1.48 pd=4.74 as=0.7775 ps=4.76 w=4 l=0.38
+X55 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X56 a_8068_4210# NBiasEnabled a_1598_677# GND sky130_fd_pr__nfet_01v8 ad=1.48 pd=4.74 as=1.06 ps=8.53 w=4 l=0.15
+X57 a_13395_4210# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.26625 pd=1.8 as=0.3075 ps=2.23 w=0.5 l=2.4
+.ends
+
