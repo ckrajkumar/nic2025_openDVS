@@ -1,0 +1,211 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           PixelChangeAmplifier
+description:    Pixel reset transient characterization — leakage, charge injection, timing
+PDK:            sky130B
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    21 Apr, 2026
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  vdd:
+    description: Positive power supply
+    type: power
+    direction: inout
+    Vmin: 1.62
+    Vmax: 1.98
+  DiffBn:
+    description: Differential amplifier bias
+    type: signal
+    direction: input
+  gnd:
+    description: Ground
+    type: ground
+    direction: inout
+  vsf:
+    description: Source follower input
+    type: signal
+    direction: input
+  vdiff:
+    description: Differential output
+    type: signal
+    direction: output
+  nRst:
+    description: Reset signal (active low)
+    type: signal
+    direction: input
+
+default_conditions:
+  vdd:
+    description: Power supply voltage
+    display: Vdd
+    unit: V
+    minimum: 1.62
+    typical: 1.8
+    maximum: 1.98
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: "\u00b0C"
+    minimum: 0
+    typical: 27
+    maximum: 70
+  xRefrBp:
+    description: Refractory period bias current
+    display: RefrBp
+    unit: A
+    minimum: 1e-9
+    typical: 4e-9
+    maximum: 4e-9
+  xDiffBn:
+    description: Diff amp bias current
+    display: DiffBn
+    unit: A
+    typical: 5e-9
+  xOnBn:
+    description: ON comparator bias current
+    display: OnBn
+    unit: A
+    typical: 200e-9
+  xOffBn:
+    description: OFF comparator bias current
+    display: OffBn
+    unit: A
+    typical: 0.25e-9
+  xvsf:
+    description: Source follower input voltage
+    display: Vsf
+    unit: V
+    typical: 0.7
+
+parameters:
+  reset_tran:
+    display: Pixel reset transient characterization
+    spec:
+      refractory_period:
+        display: Refractory Period
+        description: Time for nRst to reach 0.9*vdd after pixRst release
+        unit: us
+        minimum:
+          value: 0.1
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 1000
+          fail: true
+      delta_vdiff_ci:
+        display: Delta Vdiff Charge Injection
+        description: Vdiff change from reset state to post-nRst-high (charge injection)
+        unit: mV
+        minimum:
+          value: -50
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 50
+          fail: true
+      leak_event_period:
+        display: Leak Event Period
+        description: Time from nRst at vdd to ON crossing vdd/2 (leakage-driven event)
+        unit: ms
+        minimum:
+          value: 50
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 40000
+          fail: true
+      min_reset_time:
+        display: Min Reset Time
+        description: Time for vdiff to settle within 1% during second reset pulse
+        unit: us
+        minimum:
+          value: 0.01
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 100
+          fail: true
+      mrst_id:
+        display: Mrst Id
+        description: Mrst drain current during normal operation (nRst=vdd, ON=low)
+        unit: fA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      mrst_ibd:
+        display: Mrst Ibd
+        description: Mrst bulk-drain junction current during normal operation
+        unit: fA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      mrst_ibs:
+        display: Mrst Ibs
+        description: Mrst bulk-source junction current during normal operation
+        unit: fA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vdiff_before_ci:
+        display: Vdiff Before CI
+        description: Vdiff during reset, before charge injection
+        unit: mV
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vdiff_after_ci:
+        display: Vdiff After CI
+        description: Vdiff after nRst reaches vdd, after charge injection
+        unit: mV
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+    tool:
+      ngspice:
+        template: tb_PixelResetTran.sch
+        format: ascii
+        suffix: .data
+        variables: [refractory_period, delta_vdiff_ci, leak_event_period, min_reset_time, mrst_id, mrst_ibd, mrst_ibs, vdiff_before_ci, vdiff_after_ci]
+    conditions:
+      vdd:
+        enumerate: [1.62, 1.8, 1.98]
+      temperature:
+        enumerate: [0, 27, 70]
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
+      xRefrBp:
+        enumerate: [1e-9, 4e-9]

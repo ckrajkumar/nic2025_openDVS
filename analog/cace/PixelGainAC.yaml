@@ -1,0 +1,241 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           PixelGainAC
+description:    Pixel AC gain characterization — PR, SF, and change amplifier transfer functions
+PDK:            sky130B
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    21 Apr, 2026
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  vdd:
+    description: Positive power supply
+    type: power
+    direction: inout
+    Vmin: 1.62
+    Vmax: 1.98
+  gnd:
+    description: Ground
+    type: ground
+    direction: inout
+  vpd:
+    description: Photodiode node
+    type: signal
+    direction: input
+  vpr:
+    description: Photoreceptor output
+    type: signal
+    direction: output
+  vsf:
+    description: Source follower output
+    type: signal
+    direction: output
+  vdiff:
+    description: Differential amplifier output
+    type: signal
+    direction: output
+  nRst:
+    description: Reset signal (active low)
+    type: signal
+    direction: input
+  PrBp:
+    description: Photoreceptor bias
+    type: signal
+    direction: input
+  PrSFBp:
+    description: Source follower bias
+    type: signal
+    direction: input
+  DiffBn:
+    description: Differential amplifier bias
+    type: signal
+    direction: input
+
+default_conditions:
+  vdd:
+    description: Power supply voltage
+    display: Vdd
+    unit: V
+    minimum: 1.62
+    typical: 1.8
+    maximum: 1.98
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: "\u00b0C"
+    minimum: 0
+    typical: 27
+    maximum: 50
+  xPrBp:
+    description: Photoreceptor bias current
+    display: PrBp
+    unit: A
+    typical: 10e-9
+  xPrSFBp:
+    description: Source follower bias current
+    display: PrSFBp
+    unit: A
+    typical: 100e-12
+  xDiffBn:
+    description: Diff amp bias current
+    display: DiffBn
+    unit: A
+    typical: 5e-9
+  xipd:
+    description: Photodiode current (DC and AC)
+    display: Ipd
+    unit: A
+    typical: 1e-12
+  xCloadPD:
+    description: Photodiode load capacitance
+    display: CloadPD
+    unit: F
+    typical: 30e-15
+
+parameters:
+  pixel_ac_gain:
+    display: Pixel AC gain characterization
+    spec:
+      vpr_dc:
+        display: Vpr DC Level
+        description: DC level of |V(vpr)| (V/A)
+        unit: V/A
+        minimum:
+          value: 0.02
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 0.05
+          fail: true
+      vsf_dc:
+        display: Vsf DC Level
+        description: DC level of |V(vsf)| (V/A)
+        unit: V/A
+        minimum:
+          value: 0.01
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 0.04
+          fail: true
+      pr_gain_dc:
+        display: PR DC Gain
+        description: Photoreceptor DC gain (vpr/vpd)
+        unit: ""
+        minimum:
+          value: 10
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      sf_gain_dc:
+        display: SF DC Gain
+        description: Source follower DC gain (vsf/vpr)
+        unit: ""
+        minimum:
+          value: 0.5
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 1
+          fail: true
+      champ_gain_mid:
+        display: ChAmp Gain
+        description: Change amplifier gain at 5Hz (vdiff/vsf)
+        unit: ""
+        minimum:
+          value: 15
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: 17
+          fail: true
+      champ_ol_gain_mid:
+        display: ChAmp OL Gain
+        description: Change amplifier open-loop gain at 5Hz (vdiff/vd)
+        unit: ""
+        minimum:
+          value: 20
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      f3db_vpr:
+        display: f3dB Vpr
+        description: 3dB cutoff frequency of |V(vpr)|
+        unit: Hz
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      f3db_sf:
+        display: f3dB SF
+        description: 3dB cutoff frequency of SF transfer function
+        unit: Hz
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      f3db_champ_lp:
+        display: f3dB ChAmp LP
+        description: Low-pass 3dB cutoff of change amplifier
+        unit: Hz
+        minimum:
+          value: 10000
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      f3db_champ_hp:
+        display: f3dB ChAmp HP
+        description: High-pass 3dB corner of change amplifier
+        unit: Hz
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 0.5
+          fail: true
+    tool:
+      ngspice:
+        template: tb_PixelGain_ac.sch
+        format: ascii
+        suffix: .data
+        variables: [vpr_dc, vsf_dc, pr_gain_dc, sf_gain_dc, champ_gain_mid, champ_ol_gain_mid, f3db_vpr, f3db_sf, f3db_champ_lp, f3db_champ_hp]
+    conditions:
+      vdd:
+        enumerate: [1.62, 1.8, 1.98]
+      temperature:
+        enumerate: [0, 27, 50]
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
+      xPrBp:
+        enumerate: [10e-9, 100e-12]
+      xPrSFBp:
+        enumerate: [10e-12, 100e-12]

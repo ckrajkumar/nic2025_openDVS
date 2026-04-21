@@ -1,0 +1,208 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           PixelPhotoreceptor
+description:    Pixel photoreceptor + source follower DC characterization
+PDK:            sky130B
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    18 Apr, 2026
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  vpd_in:
+    description: Photodiode input
+    type: signal
+    direction: input
+  PrBp:
+    description: Photoreceptor bias voltage
+    type: signal
+    direction: input
+  PrSFBp:
+    description: Source follower bias voltage
+    type: signal
+    direction: input
+  vpr:
+    description: Photoreceptor output voltage
+    type: signal
+    direction: output
+  vsf:
+    description: Source follower output voltage
+    type: signal
+    direction: output
+  vdd:
+    description: Positive power supply
+    type: power
+    direction: inout
+    Vmin: 1.62
+    Vmax: 1.98
+  gnd:
+    description: Ground
+    type: ground
+    direction: inout
+
+default_conditions:
+  vdd:
+    description: Power supply voltage
+    display: Vdd
+    unit: V
+    minimum: 1.62
+    typical: 1.8
+    maximum: 1.98
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: "\u00b0C"
+    minimum: 0
+    typical: 27
+    maximum: 70
+  xPrBp:
+    description: Photoreceptor bias current
+    display: PrBp
+    unit: A
+    minimum: 1e-9
+    typical: 10e-9
+    maximum: 100e-9
+  xPrSFBp:
+    description: Source follower bias current
+    display: PrSFBp
+    unit: A
+    minimum: 100e-12
+    typical: 1e-9
+    maximum: 10e-9
+
+parameters:
+  dc_sweep:
+    display: Photoreceptor DC transfer characteristic
+    spec:
+      vpr_min:
+        display: Vpr min
+        description: Minimum photoreceptor output voltage across ipd sweep
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vpr_max:
+        display: Vpr max
+        description: Maximum photoreceptor output voltage across ipd sweep
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vsf_min:
+        display: Vsf min
+        description: Minimum source follower output voltage across ipd sweep
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vsf_max:
+        display: Vsf max
+        description: Maximum source follower output voltage across ipd sweep
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      slope_vpr:
+        display: Vpr log slope
+        description: Slope of Vpr vs ln(ipd) (mV per e-fold)
+        unit: mV
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      slope_vsf:
+        display: Vsf log slope
+        description: Slope of Vsf vs ln(ipd) (mV per e-fold)
+        unit: mV
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      r2_vpr:
+        display: Vpr log R-squared
+        description: R-squared of Vpr vs log10(ipd) linear fit (1.0 = ideal log)
+        minimum:
+          value: 0.95
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      r2_vsf:
+        display: Vsf log R-squared
+        description: R-squared of Vsf vs log10(ipd) linear fit (1.0 = ideal log)
+        minimum:
+          value: 0.95
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      ipd_compress_low:
+        display: Ipd compress low
+        description: Lower Ipd compression point — where Vsf deviates 10% from log fit
+        unit: pA
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 0.1
+          fail: true
+      ipd_compress_high:
+        display: Ipd compress high
+        description: Upper Ipd compression point — where Vsf deviates 10% from log fit
+        unit: pA
+        minimum:
+          value: 10000
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+    tool:
+      ngspice:
+        template: tb_PixelPhotoreceptor_dc.sch
+        format: ascii
+        suffix: .data
+        variables: [vpr_min, vpr_max, vsf_min, vsf_max, slope_vpr, slope_vsf, r2_vpr, r2_vsf, ipd_compress_low, ipd_compress_high]
+    conditions:
+      vdd:
+        enumerate: [1.62, 1.8, 1.98]
+      temperature:
+        enumerate: [0, 27, 70]
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
+      xPrBp:
+        enumerate: [1e-9, 100e-9]
+      xPrSFBp:
+        enumerate: [100e-12, 10e-9]

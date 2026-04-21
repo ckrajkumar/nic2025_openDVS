@@ -1,0 +1,138 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           PixelComparators
+description:    Pixel comparators DC threshold characterization
+PDK:            sky130B
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    21 Apr, 2026
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  vdd:
+    description: Positive power supply
+    type: power
+    direction: inout
+    Vmin: 1.62
+    Vmax: 1.98
+  OnBn:
+    description: ON comparator bias
+    type: signal
+    direction: input
+  OffBn:
+    description: OFF comparator bias
+    type: signal
+    direction: input
+  gnd:
+    description: Ground
+    type: ground
+    direction: inout
+  vdiff:
+    description: Differential input
+    type: signal
+    direction: input
+  ON:
+    description: ON comparator output
+    type: signal
+    direction: output
+  nOFF:
+    description: OFF comparator output (active low)
+    type: signal
+    direction: output
+
+default_conditions:
+  vdd:
+    description: Power supply voltage
+    display: Vdd
+    unit: V
+    minimum: 1.62
+    typical: 1.8
+    maximum: 1.98
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: "\u00b0C"
+    minimum: 0
+    typical: 27
+    maximum: 50
+  xOnBn:
+    description: ON comparator bias current
+    display: OnBn
+    unit: A
+    typical: 200e-9
+  xOffBn:
+    description: OFF comparator bias current
+    display: OffBn
+    unit: A
+    typical: 0.25e-9
+
+parameters:
+  comparator_dc:
+    display: Comparator DC threshold characterization
+    spec:
+      vthresh_on:
+        display: ON Threshold
+        description: Vdiff at which ON output crosses vdd/2 (rising)
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vthresh_off:
+        display: OFF Threshold
+        description: Vdiff at which nOFF output crosses vdd/2 (falling)
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      on_thresh_input:
+        display: ON Input Threshold
+        description: ON threshold referred to photoreceptor input (photodiode current change)
+        unit: ""
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      off_thresh_input:
+        display: OFF Input Threshold
+        description: OFF threshold referred to photoreceptor input (photodiode current change)
+        unit: ""
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+    tool:
+      ngspice:
+        template: tb_PixelComparators_dc.sch
+        format: ascii
+        suffix: .data
+        variables: [vthresh_on, vthresh_off, on_thresh_input, off_thresh_input]
+    conditions:
+      vdd:
+        enumerate: [1.62, 1.8, 1.98]
+      temperature:
+        enumerate: [0, 27, 50]
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
