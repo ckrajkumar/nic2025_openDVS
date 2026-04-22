@@ -1,0 +1,104 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  biasgen_opendvs_3_25_26
+* Top Cell Name: BiasBuffers
+* View Name:     schematic
+* Netlisted on:  Apr 16 07:02:44 2026
+************************************************************************
+
+.INCLUDE  $PDK_HOME/PV/Calibre/LVS/source.cdl
+*.EQUATION
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: scs130hd
+* Cell Name:    scs130hd_inv_1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT scs130hd_inv_1 A Y vgnd vnb vpb vpwr
+*.PININFO A:I vgnd:I vnb:I vpb:I vpwr:I Y:O
+MmMIN1 Y A vgnd vnb nmos W=0.65 L=0.15 M=1
+MmMIP1 Y A vpwr vpb pmos_hvt W=1 L=0.15 M=1
+.ENDS
+
+************************************************************************
+* Library Name: scs130hd
+* Cell Name:    scs130hd_nor2_1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT scs130hd_nor2_1 A B Y vgnd vnb vpb vpwr
+*.PININFO A:I B:I vgnd:I vnb:I vpb:I vpwr:I Y:O
+MmMP1 sndPA B Y vpb pmos_hvt W=1 L=0.15 M=1
+MmMP0 vpwr A sndPA vpb pmos_hvt W=1 L=0.15 M=1
+MmMN0 Y A vgnd vnb nmos W=0.65 L=0.15 M=1
+MmMN1 Y B vgnd vnb nmos W=0.65 L=0.15 M=1
+.ENDS
+
+************************************************************************
+* Library Name: scs130hd
+* Cell Name:    scs130hd_and2_1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT scs130hd_and2_1 A B X vgnd vnb vpb vpwr
+*.PININFO A:I B:I vgnd:I vnb:I vpb:I vpwr:I X:O
+MmMN0 y A sndA vnb nmos W=0.42 L=0.15 M=1
+MmMN1 sndA B vgnd vnb nmos W=0.42 L=0.15 M=1
+MmMIN0 X y vgnd vnb nmos W=0.65 L=0.15 M=1
+MmMP0 y A vpwr vpb pmos_hvt W=0.42 L=0.15 M=1
+MmMP1 y B vpwr vpb pmos_hvt W=0.42 L=0.15 M=1
+MmMIP0 X y vpwr vpb pmos_hvt W=1 L=0.15 M=1
+.ENDS
+
+************************************************************************
+* Library Name: biasgen_opendvs_3_25_26
+* Cell Name:    BiasBuffers
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT BiasBuffers BIT0 BiasDisabled BufferNBias BufferPBias GND NBiasEnabled 
++ PBiasEnabled PowerDown Rail SplitterOutput VBiasOut VddA18
+*.PININFO BIT0:I BiasDisabled:I BufferNBias:I BufferPBias:I NBiasEnabled:I 
+*.PININFO PBiasEnabled:I PowerDown:I VBiasOut:O GND:B Rail:B SplitterOutput:B 
+*.PININFO VddA18:B
+MMN0 NBias BufferNBias GND GND nmos_lvt W=6 L=6 M=16
+MMN2 nCopy NBias GND GND nmos W=6 L=6 M=1
+MMN1 SplitterOutput NBias GND GND nmos W=6 L=6 M=1
+MMN6 net3 SplitterOutput net2 GND nmos_lvt W=0.5 L=2.4 M=1
+MMP2 net3 disable VddA18 VddA18 pmos W=1 L=0.15 M=1
+MMP3 nCopy PBias VddA18 VddA18 pmos W=6 L=3 M=2
+MMN5 net3 SplitterOutput net1 GND nmos_lvt W=2.4 L=0.24 M=10
+MMP5 net5 nB0 PBias VddA18 pmos W=1 L=0.38 M=1
+MMP4 net4 B0 PBias VddA18 pmos W=1 L=0.38 M=1
+MMP1 NBias nB0 net2 VddA18 pmos W=1 L=0.38 M=1
+MMP0 NBias B0 net1 VddA18 pmos W=1 L=0.38 M=1
+MMN9 net6 net8 GND GND nmos W=1 L=0.15 M=1
+MMN4 net1 nB0 NBias GND nmos W=1 L=0.15 M=1
+MMN3 net2 B0 NBias GND nmos W=1 L=0.15 M=1
+MMN8 PBias B0 net5 GND nmos W=1 L=0.38 M=1
+MMN7 PBias nB0 net4 GND nmos W=1 L=0.38 M=1
+MMP6 net6 nCopy net4 VddA18 pmos_lvt W=2.4 L=0.38 M=6
+MMN13 VBiasOut PowerDown Rail GND nmos W=4 L=0.15 M=1
+MMN12 net11 nPowerDown VBiasOut GND nmos W=4 L=0.15 M=1
+MMN11 net11 PBiasEnabled PBias GND nmos W=4 L=0.15 M=1
+MMN10 NBias NBiasEnabled net11 GND nmos W=4 L=0.15 M=1
+MMP7 net6 nCopy net5 VddA18 pmos_lvt W=0.5 L=2.4 M=1
+MMP12 VBiasOut PowerDown net11 VddA18 pmos W=4 L=0.38 M=1
+MMP11 Rail nPowerDown VBiasOut VddA18 pmos W=4 L=0.38 M=1
+MMP10 PBias NBiasEnabled net11 VddA18 pmos W=4 L=0.38 M=1
+MMP9 net11 PBiasEnabled NBias VddA18 pmos W=4 L=0.38 M=1
+MMP8 PBias BufferPBias VddA18 VddA18 pmos_lvt W=6 L=3 M=2
+XI3 nB0 B0 GND GND VddA18 VddA18 / scs130hd_inv_1
+XI2 ndisable disable GND GND VddA18 VddA18 / scs130hd_inv_1
+XI1 BIT0 nB0 GND GND VddA18 VddA18 / scs130hd_inv_1
+XI0 PowerDown nPowerDown GND GND VddA18 VddA18 / scs130hd_inv_1
+XI4 PowerDown BiasDisabled ndisable GND GND VddA18 VddA18 / scs130hd_nor2_1
+XI5 ndisable PBiasEnabled net8 GND GND VddA18 VddA18 / scs130hd_and2_1
+.ENDS
+

@@ -1,0 +1,56 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  biasgen_opendvs_3_25_26
+* Top Cell Name: BiasDividerFine
+* View Name:     schematic
+* Netlisted on:  Apr  8 17:45:48 2026
+************************************************************************
+
+.INCLUDE  $PDK_HOME/PV/Calibre/LVS/source.cdl
+*.EQUATION
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: biasgen_opendvs_3_25_26
+* Cell Name:    BiasDividerFineCell
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT BiasDividerFineCell INOut INext IOut IPrev Sel VGate VddA18 nSel
+*.PININFO Sel:I VGate:I nSel:I INOut:B INext:B IOut:B IPrev:B VddA18:B
+MMP7 INext VGate IPrev VddA18 pmos_lvt W=9 L=1 M=1
+MMP6 net1 VGate IPrev VddA18 pmos_lvt W=9 L=1 M=1
+MMP5 net2 VGate net1 VddA18 pmos_lvt W=9 L=1 M=1
+MM2r1 net2 VGate net1 VddA18 pmos_lvt W=9 L=1 M=1
+MM2ru net1 VGate IPrev VddA18 pmos_lvt W=9 L=1 M=1
+MMr INext VGate IPrev VddA18 pmos_lvt W=9 L=1 M=1
+MMP0 IOut nSel net2 VddA18 pmos_hvt W=2 L=0.5 M=1
+MMP1 INOut Sel net2 VddA18 pmos_hvt W=2 L=0.5 M=1
+.ENDS
+
+************************************************************************
+* Library Name: biasgen_opendvs_3_25_26
+* Cell Name:    BiasDividerFine
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT BiasDividerFine GndA IIn IOut Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 VGate VddA18 nQ0 
++ nQ1 nQ2 nQ3 nQ4 nQ5 nQ6 nQ7
+*.PININFO Q0:I Q1:I Q2:I Q3:I Q4:I Q5:I Q6:I Q7:I VGate:I nQ0:I nQ1:I nQ2:I 
+*.PININFO nQ3:I nQ4:I nQ5:I nQ6:I nQ7:I GndA:B IIn:B IOut:B VddA18:B
+XI7 termDio Idiv7 IOut IIn Q7 VGate VddA18 nQ7 / BiasDividerFineCell
+XI6 termDio Idiv6 IOut Idiv7 Q6 VGate VddA18 nQ6 / BiasDividerFineCell
+XI5 termDio Idiv5 IOut Idiv6 Q5 VGate VddA18 nQ5 / BiasDividerFineCell
+XI4 termDio Idiv4 IOut Idiv5 Q4 VGate VddA18 nQ4 / BiasDividerFineCell
+XI3 termDio Idiv3 IOut Idiv4 Q3 VGate VddA18 nQ3 / BiasDividerFineCell
+XI2 termDio Idiv2 IOut Idiv3 Q2 VGate VddA18 nQ2 / BiasDividerFineCell
+XI1 termDio Idiv1 IOut Idiv2 Q1 VGate VddA18 nQ1 / BiasDividerFineCell
+XI0 termDio Idiv0 IOut Idiv1 Q0 VGate VddA18 nQ0 / BiasDividerFineCell
+MMP0 termDio VGate Idiv0 VddA18 pmos_lvt W=9 L=1 M=2
+MMN0 termDio termDio GndA GndA nmos_lvt W=8 L=0.8 M=1
+.ENDS
+
