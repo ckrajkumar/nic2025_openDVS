@@ -1,0 +1,42 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  dyn_comp_s130
+* Top Cell Name: dyn_comp_v1
+* View Name:     schematic
+* Netlisted on:  Apr 22 10:18:30 2026
+************************************************************************
+
+.INCLUDE  $PDK_HOME/PV/Calibre/LVS/source.cdl
+*.EQUATION
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: dyn_comp_s130
+* Cell Name:    dyn_comp_v1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT dyn_comp_v1 DETECT GND VDD nDETECT vm voutn voutp vp
+*.PININFO DETECT:I nDETECT:I vm:I vp:I voutn:O voutp:O GND:B VDD:B
+MMN6 outn outp GND GND nmos W=1 L=0.15 M=1
+MMN5 outp outn GND GND nmos W=1 L=0.15 M=1
+MMN2 vsource DETECT GND GND nmos W=1 L=0.15 M=1
+MMN1 int_outn vm vsource GND nmos W=1 L=0.15 M=1
+MMN0 int_outp vp vsource GND nmos W=1 L=0.15 M=1
+MMP4 int_outp DETECT VDD VDD pmos W=0.42 L=0.15 M=1
+MMP3 int_outn DETECT VDD VDD pmos W=0.42 L=0.15 M=1
+MMN4 outn int_outn GND GND nmos W=1 L=0.15 M=4
+MMN3 outp int_outp GND GND nmos W=1 L=0.15 M=4
+MMP2 net1 nDETECT VDD VDD pmos W=1 L=0.5 M=1
+MMP1 outp outn net1 VDD pmos W=1 L=0.5 M=1
+MMP0 outn outp net1 VDD pmos W=1 L=0.5 M=1
+MMN8 voutn outp GND GND nmos W=1 L=1 M=1
+MMN7 voutp outn GND GND nmos W=1 L=1 M=1
+MMP6 voutn outp VDD VDD pmos W=2 L=1 M=1
+MMP5 voutp outn VDD VDD pmos W=2 L=1 M=1
+.ENDS
+
