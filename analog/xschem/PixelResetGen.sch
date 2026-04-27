@@ -26,8 +26,8 @@ N 620 -710 660 -710 {lab=colRst}
 N 880 -760 920 -760 {lab=nRst}
 C {ipin.sym} 620 -580 0 0 {name=p1 lab=rowRst}
 C {ipin.sym} 620 -710 0 0 {name=p49 lab=colRst}
-C {sky130_fd_pr/nfet_01v8.sym} 680 -710 0 0 {name=MrefrInv
-W=0.5
+C {sky130_fd_pr/nfet_01v8.sym} 680 -710 0 0 {name=MPDrefrCol
+W=0.15
 L=0.15
 nf=1 
 mult=1
@@ -42,8 +42,8 @@ spiceprefix=X
 }
 C {lab_wire.sym} 730 -710 0 0 {name=p55 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/pfet_01v8.sym} 680 -810 0 0 {name=MrefrBias
-W=2
-L=8
+W=0.42
+L=1.6
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -58,8 +58,8 @@ spiceprefix=X
 C {lab_wire.sym} 730 -810 0 0 {name=p57 sig_type=std_logic lab=vdd}
 C {iopin.sym} 620 -810 2 0 {name=p58 lab=RefrBp}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 880 -720 1 0 {name=McapRefr
-W=8
-L=8
+W=2
+L=2
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -72,8 +72,8 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {lab_wire.sym} 850 -660 0 0 {name=p48 sig_type=std_logic lab=vdd}
-C {sky130_fd_pr/nfet_01v8.sym} 680 -580 0 0 {name=MswON1
-W=0.5
+C {sky130_fd_pr/nfet_01v8.sym} 680 -580 0 0 {name=MPDRefrRow
+W=0.15
 L=0.15
 nf=1 
 mult=1

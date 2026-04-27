@@ -24,7 +24,7 @@ N 270 -340 270 -330 {lab=vpr}
 N 270 -340 310 -340 {lab=vpr}
 N 270 -370 270 -340 {lab=vpr}
 C {sky130_fd_pr/nfet_01v8.sym} 20 -330 0 1 {name=Mpd
-W=0.5
+W=0.42
 L=0.3
 nf=1 
 mult=1
@@ -42,7 +42,7 @@ C {iopin.sym} 190 -400 2 0 {name=p9 lab=PrBp}
 C {iopin.sym} 0 -390 3 0 {name=p8 lab=vdd}
 C {iopin.sym} -130 -240 1 0 {name=p22 lab=vpd}
 C {sky130_fd_pr/nfet_01v8.sym} 250 -270 0 0 {name=Mpr_amp
-W=0.5
+W=0.42
 L=0.3
 nf=1 
 mult=1
@@ -60,8 +60,8 @@ C {lab_wire.sym} 270 -460 0 0 {name=p26 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 300 -400 0 0 {name=p27 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 300 -270 0 0 {name=p29 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 250 -400 0 0 {name=MprBias
-W=1
-L=0.3
+W=0.5
+L=0.15
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"

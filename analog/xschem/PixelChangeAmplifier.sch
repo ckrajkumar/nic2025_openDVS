@@ -29,8 +29,8 @@ N 410 -360 420 -360 {lab=nRst}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 3 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=40 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -560 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=2 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 480 -290 0 0 {name=MchAmpBias
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -48,8 +48,8 @@ C {lab_wire.sym} 530 -290 0 0 {name=p12 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 430 -620 2 0 {name=p23 sig_type=std_logic lab=vd}
 C {lab_wire.sym} 420 -470 3 0 {name=p46 sig_type=std_logic lab=vdd}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 420 -420 3 0 {name=Mrst
-W=1
-L=0.3
+W=0.3
+L=0.42
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -62,8 +62,8 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 480 -620 0 0 {name=MchAmp
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"

@@ -28,8 +28,8 @@ N 990 -630 990 -500 {lab=ON}
 N 1290 -490 1350 -490 {lab=nOFF}
 N 1290 -630 1290 -490 {lab=nOFF}
 C {sky130_fd_pr/nfet_01v8.sym} 970 -330 0 0 {name=MonBias
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -46,8 +46,8 @@ C {lab_wire.sym} 990 -720 0 0 {name=p19 sig_type=std_logic lab=vdd}
 C {iopin.sym} 900 -330 2 0 {name=p21 lab=OnBn}
 C {lab_wire.sym} 1020 -330 0 0 {name=p4 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/nfet_01v8.sym} 1270 -330 0 0 {name=MoffBias
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -65,8 +65,8 @@ C {lab_wire.sym} 1290 -720 0 0 {name=p33 sig_type=std_logic lab=vdd}
 C {iopin.sym} 1200 -330 2 0 {name=p34 lab=OffBn}
 C {lab_wire.sym} 1320 -330 0 0 {name=p35 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 970 -660 0 0 {name=Mon
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -79,8 +79,8 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1270 -660 0 0 {name=Moff
-W=2
-L=2
+W=1.5
+L=1.5
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"

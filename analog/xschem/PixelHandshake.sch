@@ -24,7 +24,7 @@ N 790 -250 880 -250 {lab=ON}
 N 1100 -250 1180 -250 {lab=nOFF}
 C {ipin.sym} 840 -340 0 0 {name=p1 lab=rowReadON}
 C {sky130_fd_pr/nfet_01v8.sym} 900 -340 0 0 {name=MswON
-W=0.5
+W=0.42
 L=0.15
 nf=1 
 mult=1
@@ -38,7 +38,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 900 -250 0 0 {name=MoutON
-W=0.5
+W=0.42
 L=0.15
 nf=1 
 mult=1
@@ -54,7 +54,7 @@ spiceprefix=X
 C {lab_wire.sym} 920 -180 0 0 {name=p37 sig_type=std_logic lab=gnd}
 C {ipin.sym} 1140 -340 0 0 {name=p39 lab=rowReadOFF}
 C {sky130_fd_pr/nfet_01v8.sym} 1200 -340 0 0 {name=MswOFF
-W=0.5
+W=0.42
 L=0.15
 nf=1 
 mult=1
@@ -68,7 +68,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1200 -250 0 0 {name=MoutOFF
-W=0.5
+W=0.42
 L=0.15
 nf=1 
 mult=1
