@@ -60,7 +60,7 @@ C {lab_wire.sym} 270 -460 0 0 {name=p26 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 300 -400 0 0 {name=p27 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 300 -270 0 0 {name=p29 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 250 -400 0 0 {name=MprBias
-W=0.5
+W=0.42
 L=0.15
 nf=1
 mult=1

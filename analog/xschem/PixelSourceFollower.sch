@@ -38,7 +38,7 @@ C {iopin.sym} 90 -150 2 0 {name=p2 lab=vpr}
 C {iopin.sym} 250 -260 0 0 {name=p3 lab=vsf}
 C {iopin.sym} 150 -410 3 0 {name=p6 lab=vdd}
 C {sky130_fd_pr/pfet_01v8.sym} 130 -150 0 0 {name=Msf
-W=0.5
+W=0.42
 L=0.25
 nf=1
 mult=1

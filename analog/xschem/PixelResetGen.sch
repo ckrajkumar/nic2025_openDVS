@@ -43,7 +43,7 @@ spiceprefix=X
 C {lab_wire.sym} 730 -710 0 0 {name=p55 sig_type=std_logic lab=gnd}
 C {sky130_fd_pr/pfet_01v8.sym} 680 -810 0 0 {name=MrefrBias
 W=0.42
-L=1.6
+L=1.5
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
