@@ -6,21 +6,21 @@ S {}
 F {}
 E {}
 N 500 -480 500 -440 {lab=vdiff}
-N 500 -260 500 -170 {lab=gnd}
+N 500 -260 500 -170 {lab=GndA}
 N 420 -290 460 -290 {lab=DiffBn}
-N 500 -620 530 -620 {lab=vdd}
+N 500 -620 530 -620 {lab=VddA18}
 N 500 -590 500 -560 {lab=vdiff}
-N 500 -290 530 -290 {lab=gnd}
+N 500 -290 530 -290 {lab=GndA}
 N 350 -440 390 -440 {lab=vd}
 N 450 -440 500 -440 {lab=vdiff}
 N 500 -440 500 -320 {lab=vdiff}
-N 420 -470 420 -440 {lab=vdd}
+N 420 -470 420 -440 {lab=VddA18}
 N 420 -400 420 -360 {lab=nRst}
 N 350 -620 460 -620 {lab=vd}
 N 350 -560 430 -560 {lab=vd}
 N 490 -560 500 -560 {lab=vdiff}
 N 190 -620 290 -620 {lab=vsf}
-N 500 -710 500 -650 {lab=vdd}
+N 500 -710 500 -650 {lab=VddA18}
 N 500 -480 560 -480 {lab=vdiff}
 N 500 -560 500 -480 {lab=vdiff}
 N 350 -560 350 -440 {lab=vd}
@@ -43,10 +43,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {iopin.sym} 420 -290 2 0 {name=p10 lab=DiffBn}
-C {lab_wire.sym} 530 -620 0 0 {name=p13 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 530 -290 0 0 {name=p12 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 530 -290 0 0 {name=p12 sig_type=std_logic lab=GndA}
 C {lab_pin.sym} 430 -620 2 0 {name=p23 sig_type=std_logic lab=vd}
-C {lab_wire.sym} 420 -470 3 0 {name=p46 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 420 -470 3 0 {name=p46 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 420 -420 3 0 {name=Mrst
 W=0.3
 L=0.42
@@ -61,7 +60,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 480 -620 0 0 {name=MchAmp
+C {sky130_fd_pr/pfet_01v8.sym} 480 -620 0 0 {name=MchAmp
 W=1.5
 L=1.5
 nf=1
@@ -72,12 +71,13 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {iopin.sym} 190 -620 2 0 {name=p9 lab=vsf}
-C {iopin.sym} 500 -710 3 0 {name=p15 lab=vdd}
-C {iopin.sym} 500 -170 1 0 {name=p16 lab=gnd
+C {iopin.sym} 500 -710 3 0 {name=p15 lab=VddA18}
+C {iopin.sym} 500 -170 1 0 {name=p16 lab=GndA
 }
 C {iopin.sym} 560 -480 0 0 {name=p1 lab=vdiff}
 C {iopin.sym} 410 -360 2 0 {name=p2 lab=nRst}
+C {lab_wire.sym} 530 -620 0 0 {name=p3 sig_type=std_logic lab=VddA18}
