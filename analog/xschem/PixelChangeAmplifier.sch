@@ -26,8 +26,8 @@ N 500 -560 500 -480 {lab=vdiff}
 N 350 -560 350 -440 {lab=vd}
 N 350 -620 350 -560 {lab=vd}
 N 410 -360 420 -360 {lab=nRst}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 3 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=40 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -560 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 1 0 {name=C1 model=cap_mim_m3_1 W=26.585 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -560 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 480 -290 0 0 {name=MchAmpBias
 W=1.5
 L=1.5

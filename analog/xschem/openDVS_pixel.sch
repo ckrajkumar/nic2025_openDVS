@@ -27,8 +27,8 @@ N 170 180 210 180 {lab=rowReadON}
 N 340 180 380 180 {lab=nRst}
 N 640 160 680 160 {lab=rowReadON}
 N 640 180 680 180 {lab=rowReadOFF}
-N 640 200 680 200 {lab=ON}
-N 640 220 680 220 {lab=nOFF}
+N 640 220 680 220 {lab=ON}
+N 640 200 680 200 {lab=nOFF}
 N 740 250 740 280 {lab=GndA}
 N 810 190 840 190 {lab=readLine}
 N 570 -60 570 -30 {lab=GndA}
@@ -67,8 +67,8 @@ C {ipin.sym} 170 160 0 0 {name=p10 lab=pixRst}
 C {lab_wire.sym} 170 180 2 1 {name=p19 sig_type=std_logic lab=rowReadON}
 C {ipin.sym} 640 160 0 0 {name=p22 lab=rowReadON}
 C {ipin.sym} 640 180 0 0 {name=p23 lab=rowReadOFF}
-C {lab_wire.sym} 640 200 0 1 {name=p24 sig_type=std_logic lab=ON}
-C {lab_wire.sym} 640 220 0 1 {name=p25 sig_type=std_logic lab=nOFF}
+C {lab_wire.sym} 640 220 0 1 {name=p24 sig_type=std_logic lab=ON}
+C {lab_wire.sym} 640 200 0 1 {name=p25 sig_type=std_logic lab=nOFF}
 C {lab_wire.sym} 740 280 3 1 {name=p4 sig_type=std_logic lab=GndA}
 C {iopin.sym} 840 190 0 0 {name=p26 lab=readLine}
 C {lab_wire.sym} 700 -130 0 0 {name=p27 sig_type=std_logic lab=vdiff}

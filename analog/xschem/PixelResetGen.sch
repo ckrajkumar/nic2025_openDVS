@@ -55,7 +55,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {iopin.sym} 620 -810 2 0 {name=p58 lab=RefrBp}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 880 -720 1 0 {name=McapRefr
+C {sky130_fd_pr/pfet_01v8.sym} 880 -720 1 0 {name=McapRefr
 W=1.5
 L=1.5
 nf=1
@@ -66,7 +66,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 850 -660 0 0 {name=p48 sig_type=std_logic lab=VddA18}
