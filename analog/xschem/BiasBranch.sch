@@ -72,13 +72,10 @@ C {ipin.sym} -360 -840 2 1 {name=p91 lab=BufferP}
 C {iopin.sym} -360 -820 0 1 {name=p92 lab=Rail}
 C {ipin.sym} -360 -560 2 1 {name=p6 lab=LowBiasInterfaceEn}
 C {ipin.sym} -360 -540 2 1 {name=p34 lab=nLowBiasInterfaceEn}
-C {ipin.sym} -360 -520 2 1 {name=p26 lab=FineCode[7:0]}
-C {ipin.sym} -360 -500 2 1 {name=p27 lab=nFineCode[7:0]}
 C {lab_wire.sym} 350 -610 3 1 {name=p28 sig_type=std_logic lab=FineCode[7:0]}
 C {lab_wire.sym} 370 -610 3 1 {name=p29 sig_type=std_logic lab=nFineCode[7:0]}
 C {BiasCoarseSel8to1.sym} -320 -790 0 0 {name=xCoarseSel8to1}
 C {lab_wire.sym} -310 -820 0 1 {name=p10 sig_type=std_logic lab=BiasCB[7:0]}
-C {ipin.sym} -360 -480 2 1 {name=p11 lab=CoarseOneHot[7:0]}
 C {ipin.sym} -360 -460 2 1 {name=p12 lab=CoarseOneHotLowBiasEn}
 C {lab_wire.sym} -310 -800 0 1 {name=p13 sig_type=std_logic lab=CoarseOneHot[7:0]}
 C {lab_wire.sym} 630 -600 3 1 {name=p14 sig_type=std_logic lab=BiasEnable}
@@ -91,3 +88,27 @@ C {ipin.sym} -360 -440 2 1 {name=p30 lab=BiasEnable}
 C {ipin.sym} -360 -420 2 1 {name=p31 lab=BiasDisable}
 C {ipin.sym} -360 -400 2 1 {name=p32 lab=NBiasEn}
 C {ipin.sym} -360 -380 2 1 {name=p33 lab=PBiasEn}
+C {ipin.sym} -100 -560 2 1 {name=p35 lab=FineCode[0]}
+C {ipin.sym} -100 -540 2 1 {name=p40 lab=FineCode[1]}
+C {ipin.sym} -100 -520 2 1 {name=p41 lab=FineCode[2]}
+C {ipin.sym} -100 -500 2 1 {name=p42 lab=FineCode[3]}
+C {ipin.sym} -100 -480 2 1 {name=p43 lab=FineCode[4]}
+C {ipin.sym} -100 -460 2 1 {name=p44 lab=FineCode[5]}
+C {ipin.sym} -100 -440 2 1 {name=p45 lab=FineCode[6]}
+C {ipin.sym} -100 -420 2 1 {name=p48 lab=FineCode[7]}
+C {ipin.sym} 50 -560 2 1 {name=p49 lab=nFineCode[0]}
+C {ipin.sym} 50 -540 2 1 {name=p50 lab=nFineCode[1]}
+C {ipin.sym} 50 -520 2 1 {name=p51 lab=nFineCode[2]}
+C {ipin.sym} 50 -500 2 1 {name=p52 lab=nFineCode[3]}
+C {ipin.sym} 50 -480 2 1 {name=p53 lab=nFineCode[4]}
+C {ipin.sym} 50 -460 2 1 {name=p54 lab=nFineCode[5]}
+C {ipin.sym} 50 -440 2 1 {name=p55 lab=nFineCode[6]}
+C {ipin.sym} 50 -420 2 1 {name=p56 lab=nFineCode[7]}
+C {ipin.sym} -90 -370 2 1 {name=p57 lab=CoarseOneHot[0]}
+C {ipin.sym} -90 -350 2 1 {name=p58 lab=CoarseOneHot[1]}
+C {ipin.sym} -90 -330 2 1 {name=p59 lab=CoarseOneHot[2]}
+C {ipin.sym} -90 -310 2 1 {name=p60 lab=CoarseOneHot[3]}
+C {ipin.sym} -90 -290 2 1 {name=p61 lab=CoarseOneHot[4]}
+C {ipin.sym} -90 -270 2 1 {name=p62 lab=CoarseOneHot[5]}
+C {ipin.sym} -90 -250 2 1 {name=p63 lab=CoarseOneHot[6]}
+C {ipin.sym} -90 -230 2 1 {name=p64 lab=CoarseOneHot[7]}

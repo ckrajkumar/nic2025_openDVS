@@ -216,6 +216,7 @@ N 2590 110 2700 110 {lab=nLowBiasBufEn}
 N 2490 370 2490 600 {lab=CoarseOneHotLowBiasEn}
 N 2670 660 2670 700 {lab=gnd}
 N 2670 370 2670 600 {lab=CoarseOneHotLowBiasEnBuffer}
+N 1640 320 1640 400 {lab=gnd}
 C {vsource.sym} 1180 -920 0 0 {name=Vgnd value=0 savecurrent=true}
 C {gnd.sym} 1210 -870 0 0 {name=l1 lab=GND!}
 C {vsource.sym} 1250 -920 0 0 {name=Vvdd value='xvdd' savecurrent=true}
@@ -644,7 +645,7 @@ C {lab_wire.sym} 3010 -1190 3 1 {name=p58 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 3130 -1190 3 1 {name=p60 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 3260 -1190 3 1 {name=p62 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 3390 -1190 3 1 {name=p63 sig_type=std_logic lab=gnd}
-C {vsource.sym} 2490 260 0 0 {name=VLowBiasBufEn value='(xCoarseCode>5)*xvdd' savecurrent=false}
+C {vsource.sym} 2490 260 0 0 {name=VLowBiasBufEn value='(xCoarseCode>0)*xvdd' savecurrent=false}
 C {lab_wire.sym} 2490 330 3 1 {name=VbiasEnabled7 sig_type=std_logic lab=gnd
 value='(1-xbiasEnabled)*xvdd'
 savecurrent=false}
@@ -661,7 +662,7 @@ C {vcvs.sym} 2590 -200 0 0 {name=E20 value=-1}
 C {lab_wire.sym} 2590 -120 3 1 {name=p68 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 2550 -130 3 1 {name=p156 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 2670 -230 0 0 {name=p158 sig_type=std_logic lab=PBiasEn}
-C {vsource.sym} 2870 310 0 0 {name=VLowBiasInterfaceEn value='(xCoarseCode>2)*xvdd' savecurrent=false}
+C {vsource.sym} 2870 310 0 0 {name=VLowBiasInterfaceEn value='(xCoarseCode>3)*xvdd' savecurrent=false}
 C {lab_wire.sym} 2870 380 3 1 {name=VbiasEnabled2 sig_type=std_logic lab=gnd
 value='(1-xbiasEnabled)*xvdd'
 savecurrent=false}
@@ -670,7 +671,7 @@ C {vcvs.sym} 2970 130 0 0 {name=E21 value=-1}
 C {lab_wire.sym} 2970 210 3 1 {name=p162 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 2930 200 3 1 {name=p164 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 3130 100 0 0 {name=p166 sig_type=std_logic lab=nLowBiasInterfaceEn}
-C {vsource.sym} 3310 320 0 0 {name=VLowBiasInterfaceEnBuffer value='(xCoarseCodeBuffer>2)*xvdd' savecurrent=false}
+C {vsource.sym} 3310 320 0 0 {name=VLowBiasInterfaceEnBuffer value='(xCoarseCodeBuffer>3)*xvdd' savecurrent=false}
 C {lab_wire.sym} 3310 390 3 1 {name=VbiasEnabled3 sig_type=std_logic lab=gnd
 value='(1-xbiasEnabled)*xvdd'
 savecurrent=false}
@@ -689,3 +690,4 @@ C {lab_wire.sym} 2670 700 3 1 {name=VbiasEnabled6 sig_type=std_logic lab=gnd
 value='(1-xbiasEnabled)*xvdd'
 savecurrent=false}
 C {lab_wire.sym} 2670 370 3 0 {name=p70 sig_type=std_logic lab=CoarseOneHotLowBiasEnBuffer}
+C {lab_wire.sym} 1640 400 3 1 {name=p2 sig_type=std_logic lab=gnd}

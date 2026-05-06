@@ -9,65 +9,128 @@ S {}
 F {}
 E {}
 L 4 160 -50 180 -50 {}
-L 4 160 -30 180 -30 {}
-L 4 160 50 180 50 {}
-L 4 160 70 180 70 {}
-L 4 160 90 180 90 {}
-L 4 160 30 180 30 {}
-L 4 160 10 180 10 {}
+L 4 160 470 180 470 {}
+L 4 160 490 180 490 {}
+L 4 160 510 180 510 {}
+L 4 160 450 180 450 {}
+L 4 160 430 180 430 {}
 L 4 280 -130 280 -110 {}
-L 4 160 -10 180 -10 {}
 L 4 380 -130 380 -110 {}
 L 4 400 -130 400 -110 {}
 L 4 510 -60 530 -60 {}
+L 4 160 530 180 530 {}
+L 4 160 550 180 550 {}
+L 4 160 570 180 570 {}
+L 4 160 590 180 590 {}
+L 4 160 -30 180 -30 {}
+L 4 160 -10 180 -10 {}
+L 4 160 10 180 10 {}
+L 4 160 30 180 30 {}
+L 4 160 50 180 50 {}
+L 4 160 70 180 70 {}
+L 4 160 90 180 90 {}
 L 4 160 110 180 110 {}
 L 4 160 130 180 130 {}
 L 4 160 150 180 150 {}
 L 4 160 170 180 170 {}
+L 4 160 190 180 190 {}
+L 4 160 210 180 210 {}
+L 4 160 230 180 230 {}
+L 4 160 250 180 250 {}
+L 4 160 270 180 270 {}
+L 4 160 290 180 290 {}
+L 4 160 310 180 310 {}
+L 4 160 330 180 330 {}
+L 4 160 350 180 350 {}
+L 4 160 370 180 370 {}
+L 4 160 390 180 390 {}
+L 4 160 410 180 410 {}
 L 7 200 -130 200 -110 {}
 L 7 220 -130 220 -110 {}
 L 7 510 20 530 20 {}
 B 5 197.5 -132.5 202.5 -127.5 {name=VddA18 dir=inout}
 B 5 217.5 -132.5 222.5 -127.5 {name=GndA dir=inout}
 B 5 277.5 -132.5 282.5 -127.5 {name=BiasCB[7:0] dir=in}
-B 5 157.5 -12.5 162.5 -7.5 {name=CoarseOneHot[7:0] dir=in}
 B 5 377.5 -132.5 382.5 -127.5 {name=BufferN dir=in}
 B 5 397.5 -132.5 402.5 -127.5 {name=BufferP dir=in}
 B 5 527.5 17.5 532.5 22.5 {name=Rail dir=inout}
 B 5 527.5 -62.5 532.5 -57.5 {name=VBiasOut dir=out}
-B 5 157.5 7.5 162.5 12.5 {name=LowBiasInterfaceEn dir=in}
-B 5 157.5 27.5 162.5 32.5 {name=nLowBiasInterfaceEn dir=in}
-B 5 157.5 -52.5 162.5 -47.5 {name=FineCode[7:0] dir=in}
-B 5 157.5 -32.5 162.5 -27.5 {name=nFineCode[7:0] dir=in}
-B 5 157.5 47.5 162.5 52.5 {name=CoarseOneHotLowBiasEn dir=in}
-B 5 157.5 67.5 162.5 72.5 {name=LowBiasBufEn dir=in}
-B 5 157.5 87.5 162.5 92.5 {name=nLowBiasBufEn dir=in}
-B 5 157.5 107.5 162.5 112.5 {name=NBiasEn dir=in}
-B 5 157.5 127.5 162.5 132.5 {name=PBiasEn dir=in}
-B 5 157.5 147.5 162.5 152.5 {name=BiasEnable dir=in}
-B 5 157.5 167.5 162.5 172.5 {name=BiasDisable dir=in}
-P 4 5 180 -110 510 -110 510 190 180 190 180 -110 {}
+B 5 157.5 427.5 162.5 432.5 {name=LowBiasInterfaceEn dir=in}
+B 5 157.5 447.5 162.5 452.5 {name=nLowBiasInterfaceEn dir=in}
+B 5 157.5 -52.5 162.5 -47.5 {name=FineCode[7] dir=in}
+B 5 157.5 467.5 162.5 472.5 {name=CoarseOneHotLowBiasEn dir=in}
+B 5 157.5 487.5 162.5 492.5 {name=LowBiasBufEn dir=in}
+B 5 157.5 507.5 162.5 512.5 {name=nLowBiasBufEn dir=in}
+B 5 157.5 527.5 162.5 532.5 {name=NBiasEn dir=in}
+B 5 157.5 547.5 162.5 552.5 {name=PBiasEn dir=in}
+B 5 157.5 567.5 162.5 572.5 {name=BiasEnable dir=in}
+B 5 157.5 587.5 162.5 592.5 {name=BiasDisable dir=in}
+B 5 157.5 -32.5 162.5 -27.5 {name=FineCode[6] dir=in}
+B 5 157.5 -12.5 162.5 -7.5 {name=FineCode[5] dir=in}
+B 5 157.5 7.5 162.5 12.5 {name=FineCode[4] dir=in}
+B 5 157.5 27.5 162.5 32.5 {name=FineCode[3] dir=in}
+B 5 157.5 47.5 162.5 52.5 {name=FineCode[2] dir=in}
+B 5 157.5 67.5 162.5 72.5 {name=FineCode[1] dir=in}
+B 5 157.5 87.5 162.5 92.5 {name=FineCode[0] dir=in}
+B 5 157.5 107.5 162.5 112.5 {name=nFineCode[7] dir=in}
+B 5 157.5 127.5 162.5 132.5 {name=nFineCode[6] dir=in}
+B 5 157.5 147.5 162.5 152.5 {name=nFineCode[5] dir=in}
+B 5 157.5 167.5 162.5 172.5 {name=nFineCode[4] dir=in}
+B 5 157.5 187.5 162.5 192.5 {name=nFineCode[3] dir=in}
+B 5 157.5 207.5 162.5 212.5 {name=nFineCode[2] dir=in}
+B 5 157.5 227.5 162.5 232.5 {name=nFineCode[1] dir=in}
+B 5 157.5 247.5 162.5 252.5 {name=nFineCode[0] dir=in}
+B 5 157.5 267.5 162.5 272.5 {name=CoarseOneHot[7] dir=in}
+B 5 157.5 287.5 162.5 292.5 {name=CoarseOneHot[6] dir=in}
+B 5 157.5 307.5 162.5 312.5 {name=CoarseOneHot[5] dir=in}
+B 5 157.5 327.5 162.5 332.5 {name=CoarseOneHot[4] dir=in}
+B 5 157.5 347.5 162.5 352.5 {name=CoarseOneHot[3] dir=in}
+B 5 157.5 367.5 162.5 372.5 {name=CoarseOneHot[2] dir=in}
+B 5 157.5 387.5 162.5 392.5 {name=CoarseOneHot[1] dir=in}
+B 5 157.5 407.5 162.5 412.5 {name=CoarseOneHot[0] dir=in}
+P 4 5 180 -110 510 -110 510 620 180 620 180 -110 {}
 T {@symname} 344.78125 -2.90625 2 1 0.5 0.5 {}
 T {@name} 350.46875 13.25 2 1 0.2 0.2 {}
 T {VddA18} 192.96875 -68.53125 3 0 0.2 0.2 {}
 T {GndA} 225.625 -106.625 1 0 0.2 0.2 {}
 T {BiasCB[7:0]} 286.875 -43.375 1 1 0.2 0.2 {}
-T {CoarseOneHot[7:0]} 285.375 -15.78125 0 1 0.2 0.2 {}
 T {BufferN} 386.875 -67.75 1 1 0.2 0.2 {}
 T {BufferP} 406.71875 -68.21875 1 1 0.2 0.2 {}
 T {Rail} 489.3125 13.4375 0 0 0.2 0.2 {}
 T {VBiasOut} 460.71875 -66.71875 0 0 0.2 0.2 {}
-T {LowBiasInterfaceEn} 287.71875 2.65625 0 1 0.2 0.2 {}
-T {nLowBiasInterfaceEn} 292.71875 22.65625 0 1 0.2 0.2 {}
-T {FineCode[7:0]} 257.71875 -57.34375 0 1 0.2 0.2 {}
-T {nFineCode[7:0]} 265.21875 -34.84375 0 1 0.2 0.2 {}
-T {CoarseOneHotLowBiasEn} 315.21875 45.15625 0 1 0.2 0.2 {}
-T {LowBiasBufEn} 257.71875 65.15625 0 1 0.2 0.2 {}
-T {nLowBiasBufEn} 265.21875 85.15625 0 1 0.2 0.2 {}
+T {LowBiasInterfaceEn} 287.71875 422.65625 0 1 0.2 0.2 {}
+T {nLowBiasInterfaceEn} 292.71875 442.65625 0 1 0.2 0.2 {}
+T {CoarseOneHotLowBiasEn} 315.21875 465.15625 0 1 0.2 0.2 {}
+T {LowBiasBufEn} 257.71875 485.15625 0 1 0.2 0.2 {}
+T {nLowBiasBufEn} 265.21875 505.15625 0 1 0.2 0.2 {}
 T {Important: Rail pin must be assigned
 to gnd for N bias and vdd for P bias.
 This is the reset/powerdown bias level} 307.5 70 0 0 0.2 0.2 {}
-T {NBiasEn} 227.71875 103.90625 0 1 0.2 0.2 {}
-T {PBiasEn} 226.46875 125.15625 0 1 0.2 0.2 {}
-T {BiasEnable} 242.71875 145.15625 0 1 0.2 0.2 {}
-T {BiasDisable} 245.21875 165.15625 0 1 0.2 0.2 {}
+T {NBiasEn} 227.71875 523.90625 0 1 0.2 0.2 {}
+T {PBiasEn} 226.46875 545.15625 0 1 0.2 0.2 {}
+T {BiasEnable} 242.71875 565.15625 0 1 0.2 0.2 {}
+T {BiasDisable} 245.21875 585.15625 0 1 0.2 0.2 {}
+T {FineCode[6]} 247.71875 -37.34375 0 1 0.2 0.2 {}
+T {FineCode[5]} 247.71875 -17.34375 0 1 0.2 0.2 {}
+T {FineCode[4]} 247.71875 2.65625 0 1 0.2 0.2 {}
+T {FineCode[3]} 247.71875 22.65625 0 1 0.2 0.2 {}
+T {FineCode[2]} 247.71875 42.65625 0 1 0.2 0.2 {}
+T {FineCode[1]} 247.71875 62.65625 0 1 0.2 0.2 {}
+T {FineCode[0]} 247.71875 82.65625 0 1 0.2 0.2 {}
+T {nFineCode[7]} 257.71875 102.65625 0 1 0.2 0.2 {}
+T {nFineCode[6]} 257.71875 122.65625 0 1 0.2 0.2 {}
+T {nFineCode[5]} 257.71875 142.65625 0 1 0.2 0.2 {}
+T {nFineCode[4]} 257.71875 162.65625 0 1 0.2 0.2 {}
+T {nFineCode[3]} 257.71875 182.65625 0 1 0.2 0.2 {}
+T {nFineCode[2]} 257.71875 202.65625 0 1 0.2 0.2 {}
+T {nFineCode[1]} 257.71875 222.65625 0 1 0.2 0.2 {}
+T {nFineCode[0]} 257.71875 242.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[7]} 277.71875 262.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[6]} 277.71875 282.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[5]} 277.71875 302.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[4]} 277.71875 322.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[3]} 277.71875 342.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[2]} 277.71875 362.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[1]} 277.71875 382.65625 0 1 0.2 0.2 {}
+T {CoarseOneHot[0]} 277.71875 402.65625 0 1 0.2 0.2 {}
+T {FineCode[7]} 247.71875 -57.34375 0 1 0.2 0.2 {}
