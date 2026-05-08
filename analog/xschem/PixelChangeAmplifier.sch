@@ -47,7 +47,7 @@ C {lab_wire.sym} 530 -290 0 0 {name=p12 sig_type=std_logic lab=GndA}
 C {lab_pin.sym} 430 -620 2 0 {name=p23 sig_type=std_logic lab=vd}
 C {lab_wire.sym} 420 -470 3 0 {name=p46 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 420 -420 3 0 {name=Mrst
-W=0.3
+W=0.42
 L=0.42
 nf=1
 mult=1

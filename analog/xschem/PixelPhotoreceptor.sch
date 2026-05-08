@@ -23,6 +23,7 @@ N 0 -270 0 -260 {lab=vpd}
 N 270 -340 270 -330 {lab=vpr}
 N 270 -340 310 -340 {lab=vpr}
 N 270 -370 270 -340 {lab=vpr}
+N 0 -170 -0 -160 {lab=#net1}
 C {sky130_fd_pr/nfet_01v8.sym} 20 -330 0 1 {name=Mpd
 W=0.5
 L=0.3
@@ -59,7 +60,7 @@ C {lab_wire.sym} 270 -200 0 0 {name=p25 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 270 -460 0 0 {name=p26 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 300 -400 0 0 {name=p27 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 300 -270 0 0 {name=p29 sig_type=std_logic lab=GndA}
-C {iopin.sym} 90 -60 1 0 {name=p1 lab=GndA
+C {iopin.sym} 0 -160 1 0 {name=p1 lab=GndA
 }
 C {iopin.sym} 310 -340 0 0 {name=p2 lab=vpr}
 C {sky130_fd_pr/pfet_01v8.sym} 250 -400 0 0 {name=MprBias
@@ -74,5 +75,11 @@ ps="1.6"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
 model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/diode.sym} 0 -200 0 0 {name=D1
+model=model__parasitic__diode_ps2dn
+area=1e12
+perim=4e6
 spiceprefix=X
 }
