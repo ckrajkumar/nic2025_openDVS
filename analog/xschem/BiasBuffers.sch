@@ -126,36 +126,35 @@ N 2460 -240 2510 -240 {lab=#net5}
 N 1960 -210 2030 -210 {lab=PBias}
 N 2510 -240 2560 -240 {lab=#net5}
 N 2410 -360 2610 -360 {lab=NBiasEn}
-N 2690 80 2710 80 {lab=VBiasOut}
-N 2670 -20 2670 20 {lab=VddA18}
-N 2660 40 2660 80 {lab=GndA}
-N 2710 30 2710 80 {lab=VBiasOut}
-N 2610 30 2610 80 {lab=#net5}
-N 2610 80 2630 80 {lab=#net5}
-N 2620 -20 2640 -20 {lab=#net5}
-N 2610 -20 2610 30 {lab=#net5}
-N 2710 -20 2710 30 {lab=VBiasOut}
-N 2890 80 2910 80 {lab=Rail}
-N 2860 40 2860 80 {lab=VddA18}
-N 2870 -20 2870 20 {lab=GndA}
-N 2910 -20 2910 30 {lab=Rail}
-N 2810 -20 2810 30 {lab=VBiasOut}
-N 2820 -20 2840 -20 {lab=VBiasOut}
-N 2810 80 2830 80 {lab=VBiasOut}
-N 2810 30 2810 80 {lab=VBiasOut}
-N 2910 30 2970 30 {lab=Rail}
-N 2910 30 2910 80 {lab=Rail}
-N 2710 30 2760 30 {lab=VBiasOut}
-N 2760 30 2810 30 {lab=VBiasOut}
-N 2510 30 2610 30 {lab=#net5}
-N 2660 120 2660 150 {lab=BiasEnable}
-N 2860 120 2860 150 {lab=BiasEnable}
-N 2660 150 2860 150 {lab=BiasEnable}
-N 2670 -90 2670 -60 {lab=BiasDisable}
-N 2870 -90 2870 -60 {lab=BiasDisable}
-N 2670 -90 2870 -90 {lab=BiasDisable}
-N 2760 30 2760 240 {lab=VBiasOut}
-N 2760 240 3050 240 {lab=VBiasOut}
+N 2440 330 2460 330 {lab=VBiasOut}
+N 2480 230 2480 270 {lab=VddA18}
+N 2490 290 2490 330 {lab=GndA}
+N 2440 280 2440 330 {lab=VBiasOut}
+N 2540 280 2540 330 {lab=#net6}
+N 2520 330 2540 330 {lab=#net6}
+N 2510 230 2530 230 {lab=#net6}
+N 2540 230 2540 280 {lab=#net6}
+N 2440 230 2440 280 {lab=VBiasOut}
+N 2240 330 2260 330 {lab=Rail}
+N 2290 290 2290 330 {lab=VddA18}
+N 2280 230 2280 270 {lab=GndA}
+N 2240 230 2240 280 {lab=Rail}
+N 2340 230 2340 280 {lab=VBiasOut}
+N 2310 230 2330 230 {lab=VBiasOut}
+N 2320 330 2340 330 {lab=VBiasOut}
+N 2340 280 2340 330 {lab=VBiasOut}
+N 2180 280 2240 280 {lab=Rail}
+N 2240 280 2240 330 {lab=Rail}
+N 2390 280 2440 280 {lab=VBiasOut}
+N 2340 280 2390 280 {lab=VBiasOut}
+N 2490 370 2490 400 {lab=BiasEnable}
+N 2290 370 2290 400 {lab=BiasEnable}
+N 2290 400 2490 400 {lab=BiasEnable}
+N 2480 160 2480 190 {lab=BiasDisable}
+N 2280 160 2280 190 {lab=BiasDisable}
+N 2280 160 2480 160 {lab=BiasDisable}
+N 2390 280 2390 490 {lab=VBiasOut}
+N 2100 490 2390 490 {lab=VBiasOut}
 N 1720 -350 1720 -240 {lab=VddA18}
 N 1060 150 1060 260 {lab=GndA}
 N 1410 190 1410 250 {lab=GndA}
@@ -180,10 +179,44 @@ N 2420 -120 2610 -120 {lab=PBiasEn}
 N 2610 -360 2620 -360 {lab=NBiasEn}
 N 2560 -290 2570 -290 {lab=#net5}
 N 2650 -290 2660 -290 {lab=PBias}
+N 2530 230 2540 230 {lab=#net6}
+N 2330 230 2340 230 {lab=VBiasOut}
+N 2240 230 2250 230 {lab=Rail}
+N 2440 230 2450 230 {lab=VBiasOut}
+N 2690 80 2710 80 {lab=#net6}
+N 2670 -20 2670 20 {lab=VddA18}
+N 2660 40 2660 80 {lab=GndA}
+N 2710 30 2710 80 {lab=#net6}
+N 2610 30 2610 80 {lab=#net5}
+N 2610 80 2630 80 {lab=#net5}
+N 2620 -20 2640 -20 {lab=#net5}
+N 2610 -20 2610 30 {lab=#net5}
+N 2710 -20 2710 30 {lab=#net6}
+N 2890 80 2910 80 {lab=PadBias}
+N 2860 40 2860 80 {lab=VddA18}
+N 2870 -20 2870 20 {lab=GndA}
+N 2910 -20 2910 30 {lab=PadBias}
+N 2810 -20 2810 30 {lab=#net6}
+N 2820 -20 2840 -20 {lab=#net6}
+N 2810 80 2830 80 {lab=#net6}
+N 2810 30 2810 80 {lab=#net6}
+N 2910 30 2970 30 {lab=PadBias}
+N 2910 30 2910 80 {lab=PadBias}
+N 2710 30 2760 30 {lab=#net6}
+N 2760 30 2810 30 {lab=#net6}
+N 2510 30 2610 30 {lab=#net5}
+N 2660 120 2660 150 {lab=PadBiasDisable}
+N 2860 120 2860 150 {lab=PadBiasDisable}
+N 2660 150 2860 150 {lab=PadBiasDisable}
+N 2670 -90 2670 -60 {lab=PadBiasEnable}
+N 2870 -90 2870 -60 {lab=PadBiasEnable}
+N 2670 -90 2870 -90 {lab=PadBiasEnable}
+N 2760 30 2760 240 {lab=#net6}
 N 2610 -20 2620 -20 {lab=#net5}
-N 2810 -20 2820 -20 {lab=VBiasOut}
-N 2900 -20 2910 -20 {lab=Rail}
-N 2700 -20 2710 -20 {lab=VBiasOut}
+N 2810 -20 2820 -20 {lab=#net6}
+N 2900 -20 2910 -20 {lab=PadBias}
+N 2700 -20 2710 -20 {lab=#net6}
+N 2540 240 2760 240 {lab=#net6}
 C {iopin.sym} 950 -200 2 0 {name=p11 lab=GndA}
 C {iopin.sym} 950 -220 2 0 {name=p12 lab=VddA18}
 C {sky130_fd_pr/nfet_01v8.sym} 1080 120 0 1 {name=MnDio
@@ -541,7 +574,7 @@ C {lab_wire.sym} 2620 -250 3 1 {name=p61 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 2410 -360 2 0 {name=p58 sig_type=std_logic lab=NBiasEn}
 C {lab_wire.sym} 2500 -120 0 0 {name=p63 sig_type=std_logic lab=PBiasEn}
 C {lab_wire.sym} 2720 -240 0 0 {name=p64 sig_type=std_logic lab=PBias}
-C {sky130_fd_pr/nfet_01v8.sym} 2660 100 3 0 {name=MnswBias
+C {sky130_fd_pr/nfet_01v8.sym} 2490 350 1 1 {name=MnswBias
 W=4
 L=0.15
 nf=1 
@@ -555,7 +588,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2670 -40 3 1 {name=MpswBias
+C {sky130_fd_pr/pfet_01v8.sym} 2480 210 1 0 {name=MpswBias
 W=4
 L=0.38
 nf=1
@@ -569,9 +602,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 2660 40 3 0 {name=p65 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 2670 20 3 1 {name=p66 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/nfet_01v8.sym} 2870 -40 3 1 {name=MnswRail
+C {lab_wire.sym} 2490 290 1 1 {name=p65 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 2480 270 1 0 {name=p66 sig_type=std_logic lab=VddA18}
+C {sky130_fd_pr/nfet_01v8.sym} 2280 210 1 0 {name=MnswRail
 W=4
 L=0.15
 nf=1 
@@ -585,7 +618,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2860 100 3 0 {name=MpswRail
+C {sky130_fd_pr/pfet_01v8.sym} 2290 350 1 1 {name=MpswRail
 W=4
 L=0.38
 nf=1
@@ -599,24 +632,24 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 2870 20 3 1 {name=p68 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 2860 40 3 0 {name=p69 sig_type=std_logic lab=VddA18}
-C {lab_wire.sym} 2970 30 2 1 {name=p70 sig_type=std_logic lab=Rail}
-C {lab_wire.sym} 2660 150 0 1 {name=p67 sig_type=std_logic lab=BiasEnable}
-C {lab_wire.sym} 2670 -90 2 0 {name=p71 sig_type=std_logic lab=BiasDisable}
-C {opin.sym} 3050 240 0 0 {name=p74 lab=VBiasOut}
+C {lab_wire.sym} 2280 270 1 0 {name=p68 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 2290 290 1 1 {name=p69 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 2180 280 2 0 {name=p70 sig_type=std_logic lab=Rail}
+C {lab_wire.sym} 2490 400 0 0 {name=p67 sig_type=std_logic lab=BiasEnable}
+C {lab_wire.sym} 2480 160 2 1 {name=p71 sig_type=std_logic lab=BiasDisable}
+C {opin.sym} 2100 490 0 1 {name=p74 lab=VBiasOut}
 C {lab_wire.sym} 1060 260 3 1 {name=p25 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 1720 260 3 1 {name=p26 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 1720 -350 1 1 {name=p19 sig_type=std_logic lab=VddA18}
 C {ipin.sym} 950 -180 0 0 {name=p30 lab=NBiasEn}
 C {ipin.sym} 950 -160 0 0 {name=p32 lab=PBiasEn}
-C {ipin.sym} 950 -120 0 0 {name=p76 lab=BiasDisable}
-C {ipin.sym} 950 -100 0 0 {name=p77 lab=BiasEnable}
-C {ipin.sym} 950 -80 0 0 {name=p78 lab=LowBiasEn}
-C {ipin.sym} 950 -20 0 0 {name=p81 lab=BufferNBias}
-C {ipin.sym} 950 0 0 0 {name=p82 lab=BufferPBias}
-C {iopin.sym} 950 20 2 0 {name=p83 lab=SplitterOutput}
-C {iopin.sym} 950 40 2 0 {name=p84 lab=Rail}
+C {ipin.sym} 950 -90 0 0 {name=p76 lab=BiasDisable}
+C {ipin.sym} 950 -70 0 0 {name=p77 lab=BiasEnable}
+C {ipin.sym} 950 -50 0 0 {name=p78 lab=LowBiasEn}
+C {ipin.sym} 950 0 0 0 {name=p81 lab=BufferNBias}
+C {ipin.sym} 950 20 0 0 {name=p82 lab=BufferPBias}
+C {iopin.sym} 950 40 2 0 {name=p83 lab=SplitterOutput}
+C {iopin.sym} 950 60 2 0 {name=p84 lab=Rail}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1270 -50 0 0 {name=MnMirrBuffnB0
 W=2.4
 L=0.24
@@ -631,4 +664,70 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {ipin.sym} 950 -60 0 0 {name=p75 lab=nLowBiasEn}
+C {ipin.sym} 950 -30 0 0 {name=p75 lab=nLowBiasEn}
+C {sky130_fd_pr/nfet_01v8.sym} 2660 100 3 0 {name=MnswBias1
+W=4
+L=0.15
+nf=1 
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 2670 -40 3 1 {name=MpswBias1
+W=4
+L=0.38
+nf=1
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 2660 40 3 0 {name=p22 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 2670 20 3 1 {name=p28 sig_type=std_logic lab=VddA18}
+C {sky130_fd_pr/nfet_01v8.sym} 2870 -40 3 1 {name=MnswRail1
+W=4
+L=0.15
+nf=1 
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 2860 100 3 0 {name=MpswRail1
+W=4
+L=0.38
+nf=1
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 2870 20 3 1 {name=p29 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 2860 40 3 0 {name=p46 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 2970 30 2 1 {name=p48 sig_type=std_logic lab=PadBias}
+C {ipin.sym} 950 -130 0 0 {name=p54 lab=PadBiasDisable}
+C {ipin.sym} 950 -110 0 0 {name=p55 lab=PadBiasEnable}
+C {iopin.sym} 950 80 2 0 {name=p62 lab=PadBias}
+C {lab_wire.sym} 2660 150 2 0 {name=p72 sig_type=std_logic lab=PadBiasDisable}
+C {lab_wire.sym} 2670 -90 0 1 {name=p73 sig_type=std_logic lab=PadBiasEnable}

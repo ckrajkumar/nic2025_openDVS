@@ -637,10 +637,12 @@ parameters:
         minimum: 0
         maximum: 255
         step: linear
+        stepsize: 50
       coarseCode:
         minimum: 0
         maximum: 7
         step: linear
+        stepsize: 1
       vdd:
         typical: 1.8
       temperature:

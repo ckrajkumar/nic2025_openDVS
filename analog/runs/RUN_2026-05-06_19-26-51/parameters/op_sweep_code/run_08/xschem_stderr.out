@@ -1,0 +1,89 @@
+Using run time directory XSCHEM_SHAREDIR = /usr/local/share/xschem
+Sourcing /usr/local/share/xschem/xschemrc init file
+Sourcing /home/alienfalcon/.ciel/sky130B/libs.tech/xschem/xschemrc init file
+open_pdks installation: using /home/alienfalcon/.ciel
+SKYWATER_MODELS: /home/alienfalcon/.ciel/sky130B/libs.tech/combined
+SKYWATER_STDCELLS: /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/spice
+l_s_d(): Symbol not found: ../xschem/BiasBranch.sym
+l_s_d(): Symbol not found: ../xschem/BiasMasternCoarse.sym
+l_s_d(): Symbol not found: ../xschem/BiasBranchBuffer.sym
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_19-26-51/parameters/op_sweep_code/run_08/tb_BiasBranchnMasterx1_op.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasBranchnMasterx1.sch
+Warning: open net: CoarseOneHotLowBiasEn
+Warning: open net: nFineCodeBuffer[0]
+Warning: open net: nFineCodeBuffer[1]
+Warning: open net: nFineCodeBuffer[2]
+Warning: open net: nFineCodeBuffer[3]
+Warning: open net: nFineCodeBuffer[4]
+Warning: open net: nFineCodeBuffer[5]
+Warning: open net: nFineCodeBuffer[6]
+Warning: open net: nFineCodeBuffer[7]
+Warning: open net: FineCodeBuffer[0]
+Warning: open net: FineCodeBuffer[1]
+Warning: open net: FineCodeBuffer[2]
+Warning: open net: FineCodeBuffer[3]
+Warning: open net: FineCodeBuffer[4]
+Warning: open net: FineCodeBuffer[5]
+Warning: open net: FineCodeBuffer[6]
+Warning: open net: FineCodeBuffer[7]
+Warning: open net: nLowBiasInterfaceEn
+Warning: open net: NBiasEn
+Warning: open net: PowerDown
+Warning: open net: CoarseOneHotLowBiasEnBuffer
+Error: undriven node: BiasCB[0]
+Error: undriven node: BiasCB[1]
+Error: undriven node: BiasCB[2]
+Error: undriven node: BiasCB[3]
+Error: undriven node: BiasCB[4]
+Error: undriven node: BiasCB[5]
+Error: undriven node: BiasCB[6]
+Error: undriven node: BiasCB[7]
+Warning: open net: BiasEnable
+Warning: open net: nLowBiasBuffEn
+Warning: open net: rx
+Warning: open net: LowBiasBuffEn
+Error: undriven node: VMasterBiasN
+Error: undriven node: VMasterBiasP
+Warning: open net: BiasDisable
+Warning: open net: CoarseOneHotBuffer[0]
+Warning: open net: CoarseOneHotBuffer[1]
+Warning: open net: CoarseOneHotBuffer[2]
+Warning: open net: CoarseOneHotBuffer[3]
+Warning: open net: CoarseOneHotBuffer[4]
+Warning: open net: CoarseOneHotBuffer[5]
+Warning: open net: CoarseOneHotBuffer[6]
+Warning: open net: CoarseOneHotBuffer[7]
+Warning: open net: LowBiasInterfaceEnBuffer
+Warning: open net: FineCode[0]
+Warning: open net: FineCode[1]
+Warning: open net: FineCode[2]
+Warning: open net: FineCode[3]
+Warning: open net: FineCode[4]
+Warning: open net: FineCode[5]
+Warning: open net: FineCode[6]
+Warning: open net: FineCode[7]
+Warning: open net: nFineCode[0]
+Warning: open net: nFineCode[1]
+Warning: open net: nFineCode[2]
+Warning: open net: nFineCode[3]
+Warning: open net: nFineCode[4]
+Warning: open net: nFineCode[5]
+Warning: open net: nFineCode[6]
+Warning: open net: nFineCode[7]
+Warning: open net: LowBiasInterfaceEn
+Warning: open net: CoarseOneHot[0]
+Warning: open net: CoarseOneHot[1]
+Warning: open net: CoarseOneHot[2]
+Warning: open net: CoarseOneHot[3]
+Warning: open net: CoarseOneHot[4]
+Warning: open net: CoarseOneHot[5]
+Warning: open net: VddA18
+Warning: open net: GndA
+Warning: open net: CoarseOneHot[6]
+Warning: open net: CoarseOneHot[7]
+Warning: open net: PBiasEn
+Warning: open net: nLowBiasInterfaceEnBuffer
+Error: undriven node: BufferN
+Error: undriven node: BufferP
+Error: undriven node: Bias
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_19-26-51/parameters/op_sweep_code/run_08/tb_BiasBranchnMasterx1_op.sch

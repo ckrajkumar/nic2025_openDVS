@@ -78,6 +78,9 @@ N -160 -490 60 -490 {lab=FineCode[2]}
 N -160 -470 60 -470 {lab=FineCode[1]}
 N -160 -450 60 -450 {lab=FineCode[0]}
 N -160 -290 60 -290 {lab=nFineCode[0]}
+N -160 90 60 90 {lab=PadBiasDisable}
+N -160 70 60 70 {lab=PadBiasEnable}
+N 430 -500 490 -500 {lab=PadBias}
 C {iopin.sym} -360 -970 0 1 {name=p75 lab=VddA18}
 C {iopin.sym} -360 -950 0 1 {name=p76 lab=GndA}
 C {lab_wire.sym} 100 -730 3 0 {name=p2 sig_type=std_logic lab=VddA18}
@@ -176,3 +179,9 @@ C {lab_wire.sym} -160 -490 0 1 {name=p93 sig_type=std_logic lab=FineCode[2]}
 C {lab_wire.sym} -160 -470 0 1 {name=p94 sig_type=std_logic lab=FineCode[1]}
 C {lab_wire.sym} -160 -450 0 1 {name=p95 sig_type=std_logic lab=FineCode[0]}
 C {lab_wire.sym} -160 -290 0 1 {name=p85 sig_type=std_logic lab=nFineCode[0]}
+C {lab_wire.sym} -160 70 0 1 {name=p96 sig_type=std_logic lab=PadBiasEnable}
+C {lab_wire.sym} -160 90 0 1 {name=p97 sig_type=std_logic lab=PadBiasDisable}
+C {ipin.sym} -610 -260 2 1 {name=p98 lab=PadBiasEnable}
+C {ipin.sym} -610 -240 2 1 {name=p99 lab=PadBiasDisable}
+C {lab_wire.sym} 490 -500 0 0 {name=p100 sig_type=std_logic lab=PadBias}
+C {iopin.sym} -360 -670 0 1 {name=p101 lab=PadBias}

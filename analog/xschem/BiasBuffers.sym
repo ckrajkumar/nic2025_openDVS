@@ -2,52 +2,61 @@ v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
 template="name=x1"
 }
 V {}
 S {}
 F {}
 E {}
-L 4 250 70 250 90 {}
-L 4 310 70 310 90 {}
-L 4 290 70 290 90 {}
-L 4 350 70 350 90 {}
-L 4 330 70 330 90 {}
-L 4 390 70 390 90 {}
-L 4 370 70 370 90 {}
-L 4 250 -130 250 -110 {}
-L 4 460 -20 480 -20 {}
-L 7 230 -130 230 -110 {}
-L 7 230 70 230 90 {}
-L 7 160 -20 180 -20 {}
-L 7 310 -130 310 -110 {}
-B 5 227.5 -132.5 232.5 -127.5 {name=VddA18 dir=inout}
-B 5 227.5 87.5 232.5 92.5 {name=GndA dir=inout}
-B 5 247.5 87.5 252.5 92.5 {name=BufferNBias dir=in}
-B 5 157.5 -22.5 162.5 -17.5 {name=SplitterOutput dir=inout}
-B 5 287.5 87.5 292.5 92.5 {name=LowBiasEn dir=in}
-B 5 307.5 87.5 312.5 92.5 {name=nLowBiasEn dir=in}
-B 5 327.5 87.5 332.5 92.5 {name=BiasDisable dir=in}
-B 5 347.5 87.5 352.5 92.5 {name=BiasEnable dir=in}
-B 5 367.5 87.5 372.5 92.5 {name=NBiasEn dir=in}
-B 5 387.5 87.5 392.5 92.5 {name=PBiasEn dir=in}
-B 5 247.5 -132.5 252.5 -127.5 {name=BufferPBias dir=in}
-B 5 307.5 -132.5 312.5 -127.5 {name=Rail dir=inout}
-B 5 477.5 -22.5 482.5 -17.5 {name=VBiasOut dir=out}
-P 4 5 180 -110 460 -110 460 70 180 70 180 -110 {}
-P 4 1 300 40 {}
-T {@symname} 347.125 -82.125 2 1 0.2 0.2 {}
-T {@name} 347.5 -93.625 2 1 0.2 0.2 {}
-T {VddA18} 225 -64 3 0 0.2 0.2 {}
-T {GndA} 225 66 3 0 0.2 0.2 {}
-T {BufferNBias} 255 66 1 1 0.2 0.2 {}
-T {SplitterOutput} 257.25 -26.5625 0 1 0.2 0.2 {}
-T {LowBiasEn} 295 66 1 1 0.2 0.2 {}
-T {nLowBiasEn} 315 66 1 1 0.2 0.2 {}
-T {BiasDisable} 335 66 1 1 0.2 0.2 {}
-T {BiasEnable} 355 66 1 1 0.2 0.2 {}
-T {NBiasEn} 375 66 1 1 0.2 0.2 {}
-T {PBiasEn} 395 66 1 1 0.2 0.2 {}
-T {BufferPBias} 255 -106 1 0 0.2 0.2 {}
-T {Rail} 315 -106 1 0 0.2 0.2 {}
-T {VBiasOut} 456 -25 0 1 0.2 0.2 {}
+L 4 130 0 150 0 {}
+L 4 10 100 10 110 {}
+L 4 30 100 30 110 {}
+L 4 70 100 70 110 {}
+L 4 50 100 50 110 {}
+L 4 110 100 110 110 {}
+L 4 90 100 90 110 {}
+L 4 -10 100 -10 110 {}
+L 4 -30 100 -30 110 {}
+L 4 -70 -110 -70 -100 {}
+L 4 -70 100 -70 110 {}
+L 7 -90 -110 -90 -90 {}
+L 7 -90 90 -90 110 {}
+L 7 -150 0 -130 0 {}
+L 7 -10 -110 -10 -90 {}
+L 7 10 -110 10 -90 {}
+B 5 -92.5 -112.5 -87.5 -107.5 {name=VddA18 dir=inout}
+B 5 -92.5 107.5 -87.5 112.5 {name=GndA dir=inout}
+B 5 47.5 107.5 52.5 112.5 {name=NBiasEn dir=in}
+B 5 67.5 107.5 72.5 112.5 {name=PBiasEn dir=in}
+B 5 107.5 107.5 112.5 112.5 {name=PadBiasDisable dir=in}
+B 5 87.5 107.5 92.5 112.5 {name=PadBiasEnable dir=in}
+B 5 7.5 107.5 12.5 112.5 {name=BiasDisable dir=in}
+B 5 27.5 107.5 32.5 112.5 {name=BiasEnable dir=in}
+B 5 -32.5 107.5 -27.5 112.5 {name=LowBiasEn dir=in}
+B 5 -12.5 107.5 -7.5 112.5 {name=nLowBiasEn dir=in}
+B 5 -72.5 107.5 -67.5 112.5 {name=BufferNBias dir=in}
+B 5 -72.5 -112.5 -67.5 -107.5 {name=BufferPBias dir=in}
+B 5 -152.5 -2.5 -147.5 2.5 {name=SplitterOutput dir=inout}
+B 5 -12.5 -112.5 -7.5 -107.5 {name=Rail dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=VBiasOut dir=out}
+B 5 7.5 -112.5 12.5 -107.5 {name=PadBias dir=inout}
+P 4 5 130 -100 -130 -100 -130 100 130 100 130 -100 {}
+T {@symname} -37.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -112 0 0 0.2 0.2 {}
+T {VddA18} -94 -85 3 1 0.2 0.2 {}
+T {GndA} -86 85 1 1 0.2 0.2 {}
+T {NBiasEn} 46 95 3 0 0.2 0.2 {}
+T {PBiasEn} 66 95 3 0 0.2 0.2 {}
+T {PadBiasDisable} 106 95 3 0 0.2 0.2 {}
+T {PadBiasEnable} 86 95 3 0 0.2 0.2 {}
+T {BiasDisable} 6 95 3 0 0.2 0.2 {}
+T {BiasEnable} 26 95 3 0 0.2 0.2 {}
+T {LowBiasEn} -34 95 3 0 0.2 0.2 {}
+T {nLowBiasEn} -14 95 3 0 0.2 0.2 {}
+T {BufferNBias} -74 95 3 0 0.2 0.2 {}
+T {BufferPBias} -66 -95 1 0 0.2 0.2 {}
+T {SplitterOutput} -125 -4 0 0 0.2 0.2 {}
+T {Rail} -14 -85 3 1 0.2 0.2 {}
+T {VBiasOut} 125 -4 0 1 0.2 0.2 {}
+T {PadBias} 6 -85 3 1 0.2 0.2 {}

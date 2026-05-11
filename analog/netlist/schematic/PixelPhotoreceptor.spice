@@ -1,0 +1,10 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelPhotoreceptor.sch
+.subckt PixelPhotoreceptor VddA18 PrBp GndA vpd vpr
+*.PININFO PrBp:B VddA18:B vpd:B GndA:B vpr:B
+XMpd VddA18 vpr vpd GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XMpr_amp vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMprBias vpr PrBp VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1 ad=150e-3 as=150e-3 pd=1.6 ps=1.6 nrd=0.58 nrs=0.58 sa=0
++ sb=0 sd=0 mult=1
+.ends

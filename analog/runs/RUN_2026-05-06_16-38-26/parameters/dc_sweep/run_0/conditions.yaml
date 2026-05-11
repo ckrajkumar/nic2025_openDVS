@@ -1,0 +1,10 @@
+DUT_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/PixelPhotoreceptor.spice
+N: 0
+corner: tt
+filename: tb_PixelPhotoreceptor_dc
+root: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog
+simpath: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_16-38-26/parameters/dc_sweep/run_0
+temperature: '27'
+vdd: '1.8'
+xPrBp: 10e-9
+xPrSFBp: 1e-9

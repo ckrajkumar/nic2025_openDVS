@@ -76,7 +76,6 @@ N 1350 110 1350 130 {lab=LowBiasMirr}
 N 1140 160 1310 160 {lab=nLowBiasEn}
 N 1100 190 1100 270 {lab=#net1}
 N 1350 190 1350 230 {lab=IOut}
-N 890 230 890 430 {lab=IOut}
 N 890 230 1350 230 {lab=IOut}
 N 440 270 750 270 {lab=#net1}
 N 690 230 890 230 {lab=IOut}
@@ -99,6 +98,8 @@ N 1330 -180 1330 -170 {lab=#net6}
 N 1460 -180 1460 -170 {lab=#net7}
 N 1560 -180 1560 -170 {lab=#net8}
 N 770 -210 1560 -210 {lab=VddA18}
+N 890 320 890 370 {lab=IOut}
+N 890 230 890 320 {lab=IOut}
 C {sky130_fd_pr/pfet_01v8.sym} 580 -60 0 1 {name=MpDisableHighBias
 W=0.42
 L=0.15
@@ -118,10 +119,10 @@ C {iopin.sym} 230 -90 2 0 {name=p12 lab=VddA18}
 C {lab_wire.sym} 560 -140 3 0 {name=p1 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 510 -60 2 0 {name=p2 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 630 -60 0 0 {name=p3 sig_type=std_logic lab=nLowBiasEn}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -10 0 1 {name=MpDioHighBias
-W=64
-L=0.5
-nf=1
+C {sky130_fd_pr/pfet_01v8.sym} 460 -10 0 1 {name=MpDioHighBias
+W=32
+L=1
+nf=2
 mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
@@ -129,14 +130,14 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 390 -10 2 0 {name=p4 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 670 -10 0 0 {name=MpMirrHighBias
-W=64
-L=0.5
-nf=1
+C {sky130_fd_pr/pfet_01v8.sym} 670 -10 0 0 {name=MpMirrHighBias
+W=32
+L=1
+nf=2
 mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
@@ -144,7 +145,7 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 440 -100 3 0 {name=p5 sig_type=std_logic lab=VddA18}
@@ -184,10 +185,10 @@ C {lab_wire.sym} 360 130 0 0 {name=p10 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 310 210 1 0 {name=p13 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 490 130 1 0 {name=p14 sig_type=std_logic lab=LowBiasEn}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 460 180 0 1 {name=MpSelDioHighBias
-W=5
-L=1
-nf=1
-mult=1
+W=32
+L=0.5
+nf=2
+mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
@@ -198,10 +199,10 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 670 180 0 0 {name=MpSelMirrHighBias
-W=5
-L=1
-nf=1
-mult=1
+W=32
+L=0.5
+nf=2
+mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
@@ -249,7 +250,7 @@ spiceprefix=X
 }
 C {iopin.sym} 750 430 1 0 {name=p24 lab=IIn}
 C {lab_wire.sym} 700 330 2 0 {name=p25 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 0 0 1 {name=MpDioLowBias1
+C {sky130_fd_pr/pfet_01v8.sym} 1120 0 0 1 {name=MpDioLowBias1
 W=4
 L=2
 nf=1
@@ -260,10 +261,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1330 0 0 0 {name=MpMirrLowBias1
+C {sky130_fd_pr/pfet_01v8.sym} 1330 0 0 0 {name=MpMirrLowBias1
 W=4
 L=2
 nf=1
@@ -274,14 +275,14 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 1400 0 0 0 {name=p27 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1350 -80 3 0 {name=p28 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1100 -80 3 0 {name=p29 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1050 0 0 1 {name=p30 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 80 0 1 {name=MpDioLowBias2
+C {sky130_fd_pr/pfet_01v8.sym} 1120 80 0 1 {name=MpDioLowBias2
 W=4
 L=2
 nf=1
@@ -292,10 +293,10 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1330 80 0 0 {name=MpMirrLowBias2
+C {sky130_fd_pr/pfet_01v8.sym} 1330 80 0 0 {name=MpMirrLowBias2
 W=4
 L=2
 nf=1
@@ -306,40 +307,40 @@ as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 1400 80 0 0 {name=p31 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1050 80 0 1 {name=p32 sig_type=std_logic lab=VddA18}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1120 160 0 1 {name=MpSelDioLowBias
-W=1
-L=1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 160 0 1 {name=MpSelDioLowBias
+W=4
+L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1330 160 0 0 {name=MpSelMirrLowBias
-W=1
-L=1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1330 160 0 0 {name=MpSelMirrLowBias
+W=4
+L=2
 nf=1
-mult=1
+mult=2
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
 ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
 nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {iopin.sym} 890 430 1 0 {name=p33 lab=IOut}
+C {iopin.sym} 890 370 1 0 {name=p33 lab=IOut}
 C {lab_wire.sym} 1220 160 0 1 {name=p26 sig_type=std_logic lab=nLowBiasEn}
 C {lab_wire.sym} 1190 120 0 0 {name=p34 sig_type=std_logic lab=LowBiasDioGate}
 C {lab_wire.sym} 1350 120 0 1 {name=p35 sig_type=std_logic lab=LowBiasMirr}
