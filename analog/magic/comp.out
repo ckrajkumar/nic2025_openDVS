@@ -1,0 +1,84 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ML4XRG in circuit dyn_comp (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_KDZMJM in circuit dyn_comp (0)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_9ZWGZ9 in circuit dyn_comp (0)(5 instances)
+
+Subcircuit summary:
+Circuit 1: dyn_comp                        |Circuit 2: dyn_comp                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (13->7)            
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (5)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 14 **Mismatch**            |Number of nets: 13 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: dyn_comp                        |Circuit 2: dyn_comp                        
+
+---------------------------------------------------------------------------------------
+Net: vbias_n                               |Net: vbias_n                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+                                           |                                           
+Net: w_752_n920#                           |Net: vbias_p1                              
+  sky130_fd_pr__pfet_01v8/4 = 5            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: vdd                                   |Net: vdd                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__pfet_01v8/4 = 5            
+                                           |                                           
+Net: gnd                                   |Net: gnd                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 7            
+                                           |                                           
+Net: VSUBS                                 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/4 = 7            |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: dyn_comp                        |Circuit 2: dyn_comp                        
+-------------------------------------------|-------------------------------------------
+gnd                                        |vbias_n **Mismatch**                       
+(no pin, node is vbias_n)                  |vdd                                        
+(no pin, node is vp)                       |vp                                         
+(no pin, node is vp)                       |vm                                         
+(no pin, node is vbias_n)                  |gnd                                        
+(no pin, node is vbias_p)                  |vbias_p                                    
+(no pin, node is voutn)                    |voutp                                      
+(no pin, node is voutn)                    |voutn                                      
+(no pin, node is vbias_n)                  |vbias_p1                                   
+---------------------------------------------------------------------------------------
+Cell pin lists for dyn_comp and dyn_comp altered to match.
+Device classes dyn_comp and dyn_comp are equivalent.
+
+Final result: Top level cell failed pin matching.

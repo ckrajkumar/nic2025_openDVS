@@ -217,6 +217,14 @@ N 2620 -10 2620 220 {lab=CoarseOneHotLowBiasEn}
 N 2800 280 2800 320 {lab=gnd}
 N 2800 -10 2800 220 {lab=CoarseOneHotLowBiasEnBuffer}
 N 1770 -60 1770 20 {lab=gnd}
+N 1100 -640 1680 -640 {lab=PadBiasEnable}
+N 1100 -620 1680 -620 {lab=PadBiasDisable}
+N 3470 -460 3470 -420 {lab=gnd}
+N 3470 -600 3470 -520 {lab=PadBiasEnable}
+N 3570 -550 3570 -500 {lab=vdd}
+N 3530 -560 3530 -510 {lab=gnd}
+N 3470 -600 3530 -600 {lab=PadBiasEnable}
+N 3570 -610 3670 -610 {lab=PadBiasDisable}
 C {vsource.sym} 1180 -920 0 0 {name=Vgnd value=0 savecurrent=true}
 C {gnd.sym} 1210 -870 0 0 {name=l1 lab=GND!}
 C {vsource.sym} 1250 -920 0 0 {name=Vvdd value='xvdd' savecurrent=true}
@@ -255,7 +263,7 @@ value="
 .param xCoarseCodeBuffer = 1
 .param xFineCodeBuffer = 110
 
-
+.param xPadBiasEnabled = 1
 .param xBiasEnable = 1
 .param xNBias = 0
 
@@ -680,3 +688,14 @@ value='(1-xbiasEnabled)*xvdd'
 savecurrent=false}
 C {lab_wire.sym} 2800 -10 3 0 {name=p68 sig_type=std_logic lab=CoarseOneHotLowBiasEnBuffer}
 C {lab_wire.sym} 1770 20 3 1 {name=p69 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 1100 -640 0 1 {name=p70 sig_type=std_logic lab=PadBiasEnable}
+C {lab_wire.sym} 1100 -620 0 1 {name=p176 sig_type=std_logic lab=PadBiasDisable}
+C {vsource.sym} 3470 -490 0 0 {name=VbiasEnabled8 value='xPadBiasEnabled*xvdd' savecurrent=false}
+C {lab_wire.sym} 3470 -420 3 1 {name=VbiasEnabled9 sig_type=std_logic lab=gnd
+value='(1-xbiasEnabled)*xvdd'
+savecurrent=false}
+C {lab_wire.sym} 3470 -600 3 0 {name=p178 sig_type=std_logic lab=PadBiasEnable}
+C {vcvs.sym} 3570 -580 0 0 {name=E18 value=-1}
+C {lab_wire.sym} 3570 -500 3 1 {name=p179 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 3530 -510 3 1 {name=p180 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 3650 -610 0 0 {name=p181 sig_type=std_logic lab=PadBiasDisable}

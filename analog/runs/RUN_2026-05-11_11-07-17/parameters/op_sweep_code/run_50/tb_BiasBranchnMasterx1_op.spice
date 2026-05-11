@@ -1,0 +1,304 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-11_11-07-17/parameters/op_sweep_code/run_50/tb_BiasBranchnMasterx1_op.sch
+**.subckt tb_BiasBranchnMasterx1_op
+Vgnd gnd GND! 0
+.save i(vgnd)
+Vvdd vdd GND! 'xvdd'
+.save i(vvdd)
+VpowerDown PowerDown gnd 'xpowerdown*xvdd'
+.save i(vpowerdown)
+XMnMeasOut drain_nMeasOut vout gnd gnd sky130_fd_pr__nfet_01v8 L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+Vmeas_Iout_nmos vdd drain_nMeasOut 0
+.save i(vmeas_iout_nmos)
+XMpMeasOut drain_pMeasOut vout vdd vdd sky130_fd_pr__pfet_01v8 L=3 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=2 m=2
+Vmeas_Iout_pmos drain_pMeasOut gnd 0
+.save i(vmeas_iout_pmos)
+VbiasEnabled BiasEnable gnd 'xBiasEnabled*xvdd'
+VNBiasEn NBiasEn gnd 'xNBias*xvdd'
+xBias vdd gnd PowerDown BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] BufferN BufferP
++ VMasterBiasN VMasterBiasP vout IR Coarse7 Coarse6 Coarse5 Coarse4 Coarse3 Coarse2 Coarse1 Coarse0 LowBiasInterfaceEn nLowBiasInterfaceEn
++ FineBit7 FineBit6 FineBit5 FineBit4 FineBit3 FineBit2 FineBit1 FineBit0 nFineBit7 nFineBit6 nFineBit5 nFineBit4 nFineBit3 nFineBit2
++ nFineBit1 nFineBit0 CoarseOneHotLowBiasEn LowBiasBufEn nLowBiasBufEn NBiasEn PBiasEn BiasEnable BiasDisable BCoarse7 BCoarse6 BCoarse5
++ BCoarse4 BCoarse3 BCoarse2 BCoarse1 BCoarse0 LowBiasInterfaceEnBuffer nLowBiasInterfaceEnBuffer BFineBit7 BFineBit6 BFineBit5 BFineBit4
++ BFineBit3 BFineBit2 BFineBit1 BFineBit0 nBFineBit7 nBFineBit6 nBFineBit5 nBFineBit4 nBFineBit3 nBFineBit2 nBFineBit1 nBFineBit0
++ CoarseOneHotLowBiasEnBuffer PadBiasEnable PadBiasDisable PadBias BiasBranchnMasterx1
+* noconn BiasCB[7:0]
+* noconn BufferN
+* noconn BufferP
+* noconn VMasterBiasN
+* noconn VMasterBiasP
+R1 IR gnd 'xIR'
+VBFineBit0 BFineBit0 gnd 'xFineBitBuffer0*xvdd'
+.save i(vbfinebit0)
+VBFineBit1 BFineBit1 gnd 'xFineBitBuffer1*xvdd'
+.save i(vbfinebit1)
+VBFineBit2 BFineBit2 gnd 'xFineBitBuffer2*xvdd'
+.save i(vbfinebit2)
+VBFineBit3 BFineBit3 gnd 'xFineBitBuffer3*xvdd'
+.save i(vbfinebit3)
+VBFineBit4 BFineBit4 gnd 'xFineBitBuffer4*xvdd'
+.save i(vbfinebit4)
+VBFineBit5 BFineBit5 gnd 'xFineBitBuffer5*xvdd'
+.save i(vbfinebit5)
+VBFineBit6 BFineBit6 gnd 'xFineBitBuffer6*xvdd'
+.save i(vbfinebit6)
+VBFineBit7 BFineBit7 gnd 'xFineBitBuffer7*xvdd'
+.save i(vbfinebit7)
+E1 nBFineBit7 vdd BFineBit7 gnd -1
+E2 nBFineBit6 vdd BFineBit6 gnd -1
+E3 nBFineBit5 vdd BFineBit5 gnd -1
+E4 nBFineBit4 vdd BFineBit4 gnd -1
+E5 nBFineBit3 vdd BFineBit3 gnd -1
+E6 nBFineBit2 vdd BFineBit2 gnd -1
+E7 nBFineBit1 vdd BFineBit1 gnd -1
+E8 nBFineBit0 vdd BFineBit0 gnd -1
+VFineBit8 FineBit0 gnd 'xFineBit0*xvdd'
+.save i(vfinebit8)
+VFineBit9 FineBit1 gnd 'xFineBit1*xvdd'
+.save i(vfinebit9)
+VFineBit10 FineBit2 gnd 'xFineBit2*xvdd'
+.save i(vfinebit10)
+VFineBit11 FineBit3 gnd 'xFineBit3*xvdd'
+.save i(vfinebit11)
+VFineBit12 FineBit4 gnd 'xFineBit4*xvdd'
+.save i(vfinebit12)
+VFineBit13 FineBit5 gnd 'xFineBit5*xvdd'
+.save i(vfinebit13)
+VFineBit14 FineBit6 gnd 'xFineBit6*xvdd'
+.save i(vfinebit14)
+VFineBit15 FineBit7 gnd 'xFineBit7*xvdd'
+.save i(vfinebit15)
+E9 nFineBit7 vdd FineBit7 gnd -1
+E10 nFineBit6 vdd FineBit6 gnd -1
+E11 nFineBit5 vdd FineBit5 gnd -1
+E12 nFineBit4 vdd FineBit4 gnd -1
+E13 nFineBit3 vdd FineBit3 gnd -1
+E14 nFineBit2 vdd FineBit2 gnd -1
+E15 nFineBit1 vdd FineBit1 gnd -1
+E16 nFineBit0 vdd FineBit0 gnd -1
+VCoarse7 Coarse7 gnd '(xCoarseCode==7)*xvdd'
+.save i(vcoarse7)
+VCoarse6 Coarse6 gnd '(xCoarseCode==6)*xvdd'
+.save i(vcoarse6)
+VCoarse5 Coarse5 gnd '(xCoarseCode==5)*xvdd'
+.save i(vcoarse5)
+VCoarse4 Coarse4 gnd '(xCoarseCode==4)*xvdd'
+.save i(vcoarse4)
+VCoarse3 Coarse3 gnd '(xCoarseCode==3)*xvdd'
+.save i(vcoarse3)
+VCoarse2 Coarse2 gnd '(xCoarseCode==2)*xvdd'
+.save i(vcoarse2)
+VCoarse1 Coarse1 gnd '(xCoarseCode==1)*xvdd'
+.save i(vcoarse1)
+VCoarse0 Coarse0 gnd '(xCoarseCode==0)*xvdd'
+.save i(vcoarse0)
+VBCoarse7 BCoarse7 gnd '(xCoarseCodeBuffer==7)*xvdd'
+.save i(vbcoarse7)
+VBCoarse6 BCoarse6 gnd '(xCoarseCodeBuffer==6)*xvdd'
+.save i(vbcoarse6)
+VBCoarse5 BCoarse5 gnd '(xCoarseCodeBuffer==5)*xvdd'
+.save i(vbcoarse5)
+VBCoarse4 BCoarse4 gnd '(xCoarseCodeBuffer==4)*xvdd'
+.save i(vbcoarse4)
+VBCoarse3 BCoarse3 gnd '(xCoarseCodeBuffer==3)*xvdd'
+.save i(vbcoarse3)
+VBCoarse2 BCoarse2 gnd '(xCoarseCodeBuffer==2)*xvdd'
+.save i(vbcoarse2)
+VBCoarse1 BCoarse1 gnd '(xCoarseCodeBuffer==1)*xvdd'
+.save i(vbcoarse1)
+VBCoarse0 BCoarse0 gnd '(xCoarseCodeBuffer==0)*xvdd'
+.save i(vbcoarse0)
+VLowBiasBufEn LowBiasBufEn gnd '(xCoarseCode>0)*xvdd'
+E17 nLowBiasBufEn vdd LowBiasBufEn gnd -1
+E19 BiasDisable vdd BiasEnable gnd -1
+E20 PBiasEn vdd NBiasEn gnd -1
+VLowBiasInterfaceEn LowBiasInterfaceEn gnd '(xCoarseCode>1)*xvdd'
+E21 nLowBiasInterfaceEn vdd LowBiasInterfaceEn gnd -1
+VLowBiasInterfaceEnBuffer LowBiasInterfaceEnBuffer gnd '(xCoarseCodeBuffer>1)*xvdd'
+E22 nLowBiasInterfaceEnBuffer vdd LowBiasInterfaceEnBuffer gnd -1
+VLowBiasBufEn2 CoarseOneHotLowBiasEn gnd '(xCoarseCode>3)*xvdd'
+VLowBiasBufEn3 CoarseOneHotLowBiasEnBuffer gnd '(xCoarseCode>3)*xvdd'
+VbiasEnabled8 PadBiasEnable gnd 'xPadBiasEnabled*xvdd'
+E18 PadBiasDisable vdd PadBiasEnable gnd -1
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/alienfalcon/.ciel/sky130B/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.include /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/BiasBranchnMasterx1.spice
+
+.temp 27
+
+.option SEED=12345
+
+* Flag unsafe operating conditions (exceeds models' specified limits)
+.option warn=1
+
+.param xvdd = 1.8
+.param xCoarseCode = 2.0
+.param xFineCode = 255.0
+.param xNBias = 0
+
+
+* Flag unsafe operating conditions (exceeds models' specified limits)
+.option warn=1
+
+
+.param xpowerdown = 0
+.param xIR = 100k
+
+.param xCoarseCodeBuffer = 1
+.param xFineCodeBuffer = 110
+
+.param xBiasEnabled = 1
+.param xPadBiasEnabled = 1
+
+.param xCoarseBit0 = (xCoarseCode%2 >= 1)?1:0
+.param xCoarseBit1 = ((xCoarseCode/2)%2 >= 1)?1:0
+.param xCoarseBit2 = ((xCoarseCode/4)%2 >= 1)?1:0
+.param xFineBit0 = (xFineCode%2 >= 1)?1:0
+.param xFineBit1 = ((xFineCode/2)%2 >= 1)?1:0
+.param xFineBit2 = ((xFineCode/4)%2 >= 1)?1:0
+.param xFineBit3 = ((xFineCode/8)%2 >= 1)?1:0
+.param xFineBit4 = ((xFineCode/16)%2 >= 1)?1:0
+.param xFineBit5 = ((xFineCode/32)%2 >= 1)?1:0
+.param xFineBit6 = ((xFineCode/64)%2 >= 1)?1:0
+.param xFineBit7 = ((xFineCode/128)%2 >= 1)?1:0
+
+.param xCoarseBitBuffer0 = (xCoarseCodeBuffer%2 >= 1)?1:0
+.param xCoarseBitBuffer1 = ((xCoarseCodeBuffer/2)%2 >= 1)?1:0
+.param xCoarseBitBuffer2 = ((xCoarseCodeBuffer/4)%2 >= 1)?1:0
+.param xFineBitBuffer0 = (xFineCodeBuffer%2 >= 1)?1:0
+.param xFineBitBuffer1 = ((xFineCodeBuffer/2)%2 >= 1)?1:0
+.param xFineBitBuffer2 = ((xFineCodeBuffer/4)%2 >= 1)?1:0
+.param xFineBitBuffer3 = ((xFineCodeBuffer/8)%2 >= 1)?1:0
+.param xFineBitBuffer4 = ((xFineCodeBuffer/16)%2 >= 1)?1:0
+.param xFineBitBuffer5 = ((xFineCodeBuffer/32)%2 >= 1)?1:0
+.param xFineBitBuffer6 = ((xFineCodeBuffer/64)%2 >= 1)?1:0
+.param xFineBitBuffer7 = ((xFineCodeBuffer/128)%2 >= 1)?1:0
+
+*.nodeset v(xBias.xBiasBuffer.bit14) = 'xCoarseBitBuffer0*xvdd'
+*.nodeset v(xBias.xBiasBuffer.bit13) = 'xCoarseBitBuffer1*xvdd'
+*.nodeset v(xBias.xBiasBuffer.bit12) = 'xCoarseBitBuffer0*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q7) = 'xFineBitBuffer7*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q6) = 'xFineBitBuffer6*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q5) = 'xFineBitBuffer5*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q4) = 'xFineBitBuffer4*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q3) = 'xFineBitBuffer3*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q2) = 'xFineBitBuffer2*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q1) = 'xFineBitBuffer1*xvdd'
+*.nodeset v(xBias.xBiasBuffer.xDivFine.Q0) = 'xFineBitBuffer0*xvdd'
+
+
+
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBias.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBias.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBiasDio.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBiasDio.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBiasCascDio.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBiasCasc.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMPBias.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMPBiasDio.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirr1.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirr1.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirr2.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirr2.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirrCasc1.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNMirrCasc2.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB0.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB1.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB2.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB3.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB4.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB5.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB6.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasMasternCoarse.xMBDiv.xMNDioCB7.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrB0.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrB1.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB2.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB3.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB4t07.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrB0.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrB1.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB2.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB3.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarseBuf.xSel.xMmirrhB4t07.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBranch.xCoarse2Fine.xMpDioOut.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarse2Fine.xMpMirrOut.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarse2Fine.xMpDionOut2.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xCoarse2Fine.xMpMirrnOut2.msky130_fd_pr__pfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBranch.xCoarse2Fine.xMpDioOut.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarse2Fine.xMpMirrOut.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarse2Fine.xMpDionOut2.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xCoarse2Fine.xMpMirrnOut2.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBranch.xCoarse2Fine.xMpInDio.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xDivfine.xMnterm.msky130_fd_pr__nfet_01v8_lvt[id]
+
+.save @m.xBias.xBiasBranch.xBuffs.xMnDio.msky130_fd_pr__nfet_01v8[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMnMirr.msky130_fd_pr__nfet_01v8[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMnMirrBuffB0.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMnMirrBuffnB0.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBranch.xBuffs.xMnDio.msky130_fd_pr__nfet_01v8[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMnMirr.msky130_fd_pr__nfet_01v8[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMnMirrBuffBias.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMnMirrBuffB0.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMnMirrBuffnB0.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBranch.xBuffs.xMpDio.msky130_fd_pr__pfet_01v8[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMpMirrBuffBias.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMpMirrBuffB0.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBranch.xBuffs.xMpMirrBuffnB0.msky130_fd_pr__pfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBranch.xBuffs.xMpDio.msky130_fd_pr__pfet_01v8[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMpMirrBuffBias.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMpMirrBuffB0.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBranch.xBuffs.xMpMirrBuffnB0.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrB0.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrB1.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB2.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB3.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB4t07.msky130_fd_pr__nfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrB0.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrB1.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB2.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB3.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarseBuf.xSel.xMmirrhB4t07.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpDioOut.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrOut.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpDionOut2.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrnOut2.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpDioOut.msky130_fd_pr__pfet_01v8[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrOut.msky130_fd_pr__pfet_01v8[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpDionOut2.msky130_fd_pr__pfet_01v8[id]
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrnOut2.msky130_fd_pr__pfet_01v8[id]
+.save v(@m.xBias.xBiasBuffer.xCoarse2Fine.xMpDioOut.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrOut.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarse2Fine.xMpDionOut2.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xCoarse2Fine.xMpMirrnOut2.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save @m.xBias.xBiasBuffer.xCoarse2Fine.xMpInDio.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xMnDio.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xMnMirr.msky130_fd_pr__nfet_01v8_lvt[id]
+.save @m.xBias.xBiasBuffer.xMpDio.msky130_fd_pr__pfet_01v8_lvt[id]
+.save v(@m.xBias.xBiasBuffer.xMnDio.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xMnMirr.msky130_fd_pr__nfet_01v8_lvt[vdsat])
+.save v(@m.xBias.xBiasBuffer.xMpDio.msky130_fd_pr__pfet_01v8_lvt[vdsat])
+.save i(vmeas_iout_pmos)
+.save i(vmeas_iout_nmos)
+
+.save all
+
+.control
+op
+write tb_BiasBranchnMasterx1_op_50.raw
+shell python /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/scripts/tb_BiasBranchnMasterx1_op.py /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-11_11-07-17/parameters/op_sweep_code/run_50 tb_BiasBranchnMasterx1_op 50
+
+*shell . /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/scripts/shell_for_venv.sh "/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/scripts/tb_BiasBranchnMasterx1_op.py" "/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-11_11-07-17/parameters/op_sweep_code/run_50" "tb_BiasBranchnMasterx1_op" "50"
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND!
+.end
