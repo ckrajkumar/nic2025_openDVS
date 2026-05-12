@@ -3,20 +3,20 @@
 + BufferN BufferP VMasterBiasN VMasterBiasP Bias rx CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] CoarseOneHot[3]
 + CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0] LowBiasInterfaceEn nLowBiasInterfaceEn FineCode[7] FineCode[6] FineCode[5] FineCode[4]
 + FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7] nFineCode[6] nFineCode[5] nFineCode[4] nFineCode[3] nFineCode[2] nFineCode[1]
-+ nFineCode[0] CoarseOneHotLowBiasEn LowBiasBuffEn nLowBiasBuffEn NBiasEn PBiasEn BiasEnable BiasDisable CoarseOneHotBuffer[7]
-+ CoarseOneHotBuffer[6] CoarseOneHotBuffer[5] CoarseOneHotBuffer[4] CoarseOneHotBuffer[3] CoarseOneHotBuffer[2] CoarseOneHotBuffer[1]
-+ CoarseOneHotBuffer[0] LowBiasInterfaceEnBuffer nLowBiasInterfaceEnBuffer FineCodeBuffer[7] FineCodeBuffer[6] FineCodeBuffer[5] FineCodeBuffer[4]
-+ FineCodeBuffer[3] FineCodeBuffer[2] FineCodeBuffer[1] FineCodeBuffer[0] nFineCodeBuffer[7] nFineCodeBuffer[6] nFineCodeBuffer[5] nFineCodeBuffer[4]
-+ nFineCodeBuffer[3] nFineCodeBuffer[2] nFineCodeBuffer[1] nFineCodeBuffer[0] CoarseOneHotLowBiasEnBuffer PadBiasEnable PadBiasDisable PadBias
++ nFineCode[0] CoarseOneHotLowBiasEn BIT0 NBiasEn PBiasEn BiasDisable CoarseOneHotBuffer[7] CoarseOneHotBuffer[6] CoarseOneHotBuffer[5]
++ CoarseOneHotBuffer[4] CoarseOneHotBuffer[3] CoarseOneHotBuffer[2] CoarseOneHotBuffer[1] CoarseOneHotBuffer[0] LowBiasInterfaceEnBuffer
++ nLowBiasInterfaceEnBuffer FineCodeBuffer[7] FineCodeBuffer[6] FineCodeBuffer[5] FineCodeBuffer[4] FineCodeBuffer[3] FineCodeBuffer[2] FineCodeBuffer[1]
++ FineCodeBuffer[0] nFineCodeBuffer[7] nFineCodeBuffer[6] nFineCodeBuffer[5] nFineCodeBuffer[4] nFineCodeBuffer[3] nFineCodeBuffer[2]
++ nFineCodeBuffer[1] nFineCodeBuffer[0] CoarseOneHotLowBiasEnBuffer PadBias
 *.PININFO VddA18:B GndA:B BufferN:O BufferP:O rx:B VMasterBiasN:O VMasterBiasP:O BiasCB[7:0]:O Bias:O FineCodeBuffer[7:0]:I
 *+ FineCode[7:0]:I nFineCodeBuffer[7:0]:I nFineCode[7:0]:I CoarseOneHotBuffer[7:0]:I CoarseOneHot[7:0]:I LowBiasInterfaceEn:I nLowBiasInterfaceEn:I
-*+ CoarseOneHotLowBiasEn:I LowBiasBuffEn:I nLowBiasBuffEn:I LowBiasInterfaceEnBuffer:I nLowBiasInterfaceEnBuffer:I CoarseOneHotLowBiasEnBuffer:I PowerDown:I
-*+ NBiasEn:I PBiasEn:I BiasEnable:I BiasDisable:I PadBiasEnable:I PadBiasDisable:I PadBias:B
-xBiasBranch VddA18 GndA BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] BufferN BufferP GndA Bias
-+ LowBiasInterfaceEn nLowBiasInterfaceEn FineCode[7] CoarseOneHotLowBiasEn LowBiasBuffEn nLowBiasBuffEn NBiasEn PBiasEn BiasEnable BiasDisable
-+ FineCode[6] FineCode[5] FineCode[4] FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7] nFineCode[6] nFineCode[5] nFineCode[4]
-+ nFineCode[3] nFineCode[2] nFineCode[1] nFineCode[0] CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] CoarseOneHot[3]
-+ CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0] PadBiasEnable PadBiasDisable PadBias BiasBranch
+*+ CoarseOneHotLowBiasEn:I BIT0:I LowBiasInterfaceEnBuffer:I nLowBiasInterfaceEnBuffer:I CoarseOneHotLowBiasEnBuffer:I PowerDown:I NBiasEn:I PBiasEn:I
+*+ BiasDisable:I PadBias:B
+xBiasBranch VddA18 GndA BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] BufferN BufferP Bias
++ LowBiasInterfaceEn nLowBiasInterfaceEn FineCode[7] CoarseOneHotLowBiasEn BIT0 NBiasEn PBiasEn BiasDisable FineCode[6] FineCode[5] FineCode[4]
++ FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7] nFineCode[6] nFineCode[5] nFineCode[4] nFineCode[3] nFineCode[2] nFineCode[1]
++ nFineCode[0] CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0]
++ PadBias PowerDown BiasBranch
 xBiasMasternCoarse VddA18 GndA BiasCB[0] BiasCB[1] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] BiasCB[2] PowerDown
 + VMasterBiasN VMasterBiasP rx BiasMasternCoarse
 xBiasBuffer VddA18 GndA BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] CoarseOneHotBuffer[7]
@@ -26,24 +26,23 @@ xBiasBuffer VddA18 GndA BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB
 + nFineCodeBuffer[4] nFineCodeBuffer[3] nFineCodeBuffer[2] nFineCodeBuffer[1] nFineCodeBuffer[0] CoarseOneHotLowBiasEnBuffer BiasBranchBuffer
 .ends
 
-* expanding   symbol:  BiasBranch.sym # of pins=43
+* expanding   symbol:  BiasBranch.sym # of pins=39
 ** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/BiasBranch.sym
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/BiasBranch.sch
 .subckt BiasBranch VddA18 GndA BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] BufferN BufferP
-+ Rail VBiasOut LowBiasInterfaceEn nLowBiasInterfaceEn FineCode[7] CoarseOneHotLowBiasEn LowBiasBufEn nLowBiasBufEn NBiasEn PBiasEn
-+ BiasEnable BiasDisable FineCode[6] FineCode[5] FineCode[4] FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7] nFineCode[6]
-+ nFineCode[5] nFineCode[4] nFineCode[3] nFineCode[2] nFineCode[1] nFineCode[0] CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4]
-+ CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0] PadBiasEnable PadBiasDisable PadBias
-*.PININFO VddA18:B GndA:B VBiasOut:O BiasCB[7:0]:I BufferN:I BufferP:I Rail:B LowBiasInterfaceEn:I nLowBiasInterfaceEn:I
-*+ CoarseOneHotLowBiasEn:I LowBiasBufEn:I nLowBiasBufEn:I BiasEnable:I BiasDisable:I NBiasEn:I PBiasEn:I FineCode[0]:I FineCode[1]:I FineCode[2]:I
-*+ FineCode[3]:I FineCode[4]:I FineCode[5]:I FineCode[6]:I FineCode[7]:I nFineCode[0]:I nFineCode[1]:I nFineCode[2]:I nFineCode[3]:I
-*+ nFineCode[4]:I nFineCode[5]:I nFineCode[6]:I nFineCode[7]:I CoarseOneHot[0]:I CoarseOneHot[1]:I CoarseOneHot[2]:I CoarseOneHot[3]:I
-*+ CoarseOneHot[4]:I CoarseOneHot[5]:I CoarseOneHot[6]:I CoarseOneHot[7]:I PadBiasEnable:I PadBiasDisable:I PadBias:B
++ VBiasOut LowBiasInterfaceEn nLowBiasInterfaceEn FineCode[7] CoarseOneHotLowBiasEn BIT0 NBiasEn PBiasEn BiasDisabled FineCode[6]
++ FineCode[5] FineCode[4] FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7] nFineCode[6] nFineCode[5] nFineCode[4] nFineCode[3]
++ nFineCode[2] nFineCode[1] nFineCode[0] CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] CoarseOneHot[3] CoarseOneHot[2]
++ CoarseOneHot[1] CoarseOneHot[0] PadBias PowerDown
+*.PININFO VddA18:B GndA:B VBiasOut:O BiasCB[7:0]:I BufferN:I BufferP:I LowBiasInterfaceEn:I nLowBiasInterfaceEn:I
+*+ CoarseOneHotLowBiasEn:I BIT0:I BiasDisabled:I NBiasEn:I PBiasEn:I FineCode[0]:I FineCode[1]:I FineCode[2]:I FineCode[3]:I FineCode[4]:I FineCode[5]:I
+*+ FineCode[6]:I FineCode[7]:I nFineCode[0]:I nFineCode[1]:I nFineCode[2]:I nFineCode[3]:I nFineCode[4]:I nFineCode[5]:I nFineCode[6]:I
+*+ nFineCode[7]:I CoarseOneHot[0]:I CoarseOneHot[1]:I CoarseOneHot[2]:I CoarseOneHot[3]:I CoarseOneHot[4]:I CoarseOneHot[5]:I CoarseOneHot[6]:I
+*+ CoarseOneHot[7]:I PadBias:B PowerDown:I
 xCoarse2Fine VddA18 GndA LowBiasInterfaceEn nLowBiasInterfaceEn BiasVGate IInDiv BiasCoarseFineInterface
 xDivFine VddA18 GndA FineCode[7] FineCode[6] FineCode[5] FineCode[4] FineCode[3] FineCode[2] FineCode[1] FineCode[0] nFineCode[7]
 + nFineCode[6] nFineCode[5] nFineCode[4] nFineCode[3] nFineCode[2] nFineCode[1] nFineCode[0] IInDiv IOutDiv BiasVGate BiasDividerFine
-xBuffs VddA18 GndA NBiasEn PBiasEn PadBiasDisable PadBiasEnable BiasDisable BiasEnable LowBiasBufEn nLowBiasBufEn BufferN BufferP
-+ IOutDiv Rail VBiasOut PadBias BiasBuffers
+xBuffs VddA18 GndA NBiasEn PBiasEn BiasDisabled BIT0 BufferN BufferP IOutDiv VBiasOut PadBias PowerDown BiasBuffers
 xCoarseSel8to1 VddA18 GndA CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] CoarseOneHot[3] CoarseOneHot[2]
 + CoarseOneHot[1] CoarseOneHot[0] CoarseOneHotLowBiasEn BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4] BiasCB[3] BiasCB[2] BiasCB[1] BiasCB[0] BiasVGate
 + BiasCoarseSel8to1
@@ -170,75 +169,73 @@ XMnterm termDio termDio GndA GndA sky130_fd_pr__nfet_01v8_lvt L=0.8 W=8 nf=1 ad=
 .ends
 
 
-* expanding   symbol:  BiasBuffers.sym # of pins=16
+* expanding   symbol:  BiasBuffers.sym # of pins=12
 ** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/BiasBuffers.sym
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/BiasBuffers.sch
-.subckt BiasBuffers VddA18 GndA NBiasEn PBiasEn PadBiasDisable PadBiasEnable BiasDisable BiasEnable LowBiasEn nLowBiasEn
-+ BufferNBias BufferPBias SplitterOutput Rail VBiasOut PadBias
-*.PININFO GndA:B VddA18:B VBiasOut:O NBiasEn:I PBiasEn:I BiasDisable:I BiasEnable:I LowBiasEn:I BufferNBias:I BufferPBias:I
-*+ SplitterOutput:B Rail:B nLowBiasEn:I PadBiasDisable:I PadBiasEnable:I PadBias:B
+.subckt BiasBuffers VddA18 GndA NBiasEnabled PBiasEnabled BiasDisabled BIT0 BufferNBias BufferPBias SplitterOutput VBiasOut
++ PadBias PowerDown
+*.PININFO GndA:B VddA18:B VBiasOut:O NBiasEnabled:I PBiasEnabled:I BiasDisabled:I BufferNBias:I BufferPBias:I SplitterOutput:B
+*+ BIT0:I PadBias:B PowerDown:I
 XMnDio SplitterOutput NBias GndA GndA sky130_fd_pr__nfet_01v8 L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
 + nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
-XMnswnMirrnB0 net1 LowBiasEn NBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
-XMpswnMirrnB0 NBias nLowBiasEn net1 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29
-+ nrs=0.29 sa=0 sb=0 sd=0 mult=1
+XMnswnMirrnB0 net1 nB0 NBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswnMirrnB0 NBias B0 net1 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
 XMnMirrBuffB0 nMirrBuffDrain SplitterOutput net2 GndA sky130_fd_pr__nfet_01v8_lvt L=2.4 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58
 + ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0 mult=1
-XMpnMirrEnable nMirrBuffDrain BiasDisable VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58
+XMpnMirrEnable nMirrBuffDrain disable VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58
 + nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
-XMnswnMirrB0 net2 nLowBiasEn NBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
-XMpswnMirrB0 NBias LowBiasEn net2 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
+XMnswnMirrB0 net2 B0 NBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswnMirrB0 NBias nB0 net2 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
 XMnMirr nCopy NBias GndA GndA sky130_fd_pr__nfet_01v8 L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
 + nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
 XMnMirrBuffBias NBias BufferNBias GndA GndA sky130_fd_pr__nfet_01v8_lvt L=6 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
 + nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=16 m=16
 XMpDio nCopy PBias VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=3 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
 + nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=2 m=2
-XMnswpMirrnB0 PBias LowBiasEn net3 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
-XMpswpMirrnB0 net3 nLowBiasEn PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29
-+ nrs=0.29 sa=0 sb=0 sd=0 mult=1
-XMnswpMirrB0 PBias nLowBiasEn net4 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
-XMpswpMirrB0 net4 LowBiasEn PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
-+ sa=0 sb=0 sd=0 mult=1
+XMnswpMirrnB0 PBias nB0 net3 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswpMirrnB0 net3 B0 PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMnswpMirrB0 PBias B0 net4 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpswpMirrB0 net4 nB0 PBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
 XMpMirrBuffnB0 net3 nCopy pMirrBuffDrain VddA18 sky130_fd_pr__pfet_01v8_lvt L=0.38 W=2.4 nf=1 ad=0.696 as=0.696 pd=5.38 ps=5.38
 + nrd=0.120833333333333 nrs=0.120833333333333 sa=0 sb=0 sd=0 mult=6 m=6
 XMpMirrBuffB0 net4 nCopy pMirrBuffDrain VddA18 sky130_fd_pr__pfet_01v8_lvt L=2.4 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58
 + nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0 mult=1
-XMnpMirrEnable pMirrBuffDrain PBiasEn GndA GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29
+XMnpMirrEnable pMirrBuffDrain net6 GndA GndA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29
 + nrs=0.29 sa=0 sb=0 sd=0 mult=1
 XMpMirrBuffBias PBias BufferPBias VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt L=3 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
 + nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=2 m=2
-XMnswNBias NBias NBiasEn net5 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
-+ sa=0 sb=0 sd=0 mult=1
-XMpswNBias net5 PBiasEn NBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
-+ sa=0 sb=0 sd=0 mult=1
-XMnswPBias net5 PBiasEn PBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
-+ sa=0 sb=0 sd=0 mult=1
-XMpswPBias PBias NBiasEn net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
-+ sa=0 sb=0 sd=0 mult=1
-XMnswBias net6 BiasEnable VBiasOut GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
+XMnswNBias NBias NBiasEnabled net5 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
 + nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMpswBias VBiasOut BiasDisable net6 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
+XMpswNBias net5 PBiasEnabled NBias VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
 + nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMnswRail VBiasOut BiasDisable Rail GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
+XMnswPBias net5 PBiasEnabled PBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
 + nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMpswRail Rail BiasEnable VBiasOut VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
+XMpswPBias PBias NBiasEnabled net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMnswBias net5 nPowerDown VBiasOut GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswBias VBiasOut PowerDown net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMnswRail VBiasOut PowerDown PadBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
++ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+XMpswRail PadBias nPowerDown VBiasOut VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
 + nrs=0.0725 sa=0 sb=0 sd=0 mult=1
 XMnMirrBuffnB0 nMirrBuffDrain SplitterOutput net1 GndA sky130_fd_pr__nfet_01v8_lvt L=0.24 W=2.4 nf=1 ad=0.696 as=0.696 pd=5.38
 + ps=5.38 nrd=0.120833333333333 nrs=0.120833333333333 sa=0 sb=0 sd=0 mult=10 m=10
-XMnswBias1 net5 PadBiasDisable net6 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
-+ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMpswBias1 net6 PadBiasEnable net5 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
-+ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMnswRail1 net6 PadBiasEnable PadBias GndA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
-+ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
-XMpswRail1 PadBias PadBiasDisable net6 VddA18 sky130_fd_pr__pfet_01v8 L=0.38 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725
-+ nrs=0.0725 sa=0 sb=0 sd=0 mult=1
+x1 ndisable PBiasEnabled VddA18 VddA18 GndA GndA net6 sky130_fd_sc_hd__and2_1
+x2 PowerDown BiasDisabled ndisable VddA18 VddA18 GndA GndA sky130_fd_sc_hd__nor2_1
+x3 BIT0 nB0 VddA18 VddA18 GndA GndA sky130_fd_sc_hd__inv_1
+x4 nB0 B0 VddA18 VddA18 GndA GndA sky130_fd_sc_hd__inv_1
+x5 ndisable disable VddA18 VddA18 GndA GndA sky130_fd_sc_hd__inv_1
+x6 PowerDown nPowerDown VddA18 VddA18 GndA GndA sky130_fd_sc_hd__inv_1
 .ends
 
 
@@ -501,6 +498,54 @@ XMswNOut INOut Sel net2 VddA18 sky130_fd_pr__pfet_01v8_hvt L=0.5 W=2 nf=1 ad=0.5
 + sb=0 sd=0 mult=1
 XMswOut IOut nSel net2 VddA18 sky130_fd_pr__pfet_01v8_hvt L=0.5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0
 + sb=0 sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__and2_1.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__and2_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__and2_1.sch
+.subckt sky130_fd_sc_hd__and2_1 A B VPWR VPB VGND VNB X
+*.PININFO A:I X:O VNB:B VPB:B VPWR:B B:I VGND:B
+XX0 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX4 a_59_75# B VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX1 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX5 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XX2 a_59_75# A a_145_75# VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XX3 a_145_75# B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__nor2_1.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__nor2_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__nor2_1.sch
+.subckt sky130_fd_sc_hd__nor2_1 A B Y VPWR VPB VGND VNB
+*.PININFO A:I Y:O VNB:B VPB:B VPWR:B B:I VGND:B
+XX1 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.64 nf=1 ad=0.1856 as=0.1856 pd=1.86 ps=1.86 nrd=0.453125 nrs=0.453125 sa=0
++ sb=0 sd=0 mult=1
+XX2 Y B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX3 Y B a_109_297# VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+XX0 a_109_297# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__inv_1.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_1.sch
+.subckt sky130_fd_sc_hd__inv_1 A Y VPWR VPB VGND VNB
+*.PININFO A:I Y:O VNB:B VPB:B VPWR:B VGND:B
+XX0 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+XX1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
 .ends
 
 

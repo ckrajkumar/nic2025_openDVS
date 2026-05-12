@@ -18,14 +18,12 @@ L 4 510 -70 530 -70 {}
 L 4 160 -20 180 -20 {}
 L 4 160 0 180 0 {}
 L 4 160 80 180 80 {}
-L 4 160 100 180 100 {}
 L 4 160 120 180 120 {}
 L 4 160 60 180 60 {}
 L 4 160 40 180 40 {}
 L 4 160 20 180 20 {}
 L 4 160 140 180 140 {}
 L 4 160 160 180 160 {}
-L 4 160 180 180 180 {}
 L 4 160 200 180 200 {}
 L 4 160 220 180 220 {}
 L 4 160 240 180 240 {}
@@ -33,8 +31,6 @@ L 4 160 320 180 320 {}
 L 4 160 300 180 300 {}
 L 4 160 280 180 280 {}
 L 4 160 260 180 260 {}
-L 4 160 -80 180 -80 {}
-L 4 160 -60 180 -60 {}
 L 7 260 -130 260 -110 {}
 L 7 280 -130 280 -110 {}
 L 7 250 370 250 390 {}
@@ -55,11 +51,9 @@ B 5 157.5 57.5 162.5 62.5 {name=nLowBiasInterfaceEn dir=in}
 B 5 157.5 -22.5 162.5 -17.5 {name=FineCode[7:0] dir=in}
 B 5 157.5 -2.5 162.5 2.5 {name=nFineCode[7:0] dir=in}
 B 5 157.5 77.5 162.5 82.5 {name=CoarseOneHotLowBiasEn dir=in}
-B 5 157.5 97.5 162.5 102.5 {name=LowBiasBuffEn dir=in}
-B 5 157.5 117.5 162.5 122.5 {name=nLowBiasBuffEn dir=in}
+B 5 157.5 117.5 162.5 122.5 {name=BIT0 dir=in}
 B 5 157.5 137.5 162.5 142.5 {name=NBiasEn dir=in}
 B 5 157.5 157.5 162.5 162.5 {name=PBiasEn dir=in}
-B 5 157.5 177.5 162.5 182.5 {name=BiasEnable dir=in}
 B 5 157.5 197.5 162.5 202.5 {name=BiasDisable dir=in}
 B 5 157.5 257.5 162.5 262.5 {name=CoarseOneHotBuffer[7:0] dir=in}
 B 5 157.5 277.5 162.5 282.5 {name=LowBiasInterfaceEnBuffer dir=in}
@@ -68,8 +62,6 @@ B 5 157.5 217.5 162.5 222.5 {name=FineCodeBuffer[7:0] dir=in}
 B 5 157.5 237.5 162.5 242.5 {name=nFineCodeBuffer[7:0] dir=in}
 B 5 157.5 317.5 162.5 322.5 {name=CoarseOneHotLowBiasEnBuffer
  dir=in}
-B 5 157.5 -82.5 162.5 -77.5 {name=PadBiasEnable dir=in}
-B 5 157.5 -62.5 162.5 -57.5 {name=PadBiasDisable dir=in}
 B 5 297.5 -132.5 302.5 -127.5 {name=PadBias dir=inout}
 P 4 5 180 -110 510 -110 520 370 180 370 180 -110 {}
 T {@symname} 362.90625 54.78125 3 1 0.5 0.5 {}
@@ -90,11 +82,9 @@ T {nLowBiasInterfaceEn} 292.71875 52.65625 0 1 0.2 0.2 {}
 T {FineCode[7:0]} 257.71875 -27.34375 0 1 0.2 0.2 {}
 T {nFineCode[7:0]} 265.21875 -4.84375 0 1 0.2 0.2 {}
 T {CoarseOneHotLowBiasEn} 315.21875 75.15625 0 1 0.2 0.2 {}
-T {LowBiasBuffEn} 260.21875 95.15625 0 1 0.2 0.2 {}
-T {nLowBiasBuffEn} 267.71875 115.15625 0 1 0.2 0.2 {}
+T {BIT0} 207.71875 115.15625 0 1 0.2 0.2 {}
 T {NBiasEn} 227.71875 133.90625 0 1 0.2 0.2 {}
 T {PBiasEn} 226.46875 155.15625 0 1 0.2 0.2 {}
-T {BiasEnable} 242.71875 175.15625 0 1 0.2 0.2 {}
 T {BiasDisable} 245.21875 195.15625 0 1 0.2 0.2 {}
 T {CoarseOneHotBuffer[7:0]} 316.625 254.21875 0 1 0.2 0.2 {}
 T {LowBiasInterfaceEnBuffer} 318.96875 273.90625 0 1 0.2 0.2 {}
@@ -103,6 +93,4 @@ T {FineCodeBuffer[7:0]} 290.21875 215.15625 0 1 0.2 0.2 {}
 T {nFineCodeBuffer[7:0]} 296.46875 235.15625 0 1 0.2 0.2 {}
 T {CoarseOneHotLowBiasEnBuffer
 } 346.46875 313.90625 0 1 0.2 0.2 {}
-T {PadBiasEnable} 252.71875 -84.84375 0 1 0.2 0.2 {}
-T {PadBiasDisable} 255.21875 -64.84375 0 1 0.2 0.2 {}
 T {PadBias} 305.625 -106.625 1 0 0.2 0.2 {}

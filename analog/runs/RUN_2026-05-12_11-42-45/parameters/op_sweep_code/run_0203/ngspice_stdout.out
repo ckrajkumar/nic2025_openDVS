@@ -1,0 +1,17 @@
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /home/alienfalcon/projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_opendvs/analog/runs/run_2026-05-12_11-42-45/parameters/op_sweep_code/run_0203/tb_biasbranchnmasterx1_op.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+binary raw file "tb_BiasBranchnMasterx1_op_203.raw"
+Note: Simulation executed from .control section 
