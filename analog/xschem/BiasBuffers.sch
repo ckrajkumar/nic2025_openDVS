@@ -183,21 +183,21 @@ N 2510 30 2520 30 {lab=#net5}
 N 2710 30 2720 30 {lab=VBiasOut}
 N 2800 30 2810 30 {lab=PadBias}
 N 2600 30 2610 30 {lab=VBiasOut}
-N 960 460 1170 460 {lab=nB0}
-N 900 470 1230 470 {lab=GndA}
-N 900 450 1230 450 {lab=VddA18}
-N 820 460 880 460 {lab=BIT0}
-N 1250 460 1310 460 {lab=B0}
-N 920 710 1200 710 {lab=VddA18}
-N 920 730 1200 730 {lab=GndA}
-N 1000 720 1140 720 {lab=ndisable}
-N 820 700 880 700 {lab=PowerDown}
-N 820 740 880 740 {lab=BiasDisabled}
-N 1220 720 1300 720 {lab=disable}
-N 880 580 880 700 {lab=PowerDown}
-N 900 590 940 590 {lab=GndA}
-N 900 570 940 570 {lab=VddA18}
-N 960 580 1010 580 {lab=nPowerDown}
+N 1380 400 1590 400 {lab=nB0}
+N 1320 410 1650 410 {lab=GndA}
+N 1320 390 1650 390 {lab=VddA18}
+N 1240 400 1300 400 {lab=BIT0}
+N 1670 400 1730 400 {lab=B0}
+N 1340 650 1620 650 {lab=VddA18}
+N 1340 670 1620 670 {lab=GndA}
+N 1420 660 1560 660 {lab=ndisable}
+N 1240 640 1300 640 {lab=PowerDown}
+N 1240 680 1300 680 {lab=BiasDisabled}
+N 1640 660 1720 660 {lab=disable}
+N 1300 520 1300 640 {lab=PowerDown}
+N 1320 530 1360 530 {lab=GndA}
+N 1320 510 1360 510 {lab=VddA18}
+N 1380 520 1430 520 {lab=nPowerDown}
 N 1930 80 1930 310 {lab=#net6}
 N 1910 430 1910 500 {lab=ndisable}
 N 1950 430 1950 500 {lab=PBiasEnabled}
@@ -651,25 +651,25 @@ spiceprefix=X
 C {ipin.sym} 950 -20 0 0 {name=p75 lab=BIT0}
 C {iopin.sym} 950 -250 2 0 {name=p62 lab=PadBias}
 C {sky130_fd_sc_hd__and2_1.sym} 1930 370 3 0 {name=x1}
-C {sky130_fd_sc_hd__nor2_1.sym} 940 720 0 0 {name=x2}
-C {sky130_fd_sc_hd__inv_1.sym} 920 460 0 0 {name=x3}
-C {sky130_fd_sc_hd__inv_1.sym} 1210 460 0 0 {name=x4}
-C {lab_wire.sym} 820 460 0 1 {name=p22 sig_type=std_logic lab=BIT0}
-C {lab_wire.sym} 1130 450 0 1 {name=p28 sig_type=std_logic lab=VddA18}
-C {lab_wire.sym} 1020 470 2 0 {name=p29 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 1270 460 0 1 {name=p46 sig_type=std_logic lab=B0}
-C {lab_wire.sym} 1080 460 0 1 {name=p48 sig_type=std_logic lab=nB0}
-C {sky130_fd_sc_hd__inv_1.sym} 1180 720 0 0 {name=x5}
-C {sky130_fd_sc_hd__inv_1.sym} 920 580 0 0 {name=x6}
-C {lab_wire.sym} 1010 580 0 1 {name=p52 sig_type=std_logic lab=nPowerDown}
-C {lab_wire.sym} 820 700 0 1 {name=p53 sig_type=std_logic lab=PowerDown}
-C {lab_wire.sym} 910 570 0 1 {name=p54 sig_type=std_logic lab=VddA18}
-C {lab_wire.sym} 930 590 2 0 {name=p55 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 1070 710 0 1 {name=p72 sig_type=std_logic lab=VddA18}
-C {lab_wire.sym} 1020 730 2 0 {name=p73 sig_type=std_logic lab=GndA}
-C {lab_wire.sym} 1040 720 0 1 {name=p79 sig_type=std_logic lab=ndisable}
-C {lab_wire.sym} 1290 720 0 1 {name=p80 sig_type=std_logic lab=disable}
-C {lab_wire.sym} 820 740 0 1 {name=p84 sig_type=std_logic lab=BiasDisabled}
+C {sky130_fd_sc_hd__nor2_1.sym} 1360 660 0 0 {name=x2}
+C {sky130_fd_sc_hd__inv_1.sym} 1340 400 0 0 {name=x3}
+C {sky130_fd_sc_hd__inv_1.sym} 1630 400 0 0 {name=x4}
+C {lab_wire.sym} 1240 400 0 1 {name=p22 sig_type=std_logic lab=BIT0}
+C {lab_wire.sym} 1550 390 0 1 {name=p28 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 1440 410 2 0 {name=p29 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 1690 400 0 1 {name=p46 sig_type=std_logic lab=B0}
+C {lab_wire.sym} 1500 400 0 1 {name=p48 sig_type=std_logic lab=nB0}
+C {sky130_fd_sc_hd__inv_1.sym} 1600 660 0 0 {name=x5}
+C {sky130_fd_sc_hd__inv_1.sym} 1340 520 0 0 {name=x6}
+C {lab_wire.sym} 1430 520 0 1 {name=p52 sig_type=std_logic lab=nPowerDown}
+C {lab_wire.sym} 1240 640 0 1 {name=p53 sig_type=std_logic lab=PowerDown}
+C {lab_wire.sym} 1330 510 0 1 {name=p54 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 1350 530 2 0 {name=p55 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 1490 650 0 1 {name=p72 sig_type=std_logic lab=VddA18}
+C {lab_wire.sym} 1440 670 2 0 {name=p73 sig_type=std_logic lab=GndA}
+C {lab_wire.sym} 1460 660 0 1 {name=p79 sig_type=std_logic lab=ndisable}
+C {lab_wire.sym} 1710 660 0 1 {name=p80 sig_type=std_logic lab=disable}
+C {lab_wire.sym} 1240 680 0 1 {name=p84 sig_type=std_logic lab=BiasDisabled}
 C {lab_wire.sym} 1910 480 3 1 {name=p85 sig_type=std_logic lab=ndisable}
 C {lab_wire.sym} 1950 470 1 0 {name=p86 sig_type=std_logic lab=PBiasEnabled}
 C {lab_wire.sym} 1980 390 2 0 {name=p87 sig_type=std_logic lab=GndA}
