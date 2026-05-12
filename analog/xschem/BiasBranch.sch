@@ -25,7 +25,6 @@ N 310 -710 310 -670 {lab=GndA}
 N 510 -720 510 -680 {lab=GndA}
 N 530 -720 530 -680 {lab=BufferN}
 N 530 -1000 530 -940 {lab=BufferP}
-N 590 -1000 590 -940 {lab=Rail}
 N 350 -710 350 -610 {lab=FineCode[7:0]}
 N 370 -710 370 -610 {lab=nFineCode[7:0]}
 N -310 -820 -160 -820 {lab=BiasCB[7:0]}
@@ -40,8 +39,6 @@ N 630 -720 630 -600 {lab=BiasEnable}
 N 650 -720 650 -600 {lab=NBiasEn}
 N 670 -720 670 -600 {lab=PBiasEn}
 N 20 -820 50 -820 {lab=BiasVGate}
-N 690 -720 690 -600 {lab=PadBiasEnable}
-N 710 -720 710 -600 {lab=PadBiasDisable}
 N 410 -830 450 -830 {lab=IOutDiv}
 N 750 -830 790 -830 {lab=VBiasOut}
 N 610 -1000 610 -940 {lab=PadBias}
@@ -67,13 +64,11 @@ C {lab_wire.sym} 310 -670 3 1 {name=p25 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 510 -680 3 1 {name=p36 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 530 -680 3 1 {name=p37 sig_type=std_logic lab=BufferN}
 C {lab_wire.sym} 530 -1000 3 0 {name=p38 sig_type=std_logic lab=BufferP}
-C {lab_wire.sym} 590 -1000 3 0 {name=p39 sig_type=std_logic lab=Rail}
 C {lab_wire.sym} 650 -600 3 1 {name=p46 sig_type=std_logic lab=NBiasEn}
 C {lab_wire.sym} 670 -600 3 1 {name=p47 sig_type=std_logic lab=PBiasEn}
 C {ipin.sym} -360 -900 2 1 {name=p88 lab=BiasCB[7:0]}
 C {ipin.sym} -360 -860 2 1 {name=p90 lab=BufferN}
 C {ipin.sym} -360 -840 2 1 {name=p91 lab=BufferP}
-C {iopin.sym} -360 -820 0 1 {name=p92 lab=Rail}
 C {ipin.sym} -360 -560 2 1 {name=p6 lab=LowBiasInterfaceEn}
 C {ipin.sym} -360 -540 2 1 {name=p34 lab=nLowBiasInterfaceEn}
 C {lab_wire.sym} 350 -610 3 1 {name=p28 sig_type=std_logic lab=FineCode[7:0]}
@@ -116,9 +111,5 @@ C {ipin.sym} -90 -290 2 1 {name=p61 lab=CoarseOneHot[4]}
 C {ipin.sym} -90 -270 2 1 {name=p62 lab=CoarseOneHot[5]}
 C {ipin.sym} -90 -250 2 1 {name=p63 lab=CoarseOneHot[6]}
 C {ipin.sym} -90 -230 2 1 {name=p64 lab=CoarseOneHot[7]}
-C {lab_wire.sym} 690 -600 3 1 {name=p11 sig_type=std_logic lab=PadBiasEnable}
-C {lab_wire.sym} 710 -600 3 1 {name=p26 sig_type=std_logic lab=PadBiasDisable}
-C {ipin.sym} -360 -400 2 1 {name=p27 lab=PadBiasEnable}
-C {ipin.sym} -360 -380 2 1 {name=p65 lab=PadBiasDisable}
 C {lab_wire.sym} 610 -1000 3 0 {name=p66 sig_type=std_logic lab=PadBias}
 C {iopin.sym} -360 -800 0 1 {name=p67 lab=PadBias}

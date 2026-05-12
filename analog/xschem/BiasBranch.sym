@@ -45,18 +45,14 @@ L 4 160 350 180 350 {}
 L 4 160 370 180 370 {}
 L 4 160 390 180 390 {}
 L 4 160 410 180 410 {}
-L 4 160 610 180 610 {}
-L 4 160 630 180 630 {}
 L 7 200 -130 200 -110 {}
 L 7 220 -130 220 -110 {}
-L 7 510 20 530 20 {}
 L 7 510 40 530 40 {}
 B 5 197.5 -132.5 202.5 -127.5 {name=VddA18 dir=inout}
 B 5 217.5 -132.5 222.5 -127.5 {name=GndA dir=inout}
 B 5 277.5 -132.5 282.5 -127.5 {name=BiasCB[7:0] dir=in}
 B 5 377.5 -132.5 382.5 -127.5 {name=BufferN dir=in}
 B 5 397.5 -132.5 402.5 -127.5 {name=BufferP dir=in}
-B 5 527.5 17.5 532.5 22.5 {name=Rail dir=inout}
 B 5 527.5 -62.5 532.5 -57.5 {name=VBiasOut dir=out}
 B 5 157.5 427.5 162.5 432.5 {name=LowBiasInterfaceEn dir=in}
 B 5 157.5 447.5 162.5 452.5 {name=nLowBiasInterfaceEn dir=in}
@@ -91,8 +87,6 @@ B 5 157.5 347.5 162.5 352.5 {name=CoarseOneHot[3] dir=in}
 B 5 157.5 367.5 162.5 372.5 {name=CoarseOneHot[2] dir=in}
 B 5 157.5 387.5 162.5 392.5 {name=CoarseOneHot[1] dir=in}
 B 5 157.5 407.5 162.5 412.5 {name=CoarseOneHot[0] dir=in}
-B 5 157.5 607.5 162.5 612.5 {name=PadBiasEnable dir=in}
-B 5 157.5 627.5 162.5 632.5 {name=PadBiasDisable dir=in}
 B 5 527.5 37.5 532.5 42.5 {name=PadBias dir=inout}
 P 4 5 180 -70 510 -70 510 660 180 660 180 -70 {}
 T {@symname} 344.78125 -2.90625 2 1 0.5 0.5 {}
@@ -102,7 +96,6 @@ T {GndA} 225.625 -106.625 1 0 0.2 0.2 {}
 T {BiasCB[7:0]} 286.875 -43.375 1 1 0.2 0.2 {}
 T {BufferN} 386.875 -67.75 1 1 0.2 0.2 {}
 T {BufferP} 406.71875 -68.21875 1 1 0.2 0.2 {}
-T {Rail} 489.3125 13.4375 0 0 0.2 0.2 {}
 T {VBiasOut} 460.71875 -66.71875 0 0 0.2 0.2 {}
 T {LowBiasInterfaceEn} 287.71875 422.65625 0 1 0.2 0.2 {}
 T {nLowBiasInterfaceEn} 292.71875 442.65625 0 1 0.2 0.2 {}
@@ -140,6 +133,4 @@ T {CoarseOneHot[2]} 277.71875 362.65625 0 1 0.2 0.2 {}
 T {CoarseOneHot[1]} 277.71875 382.65625 0 1 0.2 0.2 {}
 T {CoarseOneHot[0]} 277.71875 402.65625 0 1 0.2 0.2 {}
 T {FineCode[7]} 247.71875 -57.34375 0 1 0.2 0.2 {}
-T {PadBiasEnable} 252.71875 605.15625 0 1 0.2 0.2 {}
-T {PadBiasDisable} 255.21875 625.15625 0 1 0.2 0.2 {}
 T {PadBias} 469.3125 33.4375 0 0 0.2 0.2 {}
