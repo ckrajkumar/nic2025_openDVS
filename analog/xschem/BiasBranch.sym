@@ -10,7 +10,6 @@ F {}
 E {}
 L 4 160 -50 180 -50 {}
 L 4 160 470 180 470 {}
-L 4 160 490 180 490 {}
 L 4 160 510 180 510 {}
 L 4 160 450 180 450 {}
 L 4 160 430 180 430 {}
@@ -20,7 +19,6 @@ L 4 400 -130 400 -110 {}
 L 4 510 -60 530 -60 {}
 L 4 160 530 180 530 {}
 L 4 160 550 180 550 {}
-L 4 160 570 180 570 {}
 L 4 160 590 180 590 {}
 L 4 160 -30 180 -30 {}
 L 4 160 -10 180 -10 {}
@@ -45,6 +43,7 @@ L 4 160 350 180 350 {}
 L 4 160 370 180 370 {}
 L 4 160 390 180 390 {}
 L 4 160 410 180 410 {}
+L 4 160 490 180 490 {}
 L 7 200 -130 200 -110 {}
 L 7 220 -130 220 -110 {}
 L 7 510 40 530 40 {}
@@ -58,12 +57,10 @@ B 5 157.5 427.5 162.5 432.5 {name=LowBiasInterfaceEn dir=in}
 B 5 157.5 447.5 162.5 452.5 {name=nLowBiasInterfaceEn dir=in}
 B 5 157.5 -52.5 162.5 -47.5 {name=FineCode[7] dir=in}
 B 5 157.5 467.5 162.5 472.5 {name=CoarseOneHotLowBiasEn dir=in}
-B 5 157.5 487.5 162.5 492.5 {name=LowBiasBufEn dir=in}
-B 5 157.5 507.5 162.5 512.5 {name=nLowBiasBufEn dir=in}
+B 5 157.5 507.5 162.5 512.5 {name=BIT0 dir=in}
 B 5 157.5 527.5 162.5 532.5 {name=NBiasEn dir=in}
 B 5 157.5 547.5 162.5 552.5 {name=PBiasEn dir=in}
-B 5 157.5 567.5 162.5 572.5 {name=BiasEnable dir=in}
-B 5 157.5 587.5 162.5 592.5 {name=BiasDisable dir=in}
+B 5 157.5 587.5 162.5 592.5 {name=BiasDisabled dir=in}
 B 5 157.5 -32.5 162.5 -27.5 {name=FineCode[6] dir=in}
 B 5 157.5 -12.5 162.5 -7.5 {name=FineCode[5] dir=in}
 B 5 157.5 7.5 162.5 12.5 {name=FineCode[4] dir=in}
@@ -88,6 +85,7 @@ B 5 157.5 367.5 162.5 372.5 {name=CoarseOneHot[2] dir=in}
 B 5 157.5 387.5 162.5 392.5 {name=CoarseOneHot[1] dir=in}
 B 5 157.5 407.5 162.5 412.5 {name=CoarseOneHot[0] dir=in}
 B 5 527.5 37.5 532.5 42.5 {name=PadBias dir=inout}
+B 5 157.5 487.5 162.5 492.5 {name=PowerDown dir=in}
 P 4 5 180 -70 510 -70 510 660 180 660 180 -70 {}
 T {@symname} 344.78125 -2.90625 2 1 0.5 0.5 {}
 T {@name} 350.46875 13.25 2 1 0.2 0.2 {}
@@ -99,16 +97,14 @@ T {BufferP} 406.71875 -68.21875 1 1 0.2 0.2 {}
 T {VBiasOut} 460.71875 -66.71875 0 0 0.2 0.2 {}
 T {LowBiasInterfaceEn} 287.71875 422.65625 0 1 0.2 0.2 {}
 T {nLowBiasInterfaceEn} 292.71875 442.65625 0 1 0.2 0.2 {}
-T {CoarseOneHotLowBiasEn} 315.21875 465.15625 0 1 0.2 0.2 {}
-T {LowBiasBufEn} 257.71875 485.15625 0 1 0.2 0.2 {}
-T {nLowBiasBufEn} 265.21875 505.15625 0 1 0.2 0.2 {}
+T {CoarseOneHotLowBiasEn} 305.21875 465.15625 0 1 0.2 0.2 {}
+T {BIT0} 215.21875 505.15625 0 1 0.2 0.2 {}
 T {Important: Rail pin must be assigned
 to gnd for N bias and vdd for P bias.
 This is the reset/powerdown bias level} 307.5 70 0 0 0.2 0.2 {}
 T {NBiasEn} 227.71875 523.90625 0 1 0.2 0.2 {}
 T {PBiasEn} 226.46875 545.15625 0 1 0.2 0.2 {}
-T {BiasEnable} 242.71875 565.15625 0 1 0.2 0.2 {}
-T {BiasDisable} 245.21875 585.15625 0 1 0.2 0.2 {}
+T {BiasDisabled} 245.21875 585.15625 0 1 0.2 0.2 {}
 T {FineCode[6]} 247.71875 -37.34375 0 1 0.2 0.2 {}
 T {FineCode[5]} 247.71875 -17.34375 0 1 0.2 0.2 {}
 T {FineCode[4]} 247.71875 2.65625 0 1 0.2 0.2 {}
@@ -134,3 +130,4 @@ T {CoarseOneHot[1]} 277.71875 382.65625 0 1 0.2 0.2 {}
 T {CoarseOneHot[0]} 277.71875 402.65625 0 1 0.2 0.2 {}
 T {FineCode[7]} 247.71875 -57.34375 0 1 0.2 0.2 {}
 T {PadBias} 469.3125 33.4375 0 0 0.2 0.2 {}
+T {PowerDown} 235.21875 485.15625 0 1 0.2 0.2 {}
