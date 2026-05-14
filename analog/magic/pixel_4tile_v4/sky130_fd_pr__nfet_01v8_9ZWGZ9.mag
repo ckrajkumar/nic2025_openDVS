@@ -1,0 +1,71 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1778714928
+<< error_p >>
+rect -29 101 29 147
+<< pwell >>
+rect -99 -157 99 95
+<< nmos >>
+rect -15 -131 15 69
+<< ndiff >>
+rect -73 54 -15 69
+rect -73 20 -61 54
+rect -27 20 -15 54
+rect -73 -14 -15 20
+rect -73 -48 -61 -14
+rect -27 -48 -15 -14
+rect -73 -82 -15 -48
+rect -73 -116 -61 -82
+rect -27 -116 -15 -82
+rect -73 -131 -15 -116
+rect 15 54 73 69
+rect 15 20 27 54
+rect 61 20 73 54
+rect 15 -14 73 20
+rect 15 -48 27 -14
+rect 61 -48 73 -14
+rect 15 -82 73 -48
+rect 15 -116 27 -82
+rect 61 -116 73 -82
+rect 15 -131 73 -116
+<< ndiffc >>
+rect -61 20 -27 54
+rect -61 -48 -27 -14
+rect -61 -116 -27 -82
+rect 27 20 61 54
+rect 27 -48 61 -14
+rect 27 -116 61 -82
+<< poly >>
+rect -33 141 33 157
+rect -33 107 -17 141
+rect 17 107 33 141
+rect -33 91 33 107
+rect -15 69 15 91
+rect -15 -157 15 -131
+<< polycont >>
+rect -17 107 17 141
+<< locali >>
+rect -33 107 -17 141
+rect 17 107 33 141
+rect -61 54 -27 70
+rect -61 -14 -27 20
+rect -61 -82 -27 -48
+rect -61 -132 -27 -116
+rect 25 54 63 70
+rect 25 20 27 54
+rect 61 20 63 54
+rect 25 -14 63 20
+rect 25 -48 27 -14
+rect 61 -48 63 -14
+rect 25 -82 63 -48
+rect 25 -116 27 -82
+rect 61 -116 63 -82
+rect 25 -132 63 -116
+<< metal1 >>
+rect -29 101 29 147
+<< labels >>
+rlabel locali s 0 124 0 124 4 G
+rlabel locali s 44 -31 44 -31 4 S
+rlabel locali s -44 -31 -44 -31 4 D
+<< end >>
