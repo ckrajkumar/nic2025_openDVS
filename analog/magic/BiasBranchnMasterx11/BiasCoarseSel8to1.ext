@@ -1,0 +1,541 @@
+timestamp 1778960082
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+node "a_10907_n61#" 1350 210.582 10907 -61 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_10403_n61#" 1350 196.184 10403 -61 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_9899_n61#" 1350 196.373 9899 -61 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_9395_n61#" 1350 212.03 9395 -61 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_8512_n59#" 1350 217.032 8512 -59 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_8008_n59#" 1350 196.372 8008 -59 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_7508_n59#" 1350 196.125 7508 -59 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_5825_n105#" 2380 380.192 5825 -105 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28832 1764 39008 1788 0 0 0 0 0 0 0 0 0 0
+node "a_4921_n105#" 2380 383.176 4921 -105 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28832 1764 39008 1788 0 0 0 0 0 0 0 0 0 0
+node "a_7004_n59#" 1350 201.083 7004 -59 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_10655_1988#" 1350 300.284 10655 1988 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_10151_1988#" 1350 282.554 10151 1988 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_9647_1988#" 1350 317.646 9647 1988 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_6277_948#" 1131 0 6277 948 ndif 0 0 0 0 0 0 0 0 16632 876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5825_948#" 1131 0 5825 948 ndif 0 0 0 0 0 0 0 0 16632 876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5373_948#" 1131 0 5373 948 ndif 0 0 0 0 0 0 0 0 16632 876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4921_948#" 1131 0.386225 4921 948 ndif 0 0 0 0 0 0 0 0 16632 876 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB[3]" 1245 6642.7 6912 -6 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4271440 8272 0 0 183632 8168 329360 16216 200784 14336 0 0 0 0 0 0 0 0
+node "BiasCB[2]" 1534 4758.78 4829 -52 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3872000 11744 0 0 187864 8352 322904 15584 143620 10204 0 0 0 0 0 0 0 0
+node "BiasCB[1]" 1225 8721.68 2439 -13 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4279424 8280 0 0 183632 8168 329584 16232 76728 5426 0 0 0 0 0 0 0 0
+node "a_8260_1990#" 1350 117.783 8260 1990 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_7760_1990#" 1349 132.321 7760 1990 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15096 956 20424 980 0 0 0 0 0 0 0 0 0 0
+node "a_7256_1990#" 1350 162.099 7256 1990 ndif 0 0 0 0 0 0 0 0 20776 996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 964 20608 988 0 0 0 0 0 0 0 0 0 0
+node "a_5373_1990#" 2380 260.946 5373 1990 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28832 1764 39008 1788 0 0 0 0 0 0 0 0 0 0
+node "a_8764_1990#" 1275 174.525 8764 1990 ndif 0 0 0 0 0 0 0 0 20988 1004 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21024 862 24516 886 0 0 0 0 0 0 0 0 0 0
+node "a_6277_1990#" 1702 198.726 6277 1990 ndif 0 0 0 0 0 0 0 0 31588 1404 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34664 1072 39416 1096 0 0 0 0 0 0 0 0 0 0
+node "BiasCB[0]" 1513 7567.9 172 324 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3608000 11216 0 0 189152 8408 312512 15152 26328 1826 0 0 0 0 0 0 0 0
+node "a_2531_1983#" 7056 806.984 2531 1983 ndif 0 0 0 0 0 0 0 0 93704 4490 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73440 4456 112760 4238 0 0 0 0 0 0 0 0 0 0
+node "BiasCB[4]" 580 234.147 10541 2225 ndif 0 0 0 0 0 0 0 0 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 468 9584 504 322304 23016 0 0 0 0 0 0 0 0
+node "BiasCB[5]" 578 205.152 10152 2225 ndif 0 0 0 0 0 0 0 0 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 468 9584 504 309844 22126 0 0 0 0 0 0 0 0
+node "BiasCB[6]" 576 208.015 9763 2225 ndif 0 0 0 0 0 0 0 0 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 468 9584 504 297412 21238 0 0 0 0 0 0 0 0
+node "BiasCB[7]" 574 1833.11 9374 2225 ndif 0 0 0 0 0 0 0 0 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 468 9584 504 284952 20348 0 0 0 0 0 0 0 0
+node "a_11121_2355#" 1369 438.5 11121 2355 ndif 0 0 0 0 0 0 0 0 20988 1004 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13464 928 35316 1524 10400 504 0 0 0 0 0 0 0 0
+node "CoarseOneHot[4]" 185 1190.69 10511 2278 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64400 1044 0 0 9200 492 10800 508 325144 23132 0 0 0 0 0 0 0 0
+node "CoarseOneHot[5]" 183 482.865 10122 2278 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64400 1044 0 0 9200 492 10800 508 312180 22206 0 0 0 0 0 0 0 0
+node "CoarseOneHot[6]" 181 474.115 9733 2278 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64400 1044 0 0 9200 492 10800 508 300784 21392 0 0 0 0 0 0 0 0
+node "CoarseOneHot[7]" 179 572.853 9344 2278 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64400 1044 0 0 9200 492 10800 508 287260 20426 0 0 0 0 0 0 0 0
+node "a_1100_2174#" 5323 255.053 1100 2174 ndif 0 0 0 0 0 0 0 0 91240 3834 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55760 3620 84704 3848 12224 744 0 0 0 0 0 0 0 0
+node "a_9303_n8#" 4236 7317.33 9303 -8 p 0 0 0 0 0 0 0 0 42400 2024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4279424 8280 0 0 210832 10040 488790 20786 0 0 0 0 0 0 0 0 0 0
+node "CoarseOneHotLowBiasEn" 191 2347.55 11029 2408 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64400 1044 0 0 9200 492 24988 1454 353092 25014 0 0 0 0 0 0 0 0
+node "a_8582_2440#" 987 183.857 8582 2440 pdif 0 0 0 0 0 0 0 0 11200 512 5830 326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10540 756 19880 1070 19160 1068 0 0 0 0 0 0 0 0
+node "CoarseOneHot[3]" 606 2017.01 8552 2493 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134140 2444 0 0 20976 1004 92744 5824 209044 14926 0 0 0 0 0 0 0 0
+node "a_6145_2440#" 987 190.653 6145 2440 pdif 0 0 0 0 0 0 0 0 11200 512 5830 326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10540 756 19880 1070 19160 1068 0 0 0 0 0 0 0 0
+node "CoarseOneHot[2]" 595 2041.41 6115 2493 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134140 2444 0 0 20976 1004 86080 5348 149208 10652 0 0 0 0 0 0 0 0
+node "a_3112_2440#" 987 186 3112 2440 pdif 0 0 0 0 0 0 0 0 11200 512 5830 326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10540 756 19880 1070 19160 1068 0 0 0 0 0 0 0 0
+node "a_1025_2440#" 1859 211.753 1025 2440 pdif 0 0 0 0 0 0 0 0 21200 1012 5830 326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17340 1224 32840 1692 0 0 0 0 0 0 0 0 0 0
+node "CoarseOneHot[0]" 1694 1074.74 933 2475 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32352 2104 0 0 9108 672 65848 4542 14640 1040 0 0 0 0 0 0 0 0
+node "CoarseOneHot[1]" 582 1731.72 3082 2493 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134140 2444 0 0 20976 1004 73172 4426 78788 5622 0 0 0 0 0 0 0 0
+node "CoarseBias" 3904 1604.04 1265 2523 ndif 0 0 0 0 0 0 0 0 53000 2530 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34000 2340 137288 6268 465034 20182 0 0 0 0 0 0 0 0
+node "VddA18" 19734 3022.18 801 2404 nw 0 0 0 0 269152 4252 0 0 31552 1552 23320 1304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43472 2640 62636 2922 437770 19054 0 0 0 0 0 0 0 0
+substrate "GndA" 0 0 7 416 ppd 0 0 0 0 0 0 0 0 277508 12486 398108 14984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 588720 27512 820722 37168 517664 36016 0 0 0 0 0 0 0 0
+cap "BiasCB[6]" "CoarseOneHot[5]" 0.0304914
+cap "CoarseOneHot[5]" "a_1025_2440#" 0.168048
+cap "CoarseOneHot[0]" "CoarseOneHot[7]" 10.437
+cap "a_8764_1990#" "CoarseOneHotLowBiasEn" 0.123139
+cap "BiasCB[2]" "a_5373_1990#" 410.214
+cap "CoarseBias" "CoarseOneHot[4]" 56.6015
+cap "a_7760_1990#" "a_8764_1990#" 0.183154
+cap "CoarseOneHot[3]" "a_8582_2440#" 286.903
+cap "BiasCB[2]" "a_5825_n105#" 409.525
+cap "BiasCB[7]" "a_6277_1990#" 15.6266
+cap "CoarseOneHot[3]" "CoarseOneHot[6]" 10.3466
+cap "CoarseOneHotLowBiasEn" "a_10403_n61#" 0.541656
+cap "CoarseBias" "a_6277_1990#" 0.370671
+cap "BiasCB[2]" "a_8008_n59#" 0.153385
+cap "a_7760_1990#" "VddA18" 0.973553
+cap "BiasCB[7]" "BiasCB[5]" 0.0564696
+cap "a_9303_n8#" "CoarseOneHot[5]" 128.435
+cap "BiasCB[7]" "CoarseOneHot[1]" 0.143132
+cap "BiasCB[6]" "a_10151_1988#" 1.44581
+cap "BiasCB[5]" "CoarseBias" 0.328233
+cap "a_5373_948#" "a_5373_1990#" 0.386225
+cap "a_8260_1990#" "a_8582_2440#" 7.31416
+cap "BiasCB[2]" "CoarseOneHot[7]" 0.285131
+cap "CoarseOneHot[1]" "CoarseBias" 82.4066
+cap "CoarseOneHot[0]" "BiasCB[2]" 0.00381798
+cap "a_8260_1990#" "CoarseOneHot[6]" 0.200163
+cap "VddA18" "a_2531_1983#" 12.3954
+cap "a_7256_1990#" "CoarseOneHot[4]" 0.251304
+cap "BiasCB[6]" "a_8764_1990#" 1.87827
+cap "CoarseOneHotLowBiasEn" "a_10907_n61#" 0.500762
+cap "BiasCB[4]" "CoarseOneHot[5]" 6.45774
+cap "CoarseOneHotLowBiasEn" "a_4921_948#" 3.10023
+cap "CoarseOneHot[3]" "BiasCB[1]" 0.25317
+cap "a_11121_2355#" "a_9647_1988#" 0.0153168
+cap "a_10403_n61#" "a_9899_n61#" 29.4158
+cap "a_7256_1990#" "a_6277_1990#" 0.136679
+cap "VddA18" "a_1025_2440#" 128.42
+cap "a_10151_1988#" "a_9303_n8#" 218.115
+cap "VddA18" "CoarseOneHot[2]" 239.018
+cap "BiasCB[5]" "a_1100_2174#" 12.772
+cap "CoarseOneHot[1]" "a_1100_2174#" 0.0056645
+cap "BiasCB[5]" "a_7256_1990#" 2.8978
+cap "a_6277_948#" "a_6277_1990#" 0.386225
+cap "a_4921_n105#" "a_7004_n59#" 0.0360584
+cap "a_9303_n8#" "a_8764_1990#" 0.570702
+cap "a_10151_1988#" "BiasCB[4]" 13.8387
+cap "BiasCB[2]" "a_5373_948#" 6.64948
+cap "CoarseOneHot[3]" "CoarseOneHotLowBiasEn" 0.0380503
+cap "CoarseOneHot[4]" "a_9647_1988#" 0.10449
+cap "a_9303_n8#" "VddA18" 17.7989
+cap "a_7760_1990#" "CoarseOneHot[3]" 126.525
+cap "a_5373_1990#" "CoarseOneHot[4]" 0.402759
+cap "a_9303_n8#" "a_10403_n61#" 218.353
+cap "a_8764_1990#" "BiasCB[4]" 1.12662
+cap "BiasCB[3]" "BiasCB[0]" 77.9755
+cap "a_8260_1990#" "CoarseOneHotLowBiasEn" 0.242724
+cap "CoarseOneHot[3]" "a_2531_1983#" 1.03586
+cap "BiasCB[5]" "a_9647_1988#" 5.30055
+cap "a_5373_1990#" "a_6277_1990#" 30.5982
+cap "a_10151_1988#" "a_10655_1988#" 29.4158
+cap "a_7760_1990#" "a_8260_1990#" 29.4158
+cap "BiasCB[5]" "a_5373_1990#" 5.48511
+cap "CoarseBias" "CoarseOneHot[5]" 27.6652
+cap "a_4921_n105#" "CoarseOneHotLowBiasEn" 0.967185
+cap "a_9303_n8#" "a_10907_n61#" 218.353
+cap "CoarseOneHot[7]" "CoarseOneHot[4]" 0.185395
+cap "CoarseOneHot[3]" "CoarseOneHot[2]" 2815.94
+cap "CoarseOneHot[3]" "a_1025_2440#" 0.121283
+cap "BiasCB[6]" "CoarseOneHot[3]" 0.91793
+cap "CoarseOneHot[0]" "CoarseOneHot[4]" 9.17077
+cap "CoarseOneHot[7]" "a_6277_1990#" 0.1718
+cap "BiasCB[5]" "CoarseOneHot[7]" 0.067511
+cap "a_8260_1990#" "BiasCB[6]" 3.75856
+cap "BiasCB[3]" "a_8512_n59#" 218.404
+cap "CoarseOneHot[0]" "BiasCB[5]" 0.00523062
+cap "CoarseOneHot[7]" "CoarseOneHot[1]" 10.268
+cap "a_10151_1988#" "CoarseBias" 0.110918
+cap "CoarseOneHot[0]" "CoarseOneHot[1]" 275.101
+cap "a_7256_1990#" "CoarseOneHot[5]" 0.280932
+cap "BiasCB[2]" "CoarseOneHot[4]" 0.207246
+cap "CoarseOneHot[3]" "a_9303_n8#" 5.4131
+cap "a_9395_n61#" "a_8008_n59#" 0.0230457
+cap "BiasCB[3]" "a_6145_2440#" 0.022032
+cap "BiasCB[7]" "a_8764_1990#" 8.94898
+cap "CoarseBias" "a_8764_1990#" 0.120826
+cap "BiasCB[2]" "a_6277_1990#" 190.885
+cap "BiasCB[0]" "CoarseOneHot[6]" 2.29781
+cap "BiasCB[2]" "BiasCB[5]" 81.5203
+cap "BiasCB[2]" "CoarseOneHot[1]" 0.0813767
+cap "CoarseOneHot[3]" "BiasCB[4]" 0.42563
+cap "CoarseBias" "VddA18" 4148.71
+cap "BiasCB[3]" "a_8582_2440#" 0.196765
+cap "CoarseOneHot[5]" "a_9647_1988#" 0.172972
+cap "a_8260_1990#" "BiasCB[4]" 2.27971
+cap "BiasCB[3]" "CoarseOneHot[6]" 0.295395
+cap "a_5373_1990#" "CoarseOneHot[5]" 0.450243
+cap "a_7256_1990#" "a_8764_1990#" 0.0734747
+cap "BiasCB[0]" "BiasCB[1]" 650.07
+cap "a_7256_1990#" "VddA18" 0.982323
+cap "BiasCB[3]" "a_7004_n59#" 218.404
+cap "a_11121_2355#" "CoarseOneHot[4]" 18.2582
+cap "a_10151_1988#" "a_9647_1988#" 29.4158
+cap "CoarseOneHot[7]" "CoarseOneHot[5]" 0.2114
+cap "BiasCB[0]" "CoarseOneHotLowBiasEn" 224.706
+cap "BiasCB[3]" "BiasCB[1]" 101.481
+cap "CoarseOneHot[0]" "CoarseOneHot[5]" 9.17202
+cap "BiasCB[5]" "a_11121_2355#" 0.0874979
+cap "BiasCB[7]" "CoarseOneHot[3]" 6.61078
+cap "CoarseBias" "CoarseOneHot[3]" 81.4639
+cap "BiasCB[0]" "a_2531_1983#" 0.602466
+cap "a_8582_2440#" "CoarseOneHot[6]" 1.38416
+cap "a_6277_1990#" "CoarseOneHot[4]" 0.11859
+cap "BiasCB[2]" "CoarseOneHot[5]" 0.229446
+cap "a_8260_1990#" "BiasCB[7]" 12.6038
+cap "BiasCB[3]" "CoarseOneHotLowBiasEn" 707.581
+cap "BiasCB[5]" "CoarseOneHot[4]" 0.0304914
+cap "a_8260_1990#" "CoarseBias" 0.47816
+cap "a_5373_1990#" "VddA18" 8.35451
+cap "CoarseOneHot[1]" "CoarseOneHot[4]" 9.33643
+cap "a_7760_1990#" "BiasCB[3]" 215.674
+cap "BiasCB[0]" "CoarseOneHot[2]" 1.42818
+cap "BiasCB[6]" "BiasCB[0]" 79.3991
+cap "BiasCB[0]" "a_1025_2440#" 43.3555
+cap "a_8512_n59#" "CoarseOneHotLowBiasEn" 0.543461
+cap "CoarseOneHot[7]" "a_8764_1990#" 0.0559306
+cap "BiasCB[5]" "a_6277_1990#" 2.56144
+cap "CoarseOneHot[3]" "a_7256_1990#" 127.672
+cap "BiasCB[3]" "a_2531_1983#" 7.99971
+cap "BiasCB[5]" "CoarseOneHot[1]" 0.115312
+cap "a_6145_2440#" "CoarseOneHotLowBiasEn" 0.00891567
+cap "CoarseOneHot[7]" "VddA18" 14.9232
+cap "CoarseOneHot[0]" "VddA18" 262.558
+cap "BiasCB[1]" "a_3112_2440#" 0.182208
+cap "BiasCB[1]" "CoarseOneHot[6]" 0.347135
+cap "BiasCB[3]" "CoarseOneHot[2]" 0.234467
+cap "BiasCB[3]" "BiasCB[6]" 84.3944
+cap "BiasCB[3]" "a_7508_n59#" 218.404
+cap "BiasCB[2]" "VddA18" 1.29784
+cap "BiasCB[0]" "BiasCB[4]" 78.7864
+cap "CoarseOneHot[6]" "CoarseOneHotLowBiasEn" 1.50585
+cap "a_6145_2440#" "CoarseOneHot[2]" 287.818
+cap "CoarseOneHot[3]" "a_5373_1990#" 0.355464
+cap "BiasCB[6]" "a_6145_2440#" 0.0325387
+cap "a_7760_1990#" "CoarseOneHot[6]" 0.312931
+cap "BiasCB[3]" "a_9303_n8#" 126.81
+cap "CoarseOneHot[6]" "a_2531_1983#" 1.49245
+cap "a_2531_1983#" "a_3112_2440#" 64.1258
+cap "CoarseOneHotLowBiasEn" "a_7004_n59#" 0.543461
+cap "CoarseOneHot[4]" "CoarseOneHot[5]" 6198.28
+cap "a_10151_1988#" "a_11121_2355#" 0.0379957
+cap "BiasCB[2]" "a_4921_948#" 14.3856
+cap "BiasCB[3]" "BiasCB[4]" 4029.16
+cap "CoarseOneHot[7]" "CoarseOneHot[3]" 24.3963
+cap "CoarseOneHot[0]" "CoarseOneHot[3]" 9.14479
+cap "a_6277_1990#" "CoarseOneHot[5]" 0.13329
+cap "a_3112_2440#" "CoarseOneHot[2]" 0.00996733
+cap "BiasCB[1]" "CoarseOneHotLowBiasEn" 523.542
+cap "CoarseOneHot[6]" "CoarseOneHot[2]" 9.79406
+cap "CoarseOneHot[6]" "a_1025_2440#" 0.198418
+cap "BiasCB[5]" "CoarseOneHot[5]" 74.5376
+cap "BiasCB[6]" "CoarseOneHot[6]" 76.4729
+cap "CoarseOneHot[1]" "CoarseOneHot[5]" 9.24475
+cap "a_8260_1990#" "CoarseOneHot[7]" 0.226267
+cap "a_4921_n105#" "a_5825_n105#" 29.4158
+cap "a_6145_2440#" "BiasCB[4]" 0.0251825
+cap "BiasCB[1]" "a_2531_1983#" 958.387
+cap "a_10151_1988#" "CoarseOneHot[4]" 1.2848
+cap "BiasCB[7]" "BiasCB[0]" 180.959
+cap "a_9303_n8#" "a_8582_2440#" 0.543757
+cap "BiasCB[2]" "CoarseOneHot[3]" 0.184812
+cap "CoarseBias" "BiasCB[0]" 6.36685
+cap "a_7004_n59#" "a_7508_n59#" 29.4158
+cap "a_9303_n8#" "CoarseOneHot[6]" 125.055
+cap "a_8764_1990#" "CoarseOneHot[4]" 0.0385606
+cap "a_7760_1990#" "CoarseOneHotLowBiasEn" 0.240557
+cap "BiasCB[5]" "a_10151_1988#" 42.558
+cap "BiasCB[1]" "CoarseOneHot[2]" 0.228889
+cap "BiasCB[6]" "BiasCB[1]" 84.761
+cap "CoarseOneHotLowBiasEn" "a_2531_1983#" 1.0763
+cap "CoarseOneHot[4]" "VddA18" 3.22878
+cap "BiasCB[5]" "a_8764_1990#" 1.44561
+cap "BiasCB[3]" "BiasCB[7]" 133.593
+cap "CoarseOneHot[6]" "BiasCB[4]" 0.0846455
+cap "BiasCB[2]" "a_4921_n105#" 409.525
+cap "BiasCB[3]" "CoarseBias" 0.700136
+cap "BiasCB[0]" "a_1100_2174#" 1689.31
+cap "a_6277_1990#" "VddA18" 0.791687
+cap "CoarseOneHotLowBiasEn" "a_9899_n61#" 0.541656
+cap "CoarseOneHotLowBiasEn" "CoarseOneHot[2]" 0.0446709
+cap "CoarseOneHot[1]" "VddA18" 244.583
+cap "CoarseOneHotLowBiasEn" "a_7508_n59#" 0.543461
+cap "a_7760_1990#" "BiasCB[6]" 3.725
+cap "BiasCB[7]" "a_6145_2440#" 0.0373407
+cap "a_4921_n105#" "a_5373_948#" 0.386225
+cap "a_6145_2440#" "CoarseBias" 57.5024
+cap "a_2531_1983#" "CoarseOneHot[2]" 0.92404
+cap "BiasCB[6]" "a_2531_1983#" 17.0087
+cap "BiasCB[3]" "a_1100_2174#" 9.71306
+cap "BiasCB[1]" "BiasCB[4]" 95.2535
+cap "BiasCB[3]" "a_7256_1990#" 217.708
+cap "a_9303_n8#" "CoarseOneHotLowBiasEn" 832.382
+cap "a_5825_948#" "CoarseOneHotLowBiasEn" 3.10023
+cap "a_1025_2440#" "CoarseOneHot[2]" 0.104427
+cap "BiasCB[6]" "CoarseOneHot[2]" 0.406672
+cap "CoarseBias" "a_8582_2440#" 57.5024
+cap "CoarseOneHot[3]" "CoarseOneHot[4]" 3790.63
+cap "BiasCB[7]" "CoarseOneHot[6]" 0.0304914
+cap "CoarseOneHotLowBiasEn" "BiasCB[4]" 383.156
+cap "CoarseBias" "a_3112_2440#" 57.5024
+cap "a_10151_1988#" "CoarseOneHot[5]" 6.97323
+cap "CoarseBias" "CoarseOneHot[6]" 30.1796
+cap "a_7760_1990#" "BiasCB[4]" 2.25936
+cap "CoarseOneHot[3]" "a_6277_1990#" 0.104114
+cap "a_8260_1990#" "CoarseOneHot[4]" 0.159309
+cap "BiasCB[5]" "CoarseOneHot[3]" 0.649406
+cap "a_8764_1990#" "CoarseOneHot[5]" 0.0433548
+cap "a_9303_n8#" "a_9899_n61#" 218.353
+cap "CoarseOneHot[7]" "BiasCB[0]" 2.60164
+cap "CoarseOneHot[1]" "CoarseOneHot[3]" 9.40084
+cap "a_2531_1983#" "BiasCB[4]" 10.2661
+cap "BiasCB[6]" "a_9303_n8#" 130.693
+cap "CoarseOneHot[0]" "BiasCB[0]" 299.334
+cap "BiasCB[3]" "a_5373_1990#" 3.37121
+cap "a_10655_1988#" "CoarseOneHotLowBiasEn" 19.5927
+cap "a_8260_1990#" "BiasCB[5]" 2.8978
+cap "VddA18" "CoarseOneHot[5]" 4.07178
+cap "BiasCB[7]" "BiasCB[1]" 125.372
+cap "a_7256_1990#" "CoarseOneHot[6]" 0.31575
+cap "CoarseBias" "BiasCB[1]" 0.814771
+cap "BiasCB[4]" "CoarseOneHot[2]" 0.281114
+cap "BiasCB[3]" "a_8008_n59#" 218.404
+cap "BiasCB[2]" "BiasCB[0]" 73.3458
+cap "a_6145_2440#" "a_5373_1990#" 5.22393
+cap "BiasCB[3]" "CoarseOneHot[7]" 0.329219
+cap "a_8008_n59#" "a_8512_n59#" 29.4158
+cap "CoarseOneHot[0]" "BiasCB[3]" 0.00420801
+cap "BiasCB[7]" "CoarseOneHotLowBiasEn" 0.00758031
+cap "CoarseBias" "CoarseOneHotLowBiasEn" 90.4362
+cap "a_7760_1990#" "BiasCB[7]" 12.4957
+cap "a_7760_1990#" "CoarseBias" 0.747547
+cap "a_9303_n8#" "BiasCB[4]" 319.589
+cap "BiasCB[1]" "a_1100_2174#" 17.3047
+cap "BiasCB[3]" "BiasCB[2]" 4075.53
+cap "CoarseOneHot[6]" "a_9647_1988#" 8.25887
+cap "a_8764_1990#" "VddA18" 0.153836
+cap "BiasCB[7]" "a_2531_1983#" 62.0108
+cap "a_5373_1990#" "CoarseOneHot[6]" 0.506046
+cap "CoarseBias" "a_2531_1983#" 3.64145
+cap "CoarseOneHot[3]" "CoarseOneHot[5]" 10.2361
+cap "a_1100_2174#" "CoarseOneHotLowBiasEn" 19.705
+cap "a_9303_n8#" "a_10655_1988#" 217.771
+cap "BiasCB[7]" "CoarseOneHot[2]" 0.504039
+cap "BiasCB[7]" "a_1025_2440#" 0.447304
+cap "a_7256_1990#" "CoarseOneHotLowBiasEn" 0.242724
+cap "BiasCB[7]" "BiasCB[6]" 5588.33
+cap "BiasCB[2]" "a_6145_2440#" 1.02437
+cap "CoarseOneHot[7]" "a_8582_2440#" 5.97782
+cap "CoarseBias" "CoarseOneHot[2]" 79.7092
+cap "BiasCB[6]" "CoarseBias" 0.351031
+cap "CoarseBias" "a_1025_2440#" 168.526
+cap "a_6277_948#" "CoarseOneHotLowBiasEn" 3.10023
+cap "a_7760_1990#" "a_7256_1990#" 29.4158
+cap "CoarseOneHot[7]" "CoarseOneHot[6]" 5744.96
+cap "a_8260_1990#" "CoarseOneHot[5]" 0.178091
+cap "CoarseOneHot[0]" "CoarseOneHot[6]" 9.41337
+cap "a_1100_2174#" "a_2531_1983#" 0.375652
+cap "a_7004_n59#" "a_5825_n105#" 0.404618
+cap "a_10655_1988#" "BiasCB[4]" 25.2683
+cap "a_10403_n61#" "a_10907_n61#" 29.4158
+cap "BiasCB[7]" "a_9303_n8#" 129.424
+cap "CoarseBias" "a_9303_n8#" 614.943
+cap "BiasCB[0]" "CoarseOneHot[4]" 1.82047
+cap "BiasCB[6]" "a_1100_2174#" 12.8438
+cap "a_1100_2174#" "a_1025_2440#" 170.277
+cap "CoarseOneHotLowBiasEn" "a_9647_1988#" 0.243657
+cap "BiasCB[6]" "a_7256_1990#" 3.75856
+cap "BiasCB[2]" "CoarseOneHot[6]" 0.255166
+cap "CoarseOneHot[7]" "BiasCB[1]" 0.386818
+cap "CoarseOneHot[3]" "a_8764_1990#" 71.0492
+cap "a_5373_1990#" "CoarseOneHotLowBiasEn" 0.459442
+cap "CoarseOneHot[0]" "BiasCB[1]" 0.00347536
+cap "BiasCB[7]" "BiasCB[4]" 0.0474964
+cap "CoarseBias" "BiasCB[4]" 0.309177
+cap "BiasCB[5]" "BiasCB[0]" 77.1202
+cap "CoarseOneHot[1]" "BiasCB[0]" 1.29349
+cap "BiasCB[2]" "a_7004_n59#" 11.4244
+cap "CoarseOneHot[3]" "VddA18" 237.679
+cap "CoarseOneHotLowBiasEn" "a_5825_n105#" 0.967185
+cap "a_8260_1990#" "a_8764_1990#" 30.434
+cap "a_8008_n59#" "CoarseOneHotLowBiasEn" 0.543461
+cap "BiasCB[3]" "CoarseOneHot[4]" 0.240918
+cap "CoarseOneHot[7]" "CoarseOneHotLowBiasEn" 0.274091
+cap "a_8260_1990#" "VddA18" 7.86831
+cap "BiasCB[2]" "BiasCB[1]" 1915.83
+cap "CoarseOneHot[0]" "CoarseOneHotLowBiasEn" 0.00187254
+cap "a_7760_1990#" "CoarseOneHot[7]" 0.353742
+cap "BiasCB[3]" "a_6277_1990#" 1.57429
+cap "BiasCB[6]" "a_9647_1988#" 45.1045
+cap "CoarseBias" "a_10655_1988#" 0.715902
+cap "BiasCB[3]" "BiasCB[5]" 86.7139
+cap "a_1100_2174#" "BiasCB[4]" 12.7873
+cap "a_5373_1990#" "CoarseOneHot[2]" 241.805
+cap "BiasCB[3]" "CoarseOneHot[1]" 0.0908957
+cap "a_7256_1990#" "BiasCB[4]" 2.27971
+cap "BiasCB[6]" "a_5373_1990#" 7.11442
+cap "CoarseOneHot[7]" "a_2531_1983#" 1.69675
+cap "a_6145_2440#" "a_6277_1990#" 56.96
+cap "BiasCB[2]" "CoarseOneHotLowBiasEn" 686.068
+cap "a_5825_n105#" "a_7508_n59#" 0.0276214
+cap "a_9303_n8#" "a_9647_1988#" 218.35
+cap "CoarseOneHot[7]" "a_1025_2440#" 0.237122
+cap "BiasCB[5]" "a_6145_2440#" 0.0285368
+cap "CoarseOneHot[7]" "CoarseOneHot[2]" 10.7458
+cap "BiasCB[7]" "CoarseBias" 0.284632
+cap "a_8008_n59#" "a_7508_n59#" 30.6806
+cap "CoarseOneHot[7]" "BiasCB[6]" 7.84854
+cap "CoarseOneHot[0]" "CoarseOneHot[2]" 8.90587
+cap "a_9395_n61#" "a_8512_n59#" 0.066679
+cap "CoarseOneHot[0]" "BiasCB[6]" 0.00582305
+cap "CoarseOneHot[0]" "a_1025_2440#" 168.958
+cap "a_5825_948#" "a_5373_1990#" 0.386225
+cap "BiasCB[2]" "a_2531_1983#" 6.57507
+cap "a_5373_948#" "CoarseOneHotLowBiasEn" 3.10023
+cap "a_4921_n105#" "a_4921_948#" 0.386225
+cap "BiasCB[4]" "a_9647_1988#" 2.29854
+cap "CoarseOneHot[6]" "CoarseOneHot[4]" 2.2929
+cap "a_5825_948#" "a_5825_n105#" 0.386225
+cap "BiasCB[0]" "CoarseOneHot[5]" 2.04011
+cap "a_6277_1990#" "CoarseOneHot[6]" 0.150785
+cap "a_5373_1990#" "BiasCB[4]" 4.31517
+cap "a_8260_1990#" "CoarseOneHot[3]" 127.845
+cap "BiasCB[2]" "CoarseOneHot[2]" 18.8828
+cap "BiasCB[2]" "BiasCB[6]" 79.0647
+cap "CoarseOneHot[7]" "a_9303_n8#" 180.526
+cap "BiasCB[7]" "a_1100_2174#" 35.9189
+cap "BiasCB[5]" "CoarseOneHot[6]" 7.21432
+cap "BiasCB[7]" "a_7256_1990#" 12.6038
+cap "BiasCB[2]" "a_7508_n59#" 0.429883
+cap "CoarseOneHot[1]" "a_3112_2440#" 291.687
+cap "CoarseOneHot[1]" "CoarseOneHot[6]" 9.37907
+cap "CoarseBias" "a_7256_1990#" 0.754281
+cap "BiasCB[1]" "CoarseOneHot[4]" 0.283258
+cap "a_11121_2355#" "CoarseOneHotLowBiasEn" 93.6988
+cap "CoarseOneHot[7]" "BiasCB[4]" 0.0591952
+cap "BiasCB[3]" "CoarseOneHot[5]" 0.266214
+cap "CoarseOneHot[0]" "BiasCB[4]" 0.00471305
+cap "BiasCB[2]" "a_5825_948#" 6.64948
+cap "BiasCB[5]" "BiasCB[1]" 87.496
+cap "CoarseOneHot[1]" "BiasCB[1]" 4.17218
+cap "BiasCB[7]" "a_9647_1988#" 3.52557
+cap "BiasCB[2]" "BiasCB[4]" 88.556
+cap "CoarseOneHot[4]" "CoarseOneHotLowBiasEn" 74.3109
+cap "CoarseBias" "a_9647_1988#" 0.144039
+cap "a_7760_1990#" "CoarseOneHot[4]" 0.24906
+cap "BiasCB[7]" "a_5373_1990#" 23.9209
+cap "BiasCB[0]" "VddA18" 21.8367
+cap "a_6277_1990#" "CoarseOneHotLowBiasEn" 0.214551
+cap "CoarseBias" "a_5373_1990#" 1.20887
+cap "BiasCB[6]" "a_11121_2355#" 0.0456614
+cap "CoarseOneHot[4]" "a_2531_1983#" 1.17792
+cap "a_7760_1990#" "a_6277_1990#" 0.0529906
+cap "BiasCB[3]" "a_8764_1990#" 117.41
+cap "CoarseOneHot[1]" "CoarseOneHotLowBiasEn" 0.0353694
+cap "a_7760_1990#" "BiasCB[5]" 2.87192
+cap "BiasCB[7]" "CoarseOneHot[7]" 66.9422
+cap "BiasCB[5]" "a_2531_1983#" 13.0826
+cap "CoarseOneHot[6]" "CoarseOneHot[5]" 5972.94
+cap "CoarseOneHot[7]" "CoarseBias" 3711.31
+cap "CoarseOneHot[4]" "CoarseOneHot[2]" 9.68306
+cap "CoarseOneHot[0]" "BiasCB[7]" 3.4819
+cap "CoarseOneHot[4]" "a_1025_2440#" 0.143869
+cap "BiasCB[3]" "VddA18" 1.86227
+cap "CoarseOneHot[1]" "a_2531_1983#" 284.062
+cap "CoarseOneHot[0]" "CoarseBias" 47.0034
+cap "a_9395_n61#" "CoarseOneHotLowBiasEn" 0.541656
+cap "a_9303_n8#" "a_11121_2355#" 99.4523
+cap "a_6277_1990#" "CoarseOneHot[2]" 97.2613
+cap "BiasCB[6]" "a_6277_1990#" 3.3223
+cap "BiasCB[5]" "CoarseOneHot[2]" 0.335219
+cap "BiasCB[5]" "BiasCB[6]" 5815.36
+cap "CoarseOneHot[1]" "CoarseOneHot[2]" 1576.42
+cap "CoarseOneHot[1]" "a_1025_2440#" 0.0976256
+cap "BiasCB[7]" "BiasCB[2]" 119.066
+cap "BiasCB[6]" "CoarseOneHot[1]" 0.128737
+cap "a_11121_2355#" "BiasCB[4]" 4.22349
+cap "a_6145_2440#" "VddA18" 267.989
+cap "BiasCB[2]" "CoarseBias" 0.564697
+cap "a_6277_948#" "a_5825_n105#" 0.386225
+cap "a_9303_n8#" "CoarseOneHot[4]" 79.8369
+cap "CoarseOneHot[7]" "a_7256_1990#" 0.356929
+cap "BiasCB[1]" "CoarseOneHot[5]" 0.312916
+cap "CoarseOneHot[3]" "BiasCB[0]" 1.60161
+cap "CoarseOneHot[0]" "a_1100_2174#" 28.425
+cap "a_9395_n61#" "a_9899_n61#" 29.4158
+cap "a_8582_2440#" "a_8764_1990#" 56.9158
+cap "a_8764_1990#" "CoarseOneHot[6]" 0.0490653
+cap "BiasCB[5]" "a_9303_n8#" 157.398
+cap "a_9395_n61#" "a_7508_n59#" 0.0054979
+cap "CoarseOneHot[4]" "BiasCB[4]" 72.9608
+cap "a_10655_1988#" "a_11121_2355#" 29.5634
+cap "a_8582_2440#" "VddA18" 267.989
+cap "BiasCB[2]" "a_1100_2174#" 12.8534
+cap "VddA18" "a_3112_2440#" 267.989
+cap "CoarseOneHot[6]" "VddA18" 5.24856
+cap "CoarseOneHotLowBiasEn" "CoarseOneHot[5]" 1.51519
+cap "BiasCB[3]" "CoarseOneHot[3]" 49.0478
+cap "a_6277_1990#" "BiasCB[4]" 2.0151
+cap "a_7760_1990#" "CoarseOneHot[5]" 0.278423
+cap "BiasCB[5]" "BiasCB[4]" 6043.03
+cap "BiasCB[2]" "a_6277_948#" 14.3856
+cap "a_9303_n8#" "a_9395_n61#" 218.353
+cap "CoarseOneHot[7]" "a_9647_1988#" 1.83224
+cap "CoarseOneHot[1]" "BiasCB[4]" 0.103098
+cap "CoarseOneHot[7]" "a_5373_1990#" 0.572042
+cap "BiasCB[3]" "a_8260_1990#" 217.708
+cap "a_10655_1988#" "CoarseOneHot[4]" 6.88368
+cap "a_2531_1983#" "CoarseOneHot[5]" 1.32177
+cap "a_8008_n59#" "a_5825_n105#" 0.0079076
+cap "CoarseBias" "a_11121_2355#" 95.0019
+cap "a_6145_2440#" "CoarseOneHot[3]" 0.0596995
+cap "a_10151_1988#" "CoarseOneHotLowBiasEn" 0.243657
+cap "BiasCB[5]" "a_10655_1988#" 0.331857
+cap "BiasCB[1]" "VddA18" 2.0099
+cap "CoarseOneHot[5]" "CoarseOneHot[2]" 9.61789
+device msubckt sky130_fd_pr__nfet_01v8_lvt 11159 -8 11160 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_10907_n61#" 196 10388,498 "a_11121_2355#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10907 -8 10908 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_10907_n61#" 196 10388,498 "a_10655_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10655 -8 10656 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_10403_n61#" 196 10388,498 "a_10655_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10403 -8 10404 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_10403_n61#" 196 10388,498 "a_10151_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10151 -8 10152 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_9899_n61#" 196 10388,498 "a_10151_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9899 -8 9900 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_9899_n61#" 196 10388,498 "a_9647_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9647 -8 9648 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_9395_n61#" 196 10388,498 "a_9647_1988#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 9395 -8 9396 -7 l=1996 w=196 "GndA" "a_9303_n8#" 3992 0 "a_9395_n61#" 196 10388,498 "GndA" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8764 -6 8765 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_8512_n59#" 196 10388,498 "a_8764_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8512 -6 8513 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_8512_n59#" 196 10388,498 "a_8260_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8260 -6 8261 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_8008_n59#" 196 10388,498 "a_8260_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 8008 -6 8009 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_8008_n59#" 196 10388,498 "a_7760_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 7760 -6 7761 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_7508_n59#" 196 10388,498 "a_7760_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 7508 -6 7509 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_7508_n59#" 196 10388,498 "a_7256_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 7256 -6 7257 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_7004_n59#" 196 10388,498 "a_7256_1990#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 7004 -6 7005 -5 l=1996 w=196 "GndA" "BiasCB[3]" 3992 0 "a_7004_n59#" 196 10388,498 "GndA" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 6277 -52 6278 -51 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_5825_n105#" 396 20988,898 "a_6277_948#" 396 8316,438
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5825 -52 5826 -51 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_5825_n105#" 396 20988,898 "a_5825_948#" 396 8316,438
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5373 -52 5374 -51 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_4921_n105#" 396 20988,898 "a_5373_948#" 396 8316,438
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4921 -52 4922 -51 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_4921_n105#" 396 20988,898 "a_4921_948#" 396 8316,438
+device msubckt sky130_fd_pr__nfet_01v8_lvt 6277 990 6278 991 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_6277_948#" 396 8316,438 "a_6277_1990#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5825 990 5826 991 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_5825_948#" 396 8316,438 "a_5373_1990#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5373 990 5374 991 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_5373_948#" 396 8316,438 "a_5373_1990#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4921 990 4922 991 l=1000 w=396 "GndA" "BiasCB[2]" 2000 0 "a_4921_948#" 396 8316,438 "GndA" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4295 -13 4296 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4043 -13 4044 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3791 -13 3792 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3539 -13 3540 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3287 -13 3288 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3035 -13 3036 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2783 -13 2784 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2531 -13 2532 -12 l=1996 w=196 "GndA" "BiasCB[1]" 3992 0 "GndA" 196 10388,498 "a_2531_1983#" 196 10388,498
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1228 416 1229 417 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "a_1100_2174#" 360 10080,416 "GndA" 360 19080,826
+device msubckt sky130_fd_pr__nfet_01v8_lvt 172 416 173 417 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "GndA" 360 19080,826 "a_1100_2174#" 360 10080,416
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1228 836 1229 837 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "a_1100_2174#" 360 10080,416 "GndA" 360 19080,826
+device msubckt sky130_fd_pr__nfet_01v8_lvt 172 836 173 837 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "GndA" 360 19080,826 "a_1100_2174#" 360 10080,416
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1228 1256 1229 1257 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "a_1100_2174#" 360 10080,416 "GndA" 360 19080,826
+device msubckt sky130_fd_pr__nfet_01v8_lvt 172 1256 173 1257 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "GndA" 360 19080,826 "a_1100_2174#" 360 10080,416
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1228 1676 1229 1677 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "a_1100_2174#" 360 10080,416 "GndA" 360 19080,826
+device msubckt sky130_fd_pr__nfet_01v8_lvt 172 1676 173 1677 l=1000 w=360 "GndA" "BiasCB[0]" 2000 0 "GndA" 360 19080,826 "a_1100_2174#" 360 10080,416
+device msubckt sky130_fd_pr__nfet_01v8 11121 2408 11122 2409 l=200 w=200 "GndA" "CoarseOneHotLowBiasEn" 400 0 "a_11121_2355#" 200 10600,506 "CoarseBias" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 10541 2278 10542 2279 l=200 w=200 "GndA" "CoarseOneHot[4]" 400 0 "BiasCB[4]" 200 10600,506 "a_9303_n8#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 10152 2278 10153 2279 l=200 w=200 "GndA" "CoarseOneHot[5]" 400 0 "BiasCB[5]" 200 10600,506 "a_9303_n8#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 9763 2278 9764 2279 l=200 w=200 "GndA" "CoarseOneHot[6]" 400 0 "BiasCB[6]" 200 10600,506 "a_9303_n8#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 9374 2278 9375 2279 l=200 w=200 "GndA" "CoarseOneHot[7]" 400 0 "BiasCB[7]" 200 10600,506 "a_9303_n8#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 8822 2152 8823 2153 l=200 w=200 "GndA" "CoarseOneHot[3]" 400 0 "a_8764_1990#" 200 10600,506 "a_8582_2440#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 6385 2152 6386 2153 l=200 w=200 "GndA" "CoarseOneHot[2]" 400 0 "a_6277_1990#" 200 10600,506 "a_6145_2440#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 3352 2152 3353 2153 l=200 w=200 "GndA" "CoarseOneHot[1]" 400 0 "a_2531_1983#" 200 10600,506 "a_3112_2440#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1100 2227 1101 2228 l=30 w=200 "GndA" "CoarseOneHot[0]" 60 0 "a_1100_2174#" 200 10600,506 "a_1025_2440#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 8822 2408 8823 2409 l=200 w=200 "GndA" "CoarseOneHot[3]" 400 0 "a_8582_2440#" 200 5600,256 "CoarseBias" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 8582 2493 8583 2494 l=30 w=110 "VddA18" "CoarseOneHot[3]" 60 0 "a_8582_2440#" 110 5830,326 "VddA18" 110 5830,326
+device msubckt sky130_fd_pr__nfet_01v8 6385 2408 6386 2409 l=200 w=200 "GndA" "CoarseOneHot[2]" 400 0 "a_6145_2440#" 200 5600,256 "CoarseBias" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 6145 2493 6146 2494 l=30 w=110 "VddA18" "CoarseOneHot[2]" 60 0 "a_6145_2440#" 110 5830,326 "VddA18" 110 5830,326
+device msubckt sky130_fd_pr__nfet_01v8 3352 2408 3353 2409 l=200 w=200 "GndA" "CoarseOneHot[1]" 400 0 "a_3112_2440#" 200 5600,256 "CoarseBias" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 3112 2493 3113 2494 l=30 w=110 "VddA18" "CoarseOneHot[1]" 60 0 "a_3112_2440#" 110 5830,326 "VddA18" 110 5830,326
+device msubckt sky130_fd_pr__nfet_01v8 1265 2493 1266 2494 l=30 w=200 "GndA" "CoarseOneHot[0]" 60 0 "a_1025_2440#" 200 10600,506 "CoarseBias" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 1025 2493 1026 2494 l=30 w=110 "VddA18" "CoarseOneHot[0]" 60 0 "a_1025_2440#" 110 5830,326 "VddA18" 110 5830,326

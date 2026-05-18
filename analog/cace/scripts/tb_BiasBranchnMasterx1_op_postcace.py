@@ -30,7 +30,8 @@ run_names = []
 #run_names.append('RUN_2026-05-08_12-13-54') #v10 fixed error when model libraries where lvt but symbol was standard, now all standard
 #run_names.append('RUN_2026-05-08_13-29-30') #v11 changed the switch from hvt to lvt in pmos low current side
 #run_names.append('RUN_2026-05-08_14-02-05') #v12 lvt standard
-run_names.append('RUN_2026-05-11_11-45-18') #v13 lvt standard
+#run_names.append('RUN_2026-05-11_11-45-18') #v13 pmos
+run_names.append('RUN_2026-05-18_10-19-37') #v14 check revisions to match layout
 
 measfile_name = 'tb_BiasBranchnMasterx1_op'
 measnames_list=['coarse_code',

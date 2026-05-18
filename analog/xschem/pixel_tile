@@ -1,0 +1,36 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+N -80 -150 -20 -150 {lab=xxx}
+N -80 -130 -20 -130 {lab=xxx}
+N -80 -110 -20 -110 {lab=xxx}
+N -80 -70 -20 -70 {lab=xxx}
+N 100 -260 100 -190 {lab=xxx}
+N 120 -260 120 -190 {lab=xxx}
+N 140 -260 140 -190 {lab=xxx}
+N 160 -260 160 -190 {lab=xxx}
+N 180 -260 180 -190 {lab=xxx}
+N 200 -260 200 -190 {lab=xxx}
+N 280 -90 360 -90 {lab=xxx}
+N 100 20 100 80 {lab=xxx}
+N 70 20 70 80 {lab=xxx}
+N 40 20 40 80 {lab=xxx}
+C {openDVS_pixel.sym} 130 -60 0 0 {name=x1}
+C {iopin.sym} -80 -150 0 1 {name=p1 lab=xxx}
+C {iopin.sym} -80 -130 0 1 {name=p2 lab=xxx}
+C {iopin.sym} -80 -110 0 1 {name=p3 lab=xxx}
+C {iopin.sym} -80 -70 0 1 {name=p4 lab=xxx}
+C {iopin.sym} 40 80 3 1 {name=p5 lab=xxx}
+C {iopin.sym} 70 80 3 1 {name=p6 lab=xxx}
+C {iopin.sym} 100 80 3 1 {name=p7 lab=GND}
+C {iopin.sym} 100 -260 1 1 {name=p8 lab=xxx}
+C {iopin.sym} 120 -260 1 1 {name=p9 lab=xxx}
+C {iopin.sym} 140 -260 1 1 {name=p10 lab=xxx}
+C {iopin.sym} 160 -260 1 1 {name=p11 lab=xxx}
+C {iopin.sym} 180 -260 1 1 {name=p12 lab=xxx}
+C {iopin.sym} 200 -260 1 1 {name=p13 lab=xxx}
+C {iopin.sym} 360 -90 0 0 {name=p14 lab=xxx}

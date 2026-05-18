@@ -637,7 +637,7 @@ parameters:
         minimum: 0
         maximum: 255
         step: linear
-        stepsize: 1
+        stepsize: 20
       coarseCode:
         minimum: 0
         maximum: 7

@@ -1,0 +1,1375 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class BiasDividerCell (1):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+IPrev                                      |IPrev                                      
+VGate                                      |VGate                                      
+IOut                                       |IOut                                       
+INext                                      |INext                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerCell and BiasDividerCell are equivalent.
+
+Class BiasMultiplierCell (1):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+INext                                      |INext                                      
+VGate                                      |VGate                                      
+IOut                                       |IOut                                       
+IPrev                                      |IPrev                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasMultiplierCell and BiasMultiplierCell are equivalent.
+
+Class BiasDividerFineCell (1):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (6->3)         
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+VddA18                                     |VddA18                                     
+IPrev                                      |IPrev                                      
+VGate                                      |VGate                                      
+INext                                      |INext                                      
+nSel                                       |nSel                                       
+Sel                                        |Sel                                        
+IOut                                       |IOut                                       
+INOut                                      |INOut                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerFineCell and BiasDividerFineCell are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Class BiasDivider (1):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+-------------------------------------------|-------------------------------------------
+BiasDividerCell (6)                        |BiasDividerCell (6)                        
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+
+---------------------------------------------------------------------------------------
+Net: IIn                                   |Net: IIn                                   
+  BiasDividerCell/VGate = 6                |  BiasDividerCell/VGate = 6                
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: VddA18                                |Net: VddA18                                
+  BiasDividerCell/IPrev = 1                |  BiasDividerCell/IPrev = 1                
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 2            |  sky130_fd_pr__pfet_01v8/4 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasDivider BiasDivider
+
+Cell BiasMultiplier (1) disconnected node: IOut1
+Class BiasMultiplier (1):  Merged 13 parallel devices.
+Cell BiasMultiplier (1) disconnected node: IOut1
+Subcircuit summary:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+BiasMultiplierCell (2)                     |BiasMultiplierCell (2)                     
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+IOut0                                      |IOut0                                      
+IOut1                                      |BiasMultiplierCell_1/IOut **Mismatch**     
+VddA18                                     |BiasMultiplierCell_1/INext **Mismatch**    
+GndA                                       |GndA                                       
+IIn                                        |IIn                                        
+(no matching pin)                          |IOut1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasMultiplier and BiasMultiplier altered to match.
+Device classes BiasMultiplier and BiasMultiplier are equivalent.
+
+Class BiasCoarseFineInterface (0):  Merged 6 parallel devices.
+Class BiasCoarseFineInterface (1):  Merged 51 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (33->9)            |sky130_fd_pr__pfet_01v8 (34->4) **Mismatch 
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (14->7) **Mism 
+Number of devices: 16 **Mismatch**         |Number of devices: 15 **Mismatch**         
+Number of nets: 15 **Mismatch**            |Number of nets: 14 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  sky130_fd_pr__pfet_01v8/(1|3) = 6        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 9            |  sky130_fd_pr__pfet_01v8/4 = 4            
+  sky130_fd_pr__pfet_01v8_hvt/4 = 2        |  sky130_fd_pr__pfet_01v8_hvt/4 = 2        
+  sky130_fd_pr__pfet_01v8_lvt/4 = 3        |  sky130_fd_pr__pfet_01v8_lvt/4 = 7        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: net2                                  |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: LowBiasDioGate                        |Net: a_4774_815#                           
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: LowBiasMirr                           |Net: a_5726_n150#                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: LowBiasMirrInt                        |Net: a_5726_1215#                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: LowBiasDioInt                         |Net: a_4866_1215#                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:MpDioLow |Instance: sky130_fd_pr__pfet_01v8_lvt:0    
+  (1,3) = (21,2)                           |  (1,3) = (18,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 21                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:MpMirrLo |Instance: sky130_fd_pr__pfet_01v8_lvt:21   
+  (1,3) = (21,2)                           |  (1,3) = (18,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 21                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:MpDioLow |Instance: sky130_fd_pr__pfet_01v8_lvt:8    
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 21                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:MpMirrLo |Instance: sky130_fd_pr__pfet_01v8_lvt:10   
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 21                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:MpDum1   |(no matching instance)                     
+  (1,3) = (21,1)                           |                                           
+  2 = 21                                   |                                           
+  4 = 21                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasCoarseFineInterface BiasCoarseFineInterface
+
+Class BiasDividerFine (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+BiasDividerFineCell (8)                    |BiasDividerFineCell (8)                    
+sky130_fd_pr__pfet_01v8_lvt (2->1)         |sky130_fd_pr__pfet_01v8_lvt (2->1)         
+sky130_fd_pr__nfet_01v8_lvt (1)            |sky130_fd_pr__nfet_01v8_lvt (1)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+FineCode[7]                                |Q7 **Mismatch**                            
+nFineCode[7]                               |nQ7 **Mismatch**                           
+IIn                                        |IIn                                        
+FineCode[6]                                |Q6 **Mismatch**                            
+FineCode[5]                                |Q5 **Mismatch**                            
+FineCode[4]                                |Q4 **Mismatch**                            
+FineCode[3]                                |Q3 **Mismatch**                            
+FineCode[2]                                |Q2 **Mismatch**                            
+FineCode[1]                                |Q1 **Mismatch**                            
+FineCode[0]                                |Q0 **Mismatch**                            
+nFineCode[6]                               |nQ6 **Mismatch**                           
+nFineCode[5]                               |nQ5 **Mismatch**                           
+nFineCode[4]                               |nQ4 **Mismatch**                           
+nFineCode[3]                               |nQ3 **Mismatch**                           
+nFineCode[2]                               |nQ2 **Mismatch**                           
+nFineCode[1]                               |nQ1 **Mismatch**                           
+nFineCode[0]                               |nQ0 **Mismatch**                           
+IOut                                       |IOut                                       
+VGate                                      |VGate                                      
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasDividerFine and BiasDividerFine altered to match.
+Device classes BiasDividerFine and BiasDividerFine are equivalent.
+Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit BiasBuffers (0)(4 instances)
+Flattening unmatched subcell scs130hd_nor2_1 in circuit BiasBuffers (1)(1 instance)
+Flattening unmatched subcell scs130hd_inv_1 in circuit BiasBuffers (1)(4 instances)
+Flattening unmatched subcell scs130hd_and2_1 in circuit BiasBuffers (1)(1 instance)
+
+Class BiasBuffers (1):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
+sky130_fd_pr__pfet_01v8 (11->10)           |sky130_fd_pr__pfet_01v8 (11->10)           
+sky130_fd_pr__nfet_01v8_lvt (27->3)        |sky130_fd_pr__nfet_01v8_lvt (27->3)        
+sky130_fd_pr__pfet_01v8_lvt (9->3)         |sky130_fd_pr__pfet_01v8_lvt (9->3)         
+sky130_fd_pr__pfet_01v8_hvt (9)            |sky130_fd_pr__pfet_01v8_hvt (9)            
+Number of devices: 45                      |Number of devices: 45                      
+Number of nets: 31                         |Number of nets: 31                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_sc_hd__nor2_1:2/sky130_fd_pr__nfet_01v8:X1 vs. scs130hd_nor2_1_0/sky130_fd_pr__nfet_01v8:1:
+ W circuit1: 0.64   circuit2: 0.65   (delta=1.55%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:MnswpMirrnB0 vs. sky130_fd_pr__nfet_01v8:25:
+ L circuit1: 0.15   circuit2: 0.38   (delta=86.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:MnswpMirrB0 vs. sky130_fd_pr__nfet_01v8:43:
+ L circuit1: 0.15   circuit2: 0.38   (delta=86.8%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+BiasDisabled                               |BiasDisabled                               
+BIT0                                       |BIT0                                       
+PadBias                                    |PadBias                                    
+NBiasEnabled                               |NBiasEnabled                               
+BufferNBias                                |BufferNBias                                
+BufferPBias                                |BufferPBias                                
+PBiasEnabled                               |PBiasEnabled                               
+VBiasOut                                   |VBiasOut                                   
+VddA18                                     |VddA18                                     
+PowerDown                                  |PowerDown                                  
+GndA                                       |GND **Mismatch**                           
+SplitterOutput                             |SplitterOutput                             
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBuffers and BiasBuffers altered to match.
+Device classes BiasBuffers and BiasBuffers are equivalent.
+
+Class BiasCoarseSel8to1 (1):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+sky130_fd_pr__nfet_01v8_lvt (41->27)       |sky130_fd_pr__nfet_01v8_lvt (41->27)       
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 51                         |Number of nets: 51                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8_lvt:MmirraB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:21:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrcB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:1:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrgB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:2:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrfB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:42:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirreB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:22:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrdB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:10:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrbB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:37:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__nfet_01v8_lvt:MmirrhB4to7 vs. sky130_fd_pr__nfet_01v8_lvt:32:
+ W circuit1: 0.5   circuit2: 0.98   (delta=64.9%, cutoff=1%)
+ L circuit1: 20   circuit2: 9.98   (delta=66.8%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:MpswB1 vs. sky130_fd_pr__pfet_01v8:36:
+ W circuit1: 0.45   circuit2: 0.55   (delta=20%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:MpswB3 vs. sky130_fd_pr__pfet_01v8:11:
+ W circuit1: 0.45   circuit2: 0.55   (delta=20%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:MpswB2 vs. sky130_fd_pr__pfet_01v8:43:
+ W circuit1: 0.45   circuit2: 0.55   (delta=20%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:MpswB0 vs. sky130_fd_pr__pfet_01v8:4:
+ W circuit1: 0.45   circuit2: 0.55   (delta=20%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[7]                                  |BiasCB[7]                                  
+GndA                                       |GndA                                       
+CoarseBias                                 |CoarseBias                                 
+VddA18                                     |VddA18                                     
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseSel8to1 and BiasCoarseSel8to1 are equivalent.
+
+Class BiasMasterBias (1):  Merged 66 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (61->9)        |sky130_fd_pr__nfet_01v8_lvt (61->9)        
+sky130_fd_pr__pfet_01v8 (18->4)            |sky130_fd_pr__pfet_01v8 (18->4)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 13 **Mismatch**            |Number of nets: 15 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
+  sky130_fd_pr__pfet_01v8/4 = 4            |                                           
+                                           |                                           
+(no matching net)                          |Net: w_8093_11560#                         
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+                                           |                                           
+(no matching net)                          |Net: w_3557_9381#                          
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasMasterBias BiasMasterBias
+
+Cell BiasCoarseMBDivider (1) disconnected node: BiasMultiplier_0/IOut1
+Class BiasCoarseMBDivider (1):  Merged 14 parallel devices.
+Cell BiasCoarseMBDivider (1) disconnected node: BiasMultiplier_0/IOut1
+Subcircuit summary:
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+-------------------------------------------|-------------------------------------------
+BiasDividerCell (6)                        |BiasDividerCell (6)                        
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+BiasMultiplier (1)                         |BiasMultiplier (1)                         
+sky130_fd_pr__nfet_01v8_lvt (64->50)       |sky130_fd_pr__nfet_01v8_lvt (64->50)       
+Number of devices: 59                      |Number of devices: 59                      
+Number of nets: 59                         |Number of nets: 59                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  sky130_fd_pr__pfet_01v8/2 = 1            |  BiasMultiplier/BiasMultiplierCell_1/INex 
+  BiasDividerCell/IPrev = 1                |  BiasDividerCell/IPrev = 1                
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 2            |  sky130_fd_pr__pfet_01v8/4 = 2            
+  BiasMultiplier/VddA18 = 1                |                                           
+                                           |                                           
+Net: ICoarse2                              |Net: ICoarse2                              
+  BiasDividerCell/VGate = 6                |  BiasDividerCell/VGate = 6                
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 2            
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasCoarseMBDivider BiasCoarseMBDivider
+
+Subcircuit summary:
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (33->9)            |sky130_fd_pr__pfet_01v8 (34->4) **Mismatch 
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (14->7) **Mism 
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+BiasBuffers (1)                            |BiasBuffers (1)                            
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+Number of devices: 19 **Mismatch**         |Number of devices: 18 **Mismatch**         
+Number of nets: 58 **Mismatch**            |Number of nets: 57 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  sky130_fd_pr__pfet_01v8/(1|3) = 6        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 9            |  sky130_fd_pr__pfet_01v8/4 = 4            
+  sky130_fd_pr__pfet_01v8_hvt/4 = 2        |  sky130_fd_pr__pfet_01v8_hvt/4 = 2        
+  sky130_fd_pr__pfet_01v8_lvt/4 = 3        |  sky130_fd_pr__pfet_01v8_lvt/4 = 7        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  BiasDividerFine/VddA18 = 1               |  BiasDividerFine/VddA18 = 1               
+  BiasBuffers/VddA18 = 1                   |  BiasBuffers/VddA18 = 1                   
+  BiasCoarseSel8to1/VddA18 = 1             |  BiasCoarseSel8to1/VddA18 = 1             
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/n |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_4774_815 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_5726_n15 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_5726_121 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_4866_121 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+
+---------------------------------------------------------------------------------------
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (24,2)                           |  (1,3) = (21,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 24                                   |  4 = 21                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (24,2)                           |  (1,3) = (21,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 24                                   |  4 = 21                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 24                                   |  4 = 21                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 24                                   |  4 = 21                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |(no matching instance)                     
+  (1,3) = (24,1)                           |                                           
+  2 = 24                                   |                                           
+  4 = 24                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasBranch BiasBranch
+
+Class BiasBranchBuffer (1):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (33->9)            |sky130_fd_pr__pfet_01v8 (34->4) **Mismatch 
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+sky130_fd_pr__pfet_01v8_lvt (8->4)         |sky130_fd_pr__pfet_01v8_lvt (16->8) **Mism 
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+sky130_fd_pr__nfet_01v8_lvt (32->2)        |sky130_fd_pr__nfet_01v8_lvt (32->2)        
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+Number of devices: 21 **Mismatch**         |Number of devices: 20 **Mismatch**         
+Number of nets: 50 **Mismatch**            |Number of nets: 49 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  BiasCoarseSel8to1/VddA18 = 1             |  BiasCoarseSel8to1/VddA18 = 1             
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 3    
+  sky130_fd_pr__pfet_01v8_lvt/4 = 4        |  sky130_fd_pr__pfet_01v8_lvt/4 = 8        
+  sky130_fd_pr__pfet_01v8_hvt/4 = 2        |  sky130_fd_pr__pfet_01v8_hvt/4 = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 6        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 9            |  sky130_fd_pr__pfet_01v8/4 = 4            
+  BiasDividerFine/VddA18 = 1               |  BiasDividerFine/VddA18 = 1               
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/n |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_4774_815 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_5726_n15 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_5726_121 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: BiasCoarseFineInterface:Coarse2Fine/L |Net: /BiasCoarseFineInterface_0/a_4866_121 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+
+---------------------------------------------------------------------------------------
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (25,2)                           |  (1,3) = (22,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 25                                   |  4 = 22                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (25,2)                           |  (1,3) = (22,2)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 25                                   |  4 = 22                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 25                                   |  4 = 22                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |Instance: BiasCoarseFineInterface_0/sky130 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 25                                   |  4 = 22                                   
+                                           |                                           
+Instance: BiasCoarseFineInterface:Coarse2F |(no matching instance)                     
+  (1,3) = (25,1)                           |                                           
+  2 = 25                                   |                                           
+  4 = 25                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasBranchBuffer BiasBranchBuffer
+Flattening unmatched subcell BiasMasternCoarse in circuit BiasBranchnMasterx11 (0)(1 instance)
+Flattening unmatched subcell BiasMasterCoarse in circuit BiasBranchnMasterx11 (1)(1 instance)
+
+Cell BiasBranchnMasterx11 (0) disconnected node: BiasCB[7],BiasCB[6],BiasCB[5],BiasCB[4],BiasCB[3],BiasCB[2],BiasCB[1],BiasCB[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCodeBuffer[7],FineCodeBuffer[6],FineCodeBuffer[5],FineCodeBuffer[4],FineCodeBuffer[3],FineCodeBuffer[2],FineCodeBuffer[1],FineCodeBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit7[10],CoarseOneHot_bit7[9],CoarseOneHot_bit7[8],CoarseOneHot_bit7[7],CoarseOneHot_bit7[6],CoarseOneHot_bit7[5],CoarseOneHot_bit7[4],CoarseOneHot_bit7[3],CoarseOneHot_bit7[2],CoarseOneHot_bit7[1],CoarseOneHot_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCodeBuffer[7],nFineCodeBuffer[6],nFineCodeBuffer[5],nFineCodeBuffer[4],nFineCodeBuffer[3],nFineCodeBuffer[2],nFineCodeBuffer[1],nFineCodeBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHotBuffer[7],CoarseOneHotBuffer[6],CoarseOneHotBuffer[5],CoarseOneHotBuffer[4],CoarseOneHotBuffer[3],CoarseOneHotBuffer[2],CoarseOneHotBuffer[1],CoarseOneHotBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: LowBiasInterfaceEn[10],LowBiasInterfaceEn[9],LowBiasInterfaceEn[8],LowBiasInterfaceEn[7],LowBiasInterfaceEn[6],LowBiasInterfaceEn[5],LowBiasInterfaceEn[4],LowBiasInterfaceEn[3],LowBiasInterfaceEn[2],LowBiasInterfaceEn[1],LowBiasInterfaceEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nLowBiasInterfaceEn[10],nLowBiasInterfaceEn[9],nLowBiasInterfaceEn[8],nLowBiasInterfaceEn[7],nLowBiasInterfaceEn[6],nLowBiasInterfaceEn[5],nLowBiasInterfaceEn[4],nLowBiasInterfaceEn[3],nLowBiasInterfaceEn[2],nLowBiasInterfaceEn[1],nLowBiasInterfaceEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHotLowBiasEn[10],CoarseOneHotLowBiasEn[9],CoarseOneHotLowBiasEn[8],CoarseOneHotLowBiasEn[7],CoarseOneHotLowBiasEn[6],CoarseOneHotLowBiasEn[5],CoarseOneHotLowBiasEn[4],CoarseOneHotLowBiasEn[3],CoarseOneHotLowBiasEn[2],CoarseOneHotLowBiasEn[1],CoarseOneHotLowBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: BIT0[10],BIT0[9],BIT0[8],BIT0[7],BIT0[6],BIT0[5],BIT0[4],BIT0[3],BIT0[2],BIT0[1],BIT0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PowerDown[10],PowerDown[9],PowerDown[8],PowerDown[7],PowerDown[6],PowerDown[5],PowerDown[4],PowerDown[3],PowerDown[2],PowerDown[1],PowerDown[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: NBiasEn[10],NBiasEn[9],NBiasEn[8],NBiasEn[7],NBiasEn[6],NBiasEn[5],NBiasEn[4],NBiasEn[3],NBiasEn[2],NBiasEn[1],NBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PBiasEn[10],PBiasEn[9],PBiasEn[8],PBiasEn[7],PBiasEn[6],PBiasEn[5],PBiasEn[4],PBiasEn[3],PBiasEn[2],PBiasEn[1],PBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: BiasDisable[10],BiasDisable[9],BiasDisable[8],BiasDisable[7],BiasDisable[6],BiasDisable[5],BiasDisable[4],BiasDisable[3],BiasDisable[2],BiasDisable[1],BiasDisable[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit0[10],FineCode_bit0[9],FineCode_bit0[8],FineCode_bit0[7],FineCode_bit0[6],FineCode_bit0[5],FineCode_bit0[4],FineCode_bit0[3],FineCode_bit0[2],FineCode_bit0[1],FineCode_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit1[10],FineCode_bit1[9],FineCode_bit1[8],FineCode_bit1[7],FineCode_bit1[6],FineCode_bit1[5],FineCode_bit1[4],FineCode_bit1[3],FineCode_bit1[2],FineCode_bit1[1],FineCode_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit2[10],FineCode_bit2[9],FineCode_bit2[8],FineCode_bit2[7],FineCode_bit2[6],FineCode_bit2[5],FineCode_bit2[4],FineCode_bit2[3],FineCode_bit2[2],FineCode_bit2[1],FineCode_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit3[10],FineCode_bit3[9],FineCode_bit3[8],FineCode_bit3[7],FineCode_bit3[6],FineCode_bit3[5],FineCode_bit3[4],FineCode_bit3[3],FineCode_bit3[2],FineCode_bit3[1],FineCode_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit4[10],FineCode_bit4[9],FineCode_bit4[8],FineCode_bit4[7],FineCode_bit4[6],FineCode_bit4[5],FineCode_bit4[4],FineCode_bit4[3],FineCode_bit4[2],FineCode_bit4[1],FineCode_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit5[10],FineCode_bit5[9],FineCode_bit5[8],FineCode_bit5[7],FineCode_bit5[6],FineCode_bit5[5],FineCode_bit5[4],FineCode_bit5[3],FineCode_bit5[2],FineCode_bit5[1],FineCode_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit6[10],FineCode_bit6[9],FineCode_bit6[8],FineCode_bit6[7],FineCode_bit6[6],FineCode_bit6[5],FineCode_bit6[4],FineCode_bit6[3],FineCode_bit6[2],FineCode_bit6[1],FineCode_bit6[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit7[10],FineCode_bit7[9],FineCode_bit7[8],FineCode_bit7[7],FineCode_bit7[6],FineCode_bit7[5],FineCode_bit7[4],FineCode_bit7[3],FineCode_bit7[2],FineCode_bit7[1],FineCode_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit0[10],nFineCode_bit0[9],nFineCode_bit0[8],nFineCode_bit0[7],nFineCode_bit0[6],nFineCode_bit0[5],nFineCode_bit0[4],nFineCode_bit0[3],nFineCode_bit0[2],nFineCode_bit0[1],nFineCode_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit1[10],nFineCode_bit1[9],nFineCode_bit1[8],nFineCode_bit1[7],nFineCode_bit1[6],nFineCode_bit1[5],nFineCode_bit1[4],nFineCode_bit1[3],nFineCode_bit1[2],nFineCode_bit1[1],nFineCode_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit2[10],nFineCode_bit2[9],nFineCode_bit2[8],nFineCode_bit2[7],nFineCode_bit2[6],nFineCode_bit2[5],nFineCode_bit2[4],nFineCode_bit2[3],nFineCode_bit2[2],nFineCode_bit2[1],nFineCode_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit3[10],nFineCode_bit3[9],nFineCode_bit3[8],nFineCode_bit3[7],nFineCode_bit3[6],nFineCode_bit3[5],nFineCode_bit3[4],nFineCode_bit3[3],nFineCode_bit3[2],nFineCode_bit3[1],nFineCode_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit4[10],nFineCode_bit4[9],nFineCode_bit4[8],nFineCode_bit4[7],nFineCode_bit4[6],nFineCode_bit4[5],nFineCode_bit4[4],nFineCode_bit4[3],nFineCode_bit4[2],nFineCode_bit4[1],nFineCode_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit5[10],nFineCode_bit5[9],nFineCode_bit5[8],nFineCode_bit5[7],nFineCode_bit5[6],nFineCode_bit5[5],nFineCode_bit5[4],nFineCode_bit5[3],nFineCode_bit5[2],nFineCode_bit5[1],nFineCode_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit7[10],nFineCode_bit7[9],nFineCode_bit7[8],nFineCode_bit7[7],nFineCode_bit7[6],nFineCode_bit7[5],nFineCode_bit7[4],nFineCode_bit7[3],nFineCode_bit7[2],nFineCode_bit7[1],nFineCode_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit0[10],CoarseOneHot_bit0[9],CoarseOneHot_bit0[8],CoarseOneHot_bit0[7],CoarseOneHot_bit0[6],CoarseOneHot_bit0[5],CoarseOneHot_bit0[4],CoarseOneHot_bit0[3],CoarseOneHot_bit0[2],CoarseOneHot_bit0[1],CoarseOneHot_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit1[10],CoarseOneHot_bit1[9],CoarseOneHot_bit1[8],CoarseOneHot_bit1[7],CoarseOneHot_bit1[6],CoarseOneHot_bit1[5],CoarseOneHot_bit1[4],CoarseOneHot_bit1[3],CoarseOneHot_bit1[2],CoarseOneHot_bit1[1],CoarseOneHot_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit2[10],CoarseOneHot_bit2[9],CoarseOneHot_bit2[8],CoarseOneHot_bit2[7],CoarseOneHot_bit2[6],CoarseOneHot_bit2[5],CoarseOneHot_bit2[4],CoarseOneHot_bit2[3],CoarseOneHot_bit2[2],CoarseOneHot_bit2[1],CoarseOneHot_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit3[10],CoarseOneHot_bit3[9],CoarseOneHot_bit3[8],CoarseOneHot_bit3[7],CoarseOneHot_bit3[6],CoarseOneHot_bit3[5],CoarseOneHot_bit3[4],CoarseOneHot_bit3[3],CoarseOneHot_bit3[2],CoarseOneHot_bit3[1],CoarseOneHot_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit4[10],CoarseOneHot_bit4[9],CoarseOneHot_bit4[8],CoarseOneHot_bit4[7],CoarseOneHot_bit4[6],CoarseOneHot_bit4[5],CoarseOneHot_bit4[4],CoarseOneHot_bit4[3],CoarseOneHot_bit4[2],CoarseOneHot_bit4[1],CoarseOneHot_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit5[10],CoarseOneHot_bit5[9],CoarseOneHot_bit5[8],CoarseOneHot_bit5[7],CoarseOneHot_bit5[6],CoarseOneHot_bit5[5],CoarseOneHot_bit5[4],CoarseOneHot_bit5[3],CoarseOneHot_bit5[2],CoarseOneHot_bit5[1],CoarseOneHot_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit6[10],CoarseOneHot_bit6[9],CoarseOneHot_bit6[8],CoarseOneHot_bit6[7],CoarseOneHot_bit6[6],CoarseOneHot_bit6[5],CoarseOneHot_bit6[4],CoarseOneHot_bit6[3],CoarseOneHot_bit6[2],CoarseOneHot_bit6[1],CoarseOneHot_bit6[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PadBias[10],PadBias[9],PadBias[8],PadBias[7],PadBias[6],PadBias[5],PadBias[4],PadBias[3],PadBias[2],PadBias[1],PadBias[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PadBias[10],PadBias[9],PadBias[8],PadBias[7],PadBias[6],PadBias[5],PadBias[4],PadBias[3],PadBias[2],PadBias[1],PadBias[0]
+Class BiasBranchnMasterx11 (0):  Merged 14 parallel devices.
+Cell BiasBranchnMasterx11 (0) disconnected node: BiasCB[7],BiasCB[6],BiasCB[5],BiasCB[4],BiasCB[3],BiasCB[2],BiasCB[1],BiasCB[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCodeBuffer[7],FineCodeBuffer[6],FineCodeBuffer[5],FineCodeBuffer[4],FineCodeBuffer[3],FineCodeBuffer[2],FineCodeBuffer[1],FineCodeBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit7[10],CoarseOneHot_bit7[9],CoarseOneHot_bit7[8],CoarseOneHot_bit7[7],CoarseOneHot_bit7[6],CoarseOneHot_bit7[5],CoarseOneHot_bit7[4],CoarseOneHot_bit7[3],CoarseOneHot_bit7[2],CoarseOneHot_bit7[1],CoarseOneHot_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCodeBuffer[7],nFineCodeBuffer[6],nFineCodeBuffer[5],nFineCodeBuffer[4],nFineCodeBuffer[3],nFineCodeBuffer[2],nFineCodeBuffer[1],nFineCodeBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHotBuffer[7],CoarseOneHotBuffer[6],CoarseOneHotBuffer[5],CoarseOneHotBuffer[4],CoarseOneHotBuffer[3],CoarseOneHotBuffer[2],CoarseOneHotBuffer[1],CoarseOneHotBuffer[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: LowBiasInterfaceEn[10],LowBiasInterfaceEn[9],LowBiasInterfaceEn[8],LowBiasInterfaceEn[7],LowBiasInterfaceEn[6],LowBiasInterfaceEn[5],LowBiasInterfaceEn[4],LowBiasInterfaceEn[3],LowBiasInterfaceEn[2],LowBiasInterfaceEn[1],LowBiasInterfaceEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nLowBiasInterfaceEn[10],nLowBiasInterfaceEn[9],nLowBiasInterfaceEn[8],nLowBiasInterfaceEn[7],nLowBiasInterfaceEn[6],nLowBiasInterfaceEn[5],nLowBiasInterfaceEn[4],nLowBiasInterfaceEn[3],nLowBiasInterfaceEn[2],nLowBiasInterfaceEn[1],nLowBiasInterfaceEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHotLowBiasEn[10],CoarseOneHotLowBiasEn[9],CoarseOneHotLowBiasEn[8],CoarseOneHotLowBiasEn[7],CoarseOneHotLowBiasEn[6],CoarseOneHotLowBiasEn[5],CoarseOneHotLowBiasEn[4],CoarseOneHotLowBiasEn[3],CoarseOneHotLowBiasEn[2],CoarseOneHotLowBiasEn[1],CoarseOneHotLowBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: BIT0[10],BIT0[9],BIT0[8],BIT0[7],BIT0[6],BIT0[5],BIT0[4],BIT0[3],BIT0[2],BIT0[1],BIT0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PowerDown[10],PowerDown[9],PowerDown[8],PowerDown[7],PowerDown[6],PowerDown[5],PowerDown[4],PowerDown[3],PowerDown[2],PowerDown[1],PowerDown[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: NBiasEn[10],NBiasEn[9],NBiasEn[8],NBiasEn[7],NBiasEn[6],NBiasEn[5],NBiasEn[4],NBiasEn[3],NBiasEn[2],NBiasEn[1],NBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PBiasEn[10],PBiasEn[9],PBiasEn[8],PBiasEn[7],PBiasEn[6],PBiasEn[5],PBiasEn[4],PBiasEn[3],PBiasEn[2],PBiasEn[1],PBiasEn[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: BiasDisable[10],BiasDisable[9],BiasDisable[8],BiasDisable[7],BiasDisable[6],BiasDisable[5],BiasDisable[4],BiasDisable[3],BiasDisable[2],BiasDisable[1],BiasDisable[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit0[10],FineCode_bit0[9],FineCode_bit0[8],FineCode_bit0[7],FineCode_bit0[6],FineCode_bit0[5],FineCode_bit0[4],FineCode_bit0[3],FineCode_bit0[2],FineCode_bit0[1],FineCode_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit1[10],FineCode_bit1[9],FineCode_bit1[8],FineCode_bit1[7],FineCode_bit1[6],FineCode_bit1[5],FineCode_bit1[4],FineCode_bit1[3],FineCode_bit1[2],FineCode_bit1[1],FineCode_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit2[10],FineCode_bit2[9],FineCode_bit2[8],FineCode_bit2[7],FineCode_bit2[6],FineCode_bit2[5],FineCode_bit2[4],FineCode_bit2[3],FineCode_bit2[2],FineCode_bit2[1],FineCode_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit3[10],FineCode_bit3[9],FineCode_bit3[8],FineCode_bit3[7],FineCode_bit3[6],FineCode_bit3[5],FineCode_bit3[4],FineCode_bit3[3],FineCode_bit3[2],FineCode_bit3[1],FineCode_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit4[10],FineCode_bit4[9],FineCode_bit4[8],FineCode_bit4[7],FineCode_bit4[6],FineCode_bit4[5],FineCode_bit4[4],FineCode_bit4[3],FineCode_bit4[2],FineCode_bit4[1],FineCode_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit5[10],FineCode_bit5[9],FineCode_bit5[8],FineCode_bit5[7],FineCode_bit5[6],FineCode_bit5[5],FineCode_bit5[4],FineCode_bit5[3],FineCode_bit5[2],FineCode_bit5[1],FineCode_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit6[10],FineCode_bit6[9],FineCode_bit6[8],FineCode_bit6[7],FineCode_bit6[6],FineCode_bit6[5],FineCode_bit6[4],FineCode_bit6[3],FineCode_bit6[2],FineCode_bit6[1],FineCode_bit6[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: FineCode_bit7[10],FineCode_bit7[9],FineCode_bit7[8],FineCode_bit7[7],FineCode_bit7[6],FineCode_bit7[5],FineCode_bit7[4],FineCode_bit7[3],FineCode_bit7[2],FineCode_bit7[1],FineCode_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit0[10],nFineCode_bit0[9],nFineCode_bit0[8],nFineCode_bit0[7],nFineCode_bit0[6],nFineCode_bit0[5],nFineCode_bit0[4],nFineCode_bit0[3],nFineCode_bit0[2],nFineCode_bit0[1],nFineCode_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit1[10],nFineCode_bit1[9],nFineCode_bit1[8],nFineCode_bit1[7],nFineCode_bit1[6],nFineCode_bit1[5],nFineCode_bit1[4],nFineCode_bit1[3],nFineCode_bit1[2],nFineCode_bit1[1],nFineCode_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit2[10],nFineCode_bit2[9],nFineCode_bit2[8],nFineCode_bit2[7],nFineCode_bit2[6],nFineCode_bit2[5],nFineCode_bit2[4],nFineCode_bit2[3],nFineCode_bit2[2],nFineCode_bit2[1],nFineCode_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit3[10],nFineCode_bit3[9],nFineCode_bit3[8],nFineCode_bit3[7],nFineCode_bit3[6],nFineCode_bit3[5],nFineCode_bit3[4],nFineCode_bit3[3],nFineCode_bit3[2],nFineCode_bit3[1],nFineCode_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit4[10],nFineCode_bit4[9],nFineCode_bit4[8],nFineCode_bit4[7],nFineCode_bit4[6],nFineCode_bit4[5],nFineCode_bit4[4],nFineCode_bit4[3],nFineCode_bit4[2],nFineCode_bit4[1],nFineCode_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit5[10],nFineCode_bit5[9],nFineCode_bit5[8],nFineCode_bit5[7],nFineCode_bit5[6],nFineCode_bit5[5],nFineCode_bit5[4],nFineCode_bit5[3],nFineCode_bit5[2],nFineCode_bit5[1],nFineCode_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: nFineCode_bit7[10],nFineCode_bit7[9],nFineCode_bit7[8],nFineCode_bit7[7],nFineCode_bit7[6],nFineCode_bit7[5],nFineCode_bit7[4],nFineCode_bit7[3],nFineCode_bit7[2],nFineCode_bit7[1],nFineCode_bit7[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit0[10],CoarseOneHot_bit0[9],CoarseOneHot_bit0[8],CoarseOneHot_bit0[7],CoarseOneHot_bit0[6],CoarseOneHot_bit0[5],CoarseOneHot_bit0[4],CoarseOneHot_bit0[3],CoarseOneHot_bit0[2],CoarseOneHot_bit0[1],CoarseOneHot_bit0[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit1[10],CoarseOneHot_bit1[9],CoarseOneHot_bit1[8],CoarseOneHot_bit1[7],CoarseOneHot_bit1[6],CoarseOneHot_bit1[5],CoarseOneHot_bit1[4],CoarseOneHot_bit1[3],CoarseOneHot_bit1[2],CoarseOneHot_bit1[1],CoarseOneHot_bit1[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit2[10],CoarseOneHot_bit2[9],CoarseOneHot_bit2[8],CoarseOneHot_bit2[7],CoarseOneHot_bit2[6],CoarseOneHot_bit2[5],CoarseOneHot_bit2[4],CoarseOneHot_bit2[3],CoarseOneHot_bit2[2],CoarseOneHot_bit2[1],CoarseOneHot_bit2[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit3[10],CoarseOneHot_bit3[9],CoarseOneHot_bit3[8],CoarseOneHot_bit3[7],CoarseOneHot_bit3[6],CoarseOneHot_bit3[5],CoarseOneHot_bit3[4],CoarseOneHot_bit3[3],CoarseOneHot_bit3[2],CoarseOneHot_bit3[1],CoarseOneHot_bit3[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit4[10],CoarseOneHot_bit4[9],CoarseOneHot_bit4[8],CoarseOneHot_bit4[7],CoarseOneHot_bit4[6],CoarseOneHot_bit4[5],CoarseOneHot_bit4[4],CoarseOneHot_bit4[3],CoarseOneHot_bit4[2],CoarseOneHot_bit4[1],CoarseOneHot_bit4[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit5[10],CoarseOneHot_bit5[9],CoarseOneHot_bit5[8],CoarseOneHot_bit5[7],CoarseOneHot_bit5[6],CoarseOneHot_bit5[5],CoarseOneHot_bit5[4],CoarseOneHot_bit5[3],CoarseOneHot_bit5[2],CoarseOneHot_bit5[1],CoarseOneHot_bit5[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: CoarseOneHot_bit6[10],CoarseOneHot_bit6[9],CoarseOneHot_bit6[8],CoarseOneHot_bit6[7],CoarseOneHot_bit6[6],CoarseOneHot_bit6[5],CoarseOneHot_bit6[4],CoarseOneHot_bit6[3],CoarseOneHot_bit6[2],CoarseOneHot_bit6[1],CoarseOneHot_bit6[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PadBias[10],PadBias[9],PadBias[8],PadBias[7],PadBias[6],PadBias[5],PadBias[4],PadBias[3],PadBias[2],PadBias[1],PadBias[0]
+Cell BiasBranchnMasterx11 (0) disconnected node: PadBias[10],PadBias[9],PadBias[8],PadBias[7],PadBias[6],PadBias[5],PadBias[4],PadBias[3],PadBias[2],PadBias[1],PadBias[0]
+Subcircuit summary:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (429->103)         |sky130_fd_pr__pfet_01v8 (441->54) **Mismat 
+sky130_fd_pr__nfet_01v8 (26)               |sky130_fd_pr__nfet_01v8 (26)               
+sky130_fd_pr__pfet_01v8_hvt (192->24)      |sky130_fd_pr__pfet_01v8_hvt (192->24)      
+sky130_fd_pr__pfet_01v8_lvt (74->37)       |sky130_fd_pr__pfet_01v8_lvt (170->85) **Mi 
+BiasDividerFine (12)                       |BiasDividerFine (12)                       
+BiasBuffers (11)                           |BiasBuffers (11)                           
+BiasCoarseSel8to1 (12)                     |BiasCoarseSel8to1 (12)                     
+sky130_fd_pr__nfet_01v8_lvt (157->61)      |sky130_fd_pr__nfet_01v8_lvt (157->61)      
+BiasDividerCell (6)                        |BiasDividerCell (6)                        
+BiasMultiplier (1)                         |BiasMultiplier (1)                         
+sky130_fd_pr__cap_mim_m3_1 (4->1)          |(no matching element)                      
+Number of devices: 294 **Mismatch**        |Number of devices: 292 **Mismatch**        
+Number of nets: 593 **Mismatch**           |Number of nets: 604 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+
+---------------------------------------------------------------------------------------
+Net: VddA18                                |Net: VddA18                                
+  BiasCoarseSel8to1/VddA18 = 12            |  BiasCoarseSel8to1/VddA18 = 12            
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 25   
+  sky130_fd_pr__pfet_01v8_lvt/4 = 37       |  sky130_fd_pr__pfet_01v8_lvt/4 = 85       
+  sky130_fd_pr__pfet_01v8_hvt/4 = 24       |  sky130_fd_pr__pfet_01v8_hvt/4 = 24       
+  sky130_fd_pr__pfet_01v8/(1|3) = 68       |  sky130_fd_pr__pfet_01v8/(1|3) = 43       
+  sky130_fd_pr__pfet_01v8/4 = 103          |  sky130_fd_pr__pfet_01v8/4 = 50           
+  BiasBuffers/VddA18 = 11                  |  BiasBuffers/VddA18 = 11                  
+  BiasDividerFine/VddA18 = 12              |  BiasDividerFine/VddA18 = 12              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  BiasMultiplier/VddA18 = 1                |  BiasMultiplier/BiasMultiplierCell_1/INex 
+  BiasDividerCell/IPrev = 1                |  BiasDividerCell/IPrev = 1                
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+                                           |                                           
+Net: GndA                                  |Net: GndA                                  
+  BiasCoarseSel8to1/GndA = 12              |  BiasCoarseSel8to1/GndA = 12              
+  sky130_fd_pr__nfet_01v8/(1|3) = 24       |  sky130_fd_pr__nfet_01v8/(1|3) = 24       
+  sky130_fd_pr__nfet_01v8/4 = 26           |  sky130_fd_pr__nfet_01v8/4 = 26           
+  BiasBuffers/GndA = 11                    |  BiasBuffers/GND = 11                     
+  BiasDividerFine/GndA = 12                |  BiasDividerFine/GndA = 12                
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 14   |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 14   
+  sky130_fd_pr__nfet_01v8_lvt/4 = 61       |  sky130_fd_pr__nfet_01v8_lvt/4 = 61       
+  BiasMultiplier/GndA = 1                  |  BiasMultiplier/GndA = 1                  
+  BiasDividerCell/INext = 1                |  BiasDividerCell/INext = 1                
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: Bias                                  |Net: Bias[0]                               
+  BiasBuffers/VBiasOut = 11                |  BiasBuffers/VBiasOut = 1                 
+                                           |                                           
+Net: /BiasBranch[10]/BiasCoarseFineInterfa |Net: Bias[5]                               
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  BiasBuffers/VBiasOut = 1                 
+                                           |                                           
+Net: VMasterBiasN                          |Net: VMasterBiasN                          
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 4        |  sky130_fd_pr__nfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: /BiasBranch[10]/BiasCoarseFineInterfa |Net: Bias[2]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[9]/BiasCoarseFineInterfac |Net: Bias[3]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[8]/BiasCoarseFineInterfac |Net: Bias[7]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[7]/BiasCoarseFineInterfac |Net: Bias[6]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[6]/BiasCoarseFineInterfac |Net: Bias[1]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[5]/BiasCoarseFineInterfac |Net: Bias[9]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[4]/BiasCoarseFineInterfac |Net: Bias[4]                               
+  sky130_fd_pr__pfet_01v8/2 = 4            |  BiasBuffers/VBiasOut = 1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[3]/BiasCoarseFineInterfac |Net: /BiasBranch_8//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[2]/BiasCoarseFineInterfac |Net: /BiasBranch_9//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[1]/BiasCoarseFineInterfac |Net: /BiasBranch_10//BiasCoarseFineInterfa 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[0]/BiasCoarseFineInterfac |Net: /BiasBranch_0//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: BiasBranchBuffer:BiasBuffer/BiasCoars |Net: /BiasBranch_1//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[10]/BiasCoarseFineInterfa |Net: /BiasBranch_3//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[10]/BiasCoarseFineInterfa |Net: /BiasBranch_2//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[9]/BiasCoarseFineInterfac |Net: /BiasBranch_4//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[9]/BiasCoarseFineInterfac |Net: /BiasBranch_5//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[8]/BiasCoarseFineInterfac |Net: /BiasBranch_6//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[8]/BiasCoarseFineInterfac |Net: /BiasBranch_7//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[7]/BiasCoarseFineInterfac |Net: /BiasBranchBuffer_0//BiasCoarseFineIn 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/2 = 4        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[7]/BiasCoarseFineInterfac |Net: /BiasBranch_8//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[6]/BiasCoarseFineInterfac |Net: /BiasBranch_8//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[6]/BiasCoarseFineInterfac |Net: /BiasBranch_9//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[5]/BiasCoarseFineInterfac |Net: /BiasBranch_9//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[5]/BiasCoarseFineInterfac |Net: /BiasBranch_10//BiasCoarseFineInterfa 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[4]/BiasCoarseFineInterfac |Net: /BiasBranch_10//BiasCoarseFineInterfa 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[4]/BiasCoarseFineInterfac |Net: /BiasBranch_0//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[3]/BiasCoarseFineInterfac |Net: /BiasBranch_0//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[3]/BiasCoarseFineInterfac |Net: /BiasBranch_1//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[2]/BiasCoarseFineInterfac |Net: /BiasBranch_1//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[2]/BiasCoarseFineInterfac |Net: /BiasBranch_3//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[1]/BiasCoarseFineInterfac |Net: /BiasBranch_3//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[1]/BiasCoarseFineInterfac |Net: /BiasBranch_2//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[0]/BiasCoarseFineInterfac |Net: /BiasBranch_2//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[0]/BiasCoarseFineInterfac |Net: /BiasBranch_4//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: BiasBranchBuffer:BiasBuffer/BiasCoars |Net: /BiasBranch_4//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: BiasBranchBuffer:BiasBuffer/BiasCoars |Net: /BiasBranch_5//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /BiasBranch[10]/BiasCoarseFineInterfa |Net: /BiasBranch_5//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[9]/BiasCoarseFineInterfac |Net: /BiasBranch_6//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[8]/BiasCoarseFineInterfac |Net: /BiasBranch_6//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[7]/BiasCoarseFineInterfac |Net: /BiasBranch_7//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[6]/BiasCoarseFineInterfac |Net: /BiasBranch_7//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[5]/BiasCoarseFineInterfac |Net: /BiasBranchBuffer_0//BiasCoarseFineIn 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[4]/BiasCoarseFineInterfac |Net: /BiasBranchBuffer_0//BiasCoarseFineIn 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[3]/BiasCoarseFineInterfac |Net: /BiasBranch_8//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[2]/BiasCoarseFineInterfac |Net: /BiasBranch_9//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[1]/BiasCoarseFineInterfac |Net: /BiasBranch_10//BiasCoarseFineInterfa 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasBranch[0]/BiasCoarseFineInterfac |Net: /BiasBranch_0//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: BiasBranchBuffer:BiasBuffer/BiasCoars |Net: /BiasBranch_1//BiasCoarseFineInterfac 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /BiasMasternCoarse/Coarse2            |Net: /BiasBranch_3//BiasCoarseFineInterfac 
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  BiasDividerCell/VGate = 6                |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+(no matching net)                          |Net: /BiasBranch_2//BiasCoarseFineInterfac 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasBranch_4//BiasCoarseFineInterfac 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasBranch_5//BiasCoarseFineInterfac 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasBranch_6//BiasCoarseFineInterfac 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasBranch_7//BiasCoarseFineInterfac 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasBranchBuffer_0//BiasCoarseFineIn 
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+(no matching net)                          |Net: /BiasMasterCoarse_0//BiasMasterBias_0 
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+                                           |                                           
+(no matching net)                          |Net: /BiasMasterCoarse_0//BiasMasterBias_0 
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+                                           |                                           
+(no matching net)                          |Net: Bias[10]                              
+                                           |  BiasBuffers/VBiasOut = 1                 
+                                           |                                           
+(no matching net)                          |Net: Bias[8]                               
+                                           |  BiasBuffers/VBiasOut = 1                 
+                                           |                                           
+(no matching net)                          |Net: /BiasMasterCoarse_0/BiasMasterBias_0/ 
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  BiasDividerCell/VGate = 6                
+                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: BiasCB[1]                             |Net: BiasCB[1]                             
+  BiasCoarseSel8to1/BiasCB[1] = 12         |  BiasCoarseSel8to1/BiasCB[1] = 12         
+  BiasMultiplier/IOut0 = 1                 |  BiasMultiplier/BiasMultiplierCell_1/IOut 
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+                                           |                                           
+Net: BiasCB[0]                             |Net: BiasCB[0]                             
+  BiasCoarseSel8to1/BiasCB[0] = 12         |  BiasCoarseSel8to1/BiasCB[0] = 12         
+  BiasMultiplier/IOut1 = 1                 |  BiasMultiplier/IOut0 = 1                 
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+
+---------------------------------------------------------------------------------------
+Instance: BiasBranch[10]/BiasCoarseFineInt |Instance: BiasMasterCoarse_0//BiasCoarseMB 
+  (1,3) = (274,2)                          |  (1,3) = (266,10)                         
+  2 = 6                                    |  2 = 10                                   
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[10]/BiasCoarseFineInt |Instance: BiasMasterCoarse_0//BiasCoarseMB 
+  (1,3) = (274,2)                          |  (1,3) = (266,266)                        
+  2 = 6                                    |  2 = 10                                   
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[10]/BiasCoarseFineInt |Instance: BiasBranch_8//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[10]/BiasCoarseFineInt |Instance: BiasBranch_8//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[10]/BiasCoarseFineInt |Instance: BiasBranch_8//BiasCoarseFineInte 
+  (1,3) = (274,1)                          |  (1,3) = (2,2)                            
+  2 = 274                                  |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[9]/BiasCoarseFineInte |Instance: BiasBranch_8//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[9]/BiasCoarseFineInte |Instance: BiasBranch_9//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[9]/BiasCoarseFineInte |Instance: BiasBranch_9//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[9]/BiasCoarseFineInte |Instance: BiasBranch_9//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[8]/BiasCoarseFineInte |Instance: BiasBranch_9//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[8]/BiasCoarseFineInte |Instance: BiasBranchBuffer_0//BiasCoarseFi 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[8]/BiasCoarseFineInte |Instance: BiasBranchBuffer_0//BiasCoarseFi 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[8]/BiasCoarseFineInte |Instance: BiasBranchBuffer_0//BiasCoarseFi 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[7]/BiasCoarseFineInte |Instance: BiasBranchBuffer_0//BiasCoarseFi 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[7]/BiasCoarseFineInte |Instance: BiasBranch_10//BiasCoarseFineInt 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[7]/BiasCoarseFineInte |Instance: BiasBranch_10//BiasCoarseFineInt 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[7]/BiasCoarseFineInte |Instance: BiasBranch_10//BiasCoarseFineInt 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[6]/BiasCoarseFineInte |Instance: BiasBranch_10//BiasCoarseFineInt 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[6]/BiasCoarseFineInte |Instance: BiasBranch_0//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[6]/BiasCoarseFineInte |Instance: BiasBranch_0//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[6]/BiasCoarseFineInte |Instance: BiasBranch_0//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[5]/BiasCoarseFineInte |Instance: BiasBranch_0//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[5]/BiasCoarseFineInte |Instance: BiasBranch_1//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[5]/BiasCoarseFineInte |Instance: BiasBranch_1//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[5]/BiasCoarseFineInte |Instance: BiasBranch_1//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[4]/BiasCoarseFineInte |Instance: BiasBranch_1//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[4]/BiasCoarseFineInte |Instance: BiasBranch_3//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[4]/BiasCoarseFineInte |Instance: BiasBranch_3//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[4]/BiasCoarseFineInte |Instance: BiasBranch_3//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[3]/BiasCoarseFineInte |Instance: BiasBranch_3//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[3]/BiasCoarseFineInte |Instance: BiasBranch_2//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[3]/BiasCoarseFineInte |Instance: BiasBranch_2//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[3]/BiasCoarseFineInte |Instance: BiasBranch_2//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[2]/BiasCoarseFineInte |Instance: BiasBranch_2//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[2]/BiasCoarseFineInte |Instance: BiasBranch_4//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[2]/BiasCoarseFineInte |Instance: BiasBranch_4//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[2]/BiasCoarseFineInte |Instance: BiasBranch_4//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[1]/BiasCoarseFineInte |Instance: BiasBranch_4//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[1]/BiasCoarseFineInte |Instance: BiasBranch_5//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[1]/BiasCoarseFineInte |Instance: BiasBranch_5//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[1]/BiasCoarseFineInte |Instance: BiasBranch_5//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[0]/BiasCoarseFineInte |Instance: BiasBranch_5//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[0]/BiasCoarseFineInte |Instance: BiasBranch_6//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[0]/BiasCoarseFineInte |Instance: BiasBranch_6//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranch[0]/BiasCoarseFineInte |Instance: BiasBranch_6//BiasCoarseFineInte 
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasMasternCoarse/BiasCoarseMBDi |Instance: BiasBranch_6//BiasCoarseFineInte 
+  (1,3) = (274,274)                        |  (1,3) = (266,2)                          
+  2 = 274                                  |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasMasternCoarse/BiasCoarseMBDi |Instance: BiasBranch_7//BiasCoarseFineInte 
+  (1,3) = (274,9)                          |  (1,3) = (266,2)                          
+  2 = 9                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranchBuffer:BiasBuffer/Bias |Instance: BiasBranch_7//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (6,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranchBuffer:BiasBuffer/Bias |Instance: BiasBranch_7//BiasCoarseFineInte 
+  (1,3) = (274,2)                          |  (1,3) = (2,2)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranchBuffer:BiasBuffer/Bias |Instance: BiasBranch_7//BiasCoarseFineInte 
+  (1,3) = (6,2)                            |  (1,3) = (266,2)                          
+  2 = 6                                    |  2 = 6                                    
+  4 = 274                                  |  4 = 266                                  
+                                           |                                           
+Instance: BiasBranchBuffer:BiasBuffer/Bias |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 6                                    |                                           
+  4 = 274                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: BiasMasternCoarse/sky130_fd_pr__ |(no matching instance)                     
+  1 = 7                                    |                                           
+  2 = 163                                  |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+VddA18                                     |(no pin, node is Bias[10])                 
+GndA                                       |(no pin, node is Bias[8])                  
+Bias                                       |(no pin, node is Bias[0])                  
+VMasterBiasN                               |(no pin, node is Bias[4])                  
+VMasterBiasP                               |(no pin, node is VMasterBiasP)             
+rx                                         |(no pin, node is rx)                       
+CoarseOneHotLowBiasEnBuffer                |(no pin, node is CoarseOneHotLowBiasEnBuff 
+PowerDown                                  |(no pin, node is PowerDownM)               
+nLowBiasInterfaceEnBuffer                  |(no pin, node is nLowBiasInterfaceEnBuffer 
+LowBiasInterfaceEnBuffer                   |(no pin, node is LowBiasInterfaceEnBuffer) 
+BufferP                                    |(no pin, node is BufferP)                  
+BufferN                                    |(no pin, node is BufferN)                  
+(no pin, node is /BiasMasternCoarse/Coarse |GndA                                       
+BiasCB[7],BiasCB[6],BiasCB[5],BiasCB[4],Bi |(no matching pin)                          
+FineCodeBuffer[7],FineCodeBuffer[6],FineCo |(no matching pin)                          
+CoarseOneHot_bit7[10],CoarseOneHot_bit7[9] |(no matching pin)                          
+nFineCodeBuffer[7],nFineCodeBuffer[6],nFin |(no matching pin)                          
+CoarseOneHotBuffer[7],CoarseOneHotBuffer[6 |(no matching pin)                          
+LowBiasInterfaceEn[10],LowBiasInterfaceEn[ |(no matching pin)                          
+nLowBiasInterfaceEn[10],nLowBiasInterfaceE |(no matching pin)                          
+CoarseOneHotLowBiasEn[10],CoarseOneHotLowB |(no matching pin)                          
+BIT0[10],BIT0[9],BIT0[8],BIT0[7],BIT0[6],B |(no matching pin)                          
+PowerDown[10],PowerDown[9],PowerDown[8],Po |(no matching pin)                          
+NBiasEn[10],NBiasEn[9],NBiasEn[8],NBiasEn[ |(no matching pin)                          
+PBiasEn[10],PBiasEn[9],PBiasEn[8],PBiasEn[ |(no matching pin)                          
+BiasDisable[10],BiasDisable[9],BiasDisable |(no matching pin)                          
+FineCode_bit0[10],FineCode_bit0[9],FineCod |(no matching pin)                          
+FineCode_bit1[10],FineCode_bit1[9],FineCod |(no matching pin)                          
+FineCode_bit2[10],FineCode_bit2[9],FineCod |(no matching pin)                          
+FineCode_bit3[10],FineCode_bit3[9],FineCod |(no matching pin)                          
+FineCode_bit4[10],FineCode_bit4[9],FineCod |(no matching pin)                          
+FineCode_bit5[10],FineCode_bit5[9],FineCod |(no matching pin)                          
+FineCode_bit6[10],FineCode_bit6[9],FineCod |(no matching pin)                          
+FineCode_bit7[10],FineCode_bit7[9],FineCod |(no matching pin)                          
+nFineCode_bit0[10],nFineCode_bit0[9],nFine |(no matching pin)                          
+nFineCode_bit1[10],nFineCode_bit1[9],nFine |(no matching pin)                          
+nFineCode_bit2[10],nFineCode_bit2[9],nFine |(no matching pin)                          
+nFineCode_bit3[10],nFineCode_bit3[9],nFine |(no matching pin)                          
+nFineCode_bit4[10],nFineCode_bit4[9],nFine |(no matching pin)                          
+nFineCode_bit5[10],nFineCode_bit5[9],nFine |(no matching pin)                          
+nFineCode_bit7[10],nFineCode_bit7[9],nFine |(no matching pin)                          
+CoarseOneHot_bit0[10],CoarseOneHot_bit0[9] |(no matching pin)                          
+CoarseOneHot_bit1[10],CoarseOneHot_bit1[9] |(no matching pin)                          
+CoarseOneHot_bit2[10],CoarseOneHot_bit2[9] |(no matching pin)                          
+CoarseOneHot_bit3[10],CoarseOneHot_bit3[9] |(no matching pin)                          
+CoarseOneHot_bit4[10],CoarseOneHot_bit4[9] |(no matching pin)                          
+CoarseOneHot_bit5[10],CoarseOneHot_bit5[9] |(no matching pin)                          
+CoarseOneHot_bit6[10],CoarseOneHot_bit6[9] |(no matching pin)                          
+PadBias[10],PadBias[9],PadBias[8],PadBias[ |(no matching pin)                          
+PadBias[10],PadBias[9],PadBias[8],PadBias[ |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBranchnMasterx11 and BiasBranchnMasterx11 altered to match.
+Device classes BiasBranchnMasterx11 and BiasBranchnMasterx11 are equivalent.
+
+Final result: Top level cell failed pin matching.
+
+The following cells had property errors:
+ BiasBuffers
+ BiasCoarseSel8to1
