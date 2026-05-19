@@ -1,0 +1,4 @@
+Error: Could not find include file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/PixelSourceFollower.spice
+    While reading tb_PixelPhotoreceptor_dc.spice
+
+ERROR: fatal error in ngspice, exit(1)

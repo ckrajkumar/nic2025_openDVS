@@ -1,0 +1,37 @@
+* NGSPICE file created from dyn_comp.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_ML4XRG D S G VSUBS
+X0 S G D VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_KDZMJM D S G w_n144_n198#
+X0 S G D w_n144_n198# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9ZWGZ9 D S G VSUBS
+X0 S G D VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt dyn_comp gnd
+Xsky130_fd_pr__nfet_01v8_ML4XRG_0 voutp gnd voutn VSUBS sky130_fd_pr__nfet_01v8_ML4XRG
+Xsky130_fd_pr__nfet_01v8_ML4XRG_1 gnd voutn voutp VSUBS sky130_fd_pr__nfet_01v8_ML4XRG
+Xsky130_fd_pr__pfet_01v8_KDZMJM_0 sky130_fd_pr__pfet_01v8_KDZMJM_3/S voutn voutp w_752_n920#
++ sky130_fd_pr__pfet_01v8_KDZMJM
+XXMmirr3 XMmirr3/D vdd vbias_n w_752_n920# sky130_fd_pr__pfet_01v8_KDZMJM
+Xsky130_fd_pr__pfet_01v8_KDZMJM_1 vdd sky130_fd_pr__pfet_01v8_KDZMJM_1/S vbias_n w_752_n920#
++ sky130_fd_pr__pfet_01v8_KDZMJM
+Xsky130_fd_pr__pfet_01v8_KDZMJM_2 voutp sky130_fd_pr__pfet_01v8_KDZMJM_3/S voutn w_752_n920#
++ sky130_fd_pr__pfet_01v8_KDZMJM
+Xsky130_fd_pr__pfet_01v8_KDZMJM_3 vdd sky130_fd_pr__pfet_01v8_KDZMJM_3/S vbias_p w_752_n920#
++ sky130_fd_pr__pfet_01v8_KDZMJM
+XXsky130_fd_pr__nfet_01v8_9ZWGZ9_1 voutn gnd sky130_fd_pr__pfet_01v8_KDZMJM_1/S VSUBS
++ sky130_fd_pr__nfet_01v8_9ZWGZ9
+Xsky130_fd_pr__nfet_01v8_9ZWGZ9_0 sky130_fd_pr__pfet_01v8_KDZMJM_1/S sky130_fd_pr__nfet_01v8_9ZWGZ9_2/D
++ vp VSUBS sky130_fd_pr__nfet_01v8_9ZWGZ9
+Xsky130_fd_pr__nfet_01v8_9ZWGZ9_1 gnd sky130_fd_pr__nfet_01v8_9ZWGZ9_2/D vbias_n VSUBS
++ sky130_fd_pr__nfet_01v8_9ZWGZ9
+Xsky130_fd_pr__nfet_01v8_9ZWGZ9_2 sky130_fd_pr__nfet_01v8_9ZWGZ9_2/D XMmirr3/D Vm
++ VSUBS sky130_fd_pr__nfet_01v8_9ZWGZ9
+Xsky130_fd_pr__nfet_01v8_9ZWGZ9_3 gnd voutp XMmirr3/D VSUBS sky130_fd_pr__nfet_01v8_9ZWGZ9
+.ends
+

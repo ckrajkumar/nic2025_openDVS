@@ -1,0 +1,101 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-12_15-02-24/parameters/op_sweep_code/run_0001/tb_BiasBranchnMasterx1_op.sch
+**.subckt tb_BiasBranchnMasterx1_op
+Vgnd ?1 gnd ?1 GND!  0
+.save I( ?1 Vgnd )
+**** end_element
+Vvdd ?1 vdd ?1 GND!  'xvdd'
+.save I( ?1 Vvdd )
+**** end_element
+VpowerDown ?1 PowerDown ?1 gnd  'xpowerdown*xvdd'
+.save I( ?1 VpowerDown )
+**** end_element
+**** spice_prefix X
+MnMeasOut ?1 drain_nMeasOut ?1 vout ?1 gnd ?1 gnd  sky130_fd_pr__nfet_01v8 L=6 W=6
++ nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 
++ mult=1 m=1
+**** end_element
+Vmeas_Iout_nmos ?1 vdd ?1 drain_nMeasOut  0
+.save I( ?1 Vmeas_Iout_nmos )
+**** end_element
+**** spice_prefix X
+MpMeasOut ?1 drain_pMeasOut ?1 vout ?1 vdd ?1 vdd  sky130_fd_pr__pfet_01v8 L=3 W=6
++ nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 
++ mult=2 m=2
+**** end_element
+Vmeas_Iout_pmos ?1 drain_pMeasOut ?1 gnd  0
+.save I( ?1 Vmeas_Iout_pmos )
+**** end_element
+VbiasEnabled ?1 BiasEnable ?1 gnd  'xBiasEnabled*xvdd'
+**** end_element
+VNBiasEn ?1 NBiasEn ?1 gnd  'xNBias*xvdd'
+**** end_element
+xBias ?1 vdd ?1 gnd ?1 PowerDown ?8 BiasCB[7],BiasCB[6],BiasCB[5],BiasCB[4],BiasCB[3],BiasCB[2],BiasCB[1],BiasCB[0] ?1 BufferN ?1 BufferP ?1 VMasterBiasN ?1 VMasterBiasP ?1 vout ?1 IR ?8 Coarse7,Coarse6,Coarse5,Coarse4,Coarse3,Coarse2,Coarse1,Coarse0 ?1 LowBiasInterfaceEn ?1 nLowBiasInterfaceEn ?8 FineBit7,FineBit6,FineBit5,FineBit4,FineBit3,FineBit2,FineBit1,FineBit0 ?8 nFineBit7,nFineBit6,nFineBit5,nFineBit4,nFineBit3,nFineBit2,nFineBit1,nFineBit0 ?1 CoarseOneHotLowBiasEn ?1 BIT0 ?1 NBiasEn ?1 PBiasEn ?1 BiasDisable ?8 BCoarse7,BCoarse6,BCoarse5,BCoarse4,BCoarse3,BCoarse2,BCoarse1,BCoarse0 ?1 LowBiasInterfaceEnBuffer ?1 nLowBiasInterfaceEnBuffer ?8 BFineBit7,BFineBit6,BFineBit5,BFineBit4,BFineBit3,BFineBit2,BFineBit1,BFineBit0 ?8 nBFineBit7,nBFineBit6,nBFineBit5,nBFineBit4,nBFineBit3,nBFineBit2,nBFineBit1,nBFineBit0 ?1 CoarseOneHotLowBiasEnBuffer ?1 gnd  BiasBranchnMasterx1
+**** end_element
+* noconn BiasCB[7:0]
+**** end_element
+* noconn BufferN
+**** end_element
+* noconn BufferP
+**** end_element
+* noconn VMasterBiasN
+**** end_element
+* noconn VMasterBiasP
+**** end_element
+R1 ?1 IR ?1 gnd  'xIR' m=1
+**** end_element
+VBFineBit0 ?1 BFineBit0 ?1 gnd  'xFineBitBuffer0*xvdd'
+.save I( ?1 VBFineBit0 )
+**** end_element
+VBFineBit1 ?1 BFineBit1 ?1 gnd  'xFineBitBuffer1*xvdd'
+.save I( ?1 VBFineBit1 )
+**** end_element
+VBFineBit2 ?1 BFineBit2 ?1 gnd  'xFineBitBuffer2*xvdd'
+.save I( ?1 VBFineBit2 )
+**** end_element
+VBFineBit3 ?1 BFineBit3 ?1 gnd  'xFineBitBuffer3*xvdd'
+.save I( ?1 VBFineBit3 )
+**** end_element
+VBFineBit4 ?1 BFineBit4 ?1 gnd  'xFineBitBuffer4*xvdd'
+.save I( ?1 VBFineBit4 )
+**** end_element
+VBFineBit5 ?1 BFineBit5 ?1 gnd  'xFineBitBuffer5*xvdd'
+.save I( ?1 VBFineBit5 )
+**** end_element
+VBFineBit6 ?1 BFineBit6 ?1 gnd  'xFineBitBuffer6*xvdd'
+.save I( ?1 VBFineBit6 )
+**** end_element
+VBFineBit7 ?1 BFineBit7 ?1 gnd  'xFineBitBuffer7*xvdd'
+.save I( ?1 VBFineBit7 )
+**** end_element
+E1 ?1 nBFineBit7 ?1 vdd ?1 BFineBit7 ?1 gnd  -1
+**** end_element
+E2 ?1 nBFineBit6 ?1 vdd ?1 BFineBit6 ?1 gnd  -1
+**** end_element
+E3 ?1 nBFineBit5 ?1 vdd ?1 BFineBit5 ?1 gnd  -1
+**** end_element
+E4 ?1 nBFineBit4 ?1 vdd ?1 BFineBit4 ?1 gnd  -1
+**** end_element
+E5 ?1 nBFineBit3 ?1 vdd ?1 BFineBit3 ?1 gnd  -1
+**** end_element
+E6 ?1 nBFineBit2 ?1 vdd ?1 BFineBit2 ?1 gnd  -1
+**** end_element
+E7 ?1 nBFineBit1 ?1 vdd ?1 BFineBit1 ?1 gnd  -1
+**** end_element
+E8 ?1 nBFineBit0 ?1 vdd ?1 BFineBit0 ?1 gnd  -1
+**** end_element
+VFineBit8 ?1 FineBit0 ?1 gnd  'xFineBit0*xvdd'
+.save I( ?1 VFineBit8 )
+**** end_element
+VFineBit9 ?1 FineBit1 ?1 gnd  'xFineBit1*xvdd'
+.save I( ?1 VFineBit9 )
+**** end_element
+VFineBit10 ?1 FineBit2 ?1 gnd  'xFineBit2*xvdd'
+.save I( ?1 VFineBit10 )
+**** end_element
+VFineBit11 ?1 FineBit3 ?1 gnd  'xFineBit3*xvdd'
+.save I( ?1 VFineBit11 )
+**** end_element
+VFineBit12 ?1 FineBit4 ?1 gnd  'xFineBit4*xvdd'
+.save I( ?1 VFineBit12 )

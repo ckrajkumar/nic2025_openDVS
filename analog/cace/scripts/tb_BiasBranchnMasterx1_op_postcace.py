@@ -13,9 +13,24 @@ from bokeh.layouts import layout,grid
 run_names = []
 #run_name = 'RUN_2025-10-29_20-16-25'
 #run_name = 'RUN_2025-10-29_21-37-14'
-run_names.append('RUN_2025-10-30_11-03-21') # SVT finediv
-run_names.append('RUN_2025-10-30_11-15-53') # LVT  finediv
-run_names.append('RUN_2025-10-30_12-32-17') # HVT finediv
+#run_names.append('RUN_2025-10-30_11-03-21') # SVT finediv
+#run_names.append('RUN_2025-10-30_11-15-53') # LVT  finediv
+#run_names.append('RUN_2025-10-30_12-32-17') # HVT finediv
+#run_names.append('RUN_2026-05-07_04-52-57') # LVT  finediv
+#run_names.append('RUN_2026-05-07_11-26-07') # omowuyi edits
+#run_names.append('RUN_2026-05-07_12-13-47') #v1 STD pmos mirror
+#run_names.append('RUN_2026-05-07_14-44-45') #v2 enlarge nmos L change pmos hvt to lvt
+#run_names.append('RUN_2026-05-07_15-30-13') #v3 enlarge pmos back to 8*8/0.5
+#run_names.append('RUN_2026-05-07_16-44-29') #v4 enlarge pmos back to 
+#run_names.append('RUN_2026-05-07_17-30-06') #v5 back to lvt
+#run_names.append('RUN_2026-05-08_10-08-37') #v6 lvt switches in biasdividerfinecell
+#run_names.append('RUN_2026-05-08_10-31-46') #v7 standadn pmos
+#run_names.append('RUN_2026-05-08_11-16-42') #v8 new coarsecode
+#run_names.append('RUN_2026-05-08_11-42-52') #v9 adjusted coarse code
+#run_names.append('RUN_2026-05-08_12-13-54') #v10 fixed error when model libraries where lvt but symbol was standard, now all standard
+#run_names.append('RUN_2026-05-08_13-29-30') #v11 changed the switch from hvt to lvt in pmos low current side
+#run_names.append('RUN_2026-05-08_14-02-05') #v12 lvt standard
+run_names.append('RUN_2026-05-11_11-45-18') #v13 lvt standard
 
 measfile_name = 'tb_BiasBranchnMasterx1_op'
 measnames_list=['coarse_code',
@@ -74,7 +89,7 @@ def parse_run_folders(run_name):
     """Parse run folders and extract measurement data into a pandas DataFrame"""
     data_rows = []
     
-    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+    run_directory = '/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/' + run_name
     # Find all run folders in the sweep directory
     sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
     run_folders = glob.glob(os.path.join(sweep_dir, 'run_*'))
@@ -161,7 +176,7 @@ def plot_iout_vs_fine_code(df,run_name):
     #p_list[-1].legend.click_policy = "hide"
     
     # Save plot
-    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+    run_directory = '/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/' + run_name
     sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
     outfile_name = f"{sweep_dir}/iout_vs_fine_code.html"
     output_file(outfile_name)
@@ -209,7 +224,7 @@ def plot_vdsat_vs_fine_code(df, vdsat_var,run_name):
         p_list[-1].add_tools(hover_list[-1])
     
     # Save plot
-    run_directory = '/home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/runs/' + run_name
+    run_directory = '/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/' + run_name
     sweep_dir = os.path.join(run_directory, 'parameters', 'op_sweep_code')
     outfile_name = f"{sweep_dir}/{vdsat_var}_vs_fine_code.html"
     output_file(outfile_name)

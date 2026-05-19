@@ -1,0 +1,113 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1778768236
+<< metal2 >>
+rect 538 3160 590 3212
+rect 5286 3160 5338 3212
+rect 538 3080 590 3132
+rect 5286 3080 5338 3132
+rect 538 2824 590 3052
+rect 5286 2824 5338 3052
+rect 538 2744 590 2796
+rect 5286 2744 5338 2796
+rect 538 2664 590 2716
+rect 5286 2664 5338 2716
+<< metal3 >>
+rect 2590 5278 2656 5338
+rect 2716 5278 2782 5338
+rect 2842 5278 2908 5338
+rect 2968 5278 3034 5338
+rect 3094 5278 3160 5338
+rect 3220 5278 3286 5338
+rect 568 5102 634 5166
+rect 694 5102 760 5166
+rect 5116 5106 5182 5166
+rect 5242 5106 5308 5166
+rect 568 366 634 820
+rect 694 366 760 810
+rect 2590 538 2656 598
+rect 2716 538 2782 598
+rect 2842 538 2908 598
+rect 2968 538 3034 598
+rect 3094 538 3160 598
+rect 3220 538 3286 598
+rect 5116 366 5182 779
+rect 5242 366 5308 796
+<< metal4 >>
+rect 1759 5172 4117 5504
+rect 1759 372 4117 704
+use openDVS_pixel2x2  openDVS_pixel2x2_0
+timestamp 1778768236
+transform 1 0 4121 0 1 2974
+box -4121 -2974 1755 2902
+<< labels >>
+flabel metal4 s 1759 372 4117 704 0 FreeSans 480 0 0 0 VDD
+port 1 nsew
+flabel metal4 s 1759 5172 4117 5504 0 FreeSans 480 0 0 0 VDD
+port 1 nsew
+flabel metal4 s 2979 372 2979 372 0 FreeSans 500 0 0 0 VDD
+flabel metal4 s 2979 5504 2979 5504 0 FreeSans 500 0 0 0 VDD
+flabel metal4 s 4087 5474 4087 5474 0 FreeSans 500 270 0 0 VDD
+flabel metal4 s 4087 674 4087 674 0 FreeSans 500 270 0 0 VDD
+flabel metal3 s 2590 538 2656 598 0 FreeSans 500 0 0 0 DiffBn
+port 2 nsew
+flabel metal3 s 2716 538 2782 598 0 FreeSans 500 0 0 0 OffBn
+port 3 nsew
+flabel metal3 s 2842 538 2908 598 0 FreeSans 500 0 0 0 PrSFBp
+port 4 nsew
+flabel metal3 s 2968 538 3034 598 0 FreeSans 500 0 0 0 PrBp
+port 5 nsew
+flabel metal3 s 3094 538 3160 598 0 FreeSans 500 0 0 0 RefrBp
+port 6 nsew
+flabel metal3 s 3220 538 3286 598 0 FreeSans 500 0 0 0 OnBn
+port 7 nsew
+flabel metal3 s 5116 366 5182 426 0 FreeSans 500 0 0 0 colRst1
+port 8 nsew
+flabel metal3 s 5242 366 5308 426 0 FreeSans 500 0 0 0 readLine1
+port 9 nsew
+flabel metal3 s 3220 5278 3286 5338 0 FreeSans 500 0 0 0 OnBn
+port 7 nsew
+flabel metal3 s 3094 5278 3160 5338 0 FreeSans 500 0 0 0 RefrBp
+port 6 nsew
+flabel metal3 s 2968 5278 3034 5338 0 FreeSans 500 0 0 0 PrBp
+port 5 nsew
+flabel metal3 s 2842 5278 2908 5338 0 FreeSans 500 0 0 0 PrSFBp
+port 4 nsew
+flabel metal3 s 2716 5278 2782 5338 0 FreeSans 500 0 0 0 OffBn
+port 3 nsew
+flabel metal3 s 2590 5278 2656 5338 0 FreeSans 500 0 0 0 DiffBn
+port 2 nsew
+flabel metal3 s 5242 5106 5308 5166 0 FreeSans 500 0 0 0 readLine1
+port 9 nsew
+flabel metal3 s 5116 5106 5182 5166 0 FreeSans 500 0 0 0 colRst1
+port 8 nsew
+flabel metal3 s 568 366 634 430 0 FreeSans 500 0 0 0 readLine0
+port 10 nsew
+flabel metal3 s 694 366 760 430 0 FreeSans 500 0 0 0 colRst0
+port 11 nsew
+flabel metal3 s 694 5102 760 5166 0 FreeSans 500 0 0 0 colRst0
+port 11 nsew
+flabel metal3 s 568 5102 634 5166 0 FreeSans 500 0 0 0 readLine0
+port 10 nsew
+flabel metal2 s 5286 2744 5338 2796 0 FreeSans 500 0 0 0 rowReadON1
+port 13 nsew
+flabel metal2 s 5286 2664 5338 2716 0 FreeSans 500 0 0 0 rowReadOFF1
+port 14 nsew
+flabel metal2 s 5286 3160 5338 3212 0 FreeSans 500 0 0 0 rowReadOFF0
+port 15 nsew
+flabel metal2 s 5286 3080 5338 3132 0 FreeSans 500 0 0 0 rowReadON0
+port 16 nsew
+flabel metal2 s 5286 2824 5338 3052 0 FreeSans 500 0 0 0 GND
+port 17 nsew
+flabel metal2 s 538 2824 590 3052 0 FreeSans 500 0 0 0 GND
+port 17 nsew
+flabel metal2 s 538 2664 590 2716 0 FreeSans 500 0 0 0 rowReadOFF1
+port 14 nsew
+flabel metal2 s 538 2744 590 2796 0 FreeSans 500 0 0 0 rowReadON1
+port 13 nsew
+flabel metal2 s 538 3080 590 3132 0 FreeSans 500 0 0 0 rowReadON0
+port 16 nsew
+flabel metal2 s 538 3160 590 3212 0 FreeSans 500 0 0 0 rowReadOFF0
+port 15 nsew
+<< end >>

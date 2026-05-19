@@ -1,0 +1,7 @@
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Traceback (most recent call last):
+  File "/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/scripts/tb_BiasBranchnMasterx1_op.py", line 46, in <module>
+    coarse_bit[7] = rawfile.get_trace('v(Coarse7)').get_wave(steps[0])[0]/vdd
+    ~~~~~~~~~~^^^
+IndexError: index 7 is out of bounds for axis 0 with size 7

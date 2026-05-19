@@ -1,0 +1,379 @@
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /home/alienfalcon/projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_opendvs/analog/runs/run_2026-05-07_06-11-54/parameters/op_sweep_code/run_059/tb_biasbranchnmasterx1_op.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd!                                             -0                    0
+vdd                                             1.8                  nan
+powerdown                                         0                 -nan
+drain_nmeasout                                  1.8                    0 *
+vout                                           -0.1                  nan
+drain_pmeasout                                    0                    0
+biasenable                                      1.8                  nan
+nbiasen                                           0                  nan
+xbias.xbiasbranch.xcoarse2fine.highbiasdiogate           0.00686728                  nan
+nlowbiasinterfaceen                             1.8                  nan
+xbias.xbiasbranch.xcoarse2fine.highbiasdiodrain             0.563698                    0 *
+xbias.xbiasbranch.xcoarse2fine.highbiasmirr             0.567302                    0 *
+lowbiasinterfaceen                                0                 -nan
+xbias.xbiasbranch.xcoarse2fine.net1             -0.37597                    0 *
+xbias.xbiasbranch.iindiv                  -0.306539                    0 *
+xbias.xbiasbranch.biasvgate                -3.84848                  nan
+xbias.xbiasbranch.xcoarse2fine.lowbiasdioint          -0.00474801                    0 *
+xbias.xbiasbranch.xcoarse2fine.lowbiasdiogate           -0.0648148                  nan
+xbias.xbiasbranch.xcoarse2fine.lowbiasmirrint             0.224691                    0 *
+xbias.xbiasbranch.xcoarse2fine.lowbiasmirr             0.411676                    0 *
+xbias.xbiasbranch.xcoarse2fine.net2              1.79999                    0 *
+xbias.xbiasbranch.xcoarse2fine.net3              1.79999                    0 *
+xbias.xbiasbranch.xcoarse2fine.net4              1.79994                    0 *
+xbias.xbiasbranch.xcoarse2fine.net5              1.79994                    0 *
+xbias.xbiasbranch.xcoarse2fine.net6              1.79994                    0 *
+xbias.xbiasbranch.xcoarse2fine.net7              1.79994                    0 *
+xbias.xbiasbranch.xcoarse2fine.net8              1.79994                    0 *
+xbias.xbiasbranch.xdivfine.idiv0             -2.66654                    0 *
+xbias.xbiasbranch.xdivfine.idiv1             -2.60303                    0 *
+xbias.xbiasbranch.xdivfine.xdiv0.net1             -2.60094                    0 *
+xbias.xbiasbranch.xdivfine.xdiv0.net2             -2.02251                    0 *
+xbias.xbiasbranch.xdivfine.termdio                    3                 -nan
+finebit0                                          0                  nan
+xbias.xbiasbranch.ioutdiv                  -10.5217                 -nan
+nfinebit0                                       1.8                  nan
+xbias.xbiasbranch.xdivfine.idiv2              -2.5508                    0 *
+xbias.xbiasbranch.xdivfine.xdiv1.net1             -2.54907                    0 *
+xbias.xbiasbranch.xdivfine.xdiv1.net2             -1.97077                    0 *
+finebit1                                          0                  nan
+nfinebit1                                       1.8                  nan
+xbias.xbiasbranch.xdivfine.idiv3             -2.50636                    0 *
+xbias.xbiasbranch.xdivfine.xdiv2.net1             -2.50488                    0 *
+xbias.xbiasbranch.xdivfine.xdiv2.net2             -1.92665                    0 *
+finebit2                                        1.8                  nan
+nfinebit2                                         0                  nan
+xbias.xbiasbranch.xdivfine.idiv4             -2.46776                    0 *
+xbias.xbiasbranch.xdivfine.xdiv3.net1             -2.46646                    0 *
+xbias.xbiasbranch.xdivfine.xdiv3.net2             -1.88829                    0 *
+finebit3                                        1.8                  nan
+nfinebit3                                         0                  nan
+xbias.xbiasbranch.xdivfine.idiv5             -2.43379                    0 *
+xbias.xbiasbranch.xdivfine.xdiv4.net1             -2.43263                    0 *
+xbias.xbiasbranch.xdivfine.xdiv4.net2             -1.85452                    0 *
+finebit4                                          0                  nan
+nfinebit4                                       1.8                  nan
+xbias.xbiasbranch.xdivfine.idiv6             -2.40358                    0 *
+xbias.xbiasbranch.xdivfine.xdiv5.net1             -2.40256                    0 *
+xbias.xbiasbranch.xdivfine.xdiv5.net2              -1.8245                    0 *
+finebit5                                          0                  nan
+nfinebit5                                       1.8                  nan
+xbias.xbiasbranch.xdivfine.idiv7             -2.37653                    0 *
+xbias.xbiasbranch.xdivfine.xdiv6.net1             -2.37563                    0 *
+xbias.xbiasbranch.xdivfine.xdiv6.net2             -1.79762                    0 *
+finebit6                                          0                  nan
+nfinebit6                                       1.8                  nan
+xbias.xbiasbranch.xdivfine.xdiv7.net1             -2.35135                    0 *
+xbias.xbiasbranch.xdivfine.xdiv7.net2             -1.77339                    0 *
+finebit7                                        1.8                  nan
+nfinebit7                                         0                  nan
+xbias.xbiasbranch.xbuffs.nbias                    2                 -nan
+xbias.xbiasbranch.xbuffs.net1              -8.97524                    0 *
+lowbiasbufen                                    1.8                  nan
+nlowbiasbufen                                     0                 -nan
+xbias.xbiasbranch.xbuffs.nmirrbuffdrain             -8.58084                    0 *
+xbias.xbiasbranch.xbuffs.net2             -0.366217                    0 *
+biasdisable                                       0                 -nan
+xbias.xbiasbranch.xbuffs.ncopy              0.71875                  nan
+buffern                                    -12.0294                 -nan
+xbias.xbiasbranch.xbuffs.pbias             -1.76829                  nan
+xbias.xbiasbranch.xbuffs.net3              0.981614                    0 *
+xbias.xbiasbranch.xbuffs.net4             -0.265656                    0 *
+xbias.xbiasbranch.xbuffs.pmirrbuffdrain             0.507429                    0 *
+pbiasen                                         1.8                 -nan
+bufferp                                     6.44554                  nan
+xbias.xbiasbranch.xbuffs.net5              0.498244                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net1              1.79727                    0 *
+coarse0                                           0                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.mirrb0_drain            -0.271174                    0 *
+biascb[0]                                     0.125                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.net2              1.79823                    0 *
+coarse1                                           0                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.mirrb1_drain            -0.480884                    0 *
+biascb[1]                              4.05635e-281                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.net3              1.79823                    0 *
+coarse2                                           0                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.mirrb2_drain            0.0383704                    0 *
+biascb[2]                                  0.477736                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.net4             0.098219                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net5            0.0975658                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net6            0.0973281                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net7            0.0971192                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net8            0.0965816                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net9            0.0971982                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net10             0.107861                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net11            -0.433914                    0 *
+coarse3                                         1.8                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.mirrb3_drain              2.81463                    0 *
+biascb[3]                                   8.52339                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.net12              6.14802                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net13              6.17588                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net14              6.21971                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net15              6.27541                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net16              6.34027                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net17              6.41263                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net18              6.49168                    0 *
+coarseonehotlowbiasen                             0                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.mirrb4o5o6o7_drain            -0.516606                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.mirrb4o5o6o7_gate                 0.25                 -nan
+xbias.xbiasbranch.xcoarsesel8to1.net19            -0.619212                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net25              2.34555                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net24              1.08537                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net23              2.00107                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net22            -0.345971                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net21            -0.471714                    0 *
+xbias.xbiasbranch.xcoarsesel8to1.net20            -0.564101                    0 *
+coarse7                                           0                 -nan
+biascb[7]                                       inf                 -nan
+coarse6                                           0                 -nan
+biascb[6]                                   1.40943                 -nan
+coarse5                                           0                 -nan
+biascb[5]                                  -1.57752                 -nan
+coarse4                                           0                 -nan
+biascb[4]                                  -0.87083                 -nan
+vmasterbiasn                               0.238867                 -nan
+xbias.xbiasmasterncoarse.xbiasmasterbias.vcasc              1.52582                 -nan
+vmasterbiasp                               0.668434                  nan
+xbias.xbiasmasterncoarse.xbiasmasterbias.net1             0.236783                    0 *
+ir                                       0.00743807                    0 *
+xbias.xbiasmasterncoarse.xbiasmasterbias.net2             0.237884                    0 *
+xbias.xbiasmasterncoarse.coarse1             -2.30348                  nan
+xbias.xbiasmasterncoarse.xbiasmasterbias.net3             0.284836                    0 *
+xbias.xbiasmasterncoarse.coarse2        -3.16385e+280                  nan
+xbias.xbiasmasterncoarse.xbiasmasterbias.bootstrap              3.57885                  nan
+xbias.xbiasmasterncoarse.xmbdiv.x1.vout0        -3.16385e+280                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.x1.vout4                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.x1.vout1        -3.16385e+280                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.x1.vout2                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.x1.vout3                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.xmult.vin               -1.547                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.xmult.vout0             -1.44504                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s17             0.160883                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s27              7.44456                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s37             -1.70019                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s16             0.141199                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s15             0.129051                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s14             0.120017                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s13             0.112642                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s12             0.107498                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s11             0.114347                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s26               7.2501                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s25              7.10012                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s24              6.97259                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s23               6.8596                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s22              6.75735                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s21              6.66368                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s36             -1.76584                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s35             -1.81288                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s34             -1.90546                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s33             -2.08453                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s32             -2.32245                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s31             -2.57652                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s47             -2.71393                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s46             -2.92764                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s45             -3.09604                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s44             -3.24494                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s43             -3.38192                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s42             -3.50658                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s41             -3.61402                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s57             0.340216                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s56             0.170649                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s55            0.0439854                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s54           -0.0763528                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s53            -0.201693                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s52            -0.328999                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s51             -0.45161                    0 *
+xbias.xbiasmasterncoarse.xmbdiv.s67                  inf                    0
+xbias.xbiasmasterncoarse.xmbdiv.s66                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.s65                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.s64                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.s63                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.s62                 -nan                    0
+xbias.xbiasmasterncoarse.xmbdiv.s61                 -nan                    0
+xbias.xbiasbuffer.xcoarse2fine.highbiasdiogate            -0.857143                  nan
+nlowbiasinterfaceenbuffer                       1.8                  nan
+xbias.xbiasbuffer.xcoarse2fine.highbiasdiodrain              1.21111                    0 *
+xbias.xbiasbuffer.xcoarse2fine.highbiasmirr              1.21491                    0 *
+lowbiasinterfaceenbuffer                          0                 -nan
+xbias.xbiasbuffer.xcoarse2fine.net1              1.64743                    0 *
+xbias.xbiasbuffer.iindiv                    1.56469                    0 *
+xbias.xbiasbuffer.biasvgate                  0.6875                  nan
+xbias.xbiasbuffer.xcoarse2fine.lowbiasdioint              5.66863                    0 *
+xbias.xbiasbuffer.xcoarse2fine.lowbiasdiogate                  5.5                  nan
+xbias.xbiasbuffer.xcoarse2fine.lowbiasmirrint              5.83554                    0 *
+xbias.xbiasbuffer.xcoarse2fine.lowbiasmirr              5.47433                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net2              1.79999                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net3              1.79999                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net4              1.79994                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net5              1.79994                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net6              1.79994                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net7              1.79994                    0 *
+xbias.xbiasbuffer.xcoarse2fine.net8              1.79994                    0 *
+xbias.xbiasbuffer.xdivfine.idiv0             0.953671                    0 *
+xbias.xbiasbuffer.xdivfine.idiv1             0.991151                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv0.net1             0.959196                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv0.net2             0.565907                    0 *
+xbias.xbiasbuffer.xdivfine.termdio                  0.5                 -nan
+bfinebit0                                         0                  nan
+nbfinebit0                                      1.8                  nan
+xbias.xbiasbuffer.xdivfine.idiv2              1.02216                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv1.net1             0.990105                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv1.net2             0.582478                    0 *
+bfinebit1                                       1.8                  nan
+nbfinebit1                                        0                  nan
+xbias.xbiasbuffer.xdivfine.idiv3              1.05164                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv2.net1              1.01967                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv2.net2             0.604356                    0 *
+bfinebit2                                       1.8                  nan
+nbfinebit2                                        0                  nan
+xbias.xbiasbuffer.xdivfine.idiv4              1.08088                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv3.net1              1.04847                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv3.net2             0.630118                    0 *
+bfinebit3                                       1.8                  nan
+nbfinebit3                                        0                  nan
+xbias.xbiasbuffer.xdivfine.idiv5              1.11076                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv4.net1              1.07732                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv4.net2              0.65818                    0 *
+bfinebit4                                         0                  nan
+nbfinebit4                                      1.8                  nan
+xbias.xbiasbuffer.xdivfine.idiv6              1.14214                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv5.net1              1.10707                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv5.net2             0.688747                    0 *
+bfinebit5                                       1.8                  nan
+nbfinebit5                                        0                  nan
+xbias.xbiasbuffer.xdivfine.idiv7              1.17599                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv6.net1              1.13833                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv6.net2             0.722912                    0 *
+bfinebit6                                       1.8                  nan
+nbfinebit6                                        0                  nan
+xbias.xbiasbuffer.xdivfine.xdiv7.net1               1.1718                    0 *
+xbias.xbiasbuffer.xdivfine.xdiv7.net2             0.762889                    0 *
+bfinebit7                                         0                  nan
+nbfinebit7                                      1.8                  nan
+xbias.xbiasbuffer.xcoarsesel8to1.net1                  1.8                    0 *
+bcoarse0                                          0                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb0_drain            -0.271175                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net2             0.944263                    0 *
+bcoarse1                                        1.8                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb1_drain             0.423883                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net3                  1.8                    0 *
+bcoarse2                                          0                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb2_drain            0.0383704                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net4             0.098219                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net5            0.0975658                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net6            0.0973281                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net7            0.0971192                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net8            0.0965816                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net9            0.0971982                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net10             0.107861                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net11              1.79995                    0 *
+bcoarse3                                          0                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb3_drain              2.94895                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net12              6.28155                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net13              6.29687                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net14              6.32205                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net15              6.35675                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net16              6.40043                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net17              6.45241                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net18              6.51176                    0 *
+coarseonehotlowbiasenbuffer                       0                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb4o5o6o7_drain             0.689531                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.mirrb4o5o6o7_gate              2.07143                 -nan
+xbias.xbiasbuffer.xcoarsesel8to1.net19             0.163348                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net25            -0.590556                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net24            -0.387798                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net23            -0.180575                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net22          -0.00908202                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net21             0.100685                    0 *
+xbias.xbiasbuffer.xcoarsesel8to1.net20             0.150195                    0 *
+bcoarse7                                          0                 -nan
+bcoarse6                                          0                 -nan
+bcoarse5                                          0                 -nan
+bcoarse4                                          0                 -nan
+e22#branch                            -1.51565e+278                    0 *
+e21#branch                            -4.98598e+277                    0 *
+e20#branch                            -5.87464e+277                    0 *
+e19#branch                             4.91076e+276                    0 *
+e17#branch                             3.45475e+277                    0 *
+e16#branch                            -2.90383e+277                    0 *
+e15#branch                             4.82223e+276                    0 *
+e14#branch                             3.02838e+277                    0 *
+e13#branch                             1.33103e+277                    0 *
+e12#branch                             5.89615e+276                    0 *
+e11#branch                            -6.68829e+276                    0 *
+e10#branch                            -8.64213e+276                    0 *
+e9#branch                              1.78643e+277                    0 *
+e8#branch                             -9.29543e+276                    0 *
+e7#branch                              9.33081e+276                    0 *
+e6#branch                              2.87348e+276                    0 *
+e5#branch                             -1.97587e+277                    0 *
+e4#branch                              -1.6902e+276                    0 *
+e3#branch                             -3.09034e+277                    0 *
+e2#branch                             -3.27675e+277                    0 *
+e1#branch                               5.6346e+276                    0 *
+vlowbiasbufen3#branch                 -4.86148e+276                    0 *
+vlowbiasbufen2#branch                             0                    0
+vlowbiasinterfaceenbuffer#branch         -4.0594e+279                    0 *
+vlowbiasinterfaceen#branch            -9.27554e+278                    0 *
+vlowbiasbufen#branch                  -3.08729e+277                  1.8 *
+vbcoarse0#branch                                  0                    0
+vbcoarse1#branch                      -1.67583e+277                  1.8 *
+vbcoarse2#branch                       3.69998e+276                    0 *
+vbcoarse3#branch                      -1.07567e+277                    0 *
+vbcoarse4#branch                      -4.86214e+276                    0 *
+vbcoarse5#branch                       3.24147e+276                    0 *
+vbcoarse6#branch                       3.24143e+276                    0 *
+vbcoarse7#branch                               -nan                    0
+vcoarse0#branch                       -1.21049e+277                    0 *
+vcoarse1#branch                       -5.24668e+276                    0 *
+vcoarse2#branch                                   0                    0
+vcoarse3#branch                        1.11179e+278                  1.8 *
+vcoarse4#branch                        -2.8368e+276                    0 *
+vcoarse5#branch                        4.05257e+275                    0 *
+vcoarse6#branch                       -8.10515e+275                    0 *
+vcoarse7#branch                                -nan                    0
+vfinebit15#branch                     -5.07083e+276                  1.8 *
+vfinebit14#branch                     -2.77845e+277                    0 *
+vfinebit13#branch                      7.19027e+276                    0 *
+vfinebit12#branch                       1.2224e+277                    0 *
+vfinebit11#branch                      2.11269e+277                  1.8 *
+vfinebit10#branch                     -1.52111e+277                  1.8 *
+vfinebit9#branch                       -5.9307e+276                    0 *
+vfinebit8#branch                       2.28748e+277                    0 *
+vbfinebit7#branch                     -2.77179e+277                    0 *
+vbfinebit6#branch                     -3.09888e+276                  1.8 *
+vbfinebit5#branch                     -4.31011e+277                  1.8 *
+vbfinebit4#branch                       1.9614e+277                    0 *
+vbfinebit3#branch                     -4.22538e+276                  1.8 *
+vbfinebit2#branch                     -1.57744e+277                  1.8 *
+vbfinebit1#branch                     -4.22523e+276                  1.8 *
+vbfinebit0#branch                      1.43644e+276                    0 *
+vnbiasen#branch                       -1.09851e+277                    0 *
+vbiasenabled#branch                   -3.61971e+277                  1.8 *
+vmeas_iout_pmos#branch                   -0.0158677                    0 *
+vmeas_iout_nmos#branch                    0.0268356                    0 *
+vpowerdown#branch                                 0                    0
+vvdd#branch                           -6.31894e+280                  1.8 *
+vgnd#branch                            6.31894e+280                    0 *
+

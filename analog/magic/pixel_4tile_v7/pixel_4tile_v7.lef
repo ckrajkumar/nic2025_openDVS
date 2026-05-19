@@ -1,0 +1,2491 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO pixel_4tile
+  CLASS BLOCK ;
+  FOREIGN pixel_4tile ;
+  ORIGIN 0.940 0.005 ;
+  SIZE 1560.940 BY 1638.450 ;
+  PIN vdda1
+    ANTENNADIFFAREA 37975.105469 ;
+    PORT
+      LAYER met4 ;
+        RECT 368.795 50.390 380.585 52.050 ;
+    END
+  END vdda1
+  PIN array_col_top_right<8>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1438.365 1635.345 1439.135 1635.645 ;
+    END
+  END array_col_top_right<8>
+  PIN array_col_top_right<9>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1422.245 1635.345 1423.015 1635.645 ;
+    END
+  END array_col_top_right<9>
+  PIN array_col_top_right<12>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1390.365 1635.345 1391.135 1635.645 ;
+    END
+  END array_col_top_right<12>
+  PIN array_col_top_right<13>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1374.245 1635.345 1375.015 1635.645 ;
+    END
+  END array_col_top_right<13>
+  PIN array_col_top_right<16>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1342.365 1635.345 1343.135 1635.645 ;
+    END
+  END array_col_top_right<16>
+  PIN row_off_detect_bot<21>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 565.610 0.300 565.910 ;
+    END
+  END row_off_detect_bot<21>
+  PIN array_col_top_right<26>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1222.365 1635.345 1223.135 1635.645 ;
+    END
+  END array_col_top_right<26>
+  PIN row_off_detect_bot<22>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 544.530 0.300 544.830 ;
+    END
+  END row_off_detect_bot<22>
+  PIN detect_pulse_global_bot_left
+    ANTENNAGATEAREA 147.199997 ;
+    PORT
+      LAYER met3 ;
+        RECT 2.740 18.920 3.040 19.220 ;
+    END
+  END detect_pulse_global_bot_left
+  PIN row_on_detect_bot<5>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 758.730 0.300 759.030 ;
+    END
+  END row_on_detect_bot<5>
+  PIN row_off_detect_top<12>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1432.610 0.300 1432.910 ;
+    END
+  END row_off_detect_top<12>
+  PIN row_on_detect_top<13>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1430.570 0.300 1430.870 ;
+    END
+  END row_on_detect_top<13>
+  PIN detect_pulse_global_top_left
+    ANTENNAGATEAREA 147.199997 ;
+    PORT
+      LAYER met3 ;
+        RECT 2.740 1619.640 3.040 1619.940 ;
+    END
+  END detect_pulse_global_top_left
+  PIN row_on_detect_top<1>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1574.730 0.300 1575.030 ;
+    END
+  END row_on_detect_top<1>
+  PIN col_event_rst_top_right<40>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1057.595 1635.225 1057.895 1635.525 ;
+    END
+  END col_event_rst_top_right<40>
+  PIN col_event_rst_top_right<39>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1059.500 1635.225 1059.800 1635.525 ;
+    END
+  END col_event_rst_top_right<39>
+  PIN col_event_rst_top_right<38>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1081.595 1635.225 1081.895 1635.525 ;
+    END
+  END col_event_rst_top_right<38>
+  PIN col_event_rst_top_right<37>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1083.500 1635.225 1083.800 1635.525 ;
+    END
+  END col_event_rst_top_right<37>
+  PIN col_event_rst_top_right<36>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1105.595 1635.225 1105.895 1635.525 ;
+    END
+  END col_event_rst_top_right<36>
+  PIN col_event_rst_top_right<35>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1107.500 1635.225 1107.800 1635.525 ;
+    END
+  END col_event_rst_top_right<35>
+  PIN col_event_rst_top_right<34>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1129.595 1635.225 1129.895 1635.525 ;
+    END
+  END col_event_rst_top_right<34>
+  PIN col_event_rst_top_right<33>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1131.500 1635.225 1131.800 1635.525 ;
+    END
+  END col_event_rst_top_right<33>
+  PIN col_event_rst_top_right<27>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1203.500 1635.225 1203.800 1635.525 ;
+    END
+  END col_event_rst_top_right<27>
+  PIN col_event_rst_top_right<32>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1153.595 1635.225 1153.895 1635.525 ;
+    END
+  END col_event_rst_top_right<32>
+  PIN col_event_rst_top_right<26>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1225.595 1635.225 1225.895 1635.525 ;
+    END
+  END col_event_rst_top_right<26>
+  PIN col_event_rst_top_right<25>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1227.500 1635.225 1227.800 1635.525 ;
+    END
+  END col_event_rst_top_right<25>
+  PIN col_event_rst_top_right<24>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1249.595 1635.225 1249.895 1635.525 ;
+    END
+  END col_event_rst_top_right<24>
+  PIN col_event_rst_top_right<23>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1251.500 1635.225 1251.800 1635.525 ;
+    END
+  END col_event_rst_top_right<23>
+  PIN col_event_rst_top_right<22>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1273.595 1635.225 1273.895 1635.525 ;
+    END
+  END col_event_rst_top_right<22>
+  PIN col_event_rst_top_right<21>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1275.500 1635.225 1275.800 1635.525 ;
+    END
+  END col_event_rst_top_right<21>
+  PIN col_event_rst_top_right<20>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1297.595 1635.225 1297.895 1635.525 ;
+    END
+  END col_event_rst_top_right<20>
+  PIN col_event_rst_top_right<19>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1299.500 1635.225 1299.800 1635.525 ;
+    END
+  END col_event_rst_top_right<19>
+  PIN col_event_rst_top_right<18>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1321.595 1635.225 1321.895 1635.525 ;
+    END
+  END col_event_rst_top_right<18>
+  PIN col_event_rst_top_right<17>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1323.500 1635.225 1323.800 1635.525 ;
+    END
+  END col_event_rst_top_right<17>
+  PIN col_event_rst_top_right<16>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1345.595 1635.225 1345.895 1635.525 ;
+    END
+  END col_event_rst_top_right<16>
+  PIN col_event_rst_top_right<15>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1347.500 1635.225 1347.800 1635.525 ;
+    END
+  END col_event_rst_top_right<15>
+  PIN col_event_rst_top_right<14>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1369.595 1635.225 1369.895 1635.525 ;
+    END
+  END col_event_rst_top_right<14>
+  PIN col_event_rst_top_right<13>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1371.500 1635.225 1371.800 1635.525 ;
+    END
+  END col_event_rst_top_right<13>
+  PIN col_event_rst_top_right<12>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1393.595 1635.225 1393.895 1635.525 ;
+    END
+  END col_event_rst_top_right<12>
+  PIN col_event_rst_top_right<11>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1395.500 1635.225 1395.800 1635.525 ;
+    END
+  END col_event_rst_top_right<11>
+  PIN col_event_rst_top_right<10>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1417.595 1635.225 1417.895 1635.525 ;
+    END
+  END col_event_rst_top_right<10>
+  PIN col_event_rst_top_right<9>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1419.500 1635.225 1419.800 1635.525 ;
+    END
+  END col_event_rst_top_right<9>
+  PIN col_event_rst_top_right<8>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1441.595 1635.225 1441.895 1635.525 ;
+    END
+  END col_event_rst_top_right<8>
+  PIN col_event_rst_top_right<7>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1443.500 1635.225 1443.800 1635.525 ;
+    END
+  END col_event_rst_top_right<7>
+  PIN col_event_rst_top_right<6>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1465.595 1635.225 1465.895 1635.525 ;
+    END
+  END col_event_rst_top_right<6>
+  PIN col_event_rst_top_right<5>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1467.500 1635.225 1467.800 1635.525 ;
+    END
+  END col_event_rst_top_right<5>
+  PIN col_event_rst_top_right<4>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1489.595 1635.225 1489.895 1635.525 ;
+    END
+  END col_event_rst_top_right<4>
+  PIN col_event_rst_top_right<3>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1491.500 1635.225 1491.800 1635.525 ;
+    END
+  END col_event_rst_top_right<3>
+  PIN col_event_rst_top_right<2>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1513.595 1635.225 1513.895 1635.525 ;
+    END
+  END col_event_rst_top_right<2>
+  PIN col_event_rst_top_right<1>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1515.500 1635.225 1515.800 1635.525 ;
+    END
+  END col_event_rst_top_right<1>
+  PIN col_event_rst_top_right<0>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1537.595 1635.225 1537.895 1635.525 ;
+    END
+  END col_event_rst_top_right<0>
+  PIN col_event_rst_bot_right<63>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 771.500 0.245 771.800 0.545 ;
+    END
+  END col_event_rst_bot_right<63>
+  PIN col_event_rst_bot_right<62>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 793.595 1.580 793.895 1.880 ;
+    END
+  END col_event_rst_bot_right<62>
+  PIN col_event_rst_bot_right<61>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 795.500 1.580 795.800 1.880 ;
+    END
+  END col_event_rst_bot_right<61>
+  PIN col_event_rst_bot_right<60>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 817.595 1.580 817.895 1.880 ;
+    END
+  END col_event_rst_bot_right<60>
+  PIN col_event_rst_bot_right<59>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 819.500 1.580 819.800 1.880 ;
+    END
+  END col_event_rst_bot_right<59>
+  PIN col_event_rst_bot_right<58>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 841.595 1.580 841.895 1.880 ;
+    END
+  END col_event_rst_bot_right<58>
+  PIN col_event_rst_bot_right<57>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 843.500 1.580 843.800 1.880 ;
+    END
+  END col_event_rst_bot_right<57>
+  PIN col_event_rst_bot_right<56>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 865.595 1.580 865.895 1.880 ;
+    END
+  END col_event_rst_bot_right<56>
+  PIN col_event_rst_bot_right<55>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 867.500 1.580 867.800 1.880 ;
+    END
+  END col_event_rst_bot_right<55>
+  PIN col_event_rst_bot_right<54>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 889.595 1.580 889.895 1.880 ;
+    END
+  END col_event_rst_bot_right<54>
+  PIN col_event_rst_bot_right<53>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 891.500 1.580 891.800 1.880 ;
+    END
+  END col_event_rst_bot_right<53>
+  PIN col_event_rst_bot_right<52>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 913.595 1.580 913.895 1.880 ;
+    END
+  END col_event_rst_bot_right<52>
+  PIN col_event_rst_bot_right<51>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 915.500 1.580 915.800 1.880 ;
+    END
+  END col_event_rst_bot_right<51>
+  PIN col_event_rst_bot_right<50>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 937.595 1.580 937.895 1.880 ;
+    END
+  END col_event_rst_bot_right<50>
+  PIN col_event_rst_bot_right<49>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 939.500 1.580 939.800 1.880 ;
+    END
+  END col_event_rst_bot_right<49>
+  PIN col_event_rst_bot_right<48>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 961.595 1.580 961.895 1.880 ;
+    END
+  END col_event_rst_bot_right<48>
+  PIN col_event_rst_bot_right<47>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 963.500 1.580 963.800 1.880 ;
+    END
+  END col_event_rst_bot_right<47>
+  PIN col_event_rst_bot_right<46>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 985.595 1.580 985.895 1.880 ;
+    END
+  END col_event_rst_bot_right<46>
+  PIN col_event_rst_bot_right<45>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 987.500 1.580 987.800 1.880 ;
+    END
+  END col_event_rst_bot_right<45>
+  PIN col_event_rst_bot_right<44>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1009.595 1.580 1009.895 1.880 ;
+    END
+  END col_event_rst_bot_right<44>
+  PIN col_event_rst_bot_right<43>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1011.500 1.580 1011.800 1.880 ;
+    END
+  END col_event_rst_bot_right<43>
+  PIN col_event_rst_bot_right<42>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1033.595 1.580 1033.895 1.880 ;
+    END
+  END col_event_rst_bot_right<42>
+  PIN col_event_rst_bot_right<41>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1035.500 1.580 1035.800 1.880 ;
+    END
+  END col_event_rst_bot_right<41>
+  PIN col_event_rst_bot_right<40>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1057.595 1.580 1057.895 1.880 ;
+    END
+  END col_event_rst_bot_right<40>
+  PIN col_event_rst_bot_right<39>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1059.500 1.580 1059.800 1.880 ;
+    END
+  END col_event_rst_bot_right<39>
+  PIN col_event_rst_bot_right<38>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1081.595 1.580 1081.895 1.880 ;
+    END
+  END col_event_rst_bot_right<38>
+  PIN col_event_rst_bot_right<37>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1083.500 1.580 1083.800 1.880 ;
+    END
+  END col_event_rst_bot_right<37>
+  PIN col_event_rst_bot_right<36>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1105.595 1.580 1105.895 1.880 ;
+    END
+  END col_event_rst_bot_right<36>
+  PIN col_event_rst_bot_right<35>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1107.500 1.580 1107.800 1.880 ;
+    END
+  END col_event_rst_bot_right<35>
+  PIN col_event_rst_bot_right<34>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1129.595 1.580 1129.895 1.880 ;
+    END
+  END col_event_rst_bot_right<34>
+  PIN col_event_rst_bot_right<33>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1131.500 1.580 1131.800 1.880 ;
+    END
+  END col_event_rst_bot_right<33>
+  PIN col_event_rst_bot_right<32>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1153.595 1.580 1153.895 1.880 ;
+    END
+  END col_event_rst_bot_right<32>
+  PIN col_event_rst_bot_right<31>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1155.500 1.580 1155.800 1.880 ;
+    END
+  END col_event_rst_bot_right<31>
+  PIN col_event_rst_bot_right<30>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1177.595 1.580 1177.895 1.880 ;
+    END
+  END col_event_rst_bot_right<30>
+  PIN col_event_rst_bot_right<29>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1179.500 1.580 1179.800 1.880 ;
+    END
+  END col_event_rst_bot_right<29>
+  PIN col_event_rst_bot_right<28>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1201.595 1.580 1201.895 1.880 ;
+    END
+  END col_event_rst_bot_right<28>
+  PIN col_event_rst_bot_right<27>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1203.500 1.580 1203.800 1.880 ;
+    END
+  END col_event_rst_bot_right<27>
+  PIN col_event_rst_bot_right<26>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1225.595 1.580 1225.895 1.880 ;
+    END
+  END col_event_rst_bot_right<26>
+  PIN col_event_rst_bot_right<25>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1227.500 1.580 1227.800 1.880 ;
+    END
+  END col_event_rst_bot_right<25>
+  PIN col_event_rst_bot_right<24>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1249.595 1.580 1249.895 1.880 ;
+    END
+  END col_event_rst_bot_right<24>
+  PIN col_event_rst_bot_right<23>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1251.500 1.580 1251.800 1.880 ;
+    END
+  END col_event_rst_bot_right<23>
+  PIN col_event_rst_bot_right<22>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1273.595 1.580 1273.895 1.880 ;
+    END
+  END col_event_rst_bot_right<22>
+  PIN col_event_rst_bot_right<21>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1275.500 1.580 1275.800 1.880 ;
+    END
+  END col_event_rst_bot_right<21>
+  PIN col_event_rst_bot_right<20>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1297.595 1.580 1297.895 1.880 ;
+    END
+  END col_event_rst_bot_right<20>
+  PIN col_event_rst_bot_right<19>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1299.500 1.580 1299.800 1.880 ;
+    END
+  END col_event_rst_bot_right<19>
+  PIN col_event_rst_bot_right<18>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1321.595 1.580 1321.895 1.880 ;
+    END
+  END col_event_rst_bot_right<18>
+  PIN col_event_rst_bot_right<17>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1323.500 1.580 1323.800 1.880 ;
+    END
+  END col_event_rst_bot_right<17>
+  PIN col_event_rst_bot_right<16>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1345.595 1.580 1345.895 1.880 ;
+    END
+  END col_event_rst_bot_right<16>
+  PIN col_event_rst_bot_right<15>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1347.500 1.580 1347.800 1.880 ;
+    END
+  END col_event_rst_bot_right<15>
+  PIN col_event_rst_bot_right<14>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1369.595 1.580 1369.895 1.880 ;
+    END
+  END col_event_rst_bot_right<14>
+  PIN col_event_rst_bot_right<13>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1371.500 1.580 1371.800 1.880 ;
+    END
+  END col_event_rst_bot_right<13>
+  PIN col_event_rst_bot_right<12>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1393.595 1.580 1393.895 1.880 ;
+    END
+  END col_event_rst_bot_right<12>
+  PIN col_event_rst_bot_right<11>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1395.500 1.580 1395.800 1.880 ;
+    END
+  END col_event_rst_bot_right<11>
+  PIN col_event_rst_bot_right<10>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1417.595 1.580 1417.895 1.880 ;
+    END
+  END col_event_rst_bot_right<10>
+  PIN col_event_rst_bot_right<9>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1419.500 1.580 1419.800 1.880 ;
+    END
+  END col_event_rst_bot_right<9>
+  PIN col_event_rst_bot_right<8>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1441.595 1.580 1441.895 1.880 ;
+    END
+  END col_event_rst_bot_right<8>
+  PIN col_event_rst_bot_right<7>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1443.500 1.580 1443.800 1.880 ;
+    END
+  END col_event_rst_bot_right<7>
+  PIN col_event_rst_bot_right<6>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1465.595 1.580 1465.895 1.880 ;
+    END
+  END col_event_rst_bot_right<6>
+  PIN col_event_rst_bot_right<5>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1467.500 1.580 1467.800 1.880 ;
+    END
+  END col_event_rst_bot_right<5>
+  PIN col_event_rst_bot_right<4>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1489.595 1.580 1489.895 1.880 ;
+    END
+  END col_event_rst_bot_right<4>
+  PIN col_event_rst_bot_right<3>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1491.500 1.580 1491.800 1.880 ;
+    END
+  END col_event_rst_bot_right<3>
+  PIN col_event_rst_bot_right<2>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1513.595 1.580 1513.895 1.880 ;
+    END
+  END col_event_rst_bot_right<2>
+  PIN col_event_rst_bot_right<1>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1515.500 1.580 1515.800 1.880 ;
+    END
+  END col_event_rst_bot_right<1>
+  PIN col_event_rst_bot_right<0>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1537.595 1.580 1537.895 1.880 ;
+    END
+  END col_event_rst_bot_right<0>
+  PIN col_event_rst_bot_left<63>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 3.500 0.245 3.800 0.545 ;
+    END
+  END col_event_rst_bot_left<63>
+  PIN col_event_rst_bot_left<62>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 25.595 1.580 25.895 1.880 ;
+    END
+  END col_event_rst_bot_left<62>
+  PIN col_event_rst_bot_left<61>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 27.500 1.580 27.800 1.880 ;
+    END
+  END col_event_rst_bot_left<61>
+  PIN col_event_rst_bot_left<60>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 49.595 1.580 49.895 1.880 ;
+    END
+  END col_event_rst_bot_left<60>
+  PIN col_event_rst_bot_left<59>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 51.500 1.580 51.800 1.880 ;
+    END
+  END col_event_rst_bot_left<59>
+  PIN col_event_rst_bot_left<58>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 73.595 1.580 73.895 1.880 ;
+    END
+  END col_event_rst_bot_left<58>
+  PIN col_event_rst_bot_left<57>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 75.500 1.580 75.800 1.880 ;
+    END
+  END col_event_rst_bot_left<57>
+  PIN col_event_rst_bot_left<56>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 97.595 1.580 97.895 1.880 ;
+    END
+  END col_event_rst_bot_left<56>
+  PIN col_event_rst_bot_left<55>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 99.500 1.580 99.800 1.880 ;
+    END
+  END col_event_rst_bot_left<55>
+  PIN col_event_rst_bot_left<54>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 121.595 1.580 121.895 1.880 ;
+    END
+  END col_event_rst_bot_left<54>
+  PIN col_event_rst_bot_left<53>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 123.500 1.580 123.800 1.880 ;
+    END
+  END col_event_rst_bot_left<53>
+  PIN col_event_rst_bot_left<52>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 145.595 1.580 145.895 1.880 ;
+    END
+  END col_event_rst_bot_left<52>
+  PIN col_event_rst_bot_left<51>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 147.500 1.580 147.800 1.880 ;
+    END
+  END col_event_rst_bot_left<51>
+  PIN col_event_rst_bot_left<50>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 169.595 1.580 169.895 1.880 ;
+    END
+  END col_event_rst_bot_left<50>
+  PIN col_event_rst_bot_left<49>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 171.500 1.580 171.800 1.880 ;
+    END
+  END col_event_rst_bot_left<49>
+  PIN col_event_rst_bot_left<48>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 193.595 1.580 193.895 1.880 ;
+    END
+  END col_event_rst_bot_left<48>
+  PIN col_event_rst_bot_left<47>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 195.500 1.580 195.800 1.880 ;
+    END
+  END col_event_rst_bot_left<47>
+  PIN col_event_rst_bot_left<46>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 217.595 1.580 217.895 1.880 ;
+    END
+  END col_event_rst_bot_left<46>
+  PIN col_event_rst_bot_left<45>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 219.500 1.580 219.800 1.880 ;
+    END
+  END col_event_rst_bot_left<45>
+  PIN col_event_rst_bot_left<44>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 241.595 1.580 241.895 1.880 ;
+    END
+  END col_event_rst_bot_left<44>
+  PIN col_event_rst_bot_left<43>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 243.500 1.580 243.800 1.880 ;
+    END
+  END col_event_rst_bot_left<43>
+  PIN col_event_rst_bot_left<42>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 265.595 1.580 265.895 1.880 ;
+    END
+  END col_event_rst_bot_left<42>
+  PIN col_event_rst_bot_left<41>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 267.500 1.580 267.800 1.880 ;
+    END
+  END col_event_rst_bot_left<41>
+  PIN col_event_rst_bot_left<40>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 289.595 1.580 289.895 1.880 ;
+    END
+  END col_event_rst_bot_left<40>
+  PIN col_event_rst_bot_left<39>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 291.500 1.580 291.800 1.880 ;
+    END
+  END col_event_rst_bot_left<39>
+  PIN col_event_rst_bot_left<38>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 313.595 1.580 313.895 1.880 ;
+    END
+  END col_event_rst_bot_left<38>
+  PIN col_event_rst_bot_left<37>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 315.500 1.580 315.800 1.880 ;
+    END
+  END col_event_rst_bot_left<37>
+  PIN col_event_rst_bot_left<36>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 337.595 1.580 337.895 1.880 ;
+    END
+  END col_event_rst_bot_left<36>
+  PIN col_event_rst_bot_left<35>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 339.500 1.580 339.800 1.880 ;
+    END
+  END col_event_rst_bot_left<35>
+  PIN col_event_rst_bot_left<34>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 361.595 1.580 361.895 1.880 ;
+    END
+  END col_event_rst_bot_left<34>
+  PIN col_event_rst_bot_left<33>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 363.500 1.580 363.800 1.880 ;
+    END
+  END col_event_rst_bot_left<33>
+  PIN col_event_rst_bot_left<32>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 385.595 1.580 385.895 1.880 ;
+    END
+  END col_event_rst_bot_left<32>
+  PIN col_event_rst_bot_left<31>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 387.500 1.580 387.800 1.880 ;
+    END
+  END col_event_rst_bot_left<31>
+  PIN col_event_rst_bot_left<30>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 409.595 1.580 409.895 1.880 ;
+    END
+  END col_event_rst_bot_left<30>
+  PIN col_event_rst_bot_left<29>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 411.500 1.580 411.800 1.880 ;
+    END
+  END col_event_rst_bot_left<29>
+  PIN col_event_rst_bot_left<28>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 433.595 1.580 433.895 1.880 ;
+    END
+  END col_event_rst_bot_left<28>
+  PIN col_event_rst_bot_left<27>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 435.500 1.580 435.800 1.880 ;
+    END
+  END col_event_rst_bot_left<27>
+  PIN col_event_rst_bot_left<26>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 457.595 1.580 457.895 1.880 ;
+    END
+  END col_event_rst_bot_left<26>
+  PIN col_event_rst_bot_left<25>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 459.500 1.580 459.800 1.880 ;
+    END
+  END col_event_rst_bot_left<25>
+  PIN col_event_rst_bot_left<24>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 481.595 1.580 481.895 1.880 ;
+    END
+  END col_event_rst_bot_left<24>
+  PIN col_event_rst_bot_left<23>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 483.500 1.580 483.800 1.880 ;
+    END
+  END col_event_rst_bot_left<23>
+  PIN col_event_rst_bot_left<22>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 505.595 1.580 505.895 1.880 ;
+    END
+  END col_event_rst_bot_left<22>
+  PIN col_event_rst_bot_left<21>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 507.500 1.580 507.800 1.880 ;
+    END
+  END col_event_rst_bot_left<21>
+  PIN col_event_rst_bot_left<20>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 529.595 1.580 529.895 1.880 ;
+    END
+  END col_event_rst_bot_left<20>
+  PIN col_event_rst_bot_left<19>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 531.500 1.580 531.800 1.880 ;
+    END
+  END col_event_rst_bot_left<19>
+  PIN col_event_rst_bot_left<18>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 553.595 1.580 553.895 1.880 ;
+    END
+  END col_event_rst_bot_left<18>
+  PIN col_event_rst_bot_left<17>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 555.500 1.580 555.800 1.880 ;
+    END
+  END col_event_rst_bot_left<17>
+  PIN col_event_rst_bot_left<16>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 577.595 1.580 577.895 1.880 ;
+    END
+  END col_event_rst_bot_left<16>
+  PIN col_event_rst_bot_left<15>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 579.500 1.580 579.800 1.880 ;
+    END
+  END col_event_rst_bot_left<15>
+  PIN col_event_rst_bot_left<14>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 601.595 1.580 601.895 1.880 ;
+    END
+  END col_event_rst_bot_left<14>
+  PIN col_event_rst_bot_left<13>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 603.500 1.580 603.800 1.880 ;
+    END
+  END col_event_rst_bot_left<13>
+  PIN col_event_rst_bot_left<12>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 625.595 1.580 625.895 1.880 ;
+    END
+  END col_event_rst_bot_left<12>
+  PIN col_event_rst_bot_left<11>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 627.500 1.580 627.800 1.880 ;
+    END
+  END col_event_rst_bot_left<11>
+  PIN col_event_rst_bot_left<10>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 649.595 1.580 649.895 1.880 ;
+    END
+  END col_event_rst_bot_left<10>
+  PIN col_event_rst_bot_left<9>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 651.500 1.580 651.800 1.880 ;
+    END
+  END col_event_rst_bot_left<9>
+  PIN col_event_rst_bot_left<8>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 673.595 1.580 673.895 1.880 ;
+    END
+  END col_event_rst_bot_left<8>
+  PIN col_event_rst_bot_left<7>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 675.500 1.580 675.800 1.880 ;
+    END
+  END col_event_rst_bot_left<7>
+  PIN col_event_rst_bot_left<6>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 697.595 1.580 697.895 1.880 ;
+    END
+  END col_event_rst_bot_left<6>
+  PIN col_event_rst_bot_left<5>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 699.500 1.580 699.800 1.880 ;
+    END
+  END col_event_rst_bot_left<5>
+  PIN col_event_rst_bot_left<4>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 721.595 1.580 721.895 1.880 ;
+    END
+  END col_event_rst_bot_left<4>
+  PIN col_event_rst_bot_left<3>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 723.500 1.580 723.800 1.880 ;
+    END
+  END col_event_rst_bot_left<3>
+  PIN col_event_rst_bot_left<2>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 745.595 1.580 745.895 1.880 ;
+    END
+  END col_event_rst_bot_left<2>
+  PIN col_event_rst_bot_left<1>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 747.500 1.580 747.800 1.880 ;
+    END
+  END col_event_rst_bot_left<1>
+  PIN col_event_rst_bot_left<0>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 769.595 1.580 769.895 1.880 ;
+    END
+  END col_event_rst_bot_left<0>
+  PIN vssa1
+    ANTENNADIFFAREA 30668.416016 ;
+    PORT
+      LAYER met3 ;
+        RECT 1539.250 1637.930 1542.950 1638.230 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 1539.250 0.295 1542.950 0.595 ;
+    END
+  END vssa1
+  PIN array_col_top_left<9>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 654.245 1635.345 655.015 1635.645 ;
+    END
+  END array_col_top_left<9>
+  PIN row_on_detect_top<35>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1166.730 0.300 1167.030 ;
+    END
+  END row_on_detect_top<35>
+  PIN row_off_detect_top<34>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1168.770 0.300 1169.070 ;
+    END
+  END row_off_detect_top<34>
+  PIN row_off_detect_top<14>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1408.810 0.300 1409.110 ;
+    END
+  END row_off_detect_top<14>
+  PIN array_col_top_left<13>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 606.245 1635.345 607.015 1635.645 ;
+    END
+  END array_col_top_left<13>
+  PIN array_col_bot_left<60>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 46.365 1.460 47.135 1.760 ;
+    END
+  END array_col_bot_left<60>
+  PIN array_col_bot_left<55>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 102.245 1.460 103.015 1.760 ;
+    END
+  END array_col_bot_left<55>
+  PIN array_col_top_left<47>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 198.245 1635.345 199.015 1635.645 ;
+    END
+  END array_col_top_left<47>
+  PIN array_col_bot_left<42>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 262.365 1.460 263.135 1.760 ;
+    END
+  END array_col_bot_left<42>
+  PIN array_col_bot_left<41>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 270.245 1.460 271.015 1.760 ;
+    END
+  END array_col_bot_left<41>
+  PIN array_col_top_right<25>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1230.245 1635.345 1231.015 1635.645 ;
+    END
+  END array_col_top_right<25>
+  PIN array_col_top_right<24>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1246.365 1635.345 1247.135 1635.645 ;
+    END
+  END array_col_top_right<24>
+  PIN array_col_bot_left<40>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 286.365 1.460 287.135 1.760 ;
+    END
+  END array_col_bot_left<40>
+  PIN array_col_top_right<23>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1254.245 1635.345 1255.015 1635.645 ;
+    END
+  END array_col_top_right<23>
+  PIN array_col_top_right<22>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1270.365 1635.345 1271.135 1635.645 ;
+    END
+  END array_col_top_right<22>
+  PIN array_col_top_left<26>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 454.365 1635.345 455.135 1635.645 ;
+    END
+  END array_col_top_left<26>
+  PIN array_col_top_right<21>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1278.245 1635.345 1279.015 1635.645 ;
+    END
+  END array_col_top_right<21>
+  PIN array_col_bot_left<20>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 526.365 1.460 527.135 1.760 ;
+    END
+  END array_col_bot_left<20>
+  PIN array_col_bot_left<21>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 510.245 1.460 511.015 1.760 ;
+    END
+  END array_col_bot_left<21>
+  PIN pre_charge_global_top_left
+    ANTENNAGATEAREA 1024.000000 ;
+    PORT
+      LAYER met3 ;
+        RECT 2.740 1608.050 3.040 1608.350 ;
+    END
+  END pre_charge_global_top_left
+  PIN row_on_detect_bot<20>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 567.650 0.300 567.950 ;
+    END
+  END row_on_detect_bot<20>
+  PIN row_on_detect_top<19>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1358.490 0.300 1358.790 ;
+    END
+  END row_on_detect_top<19>
+  PIN row_on_detect_top<18>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1359.850 0.300 1360.150 ;
+    END
+  END row_on_detect_top<18>
+  PIN col_event_rst_top_left<5>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 699.500 1635.225 699.800 1635.525 ;
+    END
+  END col_event_rst_top_left<5>
+  PIN row_on_detect_bot<1>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 806.330 0.300 806.630 ;
+    END
+  END row_on_detect_bot<1>
+  PIN row_on_detect_bot<0>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 807.690 0.300 807.990 ;
+    END
+  END row_on_detect_bot<0>
+  PIN array_col_bot_left<22>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 502.365 1.460 503.135 1.760 ;
+    END
+  END array_col_bot_left<22>
+  PIN array_col_bot_left<23>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 486.245 1.460 487.015 1.760 ;
+    END
+  END array_col_bot_left<23>
+  PIN array_col_top_left<49>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 174.245 1635.345 175.015 1635.645 ;
+    END
+  END array_col_top_left<49>
+  PIN array_col_top_right<20>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1294.365 1635.345 1295.135 1635.645 ;
+    END
+  END array_col_top_right<20>
+  PIN array_col_bot_left<16>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 574.365 1.460 575.135 1.760 ;
+    END
+  END array_col_bot_left<16>
+  PIN row_on_detect_top<8>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1479.530 0.300 1479.830 ;
+    END
+  END row_on_detect_top<8>
+  PIN array_col_bot_left<45>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 222.245 1.460 223.015 1.760 ;
+    END
+  END array_col_bot_left<45>
+  PIN array_col_top_left<17>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 558.245 1635.345 559.015 1635.645 ;
+    END
+  END array_col_top_left<17>
+  PIN array_col_bot_right<3>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1494.245 1.460 1495.015 1.760 ;
+    END
+  END array_col_bot_right<3>
+  PIN array_col_bot_right<15>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1350.245 1.460 1351.015 1.760 ;
+    END
+  END array_col_bot_right<15>
+  PIN row_off_detect_bot<36>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 376.570 0.300 376.870 ;
+    END
+  END row_off_detect_bot<36>
+  PIN row_on_detect_bot<26>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 495.570 0.300 495.870 ;
+    END
+  END row_on_detect_bot<26>
+  PIN array_col_top_right<19>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1302.245 1635.345 1303.015 1635.645 ;
+    END
+  END array_col_top_right<19>
+  PIN array_col_bot_right<9>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1422.245 1.460 1423.015 1.760 ;
+    END
+  END array_col_bot_right<9>
+  PIN array_col_top_right<18>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1318.365 1635.345 1319.135 1635.645 ;
+    END
+  END array_col_top_right<18>
+  PIN array_col_top_right<15>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1350.245 1635.345 1351.015 1635.645 ;
+    END
+  END array_col_top_right<15>
+  PIN array_col_top_right<10>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1414.365 1635.345 1415.135 1635.645 ;
+    END
+  END array_col_top_right<10>
+  PIN array_col_top_right<7>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1446.245 1635.345 1447.015 1635.645 ;
+    END
+  END array_col_top_right<7>
+  PIN col_event_rst_top_left<38>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 313.595 1635.225 313.895 1635.525 ;
+    END
+  END col_event_rst_top_left<38>
+  PIN col_event_rst_top_left<32>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 385.595 1635.225 385.895 1635.525 ;
+    END
+  END col_event_rst_top_left<32>
+  PIN col_event_rst_top_left<21>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 507.500 1635.225 507.800 1635.525 ;
+    END
+  END col_event_rst_top_left<21>
+  PIN col_event_rst_top_left<19>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 531.500 1635.225 531.800 1635.525 ;
+    END
+  END col_event_rst_top_left<19>
+  PIN array_col_bot_right<16>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1342.365 1.460 1343.135 1.760 ;
+    END
+  END array_col_bot_right<16>
+  PIN array_col_bot_left<31>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 390.245 1.460 391.015 1.760 ;
+    END
+  END array_col_bot_left<31>
+  PIN array_col_bot_left<7>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 678.245 1.460 679.015 1.760 ;
+    END
+  END array_col_bot_left<7>
+  PIN row_off_detect_top<29>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1237.450 0.300 1237.750 ;
+    END
+  END row_off_detect_top<29>
+  PIN row_on_detect_top<28>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1239.490 0.300 1239.790 ;
+    END
+  END row_on_detect_top<28>
+  PIN col_event_rst_top_left<9>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 651.500 1635.225 651.800 1635.525 ;
+    END
+  END col_event_rst_top_left<9>
+  PIN col_event_rst_top_left<60>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 49.595 1635.225 49.895 1635.525 ;
+    END
+  END col_event_rst_top_left<60>
+  PIN col_event_rst_top_left<20>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 529.595 1635.225 529.895 1635.525 ;
+    END
+  END col_event_rst_top_left<20>
+  PIN col_event_rst_top_left<12>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 625.595 1635.225 625.895 1635.525 ;
+    END
+  END col_event_rst_top_left<12>
+  PIN array_col_bot_right<26>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1222.365 1.460 1223.135 1.760 ;
+    END
+  END array_col_bot_right<26>
+  PIN array_col_bot_right<23>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1254.245 1.460 1255.015 1.760 ;
+    END
+  END array_col_bot_right<23>
+  PIN row_off_detect_top<53>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 949.130 0.300 949.430 ;
+    END
+  END row_off_detect_top<53>
+  PIN row_off_detect_bot<50>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 208.610 0.300 208.910 ;
+    END
+  END row_off_detect_bot<50>
+  PIN row_off_detect_bot<52>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 184.810 0.300 185.110 ;
+    END
+  END row_off_detect_bot<52>
+  PIN row_on_detect_top<9>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1478.850 0.300 1479.150 ;
+    END
+  END row_on_detect_top<9>
+  PIN row_off_detect_top<8>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1480.890 0.300 1481.190 ;
+    END
+  END row_off_detect_top<8>
+  PIN row_off_detect_top<46>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1024.610 0.300 1024.910 ;
+    END
+  END row_off_detect_top<46>
+  PIN array_col_top_left<34>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 358.365 1635.345 359.135 1635.645 ;
+    END
+  END array_col_top_left<34>
+  PIN col_event_rst_top_left<6>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 697.595 1635.225 697.895 1635.525 ;
+    END
+  END col_event_rst_top_left<6>
+  PIN array_col_bot_left<43>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 246.245 1.460 247.015 1.760 ;
+    END
+  END array_col_bot_left<43>
+  PIN col_event_rst_top_left<61>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 27.500 1635.225 27.800 1635.525 ;
+    END
+  END col_event_rst_top_left<61>
+  PIN col_event_rst_top_left<48>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 193.595 1635.225 193.895 1635.525 ;
+    END
+  END col_event_rst_top_left<48>
+  PIN col_event_rst_top_left<36>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 337.595 1635.225 337.895 1635.525 ;
+    END
+  END col_event_rst_top_left<36>
+  PIN array_col_top_left<50>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 166.365 1635.345 167.135 1635.645 ;
+    END
+  END array_col_top_left<50>
+  PIN row_off_detect_bot<40>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 328.970 0.300 329.270 ;
+    END
+  END row_off_detect_bot<40>
+  PIN array_col_top_left<12>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 622.365 1635.345 623.135 1635.645 ;
+    END
+  END array_col_top_left<12>
+  PIN row_on_detect_bot<7>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 734.930 0.300 735.230 ;
+    END
+  END row_on_detect_bot<7>
+  PIN row_on_detect_bot<13>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 662.850 0.300 663.150 ;
+    END
+  END row_on_detect_bot<13>
+  PIN row_off_detect_top<7>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1501.290 0.300 1501.590 ;
+    END
+  END row_off_detect_top<7>
+  PIN array_col_top_right<31>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1158.245 1635.345 1159.015 1635.645 ;
+    END
+  END array_col_top_right<31>
+  PIN array_col_bot_right<11>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1398.245 1.460 1399.015 1.760 ;
+    END
+  END array_col_bot_right<11>
+  PIN array_col_top_left<51>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 150.245 1635.345 151.015 1635.645 ;
+    END
+  END array_col_top_left<51>
+  PIN col_event_rst_top_left<24>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 481.595 1635.225 481.895 1635.525 ;
+    END
+  END col_event_rst_top_left<24>
+  PIN array_col_top_left<25>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 462.245 1635.345 463.015 1635.645 ;
+    END
+  END array_col_top_left<25>
+  PIN row_on_detect_top<4>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1527.810 0.300 1528.110 ;
+    END
+  END row_on_detect_top<4>
+  PIN array_col_top_left<8>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 670.365 1635.345 671.135 1635.645 ;
+    END
+  END array_col_top_left<8>
+  PIN array_col_top_left<53>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 126.245 1635.345 127.015 1635.645 ;
+    END
+  END array_col_top_left<53>
+  PIN array_col_top_left<38>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 310.365 1635.345 311.135 1635.645 ;
+    END
+  END array_col_top_left<38>
+  PIN array_col_top_left<54>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 118.365 1635.345 119.135 1635.645 ;
+    END
+  END array_col_top_left<54>
+  PIN row_on_detect_top<25>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1286.410 0.300 1286.710 ;
+    END
+  END row_on_detect_top<25>
+  PIN row_on_detect_top<24>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1287.770 0.300 1288.070 ;
+    END
+  END row_on_detect_top<24>
+  PIN row_on_detect_top<36>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1143.610 0.300 1143.910 ;
+    END
+  END row_on_detect_top<36>
+  PIN array_col_top_left<40>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 286.365 1635.345 287.135 1635.645 ;
+    END
+  END array_col_top_left<40>
+  PIN row_off_detect_top<40>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1096.690 0.300 1096.990 ;
+    END
+  END row_off_detect_top<40>
+  PIN array_col_top_left<41>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 270.245 1635.345 271.015 1635.645 ;
+    END
+  END array_col_top_left<41>
+  PIN array_col_top_left<57>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 78.245 1635.345 79.015 1635.645 ;
+    END
+  END array_col_top_left<57>
+  PIN array_col_top_left<58>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 70.365 1635.345 71.135 1635.645 ;
+    END
+  END array_col_top_left<58>
+  PIN array_col_top_left<27>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 438.245 1635.345 439.015 1635.645 ;
+    END
+  END array_col_top_left<27>
+  PIN array_col_top_left<60>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 46.365 1635.345 47.135 1635.645 ;
+    END
+  END array_col_top_left<60>
+  PIN array_col_top_left<45>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 222.245 1635.345 223.015 1635.645 ;
+    END
+  END array_col_top_left<45>
+  PIN array_col_top_left<61>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 30.245 1635.345 31.015 1635.645 ;
+    END
+  END array_col_top_left<61>
+  PIN row_on_detect_top<11>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1454.370 0.300 1454.670 ;
+    END
+  END row_on_detect_top<11>
+  PIN array_col_bot_left<1>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 750.245 1.460 751.015 1.760 ;
+    END
+  END array_col_bot_left<1>
+  PIN dac_config_0
+    ANTENNAGATEAREA 36576.000000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1559.700 816.530 1560.000 816.830 ;
+    END
+  END dac_config_0
+  PIN row_on_detect_top<14>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1407.450 0.300 1407.750 ;
+    END
+  END row_on_detect_top<14>
+  PIN array_col_top_left<32>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 382.365 1635.345 383.135 1635.645 ;
+    END
+  END array_col_top_left<32>
+  PIN array_col_bot_right<14>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1366.365 1.460 1367.135 1.760 ;
+    END
+  END array_col_bot_right<14>
+  PIN row_on_detect_top<38>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1119.810 0.300 1120.110 ;
+    END
+  END row_on_detect_top<38>
+  PIN row_off_detect_top<38>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1120.490 0.300 1120.790 ;
+    END
+  END row_off_detect_top<38>
+  PIN row_off_detect_top<43>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1069.490 0.300 1069.790 ;
+    END
+  END row_off_detect_top<43>
+  PIN row_on_detect_top<41>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1094.650 0.300 1094.950 ;
+    END
+  END row_on_detect_top<41>
+  PIN row_on_detect_top<30>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1215.690 0.300 1215.990 ;
+    END
+  END row_on_detect_top<30>
+  PIN row_off_detect_top<30>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1216.370 0.300 1216.670 ;
+    END
+  END row_off_detect_top<30>
+  PIN dac_config_2
+    ANTENNAGATEAREA 36864.000000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1559.700 826.730 1560.000 827.030 ;
+    END
+  END dac_config_2
+  PIN array_col_top_left<48>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 190.365 1635.345 191.135 1635.645 ;
+    END
+  END array_col_top_left<48>
+  PIN dac_config_6
+    ANTENNAGATEAREA 38.399998 ;
+    PORT
+      LAYER met3 ;
+        RECT 1559.700 814.490 1560.000 814.790 ;
+    END
+  END dac_config_6
+  PIN array_col_top_left<19>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 534.245 1635.345 535.015 1635.645 ;
+    END
+  END array_col_top_left<19>
+  PIN row_on_detect_bot<21>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 566.290 0.300 566.590 ;
+    END
+  END row_on_detect_bot<21>
+  PIN array_col_top_right<29>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1182.245 1635.345 1183.015 1635.645 ;
+    END
+  END array_col_top_right<29>
+  PIN dac_config_3
+    ANTENNAGATEAREA 1228.799927 ;
+    PORT
+      LAYER met3 ;
+        RECT 1559.700 822.650 1560.000 822.950 ;
+    END
+  END dac_config_3
+  PIN row_off_detect_top<15>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1405.410 0.300 1405.710 ;
+    END
+  END row_off_detect_top<15>
+  PIN row_on_detect_top<15>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1406.090 0.300 1406.390 ;
+    END
+  END row_on_detect_top<15>
+  PIN row_off_detect_top<9>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1477.490 0.300 1477.790 ;
+    END
+  END row_off_detect_top<9>
+  PIN col_event_rst_top_right<62>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 793.595 1635.225 793.895 1635.525 ;
+    END
+  END col_event_rst_top_right<62>
+  PIN col_event_rst_top_left<1>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 747.500 1635.225 747.800 1635.525 ;
+    END
+  END col_event_rst_top_left<1>
+  PIN col_event_rst_top_left<2>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 745.595 1635.225 745.895 1635.525 ;
+    END
+  END col_event_rst_top_left<2>
+  PIN array_col_bot_right<17>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1326.245 1.460 1327.015 1.760 ;
+    END
+  END array_col_bot_right<17>
+  PIN row_on_detect_bot<34>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 399.690 0.300 399.990 ;
+    END
+  END row_on_detect_bot<34>
+  PIN row_on_detect_bot<35>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 398.330 0.300 398.630 ;
+    END
+  END row_on_detect_bot<35>
+  PIN row_off_detect_bot<35>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 397.650 0.300 397.950 ;
+    END
+  END row_off_detect_bot<35>
+  PIN row_off_detect_bot<25>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 517.330 0.300 517.630 ;
+    END
+  END row_off_detect_bot<25>
+  PIN row_off_detect_top<55>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 925.330 0.300 925.630 ;
+    END
+  END row_off_detect_top<55>
+  PIN row_on_detect_top<53>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 950.490 0.300 950.790 ;
+    END
+  END row_on_detect_top<53>
+  PIN array_col_top_right<14>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1366.365 1635.345 1367.135 1635.645 ;
+    END
+  END array_col_top_right<14>
+  PIN array_col_top_right<11>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1398.245 1635.345 1399.015 1635.645 ;
+    END
+  END array_col_top_right<11>
+  PIN array_col_top_right<6>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1462.365 1635.345 1463.135 1635.645 ;
+    END
+  END array_col_top_right<6>
+  PIN col_event_rst_top_left<41>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 267.500 1635.225 267.800 1635.525 ;
+    END
+  END col_event_rst_top_left<41>
+  PIN col_event_rst_top_left<34>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 361.595 1635.225 361.895 1635.525 ;
+    END
+  END col_event_rst_top_left<34>
+  PIN col_event_rst_top_left<28>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 433.595 1635.225 433.895 1635.525 ;
+    END
+  END col_event_rst_top_left<28>
+  PIN col_event_rst_top_left<27>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 435.500 1635.225 435.800 1635.525 ;
+    END
+  END col_event_rst_top_left<27>
+  PIN col_event_rst_top_left<16>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 577.595 1635.225 577.895 1635.525 ;
+    END
+  END col_event_rst_top_left<16>
+  PIN col_event_rst_top_left<15>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 579.500 1635.225 579.800 1635.525 ;
+    END
+  END col_event_rst_top_left<15>
+  PIN row_off_detect_bot<28>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 472.450 0.300 472.750 ;
+    END
+  END row_off_detect_bot<28>
+  PIN array_col_bot_left<32>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 382.365 1.460 383.135 1.760 ;
+    END
+  END array_col_bot_left<32>
+  PIN col_event_rst_top_left<53>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 123.500 1635.225 123.800 1635.525 ;
+    END
+  END col_event_rst_top_left<53>
+  PIN col_event_rst_top_left<10>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 649.595 1635.225 649.895 1635.525 ;
+    END
+  END col_event_rst_top_left<10>
+  PIN col_event_rst_top_left<50>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 169.595 1635.225 169.895 1635.525 ;
+    END
+  END col_event_rst_top_left<50>
+  PIN array_col_bot_right<27>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1206.245 1.460 1207.015 1.760 ;
+    END
+  END array_col_bot_right<27>
+  PIN row_on_detect_top<55>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 926.690 0.300 926.990 ;
+    END
+  END row_on_detect_top<55>
+  PIN row_off_detect_top<47>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1021.210 0.300 1021.510 ;
+    END
+  END row_off_detect_top<47>
+  PIN row_on_detect_bot<38>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 351.410 0.300 351.710 ;
+    END
+  END row_on_detect_bot<38>
+  PIN row_on_detect_bot<39>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 350.730 0.300 351.030 ;
+    END
+  END row_on_detect_bot<39>
+  PIN col_event_rst_top_right<43>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1011.500 1635.225 1011.800 1635.525 ;
+    END
+  END col_event_rst_top_right<43>
+  PIN col_event_rst_top_right<44>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1009.595 1635.225 1009.895 1635.525 ;
+    END
+  END col_event_rst_top_right<44>
+  PIN row_off_detect_top<48>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1000.810 0.300 1001.110 ;
+    END
+  END row_off_detect_top<48>
+  PIN row_on_detect_top<47>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1022.570 0.300 1022.870 ;
+    END
+  END row_on_detect_top<47>
+  PIN col_event_rst_top_right<47>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 963.500 1635.225 963.800 1635.525 ;
+    END
+  END col_event_rst_top_right<47>
+  PIN col_event_rst_top_right<48>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 961.595 1635.225 961.895 1635.525 ;
+    END
+  END col_event_rst_top_right<48>
+  PIN row_on_detect_bot<57>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 134.490 0.300 134.790 ;
+    END
+  END row_on_detect_bot<57>
+  PIN col_event_rst_top_right<51>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 915.500 1635.225 915.800 1635.525 ;
+    END
+  END col_event_rst_top_right<51>
+  PIN col_event_rst_top_right<52>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 913.595 1635.225 913.895 1635.525 ;
+    END
+  END col_event_rst_top_right<52>
+  PIN dac_config_1
+    ANTENNAGATEAREA 36864.000000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1559.700 818.570 1560.000 818.870 ;
+    END
+  END dac_config_1
+  PIN col_event_rst_top_right<55>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 867.500 1635.225 867.800 1635.525 ;
+    END
+  END col_event_rst_top_right<55>
+  PIN col_event_rst_top_right<56>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 865.595 1635.225 865.895 1635.525 ;
+    END
+  END col_event_rst_top_right<56>
+  PIN col_event_rst_top_right<59>
+    ANTENNAGATEAREA 4.032000 ;
+    PORT
+      LAYER met3 ;
+        RECT 819.500 1635.225 819.800 1635.525 ;
+    END
+  END col_event_rst_top_right<59>
+  PIN array_col_top_right<27>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1206.245 1635.345 1207.015 1635.645 ;
+    END
+  END array_col_top_right<27>
+  PIN array_col_top_right<38>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1078.365 1635.345 1079.135 1635.645 ;
+    END
+  END array_col_top_right<38>
+  PIN row_off_detect_bot<39>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 349.370 0.300 349.670 ;
+    END
+  END row_off_detect_bot<39>
+  PIN array_col_top_right<3>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 1494.245 1635.345 1495.015 1635.645 ;
+    END
+  END array_col_top_right<3>
+  PIN row_off_detect_bot<9>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 709.090 0.300 709.390 ;
+    END
+  END row_off_detect_bot<9>
+  PIN row_off_detect_bot<12>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 664.890 0.300 665.190 ;
+    END
+  END row_off_detect_bot<12>
+  PIN row_on_detect_bot<18>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 591.450 0.300 591.750 ;
+    END
+  END row_on_detect_bot<18>
+  PIN row_off_detect_bot<18>
+    ANTENNAGATEAREA 8.064000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 592.810 0.300 593.110 ;
+    END
+  END row_off_detect_bot<18>
+  PIN array_col_top_left<33>
+    ANTENNADIFFAREA 0.870000 ;
+    PORT
+      LAYER met3 ;
+        RECT 366.245 1635.345 367.015 1635.645 ;
+    END
+  END array_col_top_left<33>
+  PIN row_on_detect_top<6>
+    ANTENNAGATEAREA 16.128000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1503.330 0.300 1503.630 ;
+    END
+  END row_on_detect_top<6>

@@ -1,0 +1,7 @@
+Using run time directory XSCHEM_SHAREDIR = /usr/local/share/xschem
+Sourcing /usr/local/share/xschem/xschemrc init file
+Sourcing /home/alienfalcon/.ciel/sky130B/libs.tech/xschem/xschemrc init file
+open_pdks installation: using /home/alienfalcon/.ciel
+SKYWATER_MODELS: /home/alienfalcon/.ciel/sky130B/libs.tech/combined
+SKYWATER_STDCELLS: /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/spice
+load_schematic(): unable to open file: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-12_15-11-33/parameters/op_sweep_code/run_1006/tb_BiasBranchnMasterx1_op.sch, ffname=/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-12_15-11-33/parameters/op_sweep_code/run_1006/tb_BiasBranchnMasterx1_op.sch

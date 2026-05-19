@@ -1,0 +1,6 @@
+Using run time directory XSCHEM_SHAREDIR = /usr/local/share/xschem
+Sourcing /usr/local/share/xschem/xschemrc init file
+Sourcing /home/alienfalcon/.ciel/sky130B/libs.tech/xschem/xschemrc init file
+open_pdks installation: using /home/alienfalcon/.ciel
+SKYWATER_MODELS: /home/alienfalcon/.ciel/sky130B/libs.tech/combined
+SKYWATER_STDCELLS: /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/spice

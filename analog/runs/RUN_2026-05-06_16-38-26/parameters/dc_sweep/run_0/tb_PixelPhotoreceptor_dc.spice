@@ -1,0 +1,60 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_16-38-26/parameters/dc_sweep/run_0/tb_PixelPhotoreceptor_dc.sch
+**.subckt tb_PixelPhotoreceptor_dc
+IPrBp PrBp gnd {xPrBp}
+XMPrBp PrBp PrBp vdd vdd sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+IPrSFBp PrSFBp gnd {xPrSFBp}
+XMPrSFBp PrSFBp PrSFBp vdd vdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=2 ad=0.145 as=0.29 pd=1.58 ps=3.16 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+xpr vdd PrBp gnd vpd_in vpr PixelPhotoreceptor
+*  xsf -  PixelSourceFollower  IS MISSING !!!!
+Bipd1 vpd gnd I = pow(10, v(exp))
+CloadPD1 vpd gnd 'xCloadPD'
+Vmeas_ipd1 vpd_in vpd 0
+* noconn vsf
+Vexp exp gnd 0
+Vgnd gnd GND! 0
+Vvdd vdd GND! {xvdd}
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/alienfalcon/.ciel/sky130B/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.include /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/PixelPhotoreceptor.spice
+.include /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/PixelSourceFollower.spice
+
+** Manual instantiation (PixelSourceFollower.sym not found in CACE run dir)
+xsf vdd PrSFBp gnd vpr vsf PixelSourceFollower
+
+.temp 27
+
+** Convergence options for nA-range weak-inversion pixel circuit
+** gmin=1e-16: at 1V node this is sub-fA shunt, negligible vs nA signals
+** method=gear: damps numerical ringing on stiff circuits (fast digital + slow analog)
+.option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
+.option method=gear maxord=2 trtol=1
+.option itl1=500 itl2=200 itl4=50
+.option gminsteps=200 srcsteps=200
+.option ramptime=100n
+
+.param xvdd = 1.8
+.param xPrBp = 10e-9
+.param xPrSFBp = 1e-9
+.param xCloadPD = 30f
+
+.save all
+.save v(vpr) v(vsf) v(vpd) v(vpd_in) v(exp)
+
+.control
+dc Vexp -14 -7 0.2
+write tb_PixelPhotoreceptor_dc_0.raw
+shell python /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/scripts/tb_PixelPhotoreceptor_dc.py /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_16-38-26/parameters/dc_sweep/run_0 tb_PixelPhotoreceptor_dc 0
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND!
+.end

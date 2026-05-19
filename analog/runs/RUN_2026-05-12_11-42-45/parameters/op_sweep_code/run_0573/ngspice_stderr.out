@@ -1,0 +1,6 @@
+Too many parameters for subcircuit type "biasbranchnmasterx1" (instance: xxbias)
+    Simulation interrupted due to error!
+
+Error: incomplete or empty netlist
+       or no ".plot", ".print", or ".fourier" lines in batch mode;
+no simulations run!

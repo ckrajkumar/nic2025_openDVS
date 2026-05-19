@@ -1,0 +1,11 @@
+Error in netlist line no. 1698, new internal line no. 17:
+
+Undefined parameter [xbiasenable]
+Error in netlist line no. 1698, new internal line no. 17:
+
+ Expression err: xbiasenable*xvdd}
+Error in netlist line no. 1698, new internal line no. 17:
+
+Cannot compute substitute
+
+ERROR: fatal error in ngspice, exit(1)

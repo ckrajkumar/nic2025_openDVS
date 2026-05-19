@@ -1,0 +1,12 @@
+DUT_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/BiasBranchnMasterx1.spice
+N: 892
+NBias: '0'
+coarseCode: '4.0'
+filename: tb_BiasBranchnMasterx1_op
+fineCode: '111.0'
+iterations: '0'
+root: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog
+seed: '12345'
+simpath: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-12_11-42-45/parameters/op_sweep_code/run_0892
+temperature: '27'
+vdd: '1.8'

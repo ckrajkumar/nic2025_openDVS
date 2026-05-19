@@ -17,7 +17,6 @@ N 180 -730 180 -670 {lab=BiasCB[7:0]}
 N 280 -730 280 -670 {lab=BufferN}
 N 300 -730 300 -670 {lab=BufferP}
 N 430 -600 490 -600 {lab=Bias}
-N 430 -520 490 -520 {lab=GndA}
 N 100 460 100 520 {lab=rx}
 N 130 460 130 520 {lab=BiasCB[0]}
 N 160 460 160 520 {lab=BiasCB[1]}
@@ -49,14 +48,12 @@ N -160 -90 60 -90 {lab=nLowBiasInterfaceEn}
 N -160 -70 60 -70 {lab=CoarseOneHotLowBiasEn}
 N -160 -270 60 -270 {lab=CoarseOneHot[7]}
 N -160 -110 60 -110 {lab=LowBiasInterfaceEn}
-N -160 -30 60 -30 {lab=nLowBiasBuffEn}
-N -160 -50 60 -50 {lab=LowBiasBuffEn}
+N -160 -30 60 -30 {lab=BIT0}
 N -160 -590 60 -590 {lab=FineCode[7]}
 N -160 -430 60 -430 {lab=nFineCode[7]}
 N -160 -10 60 -10 {lab=NBiasEn}
 N -160 10 60 10 {lab=PBiasEn}
 N -160 50 60 50 {lab=BiasDisable}
-N -160 30 60 30 {lab=BiasEnable}
 N -160 -250 60 -250 {lab=CoarseOneHot[6]}
 N -160 -230 60 -230 {lab=CoarseOneHot[5]}
 N -160 -210 60 -210 {lab=CoarseOneHot[4]}
@@ -78,6 +75,8 @@ N -160 -490 60 -490 {lab=FineCode[2]}
 N -160 -470 60 -470 {lab=FineCode[1]}
 N -160 -450 60 -450 {lab=FineCode[0]}
 N -160 -290 60 -290 {lab=nFineCode[0]}
+N 430 -500 490 -500 {lab=PadBias}
+N -160 -50 60 -50 {lab=BiasDisable}
 C {iopin.sym} -360 -970 0 1 {name=p75 lab=VddA18}
 C {iopin.sym} -360 -950 0 1 {name=p76 lab=GndA}
 C {lab_wire.sym} 100 -730 3 0 {name=p2 sig_type=std_logic lab=VddA18}
@@ -116,7 +115,6 @@ C {opin.sym} -360 -820 2 1 {name=p34 lab=VMasterBiasN}
 C {opin.sym} -360 -800 2 1 {name=p35 lab=VMasterBiasP}
 C {opin.sym} -360 -780 2 1 {name=p36 lab=BiasCB[7:0]}
 C {opin.sym} -360 -760 2 1 {name=p37 lab=Bias}
-C {lab_wire.sym} 490 -520 0 0 {name=p38 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 490 -600 0 0 {name=p9 sig_type=std_logic lab=Bias}
 C {ipin.sym} -280 -500 2 1 {name=p6 lab=FineCodeBuffer[7:0]}
 C {ipin.sym} -610 -500 2 1 {name=p10 lab=FineCode[7:0]}
@@ -131,8 +129,7 @@ C {ipin.sym} -610 -460 2 1 {name=p44 lab=CoarseOneHot[7:0]}
 C {ipin.sym} -610 -440 2 1 {name=p45 lab=LowBiasInterfaceEn}
 C {ipin.sym} -610 -420 2 1 {name=p46 lab=nLowBiasInterfaceEn}
 C {ipin.sym} -610 -400 2 1 {name=p47 lab=CoarseOneHotLowBiasEn}
-C {ipin.sym} -610 -380 2 1 {name=p48 lab=LowBiasBuffEn}
-C {ipin.sym} -610 -360 2 1 {name=p49 lab=nLowBiasBuffEn}
+C {ipin.sym} -610 -360 2 1 {name=p49 lab=BIT0}
 C {ipin.sym} -280 -440 2 1 {name=p50 lab=LowBiasInterfaceEnBuffer}
 C {ipin.sym} -280 -420 2 1 {name=p51 lab=nLowBiasInterfaceEnBuffer}
 C {ipin.sym} -280 -400 2 1 {name=p52 lab=CoarseOneHotLowBiasEnBuffer}
@@ -144,16 +141,13 @@ C {lab_wire.sym} -160 -110 0 1 {name=p57 sig_type=std_logic lab=LowBiasInterface
 C {lab_wire.sym} -160 -90 0 1 {name=p58 sig_type=std_logic lab=nLowBiasInterfaceEn}
 C {lab_wire.sym} -160 -70 0 1 {name=p59 sig_type=std_logic lab=CoarseOneHotLowBiasEn}
 C {lab_wire.sym} -160 -270 0 1 {name=p60 sig_type=std_logic lab=CoarseOneHot[7]}
-C {lab_wire.sym} -160 -50 0 1 {name=p61 sig_type=std_logic lab=LowBiasBuffEn}
-C {lab_wire.sym} -160 -30 0 1 {name=p62 sig_type=std_logic lab=nLowBiasBuffEn}
+C {lab_wire.sym} -160 -30 0 1 {name=p62 sig_type=std_logic lab=BIT0}
 C {ipin.sym} -360 -740 2 1 {name=p3 lab=PowerDown}
 C {lab_wire.sym} -160 -10 0 1 {name=p26 sig_type=std_logic lab=NBiasEn}
 C {lab_wire.sym} -160 10 0 1 {name=p63 sig_type=std_logic lab=PBiasEn}
-C {lab_wire.sym} -160 30 0 1 {name=p64 sig_type=std_logic lab=BiasEnable}
 C {lab_wire.sym} -160 50 0 1 {name=p65 sig_type=std_logic lab=BiasDisable}
 C {ipin.sym} -610 -340 2 1 {name=p66 lab=NBiasEn}
 C {ipin.sym} -610 -320 2 1 {name=p67 lab=PBiasEn}
-C {ipin.sym} -610 -300 2 1 {name=p68 lab=BiasEnable}
 C {ipin.sym} -610 -280 2 1 {name=p69 lab=BiasDisable}
 C {lab_wire.sym} -160 -250 0 1 {name=p70 sig_type=std_logic lab=CoarseOneHot[6]}
 C {lab_wire.sym} -160 -230 0 1 {name=p71 sig_type=std_logic lab=CoarseOneHot[5]}
@@ -176,3 +170,6 @@ C {lab_wire.sym} -160 -490 0 1 {name=p93 sig_type=std_logic lab=FineCode[2]}
 C {lab_wire.sym} -160 -470 0 1 {name=p94 sig_type=std_logic lab=FineCode[1]}
 C {lab_wire.sym} -160 -450 0 1 {name=p95 sig_type=std_logic lab=FineCode[0]}
 C {lab_wire.sym} -160 -290 0 1 {name=p85 sig_type=std_logic lab=nFineCode[0]}
+C {lab_wire.sym} 490 -500 0 0 {name=p100 sig_type=std_logic lab=PadBias}
+C {iopin.sym} -360 -670 0 1 {name=p101 lab=PadBias}
+C {lab_wire.sym} -160 -50 0 1 {name=p38 sig_type=std_logic lab=PowerDown}

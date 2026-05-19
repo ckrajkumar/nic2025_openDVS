@@ -1,0 +1,39 @@
+Using run time directory XSCHEM_SHAREDIR = /usr/local/share/xschem
+Sourcing /usr/local/share/xschem/xschemrc init file
+Sourcing /home/alienfalcon/.ciel/sky130B/libs.tech/xschem/xschemrc init file
+open_pdks installation: using /home/alienfalcon/.ciel
+SKYWATER_MODELS: /home/alienfalcon/.ciel/sky130B/libs.tech/combined
+SKYWATER_STDCELLS: /home/alienfalcon/.ciel/sky130B/libs.ref/sky130_fd_sc_hd/spice
+l_s_d(): Symbol not found: BiasDividerCell.sym
+l_s_d(): Symbol not found: BiasMultiplierCell.sym
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_19-05-58/parameters/op_sweep_code/run_04/tb_BiasBranchnMasterx1_op.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasBranchnMasterx1.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasBranch.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasMasternCoarse.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasBranchBuffer.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasCoarseFineInterface.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasDividerFine.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasBuffers.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasCoarseSel8to1.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasMasterBias.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasCoarseMBDivider.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasDividerFineCell.sch
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasDivider.sch
+Error: undriven node: VOut0
+Error: undriven node: VOut1
+Error: undriven node: VOut2
+Error: undriven node: VOut3
+Error: undriven node: VOut4
+Warning: open net: GndA
+Warning: open net: IOut0
+Warning: open net: IOut1
+Warning: open net: IOut2
+Warning: open net: IOut3
+Warning: open net: IOut4
+Warning: open net: IOut5
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/cace/templates/../../xschem/BiasMultiplier.sch
+Error: undriven node: VOut0
+Warning: open net: VddA18
+Warning: open net: IOut0
+Warning: open net: IOut1
+-----------/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/runs/RUN_2026-05-06_19-05-58/parameters/op_sweep_code/run_04/tb_BiasBranchnMasterx1_op.sch

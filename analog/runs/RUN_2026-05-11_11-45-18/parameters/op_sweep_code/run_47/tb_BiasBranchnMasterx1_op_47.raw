@@ -1,0 +1,1500 @@
+Title: ** sch_path: /home/alienfalcon/projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_opendvs/analog/runs/run_2026-05-11_11-45-18/parameters/op_sweep_code/run_47/tb_biasbranchnmasterx1_op.sch
+Date: Mon May 11 12:01:09  2026
+Command: ngspice-45+, Build Tue Mar 10 20:20:38 UTC 2026
+Plotname: Operating Point
+Flags: real
+No. Variables: 1456
+No. Points: 1
+Variables:
+	0	v(gnd!)	voltage
+	1	i(@m.xbias.xbiasbranch.xbuffs.xmndio.msky130_fd_pr__nfet_01v8[id])	current
+	2	v(@m.xbias.xbiasbranch.xbuffs.xmndio.msky130_fd_pr__nfet_01v8[vdsat])	voltage
+	3	i(@m.xbias.xbiasbranch.xbuffs.xmnmirr.msky130_fd_pr__nfet_01v8[id])	current
+	4	v(@m.xbias.xbiasbranch.xbuffs.xmnmirr.msky130_fd_pr__nfet_01v8[vdsat])	voltage
+	5	i(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffb0.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	6	v(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffb0.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	7	i(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffbias.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	8	v(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffbias.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	9	i(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffnb0.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	10	v(@m.xbias.xbiasbranch.xbuffs.xmnmirrbuffnb0.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	11	i(@m.xbias.xbiasbranch.xbuffs.xmpdio.msky130_fd_pr__pfet_01v8[id])	current
+	12	v(@m.xbias.xbiasbranch.xbuffs.xmpdio.msky130_fd_pr__pfet_01v8[vdsat])	voltage
+	13	i(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffb0.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	14	v(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffb0.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage
+	15	i(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffbias.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	16	v(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffbias.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage
+	17	i(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffnb0.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	18	v(@m.xbias.xbiasbranch.xbuffs.xmpmirrbuffnb0.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage
+	19	i(@m.xbias.xbiasbranch.xcoarse2fine.xmpdionout2.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	20	v(@m.xbias.xbiasbranch.xcoarse2fine.xmpdionout2.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	21	i(@m.xbias.xbiasbranch.xcoarse2fine.xmpdioout.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	22	v(@m.xbias.xbiasbranch.xcoarse2fine.xmpdioout.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	23	i(@m.xbias.xbiasbranch.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	24	i(@m.xbias.xbiasbranch.xcoarse2fine.xmpmirrnout2.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	25	v(@m.xbias.xbiasbranch.xcoarse2fine.xmpmirrnout2.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	26	i(@m.xbias.xbiasbranch.xcoarse2fine.xmpmirrout.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	27	v(@m.xbias.xbiasbranch.xcoarse2fine.xmpmirrout.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	28	i(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	29	v(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	30	i(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	31	v(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	32	i(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	33	v(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	34	i(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	35	v(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	36	i(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb4t07.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	37	v(@m.xbias.xbiasbranch.xcoarsebuf.xsel.xmmirrhb4t07.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	38	i(@m.xbias.xbiasbranch.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	39	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdionout2.msky130_fd_pr__pfet_01v8[id])	current dims=0
+	40	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdionout2.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	41	v(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdionout2.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	42	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdioout.msky130_fd_pr__pfet_01v8[id])	current dims=0
+	43	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdioout.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	44	v(@m.xbias.xbiasbuffer.xcoarse2fine.xmpdioout.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	45	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	46	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrnout2.msky130_fd_pr__pfet_01v8[id])	current dims=0
+	47	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrnout2.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	48	v(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrnout2.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	49	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrout.msky130_fd_pr__pfet_01v8[id])	current dims=0
+	50	i(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrout.msky130_fd_pr__pfet_01v8_lvt[id])	current dims=0
+	51	v(@m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrout.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	52	i(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	53	v(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	54	i(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	55	v(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	56	i(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	57	v(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	58	i(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	59	v(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	60	i(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb4t07.msky130_fd_pr__nfet_01v8_lvt[id])	current dims=0
+	61	v(@m.xbias.xbiasbuffer.xcoarsebuf.xsel.xmmirrhb4t07.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage dims=0
+	62	i(@m.xbias.xbiasbuffer.xmndio.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	63	v(@m.xbias.xbiasbuffer.xmndio.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	64	i(@m.xbias.xbiasbuffer.xmnmirr.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	65	v(@m.xbias.xbiasbuffer.xmnmirr.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	66	i(@m.xbias.xbiasbuffer.xmpdio.msky130_fd_pr__pfet_01v8_lvt[id])	current
+	67	v(@m.xbias.xbiasbuffer.xmpdio.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage
+	68	i(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbias.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	69	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbias.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	70	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascasc.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	71	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascascdio.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	72	i(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiasdio.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	73	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiasdio.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	74	i(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr1.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	75	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr1.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	76	i(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr2.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	77	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr2.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	78	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc1.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	79	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc2.msky130_fd_pr__nfet_01v8_lvt[vdsat])	voltage
+	80	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbias.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	81	v(@m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbiasdio.msky130_fd_pr__pfet_01v8_lvt[vdsat])	voltage dims=0
+	82	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb0.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	83	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb1.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	84	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb2.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	85	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb3.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	86	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb4.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	87	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb5.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	88	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb6.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	89	i(@m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb7.msky130_fd_pr__nfet_01v8_lvt[id])	current
+	90	v(bcoarse0)	voltage
+	91	v(bcoarse1)	voltage
+	92	v(bcoarse2)	voltage
+	93	v(bcoarse3)	voltage
+	94	v(bcoarse4)	voltage
+	95	v(bcoarse5)	voltage
+	96	v(bcoarse6)	voltage
+	97	v(bcoarse7)	voltage
+	98	v(bfinebit0)	voltage
+	99	v(bfinebit1)	voltage
+	100	v(bfinebit2)	voltage
+	101	v(bfinebit3)	voltage
+	102	v(bfinebit4)	voltage
+	103	v(bfinebit5)	voltage
+	104	v(bfinebit6)	voltage
+	105	v(bfinebit7)	voltage
+	106	v(biascb[0])	voltage
+	107	v(biascb[1])	voltage
+	108	v(biascb[2])	voltage
+	109	v(biascb[3])	voltage
+	110	v(biascb[4])	voltage
+	111	v(biascb[5])	voltage
+	112	v(biascb[6])	voltage
+	113	v(biascb[7])	voltage
+	114	v(biasdisable)	voltage
+	115	v(biasenable)	voltage
+	116	v(buffern)	voltage
+	117	v(bufferp)	voltage
+	118	v(coarse0)	voltage
+	119	v(coarse1)	voltage
+	120	v(coarse2)	voltage
+	121	v(coarse3)	voltage
+	122	v(coarse4)	voltage
+	123	v(coarse5)	voltage
+	124	v(coarse6)	voltage
+	125	v(coarse7)	voltage
+	126	v(coarseonehotlowbiasen)	voltage
+	127	v(coarseonehotlowbiasenbuffer)	voltage
+	128	v(drain_nmeasout)	voltage
+	129	v(drain_pmeasout)	voltage
+	130	i(e1)	current
+	131	i(e2)	current
+	132	i(e3)	current
+	133	i(e4)	current
+	134	i(e5)	current
+	135	i(e6)	current
+	136	i(e7)	current
+	137	i(e8)	current
+	138	i(e9)	current
+	139	i(e10)	current
+	140	i(e11)	current
+	141	i(e12)	current
+	142	i(e13)	current
+	143	i(e14)	current
+	144	i(e15)	current
+	145	i(e16)	current
+	146	i(e17)	current
+	147	i(e18)	current
+	148	i(e19)	current
+	149	i(e20)	current
+	150	i(e21)	current
+	151	i(e22)	current
+	152	v(finebit0)	voltage
+	153	v(finebit1)	voltage
+	154	v(finebit2)	voltage
+	155	v(finebit3)	voltage
+	156	v(finebit4)	voltage
+	157	v(finebit5)	voltage
+	158	v(finebit6)	voltage
+	159	v(finebit7)	voltage
+	160	v(ir)	voltage
+	161	v(lowbiasbufen)	voltage
+	162	v(lowbiasinterfaceen)	voltage
+	163	v(lowbiasinterfaceenbuffer)	voltage
+	164	v(m.xbias.xbiasbranch.xbuffs.xmndio.msky130_fd_pr__nfet_01v8#body)	voltage
+	165	v(m.xbias.xbiasbranch.xbuffs.xmndio.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	166	v(m.xbias.xbiasbranch.xbuffs.xmndio.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	167	v(m.xbias.xbiasbranch.xbuffs.xmnmirr.msky130_fd_pr__nfet_01v8#body)	voltage
+	168	v(m.xbias.xbiasbranch.xbuffs.xmnmirr.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	169	v(m.xbias.xbiasbranch.xbuffs.xmnmirr.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	170	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	171	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	172	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	173	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffbias.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	174	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffbias.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	175	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffbias.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	176	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffnb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	177	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffnb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	178	v(m.xbias.xbiasbranch.xbuffs.xmnmirrbuffnb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	179	v(m.xbias.xbiasbranch.xbuffs.xmnpmirrenable.msky130_fd_pr__nfet_01v8#body)	voltage
+	180	v(m.xbias.xbiasbranch.xbuffs.xmnpmirrenable.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	181	v(m.xbias.xbiasbranch.xbuffs.xmnpmirrenable.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	182	v(m.xbias.xbiasbranch.xbuffs.xmnswbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	183	v(m.xbias.xbiasbranch.xbuffs.xmnswbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	184	v(m.xbias.xbiasbranch.xbuffs.xmnswbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	185	v(m.xbias.xbiasbranch.xbuffs.xmnswbias1.msky130_fd_pr__nfet_01v8#body)	voltage
+	186	v(m.xbias.xbiasbranch.xbuffs.xmnswbias1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	187	v(m.xbias.xbiasbranch.xbuffs.xmnswbias1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	188	v(m.xbias.xbiasbranch.xbuffs.xmnswnbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	189	v(m.xbias.xbiasbranch.xbuffs.xmnswnbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	190	v(m.xbias.xbiasbranch.xbuffs.xmnswnbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	191	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrb0.msky130_fd_pr__nfet_01v8#body)	voltage
+	192	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrb0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	193	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrb0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	194	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrnb0.msky130_fd_pr__nfet_01v8#body)	voltage
+	195	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrnb0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	196	v(m.xbias.xbiasbranch.xbuffs.xmnswnmirrnb0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	197	v(m.xbias.xbiasbranch.xbuffs.xmnswpbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	198	v(m.xbias.xbiasbranch.xbuffs.xmnswpbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	199	v(m.xbias.xbiasbranch.xbuffs.xmnswpbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	200	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrb0.msky130_fd_pr__nfet_01v8#body)	voltage
+	201	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrb0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	202	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrb0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	203	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrnb0.msky130_fd_pr__nfet_01v8#body)	voltage
+	204	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrnb0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	205	v(m.xbias.xbiasbranch.xbuffs.xmnswpmirrnb0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	206	v(m.xbias.xbiasbranch.xbuffs.xmnswrail.msky130_fd_pr__nfet_01v8#body)	voltage
+	207	v(m.xbias.xbiasbranch.xbuffs.xmnswrail.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	208	v(m.xbias.xbiasbranch.xbuffs.xmnswrail.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	209	v(m.xbias.xbiasbranch.xbuffs.xmnswrail1.msky130_fd_pr__nfet_01v8#body)	voltage
+	210	v(m.xbias.xbiasbranch.xbuffs.xmnswrail1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	211	v(m.xbias.xbiasbranch.xbuffs.xmnswrail1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	212	v(m.xbias.xbiasbranch.xbuffs.xmpdio.msky130_fd_pr__pfet_01v8#body)	voltage
+	213	v(m.xbias.xbiasbranch.xbuffs.xmpdio.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	214	v(m.xbias.xbiasbranch.xbuffs.xmpdio.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	215	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffb0.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	216	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffb0.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	217	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffb0.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	218	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffbias.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	219	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffbias.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	220	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffbias.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	221	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffnb0.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	222	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffnb0.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	223	v(m.xbias.xbiasbranch.xbuffs.xmpmirrbuffnb0.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	224	v(m.xbias.xbiasbranch.xbuffs.xmpnmirrenable.msky130_fd_pr__pfet_01v8#body)	voltage
+	225	v(m.xbias.xbiasbranch.xbuffs.xmpnmirrenable.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	226	v(m.xbias.xbiasbranch.xbuffs.xmpnmirrenable.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	227	v(m.xbias.xbiasbranch.xbuffs.xmpswbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	228	v(m.xbias.xbiasbranch.xbuffs.xmpswbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	229	v(m.xbias.xbiasbranch.xbuffs.xmpswbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	230	v(m.xbias.xbiasbranch.xbuffs.xmpswbias1.msky130_fd_pr__pfet_01v8#body)	voltage
+	231	v(m.xbias.xbiasbranch.xbuffs.xmpswbias1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	232	v(m.xbias.xbiasbranch.xbuffs.xmpswbias1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	233	v(m.xbias.xbiasbranch.xbuffs.xmpswnbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	234	v(m.xbias.xbiasbranch.xbuffs.xmpswnbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	235	v(m.xbias.xbiasbranch.xbuffs.xmpswnbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	236	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	237	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	238	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	239	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrnb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	240	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrnb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	241	v(m.xbias.xbiasbranch.xbuffs.xmpswnmirrnb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	242	v(m.xbias.xbiasbranch.xbuffs.xmpswpbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	243	v(m.xbias.xbiasbranch.xbuffs.xmpswpbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	244	v(m.xbias.xbiasbranch.xbuffs.xmpswpbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	245	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	246	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	247	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	248	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrnb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	249	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrnb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	250	v(m.xbias.xbiasbranch.xbuffs.xmpswpmirrnb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	251	v(m.xbias.xbiasbranch.xbuffs.xmpswrail.msky130_fd_pr__pfet_01v8#body)	voltage
+	252	v(m.xbias.xbiasbranch.xbuffs.xmpswrail.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	253	v(m.xbias.xbiasbranch.xbuffs.xmpswrail.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	254	v(m.xbias.xbiasbranch.xbuffs.xmpswrail1.msky130_fd_pr__pfet_01v8#body)	voltage
+	255	v(m.xbias.xbiasbranch.xbuffs.xmpswrail1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	256	v(m.xbias.xbiasbranch.xbuffs.xmpswrail1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	257	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	258	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	259	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	260	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#body)	voltage
+	261	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	262	v(m.xbias.xbiasbranch.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	263	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	264	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	265	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	266	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#body)	voltage
+	267	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	268	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	269	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#body)	voltage
+	270	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	271	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	272	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	273	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	274	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	275	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#body)	voltage
+	276	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	277	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	278	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#body)	voltage
+	279	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	280	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	281	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#body)	voltage
+	282	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	283	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	284	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#body)	voltage
+	285	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	286	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	287	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#body)	voltage
+	288	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	289	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	290	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#body)	voltage
+	291	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	292	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	293	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#body)	voltage
+	294	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	295	v(m.xbias.xbiasbranch.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	296	v(m.xbias.xbiasbranch.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	297	v(m.xbias.xbiasbranch.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	298	v(m.xbias.xbiasbranch.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	299	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	300	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	301	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	302	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#body)	voltage
+	303	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	304	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	305	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#body)	voltage
+	306	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	307	v(m.xbias.xbiasbranch.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	308	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	309	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	310	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	311	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	312	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	313	v(m.xbias.xbiasbranch.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	314	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	315	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	316	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	317	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	318	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	319	v(m.xbias.xbiasbranch.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	320	v(m.xbias.xbiasbranch.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	321	v(m.xbias.xbiasbranch.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	322	v(m.xbias.xbiasbranch.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	323	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	324	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	325	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	326	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	327	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	328	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	329	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	330	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	331	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	332	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	333	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	334	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	335	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	336	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	337	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	338	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	339	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	340	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	341	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	342	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	343	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	344	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	345	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	346	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	347	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	348	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	349	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	350	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	351	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	352	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	353	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	354	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	355	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	356	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	357	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	358	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	359	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	360	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	361	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	362	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	363	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	364	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	365	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	366	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	367	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	368	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	369	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	370	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	371	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	372	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	373	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	374	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	375	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	376	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	377	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	378	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	379	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	380	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	381	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	382	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	383	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	384	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	385	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	386	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	387	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	388	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	389	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	390	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	391	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	392	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	393	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	394	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	395	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	396	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	397	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	398	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	399	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	400	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	401	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#body)	voltage
+	402	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	403	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	404	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	405	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	406	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	407	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#body)	voltage
+	408	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	409	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	410	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#body)	voltage
+	411	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	412	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	413	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#body)	voltage
+	414	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	415	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	416	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#body)	voltage
+	417	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	418	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	419	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#body)	voltage
+	420	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	421	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	422	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#body)	voltage
+	423	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	424	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	425	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#body)	voltage
+	426	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	427	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	428	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#body)	voltage
+	429	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	430	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	431	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#body)	voltage
+	432	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	433	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	434	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#body)	voltage
+	435	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	436	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	437	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#body)	voltage
+	438	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	439	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	440	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	441	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	442	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	443	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#body)	voltage
+	444	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	445	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	446	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#body)	voltage
+	447	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	448	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	449	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#body)	voltage
+	450	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	451	v(m.xbias.xbiasbranch.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	452	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	453	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	454	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	455	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	456	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	457	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	458	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	459	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	460	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	461	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	462	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	463	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	464	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	465	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	466	v(m.xbias.xbiasbranch.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	467	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	468	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	469	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	470	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	471	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	472	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	473	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	474	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	475	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	476	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	477	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	478	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	479	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	480	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	481	v(m.xbias.xbiasbranch.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	482	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	483	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	484	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	485	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	486	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	487	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	488	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	489	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	490	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	491	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	492	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	493	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	494	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	495	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	496	v(m.xbias.xbiasbranch.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	497	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	498	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	499	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	500	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	501	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	502	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	503	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	504	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	505	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	506	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	507	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	508	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	509	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	510	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	511	v(m.xbias.xbiasbranch.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	512	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	513	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	514	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	515	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	516	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	517	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	518	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	519	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	520	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	521	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	522	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	523	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	524	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	525	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	526	v(m.xbias.xbiasbranch.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	527	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	528	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	529	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	530	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	531	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	532	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	533	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	534	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	535	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	536	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	537	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	538	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	539	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	540	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	541	v(m.xbias.xbiasbranch.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	542	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	543	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	544	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	545	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	546	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	547	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	548	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	549	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	550	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	551	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	552	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	553	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	554	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	555	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	556	v(m.xbias.xbiasbranch.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	557	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	558	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	559	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	560	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	561	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	562	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	563	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	564	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	565	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	566	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	567	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	568	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	569	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	570	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	571	v(m.xbias.xbiasbranch.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	572	v(m.xbias.xbiasbranch.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	573	v(m.xbias.xbiasbranch.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	574	v(m.xbias.xbiasbranch.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	575	v(m.xbias.xbiasbranch.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	576	v(m.xbias.xbiasbranch.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	577	v(m.xbias.xbiasbranch.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	578	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	579	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	580	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisablediohighbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	581	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#body)	voltage
+	582	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	583	v(m.xbias.xbiasbuffer.xcoarse2fine.xmndisableoutmirr.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	584	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	585	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	586	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiohighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	587	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#body)	voltage
+	588	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	589	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	590	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#body)	voltage
+	591	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	592	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdiolowbias2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	593	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	594	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	595	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdisablehighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	596	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#body)	voltage
+	597	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	598	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	599	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#body)	voltage
+	600	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	601	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	602	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#body)	voltage
+	603	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	604	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum3.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	605	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#body)	voltage
+	606	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	607	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum4.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	608	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#body)	voltage
+	609	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	610	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum5.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	611	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#body)	voltage
+	612	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	613	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum6.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	614	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#body)	voltage
+	615	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	616	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpdum7.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	617	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	618	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	619	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpindio.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	620	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	621	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	622	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrhighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	623	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#body)	voltage
+	624	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	625	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	626	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#body)	voltage
+	627	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	628	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpmirrlowbias2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	629	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	630	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	631	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiohighbias.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	632	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	633	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	634	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpseldiolowbias.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	635	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	636	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	637	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrhighbias.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	638	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	639	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	640	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpselmirrlowbias.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	641	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	642	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	643	v(m.xbias.xbiasbuffer.xcoarse2fine.xmpswdiohighbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	644	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	645	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	646	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	647	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	648	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	649	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	650	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	651	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	652	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrab4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	653	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	654	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	655	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	656	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	657	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	658	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrb1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	659	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	660	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	661	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	662	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	663	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	664	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	665	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	666	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	667	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrbb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	668	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	669	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	670	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	671	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	672	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	673	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	674	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	675	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	676	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrcb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	677	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	678	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	679	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	680	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	681	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	682	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrdb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	683	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	684	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	685	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	686	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	687	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	688	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	689	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	690	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	691	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirreb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	692	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	693	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	694	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	695	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	696	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	697	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	698	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	699	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	700	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	701	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	702	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	703	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrfb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	704	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	705	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	706	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	707	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	708	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	709	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	710	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	711	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	712	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrgb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	713	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	714	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	715	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	716	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	717	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	718	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	719	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	720	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	721	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmmirrhb4to7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	722	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#body)	voltage
+	723	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	724	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswl7.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	725	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	726	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	727	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	728	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#body)	voltage
+	729	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	730	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	731	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#body)	voltage
+	732	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	733	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb2.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	734	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#body)	voltage
+	735	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	736	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb3.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	737	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#body)	voltage
+	738	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	739	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb4.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	740	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#body)	voltage
+	741	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	742	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb5.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	743	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#body)	voltage
+	744	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	745	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswlb6.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	746	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#body)	voltage
+	747	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	748	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub0.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	749	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#body)	voltage
+	750	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	751	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub1.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	752	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#body)	voltage
+	753	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	754	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub2.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	755	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#body)	voltage
+	756	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	757	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub3.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	758	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#body)	voltage
+	759	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	760	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmnswub4to7.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	761	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#body)	voltage
+	762	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	763	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb0.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	764	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#body)	voltage
+	765	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	766	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	767	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#body)	voltage
+	768	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	769	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	770	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#body)	voltage
+	771	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	772	v(m.xbias.xbiasbuffer.xcoarsesel8to1.xmpswb3.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	773	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	774	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	775	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	776	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	777	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	778	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	779	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	780	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	781	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	782	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	783	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	784	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	785	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	786	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	787	v(m.xbias.xbiasbuffer.xdivfine.xdiv0.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	788	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	789	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	790	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	791	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	792	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	793	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	794	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	795	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	796	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	797	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	798	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	799	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	800	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	801	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	802	v(m.xbias.xbiasbuffer.xdivfine.xdiv1.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	803	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	804	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	805	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	806	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	807	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	808	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	809	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	810	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	811	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	812	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	813	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	814	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	815	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	816	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	817	v(m.xbias.xbiasbuffer.xdivfine.xdiv2.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	818	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	819	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	820	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	821	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	822	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	823	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	824	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	825	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	826	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	827	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	828	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	829	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	830	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	831	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	832	v(m.xbias.xbiasbuffer.xdivfine.xdiv3.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	833	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	834	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	835	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	836	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	837	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	838	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	839	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	840	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	841	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	842	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	843	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	844	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	845	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	846	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	847	v(m.xbias.xbiasbuffer.xdivfine.xdiv4.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	848	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	849	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	850	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	851	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	852	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	853	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	854	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	855	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	856	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	857	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	858	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	859	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	860	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	861	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	862	v(m.xbias.xbiasbuffer.xdivfine.xdiv5.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	863	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	864	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	865	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	866	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	867	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	868	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	869	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	870	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	871	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	872	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	873	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	874	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	875	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	876	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	877	v(m.xbias.xbiasbuffer.xdivfine.xdiv6.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	878	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	879	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	880	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2rl.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	881	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	882	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	883	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xm2ru.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	884	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	885	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	886	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmr.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	887	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	888	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	889	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswnout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	890	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#body)	voltage
+	891	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#dbody)	voltage
+	892	v(m.xbias.xbiasbuffer.xdivfine.xdiv7.xmswout.msky130_fd_pr__pfet_01v8_hvt#sbody)	voltage
+	893	v(m.xbias.xbiasbuffer.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	894	v(m.xbias.xbiasbuffer.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	895	v(m.xbias.xbiasbuffer.xdivfine.xmnterm.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	896	v(m.xbias.xbiasbuffer.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	897	v(m.xbias.xbiasbuffer.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	898	v(m.xbias.xbiasbuffer.xdivfine.xmrterm.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	899	v(m.xbias.xbiasbuffer.xmndio.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	900	v(m.xbias.xbiasbuffer.xmndio.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	901	v(m.xbias.xbiasbuffer.xmndio.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	902	v(m.xbias.xbiasbuffer.xmnmirr.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	903	v(m.xbias.xbiasbuffer.xmnmirr.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	904	v(m.xbias.xbiasbuffer.xmnmirr.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	905	v(m.xbias.xbiasbuffer.xmpdio.msky130_fd_pr__pfet_01v8_lvt#body)	voltage
+	906	v(m.xbias.xbiasbuffer.xmpdio.msky130_fd_pr__pfet_01v8_lvt#dbody)	voltage
+	907	v(m.xbias.xbiasbuffer.xmpdio.msky130_fd_pr__pfet_01v8_lvt#sbody)	voltage
+	908	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbias.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	909	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbias.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	910	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbias.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	911	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascasc.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	912	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascasc.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	913	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascasc.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	914	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascascdio.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	915	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascascdio.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	916	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiascascdio.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	917	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiasdio.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	918	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiasdio.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	919	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbiasdio.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	920	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbias.msky130_fd_pr__nfet_01v8#body)	voltage
+	921	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbias.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	922	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbias.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	923	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbs.msky130_fd_pr__nfet_01v8#body)	voltage
+	924	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbs.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	925	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbscapbs.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	926	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbspd.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	927	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbspd.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	928	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnbspd.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	929	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	930	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	931	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	932	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	933	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	934	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirr2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	935	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	936	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	937	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	938	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	939	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	940	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmnmirrcasc2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	941	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbias.msky130_fd_pr__pfet_01v8#body)	voltage
+	942	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbias.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	943	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbias.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	944	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbiasdio.msky130_fd_pr__pfet_01v8#body)	voltage
+	945	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbiasdio.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	946	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbiasdio.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	947	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbs.msky130_fd_pr__pfet_01v8#body)	voltage
+	948	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbs.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	949	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbs.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	950	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbspu.msky130_fd_pr__pfet_01v8#body)	voltage
+	951	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbspu.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	952	v(m.xbias.xbiasmasterncoarse.xbiasmasterbias.xmpbspu.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	953	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	954	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	955	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	956	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	957	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	958	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell0.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	959	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	960	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	961	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	962	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	963	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	964	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell1.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	965	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	966	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	967	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	968	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	969	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	970	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell2.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	971	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	972	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	973	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	974	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	975	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	976	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell3.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	977	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	978	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	979	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	980	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	981	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	982	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell4.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	983	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	984	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	985	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	986	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	987	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	988	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xdivcell5.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	989	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	990	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	991	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	992	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	993	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	994	v(m.xbias.xbiasmasterncoarse.xmbdiv.x1.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	995	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	996	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	997	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	998	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm8.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	999	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm8.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1000	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm8.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1001	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm9.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1002	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm9.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1003	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm9.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1004	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm10.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1005	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm10.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1006	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm10.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1007	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm11.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1008	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm11.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1009	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm11.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1010	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm12.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1011	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm12.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1012	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm12.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1013	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm13.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1014	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm13.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1015	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm13.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1016	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm14.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1017	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm14.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1018	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm14.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1019	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm15.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1020	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm15.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1021	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm15.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1022	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm16.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1023	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm16.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1024	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm16.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1025	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm17.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1026	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm17.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1027	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm17.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1028	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm18.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1029	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm18.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1030	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm18.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1031	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm19.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1032	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm19.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1033	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm19.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1034	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm20.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1035	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm20.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1036	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm20.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1037	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm21.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1038	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm21.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1039	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm21.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1040	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm22.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1041	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm22.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1042	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm22.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1043	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm23.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1044	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm23.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1045	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm23.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1046	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm24.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1047	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm24.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1048	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm24.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1049	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm25.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1050	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm25.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1051	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm25.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1052	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm26.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1053	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm26.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1054	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm26.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1055	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm27.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1056	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm27.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1057	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm27.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1058	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm28.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1059	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm28.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1060	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm28.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1061	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm29.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1062	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm29.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1063	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm29.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1064	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm30.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1065	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm30.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1066	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm30.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1067	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm31.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1068	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm31.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1069	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm31.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1070	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm32.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1071	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm32.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1072	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm32.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1073	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm33.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1074	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm33.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1075	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm33.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1076	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm34.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1077	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm34.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1078	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm34.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1079	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm36.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1080	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm36.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1081	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm36.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1082	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm37.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1083	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm37.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1084	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm37.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1085	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm38.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1086	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm38.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1087	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm38.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1088	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm39.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1089	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm39.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1090	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm39.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1091	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm40.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1092	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm40.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1093	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm40.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1094	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm41.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1095	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm41.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1096	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm41.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1097	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm42.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1098	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm42.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1099	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm42.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1100	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm44.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1101	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm44.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1102	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm44.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1103	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm45.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1104	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm45.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1105	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm45.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1106	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm46.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1107	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm46.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1108	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm46.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1109	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm47.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1110	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm47.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1111	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm47.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1112	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm48.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1113	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm48.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1114	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm48.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1115	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm49.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1116	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm49.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1117	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm49.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1118	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm50.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1119	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm50.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1120	v(m.xbias.xbiasmasterncoarse.xmbdiv.xm50.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1121	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb0.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1122	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb0.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1123	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb0.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1124	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb1.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1125	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb1.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1126	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb1.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1127	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb2.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1128	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb2.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1129	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb2.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1130	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb3.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1131	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb3.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1132	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb3.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1133	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb4.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1134	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb4.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1135	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb4.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1136	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb5.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1137	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb5.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1138	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb5.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1139	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb6.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1140	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb6.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1141	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb6.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1142	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb7.msky130_fd_pr__nfet_01v8_lvt#body)	voltage
+	1143	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb7.msky130_fd_pr__nfet_01v8_lvt#dbody)	voltage
+	1144	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmndiocb7.msky130_fd_pr__nfet_01v8_lvt#sbody)	voltage
+	1145	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	1146	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1147	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1148	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	1149	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1150	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1151	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	1152	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1153	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1154	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	1155	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1156	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell0.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1157	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm1.msky130_fd_pr__pfet_01v8#body)	voltage
+	1158	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm1.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1159	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm1.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1160	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm2.msky130_fd_pr__pfet_01v8#body)	voltage
+	1161	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm2.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1162	v(m.xbias.xbiasmasterncoarse.xmbdiv.xmult.xmultcell1.xm2.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1163	v(m.xmnmeasout.msky130_fd_pr__nfet_01v8#body)	voltage
+	1164	v(m.xmnmeasout.msky130_fd_pr__nfet_01v8#dbody)	voltage
+	1165	v(m.xmnmeasout.msky130_fd_pr__nfet_01v8#sbody)	voltage
+	1166	v(m.xmpmeasout.msky130_fd_pr__pfet_01v8#body)	voltage
+	1167	v(m.xmpmeasout.msky130_fd_pr__pfet_01v8#dbody)	voltage
+	1168	v(m.xmpmeasout.msky130_fd_pr__pfet_01v8#sbody)	voltage
+	1169	v(nbfinebit0)	voltage
+	1170	v(nbfinebit1)	voltage
+	1171	v(nbfinebit2)	voltage
+	1172	v(nbfinebit3)	voltage
+	1173	v(nbfinebit4)	voltage
+	1174	v(nbfinebit5)	voltage
+	1175	v(nbfinebit6)	voltage
+	1176	v(nbfinebit7)	voltage
+	1177	v(nbiasen)	voltage
+	1178	v(nfinebit0)	voltage
+	1179	v(nfinebit1)	voltage
+	1180	v(nfinebit2)	voltage
+	1181	v(nfinebit3)	voltage
+	1182	v(nfinebit4)	voltage
+	1183	v(nfinebit5)	voltage
+	1184	v(nfinebit6)	voltage
+	1185	v(nfinebit7)	voltage
+	1186	v(nlowbiasbufen)	voltage
+	1187	v(nlowbiasinterfaceen)	voltage
+	1188	v(nlowbiasinterfaceenbuffer)	voltage
+	1189	v(padbiasdisable)	voltage
+	1190	v(padbiasenable)	voltage
+	1191	v(pbiasen)	voltage
+	1192	v(powerdown)	voltage
+	1193	i(vbcoarse0)	current
+	1194	i(vbcoarse1)	current
+	1195	i(vbcoarse2)	current
+	1196	i(vbcoarse3)	current
+	1197	i(vbcoarse4)	current
+	1198	i(vbcoarse5)	current
+	1199	i(vbcoarse6)	current
+	1200	i(vbcoarse7)	current
+	1201	i(vbfinebit0)	current
+	1202	i(vbfinebit1)	current
+	1203	i(vbfinebit2)	current
+	1204	i(vbfinebit3)	current
+	1205	i(vbfinebit4)	current
+	1206	i(vbfinebit5)	current
+	1207	i(vbfinebit6)	current
+	1208	i(vbfinebit7)	current
+	1209	i(vbiasenabled)	current
+	1210	i(vbiasenabled8)	current
+	1211	i(vcoarse0)	current
+	1212	i(vcoarse1)	current
+	1213	i(vcoarse2)	current
+	1214	i(vcoarse3)	current
+	1215	i(vcoarse4)	current
+	1216	i(vcoarse5)	current
+	1217	i(vcoarse6)	current
+	1218	i(vcoarse7)	current
+	1219	v(vdd)	voltage
+	1220	i(vfinebit8)	current
+	1221	i(vfinebit9)	current
+	1222	i(vfinebit10)	current
+	1223	i(vfinebit11)	current
+	1224	i(vfinebit12)	current
+	1225	i(vfinebit13)	current
+	1226	i(vfinebit14)	current
+	1227	i(vfinebit15)	current
+	1228	i(vgnd)	current
+	1229	i(vlowbiasbufen)	current
+	1230	i(vlowbiasbufen2)	current
+	1231	i(vlowbiasbufen3)	current
+	1232	i(vlowbiasinterfaceen)	current
+	1233	i(vlowbiasinterfaceenbuffer)	current
+	1234	v(vmasterbiasn)	voltage
+	1235	v(vmasterbiasp)	voltage
+	1236	i(vmeas_iout_nmos)	current
+	1237	i(vmeas_iout_pmos)	current
+	1238	i(vnbiasen)	current
+	1239	v(vout)	voltage
+	1240	i(vpowerdown)	current
+	1241	i(vvdd)	current
+	1242	v(xbias.xbiasbranch.biasvgate)	voltage
+	1243	v(xbias.xbiasbranch.iindiv)	voltage
+	1244	v(xbias.xbiasbranch.ioutdiv)	voltage
+	1245	v(xbias.xbiasbranch.xbuffs.nbias)	voltage
+	1246	v(xbias.xbiasbranch.xbuffs.ncopy)	voltage
+	1247	v(xbias.xbiasbranch.xbuffs.net1)	voltage
+	1248	v(xbias.xbiasbranch.xbuffs.net2)	voltage
+	1249	v(xbias.xbiasbranch.xbuffs.net3)	voltage
+	1250	v(xbias.xbiasbranch.xbuffs.net4)	voltage
+	1251	v(xbias.xbiasbranch.xbuffs.net5)	voltage
+	1252	v(xbias.xbiasbranch.xbuffs.net6)	voltage
+	1253	v(xbias.xbiasbranch.xbuffs.nmirrbuffdrain)	voltage
+	1254	v(xbias.xbiasbranch.xbuffs.pbias)	voltage
+	1255	v(xbias.xbiasbranch.xbuffs.pmirrbuffdrain)	voltage
+	1256	v(xbias.xbiasbranch.xcoarse2fine.highbiasdiodrain)	voltage
+	1257	v(xbias.xbiasbranch.xcoarse2fine.highbiasdiogate)	voltage
+	1258	v(xbias.xbiasbranch.xcoarse2fine.highbiasmirr)	voltage
+	1259	v(xbias.xbiasbranch.xcoarse2fine.lowbiasdiogate)	voltage
+	1260	v(xbias.xbiasbranch.xcoarse2fine.lowbiasdioint)	voltage
+	1261	v(xbias.xbiasbranch.xcoarse2fine.lowbiasmirr)	voltage
+	1262	v(xbias.xbiasbranch.xcoarse2fine.lowbiasmirrint)	voltage
+	1263	v(xbias.xbiasbranch.xcoarse2fine.net1)	voltage
+	1264	v(xbias.xbiasbranch.xcoarse2fine.net2)	voltage
+	1265	v(xbias.xbiasbranch.xcoarse2fine.net3)	voltage
+	1266	v(xbias.xbiasbranch.xcoarse2fine.net4)	voltage
+	1267	v(xbias.xbiasbranch.xcoarse2fine.net5)	voltage
+	1268	v(xbias.xbiasbranch.xcoarse2fine.net6)	voltage
+	1269	v(xbias.xbiasbranch.xcoarse2fine.net7)	voltage
+	1270	v(xbias.xbiasbranch.xcoarse2fine.net8)	voltage
+	1271	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb0_drain)	voltage
+	1272	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb1_drain)	voltage
+	1273	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb2_drain)	voltage
+	1274	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb3_drain)	voltage
+	1275	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb4o5o6o7_drain)	voltage
+	1276	v(xbias.xbiasbranch.xcoarsesel8to1.mirrb4o5o6o7_gate)	voltage
+	1277	v(xbias.xbiasbranch.xcoarsesel8to1.net1)	voltage
+	1278	v(xbias.xbiasbranch.xcoarsesel8to1.net2)	voltage
+	1279	v(xbias.xbiasbranch.xcoarsesel8to1.net3)	voltage
+	1280	v(xbias.xbiasbranch.xcoarsesel8to1.net4)	voltage
+	1281	v(xbias.xbiasbranch.xcoarsesel8to1.net5)	voltage
+	1282	v(xbias.xbiasbranch.xcoarsesel8to1.net6)	voltage
+	1283	v(xbias.xbiasbranch.xcoarsesel8to1.net7)	voltage
+	1284	v(xbias.xbiasbranch.xcoarsesel8to1.net8)	voltage
+	1285	v(xbias.xbiasbranch.xcoarsesel8to1.net9)	voltage
+	1286	v(xbias.xbiasbranch.xcoarsesel8to1.net10)	voltage
+	1287	v(xbias.xbiasbranch.xcoarsesel8to1.net11)	voltage
+	1288	v(xbias.xbiasbranch.xcoarsesel8to1.net12)	voltage
+	1289	v(xbias.xbiasbranch.xcoarsesel8to1.net13)	voltage
+	1290	v(xbias.xbiasbranch.xcoarsesel8to1.net14)	voltage
+	1291	v(xbias.xbiasbranch.xcoarsesel8to1.net15)	voltage
+	1292	v(xbias.xbiasbranch.xcoarsesel8to1.net16)	voltage
+	1293	v(xbias.xbiasbranch.xcoarsesel8to1.net17)	voltage
+	1294	v(xbias.xbiasbranch.xcoarsesel8to1.net18)	voltage
+	1295	v(xbias.xbiasbranch.xcoarsesel8to1.net19)	voltage
+	1296	v(xbias.xbiasbranch.xcoarsesel8to1.net20)	voltage
+	1297	v(xbias.xbiasbranch.xcoarsesel8to1.net21)	voltage
+	1298	v(xbias.xbiasbranch.xcoarsesel8to1.net22)	voltage
+	1299	v(xbias.xbiasbranch.xcoarsesel8to1.net23)	voltage
+	1300	v(xbias.xbiasbranch.xcoarsesel8to1.net24)	voltage
+	1301	v(xbias.xbiasbranch.xcoarsesel8to1.net25)	voltage
+	1302	v(xbias.xbiasbranch.xdivfine.idiv0)	voltage
+	1303	v(xbias.xbiasbranch.xdivfine.idiv1)	voltage
+	1304	v(xbias.xbiasbranch.xdivfine.idiv2)	voltage
+	1305	v(xbias.xbiasbranch.xdivfine.idiv3)	voltage
+	1306	v(xbias.xbiasbranch.xdivfine.idiv4)	voltage
+	1307	v(xbias.xbiasbranch.xdivfine.idiv5)	voltage
+	1308	v(xbias.xbiasbranch.xdivfine.idiv6)	voltage
+	1309	v(xbias.xbiasbranch.xdivfine.idiv7)	voltage
+	1310	v(xbias.xbiasbranch.xdivfine.termdio)	voltage
+	1311	v(xbias.xbiasbranch.xdivfine.xdiv0.net1)	voltage
+	1312	v(xbias.xbiasbranch.xdivfine.xdiv0.net2)	voltage
+	1313	v(xbias.xbiasbranch.xdivfine.xdiv1.net1)	voltage
+	1314	v(xbias.xbiasbranch.xdivfine.xdiv1.net2)	voltage
+	1315	v(xbias.xbiasbranch.xdivfine.xdiv2.net1)	voltage
+	1316	v(xbias.xbiasbranch.xdivfine.xdiv2.net2)	voltage
+	1317	v(xbias.xbiasbranch.xdivfine.xdiv3.net1)	voltage
+	1318	v(xbias.xbiasbranch.xdivfine.xdiv3.net2)	voltage
+	1319	v(xbias.xbiasbranch.xdivfine.xdiv4.net1)	voltage
+	1320	v(xbias.xbiasbranch.xdivfine.xdiv4.net2)	voltage
+	1321	v(xbias.xbiasbranch.xdivfine.xdiv5.net1)	voltage
+	1322	v(xbias.xbiasbranch.xdivfine.xdiv5.net2)	voltage
+	1323	v(xbias.xbiasbranch.xdivfine.xdiv6.net1)	voltage
+	1324	v(xbias.xbiasbranch.xdivfine.xdiv6.net2)	voltage
+	1325	v(xbias.xbiasbranch.xdivfine.xdiv7.net1)	voltage
+	1326	v(xbias.xbiasbranch.xdivfine.xdiv7.net2)	voltage
+	1327	v(xbias.xbiasbuffer.biasvgate)	voltage
+	1328	v(xbias.xbiasbuffer.iindiv)	voltage
+	1329	v(xbias.xbiasbuffer.xcoarse2fine.highbiasdiodrain)	voltage
+	1330	v(xbias.xbiasbuffer.xcoarse2fine.highbiasdiogate)	voltage
+	1331	v(xbias.xbiasbuffer.xcoarse2fine.highbiasmirr)	voltage
+	1332	v(xbias.xbiasbuffer.xcoarse2fine.lowbiasdiogate)	voltage
+	1333	v(xbias.xbiasbuffer.xcoarse2fine.lowbiasdioint)	voltage
+	1334	v(xbias.xbiasbuffer.xcoarse2fine.lowbiasmirr)	voltage
+	1335	v(xbias.xbiasbuffer.xcoarse2fine.lowbiasmirrint)	voltage
+	1336	v(xbias.xbiasbuffer.xcoarse2fine.net1)	voltage
+	1337	v(xbias.xbiasbuffer.xcoarse2fine.net2)	voltage
+	1338	v(xbias.xbiasbuffer.xcoarse2fine.net3)	voltage
+	1339	v(xbias.xbiasbuffer.xcoarse2fine.net4)	voltage
+	1340	v(xbias.xbiasbuffer.xcoarse2fine.net5)	voltage
+	1341	v(xbias.xbiasbuffer.xcoarse2fine.net6)	voltage
+	1342	v(xbias.xbiasbuffer.xcoarse2fine.net7)	voltage
+	1343	v(xbias.xbiasbuffer.xcoarse2fine.net8)	voltage
+	1344	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb0_drain)	voltage
+	1345	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb1_drain)	voltage
+	1346	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb2_drain)	voltage
+	1347	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb3_drain)	voltage
+	1348	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb4o5o6o7_drain)	voltage
+	1349	v(xbias.xbiasbuffer.xcoarsesel8to1.mirrb4o5o6o7_gate)	voltage
+	1350	v(xbias.xbiasbuffer.xcoarsesel8to1.net1)	voltage
+	1351	v(xbias.xbiasbuffer.xcoarsesel8to1.net2)	voltage
+	1352	v(xbias.xbiasbuffer.xcoarsesel8to1.net3)	voltage
+	1353	v(xbias.xbiasbuffer.xcoarsesel8to1.net4)	voltage
+	1354	v(xbias.xbiasbuffer.xcoarsesel8to1.net5)	voltage
+	1355	v(xbias.xbiasbuffer.xcoarsesel8to1.net6)	voltage
+	1356	v(xbias.xbiasbuffer.xcoarsesel8to1.net7)	voltage
+	1357	v(xbias.xbiasbuffer.xcoarsesel8to1.net8)	voltage
+	1358	v(xbias.xbiasbuffer.xcoarsesel8to1.net9)	voltage
+	1359	v(xbias.xbiasbuffer.xcoarsesel8to1.net10)	voltage
+	1360	v(xbias.xbiasbuffer.xcoarsesel8to1.net11)	voltage
+	1361	v(xbias.xbiasbuffer.xcoarsesel8to1.net12)	voltage
+	1362	v(xbias.xbiasbuffer.xcoarsesel8to1.net13)	voltage
+	1363	v(xbias.xbiasbuffer.xcoarsesel8to1.net14)	voltage
+	1364	v(xbias.xbiasbuffer.xcoarsesel8to1.net15)	voltage
+	1365	v(xbias.xbiasbuffer.xcoarsesel8to1.net16)	voltage
+	1366	v(xbias.xbiasbuffer.xcoarsesel8to1.net17)	voltage
+	1367	v(xbias.xbiasbuffer.xcoarsesel8to1.net18)	voltage
+	1368	v(xbias.xbiasbuffer.xcoarsesel8to1.net19)	voltage
+	1369	v(xbias.xbiasbuffer.xcoarsesel8to1.net20)	voltage
+	1370	v(xbias.xbiasbuffer.xcoarsesel8to1.net21)	voltage
+	1371	v(xbias.xbiasbuffer.xcoarsesel8to1.net22)	voltage
+	1372	v(xbias.xbiasbuffer.xcoarsesel8to1.net23)	voltage
+	1373	v(xbias.xbiasbuffer.xcoarsesel8to1.net24)	voltage
+	1374	v(xbias.xbiasbuffer.xcoarsesel8to1.net25)	voltage
+	1375	v(xbias.xbiasbuffer.xdivfine.idiv0)	voltage
+	1376	v(xbias.xbiasbuffer.xdivfine.idiv1)	voltage
+	1377	v(xbias.xbiasbuffer.xdivfine.idiv2)	voltage
+	1378	v(xbias.xbiasbuffer.xdivfine.idiv3)	voltage
+	1379	v(xbias.xbiasbuffer.xdivfine.idiv4)	voltage
+	1380	v(xbias.xbiasbuffer.xdivfine.idiv5)	voltage
+	1381	v(xbias.xbiasbuffer.xdivfine.idiv6)	voltage
+	1382	v(xbias.xbiasbuffer.xdivfine.idiv7)	voltage
+	1383	v(xbias.xbiasbuffer.xdivfine.termdio)	voltage
+	1384	v(xbias.xbiasbuffer.xdivfine.xdiv0.net1)	voltage
+	1385	v(xbias.xbiasbuffer.xdivfine.xdiv0.net2)	voltage
+	1386	v(xbias.xbiasbuffer.xdivfine.xdiv1.net1)	voltage
+	1387	v(xbias.xbiasbuffer.xdivfine.xdiv1.net2)	voltage
+	1388	v(xbias.xbiasbuffer.xdivfine.xdiv2.net1)	voltage
+	1389	v(xbias.xbiasbuffer.xdivfine.xdiv2.net2)	voltage
+	1390	v(xbias.xbiasbuffer.xdivfine.xdiv3.net1)	voltage
+	1391	v(xbias.xbiasbuffer.xdivfine.xdiv3.net2)	voltage
+	1392	v(xbias.xbiasbuffer.xdivfine.xdiv4.net1)	voltage
+	1393	v(xbias.xbiasbuffer.xdivfine.xdiv4.net2)	voltage
+	1394	v(xbias.xbiasbuffer.xdivfine.xdiv5.net1)	voltage
+	1395	v(xbias.xbiasbuffer.xdivfine.xdiv5.net2)	voltage
+	1396	v(xbias.xbiasbuffer.xdivfine.xdiv6.net1)	voltage
+	1397	v(xbias.xbiasbuffer.xdivfine.xdiv6.net2)	voltage
+	1398	v(xbias.xbiasbuffer.xdivfine.xdiv7.net1)	voltage
+	1399	v(xbias.xbiasbuffer.xdivfine.xdiv7.net2)	voltage
+	1400	v(xbias.xbiasmasterncoarse.coarse1)	voltage
+	1401	v(xbias.xbiasmasterncoarse.coarse2)	voltage
+	1402	v(xbias.xbiasmasterncoarse.xbiasmasterbias.bootstrap)	voltage
+	1403	v(xbias.xbiasmasterncoarse.xbiasmasterbias.net1)	voltage
+	1404	v(xbias.xbiasmasterncoarse.xbiasmasterbias.net2)	voltage
+	1405	v(xbias.xbiasmasterncoarse.xbiasmasterbias.net3)	voltage
+	1406	v(xbias.xbiasmasterncoarse.xbiasmasterbias.vcasc)	voltage
+	1407	v(xbias.xbiasmasterncoarse.xmbdiv.s11)	voltage
+	1408	v(xbias.xbiasmasterncoarse.xmbdiv.s12)	voltage
+	1409	v(xbias.xbiasmasterncoarse.xmbdiv.s13)	voltage
+	1410	v(xbias.xbiasmasterncoarse.xmbdiv.s14)	voltage
+	1411	v(xbias.xbiasmasterncoarse.xmbdiv.s15)	voltage
+	1412	v(xbias.xbiasmasterncoarse.xmbdiv.s16)	voltage
+	1413	v(xbias.xbiasmasterncoarse.xmbdiv.s17)	voltage
+	1414	v(xbias.xbiasmasterncoarse.xmbdiv.s21)	voltage
+	1415	v(xbias.xbiasmasterncoarse.xmbdiv.s22)	voltage
+	1416	v(xbias.xbiasmasterncoarse.xmbdiv.s23)	voltage
+	1417	v(xbias.xbiasmasterncoarse.xmbdiv.s24)	voltage
+	1418	v(xbias.xbiasmasterncoarse.xmbdiv.s25)	voltage
+	1419	v(xbias.xbiasmasterncoarse.xmbdiv.s26)	voltage
+	1420	v(xbias.xbiasmasterncoarse.xmbdiv.s27)	voltage
+	1421	v(xbias.xbiasmasterncoarse.xmbdiv.s31)	voltage
+	1422	v(xbias.xbiasmasterncoarse.xmbdiv.s32)	voltage
+	1423	v(xbias.xbiasmasterncoarse.xmbdiv.s33)	voltage
+	1424	v(xbias.xbiasmasterncoarse.xmbdiv.s34)	voltage
+	1425	v(xbias.xbiasmasterncoarse.xmbdiv.s35)	voltage
+	1426	v(xbias.xbiasmasterncoarse.xmbdiv.s36)	voltage
+	1427	v(xbias.xbiasmasterncoarse.xmbdiv.s37)	voltage
+	1428	v(xbias.xbiasmasterncoarse.xmbdiv.s41)	voltage
+	1429	v(xbias.xbiasmasterncoarse.xmbdiv.s42)	voltage
+	1430	v(xbias.xbiasmasterncoarse.xmbdiv.s43)	voltage
+	1431	v(xbias.xbiasmasterncoarse.xmbdiv.s44)	voltage
+	1432	v(xbias.xbiasmasterncoarse.xmbdiv.s45)	voltage
+	1433	v(xbias.xbiasmasterncoarse.xmbdiv.s46)	voltage
+	1434	v(xbias.xbiasmasterncoarse.xmbdiv.s47)	voltage
+	1435	v(xbias.xbiasmasterncoarse.xmbdiv.s51)	voltage
+	1436	v(xbias.xbiasmasterncoarse.xmbdiv.s52)	voltage
+	1437	v(xbias.xbiasmasterncoarse.xmbdiv.s53)	voltage
+	1438	v(xbias.xbiasmasterncoarse.xmbdiv.s54)	voltage
+	1439	v(xbias.xbiasmasterncoarse.xmbdiv.s55)	voltage
+	1440	v(xbias.xbiasmasterncoarse.xmbdiv.s56)	voltage
+	1441	v(xbias.xbiasmasterncoarse.xmbdiv.s57)	voltage
+	1442	v(xbias.xbiasmasterncoarse.xmbdiv.s61)	voltage
+	1443	v(xbias.xbiasmasterncoarse.xmbdiv.s62)	voltage
+	1444	v(xbias.xbiasmasterncoarse.xmbdiv.s63)	voltage
+	1445	v(xbias.xbiasmasterncoarse.xmbdiv.s64)	voltage
+	1446	v(xbias.xbiasmasterncoarse.xmbdiv.s65)	voltage
+	1447	v(xbias.xbiasmasterncoarse.xmbdiv.s66)	voltage
+	1448	v(xbias.xbiasmasterncoarse.xmbdiv.s67)	voltage
+	1449	v(xbias.xbiasmasterncoarse.xmbdiv.x1.vout0)	voltage
+	1450	v(xbias.xbiasmasterncoarse.xmbdiv.x1.vout1)	voltage
+	1451	v(xbias.xbiasmasterncoarse.xmbdiv.x1.vout2)	voltage
+	1452	v(xbias.xbiasmasterncoarse.xmbdiv.x1.vout3)	voltage
+	1453	v(xbias.xbiasmasterncoarse.xmbdiv.x1.vout4)	voltage
+	1454	v(xbias.xbiasmasterncoarse.xmbdiv.xmult.vin)	voltage
+	1455	v(xbias.xbiasmasterncoarse.xmbdiv.xmult.vout0)	voltage
+Binary:
+       ─иak⌡ ЩП=a╩═S╚7ф?РХБЛxр>q~Ч 4ф?	\╣W╚ L;I(!	Эr╔?:°ьОЕ╦Е=^┐Я├д╨╒?xcТg;oя─ Ё╖?╛÷=А÷xр>╧²fМТе?≤┼[П~<=┼$+ h╔?▐z[ou╤>ё}d ╗B╒?E╫л4┐T	>8Я>╗(h╖?                                нъP%Ж┬е=                                                                                                                ^©N:w3П=                                                :Ъ╔uS╒╒>                                                                                                                                v⌠ёi√Б=сО┤д╨╒?&N╥!ШkИ=ПВИ├д╨╒?)wЭZo
+>Q²^ ╗B╒?P┘{ю{▐>Ъ║┬┌,Ц╒?p0⌡o z╟?C╧tm╡?j⌡о⌡>_AК░hё?с[%b>╩┼х░hё?R a╦°b>║7▒hё?}eq╖e═╣?NE≈MЕV╣?                ╗°G9Sцр>YaБmкё>G+0┌m>gмSГ╬@=[BЮ▐жь&='g┘╓аж&=╟=д╨ж&=3Ь╪гщ+#=        млллллЭ?                                                        млллллЭ?млллллЭ?млллллЭ?        млллллЭ?млллллЭ?        дл≈#7А?UЯЁ╡лъ?С┌4JD║Ю?0┌Юё╒┤╠?░цRiд?-▒3Фfд?J╜п
+fд?E┘■Ъ╔╬?        млллллЭ?.Ч c╧ж╢?▌И╞╩щЗ?                                                        млллллЭ?млллллЭ?млллллЭ?млллллЭ?         aх╥]2с=я≈Ед┌!╬h⌡ШШlU*╬8▌РDЦ=P_ЙL≤В0╬л┼Oёst0╬,╘&тEО.╬Ю={═"ч=~|ВСT├╫RДK=Б┌─╫╛2╗_й≤~╫╧┴T⌡ц	}╫hА
+oyл{╫2▐·ЕМН{╫▓K5▒█Лy╫┤э│Q~С{╫ WВ~>░и╫ Д╩╨√Sы╫ ■м╧╙sз=─╠о╣П╫ k├└>@%МoУХ=        млллллЭ?        млллллЭ?млллллЭ?млллллЭ?млллллЭ?млллллЭ?)M╢`╘≈?млллллЭ?млллллЭ?        Щ╛ф╗ДM>л╛█Ь▐u@>gг[ю?>
+■ы[S╬	p█│бгL╬▄зЧX⌡B╬bИ·>┬n÷вш	>U╛╞ц┘▀Р=░╤уб╞рь=K(├ъ5Е=∙BVсЮ╫л=ЯЩ°Kр┐>F{Лл╢->hм╟M▀]ч=╬~y╜& ╬Д▒КBZ
+╬ОдzPфЩ╫≥В■╖hQ">xIM3>`Cm┐ #>K©T▒:Т╫шЮЖд²7╬@╫.sб`╬n▓с═t┼╬7@я▄,┐Я╫лN Щ╬╨╧ЮvШcЁ=x█·╦╒=^ Шд?rх=3пъn╠=Cw^е!ёО╫KжУ╫=╬∙4╛ю ╬Ч щ≥\%╬╢д9у╩+╬cj╤r(Ж╫┐щ1зД	╬<╬'∙=jМ╫3ЪШ√тE╬Х6q▌%Х╬У┬Ш╓ ╬L╕S╒_>з4О%A└>вёzШЖ=╖└ы┘6И╫E°Э╫/≈Ъ╫ кЭ~4	ы╫-а;гллЭ? T·иллЭ?╦ыиллЭ?Л@gлллЭ?t∙лллЭ?Б▄лллЭ?╔ЕQнллЭ?^ЭрлллЭ?Жr┼мллЭ?П=лллЭ?Ч╘╢кллЭ?
+0лллЭ?ц!#мллЭ?VУzмллЭ?HC	мллЭ?=╠йлллЭ?╙СмллЭ?Э|╞лллЭ?я█└лллЭ?зk▄лллЭ?шSлллЭ?z╛·лллЭ?нUcлллЭ?B^ЁлллЭ?!EдлллЭ?°@длллЭ?°блллЭ?Зн╣лллЭ?ц'╫лллЭ?╟Б╛лллЭ?+уSлллЭ?$cлллЭ?XЛ;лллЭ?Hб╠лллЭ?(╖╣лллЭ?%≥лллЭ?~4┐лллЭ?i+TлллЭ?t	┐лллЭ?,FБлллЭ?╟LплллЭ?qмллЭ?Г╥лллЭ?н╩лллЭ?U╗лллЭ?╠╝в╗^Uю=╕ю║▌Шц=∙░,∙m╦а=ф╟i╟ю=°OЁ#╗б=kНЫf|а=,ЯйлллЭ?юuилллЭ?N│клллЭ?ф	лллЭ?┼OhлллЭ?ГHlлллЭ?n9лллЭ?ЩiPлллЭ?╠цaлллЭ?=FхлллЭ?$rхлллЭ?
+qхлллЭ?&АцлллЭ?ж©лллЭ?T?елллЭ?&АцлллЭ?ж©лллЭ?T?елллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?ЭU╔лллЭ?v╤лллЭ?▓СлллЭ?@╖йлллЭ?KмхлллЭ?Б[клллЭ?ьлллЭ?┴[hлллЭ?╔LlлллЭ?длллЭ?ЮxcлллЭ?╙]eлллЭ?ЖS\лллЭ?╫uлллЭ?■G░лллЭ?T╞ИмллЭ?╦а{мллЭ?Й└мллЭ?:х÷лллЭ?╚>∙лллЭ?LБ╡лллЭ?╞dRлллЭ?ъI║лллЭ?vЁ┤лллЭ?НfдлллЭ?ю┐елллЭ?^zблллЭ?┘Д╪^[a╬тkфгZ░Q╬Уl≥?\Q╬rp├√г^О=└■ёЮ=V╕О·ъ=е-e╩╢lЯ=╔÷╚║К9Б=│jиатА=&Юp╬╣%L>K`D╥9>²Е╖}Ш$<>√:![░╗>й≈Т╥>р┐Зq╔Р=нтъё[>КъoЖЁ╪H>▌ИaR⌡J>$RО╡mЯ=ЭэлPmБ=▒[жЯV²Б=УЗ[щ≈Я=oвнв▓шА=┼SН╟:уА=╞b┴/ЩJa> ╟▐'' P>gъ╩М"P>╘И 	zLЯ=ХA>╘├5Б=8Оph/?Б=└╧Э≈·Я=ЯЗJ█!SБ=}ЖZ≥MБ=rчЛ(>Я=\B =Б=°хю╞5 Б=├к╙r|SЯ=╤╤7,ДЭА=╙┌╝з║ЧА=>ыXdд\╬н╢ЦаuL╬■WФ▒ЫN╬Kc'╟GЯ=iю≤\Б=╨≤вr░#Б=╒MC▐K╒Я=╫╚⌡▓KFБ=╥║^╥PБ=yЧ╢1╞d╬8▀dQ=T╬В"о ┤T╬B+q╪pб_╬:≤Ж`yAP╬╜╨Y╪эъN╬ивvk√HЯ=вOr▓&Б=зГoM?#Б=└╡'╫╣|Я=Пg°9кБ=Ё;М)÷&Б=М,](┌∙i>.J(┘X>▌2П≈┘.Y>} /M▓GЯ=A"S2`Б=HTh
+ Б=c╟РC╛░Я=ЩnгЪd,Б=9·p=Б=$мВ■j>ь╤д4nX>аОЮ╢▐▌X>/ е⌠AЯ=U╩ь3╩НА=],8a Б=Ё{щS▌С=O'sКQPХ=`▀@@дЦ=_Г`ё6ы╫√≥a≤О╓р╫░\жТгс╫иENCnйч=О─}(°>z0ИJ╛ЩЯ╫ОФГ▓╘>▌╪╡\ЛЭ>й&к#>t╥"И.йУ╫╖ёу▒вЧ=С`Б╠╬╟ъ╣1ЖУ=ЭМИ╝
+>jQMTMчЕ=╖e╠Uu╞╟=cpiъB╤=БS; 7g╩=l╨U╙╚╟=╝√
+ХЫ@╤=╨░ЩЖ╤]╩=ИИ<╒╚╟=╒·[ъУ@╤=vН╠╒]╩=└}_+7ДВ=Мj┤ЫyН=╨.╙|уL>bРзFЯ█Ж=с4╠╢_юЛ=8·чр╬░
+>К3,шЖ=&╬·▄╠Л=$в4~
+>Q╫=zЖ=Д╙■пz╛Л=S░⌠Дчw
+>╧тQI<{х=В
+К=═Eр=rшю²°я=ЮылллЭ?"╥МлллЭ?┬╜жлллЭ?V┘ьлллЭ?ОЙлллЭ?р┬улллЭ?МrьлллЭ?рЙлллЭ?B|улллЭ?зiьлллЭ?·фЙлллЭ?┘vулллЭ?-∙╦лллЭ?╖В╠лллЭ?>ю╣лллЭ?z6╬лллЭ?╗п╦лллЭ?хн╪лллЭ?╙Ф╫лллЭ?эБ╥лллЭ?r╗╪лллЭ?\╒блллЭ?^R©лллЭ?мЗалллЭ?длллЭ?bИелллЭ?,xюлллЭ?Р╖╨лллЭ?C~╢лллЭ?ьz╥лллЭ?Um©лллЭ?╘Ш╧лллЭ?J©лллЭ?O5алллЭ?ьM╬лллЭ?╪-юлллЭ?╡ФюлллЭ?≤4╫лллЭ?й4©лллЭ?ЙШалллЭ?ДМ©лллЭ?TБ©лллЭ?ЬЪ╦лллЭ?18╡лллЭ?╤╫╤лллЭ?╨ф©лллЭ?∙`╨лллЭ?█П©лллЭ?WблллЭ?°╬юлллЭ?d8алллЭ?|╒блллЭ?┼Q©лллЭ?║ШалллЭ?7длллЭ?ЖИелллЭ?.{юлллЭ?RГ╨лллЭ?T╔╢лллЭ?VБ╥лллЭ?ПБ©лллЭ?6{╨лллЭ?┬+юлллЭ?v╘блллЭ?√aалллЭ?z▌алллЭ?ХюлллЭ?\5╫лллЭ?/6©лллЭ?Ы╛алллЭ?▐©лллЭ?5─©лллЭ?к╩лллЭ?я╤╢лллЭ?f╦лллЭ?>Ш©лллЭ?6╕╨лллЭ?:IюлллЭ?█хблллЭ?·алллЭ?▓╞алллЭ?pХюлллЭ?╕5╫лллЭ?6©лллЭ?HyалллЭ?=Q©лллЭ?{?©лллЭ?Г╩лллЭ?╣╥╢лллЭ?|╦лллЭ?7╠©лллЭ?у─╨лллЭ?й▐©лллЭ?▀└блллЭ?░█алллЭ?$ЫюлллЭ?ФГюлллЭ?v5╫лллЭ?23©лллЭ?²9алллЭ?В©лллЭ?⌠Н╬лллЭ?К┬╨лллЭ?|╢лллЭ?≤ш╤лллЭ?╟а╫лллЭ?"▄╦лллЭ?Ё╩лллЭ?⌡гюлллЭ?
+юлллЭ?╨5╫лллЭ?rчюлллЭ?ь0╫лллЭ?╡©лллЭ?fАюлллЭ?╒╓╬лллЭ?╨t╬лллЭ?╧лллЭ?╟L╡лллЭ?╘eЁлллЭ?г╓╤лллЭ?цю╠лллЭ?√А╡лллЭ?A√╧лллЭ?|-╧лллЭ?ьY╢лллЭ?≤╬юлллЭ?v!╫лллЭ?Pю╬лллЭ?╫&©лллЭ?P╞╪лллЭ?╓"╪лллЭ?ё╟Pьnq╬ hYS/┐╬zО└│"Ь╫Ё@╡лллЭ?Уj╚лллЭ?ч╠лллЭ?,ЕY#<нФ╫Б*╕≤у┐Э╫м╩тD;лж╫∙Й+╣kр>b┘▄╫▒┤>yъtдрЖ=Я⌡йоллЭ?>кллЭ?▐FнллЭ? 1длллЭ?╨БдлллЭ?UСфлллЭ?∙ЩцлллЭ?ooфлллЭ?ЖхдлллЭ?EГфлллЭ?>UглллЭ?}бфлллЭ?&АцлллЭ?ж©лллЭ?T?елллЭ?&АцлллЭ?ж©лллЭ?T?елллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?╣ДцлллЭ?Щз©лллЭ?AелллЭ?g·vХллЭ?Ж:шшллЭ?В]╓АллЭ?Ыы?вллЭ?╡│╦щллЭ?ЛЪяллЭ?П0длллЭ?6БдлллЭ?=СфлллЭ?Ц∙алллЭ?щ^юлллЭ?й■цлллЭ?⌠&[╧ллЭ?└ТсллЭ?cЬ$╫ллЭ?Е╣aнллЭ?8FхпллЭ?@0∙мллЭ?hс░бллЭ?╙Ф╜НллЭ?^1VэллЭ?9}╒пллЭ?ю@pжллЭ?╛╟нллЭ?о7мллЭ?.sСлллЭ?▌нзлллЭ?Fh÷[[a╬мРиtX░Q╬&;=ж\Q╬[гн▒г^О=╬Щe■ёЮ=╤╩7 ъ=Цп╬I;╬т▀xis,╬лЖ9J+╬ЬRq╬╣%L>9ЩT`D╥9>┼Y╗}Ш$<>b_⌡фГQ>fеxJTз3>>у▒▓ЦA>uъЪ>╗[>*║Т)╦╪H>m≥┘⌡J>╪ю6╡mЯ=╒]KйPmБ=7!зНV²Б=L.ПkЮ<╬ът╗@еP-╬▀(м?жё-╬╖▓БЧJa>Ъл( P>ёЗ╥┼"P>nю·
+zLЯ=▒╖├╙├5Б=А/щh/?Б=[Э┌c >╬O∙Лs'ь-╬u\╫wro.╬*\4#>Я=│"b6Б=юLн╘5 Б=*я3 p⌠=╬IM{F?r,╬ч?╦A─j-╬Э▌║д\╬P╙ЦеuL╬=\╔ЙЩN╬└a!╟GЯ=▀е2⌠\Б=э1"l░#Б=nМдd√╡=╬Bx╝Q©t*╬L?J*▐,╬┴ьC=╞d╬яКB[=T╬▌Y"┴┤T╬K ╥ё∙б_╬╗)<┼AP╬rqг ЮN╬CAl√HЯ=E\⌠&Б=HO7N?#Б='╖░Ч╓=╬0а■Д╙%╬[<P⌠a*╬╟Ь*эt∙i>┴ц▒йuX>╗чy.Y>ЭМ^K▓GЯ=Ц┐Х0`Б=Ик┬ Б=р ≥f├<╬З+w├4╬]╖╝М┌$╬J(*j>Kqэb╕nX>У∙P║▐X>╡#_■AЯ=мдN6╩НА=т6b Б=┌²э╨╤╫h╬+╜√
+ЭZ╬ьсm╜ь<V╬-uОыAД╫█╖пLI Ь╫≤7ч╬╝я╫ ╫U"╦кч=ЗAv>╨%ч┐ЩЯ╫┼■Ё8$ШA╬г≈эgХо6╬XЗ
+UO4B╬зЁ┘х^дУ╫"▒n²2ГЧ=≥Ж.╬
+=╦ZR!У=	Цm=╒'
+>+4u╘ДЕ=┌<P*B╧Ц╫т▌·77чВ╫≤:г╖╗Км╫CрФЭ╨╧Ц╫В glUчВ╫`fH╒gПм╫╨╜бЫ╩╧Ц╫#w`╚UчВ╫x╩ь╦qПм╫└╔|Ж H>T)J/>│²y║!<>5K╫5з`a╬`TU"?Q╬░Q╓ИbR╬Tc╦зШ╛Ь=WN
+√о6	>Я*╥1>д©ХЙ╖Ь=#vC▀5	>3├┼╤ш	>C≈╘Т{Ьq╬В@ ═░▓a╬й┘-F╩■d╬┴ЮылллЭ?Ю╥МлллЭ?ы╜жлллЭ?[флллЭ?71глллЭ?WфлллЭ?┬{ьлллЭ?ЙчЙлллЭ?┌улллЭ?trьлллЭ?│сЙлллЭ?O|улллЭ?MEвллЭ?.Ы╤АллЭ?bД╬яллЭ?⌡З-тллЭ?╪▐PпллЭ?G╔²рллЭ?ЮЙ╞сллЭ?>ВЫяллЭ?√С^рллЭ?╗▄6мллЭ?FИмллЭ?╜°ЮпллЭ?/]╡нллЭ?J┬╨мллЭ?&Ф≈яллЭ?НЁвллЭ?NДллЭ?Н}zпллЭ?0╣╧сллЭ?fА~нллЭ?л╘fрллЭ?sTтллЭ?чM⌠рллЭ?j\√рллЭ?╕еhоллЭ?Р оллЭ?▄╚tрллЭ?CuзлллЭ?╒олллЭ?ь╣4яллЭ??JъвллЭ?8ИДллЭ?⌡lоллЭ?yЖсллЭ?нЧ╔лллЭ?г└яллЭ?■eтллЭ?i█рллЭ?┐НЩяллЭ?╒∙оллЭ?БYоллЭ?t╥╜рллЭ?#нлллЭ?gилллЭ?dz\яллЭ?Ю	увллЭ?pvQЕллЭ?╪HнллЭ?═ЗарллЭ?ЬД░кллЭ?┬4яллЭ?,%╨сллЭ?";ьяллЭ?─6╟яллЭ?Г"█оллЭ?v оллЭ?У°орллЭ?╘+йлллЭ?zглллЭ?─оuяллЭ?≥sПвллЭ?Д╙ФллЭ?P√оллЭ?─╦MсллЭ?╚╢лллЭ?0цдрллЭ?чХiтллЭ?рллЭ?й▓RсллЭ?▐Т┬мллЭ?В нллЭ?╡│#рллЭ?E┬>оллЭ?х° нллЭ?кЖрллЭ?$dьллЭ?@'ИллЭ?$sрллЭ?F7{тллЭ?#:пллЭ?БJоуллЭ?О╘╡уллЭ?`┴ЖсллЭ?ШjжллЭ?8╣УоллЭ?эhGоллЭ?kшусллЭ?GTсмллЭ?╤LмллЭ?ЮDкрллЭ?ЦЬ>ьллЭ?бэШХллЭ?dотллЭ?ю▓шуллЭ?=└═сллЭ?чиeжллЭ?5)·уллЭ?<⌡aжллЭ?R∙GжллЭ?=╕ПоллЭ?tАDоллЭ?═╒исллЭ?Ь5⌡нллЭ?Ь9╟мллЭ?╡~#сллЭ?2ЯтллЭ?БбMэллЭ?&≥mкллЭ?░"КАллЭ?▓n_рллЭ?&яrХллЭ?t╥шллЭ?ЛmыллЭ?╨ПЕллЭ?fxоллЭ?┬hянллЭ?$$╪пллЭ?В/нллЭ?▌ЕxмллЭ?ЧMPпллЭ?╦FБy> A>wRt><юb{╝i>GnIтллЭ?Ч■5тллЭ?╬pFрллЭ?щ$Д+нO╬ ÷▓┴Ф╬p·В⌠$
+╬хvИН─Ё>яжP⌡Hc
+>H█*©sуТ=Е╖анллЭ?²EЯмллЭ?─бмллЭ?╝bLU/юI╬ √иh^@╬─∙Иx,;╬╫\8ЖD╬3ePУX4╬Т_Sa4╬КХkъ/;╬ Yyи!,╬▄б╖w+╬М╚═┤
+'E╬ ьEЗm8╬mг&┴$5╬ОЁ■╨√⌠╜>@bц╔╧·>─Nц╔╧·>5HTOДD>!`Ф]░Х5>щ7╠_░Х5>Ёc^%HЮ╫*|Fvy\Т╫ер╔zHп╫59g≈яQ╬бl9Ьu=╬C?)CнA╬5h!²─1I╬╕u▓б!<9╬Т{с:√09╬х≥ОЁ!╬2╜©╗K	╬sl`≈?e╬/├6вч╜=╬o-6@Юш,╬jРъ╪╓·-╬╧©xхллЭ?R▐йллЭ?ы⌡йллЭ?Ф▄хллЭ?@Щ▓йллЭ?ёV÷йллЭ?й~╬ллЭ?├√юеллЭ?АWzеллЭ?P▀ЛлллЭ?юцллллЭ?"`шлллЭ?┼1_нллЭ?▄н╪мллЭ?~°⌠мллЭ?╘QнллЭ?^1мллЭ?SrмллЭ?'	Z╜ЁС?┼g ╜ЁС?"╡╜ЁС?║©1╜ЁС?@Lz╜ЁС?кH·╜ЁС?т⌡⌡ j╗М?≥√i j╗М?л╡i j╗М?Ю8 j╗М?р⌡ j╗М?ъF8 j╗М?HЗ=E╒М?R▄е=E╒М?│▄е=E╒М?кZ√=E╒М?Jyn=E╒М?■=E╒М?5ЕKa0╒М?cha0╒М?┌a0╒М?ХvХ`0╒М?÷▌ю`0╒М?K)Ф`0╒М?A*F▀З▀М?ы▀З▀М?дA▀З▀М?╘XV▀З▀М?И"▀З▀М?i╢J▀З▀М?&╣илллЭ?&╣илллЭ?&╣илллЭ?PVнллЭ?^я║мллЭ?c░мллЭ?Щ6@╨∙Ы=┼п╖Д{Й=vа`ю─Й=ЦzГ·└▀З=]е_mК=Кg|■К=H╘мi╔	Ь=У4S┼ЖИ=▓t╠йХ=LCзo├@╬╬s▄еo2╬p10T1╬╡Щ%┼Cg5╬ТIзёВ&╬²Р^гE9(╬■╘²УЦ;╬)*qrd╪.╬цjз[FZ/╬Ч⌠/┤┐t>╬F\ВнwС0╬cд⌡┴1╬U`ч─8н=╬ёчщЧX╩0╬ТA∙
+#г/╬-l5}6╬mE├Ъ'╬Е&▒╡и▒(╬░НЬ*x;╬3C■-╬ьрg~▒%+╬╥b≤[╞цЯ=DЩCб■Б=┬UCме═Б=ЬрD│хЯ=Ч┴╧6ъ·Б=А╫(u╖Б=Ч%tс╬Я=В│└?≥Б=cк4h▄²Б=ТЗ÷e>хЯ=|√▄Р(╖Б=жГoT╛Б=C3м!Т╬Я=у│М║╙Б=we	mЪ╤Б=e	$ш╤ОЯ=Ъk╠УБ=╩<щфf%Ц=BхN_÷ П=▓л²ё	А=f┬·Хъ=%эУ└ъ∙Ы=ОИ╨ГS}Й=c╫2чЙ=ыПozg╢З=ШkЯ■К=▄""9 аК=`оЩ╛ДВ=^~@FкБХ=a┌ +°╘Х=╜вЫkPEШ=@e.Р|Л=.░z╢Ю│К=(4s═_NЫ=n│┬С┌⌠И=p9ёХ=Ю²ЪbIК>&─Л5Ё║Т=хgH╔w√В=;{Ж>оP╘╫░≈╟Gи3╘=@9ы3╤е╫JМtл╘Ш=^ЁЧКК=·ПЧZК=н<│B4NЫ=ФЭх*■И=(Оve║Х=uФB-_Е>┼rMNУ Т=ЬO╙Q▐В=kд~P}Y╙╫╪Яv┐┤╗=╛╟─UPве╫I$ю∙Ы=≈!`Г{Й=л6╡жх─Й=HnЭ╔%▀З=╢БС╬lК=о▐[щ■К=лА\о
+Ь=U░P≈OИ= Z,▀
+кХ=Z╦з╥JШ=└dжp√КК=╩╡1ь╢YК=y╓Ь2:NЫ=$ЗЪи2■И=doЯнh║Х=iЗ╝≈NЕ>YЧЦmЦ Т=╥&л>▐В=²о3╢▀Y╙╫╝┌├╗T┤╗=и°╡Kве╫	yVgM■Л=═EТ▄щ=╠ш@°!⌠щ=·)v∙╛ШН=Яbф	oФъ=ЬЭ┼Sb"Ю=ЕЪыЖЦХ=Э)р~дз=w╣a⌡²┬ы=═Ж╒%П=╧┤О├Ю=х>ЦVфъ=ЭЙa▄Л=║[Lh▐ш=O	■▄╔╒ы=дG⌡▀÷OЧ=O▀ФЭ╞7М=@5╜уйП=Ь╞^Ъх#Д╫F╬≤цУ,т╫
+╠6╙Mч╫▒	ю.╬ БЦща!╬Qм%╬П+^▌j@╬─#fЩеТ1╬07Шеf0╬7ышь╓o@╬ gq[NN2╬a ╬X2╬(т@╚ъ▄Р= пи∙СЦ=#У═дkЦ=)@Fх█З= "┌d©Л=Ц`║┘└▄К=^t1╒─З= ▄/%ШК=nA√╫~К=зGЬЖ┤─З= 
+Oр	ШК=rhТgЬ}К=╘{─М~·Н= ┬Ш┘fGЮ=i|вД╣йъ=╜╕╨╫Ь?g_@╔╨╫Ь?Ы÷P╔╨╫Ь?╘$S╕╨╫Ь?÷n╔╨╫Ь?цp╔╨╫Ь?пqUь]░З?6k║в]░З?%╠⌡в]░З?32ь]░З?░W7в]░З?Ч╪┼в]░З?╩╚KнллЭ?ьD∙мллЭ?╘M▀мллЭ?┘vgнллЭ?√uqмллЭ?вш≥мллЭ?П`j█um`> ▓3
+╔aP>мyюкЮP>V⌡BоллЭ?	нллЭ?kЖнллЭ?млллллЭ?                        млллллЭ?                млллллЭ?        млллллЭ?        млллллЭ?                                                        млллллЭ?млллллЭ?        млллллЭ?        @Щ╤╫*е=═╓╨у╘ю5╬─[⌡|©=ю"	Dз\и= by┌/╒⌠╫wМ══╒⌠╫╓f░├║╒⌠╫8TB<╪■╫4▌мX─,╬ sдeRЕ= jЩ²NФ=юо·▐Ф=ЩЮ┼╘≈0╬юeхюИ=Ю·╕H8Х=Ь┬─й> ■а▀~┤я=─Пjrц	б╫ pБ╩ф= д╧	╪п= ╗9²М╪= (?╓~х= `w!юY= Ю©цФ╦Y=   $в╦Y= но5|╝╫млллллЭ? п╢)с d╫ Ж▒╫ю╓┘╫ PsыЩЭc╫ x▐╘┘╫ B6╣╛┘╫ ZЖ┴М╡┘╫ °gиZй┘╫ `.з╧%├╫ъF#9Я>юБ9yАЮ╫ ─`qy╫Ьм╜TtWN╬ @ГХ©JД=═FJнEr╬┘()Мр?зс:ыl^Г?  2Ыр╝>┤vn═Щ┬р> ⌠Q╗L@р╫)(;DЦ?P╢°)!Ш">ъF#9Я╬H?ъГA²Э?┬╖И{gТ?ВрШдж>МйN╤TГ?Вyн≥Lч?}#─-WГ?Б©с©zхА?DЛ╟TDЦ?Ы╡SУК(Е?√А`LDЦ?Аo╪CDЦ?ЫЙyцлЭ?Cб%┼TDЦ?г└р╠>Я2	╓ky>aг╫ллЭ?╪ЪЛ╖qбw>█э656rВ?o1└s·Э?р
+|gТ?\z÷ЧeЭ?kеЖK6rВ?Y√`qS╬Э?Y√`qS╬Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?кv1÷A©]зGq·;"©© HhR`©zЙp	╬║?Ш═л┐У?╨╥b∙÷╬?┘▐≈клЭ?Cъ▄╩клЭ?┐kkЁклЭ?+rЙ`©И?эs▓^©рS╧\©xuЬ┬|X©ТдUCsМS©Ыd7Ъ╙L©wG&▐s╢>©Й└▄╖клЭ?╘ьLt=╕?╣v├йf▐╖? ÷К╕┌.╗?ЧоMP q╗?и╝рОQ╗?ш═нЩHр╖?WКN-╫╕?ЬРBШ~²╡?~.3╖rб╢?Д╙wо╝═╣?Иь.г╣?rпЗ┘9╣?╚[WзНЁ?:йАП5$╧? ЧГЦXЭ?_╪u▄√Э?jdёxZ⌡Э?v┤b├≤Э?Э²}D@■Э?3ж╛с▌Э?vТб┘Э?v
+а╫ bЭ?D°/zб?F│╡╩ЭcЭ?┤O⌠█ХЙ?Е█М≈cЭ?OЯ>pДЙ? F╤⌠`Э?╛8.ОЦЙ?╕Ньs]Э?BIЭрщЙ?┤░о╗YЭ?Э┘КвыЙ?╠:©н╢TЭ?≈-║╦ШтЙ?л╕$йJЭ?╚Гn 3мЙ?[N]ЪЭ?5²═╛Й?√@:(©ф╨?J╤1NК?ЪШb═╛П?3пВБvП?B■└У─П?Я*~┌хЭ?jГ╢7╥Э?uж▌и5▀Э?GZEF╥Э?Yu`Э	Г?Y√`qS╬Э?Y√`qS╬Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?Ш Ч■■Э?П!У0÷A©Тхб╧~╧?}МQhR`©И3▐p	╬║?Ье÷Ррй╨?К*Ы┴1rG?3Я╫≈клЭ?╫═╥Ф"╨?▀╗╦клЭ?ф■ьВИ`©▒э▀▓^©·ж>\©4▀:┘|X©╙┘gDsМS©Р┤╬Ъ╙L©╡╙╛▌s╢>©v "╛клЭ?IBt=╕?zх⌡йf▐╖?4┤Б╕┌.╗?. LP q╗?РэрОQ╗?╨XЖЩHр╖?√8щ-╫╕?╢╞2Иs┼©/╠\╜уДs©(╡BN_©еЬWx┬
+D©fLe©⌡9	°Ю~3?"▌W░]4?М"┌дs5Г?х-&%╜SХ?~ь╠HBИ?┼qаe│И?C╦ыуqХИ?Жwbq?Й?f	E²=▀Й?СпJRлнЙ?╕ВГЛ╓з?|БDЕ┬SХ?╔█К<.SХ?_М/#1И?╥\н И?-jъ9X│И?└нУ─И?/m╨РgХИ?О$≈	ХИ?ZэВУq?Й?\П:÷?Й?УBРO▀Й?√WФW▀Й?[√⌡шнЙ? vл╥ёнЙ?Ф╟╚└КК?V⌡s╧К?b▀cи╙Д?8╖,ЖН?О╙┴рллЭ?gr╘*yъс? ╜:⌡ я?║.Щ▌d╤я?hmd>9Й?ДшйЫ|?╗;≈п`╝█?\e█╥Д╥≈?'xЖл1	║?<%?iМR╖?%`3Щ┤╞?Й╞Щy▌╤?г0йяд╕?╟zПVTс╖?■ж5u+^╗?·T }]╗?Ю╚_/Wя╖?NWЩ%-а╕?i╩│зё?ХcfВ/е?≤и>z÷╩?bpD═Ж╪?xМ>эя╫?√`╩}с╫?╙H	>4Ш╪?%┌П╗#╩?сД┐ее?╦ ]^╩?Gч@WЯ╪?d<Мм╫?жhъён╫?{b<WЖ╪?wo╞tщ╩?бИШЁЖе?╣└ЭN╩?q╘IШFЯ╪?╡М║ м╫?°lгo⌠н╫?╬Е┌╝FЖ╪?\н▄Ьл╩?Б╢ $╧?$'а(ЬПЁ?h┌D▌█7╣?щ~^	Пл╣?вуF M╤╣?│е>╬Р╢?цЦО[5Ё?╢Ч
+╜ЁС?3╤8 j╗М?∙Щ▒=E╒М?шД`0╒М?рщ>▀З▀М?╘1█╓╨╫Ь?ЙZЕж]░З?

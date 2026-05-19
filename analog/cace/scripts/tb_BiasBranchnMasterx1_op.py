@@ -10,10 +10,12 @@ rawfile = RawRead('{}/{}_{}.raw'.format(simpath, filename, simnumber))
 steps = rawfile.get_steps()
 
 vdd = rawfile.get_trace('v(vdd)').get_wave(steps[0])[0]
+#added by ryan
 iout_pmos = rawfile.get_trace('i(vmeas_iout_pmos)').get_wave(steps[0])[0]
 iout_nmos = rawfile.get_trace('i(vmeas_iout_nmos)').get_wave(steps[0])[0]
+#added by ryan
 
-bias_is_ntype = rawfile.get_trace('v(nbiasenabled)').get_wave(steps[0])[0] > vdd/2
+bias_is_ntype = rawfile.get_trace('v(NBiasEn)').get_wave(steps[0])[0] > vdd/2
 
 if(bias_is_ntype):
     bias_type = 'n'
@@ -35,13 +37,22 @@ fine_code=0
 for i in range(0,len(fine_bit)):
     fine_code = fine_code + int(fine_bit[i]*2**i)
 
-coarse_bit = np.array([0.0]*3)
-coarse_bit[0] = rawfile.get_trace('v(CoarseBit0)').get_wave(steps[0])[0]/vdd
-coarse_bit[1] = rawfile.get_trace('v(CoarseBit1)').get_wave(steps[0])[0]/vdd
-coarse_bit[2] = rawfile.get_trace('v(CoarseBit2)').get_wave(steps[0])[0]/vdd
+coarse_bit = np.array([0.0]*8)
+coarse_bit[0] = rawfile.get_trace('v(Coarse0)').get_wave(steps[0])[0]/vdd
+coarse_bit[1] = rawfile.get_trace('v(Coarse1)').get_wave(steps[0])[0]/vdd
+coarse_bit[2] = rawfile.get_trace('v(Coarse2)').get_wave(steps[0])[0]/vdd
+#added by ryan
+coarse_bit[3] = rawfile.get_trace('v(Coarse3)').get_wave(steps[0])[0]/vdd
+coarse_bit[4] = rawfile.get_trace('v(Coarse4)').get_wave(steps[0])[0]/vdd
+coarse_bit[5] = rawfile.get_trace('v(Coarse5)').get_wave(steps[0])[0]/vdd
+coarse_bit[6] = rawfile.get_trace('v(Coarse6)').get_wave(steps[0])[0]/vdd
+coarse_bit[7] = rawfile.get_trace('v(Coarse7)').get_wave(steps[0])[0]/vdd
+#added by ryan
+
 coarse_code=0
 for i in range(0,len(coarse_bit)):
-    coarse_code = coarse_code + int(coarse_bit[i]*2**i)
+    coarse_code = coarse_code + int(coarse_bit[i])*i
+    #coarse_code = coarse_code + int(coarse_bit[i]*2**i) #changed by ryan
 
 
 vdsat_masterbias_mnbias = rawfile.get_trace("v(@m.xBias.xBiasMasternCoarse.xBiasMasterBias.xMNBias.msky130_fd_pr__nfet_01v8_lvt[vdsat])").get_wave(steps[0])[0]
