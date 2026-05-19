@@ -74,6 +74,7 @@ xrst pixRst gnd pixRst nRst RefrBp vdd PixelResetGen
 
 .temp CACE\{temperature\}
 
+.option SEED=CACE[CACE\{seed=12345\} + CACE\{iterations=0\}]
 .option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option method=gear maxord=2 trtol=1
 .option itl1=500 itl2=200 itl4=50
