@@ -1,0 +1,1103 @@
+timestamp 1778960082
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use BiasMultiplier BiasMultiplier_0 1 0 378 0 1 472
+use BiasDivider BiasDivider_0 1 0 225 0 1 5188
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+node "BiasCB5" 0 0 32490 11863 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB7" 0 0 14419 11870 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ICoarse1" 0 0 5849 655 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB6" 0 0 23644 11864 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ICoarse2" 0 0 4710 5376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB4" 0 0 33065 5378 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB2" 0 0 14747 5377 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB3" 0 0 23753 5374 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB1" 0 0 23417 660 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "BiasCB0" 0 0 14300 660 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VddA18" 88 12619.3 602 3924 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1508990 56214 148916 10502 0 0 0 0 0 0 0 0
+node "m1_32671_8434#" 1 190.884 32671 8434 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28644 850 0 0 0 0 0 0 0 0 0 0
+node "m1_23452_8437#" 1 189.504 23452 8437 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28392 844 0 0 0 0 0 0 0 0 0 0
+node "m1_14313_8453#" 0 182.147 14313 8453 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27048 812 0 0 0 0 0 0 0 0 0 0
+node "a_19675_n412#" 8630 26156.3 19675 -412 p 0 0 0 0 0 0 0 0 44800 2048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5088000 21088 0 0 763200 34608 1294436 61678 180156 11914 0 0 0 0 0 0 0 0
+node "a_12858_n608#" 7975 13221.4 12858 -608 p 0 0 0 0 0 0 0 0 88704 3616 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4112000 16224 0 0 421856 20176 660264 31484 117160 7796 0 0 0 0 0 0 0 0
+node "a_32484_4344#" 826 57.3001 32484 4344 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18600 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_36692_4344#" 897 106.908 36692 4344 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_32484_4496#" 826 28.2382 32484 4496 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18600 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_25182_4396#" 1213 65.5791 25182 4396 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33000 730 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23000_4396#" 1213 63.4002 23000 4396 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 720 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_20834_4396#" 1215 56.4275 20834 4396 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 688 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_15561_4200#" 2094 60.3903 15561 4200 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56628 1078 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14328_4200#" 2082 103.278 14328 4200 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83556 1214 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_13142_4200#" 2089 74.4863 13142 4200 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64944 1120 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_32484_4648#" 826 45.377 32484 4648 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18600 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_28431_4496#" 897 116.969 28431 4496 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_36692_4648#" 897 133.742 36692 4648 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_32484_4800#" 826 121.874 32484 4800 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18600 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_27369_4396#" 1367 214.565 27369 4396 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15368 972 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_25182_4648#" 1213 142.183 25182 4648 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33000 730 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23000_4648#" 1213 138.318 23000 4648 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 720 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_20834_4648#" 1215 125.95 20834 4648 ndif 0 0 0 0 0 0 0 0 21200 1012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 688 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_18781_4396#" 6222 24303 18781 4396 ndif 0 0 0 0 0 0 0 0 10600 506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5088000 21088 0 0 742800 33204 1147710 50658 151896 10204 0 0 0 0 0 0 0 0
+node "a_28431_4344#" 5531 25458.6 28431 4344 ndif 0 0 0 0 0 0 0 0 5300 306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 18960 0 0 739400 32636 1108352 48606 158476 10674 0 0 0 0 0 0 0 0
+node "a_16726_4200#" 2378 689.68 16726 4200 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28696 1756 36432 1768 0 0 0 0 0 0 0 0 0 0
+node "a_15561_4648#" 2094 161.369 15561 4648 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56628 1078 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14328_4648#" 2082 241.232 14328 4648 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83556 1214 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_13142_4648#" 2089 196.623 13142 4648 ndif 0 0 0 0 0 0 0 0 41976 1796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64944 1120 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12089_4200#" 4190 11435.6 12089 4200 ndif 0 0 0 0 0 0 0 0 20988 898 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4112000 16224 0 0 381464 17596 606480 26342 101140 7022 0 0 0 0 0 0 0 0
+node "a_33072_12314#" 820 42.5989 33072 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23942_12314#" 820 42.5989 23942 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14812_12314#" 820 42.5989 14812 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_37234_12314#" 897 106.877 37234 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_33072_12466#" 820 16.4097 33072 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_28104_12314#" 897 106.877 28104 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23942_12466#" 820 16.4097 23942 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_18974_12314#" 897 106.877 18974 12314 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14812_12466#" 820 16.4097 14812 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_33072_12618#" 820 16.4097 33072 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_29019_12466#" 897 110.036 29019 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23942_12618#" 820 16.4097 23942 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_19889_12466#" 897 110.036 19889 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14812_12618#" 820 16.4097 14812 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_10759_12466#" 897 110.036 10759 12466 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_37234_12618#" 897 105.246 37234 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_33072_12770#" 820 41.4532 33072 12770 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_28104_12618#" 897 105.246 28104 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_23942_12770#" 820 41.4532 23942 12770 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_18974_12618#" 897 105.246 18974 12618 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8568 572 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14812_12770#" 820 41.4532 14812 12770 ndif 0 0 0 0 0 0 0 0 10600 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_29019_12314#" 5530 20424 29019 12314 ndif 0 0 0 0 0 0 0 0 5300 306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 18960 0 0 739400 32636 1102880 48386 159092 10718 0 0 0 0 0 0 0 0
+node "a_19889_12314#" 5530 20412.1 19889 12314 ndif 0 0 0 0 0 0 0 0 5300 306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 18960 0 0 739400 32636 1102880 48386 159092 10718 0 0 0 0 0 0 0 0
+node "a_10759_12314#" 5530 20431.7 10759 12314 ndif 0 0 0 0 0 0 0 0 5300 306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 18960 0 0 739400 32636 1102880 48386 159092 10718 0 0 0 0 0 0 0 0
+substrate "GndA" 0 0 10599 12314 ppd 0 0 0 0 0 0 0 0 245892 11076 615744 24576 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1118776 26648 5602650 215388 445424 30640 0 0 0 0 0 0 0 0
+cap "a_33072_12314#" "a_29019_12314#" 110.29
+cap "a_19889_12314#" "a_28104_12618#" 60.1583
+cap "a_25182_4396#" "VddA18" 0.420362
+cap "a_28104_12314#" "a_28104_12618#" 10.8375
+cap "a_37234_12618#" "a_29019_12314#" 60.1583
+cap "a_28104_12618#" "a_29019_12314#" 0.325956
+cap "a_19889_12314#" "a_10759_12314#" 16.0944
+cap "a_13142_4648#" "a_13142_4200#" 52.275
+cap "VddA18" "a_14328_4200#" 1.59598
+cap "a_32484_4800#" "a_32484_4648#" 59.2875
+cap "a_33072_12770#" "a_29019_12314#" 75.2249
+cap "a_13142_4648#" "a_14328_4648#" 9.8254
+cap "a_14812_12314#" "a_10759_12314#" 110.29
+cap "a_23942_12466#" "a_23942_12314#" 44.625
+cap "a_36692_4648#" "a_28431_4344#" 60.208
+cap "a_27369_4396#" "a_28431_4344#" 0.037797
+cap "a_18781_4396#" "a_23000_4648#" 116.27
+cap "a_32484_4344#" "a_28431_4344#" 127.04
+cap "a_13142_4200#" "VddA18" 1.24048
+cap "a_10759_12314#" "a_19889_12466#" 0.0167954
+cap "a_25182_4396#" "a_25182_4648#" 52.5938
+cap "a_14812_12314#" "a_14812_12466#" 44.625
+cap "VddA18" "a_23000_4396#" 0.407624
+cap "a_32484_4800#" "a_28431_4344#" 71.098
+cap "a_18781_4396#" "a_20834_4648#" 109.974
+cap "a_16726_4200#" "VddA18" 8.30034
+cap "a_36692_4344#" "a_36692_4648#" 10.8375
+cap "a_18974_12618#" "a_18974_12314#" 10.8375
+cap "a_10759_12314#" "a_14812_12770#" 75.2249
+cap "a_33072_12618#" "a_33072_12770#" 44.625
+cap "a_16726_4200#" "a_15561_4648#" 10.7601
+cap "a_28431_4496#" "a_28431_4344#" 76.3665
+cap "a_14812_12618#" "a_14812_12770#" 44.625
+cap "a_14328_4648#" "a_15561_4648#" 9.8254
+cap "a_32484_4648#" "a_32484_4496#" 59.2875
+cap "a_19889_12314#" "a_23942_12618#" 58.1496
+cap "a_18974_12314#" "a_10759_12314#" 60.6415
+cap "a_18974_12618#" "a_10759_12314#" 60.1583
+cap "a_37234_12314#" "a_29019_12314#" 60.6415
+cap "a_28431_4344#" "a_32484_4496#" 64.4215
+cap "a_27369_4396#" "a_18781_4396#" 108.769
+cap "a_12089_4200#" "a_15561_4200#" 319.202
+cap "a_25182_4396#" "a_18781_4396#" 199.561
+cap "a_23942_12466#" "a_23942_12618#" 44.625
+cap "a_20834_4396#" "VddA18" 0.366862
+cap "a_14812_12618#" "a_10759_12314#" 58.1496
+cap "a_28431_4496#" "a_18781_4396#" 0.012599
+cap "a_12089_4200#" "a_14328_4200#" 363.991
+cap "a_14812_12466#" "a_10759_12314#" 62.0737
+cap "a_28431_4344#" "a_32484_4648#" 56.0426
+cap "a_23942_12770#" "a_23942_12618#" 44.625
+cap "a_14812_12466#" "a_14812_12618#" 44.625
+cap "a_29019_12314#" "a_33072_12466#" 62.0737
+cap "a_23000_4648#" "a_23000_4396#" 51
+cap "a_28104_12314#" "a_19889_12314#" 60.6415
+cap "a_19889_12314#" "a_29019_12314#" 16.0944
+cap "a_18781_4396#" "a_23000_4396#" 203.794
+cap "a_28104_12314#" "a_29019_12314#" 0.383243
+cap "a_13142_4200#" "a_12089_4200#" 326.043
+cap "a_13142_4648#" "a_12089_4200#" 223.518
+cap "a_16726_4200#" "a_12089_4200#" 349.255
+cap "a_33072_12618#" "a_33072_12466#" 44.625
+cap "a_14328_4648#" "a_12089_4200#" 244.657
+cap "a_15561_4200#" "a_14328_4200#" 9.8254
+cap "a_19889_12314#" "a_19889_12466#" 77.37
+cap "VddA18" "a_18781_4396#" 1066.05
+cap "a_36692_4344#" "a_28431_4344#" 60.9371
+cap "a_33072_12618#" "a_29019_12314#" 58.1496
+cap "a_23942_12466#" "a_19889_12314#" 62.0737
+cap "a_37234_12618#" "a_37234_12314#" 10.8375
+cap "a_10759_12466#" "a_10759_12314#" 77.37
+cap "a_12089_4200#" "VddA18" 1229.37
+cap "a_15561_4648#" "a_12089_4200#" 229.956
+cap "a_19889_12314#" "a_23942_12770#" 75.2249
+cap "a_16726_4200#" "a_15561_4200#" 10.7818
+cap "a_32484_4344#" "a_32484_4496#" 59.2875
+cap "a_19889_12314#" "a_29019_12466#" 0.0167954
+cap "a_19889_12314#" "a_18974_12314#" 0.383243
+cap "a_18974_12618#" "a_19889_12314#" 0.325956
+cap "a_13142_4200#" "a_14328_4200#" 9.8254
+cap "a_28431_4344#" "a_18781_4396#" 3.1449
+cap "a_29019_12466#" "a_29019_12314#" 77.37
+cap "a_20834_4396#" "a_18781_4396#" 185.074
+cap "a_25182_4648#" "a_18781_4396#" 106.707
+cap "a_33072_12314#" "a_33072_12466#" 44.625
+cap "a_23942_12314#" "a_19889_12314#" 110.29
+cap "a_20834_4396#" "a_20834_4648#" 45.9
+cap "a_15561_4200#" "VddA18" 1.08163
+cap "a_27369_4396#" "VddA18" 1.34329
+cap "a_15561_4648#" "a_15561_4200#" 45.5812
+cap "a_14328_4648#" "a_14328_4200#" 67.2562
+device msubckt sky130_fd_pr__nfet_01v8_lvt 25843 -320 25844 -319 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "a_19675_n412#" 200 5600,256 "GndA" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 23787 -320 23788 -319 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "GndA" 200 5600,256 "a_19675_n412#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21731 -320 21732 -319 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "a_19675_n412#" 200 5600,256 "GndA" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19675 -320 19676 -319 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "GndA" 200 10600,506 "a_19675_n412#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16026 -516 16027 -515 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "a_12858_n608#" 396 11088,452 "GndA" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14970 -516 14971 -515 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "GndA" 396 11088,452 "a_12858_n608#" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13914 -516 13915 -515 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "a_12858_n608#" 396 11088,452 "GndA" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12858 -516 12859 -515 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "GndA" 396 20988,898 "a_12858_n608#" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 25843 -68 25844 -67 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "a_19675_n412#" 200 5600,256 "GndA" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 23787 -68 23788 -67 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "GndA" 200 5600,256 "a_19675_n412#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21731 -68 21732 -67 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "a_19675_n412#" 200 5600,256 "GndA" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19675 -68 19676 -67 l=2000 w=200 "GndA" "a_19675_n412#" 4000 0 "GndA" 200 10600,506 "a_19675_n412#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16026 -68 16027 -67 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "a_12858_n608#" 396 11088,452 "GndA" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14970 -68 14971 -67 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "GndA" 396 11088,452 "a_12858_n608#" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13914 -68 13915 -67 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "a_12858_n608#" 396 11088,452 "GndA" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12858 -68 12859 -67 l=1000 w=396 "GndA" "a_12858_n608#" 2000 0 "GndA" 396 20988,898 "a_12858_n608#" 396 11088,452
+device msubckt sky130_fd_pr__nfet_01v8_lvt 32692 4344 32693 4345 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_32484_4344#" 100 5300,306 "a_36692_4344#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 28484 4344 28485 4345 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_28431_4344#" 100 5300,306 "a_32484_4344#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 32692 4496 32693 4497 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_32484_4496#" 100 5300,306 "a_36692_4344#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 28484 4496 28485 4497 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_28431_4496#" 100 5300,306 "a_32484_4496#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 25369 4396 25370 4397 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_25182_4396#" 200 10600,506 "a_27369_4396#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 23182 4396 23183 4397 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_23000_4396#" 200 10600,506 "a_25182_4396#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21000 4396 21001 4397 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_20834_4396#" 200 10600,506 "a_23000_4396#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 18834 4396 18835 4397 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_18781_4396#" 200 10600,506 "a_20834_4396#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15726 4200 15727 4201 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_15561_4200#" 396 20988,898 "a_16726_4200#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14561 4200 14562 4201 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_14328_4200#" 396 20988,898 "a_15561_4200#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13328 4200 13329 4201 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_13142_4200#" 396 20988,898 "a_14328_4200#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12142 4200 12143 4201 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_12089_4200#" 396 20988,898 "a_13142_4200#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 32692 4648 32693 4649 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_32484_4648#" 100 5300,306 "a_36692_4648#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 28484 4648 28485 4649 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_28431_4496#" 100 5300,306 "a_32484_4648#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 32692 4800 32693 4801 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "a_32484_4800#" 100 5300,306 "a_36692_4648#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 28484 4800 28485 4801 l=4000 w=100 "GndA" "a_28431_4344#" 8000 0 "GndA" 100 5300,306 "a_32484_4800#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 25369 4648 25370 4649 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_25182_4648#" 200 10600,506 "a_27369_4396#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 23182 4648 23183 4649 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_23000_4648#" 200 10600,506 "a_25182_4648#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21000 4648 21001 4649 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "a_20834_4648#" 200 10600,506 "a_23000_4648#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 18834 4648 18835 4649 l=2000 w=200 "GndA" "a_18781_4396#" 4000 0 "GndA" 200 10600,506 "a_20834_4648#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15726 4648 15727 4649 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_15561_4648#" 396 20988,898 "a_16726_4200#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14561 4648 14562 4649 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_14328_4648#" 396 20988,898 "a_15561_4648#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13328 4648 13329 4649 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "a_13142_4648#" 396 20988,898 "a_14328_4648#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12142 4648 12143 4649 l=1000 w=396 "GndA" "a_12089_4200#" 2000 0 "GndA" 396 20988,898 "a_13142_4648#" 396 20988,898
+device msubckt sky130_fd_pr__nfet_01v8_lvt 33234 12314 33235 12315 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_33072_12314#" 100 5300,306 "a_37234_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 29072 12314 29073 12315 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_29019_12314#" 100 5300,306 "a_33072_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 24104 12314 24105 12315 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_23942_12314#" 100 5300,306 "a_28104_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19942 12314 19943 12315 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_19889_12314#" 100 5300,306 "a_23942_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14974 12314 14975 12315 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_14812_12314#" 100 5300,306 "a_18974_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10812 12314 10813 12315 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_10759_12314#" 100 5300,306 "a_14812_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 33234 12466 33235 12467 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_33072_12466#" 100 5300,306 "a_37234_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 29072 12466 29073 12467 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_29019_12466#" 100 5300,306 "a_33072_12466#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 24104 12466 24105 12467 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_23942_12466#" 100 5300,306 "a_28104_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19942 12466 19943 12467 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_19889_12466#" 100 5300,306 "a_23942_12466#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14974 12466 14975 12467 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_14812_12466#" 100 5300,306 "a_18974_12314#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10812 12466 10813 12467 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_10759_12466#" 100 5300,306 "a_14812_12466#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 33234 12618 33235 12619 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_33072_12618#" 100 5300,306 "a_37234_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 29072 12618 29073 12619 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_29019_12466#" 100 5300,306 "a_33072_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 24104 12618 24105 12619 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_23942_12618#" 100 5300,306 "a_28104_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19942 12618 19943 12619 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_19889_12466#" 100 5300,306 "a_23942_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14974 12618 14975 12619 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_14812_12618#" 100 5300,306 "a_18974_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10812 12618 10813 12619 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_10759_12466#" 100 5300,306 "a_14812_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 33234 12770 33235 12771 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "a_33072_12770#" 100 5300,306 "a_37234_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 29072 12770 29073 12771 l=4000 w=100 "GndA" "a_29019_12314#" 8000 0 "GndA" 100 5300,306 "a_33072_12770#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 24104 12770 24105 12771 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "a_23942_12770#" 100 5300,306 "a_28104_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 19942 12770 19943 12771 l=4000 w=100 "GndA" "a_19889_12314#" 8000 0 "GndA" 100 5300,306 "a_23942_12770#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14974 12770 14975 12771 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "a_14812_12770#" 100 5300,306 "a_18974_12618#" 100 5300,306
+device msubckt sky130_fd_pr__nfet_01v8_lvt 10812 12770 10813 12771 l=4000 w=100 "GndA" "a_10759_12314#" 8000 0 "GndA" 100 5300,306 "a_14812_12770#" 100 5300,306
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 3.84227
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "GndA" 2.47897
+cap "BiasMultiplier_0/IIn" "GndA" 12.0226
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "GndA" 3.2053
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 33.5171
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 27.3298
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 1.26886
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.848337
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 3.29612
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 135.214
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0596434
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0360237
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 55.7797
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.36532
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 0.73729
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 55.0386
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.237543
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.67949
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.36739
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0887355
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.00557362
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.00945734
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.282371
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 5.96953
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 55.6325
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.00945734
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0838275
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 1.88122
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 97.0151
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.758496
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 5.61357
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 10.9517
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 9.19138
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 1.28601
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "a_19675_n412#" 12.3576
+cap "a_19675_n412#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 3.59122
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "a_19675_n412#" 47.0145
+cap "a_19675_n412#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 6.42996
+cap "a_19675_n412#" "GndA" 0.00515634
+cap "a_19675_n412#" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.363323
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 41.3448
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.815178
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 0.552905
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "GndA" 0.0970047
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 39.1906
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0188877
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.816129
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 40.93
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 1.12795
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 39.7874
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.835017
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.637062
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 6.74403
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 30.7141
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/GndA" 67.3761
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/w_667_477#" 2.84217e-14
+cap "BiasMultiplier_0/w_667_477#" "BiasMultiplier_0/GndA" 4.28212
+cap "GndA" "BiasMultiplier_0/IIn" 131.632
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/BiasMultiplierCell_0/INext" -2.69436
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 82.2687
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 5.65737
+cap "GndA" "BiasMultiplier_0/IIn" 9.46331
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 3.29531
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "BiasMultiplier_0/IIn" -1.87811
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" 73.0262
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" -38.2845
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" -36.7349
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" 8.83626
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 82.9723
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 3.29248
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" -10.8285
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.848337
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 0.892742
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 6.22029
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.923843
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.124618
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 61.5658
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 1.67581
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 59.5877
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0344774
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 2.45752
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.35365
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.72023
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 0.689774
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 59.7813
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 0.0344774
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.279197
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0344774
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" -2.27374e-13
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 4.24449
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 11.327
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 4.29409
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 1.60855
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 12.3576
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.363323
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 48.588
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 2.02594
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0489953
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.88079
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 44.3489
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0153374
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0473483
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.01914
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0614672
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 41.3031
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.182107
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.831062
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.88079
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.0153374
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.01914
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.01914
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.0153374
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 43.1078
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0553879
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0426028
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 1.4337
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.0344774
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 43.0435
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 0.124618
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.88079
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 32.4788
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.229452
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0489953
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 48.293
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 4.79386
+cap "BiasMultiplier_0/GndA" "BiasMultiplier_0/IIn" 251.953
+cap "BiasMultiplier_0/GndA" "BiasMultiplier_0/w_667_477#" 8.10491
+cap "BiasMultiplier_0/GndA" "BiasMultiplier_0/w_667_477#" 0.000824496
+cap "BiasMultiplier_0/IIn" "VddA18" 0.47154
+cap "VddA18" "BiasMultiplier_0/w_667_477#" 0.00138329
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/GndA" 0.279842
+cap "GndA" "BiasMultiplier_0/IIn" 0.0531147
+cap "VddA18" "BiasMultiplier_0/w_667_477#" 0.0184832
+cap "VddA18" "BiasMultiplier_0/IIn" 0.102879
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.0110132
+cap "GndA" "BiasMultiplier_0/IIn" 0.0010798
+cap "BiasMultiplier_0/IIn" "VddA18" 0.00232543
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.0265505
+cap "BiasMultiplier_0/w_667_477#" "VddA18" 0.0461271
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.0268774
+cap "BiasMultiplier_0/w_667_477#" "VddA18" 0.046902
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "VddA18" 0.0447226
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" 0.0259495
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 7.69055
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" -2.15921
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "GndA" 64.067
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "BiasMultiplier_0/IIn" -0.798288
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 7.13839
+cap "BiasMultiplier_0/IIn" "BiasMultiplier_0/BiasMultiplierCell_0/INext" -3.3998
+cap "BiasMultiplier_0/IIn" "GndA" 247.475
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.130418
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "BiasMultiplier_0/IIn" -12.8956
+cap "BiasMultiplier_0/IIn" "GndA" 60.2064
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IPrev" "GndA" 3.14261
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 2.12008
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.25241
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "a_12089_4200#" 0.194533
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_12089_4200#" 0.483589
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.505244
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "a_12089_4200#" 0.0333106
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_12089_4200#" 1.51445
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "VddA18" 0.0198664
+cap "a_13142_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.134654
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.00983612
+cap "a_12089_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.00864915
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0486241
+cap "a_12089_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.32047
+cap "a_13142_4648#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0406796
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "VddA18" 0.0461271
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.138322
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "a_12089_4200#" 0.0328111
+cap "a_12089_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.48465
+cap "a_14328_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.326716
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "a_12089_4200#" 0.0112692
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0241762
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_12089_4200#" 0.0224167
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "VddA18" 0.046902
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.120426
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.0229837
+cap "a_12089_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.582734
+cap "a_12089_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 1.42359
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0225723
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.114981
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0447226
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_20834_4396#" 0.340715
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 2.70638
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "a_18781_4396#" 0.0266143
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "GndA" 0.0234732
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "VddA18" 0.519688
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "VddA18" 0.00138329
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0184832
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.00983612
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 1.07762
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.162273
+cap "a_18781_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0764781
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0461271
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 0.850729
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.0241762
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "VddA18" 0.140648
+cap "a_18781_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.251076
+cap "a_18781_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0945126
+cap "a_25182_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.10022
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.046902
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasMultiplier_0/BiasMultiplierCell_1/INext" -1.13687e-13
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "a_18781_4396#" 0.384641
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.120426
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.0229837
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 0.781802
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 144.854
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "GndA" 0.0225723
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 0.79917
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.114981
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.603704
+cap "BiasMultiplier_0/IIn" "VddA18" 241.269
+cap "BiasDivider_0/IIn" "GndA" 0.901903
+cap "GndA" "BiasDivider_0/IIn" 11.1086
+cap "BiasMultiplier_0/IIn" "GndA" 90.9143
+cap "GndA" "VddA18" -1.4342
+cap "BiasDivider_0/VddA18" "GndA" 2.3732
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.02272
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.108718
+cap "VddA18" "BiasMultiplier_0/IIn" 317.095
+cap "GndA" "BiasDivider_0/IIn" 28.2392
+cap "BiasMultiplier_0/w_667_477#" "VddA18" 0.309468
+cap "BiasDivider_0/IIn" "BiasMultiplier_0/IIn" 0.0454733
+cap "GndA" "BiasMultiplier_0/IIn" 3.50571
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.0451634
+cap "GndA" "BiasMultiplier_0/IIn" 3.88439
+cap "GndA" "BiasDivider_0/IIn" 28.2773
+cap "BiasMultiplier_0/IIn" "VddA18" 318.882
+cap "GndA" "BiasMultiplier_0/w_667_477#" 0.0416481
+cap "BiasMultiplier_0/w_667_477#" "VddA18" 0.115488
+cap "BiasMultiplier_0/IIn" "GndA" 3.73096
+cap "BiasMultiplier_0/IIn" "VddA18" 318.281
+cap "GndA" "BiasDivider_0/IIn" 28.2773
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.0449758
+cap "BiasMultiplier_0/w_667_477#" "GndA" 0.0302985
+cap "VddA18" "BiasMultiplier_0/IIn" 318.923
+cap "BiasMultiplier_0/w_667_477#" "VddA18" 0.0862453
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.0460176
+cap "GndA" "BiasDivider_0/IIn" 28.2773
+cap "BiasMultiplier_0/IIn" "GndA" 3.73247
+cap "GndA" "BiasMultiplier_0/IIn" 3.93635
+cap "GndA" "BiasDivider_0/IIn" 1.22401
+cap "BiasDivider_0/IIn" "GndA" 26.7447
+cap "VddA18" "BiasMultiplier_0/IIn" 320.122
+cap "BiasDivider_0/IIn" "BiasMultiplier_0/IIn" 0.0666314
+cap "BiasDivider_0/VddA18" "GndA" 0.78172
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 2.01808
+cap "VddA18" "BiasMultiplier_0/IIn" 314.408
+cap "GndA" "BiasDivider_0/VddA18" 0.221095
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.193942
+cap "VddA18" "GndA" -1.4342
+cap "VddA18" "BiasMultiplier_0/w_667_477#" 0.223223
+cap "GndA" "BiasMultiplier_0/IIn" 92.1439
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasMultiplier_0/IIn" -0.248183
+cap "BiasDivider_0/IIn" "GndA" 13.4548
+cap "GndA" "BiasMultiplier_0/w_667_477#" 1.96161
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasMultiplier_0/IIn" -0.0570271
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 0.524548
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 50.5482
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0227719
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0862453
+cap "VddA18" "BiasMultiplier_0/IIn" 315.006
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 1.52475
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.0636937
+cap "BiasMultiplier_0/IIn" "GndA" 19.1074
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 3.53335
+cap "BiasMultiplier_0/w_667_477#" "BiasMultiplier_0/IIn" -0.672706
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0339504
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasDivider_0/BiasDividerCell_5/IOut" 72.0995
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasDivider_0/BiasDividerCell_5/IOut" 2.2806
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 0.766902
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.00431848
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 25.1782
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 0.725298
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 1.95626
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasDivider_0/BiasDividerCell_5/IOut" 0.083336
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 317.062
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.424956
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.209195
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasDivider_0/BiasDividerCell_5/IOut" 2.95725
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.120382
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_13142_4200#" 8.46068
+cap "a_13142_4648#" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.502036
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 318.53
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasDivider_0/BiasDividerCell_5/IOut" 1.23071
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 116.437
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0264525
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0159921
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_13142_4200#" 0.237605
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_13142_4648#" 0.111531
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasDivider_0/BiasDividerCell_5/IOut" 1.23268
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.0862453
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasDivider_0/BiasDividerCell_5/IOut" 96.1308
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_15561_4648#" 0.834073
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 0.123677
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_14328_4648#" 0.60525
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_15561_4200#" 7.38532
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "VddA18" 318.786
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_14328_4200#" 10.7866
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0218448
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 2.2074
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 92.3285
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 11.0355
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0371886
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0931834
+cap "VddA18" "BiasDivider_0/BiasDividerCell_5/IOut" 0.970128
+cap "a_16726_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 2.41761
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 2.59598
+cap "a_15561_4200#" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 2.27284
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 6.62851
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/IOut" 9.75811
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/IPrev" 1.72562
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0172205
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 316.462
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "VddA18" 0.0481959
+cap "a_15561_4648#" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 0.247417
+cap "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "GndA" 0.00500652
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 20.3321
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0229765
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 27.2274
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 316.355
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 1.20934
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/IOut" 0.0380494
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_18781_4396#" 35.3426
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/VGate" 313.852
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 4.49257
+cap "BiasDivider_0/BiasDividerCell_5/INext" "GndA" 1.65748
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 1.82569
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 1.59588
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "a_18781_4396#" 3.66681
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_0/INext" 0.223223
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "a_18781_4396#" 1.89956
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasMultiplier_0/BiasMultiplierCell_0/INext" -1.42109e-14
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "a_18781_4396#" 1.54041
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "VddA18" 0.0862453
+cap "VddA18" "a_18781_4396#" -2.84217e-14
+cap "BiasMultiplier_0/BiasMultiplierCell_0/INext" "GndA" 1.45094
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "a_18781_4396#" 5.11098
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "VddA18" 314.662
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_20834_4396#" 5.10183
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "GndA" 0.0685523
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_18781_4396#" 66.3028
+cap "a_18781_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.167989
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "VddA18" 0.309468
+cap "a_20834_4648#" "BiasDivider_0/BiasDividerCell_4/IPrev" 0.0989162
+cap "a_20834_4648#" "a_18781_4396#" 1.20664
+cap "a_20834_4648#" "BiasDivider_0/BiasDividerCell_4/VGate" 1.47763
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "a_20834_4648#" 0.244639
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "a_18781_4396#" 5.76714
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "GndA" 0.0159921
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasDivider_0/BiasDividerCell_4/IOut" 0.558996
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 318.218
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 92.9811
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.12295
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.0156302
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasDivider_0/BiasDividerCell_4/IOut" 0.588446
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.115488
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 0.0854994
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "a_23000_4648#" 0.456493
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "VddA18" 0.0862453
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 76.0347
+cap "a_23000_4648#" "BiasDivider_0/BiasDividerCell_4/VGate" 2.60191
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.0889939
+cap "a_23000_4396#" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 6.58604
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.021109
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "VddA18" 316.702
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 1.61731
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.73345
+cap "a_23000_4648#" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.621137
+cap "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasDivider_0/BiasDividerCell_4/IOut" 0.040545
+cap "a_25182_4648#" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.294086
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IOut" 7.71857
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "a_25182_4396#" 5.86813
+cap "a_25182_4648#" "BiasDivider_0/BiasDividerCell_4/VGate" 2.68322
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "VddA18" 318.923
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 79.4711
+cap "a_25182_4648#" "BiasDivider_0/BiasDividerCell_4/IOut" 0.470758
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.0862453
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 0.125676
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasDivider_0/BiasDividerCell_4/IOut" 0.73345
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "BiasDivider_0/BiasDividerCell_4/IOut" 1.59002
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.102477
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/INext" 0.94195
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 1.61155
+cap "VddA18" "BiasDivider_0/BiasDividerCell_4/IOut" 2.84217e-14
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 90.6136
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/IOut" 0.0862453
+cap "VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 318.691
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "a_27369_4396#" 1.42619
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "GndA" 0.0293716
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/IPrev" 0.293827
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "GndA" 1.07506
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "GndA" 2.40671
+cap "a_27369_4396#" "BiasDivider_0/BiasDividerCell_4/VGate" 0.552905
+cap "BiasMultiplier_0/BiasMultiplierCell_1/INext" "VddA18" 1.98158
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "VddA18" 380.728
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "GndA" 11.8983
+cap "BiasDivider_0/BiasDividerCell_4/INext" "GndA" 1.27127
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 30.6285
+cap "GndA" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 0.414709
+cap "a_28431_4344#" "BiasMultiplier_0/BiasMultiplierCell_1/VGate" 16.9199
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "VddA18" 31.4286
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/VGate" 0.571782
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/IPrev" 2.47879
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 2.97791
+cap "BiasDivider_0/IIn" "BiasMultiplier_0/IIn" 0.0172689
+cap "GndA" "BiasDivider_0/IIn" 1.30966
+cap "BiasDivider_0/IIn" "BiasDivider_0/VddA18" 90.8245
+cap "GndA" "BiasDivider_0/IIn" 11.1018
+cap "GndA" "BiasDivider_0/VddA18" 1.78599
+cap "BiasDivider_0/IIn" "BiasDivider_0/VddA18" 24.3496
+cap "BiasDivider_0/VddA18" "GndA" 0.0193919
+cap "BiasDivider_0/IIn" "GndA" 28.2533
+cap "BiasDivider_0/IIn" "GndA" 0.90024
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.00594781
+cap "BiasDivider_0/VddA18" "BiasDivider_0/IIn" 0.00807444
+cap "BiasDivider_0/IIn" "BiasDivider_0/VddA18" 0.000345656
+cap "BiasDivider_0/IIn" "BiasMultiplier_0/IIn" 0.0232167
+cap "VddA18" "BiasDivider_0/IIn" 0.000172828
+cap "BiasDivider_0/IIn" "VddA18" 0.026011
+cap "GndA" "BiasDivider_0/IIn" 0.875016
+cap "BiasDivider_0/IIn" "GndA" 28.2759
+cap "BiasDivider_0/VddA18" "GndA" 0.0279862
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.0232167
+cap "BiasDivider_0/IIn" "VddA18" 0.026011
+cap "BiasDivider_0/IIn" "VddA18" 0.000345656
+cap "GndA" "BiasDivider_0/IIn" 28.2759
+cap "GndA" "BiasDivider_0/IIn" 0.935648
+cap "GndA" "BiasDivider_0/VddA18" 0.0193919
+cap "BiasDivider_0/VddA18" "GndA" 0.0193919
+cap "VddA18" "BiasDivider_0/IIn" 0.000172828
+cap "VddA18" "BiasDivider_0/IIn" 0.026011
+cap "BiasDivider_0/IIn" "GndA" 0.875016
+cap "BiasDivider_0/IIn" "GndA" 28.2845
+cap "BiasMultiplier_0/IIn" "BiasDivider_0/IIn" 0.0232167
+cap "BiasDivider_0/IIn" "VddA18" 0.000172828
+cap "VddA18" "BiasDivider_0/IIn" 0.026011
+cap "VddA18" "BiasDivider_0/IIn" 0.000172828
+cap "BiasDivider_0/IIn" "BiasMultiplier_0/IIn" 0.0232167
+cap "GndA" "BiasDivider_0/IIn" 0.254744
+cap "GndA" "BiasDivider_0/IIn" 33.4997
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 0.0314785
+cap "GndA" "BiasDivider_0/IIn" 1.73293
+cap "BiasDivider_0/IIn" "VddA18" 0.000172828
+cap "BiasDivider_0/IIn" "GndA" 6.76815
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_5/VGate" -21.358
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 51.7724
+cap "BiasDivider_0/IIn" "GndA" 81.7885
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/IIn" -5.87896
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 43.3979
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 12.8774
+cap "GndA" "BiasDivider_0/VddA18" 3.01826
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "VddA18" 0.026011
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 61.3293
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_5/VGate" -21.9137
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 39.543
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "VddA18" 0.000172828
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 2.95606
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/VGate" -0.922615
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasMultiplier_0/IIn" 0.0232167
+cap "BiasDivider_0/VddA18" "BiasDivider_0/BiasDividerCell_5/VGate" -1.5538
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/IOut" 1.72226
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 10.0267
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 35.8083
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 0.0530551
+cap "VddA18" "BiasDivider_0/BiasDividerCell_5/VGate" 0.000345656
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasDivider_0/BiasDividerCell_5/VGate" 62.7645
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 0.205619
+cap "a_13142_4648#" "BiasDivider_0/BiasDividerCell_5/VGate" 9.55941
+cap "a_13142_4200#" "BiasDivider_0/BiasDividerCell_5/VGate" 1.03389
+cap "a_13142_4648#" "BiasDivider_0/BiasDividerCell_5/IOut" 1.1458
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasDivider_0/BiasDividerCell_5/IPrev" 2.41678
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasDivider_0/BiasDividerCell_5/VGate" 102.224
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/IOut" 1.36739
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "VddA18" 0.000345656
+cap "a_14328_4200#" "BiasDivider_0/BiasDividerCell_5/VGate" 0.644383
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "a_15561_4648#" 5.39466
+cap "a_14328_4648#" "BiasDivider_0/BiasDividerCell_5/VGate" 10.7402
+cap "VddA18" "BiasDivider_0/BiasDividerCell_5/VGate" 0.000345656
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 0.227366
+cap "a_15561_4200#" "BiasDivider_0/BiasDividerCell_5/VGate" 0.323361
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/IOut" 0.203411
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "a_15561_4648#" 0.740576
+cap "a_14328_4648#" "BiasDivider_0/BiasDividerCell_5/IOut" 1.47416
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "a_14328_4200#" 0.390453
+cap "a_14328_4648#" "BiasDivider_0/BiasDividerCell_5/IPrev" 0.742514
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "BiasDivider_0/BiasDividerCell_5/VGate" 91.2137
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/IOut" 1.36532
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 0.0530551
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 0.0691955
+cap "VddA18" "BiasDivider_0/BiasDividerCell_5/IOut" 0.970128
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/IPrev" 1.44141
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "a_15561_4648#" 2.00661
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "a_15561_4648#" 0.258503
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "BiasDivider_0/BiasDividerCell_5/IOut" 86.5161
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "a_15561_4200#" 0.161993
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_5/IOut" 1.74677
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 1.6628
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "a_16726_4200#" 2.15288
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/IOut" 15.5383
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "GndA" 0.571123
+cap "a_16726_4200#" "BiasDivider_0/BiasDividerCell_5/IOut" 6.68571
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "GndA" 23.2418
+cap "BiasDivider_0/BiasDividerCell_5/IOut" "GndA" 27.2381
+cap "BiasMultiplier_0/BiasMultiplierCell_0/VGate" "BiasDivider_0/BiasDividerCell_5/IOut" 0.0232167
+cap "BiasDivider_0/BiasDividerCell_5/VGate" "VddA18" 0.000345656
+cap "VddA18" "BiasDivider_0/BiasDividerCell_5/IOut" 0.026011
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IPrev" 1.4095
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.0810623
+cap "VddA18" "BiasDivider_0/BiasDividerCell_4/VGate" 0.000172828
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_4/IPrev" -1.42109e-14
+cap "a_18781_4396#" "BiasDivider_0/BiasDividerCell_4/IPrev" 23.977
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/VGate" 4.81878
+cap "a_18781_4396#" "BiasDivider_0/BiasDividerCell_4/VGate" 37.6763
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IPrev" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000345656
+cap "a_18781_4396#" "a_20834_4648#" 0.492054
+cap "GndA" "a_18781_4396#" 0.00134637
+cap "a_20834_4648#" "BiasDivider_0/BiasDividerCell_4/VGate" 1.76157
+cap "a_18781_4396#" "BiasDivider_0/BiasDividerCell_4/IPrev" 0.874984
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.214937
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "a_20834_4396#" 0.208836
+cap "a_18781_4396#" "BiasDivider_0/BiasDividerCell_4/VGate" 78.051
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000172828
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "GndA" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "GndA" 0.0810623
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 2.55584
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 0.816129
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 83.2836
+cap "VddA18" "BiasDivider_0/BiasDividerCell_4/VGate" 0.000345656
+cap "a_23000_4648#" "BiasDivider_0/BiasDividerCell_4/VGate" 3.08395
+cap "a_23000_4396#" "BiasDivider_0/BiasDividerCell_4/VGate" 0.307513
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasDivider_0/BiasDividerCell_4/VGate" 77.2716
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.222561
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 0.874984
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "GndA" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "a_25182_4396#" 0.20022
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "a_25182_4648#" 3.17578
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 72.0486
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IPrev" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "a_25182_4396#" 0.314366
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "a_25182_4648#" 0.236163
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000172828
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 0.0539742
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IOut" 7.71857
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.142028
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 0.815178
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasDivider_0/BiasDividerCell_4/IPrev" 5.61716
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "VddA18" 0.00133374
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/IOut" 0.0100054
+cap "BiasDivider_0/BiasDividerCell_4/IOut" "BiasDivider_0/BiasDividerCell_4/VGate" 45.547
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 26.8618
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000172828
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.0810623
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000172828
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_4/IOut" 6.42996
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 0.0810623
+cap "BiasMultiplier_0/BiasMultiplierCell_1/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 0.000700766
+cap "GndA" "BiasDivider_0/BiasDividerCell_4/VGate" 12.8659
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "VddA18" 0.000172828
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/IPrev" 1.41074
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" 59.7792
+cap "BiasDivider_0/BiasDividerCell_4/VGate" "a_27369_4396#" 0.88802
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 1.13268
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "GndA" 11.9018
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_28431_4344#" 82.586
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "a_28431_4344#" 1.09339
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_28431_4496#" 0.0783727
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 0.162125
+cap "a_28431_4344#" "BiasDivider_0/BiasDividerCell_3/IPrev" 0.95793
+cap "a_28431_4344#" "BiasDivider_0/BiasDividerCell_3/VGate" 91.7807
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "GndA" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/IPrev" 2.92373
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 0.162125
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/IPrev" 0.936767
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/VGate" 91.7807
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 0.23351
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_32484_4344#" 0.143415
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "BiasDivider_0/BiasDividerCell_3/IOut" 78.3362
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "BiasDivider_0/BiasDividerCell_3/IOut" 0.935054
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "GndA" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_32484_4800#" 6.80182
+cap "a_32484_4800#" "BiasDivider_0/BiasDividerCell_3/IOut" 0.649774
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_32484_4496#" 0.186769
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "a_32484_4648#" 0.253077
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/IPrev" 1.11455
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/VGate" 77.5591
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 0.0810623
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/IPrev" 6.32231
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/IPrev" 0.0530551
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "BiasDivider_0/BiasDividerCell_3/IOut" 6.89904
+cap "BiasDivider_0/BiasDividerCell_3/VGate" "GndA" 0.0990912
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "BiasDivider_0/BiasDividerCell_3/IOut" 0.419209
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/VGate" 137.825
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "GndA" 0.0100054
+cap "BiasDivider_0/BiasDividerCell_3/IPrev" "BiasDivider_0/BiasDividerCell_3/IOut" 0.879538
+cap "a_36692_4648#" "BiasDivider_0/BiasDividerCell_3/VGate" 1.77464
+cap "a_36692_4344#" "BiasDivider_0/BiasDividerCell_3/VGate" 0.324422
+cap "GndA" "BiasDivider_0/BiasDividerCell_3/VGate" 13.1926
+cap "BiasDivider_0/BiasDividerCell_3/IOut" "BiasDivider_0/BiasDividerCell_3/VGate" 2.3024
+cap "BiasDivider_0/VddA18" "BiasDivider_0/IIn" 45.387
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_5/IPrev" -12.9816
+cap "BiasDivider_0/VddA18" "GndA" 6.5135
+cap "GndA" "BiasDivider_0/BiasDividerCell_5/IPrev" 105.975
+cap "BiasDivider_0/IIn" "GndA" 244.292
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/IIn" -2.11919
+cap "BiasDivider_0/VddA18" "BiasDivider_0/IIn" -3.35321
+cap "GndA" "BiasDivider_0/IIn" 69.2805
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "a_18781_4396#" 4.54054
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_1/VGate" 6.82121e-13
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_0/INext" 0.434059
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_0/INext" 242.809
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/INext" 0.832464
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/INext" 0.805179
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_5/IPrev" -5.41817
+cap "BiasDivider_0/BiasDividerCell_5/IPrev" "BiasDivider_0/BiasDividerCell_0/INext" 32.1145
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/VddA18" 2.78818
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IOut" 0.224051
+cap "BiasDivider_0/VddA18" "BiasDivider_0/IIn" -1.43533
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/IIn" 70.3659
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_4/IOut" -1.33005e-13
+cap "BiasDivider_0/BiasDividerCell_4/IPrev" "BiasDivider_0/BiasDividerCell_1/VGate" 3.44169e-15
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 1.42109e-13
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/INext" 8.86417
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/IIn" 109.382
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IPrev" 7.61736
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/INext" 2.46691
+cap "BiasDivider_0/IIn" "BiasDivider_0/BiasDividerCell_0/INext" 69.2491
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IPrev" 0.0260818
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 6.82121e-13
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/VGate" -2.634e-13
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IPrev" 7.75749
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IOut" 4.54923
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/VGate" 91.1699
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IPrev" -5.68434e-14
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IOut" 23.4983
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/INext" 114.553
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "a_10759_12466#" 0.178711
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/INext" -2.84217e-14
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IOut" 4.53678
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/INext" 2.05556
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IOut" 12.1798
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/VGate" 5.01308
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 29.3114
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/INext" 0.377605
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 3.47635
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "GndA" 8.32616
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "GndA" 0.0219507
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "GndA" 0.0696193
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IOut" 49.0345
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/IOut" 0.22774
+cap "a_14812_12314#" "BiasDivider_0/BiasDividerCell_0/VGate" 2.77789
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/VGate" 8.32616
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 44.1043
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "GndA" 0.174185
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 1.63173
+cap "a_14812_12770#" "BiasDivider_0/BiasDividerCell_0/VGate" 0.120596
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "a_14812_12466#" 0.214705
+cap "a_14812_12618#" "BiasDivider_0/BiasDividerCell_0/VGate" 0.157658
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/VGate" 8.07538
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "GndA" 0.127557
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 47.3091
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/IOut" 1.25234
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "GndA" 0.0685789
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "a_10759_12314#" 1.25234
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "a_10759_12314#" 50.9838
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "GndA" 0.127557
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "GndA" 8.65219
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "GndA" 34.7065
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "GndA" 3.56324
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/IPrev" 15.7959
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "a_10759_12314#" 5.05855
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "a_10759_12314#" 1.58925
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 2.96768
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_19889_12466#" 0.178711
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 2.22401
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 35.678
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 0.512325
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 0.250048
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 23.4215
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 8.65219
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 0.127557
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_1/IOut" 50.9231
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 1.25234
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "GndA" 0.0696193
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_1/IOut" 43.1601
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 0.127557
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12314#" 2.44264
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12770#" 0.0927209
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12466#" 0.165324
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/IPrev" 1.25234
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12618#" 0.121288
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "GndA" 8.07538
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_1/IOut" 47.9943
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 0.196136
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12466#" 0.049381
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12618#" 0.0363693
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_23942_12314#" 0.335251
+cap "a_23942_12770#" "BiasDivider_0/BiasDividerCell_1/VGate" 0.0278755
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 8.32616
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 1.85947
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "GndA" 8.32616
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "a_19889_12314#" 1.25234
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "a_19889_12314#" 49.0345
+cap "a_19889_12314#" "GndA" 0.0685789
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 0.127557
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 8.06399
+cap "a_19889_12314#" "BiasDivider_0/BiasDividerCell_1/VGate" 31.722
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 11.9722
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "a_19889_12314#" 1.58925
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 3.82372
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/VGate" 55.7232
+cap "a_29019_12466#" "BiasDivider_0/BiasDividerCell_2/VGate" 0.178711
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 21.4749
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "GndA" 0.377605
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 3.47635
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "GndA" 4.66376
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 27.288
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "GndA" 2.40488
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 14.2032
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/VGate" 8.32616
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IOut" 0.0696193
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 49.0345
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "a_33072_12466#" 0.214705
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IPrev" 1.85947
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "GndA" 8.32616
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 44.1043
+cap "a_33072_12770#" "BiasDivider_0/BiasDividerCell_2/VGate" 0.120596
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "a_33072_12314#" 2.77789
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.196136
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "a_33072_12618#" 0.157658
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 47.6464
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IPrev" 1.25234
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.127557
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/VGate" 8.1336
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "GndA" 0.0685789
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/VGate" 8.39755
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.127557
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/VGate" 49.2618
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/IPrev" 1.25234
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/VGate" 8.46673
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/IPrev" 1.70162
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "GndA" 4.10897
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "GndA" 10.0931
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/INext" 2.60536
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IOut" 23.1884
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IPrev" 2.16394
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IOut" 95.4321
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/INext" 46.3436
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 7.65226
+cap "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/BiasDividerCell_0/IOut" 336.612
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 27.6515
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 10.5198
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/IOut" 4.07442
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "BiasDivider_0/BiasDividerCell_0/IOut" 45.6093
+cap "BiasDivider_0/BiasDividerCell_0/IPrev" "BiasDivider_0/BiasDividerCell_0/IOut" 0.97851
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IOut" 0.0147774
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 0.0220457
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/IOut" 337.637
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 40.1461
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 0.980262
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/IOut" 337.9
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 1.28291
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "a_14812_12314#" 0.527174
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "a_14812_12314#" 2.49995
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/VGate" 45.5438
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 0.0220457
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "GndA" 339.493
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IPrev" 0.980262
+cap "BiasDivider_0/BiasDividerCell_0/IOut" "BiasDivider_0/BiasDividerCell_0/IOut" 0.0156872
+cap "a_10759_12314#" "BiasDivider_0/BiasDividerCell_0/VGate" 47.3441
+cap "a_10759_12314#" "GndA" 337.9
+cap "GndA" "BiasDivider_0/BiasDividerCell_0/IPrev" 19.4918
+cap "BiasDivider_0/BiasDividerCell_0/VGate" "GndA" 2.68996
+cap "a_10759_12314#" "BiasDivider_0/BiasDividerCell_0/IPrev" 8.76674
+cap "a_10759_12314#" "BiasDivider_0/BiasDividerCell_0/VGate" 5.05855
+cap "a_10759_12314#" "GndA" 22.6011
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "GndA" 29.2763
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "GndA" 2.16394
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 2.96768
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/IPrev" 7.65226
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 4.07442
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/IOut" 253.922
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "GndA" 17.0673
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_1/IOut" 33.7082
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "GndA" 337.637
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 47.3441
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 0.0220457
+cap "BiasDivider_0/BiasDividerCell_1/VGate" "BiasDivider_0/BiasDividerCell_1/IOut" 40.9574
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/IOut" 0.0147774
+cap "a_23942_12314#" "BiasDivider_0/BiasDividerCell_1/VGate" 2.2321
+cap "a_23942_12314#" "BiasDivider_0/BiasDividerCell_1/IOut" 0.470691
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/IOut" 337.9
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 0.97851
+cap "a_23942_12314#" "BiasDivider_0/BiasDividerCell_1/IOut" 0.0564829
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/VGate" 44.7325
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "BiasDivider_0/BiasDividerCell_1/IOut" 0.980262
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "GndA" 336.612
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "BiasDivider_0/BiasDividerCell_1/IPrev" 1.28291
+cap "a_23942_12314#" "BiasDivider_0/BiasDividerCell_1/VGate" 0.267852
+cap "BiasDivider_0/BiasDividerCell_1/IPrev" "a_19889_12314#" 1.00231
+cap "BiasDivider_0/BiasDividerCell_1/IOut" "a_19889_12314#" 0.0156872
+cap "a_19889_12314#" "BiasDivider_0/BiasDividerCell_1/VGate" 45.6093
+cap "GndA" "a_19889_12314#" 339.493
+cap "a_19889_12314#" "GndA" 199.409
+cap "a_19889_12314#" "BiasDivider_0/BiasDividerCell_1/IPrev" 8.76674
+cap "a_19889_12314#" "BiasDivider_0/BiasDividerCell_1/VGate" 29.7423
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/IPrev" 15.4156
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/VGate" 2.68996
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "GndA" 2.16394
+cap "GndA" "BiasDivider_0/BiasDividerCell_1/IPrev" 4.07625
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/VGate" 46.3436
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 21.165
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IOut" 78.403
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 4.07442
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 25.628
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 7.65226
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 12.5433
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IOut" 336.612
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 0.0220457
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 45.6093
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IOut" 0.0147774
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "GndA" 337.637
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 0.97851
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "BiasDivider_0/BiasDividerCell_2/IOut" 40.1461
+cap "a_33072_12314#" "BiasDivider_0/BiasDividerCell_2/IOut" 0.527174
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "a_33072_12314#" 2.49995
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IPrev" 1.28291
+cap "BiasDivider_0/BiasDividerCell_2/IPrev" "BiasDivider_0/BiasDividerCell_2/IOut" 0.980262
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IOut" 337.9
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IOut" 0.0111382
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.0120249
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.799895
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "GndA" 339.493
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "BiasDivider_0/BiasDividerCell_2/VGate" 45.8536
+cap "BiasDivider_0/BiasDividerCell_2/IOut" "a_29019_12314#" 0.00454895
+cap "GndA" "a_29019_12314#" 337.9
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/IPrev" 0.190388
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "a_29019_12314#" 46.9726
+cap "BiasDivider_0/BiasDividerCell_2/VGate" "GndA" 2.68996
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/VGate" 7.14371
+cap "GndA" "BiasDivider_0/BiasDividerCell_2/IPrev" 13.5219
+cap "a_29019_12314#" "GndA" 37.0273
+cap "a_29019_12314#" "BiasDivider_0/BiasDividerCell_2/IPrev" 8.82507
+merge "BiasDivider_0/BiasDividerCell_4/VGate" "BiasDivider_0/BiasDividerCell_1/VGate" -99.8086 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8736 -544 0 0 0 0 0 0 0 0 0 0
+merge "BiasDivider_0/BiasDividerCell_1/VGate" "m1_23452_8437#"
+merge "BiasMultiplier_0/BiasMultiplierCell_0/IOut" "a_12858_n608#" -1906.49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -448 -200 0 0 0 0 0 0 0 0
+merge "a_12858_n608#" "BiasCB0"
+merge "BiasDivider_0/BiasDividerCell_0/IOut" "BiasCB7" -5789.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1403040 -4532 0 0 -174432 -7676 -241780 -10302 -36500 -2702 0 0 0 0 0 0 0 0
+merge "BiasCB7" "a_10759_12314#"
+merge "BiasDivider_0/BiasDividerCell_2/VGate" "m1_32671_8434#" -98.6987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8988 -550 0 0 0 0 0 0 0 0 0 0
+merge "BiasDivider_0/BiasDividerCell_3/IOut" "BiasCB4" -1359.59 0 0 0 0 0 0 0 0 0 0 32648 1222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19822 1200 287690 9434 65372 4130 0 0 0 0 0 0 0 0
+merge "BiasCB4" "a_28431_4344#"
+merge "BiasDivider_0/BiasDividerCell_0/VGate" "m1_14313_8453#" -89.9672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7392 -512 0 0 0 0 0 0 0 0 0 0
+merge "BiasDivider_0/BiasDividerCell_4/IOut" "BiasCB3" -1986.49 0 0 0 0 0 0 0 0 0 0 32648 1222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19822 1200 207478 6718 30628 1778 0 0 0 0 0 0 0 0
+merge "BiasCB3" "a_18781_4396#"
+merge "BiasDivider_0/BiasDividerCell_5/IOut" "BiasCB2" -3459.51 0 0 0 0 0 0 0 0 -20988 -898 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -756608 -2500 0 0 -81176 -3896 -104272 -4750 -29728 -2168 0 0 0 0 0 0 0 0
+merge "BiasCB2" "a_12089_4200#"
+merge "BiasDivider_0/BiasDividerCell_0/INext" "BiasDivider_0/VSUBS" -24955.5 0 0 0 0 0 0 0 0 -240592 -10770 -573344 -22928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1052264 -25136 -5333472 -207430 -267076 -18030 0 0 0 0 0 0 0 0
+merge "BiasDivider_0/VSUBS" "BiasMultiplier_0/VSUBS"
+merge "BiasMultiplier_0/VSUBS" "BiasMultiplier_0/GndA"
+merge "BiasMultiplier_0/GndA" "GndA"
+merge "BiasDivider_0/IIn" "ICoarse2" -259.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BiasMultiplier_0/IIn" "ICoarse1" -0.44538 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BiasDivider_0/VddA18" "BiasMultiplier_0/BiasMultiplierCell_1/INext" -10274.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1505258 -56058 -44596 -3118 0 0 0 0 0 0 0 0
+merge "BiasMultiplier_0/BiasMultiplierCell_1/INext" "VddA18"
+merge "BiasDivider_0/BiasDividerCell_2/IOut" "BiasCB5" -5894.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1447440 -4652 0 0 -179952 -7916 -249940 -10662 -36500 -2702 0 0 0 0 0 0 0 0
+merge "BiasCB5" "a_29019_12314#"
+merge "BiasMultiplier_0/BiasMultiplierCell_1/IOut" "BiasCB1" -1989.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64218 1039 -628 -386 0 0 0 0 0 0 0 0
+merge "BiasCB1" "a_19675_n412#"
+merge "BiasDivider_0/BiasDividerCell_1/IOut" "BiasCB6" -7181.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1943240 -5992 0 0 -241592 -10596 -342596 -14730 -67148 -4706 0 0 0 0 0 0 0 0
+merge "BiasCB6" "a_19889_12314#"

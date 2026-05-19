@@ -1,0 +1,33 @@
+timestamp 1778960082
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "INext" 7000 795.209 9250 475 pdif 0 0 0 0 0 0 0 0 0 0 84800 3412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54808 3360 85004 3912 0 0 0 0 0 0 0 0 0 0
+node "IOut" 24710 3487.8 2410 475 pdif 0 0 0 0 0 0 0 0 0 0 311200 11978 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 190604 11688 1299834 52138 477916 31988 0 0 0 0 0 0 0 0
+node "VGate" 5807 15703.4 810 383 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21632000 43040 0 0 736000 32920 1710048 52984 902388 62822 0 0 0 0 0 0 0 0
+node "IPrev" 68835 61074.7 609 439 nw 0 0 0 0 22628160 22644 0 0 139200 5148 554148 24978 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 586706 30284 1225017 61788 255508 17734 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "IOut" "INext" 23.8333
+cap "INext" "VGate" 757.819
+cap "IPrev" "IOut" 5774.12
+cap "IPrev" "VGate" 19758.9
+cap "IOut" "VGate" 15707.3
+cap "IPrev" "INext" 256.603
+device msubckt sky130_fd_pr__pfet_01v8 7650 475 7651 476 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "INext" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 5778 475 5779 476 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 4122 475 4123 476 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 22400,856 "IOut" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 2466 475 2467 476 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 810 475 811 476 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "IOut" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 7650 1335 7651 1336 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "INext" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 5778 1335 5779 1336 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 4122 1335 4123 1336 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 22400,856 "IOut" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 2466 1335 2467 1336 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 810 1335 811 1336 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "IOut" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 7650 2195 7651 2196 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "IOut" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 5778 2195 5779 2196 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 42400,1706
+device msubckt sky130_fd_pr__pfet_01v8 4122 2195 4123 2196 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 22400,856 "IOut" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 2466 2195 2467 2196 l=1600 w=800 "IPrev" "VGate" 3200 0 "IOut" 800 22400,856 "IPrev" 800 22400,856
+device msubckt sky130_fd_pr__pfet_01v8 810 2195 811 2196 l=1600 w=800 "IPrev" "VGate" 3200 0 "IPrev" 800 42400,1706 "IOut" 800 22400,856

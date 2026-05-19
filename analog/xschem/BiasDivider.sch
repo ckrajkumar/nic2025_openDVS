@@ -48,8 +48,9 @@ N 260 -220 260 -160 {lab=IIn}
 N 190 -280 190 -220 {lab=VddA18}
 N 150 -280 190 -280 {lab=VddA18}
 N 260 -370 260 -220 {lab=IIn}
-N 150 -280 150 -220 {lab=VddA18}
 N 110 -280 150 -280 {lab=VddA18}
+N 150 -180 210 -180 {lab=IIn}
+N 150 -220 150 -180 {lab=IIn}
 C {BiasDividerCell.sym} 290 -220 0 0 {name=xDivCell0}
 C {iopin.sym} -20 -310 2 0 {name=p1 lab=GndA}
 C {iopin.sym} -20 -290 2 0 {name=p2 lab=VddA18}

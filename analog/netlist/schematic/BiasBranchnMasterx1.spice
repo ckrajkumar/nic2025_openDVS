@@ -124,19 +124,17 @@ XMpSelDioLowBias net1 nLowBiasEn LowBiasDioGate VddA18 sky130_fd_pr__pfet_01v8_l
 + nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0 mult=2 m=2
 XMpSelMirrLowBias IOut nLowBiasEn LowBiasMirr VddA18 sky130_fd_pr__pfet_01v8_lvt L=2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58
 + nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0 mult=2 m=2
-XMpDum1 net2 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.5 W=16 nf=1 ad=4.64 as=4.64 pd=32.58 ps=32.58 nrd=0.018125
+XMpDum2 net2 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.5 W=16 nf=1 ad=4.64 as=4.64 pd=32.58 ps=32.58 nrd=0.018125
 + nrs=0.018125 sa=0 sb=0 sd=0 mult=1
-XMpDum2 net3 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.5 W=16 nf=1 ad=4.64 as=4.64 pd=32.58 ps=32.58 nrd=0.018125
-+ nrs=0.018125 sa=0 sb=0 sd=0 mult=1
-XMpDum3 net4 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
+XMpDum3 net3 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
 + sa=0 sb=0 sd=0 mult=1
-XMpDum4 net5 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
+XMpDum4 net4 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
 + sa=0 sb=0 sd=0 mult=1
-XMpDum5 net6 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
+XMpDum5 net5 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
 + sa=0 sb=0 sd=0 mult=1
-XMpDum6 net7 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
+XMpDum6 net6 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
 + sa=0 sb=0 sd=0 mult=1
-XMpDum7 net8 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
+XMpDum7 net7 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725
 + sa=0 sb=0 sd=0 mult=1
 * noconn #net2
 * noconn #net3
@@ -144,7 +142,6 @@ XMpDum7 net8 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 ad=1.16
 * noconn #net5
 * noconn #net6
 * noconn #net7
-* noconn #net8
 .ends
 
 
@@ -526,8 +523,8 @@ XX3 a_145_75# B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__nor2_1.sch
 .subckt sky130_fd_sc_hd__nor2_1 A B Y VPWR VPB VGND VNB
 *.PININFO A:I Y:O VNB:B VPB:B VPWR:B B:I VGND:B
-XX1 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.64 nf=1 ad=0.1856 as=0.1856 pd=1.86 ps=1.86 nrd=0.453125 nrs=0.453125 sa=0
-+ sb=0 sd=0 mult=1
+XX1 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
 XX2 Y B VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
 XX3 Y B a_109_297# VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
@@ -555,8 +552,8 @@ XX1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=
 .subckt BiasDivider GndA VddA18 IIn IOut0 IOut1 IOut2 IOut3 IOut4 IOut5
 *.PININFO GndA:B VddA18:B IIn:B IOut0:B IOut1:B IOut2:B IOut3:B IOut4:B IOut5:B
 xDivCell0 VddA18 VOut0 IIn IOut0 BiasDividerCell
-XM1 VddA18 VddA18 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725 sa=0
-+ sb=0 sd=0 mult=2 m=2
+XM1 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725 sa=0 sb=0
++ sd=0 mult=2 m=2
 XM2 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725 sa=0 sb=0
 + sd=0 mult=13 m=13
 xDivCell5 VOut4 GndA IIn IOut5 BiasDividerCell
