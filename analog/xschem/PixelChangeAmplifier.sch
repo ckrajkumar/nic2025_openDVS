@@ -26,7 +26,11 @@ N 500 -560 500 -480 {lab=vdiff}
 N 350 -560 350 -440 {lab=vd}
 N 350 -620 350 -560 {lab=vd}
 N 410 -360 420 -360 {lab=nRst}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 1 0 {name=C1 model=cap_mim_m3_1 W=26.585 L=1 MF=1 spiceprefix=X}
+N 250 -750 250 -620 {lab=vsf}
+N 250 -750 290 -750 {lab=vsf}
+N 350 -750 390 -750 {lab=vd}
+N 390 -750 390 -620 {lab=vd}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 1 0 {name=C1b model=cap_mim_m3_1 W=6.47 L=1.05 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -560 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 480 -290 0 0 {name=MchAmpBias
 W=1.5
@@ -47,7 +51,7 @@ C {lab_wire.sym} 530 -290 0 0 {name=p12 sig_type=std_logic lab=GndA}
 C {lab_pin.sym} 430 -620 2 0 {name=p23 sig_type=std_logic lab=vd}
 C {lab_wire.sym} 420 -470 3 0 {name=p46 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 420 -420 3 0 {name=Mrst
-W=0.3
+W=0.42
 L=0.42
 nf=1
 mult=1
@@ -81,3 +85,4 @@ C {iopin.sym} 500 -170 1 0 {name=p16 lab=GndA
 C {iopin.sym} 560 -480 0 0 {name=p1 lab=vdiff}
 C {iopin.sym} 410 -360 2 0 {name=p2 lab=nRst}
 C {lab_wire.sym} 530 -620 0 0 {name=p3 sig_type=std_logic lab=VddA18}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -750 1 0 {name=C1a model=cap_mim_m3_1 W=2.27 L=3.985 MF=1 spiceprefix=X}

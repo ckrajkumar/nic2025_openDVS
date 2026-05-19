@@ -49,6 +49,7 @@ only_toplevel=true
 value="
 .temp CACE\{temperature\}
 
+.option SEED=CACE[CACE\{seed=12345\} + CACE\{iterations=0\}]
 .option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option itl1=500 itl2=200
 .option gminsteps=200 srcsteps=200
@@ -65,7 +66,7 @@ value="
 dc vvdiff 0 CACE\{vdd\} 0.1m
 write CACE\{filename\}_CACE\{N\}.raw
 
-shell python3 CACE\{root\}/cace/scripts/tb_PixelComparators_dc.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
+shell python3 CACE\{root\}/cace/scripts/tb_PixelComparators_dc_mc.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
 .endc
 "}
 C {vsource.sym} 440 110 0 0 {name=Vgnd value=0 savecurrent=false}
