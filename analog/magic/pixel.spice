@@ -1,8 +1,0 @@
-* SPICE3 file created from pixel.ext - technology: sky130A
-
-D0 VSUBS sky130_fd_pr__photodiode_X26FU3_0/dw_500_n1100# sky130_fd_pr__model__parasitic__diode_ps2dn area=9
-D1 VSUBS sky130_fd_pr__photodiode_X26FU3_0/dw_n1100_500# sky130_fd_pr__model__parasitic__diode_ps2dn area=9
-D2 VSUBS sky130_fd_pr__photodiode_X26FU3_0/dw_500_500# sky130_fd_pr__model__parasitic__diode_ps2dn area=9
-D3 VSUBS sky130_fd_pr__photodiode_X26FU3_0/dw_n1100_n1100# sky130_fd_pr__model__parasitic__diode_ps2dn area=9
-C0 sky130_fd_pr__photodiode_X26FU3_0/dw_n2760_n2760# w_n114_140# 22.2878f
-C1 sky130_fd_pr__photodiode_X26FU3_0/dw_n2760_n2760# VSUBS 49.487198f
