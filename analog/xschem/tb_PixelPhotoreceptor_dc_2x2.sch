@@ -30,10 +30,6 @@ N 450 100 450 120 {lab=vdd}
 N 160 -230 160 -200 {lab=gnd}
 N 160 -310 160 -290 {lab=vpd0}
 N 160 -340 220 -340 {lab=vpd0}
-N 100 -310 100 -300 {lab=vpd0}
-N 100 -310 160 -310 {lab=vpd0}
-N 100 -240 100 -230 {lab=gnd}
-N 100 -230 160 -230 {lab=gnd}
 N 160 -340 160 -310 {lab=vpd0}
 N 280 -340 350 -340 {lab=vpd0_in}
 N 450 -250 450 -220 {lab=gnd}
@@ -61,44 +57,56 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice CACE\{corner\}
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {devices/launcher.sym} -170 -300 2 1 {name=h1
-descr="Annotate OP"
+descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {code_shown.sym} -1280 -550 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include CACE\{root\}/xschem/openDVS_pixel2x2_CACE\{xPexType\}.spice
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/dvs_readout_ctrl.spice
 
-.temp CACE\{temperature\}
+** Set USE_PEX=1 to use extracted netlist instead of schematic
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_simple.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_r.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_cc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_c.spice
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rcc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rc.spice
+
 
 ** Convergence options for nA-range weak-inversion pixel circuit
-.option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
+** gmin=1e-15: at 1V node this is 1fA shunt, negligible vs nA signals
+** method=gear: damps numerical ringing on stiff circuits (fast digital + slow analog)
+** trtol=1: conservative timestep control prevents overshoot at edges
+.option gmin=1e-17 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option method=gear maxord=2 trtol=1
 .option itl1=500 itl2=200 itl4=50
 .option gminsteps=200 srcsteps=200
 .option ramptime=100n
 
-.param xvdd = CACE\{vdd\}
-.param xPrBp = CACE\{xPrBp\}
-.param xPrSFBp = CACE\{xPrSFBp\}
+.dc Vexp -14 -7 0.2
+
+
+.param xvdd = 1.8
+*.param xipd = 1e-9
+.param xPrBp = 10n
+.param xPrSFBp = 100p
 .param xCloadPD = 30f
+
 .param xipd1 = 1n
 .param xipd2 = 1n
 .param xipd3 = 1n
 
-.save all
-.save v(xpix2x2.xpix[0].vpr) v(xpix2x2.xpix[0].vsf)
-.save v(vpd0) v(vpd0_in) v(exp)
+** xipd swept via Vexp: Iipd uses behavioral expression
 
-.control
-dc Vexp -14 -7 0.2
-write CACE\{filename\}_CACE\{N\}.raw
-shell python CACE\{root\}/cace/scripts/tb_PixelPhotoreceptor_dc_2x2.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
-.endc
+*Small Iphoto testing
+
+.save all
+
 "}
 C {isource.sym} -560 430 0 0 {name=IPrBp value=\{xPrBp\}}
 C {sky130_fd_pr/pfet_01v8.sym} -580 330 0 0 {name=MPrBp
@@ -150,11 +158,6 @@ C {openDVS_pixel2x2.sym} 1100 130 0 0 {name=xpix2x2}
 C {lab_wire.sym} 160 -200 0 0 {name=p5 sig_type=std_logic lab=gnd}
 C {bsource.sym} 160 -260 0 0 {name=Bipd2 VAR=I FUNC="pow(10, v(exp))"}
 C {lab_wire.sym} 160 -320 0 0 {name=p6 sig_type=std_logic lab=vpd0}
-C {capa.sym} 100 -270 0 1 {name=CloadPD2
-m=1
-value='xCloadPD'
-footprint=1206
-device="ceramic capacitor"}
 C {vsource.sym} 250 -340 1 0 {name=Vmeas_ipd2 value=0 savecurrent=false}
 C {lab_wire.sym} 330 -340 0 0 {name=p8 sig_type=std_logic lab=vpd0_in}
 C {isource.sym} 450 -280 0 0 {name=I0 value='xipd1'}

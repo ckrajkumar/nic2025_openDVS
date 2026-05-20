@@ -86,7 +86,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice CACE\{corner\}
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {devices/launcher.sym} -170 -300 2 1 {name=h1
@@ -96,9 +96,15 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {code_shown.sym} -1280 -550 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include CACE\{root\}/xschem/openDVS_pixel2x2_CACE\{xPexType\}.spice
+.temp 27
 
-.temp CACE\{temperature\}
+** PEX netlist includes — uncomment one
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_simple.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_r.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_cc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_c.spice
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rcc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rc.spice
 
 .option gmin=1e-17 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option method=gear maxord=2 trtol=1
@@ -106,32 +112,30 @@ value="
 .option gminsteps=200 srcsteps=200
 .option ramptime=100n
 
-.param xvdd = CACE\{vdd\}
-.param xPrBp = CACE\{xPrBp\}
-.param xPrSFBp = CACE\{xPrSFBp\}
-.param xDiffBn = CACE\{xDiffBn\}
-.param xRefrBp = CACE\{xRefrBp\}
-.param xOnBn = CACE\{xOnBn\}
-.param xOffBn = CACE\{xOffBn\}
+.param xvdd = 1.8
+.param xPrBp = 10n
+.param xPrSFBp = 100p
+.param xDiffBn = 5n
+.param xRefrBp = 400p
+.param xOnBn = 200n
+.param xOffBn = 0.25n
 
-.param xipd0 = CACE\{xipd0\}
-.param xipd1 = CACE\{xipd1\}
-.param xipd2 = CACE\{xipd2\}
-.param xipd3 = CACE\{xipd3\}
+.param xipd0 = 1n
+.param xipd1 = 1n
+.param xipd2 = 1n
+.param xipd3 = 1n
 
-** Bsource probes: mirror bracket-containing internal nodes to top-level names
-** PEX cc netlist uses xPix[N] instance names, so full path is xpix2x2.xpix[0].*
-Bprobe_on on_mon 0 V = v(xpix2x2.xpix[0].on)
-Bprobe_nrst nrst_mon 0 V = v(xpix2x2.xpix[0].nrst)
-Bprobe_vdiff vdiff_mon 0 V = v(xpix2x2.xpix[0].vdiff)
+.save all
 
-** Only save needed signals (not all ~300 PEX parasitic nodes)
-.save v(vdd) v(on_mon) v(nrst_mon) v(vdiff_mon) v(pixrst)
+** Bsource probes: mirror internal nodes to top-level names (brackets OK in SPICE deck)
+Bprobe_on on_mon 0 V = v(xpix2x2.pix[0].on)
+Bprobe_nrst nrst_mon 0 V = v(xpix2x2.pix[0].nrst)
+Bprobe_vdiff vdiff_mon 0 V = v(xpix2x2.pix[0].vdiff)
 
 .control
 ** Phase 1: initial reset (VpixRst = xvdd, DC source)
 stop when time > 1m
-tran 100u 51
+tran 100u 50
 let vdd_val = v(vdd)[length(v(vdd))-1]
 echo
 echo '=== Phase 1: initial reset complete (t=1ms) ==='
@@ -141,7 +145,6 @@ alter vpixrst = 0
 delete all
 let on_thresh = 0.9 * vdd_val
 stop when v(on_mon) > $&on_thresh
-stop when time > 45
 resume
 
 let t_on_event = time[length(time)-1]
@@ -149,26 +152,27 @@ echo
 echo '=== Phase 2: ON event detected ==='
 print t_on_event
 
-** Phase 3: trigger second reset for 1ms
+** Phase 3: trigger second reset for 10us
 alter vpixrst = $&vdd_val
 delete all
-let t3 = time[length(time)-1]
-let t_rst2_end = t3 + 1m
+let t_rst2_end = t_on_event + 10u
 stop when time > $&t_rst2_end
 resume
+echo
+echo '=== Phase 3: second reset complete (10us pulse) ==='
 
-** Phase 4: release second reset, run settling time
+** Phase 4: release second reset, run 0.5s more
 alter vpixrst = 0
 delete all
 let t_final = t_on_event + 0.5
-if t_final > 50.9
-  let t_final = 50.9
-end
 stop when time > $&t_final
 resume
+echo
+echo '=== Phase 4: post-reset observation complete ==='
 
-write CACE\{filename\}_CACE\{N\}.raw
-shell python3 CACE\{root\}/cace/scripts/tb_PixelResetTran_2x2.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
+write tb_PixelReset_tran_2x2.raw
+echo 'Raw file written. Running Python analysis...'
+shell python3 /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/process_PixelReset_tran_2x2.py tb_PixelReset_tran_2x2.raw
 .endc
 "}
 C {isource.sym} 190 200 0 0 {name=IRefrBp value=\{xRefrBp\}}
@@ -192,7 +196,7 @@ C {lab_wire.sym} 120 100 3 0 {name=p24 sig_type=std_logic lab=RefrBp}
 C {sky130_fd_pr/nfet_01v8.sym} 10 500 0 0 {name=MOnBn
 W=1.5
 L=1.5
-nf=1
+nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
@@ -211,7 +215,7 @@ C {lab_wire.sym} 30 330 3 0 {name=p32 sig_type=std_logic lab=vdd}
 C {sky130_fd_pr/nfet_01v8.sym} 170 500 0 0 {name=MOffBn
 W=1.5
 L=1.5
-nf=1
+nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"

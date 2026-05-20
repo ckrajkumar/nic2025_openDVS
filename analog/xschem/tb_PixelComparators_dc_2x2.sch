@@ -52,7 +52,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice CACE\{corner\}
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {devices/launcher.sym} -170 -300 2 1 {name=h1
@@ -62,49 +62,49 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {code_shown.sym} -1280 -550 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include CACE\{root\}/xschem/openDVS_pixel2x2_CACE\{xPexType\}.spice
+.temp 27
 
-.temp CACE\{temperature\}
+** Set USE_PEX=1 to use extracted netlist instead of schematic
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_simple.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_r.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_cc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_c.spice
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rcc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rc.spice
 
 .option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option itl1=500 itl2=200
 .option gminsteps=200 srcsteps=200
 
-.param xvdd = CACE\{vdd\}
-** Bias set: 1 = OnBn=200nA / OffBn=0.5nA, 2 = OnBn=100nA / OffBn=1nA
-.param xBiasSet = CACE\{xBiasSet\}
-.param xOnBn = '(xBiasSet < 1.5) ? 200e-9 : 100e-9'
-.param xOffBn = '(xBiasSet < 1.5) ? 0.5e-9 : 1e-9'
+.param xvdd = 1.8
+.param xOnBn = 200n
+.param xOffBn = 0.25n
+.param xvdiff = 0
 
-.param xipd0 = CACE\{xipd0\}
-.param xipd1 = CACE\{xipd1\}
-.param xipd2 = CACE\{xipd2\}
-.param xipd3 = CACE\{xipd3\}
+.param xipd0 = 1n
+.param xipd1 = 1n
+.param xipd2 = 1n
+.param xipd3 = 1n
 
 ** Force vdiff on Pix[0] — must be in SPICE code, not as schematic wire
 ** (xschem mangles dots in net labels during netlisting)
-Vvdiff_pex xpix2x2.xPix[0].vdiff gnd \{xvdiff\}
-
-** Bsource probes: mirror bracket-containing internal nodes to top-level names
-** PEX cc netlist uses xPix[N] instance names, so full path is xpix2x2.xpix[0].*
-Bprobe_on on_mon 0 V = v(xpix2x2.xpix[0].on)
-Bprobe_noff noff_mon 0 V = v(xpix2x2.xpix[0].noff)
-
-.param xvdiff = 0
+Vvdiff_pex xpix2x2.Pix[0].vdiff gnd \{xvdiff\}
 
 .save all
 
 .control
-dc vvdiff_pex 0 CACE\{vdd\} 0.1m
-write CACE\{filename\}_CACE\{N\}.raw
+** Pass 1: coarse sweep (50mV step) to estimate thresholds
+dc vvdiff_pex 0 1.8 50m
+write tb_PixelComparators_dc_coarse.raw
 
-shell python3 CACE\{root\}/cace/scripts/tb_PixelComparators_dc_2x2.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
+** Pass 2 & 3: python finds thresholds, generates fine spice files, runs them
+shell python3 /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/find_comp_thresholds.py tb_PixelComparators_dc_coarse.raw tb_PixelComparators_dc_2x2.spice
 .endc
 "}
 C {sky130_fd_pr/nfet_01v8.sym} 830 160 0 0 {name=MOnBn
 W=1.5
 L=1.5
-nf=1
+nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
@@ -123,7 +123,7 @@ C {lab_wire.sym} 850 -10 3 0 {name=p32 sig_type=std_logic lab=vdd}
 C {sky130_fd_pr/nfet_01v8.sym} 990 160 0 0 {name=MOffBn
 W=1.5
 L=1.5
-nf=1
+nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"

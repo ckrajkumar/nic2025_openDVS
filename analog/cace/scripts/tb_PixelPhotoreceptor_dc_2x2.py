@@ -1,12 +1,18 @@
 import numpy as np
 import sys
+import os
 from spicelib import RawRead
 
 simpath = sys.argv[1]
 filename = sys.argv[2]
 simnumber = sys.argv[3]
 
-rawfile = RawRead('{}/{}_{}.raw'.format(simpath, filename, simnumber))
+rawpath = '{}/{}_{}.raw'.format(simpath, filename, simnumber)
+if not os.path.isfile(rawpath):
+    print(f'Warning: simulation failed, no raw file {rawpath}', file=sys.stderr)
+    sys.exit(0)
+
+rawfile = RawRead(rawpath)
 steps = rawfile.get_steps()
 
 # DC sweep: v(exp) is the sweep variable (log10 of ipd)

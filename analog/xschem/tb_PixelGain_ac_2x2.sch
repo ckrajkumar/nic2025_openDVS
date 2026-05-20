@@ -14,7 +14,6 @@ N 400 -840 400 -820 {lab=vpd0}
 N 400 -870 460 -870 {lab=vpd0}
 N 400 -870 400 -840 {lab=vpd0}
 N 520 -870 590 -870 {lab=vpd0_in}
-N 540 -850 590 -850 {lab=PrBp}
 N 740 -270 740 -250 {lab=DiffBn}
 N 650 -220 700 -220 {lab=DiffBn}
 N 650 -270 650 -220 {lab=DiffBn}
@@ -53,12 +52,18 @@ N 930 -1310 980 -1310 {lab=gnd}
 N 1110 -1080 1110 -1030 {lab=gnd}
 N 1130 -1080 1130 -1030 {lab=gnd}
 N 1150 -1080 1150 -1030 {lab=vdd}
+N 710 -680 710 -650 {lab=gnd}
+N 710 -780 710 -740 {lab=vpd1}
+N 830 -680 830 -650 {lab=gnd}
+N 830 -780 830 -740 {lab=vpd2}
+N 950 -680 950 -650 {lab=gnd}
+N 950 -780 950 -740 {lab=vpd3}
 C {devices/code.sym} -360 -240 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice CACE\{corner\}
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {devices/launcher.sym} -110 -330 2 1 {name=h1
@@ -68,61 +73,53 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {code_shown.sym} -1240 -1340 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include CACE\{root\}/xschem/openDVS_pixel2x2_CACE\{xPexType\}.spice
+.temp 27
 
-.temp CACE\{temperature\}
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_simple.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_r.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_cc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_c.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rcc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rc.spice
 
-.option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
+
+
+.option gmin=1e-19 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option itl1=500 itl2=200
 .option gminsteps=200 srcsteps=200
 
-.param xvdd = CACE\{vdd\}
-.param xipd = CACE\{xipd\}
-.param xPrBp = CACE\{xPrBp\}
-.param xPrSFBp = CACE\{xPrSFBp\}
-.param xDiffBn = CACE\{xDiffBn\}
-.param xCloadPD = CACE\{xCloadPD\}
+.param xipd1 = 1n
+.param xipd2 = 1n
+.param xipd3 = 1n
 
-** DC current sources for neighbor pixels (no AC stimulus)
-Iipd1 vpd1 gnd dc \{xipd\}
-Iipd2 vpd2 gnd dc \{xipd\}
-Iipd3 vpd3 gnd dc \{xipd\}
+.param xvdd = 1.8
+.param xipd = 10n
+.param xPrBp = 10n
+.param xPrSFBp = 10p
+.param xDiffBn = 20n
+.param xCloadPD = 30f
+
+** nRst at vdd for normal operation (Mrst OFF)
+VnRst nRst gnd \{xvdd\}
 
 ** Large inductor: DC short (sets OP) but AC open (no effect on freq response)
-** Provides DC path for floating cap node vd through vdiff in ALL 4 pixels
-Lbias0 xpix2x2.xpix[0].vdiff xpix2x2.xpix[0].vd 1000T
-Lbias1 xpix2x2.xpix[1].vdiff xpix2x2.xpix[1].vd 1000T
-Lbias2 xpix2x2.xpix[2].vdiff xpix2x2.xpix[2].vd 1000T
-Lbias3 xpix2x2.xpix[3].vdiff xpix2x2.xpix[3].vd 1000T
+** Provides DC path for floating cap node xchamp.vd through vdiff
+Lbias xpix2x2.pix[0].vdiff xpix2x2.pix[0].vd 1000T
 
-** DC path for nRst nodes (RefrBp=vdd turns off current source, leaving nRst floating)
-Rfix_nRst0 xpix2x2.xpix[0].nRst vdd 1T
-Rfix_nRst1 xpix2x2.xpix[1].nRst vdd 1T
-Rfix_nRst2 xpix2x2.xpix[2].nRst vdd 1T
-Rfix_nRst3 xpix2x2.xpix[3].nRst vdd 1T
-
-** Bsource probes: mirror bracket-containing internal nodes to top-level names
-Bprobe_vpd vpd_mon 0 V = v(vpd0_in)
-Bprobe_vpr vpr_mon 0 V = v(xpix2x2.xpix[0].vpr)
-Bprobe_vsf vsf_mon 0 V = v(xpix2x2.xpix[0].vsf)
-Bprobe_vdiff vdiff_mon 0 V = v(xpix2x2.xpix[0].vdiff)
-Bprobe_vd vd_mon 0 V = v(xpix2x2.xpix[0].vd)
-
-** Only save needed signals (not all ~300 PEX parasitic nodes)
-.save v(vdd) v(vpd0_in) v(vpr_mon) v(vsf_mon) v(vdiff_mon) v(vd_mon)
+.save all
 
 .control
-** OP with nRst=vdd, inductor provides DC path for floating nodes
+** OP with nRst=vdd, .nodeset guides floating nodes
 op
-write CACE\{filename\}_CACE\{N\}_op.raw
+write tb_PixelGain_ac_op_2x2.raw
 
 ** AC sweep from this operating point
 ac dec 50 1m 1G
-write CACE\{filename\}_CACE\{N\}.raw
+write tb_PixelGain_ac_2x2.raw
 
 echo
 echo '=== AC analysis complete, running post-processing ==='
-shell python3 CACE\{root\}/cace/scripts/tb_PixelGain_ac_2x2.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
+shell python3 /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/process_PixelGain_ac.py tb_PixelGain_ac_2x2.raw
 .endc
 "}
 C {vsource.sym} 300 -220 0 0 {name=Vgnd value=0 savecurrent=false}
@@ -135,11 +132,10 @@ C {isource.sym} 400 -790 0 0 {name=Iipd value="dc \{xipd\} ac \{xipd\}"}
 C {lab_wire.sym} 400 -850 0 0 {name=p46 sig_type=std_logic lab=vpd0}
 C {vsource.sym} 490 -870 1 0 {name=Vmeas_ipd1 value=0 savecurrent=false}
 C {lab_wire.sym} 550 -870 0 0 {name=p47 sig_type=std_logic lab=vpd0_in}
-C {lab_wire.sym} 540 -850 2 0 {name=p48 sig_type=std_logic lab=PrBp}
 C {sky130_fd_pr/nfet_01v8.sym} 720 -220 0 0 {name=MDiffBn
 W=1.5
 L=1.5
-nf=1
+nf=1 
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
@@ -208,3 +204,12 @@ C {lab_wire.sym} 1110 -1030 3 1 {name=p33 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1130 -1030 3 1 {name=p34 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 1150 -1030 3 1 {name=p35 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 930 -1180 0 1 {name=p12 sig_type=std_logic lab=DiffBn}
+C {isource.sym} 710 -710 0 0 {name=I0 value='xipd1'}
+C {lab_wire.sym} 710 -650 0 0 {name=p1 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 710 -780 0 0 {name=p2 sig_type=std_logic lab=vpd1}
+C {isource.sym} 830 -710 0 0 {name=I1 value='xipd2'}
+C {lab_wire.sym} 830 -650 0 0 {name=p5 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 830 -780 0 0 {name=p6 sig_type=std_logic lab=vpd2}
+C {isource.sym} 950 -710 0 0 {name=I2 value='xipd3'}
+C {lab_wire.sym} 950 -650 0 0 {name=p16 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 950 -780 0 0 {name=p17 sig_type=std_logic lab=vpd3}

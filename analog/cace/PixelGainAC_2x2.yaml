@@ -66,7 +66,7 @@ default_conditions:
     description: Diff amp bias current
     display: DiffBn
     unit: A
-    typical: 5e-9
+    typical: 1e-9
   xipd:
     description: Photodiode current (DC and AC)
     display: Ipd
@@ -207,9 +207,11 @@ parameters:
         enumerate: [0, 27, 70]
       corner:
         enumerate: [tt, ss, ff, sf, fs]
+      xDiffBn:
+        enumerate: [1e-9, 10e-9]
       xPrBp:
         enumerate: [10e-9]
       xPrSFBp:
-        enumerate: [100e-12]
+        enumerate: [10e-12]
       xPexType:
         enumerate: [cc]

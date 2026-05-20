@@ -101,7 +101,7 @@ value="
 .control
 ** Phase 1: initial reset (VpixRst = xvdd from schematic)
 stop when time > 1m
-tran 100u 50 uic
+tran 100u 50
 let vdd_val = v(vdd)[length(v(vdd))-1]
 echo
 echo '=== Phase 1: initial reset complete (t=1ms) ==='

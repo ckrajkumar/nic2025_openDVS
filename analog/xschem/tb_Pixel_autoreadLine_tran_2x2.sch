@@ -109,7 +109,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice CACE\{corner\}
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {devices/launcher.sym} -170 -300 2 1 {name=h1
@@ -119,10 +119,6 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {code_shown.sym} -1280 -550 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include CACE\{root\}/xschem/openDVS_pixel2x2_CACE\{xPexType\}.spice
-
-.temp CACE\{temperature\}
-
 ** Convergence options for nA-range weak-inversion pixel circuit
 .option gmin=1e-16 abstol=1e-15 vntol=1e-9 reltol=1e-4 chgtol=1e-16
 .option method=gear maxord=2 trtol=1
@@ -130,33 +126,38 @@ value="
 .option gminsteps=200 srcsteps=200
 .option ramptime=100n
 
-.param xvdd = CACE\{vdd\}
-.param xipd = CACE\{xipd\}
-.param xipd1 = CACE\{xipd1\}
-.param xipd2 = CACE\{xipd2\}
-.param xipd3 = CACE\{xipd3\}
-.param xPrBp = CACE\{xPrBp\}
-.param xPrSFBp = CACE\{xPrSFBp\}
-.param xRefrBp = CACE\{xRefrBp\}
-.param xDiffBn = CACE\{xDiffBn\}
-.param xOnBn = CACE\{xOnBn\}
-.param xOffBn = CACE\{xOffBn\}
+.param xvdd = 1.8
+.param xipd = 1e-9
+.param xipd1 = 1n
+.param xipd2 = 1n
+.param xipd3 = 1n
+.param xPrBp = 10n
+.param xPrSFBp = 100p
+.param xRefrBp = 400p
+.param xDiffBn = 5n
+.param xOnBn = 200n
+.param xOffBn = 0.25n
 
 .param xCloadPD = 30f
 .param xCloadReadLine = 300f
+
+** PEX netlist includes — uncomment one
+.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_simple.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_r.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_cc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_c.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rcc.spice
+*.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_pex_rc.spice
 
 *Small Iphoto testing on Pix[0]
 Iphoto1 vpd0 gnd pulse(50n 100n 120m 50m 50m 59.9m 300m)
 Iphoto2 vpd0 gnd pulse(50n 25n 240m 50m 50m 59.9m 300m)
 
-** Bsource probes: mirror internal nodes to top-level names (brackets OK in SPICE deck)
-** PEX cc netlist uses xPix[N] instance names, so full path is xpix2x2.xpix[0].*
-Bprobe_on on_mon 0 V = v(xpix2x2.xpix[0].on)
-Bprobe_noff noff_mon 0 V = v(xpix2x2.xpix[0].noff)
-Bprobe_vdiff vdiff_mon 0 V = v(xpix2x2.xpix[0].vdiff)
+.save all
 
-** Only save needed signals (not all ~300 PEX parasitic nodes)
-.save v(vdd) v(on_mon) v(noff_mon) v(vdiff_mon) v(pixrst) v(readLine) v(rowreadon) v(rowreadoff)
+** Bsource probes: mirror internal nodes to top-level names (brackets OK in SPICE deck)
+Bprobe_on on_mon 0 V = v(xpix2x2.pix[0].on)
+Bprobe_noff noff_mon 0 V = v(xpix2x2.pix[0].noff)
 
 .control
 
@@ -280,9 +281,7 @@ resume
 echo
 echo '=== Simulation complete:' $&event_count 'events detected ==='
 setplot tran1
-write CACE\{filename\}_CACE\{N\}.raw
-
-shell python3 CACE\{root\}/cace/scripts/tb_PixelAutoReadLine_tran_2x2.py CACE\{simpath\} CACE\{filename\} CACE\{N\}
+write tb_Pixel_autoreadLine_tran_2x2.raw
 .endc
 "}
 C {lab_wire.sym} 40 -90 0 0 {name=p8 sig_type=std_logic lab=vpd0}

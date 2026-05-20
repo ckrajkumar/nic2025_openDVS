@@ -63,17 +63,17 @@ default_conditions:
     description: Diff amp bias current
     display: DiffBn
     unit: A
-    typical: 5e-9
+    typical: 10e-9
   xOnBn:
     description: ON comparator bias current
     display: OnBn
     unit: A
-    typical: 200e-9
+    typical: 70e-9
   xOffBn:
     description: OFF comparator bias current
     display: OffBn
     unit: A
-    typical: 0.25e-9
+    typical: 1e-9
   xPrBp:
     description: Photoreceptor bias current
     display: PrBp
@@ -192,5 +192,11 @@ parameters:
         enumerate: [tt, ss, ff, sf, fs]
       xRefrBp:
         enumerate: [4e-9]
+      xOnBn:
+        enumerate: [70e-9]
+      xOffBn:
+        enumerate: [1e-9]
+      xDiffBn:
+        enumerate: [10e-9]
       xPexType:
         enumerate: [cc]

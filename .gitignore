@@ -30,3 +30,7 @@ analog/klayout/*.spice
 analog/klayout/*lvs
 analog/klayout/*.cir
 *.lvsdb
+analog/netlist/
+\#*
+.*
+
