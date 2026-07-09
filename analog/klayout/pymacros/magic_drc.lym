@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description>Run Magic DRC</description>
+ <version/>
+ <category>pymacros</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <shortcut>Shift+D</shortcut>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>python</interpreter>
+ <dsl-interpreter-name/>
+ <text>
+import os
+import sys
+import json
+import subprocess
+import tempfile
+import xml.etree.ElementTree as ET
+import pya
+
+
+def get_magic_env():
+    pdk_root = os.environ.get("PDK_ROOT", "")
+    pdk = os.environ.get("PDK", "")
+    if not pdk_root or not pdk:
+        for root in ["/usr/local/share/pdk", os.path.expanduser("~/pdk")]:
+            for p in ["sky130B", "sky130A"]:
+                rc = os.path.join(root, p, "libs.tech", "magic", p + ".magicrc")
+                if os.path.exists(rc):
+                    return root, p, rc
+        return None, None, None
+    magicrc = os.path.join(pdk_root, pdk, "libs.tech", "magic", pdk + ".magicrc")
+    return pdk_root, pdk, magicrc
+
+
+def run_magic_drc(gds_path, cell_name):
+    pdk_root, pdk, magicrc = get_magic_env()
+    if not magicrc or not os.path.exists(magicrc):
+        raise RuntimeError(
+            "Cannot find Magic RC file. Set PDK_ROOT and PDK environment variables.\n"
+            "PDK_ROOT=%s, PDK=%s" % (pdk_root, pdk))
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        json_out = os.path.join(tmpdir, "drc_results.json")
+
+        tcl_script = """
+# Flatten KLayout PCell subcells on read: magic resolves GDS layers
+# per-cell, and the PCell contact/tap cells lack the implant/nwell
+# layers of their parent, so unflattened they are misread as pdiff/pwell
+# and trigger false diff/tap.8, nwell.4 and LU.* errors. Fets are
+# flattened so tap/latch-up rules see the parent-context taps.
+gds flatglob *contact*
+gds flatglob nfet*
+gds flatglob pfet*
+gds read {gds}
+load {cell}
+select top cell
+drc on
+drc style drc(full)
+drc catchup
+
+set oscale [cif scale out]
+set drcresult [drc listall why]
+set count [drc list count total]
+
+set fout [open {jout} w]
+puts $fout "cell {cell}"
+puts $fout "total $count"
+
+foreach {{errtype coordlist}} $drcresult {{
+    puts $fout "RULE $errtype"
+    foreach coord $coordlist {{
+        set bllx [expr {{$oscale * [lindex $coord 0]}}]
+        set blly [expr {{$oscale * [lindex $coord 1]}}]
+        set burx [expr {{$oscale * [lindex $coord 2]}}]
+        set bury [expr {{$oscale * [lindex $coord 3]}}]
+        puts $fout [format "BOX %.3f %.3f %.3f %.3f" $bllx $blly $burx $bury]
+    }}
+}}
+close $fout
+quit
+""".format(gds=gds_path, cell=cell_name, jout=json_out)
+
+        tcl_path = os.path.join(tmpdir, "run_drc.tcl")
+        with open(tcl_path, "w") as f:
+            f.write(tcl_script)
+
+        cmd = ["magic", "-dnull", "-noconsole", "-rcfile", magicrc, tcl_path]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600, cwd=tmpdir)
+
+        if not os.path.exists(json_out):
+            raise RuntimeError(
+                "Magic DRC did not produce output.\nstdout: %s\nstderr: %s"
+                % (result.stdout[-2000:], result.stderr[-2000:]))
+
+        with open(json_out, "r") as f:
+            lines = f.readlines()
+
+    # Parse simple text format
+    total = 0
+    errors = []
+    current_rule = None
+    for line in lines:
+        line = line.strip()
+        if line.startswith("total "):
+            total = int(line.split(" ", 1)[1])
+        elif line.startswith("RULE "):
+            current_rule = line[5:]
+            errors.append({"rule": current_rule, "regions": []})
+        elif line.startswith("BOX ") and errors:
+            parts = line.split()
+            if len(parts) == 5:
+                errors[-1]["regions"].append(
+                    [float(parts[1]), float(parts[2]), float(parts[3]), float(parts[4])])
+
+    return {"cell": cell_name, "total": total, "errors": errors}
+
+
+def write_lyrdb(drc_data, filepath):
+    cell_name = drc_data.get("cell", "unknown")
+    total = drc_data.get("total", 0)
+    errors = drc_data.get("errors", [])
+
+    root = ET.Element("report-database")
+    ET.SubElement(root, "description").text = "Magic DRC: " + cell_name
+    ET.SubElement(root, "original-file").text = ""
+    ET.SubElement(root, "generator").text = "magic-drc-klayout"
+    ET.SubElement(root, "top-cell").text = cell_name
+    ET.SubElement(root, "tags")
+
+    cats_el = ET.SubElement(root, "categories")
+    cells_el = ET.SubElement(root, "cells")
+    items_el = ET.SubElement(root, "items")
+
+    # Create cell
+    cell_el = ET.SubElement(cells_el, "cell")
+    ET.SubElement(cell_el, "name").text = cell_name
+    ET.SubElement(cell_el, "variant")
+    ET.SubElement(cell_el, "layout-name")
+    ET.SubElement(cell_el, "references")
+
+    import re
+    for idx, err in enumerate(errors):
+        rule = err.get("rule", "Unknown")
+        regions = err.get("regions", [])
+
+        # Sanitize category name: replace non-alphanumeric with underscore
+        cat_name = "rule_%d" % idx
+        safe_name = re.sub(r'[^A-Za-z0-9_]', '_', rule)[:60]
+        if safe_name:
+            cat_name = safe_name
+
+        # Create category
+        cat_el = ET.SubElement(cats_el, "category")
+        ET.SubElement(cat_el, "name").text = cat_name
+        ET.SubElement(cat_el, "description").text = "%s (%d violations)" % (rule, len(regions))
+        ET.SubElement(cat_el, "categories")
+
+        # Create items
+        for region in regions:
+            if len(region) != 4:
+                continue
+            llx, lly, urx, ury = region
+
+            item_el = ET.SubElement(items_el, "item")
+            ET.SubElement(item_el, "tags")
+            ET.SubElement(item_el, "category").text = cat_name
+            ET.SubElement(item_el, "cell").text = cell_name
+            ET.SubElement(item_el, "visited").text = "false"
+            ET.SubElement(item_el, "multiplicity").text = "1"
+            ET.SubElement(item_el, "comment").text = rule
+            ET.SubElement(item_el, "image")
+            values_el = ET.SubElement(item_el, "values")
+            ET.SubElement(values_el, "value").text = "box: (%s,%s;%s,%s)" % (llx, lly, urx, ury)
+
+    tree = ET.ElementTree(root)
+    ET.indent(tree, space=" ")
+    tree.write(filepath, encoding="utf-8", xml_declaration=True)
+    return total, len(errors)
+
+
+def main():
+    app = pya.Application.instance()
+    mw = app.main_window()
+    view = mw.current_view()
+
+    if view is None:
+        pya.QMessageBox.critical(mw, "Error", "No layout is open.")
+        return
+
+    cv = view.active_cellview()
+    if not cv.is_valid():
+        pya.QMessageBox.critical(mw, "Error", "No active cell.")
+        return
+
+    cell_name = cv.cell.name
+    layout = cv.layout()
+
+    # Export current layout to temp GDS
+    tmpdir = tempfile.mkdtemp(prefix="magic_drc_")
+    gds_path = os.path.join(tmpdir, cell_name + ".gds")
+    lyrdb_path = os.path.join(tmpdir, cell_name + "_magic_drc.lyrdb")
+    layout.write(gds_path)
+
+    pya.QMessageBox.information(mw, "Magic DRC",
+        "Running Magic DRC on '%s'...\nThis may take a moment." % cell_name)
+
+    try:
+        drc_data = run_magic_drc(gds_path, cell_name)
+    except Exception as e:
+        pya.QMessageBox.critical(mw, "Magic DRC Error", str(e))
+        return
+
+    total, num_rules = write_lyrdb(drc_data, lyrdb_path)
+
+    # Load the report database from file
+    rdb_idx = view.create_rdb(cell_name + " Magic DRC")
+    view.rdb(rdb_idx).load(lyrdb_path)
+    view.show_rdb(rdb_idx, view.active_cellview_index)
+
+    pya.QMessageBox.information(mw, "Magic DRC Complete",
+        "Cell: %s\nTotal violations: %d\nDRC rules violated: %d\n\n"
+        "Results are shown in the Marker Browser.\n"
+        "Use View > Marker Browser to navigate violations."
+        % (cell_name, total, num_rules))
+
+
+main()
+
+ </text>
+</klayout-macro>
