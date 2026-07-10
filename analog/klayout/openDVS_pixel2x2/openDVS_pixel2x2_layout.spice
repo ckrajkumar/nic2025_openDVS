@@ -1,0 +1,49 @@
+* NGSPICE file created from openDVS_pixel2x2.ext - technology: sky130A
+
+.subckt pix[2]$1 m2_32_2198# rowReadOFF m2_298_1861# m3_2210_26# m2_196_1392# PrSFBp
++ m5_n506_n512# m4_317_2258# m2_32_2482# rowReadON m2_32_2254# RefrBp m3_2462_26#
++ readLine VddA18 m3_2084_26# vpd pixRst PrBp m3_2714_26# GndD m3_2336_26# GndA OnBn
++ DiffBn OffBn m3_2588_26#
+X0 a_361_187# ON GndD GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 ps=1.44 w=0.42 l=0.15
+X1 GndD nOFF a_621_187# GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.105 ps=0.92 w=0.42 l=0.15
+X2 VddA18 vpr vpd GndA sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.3
+X3 GndA vpr vsf VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.25
+X4 a_95_497# pixRst nRst GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 ps=1.44 w=0.42 l=0.15
+X5 VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=2.202 ps=18.88 w=1.5 l=1.5
+X6 vd vdiff sky130_fd_pr__cap_mim_m3_1 l=1 w=1
+X7 vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.42
+D0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+X8 nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X9 vd vsf sky130_fd_pr__cap_mim_m3_1 l=1.505 w=6.47
+X10 vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.3
+X11 ON OnBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X12 vdiff DiffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X13 VddA18 vdiff ON VddA18 sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.8 as=0.45 ps=3.6 w=1.5 l=1.5
+X14 VddA18 PrBp vpr VddA18 sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.15
+X15 VddA18 vd vdiff VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X16 VddA18 PrSFBp vsf VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=1.5
+X17 nOFF vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=0.225 ps=1.8 w=1.5 l=1.5
+X18 vd vsf sky130_fd_pr__cap_mim_m3_1 l=2.27 w=3.985
+X19 a_621_187# rowReadOFF readLine GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.105 ps=0.92 w=0.42 l=0.15
+X20 GndA rowReadON a_95_497# GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.105 ps=0.92 w=0.42 l=0.15
+X21 readLine rowReadON a_361_187# GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.105 ps=0.92 w=0.42 l=0.15
+X22 VddA18 RefrBp nRst VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=1.5
+.ends
+
+.subckt openDVS_pixel2x2 GndA VddA18 rowReadON[0] rowReadOFF[0] GndD rowReadON[1]
++ rowReadOFF[1] OnBn DiffBn OffBn pixRst[1] readLine[1] readLine[0] pixRst[0] PrSFBp
++ PrBp RefrBp vpd[0] vpd[1] vpd[3] vpd[2]
+Xpix[2]$1_0 DiffBn rowReadOFF[1] OnBn OffBn OffBn PrSFBp GndA GndA GndA rowReadON[1]
++ VddA18 RefrBp PrBp readLine[0] VddA18 DiffBn vpd[1] pixRst[0] PrBp OnBn GndD PrSFBp
++ GndA OnBn DiffBn OffBn RefrBp pix[2]$1
+Xpix[2]$1_1 DiffBn rowReadOFF[1] OnBn RefrBp OffBn PrSFBp GndA GndA GndA rowReadON[1]
++ VddA18 RefrBp PrSFBp readLine[1] VddA18 OnBn vpd[3] pixRst[1] PrBp DiffBn GndD PrBp
++ GndA OnBn DiffBn OffBn OffBn pix[2]$1
+Xpix[2]$1_2 DiffBn rowReadOFF[0] OnBn RefrBp OffBn PrSFBp GndA GndA VddA18 rowReadON[0]
++ GndA RefrBp PrSFBp readLine[1] VddA18 OnBn vpd[2] pixRst[1] PrBp DiffBn GndD PrBp
++ GndA OnBn DiffBn OffBn OffBn pix[2]$1
+Xpix[2]$1_3 DiffBn rowReadOFF[0] OnBn OffBn OffBn PrSFBp GndA GndA VddA18 rowReadON[0]
++ GndA RefrBp PrBp readLine[0] VddA18 DiffBn vpd[0] pixRst[0] PrBp OnBn GndD PrSFBp
++ GndA OnBn DiffBn OffBn RefrBp pix[2]$1
+.ends
+

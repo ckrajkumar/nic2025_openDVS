@@ -1,0 +1,334 @@
+* Extracted by KLayout with SKY130 LVS runset on : 10/07/2026 05:57
+
+* cell BiasMasterCoarse
+* pin VddA18
+* pin VMasterBiasN
+* pin PowerDown
+* pin BiasCB[1]
+* pin BiasCB[0]
+* pin BiasCB[2]
+* pin BiasCB[3]
+* pin BiasCB[4]
+* pin BiasCB[5]
+* pin BiasCB[6]
+* pin BiasCB[7]
+* pin VMasterBiasP
+* pin IR
+* pin GndA
+.SUBCKT BiasMasterCoarse VddA18 VMasterBiasN PowerDown BiasCB[1] BiasCB[0]
++ BiasCB[2] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] VMasterBiasP IR
++ GndA
+* cell instance $1 m90 *1 161.6,0
+X$1 VMasterBiasN IR PowerDown VddA18 VMasterBiasP \$6 \$23 GndA BiasMasterBias
+* cell instance $2 r0 *1 3.23,78.295
+X$2 BiasCB[0] BiasCB[1] VddA18 BiasCB[2] \$23 BiasCB[4] BiasCB[3] BiasCB[7]
++ BiasCB[6] BiasCB[5] \$6 GndA BiasCoarseMBDivider
+.ENDS BiasMasterCoarse
+
+* cell BiasCoarseMBDivider
+* pin BiasCB0
+* pin BiasCB1
+* pin VddA18
+* pin BiasCB2
+* pin ICoarse1
+* pin BiasCB4
+* pin BiasCB3
+* pin BiasCB7
+* pin BiasCB6
+* pin BiasCB5
+* pin ICoarse2
+* pin GndA
+.SUBCKT BiasCoarseMBDivider BiasCB0 BiasCB1 VddA18 BiasCB2 ICoarse1 BiasCB4
++ BiasCB3 BiasCB7 BiasCB6 BiasCB5 ICoarse2 GndA
+* cell instance $1 r0 *1 1.89,2.36
+X$1 BiasCB0 BiasCB1 ICoarse1 GndA VddA18 BiasMultiplier
+* cell instance $2 r0 *1 1.125,25.94
+X$2 BiasCB4 BiasCB3 BiasCB2 ICoarse2 VddA18 GndA BiasCB7 BiasCB6 BiasCB5
++ BiasDivider
+* device instance $1 r0 *1 112.44,-1.61 sky130_fd_pr__nfet_01v8_lvt
+XM$1 GndA BiasCB0 BiasCB0 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=15840000
++ AS=2.7126e+12 AD=2.7126e+12 PS=22540000 PD=22540000
+* device instance $5 r0 *1 57.72,-1.12 sky130_fd_pr__nfet_01v8_lvt
+XM$5 GndA BiasCB1 BiasCB1 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=8000000
++ AS=1.37e+12 AD=1.37e+12 PS=12740000 PD=12740000
+* device instance $17 r0 *1 63.21,21.97 sky130_fd_pr__nfet_01v8_lvt
+XM$17 BiasCB2 BiasCB2 \$13 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $18 r0 *1 69.14,21.97 sky130_fd_pr__nfet_01v8_lvt
+XM$18 \$13 BiasCB2 \$14 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $19 r0 *1 75.305,21.97 sky130_fd_pr__nfet_01v8_lvt
+XM$19 \$14 BiasCB2 \$15 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $20 r0 *1 81.13,21.97 sky130_fd_pr__nfet_01v8_lvt
+XM$20 \$15 BiasCB2 \$16 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $21 r0 *1 152.42,21.94 sky130_fd_pr__nfet_01v8_lvt
+XM$21 BiasCB4 BiasCB4 \$33 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $22 r0 *1 173.46,21.94 sky130_fd_pr__nfet_01v8_lvt
+XM$22 \$33 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $23 r0 *1 99.17,22.46 sky130_fd_pr__nfet_01v8_lvt
+XM$23 BiasCB3 BiasCB3 \$23 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000
++ W=1000000 AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $24 r0 *1 110,22.46 sky130_fd_pr__nfet_01v8_lvt
+XM$24 \$23 BiasCB3 \$25 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $25 r0 *1 120.91,22.46 sky130_fd_pr__nfet_01v8_lvt
+XM$25 \$25 BiasCB3 \$26 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $26 r0 *1 131.845,22.46 sky130_fd_pr__nfet_01v8_lvt
+XM$26 \$26 BiasCB3 \$28 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $27 r0 *1 152.42,22.72 sky130_fd_pr__nfet_01v8_lvt
+XM$27 \$29 BiasCB4 \$30 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $28 r0 *1 173.46,22.72 sky130_fd_pr__nfet_01v8_lvt
+XM$28 \$30 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $29 r0 *1 63.21,24.23 sky130_fd_pr__nfet_01v8_lvt
+XM$29 GndA BiasCB2 \$19 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $30 r0 *1 69.14,24.23 sky130_fd_pr__nfet_01v8_lvt
+XM$30 \$19 BiasCB2 \$20 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $31 r0 *1 75.305,24.23 sky130_fd_pr__nfet_01v8_lvt
+XM$31 \$20 BiasCB2 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $32 r0 *1 81.13,24.23 sky130_fd_pr__nfet_01v8_lvt
+XM$32 \$21 BiasCB2 \$16 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
++ AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
+* device instance $33 r0 *1 99.17,23.74 sky130_fd_pr__nfet_01v8_lvt
+XM$33 GndA BiasCB3 \$22 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $34 r0 *1 110,23.74 sky130_fd_pr__nfet_01v8_lvt
+XM$34 \$22 BiasCB3 \$24 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $35 r0 *1 120.91,23.74 sky130_fd_pr__nfet_01v8_lvt
+XM$35 \$24 BiasCB3 \$27 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $36 r0 *1 131.845,23.74 sky130_fd_pr__nfet_01v8_lvt
+XM$36 \$27 BiasCB3 \$28 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $37 r0 *1 152.42,23.5 sky130_fd_pr__nfet_01v8_lvt
+XM$37 \$29 BiasCB4 \$32 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $38 r0 *1 173.46,23.5 sky130_fd_pr__nfet_01v8_lvt
+XM$38 \$32 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $39 r0 *1 64.06,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$39 BiasCB7 BiasCB7 \$56 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $40 r0 *1 64.06,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$40 \$55 BiasCB7 \$57 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $41 r0 *1 84.87,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$41 \$56 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $42 r0 *1 84.87,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$42 \$57 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $43 r0 *1 109.71,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$43 BiasCB6 BiasCB6 \$66 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $44 r0 *1 109.71,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$44 \$62 BiasCB6 \$65 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $45 r0 *1 130.52,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$45 \$65 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $46 r0 *1 130.52,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$46 \$66 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $47 r0 *1 152.42,24.28 sky130_fd_pr__nfet_01v8_lvt
+XM$47 GndA BiasCB4 \$31 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $48 r0 *1 155.36,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$48 BiasCB5 BiasCB5 \$70 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $49 r0 *1 155.36,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$49 \$69 BiasCB5 \$73 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $50 r0 *1 173.46,24.28 sky130_fd_pr__nfet_01v8_lvt
+XM$50 \$31 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $51 r0 *1 176.17,62.6 sky130_fd_pr__nfet_01v8_lvt
+XM$51 \$73 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $52 r0 *1 176.17,61.82 sky130_fd_pr__nfet_01v8_lvt
+XM$52 \$70 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $53 r0 *1 64.06,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$53 \$55 BiasCB7 \$58 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $54 r0 *1 84.87,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$54 \$58 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $55 r0 *1 109.71,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$55 \$62 BiasCB6 \$63 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $56 r0 *1 130.52,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$56 \$63 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $57 r0 *1 155.36,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$57 \$69 BiasCB5 \$72 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $58 r0 *1 176.17,63.38 sky130_fd_pr__nfet_01v8_lvt
+XM$58 \$72 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $59 r0 *1 64.06,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$59 GndA BiasCB7 \$59 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $60 r0 *1 84.87,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$60 \$59 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $61 r0 *1 109.71,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$61 GndA BiasCB6 \$64 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $62 r0 *1 130.52,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$62 \$64 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $63 r0 *1 155.36,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$63 GndA BiasCB5 \$71 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+* device instance $64 r0 *1 176.17,64.16 sky130_fd_pr__nfet_01v8_lvt
+XM$64 \$71 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
++ AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
+.ENDS BiasCoarseMBDivider
+
+* cell BiasMasterBias
+* pin VMasterBiasN
+* pin IR
+* pin BiasPowerDown
+* pin VddA18
+* pin VMasterBiasP
+* pin ICoarse2
+* pin ICoarse1
+* pin GndA
+.SUBCKT BiasMasterBias VMasterBiasN IR BiasPowerDown VddA18 VMasterBiasP
++ ICoarse2 ICoarse1 GndA
+* device instance $1 r0 *1 74.145,62.015 sky130_fd_pr__pfet_01v8
+XM$1 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20000000
++ W=16000000 AS=4.24e+12 AD=4.24e+12 PS=36240000 PD=36240000
+* device instance $9 r0 *1 25.11,47.41 sky130_fd_pr__pfet_01v8
+XM$9 \$11 VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=200000 W=2000000
++ AS=530000000000 AD=530000000000 PS=4530000 PD=4530000
+* device instance $10 r0 *1 95.47,62.015 sky130_fd_pr__pfet_01v8
+XM$10 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20000000
++ W=16000000 AS=4.24e+12 AD=4.24e+12 PS=36240000 PD=36240000
+* device instance $18 r0 *1 38.995,47.41 sky130_fd_pr__pfet_01v8
+XM$18 \$21 \$11 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=200000 W=2000000
++ AS=530000000000 AD=530000000000 PS=4530000 PD=4530000
+* device instance $19 r0 *1 25.11,37.985 sky130_fd_pr__nfet_01v8
+XM$19 BiasPowerDown \$11 BiasPowerDown GndA sky130_fd_pr__nfet_01v8 L=16000000
++ W=16000000 AS=4.24e+12 AD=4.24e+12 PS=32530000 PD=32530000
+* device instance $20 r0 *1 27.755,59.95 sky130_fd_pr__nfet_01v8
+XM$20 VddA18 VMasterBiasP VddA18 GndA sky130_fd_pr__nfet_01v8 L=16000000
++ W=16000000 AS=4.24e+12 AD=4.24e+12 PS=32530000 PD=32530000
+* device instance $21 r0 *1 39.545,13.77 sky130_fd_pr__nfet_01v8_lvt
+XM$21 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000
++ W=320000000 AS=8.48e+13 AD=8.48e+13 PS=648480000 PD=648480000
+* device instance $29 r0 *1 87.975,13.77 sky130_fd_pr__nfet_01v8_lvt
+XM$29 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5000000
++ W=240000000 AS=6.36e+13 AD=6.36e+13 PS=486360000 PD=486360000
+* device instance $49 r0 *1 38.99,45.61 sky130_fd_pr__nfet_01v8_lvt
+XM$49 GndA BiasPowerDown \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=200000
++ W=2000000 AS=530000000000 AD=530000000000 PS=4530000 PD=4530000
+* device instance $50 r0 *1 52.855,46.635 sky130_fd_pr__nfet_01v8_lvt
+XM$50 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20000000
++ W=16000000 AS=4.24e+12 AD=4.24e+12 PS=40480000 PD=40480000
+* device instance $56 r0 *1 95.47,48.055 sky130_fd_pr__nfet_01v8_lvt
+XM$56 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000
++ W=12000000 AS=3.18e+12 AD=3.18e+12 PS=30360000 PD=30360000
+* device instance $62 r0 *1 133.16,38.86 sky130_fd_pr__nfet_01v8_lvt
+XM$62 GndA VMasterBiasN \$17 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000
++ W=20000000 AS=5.3e+12 AD=5.3e+12 PS=40530000 PD=40530000
+* device instance $63 r0 *1 131.86,52.315 sky130_fd_pr__nfet_01v8_lvt
+XM$63 \$17 \$21 ICoarse1 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+* device instance $64 r0 *1 144.845,29.48 sky130_fd_pr__nfet_01v8_lvt
+XM$64 GndA VMasterBiasN \$14 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000
++ W=20000000 AS=5.3e+12 AD=5.3e+12 PS=40530000 PD=40530000
+* device instance $65 r0 *1 146.7,42.935 sky130_fd_pr__nfet_01v8_lvt
+XM$65 \$14 \$21 ICoarse2 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=1000000
++ AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
+.ENDS BiasMasterBias
+
+* cell BiasDivider
+* pin IOut2
+* pin IOut1
+* pin IOut0
+* pin IIn
+* pin VddA18
+* pin GndA
+* pin IOut5
+* pin IOut4
+* pin IOut3
+.SUBCKT BiasDivider IOut2 IOut1 IOut0 IIn VddA18 GndA IOut5 IOut4 IOut3
+* cell instance $1 r0 *1 137.14,0.19
+X$1 IOut2 IIn \$I66 \$6 BiasDividerCell
+* cell instance $2 r0 *1 91.49,0.19
+X$2 IOut1 IIn \$I76 \$I66 BiasDividerCell
+* cell instance $3 r0 *1 45.84,0.19
+X$3 IOut0 IIn VddA18 \$I76 BiasDividerCell
+* cell instance $4 r180 *1 96.065,34.09
+X$4 IOut5 IIn \$I69 GndA BiasDividerCell
+* cell instance $5 r180 *1 141.715,34.09
+X$5 IOut4 IIn \$I68 \$I69 BiasDividerCell
+* cell instance $6 r180 *1 187.365,34.09
+X$6 IOut3 IIn \$6 \$I68 BiasDividerCell
+* device instance $1 r0 *1 42.44,4.565 sky130_fd_pr__pfet_01v8
+XM$1 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
++ AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
+* device instance $2 r0 *1 8.24,4.565 sky130_fd_pr__pfet_01v8
+XM$2 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
++ AS=9.28e+12 AD=9.28e+12 PS=72640000 PD=72640000
+.ENDS BiasDivider
+
+* cell BiasMultiplier
+* pin IOut1
+* pin IOut0
+* pin IIn
+* pin GndA
+* pin VddA18
+.SUBCKT BiasMultiplier IOut1 IOut0 IIn GndA VddA18
+* cell instance $1 r0 *1 91.975,0.19
+X$1 IOut1 IIn \$I64 VddA18 BiasMultiplierCell
+* cell instance $2 r0 *1 46.325,0.19
+X$2 IOut0 IIn \$5 \$I64 BiasMultiplierCell
+* device instance $1 r0 *1 17.14,4.565 sky130_fd_pr__pfet_01v8
+XM$1 \$5 IIn IIn \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000 AS=9.28e+12
++ AD=9.28e+12 PS=72640000 PD=72640000
+* device instance $6 r0 *1 7.78,4.565 sky130_fd_pr__pfet_01v8
+XM$6 GndA IIn \$5 \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000 AS=2.12e+12
++ AD=2.12e+12 PS=17060000 PD=17060000
+.ENDS BiasMultiplier
+
+* cell BiasDividerCell
+* pin IOut
+* pin VGate
+* pin IPrev
+* pin INext
+.SUBCKT BiasDividerCell IOut VGate IPrev INext
+* device instance $1 r0 *1 42.25,8.675 sky130_fd_pr__pfet_01v8
+XM$1 IPrev VGate INext IPrev sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
++ AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
+* device instance $3 r0 *1 8.05,4.375 sky130_fd_pr__pfet_01v8
+XM$3 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
++ AS=9.28e+12 AD=9.28e+12 PS=72640000 PD=72640000
+.ENDS BiasDividerCell
+
+* cell BiasMultiplierCell
+* pin IOut
+* pin VGate
+* pin IPrev
+* pin INext
+.SUBCKT BiasMultiplierCell IOut VGate IPrev INext
+* device instance $1 r0 *1 16.465,4.375 sky130_fd_pr__pfet_01v8
+XM$1 INext VGate IOut INext sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
++ AS=9.28e+12 AD=9.28e+12 PS=72640000 PD=72640000
+* device instance $6 r0 *1 7.105,4.375 sky130_fd_pr__pfet_01v8
+XM$6 IPrev VGate INext INext sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
++ AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
+.ENDS BiasMultiplierCell

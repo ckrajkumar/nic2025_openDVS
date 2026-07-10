@@ -1,0 +1,3133 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO BiasBranchnMasterx11
+  CLASS BLOCK ;
+  FOREIGN BiasBranchnMasterx11 ;
+  ORIGIN -9.200 0.580 ;
+  SIZE 203.225 BY 1022.710 ;
+  PIN BufferN
+    ANTENNAGATEAREA 7488.000000 ;
+    ANTENNADIFFAREA 17.680000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1014.760 14.335 1016.600 ;
+    END
+  END BufferN
+  PIN BufferP
+    ANTENNAGATEAREA 36.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1017.520 12.880 1019.360 ;
+    END
+  END BufferP
+  PIN PadBias[10]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 989.350 212.425 990.570 ;
+    END
+  END PadBias[10]
+  PIN Bias[10]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 987.705 212.425 988.925 ;
+    END
+  END Bias[10]
+  PIN PadBias[9]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 916.270 212.425 917.490 ;
+    END
+  END PadBias[9]
+  PIN Bias[9]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 914.625 212.425 915.845 ;
+    END
+  END Bias[9]
+  PIN PadBias[8]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 843.190 212.425 844.410 ;
+    END
+  END PadBias[8]
+  PIN Bias[8]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 841.545 212.425 842.765 ;
+    END
+  END Bias[8]
+  PIN PadBias[7]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 770.110 212.425 771.330 ;
+    END
+  END PadBias[7]
+  PIN Bias[7]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 768.465 212.425 769.685 ;
+    END
+  END Bias[7]
+  PIN PadBias[6]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 697.030 212.425 698.250 ;
+    END
+  END PadBias[6]
+  PIN Bias[6]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 695.385 212.425 696.605 ;
+    END
+  END Bias[6]
+  PIN VMasterBiasP
+    ANTENNAGATEAREA 896.399963 ;
+    ANTENNADIFFAREA 8.480000 ;
+    PORT
+      LAYER met2 ;
+        RECT 204.180 510.740 212.425 511.640 ;
+    END
+  END VMasterBiasP
+  PIN PadBias[5]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 404.710 212.425 405.930 ;
+    END
+  END PadBias[5]
+  PIN Bias[5]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 403.065 212.425 404.285 ;
+    END
+  END Bias[5]
+  PIN PadBias[4]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 331.630 212.425 332.850 ;
+    END
+  END PadBias[4]
+  PIN Bias[4]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 329.985 212.425 331.205 ;
+    END
+  END Bias[4]
+  PIN PadBias[3]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 258.550 212.425 259.770 ;
+    END
+  END PadBias[3]
+  PIN Bias[3]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 256.905 212.425 258.125 ;
+    END
+  END Bias[3]
+  PIN PadBias[2]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 185.470 212.425 186.690 ;
+    END
+  END PadBias[2]
+  PIN Bias[2]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 183.825 212.425 185.045 ;
+    END
+  END Bias[2]
+  PIN PadBias[1]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 112.390 212.425 113.610 ;
+    END
+  END PadBias[1]
+  PIN Bias[1]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 110.745 212.425 111.965 ;
+    END
+  END Bias[1]
+  PIN PadBias[0]
+    ANTENNADIFFAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 39.310 212.425 40.530 ;
+    END
+  END PadBias[0]
+  PIN Bias[0]
+    ANTENNADIFFAREA 5.080000 ;
+    PORT
+      LAYER met2 ;
+        RECT 174.800 37.665 212.425 38.885 ;
+    END
+  END Bias[0]
+  PIN nLowBiasInterfaceEnBuffer
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 640.455 20.030 640.925 ;
+    END
+  END nLowBiasInterfaceEnBuffer
+  PIN LowBiasInterfaceEnBuffer
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 635.115 22.445 635.585 ;
+    END
+  END LowBiasInterfaceEnBuffer
+  PIN CoarseOneHotBuffer[0]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 630.770 25.480 631.190 ;
+    END
+  END CoarseOneHotBuffer[0]
+  PIN CoarseOneHotBuffer[1]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 629.930 25.480 630.350 ;
+    END
+  END CoarseOneHotBuffer[1]
+  PIN CoarseOneHotBuffer[2]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 629.090 25.480 629.510 ;
+    END
+  END CoarseOneHotBuffer[2]
+  PIN CoarseOneHotBuffer[3]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 628.250 25.480 628.670 ;
+    END
+  END CoarseOneHotBuffer[3]
+  PIN CoarseOneHotBuffer[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 624.890 25.480 625.310 ;
+    END
+  END CoarseOneHotBuffer[7]
+  PIN CoarseOneHotBuffer[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 627.410 25.480 627.830 ;
+    END
+  END CoarseOneHotBuffer[4]
+  PIN CoarseOneHotBuffer[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 626.570 25.480 626.990 ;
+    END
+  END CoarseOneHotBuffer[5]
+  PIN CoarseOneHotBuffer[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 625.730 25.480 626.150 ;
+    END
+  END CoarseOneHotBuffer[6]
+  PIN CoarseOneHotLowBiasEnBuffer
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 618.170 24.340 618.590 ;
+    END
+  END CoarseOneHotLowBiasEnBuffer
+  PIN FineCodeBuffer[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 614.600 23.055 614.880 ;
+    END
+  END FineCodeBuffer[7]
+  PIN nFineCodeBuffer[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 614.040 23.055 614.320 ;
+    END
+  END nFineCodeBuffer[7]
+  PIN FineCodeBuffer[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 613.480 23.055 613.760 ;
+    END
+  END FineCodeBuffer[6]
+  PIN nFineCodeBuffer[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 612.920 23.055 613.200 ;
+    END
+  END nFineCodeBuffer[6]
+  PIN FineCodeBuffer[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 612.360 23.055 612.640 ;
+    END
+  END FineCodeBuffer[5]
+  PIN BiasCB[0]
+    ANTENNAGATEAREA 943.199951 ;
+    ANTENNADIFFAREA 9.997600 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 443.895 20.300 445.115 ;
+    END
+  END BiasCB[0]
+  PIN BiasCB[1]
+    ANTENNAGATEAREA 1018.918396 ;
+    ANTENNADIFFAREA 8.900000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 446.115 19.840 447.335 ;
+    END
+  END BiasCB[1]
+  PIN BiasCB[3]
+    ANTENNAGATEAREA 938.918396 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 450.555 18.920 451.775 ;
+    END
+  END BiasCB[3]
+  PIN BiasCB[2]
+    ANTENNAGATEAREA 1029.599976 ;
+    ANTENNADIFFAREA 8.304700 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 448.335 19.290 449.555 ;
+    END
+  END BiasCB[2]
+  PIN BiasCB[5]
+    ANTENNAGATEAREA 80.000000 ;
+    ANTENNADIFFAREA 11.092500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 454.995 18.000 456.215 ;
+    END
+  END BiasCB[5]
+  PIN BiasCB[4]
+    ANTENNAGATEAREA 80.000000 ;
+    ANTENNADIFFAREA 11.092500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 452.775 18.460 453.995 ;
+    END
+  END BiasCB[4]
+  PIN BiasCB[7]
+    ANTENNAGATEAREA 80.000000 ;
+    ANTENNADIFFAREA 11.092500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 459.435 17.080 460.655 ;
+    END
+  END BiasCB[7]
+  PIN BiasCB[6]
+    ANTENNAGATEAREA 80.000000 ;
+    ANTENNADIFFAREA 11.092500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 457.215 17.450 458.435 ;
+    END
+  END BiasCB[6]
+  PIN PowerDownM
+    ANTENNAGATEAREA 0.400000 ;
+    ANTENNADIFFAREA 8.480000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 469.510 63.755 470.510 ;
+    END
+  END PowerDownM
+  PIN nLowBiasInterfaceEn[10]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1005.855 20.030 1006.325 ;
+    END
+  END nLowBiasInterfaceEn[10]
+  PIN LowBiasInterfaceEn[10]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1000.515 22.445 1000.985 ;
+    END
+  END LowBiasInterfaceEn[10]
+  PIN CoarseOneHot[80]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 996.170 25.480 996.590 ;
+    END
+  END CoarseOneHot[80]
+  PIN CoarseOneHot[81]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 995.330 25.480 995.750 ;
+    END
+  END CoarseOneHot[81]
+  PIN CoarseOneHot[82]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 994.490 25.480 994.910 ;
+    END
+  END CoarseOneHot[82]
+  PIN CoarseOneHot[83]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 993.650 25.480 994.070 ;
+    END
+  END CoarseOneHot[83]
+  PIN CoarseOneHot[87]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 990.290 25.480 990.710 ;
+    END
+  END CoarseOneHot[87]
+  PIN CoarseOneHot[84]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 992.810 25.480 993.230 ;
+    END
+  END CoarseOneHot[84]
+  PIN CoarseOneHot[85]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 991.970 25.480 992.390 ;
+    END
+  END CoarseOneHot[85]
+  PIN CoarseOneHot[86]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 991.130 25.480 991.550 ;
+    END
+  END CoarseOneHot[86]
+  PIN CoarseOneHotLowBiasEn[10]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 983.570 24.340 983.990 ;
+    END
+  END CoarseOneHotLowBiasEn[10]
+  PIN FineCode[87]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 980.000 23.055 980.280 ;
+    END
+  END FineCode[87]
+  PIN nFineCode[87]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 979.440 23.055 979.720 ;
+    END
+  END nFineCode[87]
+  PIN FineCode[86]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 978.880 23.055 979.160 ;
+    END
+  END FineCode[86]
+  PIN nFineCode[86]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 978.320 23.055 978.600 ;
+    END
+  END nFineCode[86]
+  PIN FineCode[85]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 977.760 23.055 978.040 ;
+    END
+  END FineCode[85]
+  PIN nFineCode[85]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 977.200 23.055 977.480 ;
+    END
+  END nFineCode[85]
+  PIN nFineCode[80]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 971.600 23.055 971.880 ;
+    END
+  END nFineCode[80]
+  PIN FineCode[80]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 972.160 23.055 972.440 ;
+    END
+  END FineCode[80]
+  PIN nFineCode[81]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 972.720 23.055 973.000 ;
+    END
+  END nFineCode[81]
+  PIN FineCode[81]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 973.280 23.055 973.560 ;
+    END
+  END FineCode[81]
+  PIN nFineCode[83]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 974.960 23.055 975.240 ;
+    END
+  END nFineCode[83]
+  PIN FineCode[82]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 974.400 23.055 974.680 ;
+    END
+  END FineCode[82]
+  PIN FineCode[84]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 976.640 23.055 976.920 ;
+    END
+  END FineCode[84]
+  PIN nFineCode[84]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 976.080 23.055 976.360 ;
+    END
+  END nFineCode[84]
+  PIN FineCode[83]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 975.520 23.055 975.800 ;
+    END
+  END FineCode[83]
+  PIN nFineCode[82]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 973.840 23.055 974.120 ;
+    END
+  END nFineCode[82]
+  PIN BIT0[10]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 949.480 24.340 949.980 ;
+    END
+  END BIT0[10]
+  PIN PowerDown[10]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 952.840 24.340 953.340 ;
+    END
+  END PowerDown[10]
+  PIN PBiasEn[10]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 952.000 24.340 952.500 ;
+    END
+  END PBiasEn[10]
+  PIN NBiasEn[10]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 951.160 24.340 951.660 ;
+    END
+  END NBiasEn[10]
+  PIN BiasDisabled[10]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 950.320 24.340 950.820 ;
+    END
+  END BiasDisabled[10]
+  PIN nLowBiasInterfaceEn[9]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 932.775 20.030 933.245 ;
+    END
+  END nLowBiasInterfaceEn[9]
+  PIN LowBiasInterfaceEn[9]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 927.435 22.445 927.905 ;
+    END
+  END LowBiasInterfaceEn[9]
+  PIN CoarseOneHot[72]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 923.090 25.480 923.510 ;
+    END
+  END CoarseOneHot[72]
+  PIN CoarseOneHot[73]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 922.250 25.480 922.670 ;
+    END
+  END CoarseOneHot[73]
+  PIN CoarseOneHot[74]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 921.410 25.480 921.830 ;
+    END
+  END CoarseOneHot[74]
+  PIN CoarseOneHot[75]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 920.570 25.480 920.990 ;
+    END
+  END CoarseOneHot[75]
+  PIN CoarseOneHot[79]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 917.210 25.480 917.630 ;
+    END
+  END CoarseOneHot[79]
+  PIN CoarseOneHot[76]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 919.730 25.480 920.150 ;
+    END
+  END CoarseOneHot[76]
+  PIN CoarseOneHot[77]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 918.890 25.480 919.310 ;
+    END
+  END CoarseOneHot[77]
+  PIN CoarseOneHot[78]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 918.050 25.480 918.470 ;
+    END
+  END CoarseOneHot[78]
+  PIN CoarseOneHotLowBiasEn[9]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 910.490 24.340 910.910 ;
+    END
+  END CoarseOneHotLowBiasEn[9]
+  PIN FineCode[79]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 906.920 23.055 907.200 ;
+    END
+  END FineCode[79]
+  PIN nFineCode[79]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 906.360 23.055 906.640 ;
+    END
+  END nFineCode[79]
+  PIN FineCode[78]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 905.800 23.055 906.080 ;
+    END
+  END FineCode[78]
+  PIN nFineCode[78]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 905.240 23.055 905.520 ;
+    END
+  END nFineCode[78]
+  PIN FineCode[77]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 904.680 23.055 904.960 ;
+    END
+  END FineCode[77]
+  PIN nFineCode[77]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 904.120 23.055 904.400 ;
+    END
+  END nFineCode[77]
+  PIN nFineCode[72]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 898.520 23.055 898.800 ;
+    END
+  END nFineCode[72]
+  PIN FineCode[72]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 899.080 23.055 899.360 ;
+    END
+  END FineCode[72]
+  PIN nFineCode[73]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 899.640 23.055 899.920 ;
+    END
+  END nFineCode[73]
+  PIN FineCode[73]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 900.200 23.055 900.480 ;
+    END
+  END FineCode[73]
+  PIN nFineCode[75]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 901.880 23.055 902.160 ;
+    END
+  END nFineCode[75]
+  PIN FineCode[74]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 901.320 23.055 901.600 ;
+    END
+  END FineCode[74]
+  PIN FineCode[76]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 903.560 23.055 903.840 ;
+    END
+  END FineCode[76]
+  PIN nFineCode[76]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 903.000 23.055 903.280 ;
+    END
+  END nFineCode[76]
+  PIN FineCode[75]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 902.440 23.055 902.720 ;
+    END
+  END FineCode[75]
+  PIN nFineCode[74]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 900.760 23.055 901.040 ;
+    END
+  END nFineCode[74]
+  PIN BIT0[9]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 876.400 24.340 876.900 ;
+    END
+  END BIT0[9]
+  PIN PowerDown[9]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 879.760 24.340 880.260 ;
+    END
+  END PowerDown[9]
+  PIN PBiasEn[9]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 878.920 24.340 879.420 ;
+    END
+  END PBiasEn[9]
+  PIN NBiasEn[9]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 878.080 24.340 878.580 ;
+    END
+  END NBiasEn[9]
+  PIN BiasDisabled[9]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 877.240 24.340 877.740 ;
+    END
+  END BiasDisabled[9]
+  PIN nLowBiasInterfaceEn[8]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 859.695 20.030 860.165 ;
+    END
+  END nLowBiasInterfaceEn[8]
+  PIN LowBiasInterfaceEn[8]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 854.355 22.445 854.825 ;
+    END
+  END LowBiasInterfaceEn[8]
+  PIN CoarseOneHot[64]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 850.010 25.480 850.430 ;
+    END
+  END CoarseOneHot[64]
+  PIN CoarseOneHot[65]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 849.170 25.480 849.590 ;
+    END
+  END CoarseOneHot[65]
+  PIN CoarseOneHot[66]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 848.330 25.480 848.750 ;
+    END
+  END CoarseOneHot[66]
+  PIN CoarseOneHot[67]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 847.490 25.480 847.910 ;
+    END
+  END CoarseOneHot[67]
+  PIN CoarseOneHot[71]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 844.130 25.480 844.550 ;
+    END
+  END CoarseOneHot[71]
+  PIN CoarseOneHot[68]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 846.650 25.480 847.070 ;
+    END
+  END CoarseOneHot[68]
+  PIN CoarseOneHot[69]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 845.810 25.480 846.230 ;
+    END
+  END CoarseOneHot[69]
+  PIN CoarseOneHot[70]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 844.970 25.480 845.390 ;
+    END
+  END CoarseOneHot[70]
+  PIN CoarseOneHotLowBiasEn[8]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 837.410 24.340 837.830 ;
+    END
+  END CoarseOneHotLowBiasEn[8]
+  PIN FineCode[71]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 833.840 23.055 834.120 ;
+    END
+  END FineCode[71]
+  PIN nFineCode[71]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 833.280 23.055 833.560 ;
+    END
+  END nFineCode[71]
+  PIN FineCode[70]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 832.720 23.055 833.000 ;
+    END
+  END FineCode[70]
+  PIN nFineCode[70]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 832.160 23.055 832.440 ;
+    END
+  END nFineCode[70]
+  PIN FineCode[69]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 831.600 23.055 831.880 ;
+    END
+  END FineCode[69]
+  PIN nFineCode[69]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 831.040 23.055 831.320 ;
+    END
+  END nFineCode[69]
+  PIN nFineCode[64]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 825.440 23.055 825.720 ;
+    END
+  END nFineCode[64]
+  PIN FineCode[64]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 826.000 23.055 826.280 ;
+    END
+  END FineCode[64]
+  PIN nFineCode[65]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 826.560 23.055 826.840 ;
+    END
+  END nFineCode[65]
+  PIN FineCode[65]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 827.120 23.055 827.400 ;
+    END
+  END FineCode[65]
+  PIN nFineCode[67]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 828.800 23.055 829.080 ;
+    END
+  END nFineCode[67]
+  PIN FineCode[66]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 828.240 23.055 828.520 ;
+    END
+  END FineCode[66]
+  PIN FineCode[68]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 830.480 23.055 830.760 ;
+    END
+  END FineCode[68]
+  PIN nFineCode[68]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 829.920 23.055 830.200 ;
+    END
+  END nFineCode[68]
+  PIN FineCode[67]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 829.360 23.055 829.640 ;
+    END
+  END FineCode[67]
+  PIN nFineCode[66]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 827.680 23.055 827.960 ;
+    END
+  END nFineCode[66]
+  PIN BIT0[8]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 803.320 24.340 803.820 ;
+    END
+  END BIT0[8]
+  PIN PowerDown[8]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 806.680 24.340 807.180 ;
+    END
+  END PowerDown[8]
+  PIN PBiasEn[8]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 805.840 24.340 806.340 ;
+    END
+  END PBiasEn[8]
+  PIN NBiasEn[8]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 805.000 24.340 805.500 ;
+    END
+  END NBiasEn[8]
+  PIN BiasDisabled[8]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 804.160 24.340 804.660 ;
+    END
+  END BiasDisabled[8]
+  PIN nLowBiasInterfaceEn[7]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 786.615 20.030 787.085 ;
+    END
+  END nLowBiasInterfaceEn[7]
+  PIN LowBiasInterfaceEn[7]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 781.275 22.445 781.745 ;
+    END
+  END LowBiasInterfaceEn[7]
+  PIN CoarseOneHot[56]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 776.930 25.480 777.350 ;
+    END
+  END CoarseOneHot[56]
+  PIN CoarseOneHot[57]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 776.090 25.480 776.510 ;
+    END
+  END CoarseOneHot[57]
+  PIN CoarseOneHot[58]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 775.250 25.480 775.670 ;
+    END
+  END CoarseOneHot[58]
+  PIN CoarseOneHot[59]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 774.410 25.480 774.830 ;
+    END
+  END CoarseOneHot[59]
+  PIN CoarseOneHot[63]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 771.050 25.480 771.470 ;
+    END
+  END CoarseOneHot[63]
+  PIN CoarseOneHot[60]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 773.570 25.480 773.990 ;
+    END
+  END CoarseOneHot[60]
+  PIN CoarseOneHot[61]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 772.730 25.480 773.150 ;
+    END
+  END CoarseOneHot[61]
+  PIN CoarseOneHot[62]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 771.890 25.480 772.310 ;
+    END
+  END CoarseOneHot[62]
+  PIN CoarseOneHotLowBiasEn[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 764.330 24.340 764.750 ;
+    END
+  END CoarseOneHotLowBiasEn[7]
+  PIN FineCode[63]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 760.760 23.055 761.040 ;
+    END
+  END FineCode[63]
+  PIN nFineCode[63]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 760.200 23.055 760.480 ;
+    END
+  END nFineCode[63]
+  PIN FineCode[62]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 759.640 23.055 759.920 ;
+    END
+  END FineCode[62]
+  PIN nFineCode[62]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 759.080 23.055 759.360 ;
+    END
+  END nFineCode[62]
+  PIN FineCode[61]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 758.520 23.055 758.800 ;
+    END
+  END FineCode[61]
+  PIN nFineCode[61]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 757.960 23.055 758.240 ;
+    END
+  END nFineCode[61]
+  PIN nFineCode[56]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 752.360 23.055 752.640 ;
+    END
+  END nFineCode[56]
+  PIN FineCode[56]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 752.920 23.055 753.200 ;
+    END
+  END FineCode[56]
+  PIN nFineCode[57]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 753.480 23.055 753.760 ;
+    END
+  END nFineCode[57]
+  PIN FineCode[57]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 754.040 23.055 754.320 ;
+    END
+  END FineCode[57]
+  PIN nFineCode[59]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 755.720 23.055 756.000 ;
+    END
+  END nFineCode[59]
+  PIN FineCode[58]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 755.160 23.055 755.440 ;
+    END
+  END FineCode[58]
+  PIN FineCode[60]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 757.400 23.055 757.680 ;
+    END
+  END FineCode[60]
+  PIN nFineCode[60]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 756.840 23.055 757.120 ;
+    END
+  END nFineCode[60]
+  PIN FineCode[59]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 756.280 23.055 756.560 ;
+    END
+  END FineCode[59]
+  PIN nFineCode[58]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 754.600 23.055 754.880 ;
+    END
+  END nFineCode[58]
+  PIN BIT0[7]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 730.240 24.340 730.740 ;
+    END
+  END BIT0[7]
+  PIN PowerDown[7]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 733.600 24.340 734.100 ;
+    END
+  END PowerDown[7]
+  PIN PBiasEn[7]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 732.760 24.340 733.260 ;
+    END
+  END PBiasEn[7]
+  PIN NBiasEn[7]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 731.920 24.340 732.420 ;
+    END
+  END NBiasEn[7]
+  PIN BiasDisabled[7]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 731.080 24.340 731.580 ;
+    END
+  END BiasDisabled[7]
+  PIN nLowBiasInterfaceEn[6]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 713.535 20.030 714.005 ;
+    END
+  END nLowBiasInterfaceEn[6]
+  PIN LowBiasInterfaceEn[6]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 708.195 22.445 708.665 ;
+    END
+  END LowBiasInterfaceEn[6]
+  PIN CoarseOneHot[48]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 703.850 25.480 704.270 ;
+    END
+  END CoarseOneHot[48]
+  PIN CoarseOneHot[49]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 703.010 25.480 703.430 ;
+    END
+  END CoarseOneHot[49]
+  PIN CoarseOneHot[50]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 702.170 25.480 702.590 ;
+    END
+  END CoarseOneHot[50]
+  PIN CoarseOneHot[51]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 701.330 25.480 701.750 ;
+    END
+  END CoarseOneHot[51]
+  PIN CoarseOneHot[55]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 697.970 25.480 698.390 ;
+    END
+  END CoarseOneHot[55]
+  PIN CoarseOneHot[52]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 700.490 25.480 700.910 ;
+    END
+  END CoarseOneHot[52]
+  PIN CoarseOneHot[53]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 699.650 25.480 700.070 ;
+    END
+  END CoarseOneHot[53]
+  PIN CoarseOneHot[54]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 698.810 25.480 699.230 ;
+    END
+  END CoarseOneHot[54]
+  PIN CoarseOneHotLowBiasEn[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 691.250 24.340 691.670 ;
+    END
+  END CoarseOneHotLowBiasEn[6]
+  PIN FineCode[55]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 687.680 23.055 687.960 ;
+    END
+  END FineCode[55]
+  PIN nFineCode[55]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 687.120 23.055 687.400 ;
+    END
+  END nFineCode[55]
+  PIN FineCode[54]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 686.560 23.055 686.840 ;
+    END
+  END FineCode[54]
+  PIN nFineCode[54]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 686.000 23.055 686.280 ;
+    END
+  END nFineCode[54]
+  PIN FineCode[53]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 685.440 23.055 685.720 ;
+    END
+  END FineCode[53]
+  PIN nFineCode[53]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 684.880 23.055 685.160 ;
+    END
+  END nFineCode[53]
+  PIN nFineCode[48]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 679.280 23.055 679.560 ;
+    END
+  END nFineCode[48]
+  PIN FineCode[48]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 679.840 23.055 680.120 ;
+    END
+  END FineCode[48]
+  PIN nFineCode[49]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 680.400 23.055 680.680 ;
+    END
+  END nFineCode[49]
+  PIN FineCode[49]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 680.960 23.055 681.240 ;
+    END
+  END FineCode[49]
+  PIN nFineCode[51]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 682.640 23.055 682.920 ;
+    END
+  END nFineCode[51]
+  PIN FineCode[50]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 682.080 23.055 682.360 ;
+    END
+  END FineCode[50]
+  PIN FineCode[52]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 684.320 23.055 684.600 ;
+    END
+  END FineCode[52]
+  PIN nFineCode[52]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 683.760 23.055 684.040 ;
+    END
+  END nFineCode[52]
+  PIN FineCode[51]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 683.200 23.055 683.480 ;
+    END
+  END FineCode[51]
+  PIN nFineCode[50]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 681.520 23.055 681.800 ;
+    END
+  END nFineCode[50]
+  PIN BIT0[6]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 657.160 24.340 657.660 ;
+    END
+  END BIT0[6]
+  PIN PowerDown[6]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 660.520 24.340 661.020 ;
+    END
+  END PowerDown[6]
+  PIN PBiasEn[6]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 659.680 24.340 660.180 ;
+    END
+  END PBiasEn[6]
+  PIN NBiasEn[6]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 658.840 24.340 659.340 ;
+    END
+  END NBiasEn[6]
+  PIN BiasDisabled[6]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 658.000 24.340 658.500 ;
+    END
+  END BiasDisabled[6]
+  PIN nFineCodeBuffer[2]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 608.440 23.055 608.720 ;
+    END
+  END nFineCodeBuffer[2]
+  PIN FineCodeBuffer[3]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 610.120 23.055 610.400 ;
+    END
+  END FineCodeBuffer[3]
+  PIN nFineCodeBuffer[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 610.680 23.055 610.960 ;
+    END
+  END nFineCodeBuffer[4]
+  PIN FineCodeBuffer[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 611.240 23.055 611.520 ;
+    END
+  END FineCodeBuffer[4]
+  PIN FineCodeBuffer[2]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 609.000 23.055 609.280 ;
+    END
+  END FineCodeBuffer[2]
+  PIN nFineCodeBuffer[3]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 609.560 23.055 609.840 ;
+    END
+  END nFineCodeBuffer[3]
+  PIN FineCodeBuffer[1]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 607.880 23.055 608.160 ;
+    END
+  END FineCodeBuffer[1]
+  PIN nFineCodeBuffer[1]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 607.320 23.055 607.600 ;
+    END
+  END nFineCodeBuffer[1]
+  PIN FineCodeBuffer[0]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 606.760 23.055 607.040 ;
+    END
+  END FineCodeBuffer[0]
+  PIN nFineCodeBuffer[0]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 606.200 23.055 606.480 ;
+    END
+  END nFineCodeBuffer[0]
+  PIN nFineCodeBuffer[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 611.800 23.055 612.080 ;
+    END
+  END nFineCodeBuffer[5]
+  PIN nLowBiasInterfaceEn[5]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 421.215 20.030 421.685 ;
+    END
+  END nLowBiasInterfaceEn[5]
+  PIN LowBiasInterfaceEn[5]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 415.875 22.445 416.345 ;
+    END
+  END LowBiasInterfaceEn[5]
+  PIN CoarseOneHot[40]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 411.530 25.480 411.950 ;
+    END
+  END CoarseOneHot[40]
+  PIN CoarseOneHot[41]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 410.690 25.480 411.110 ;
+    END
+  END CoarseOneHot[41]
+  PIN CoarseOneHot[42]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 409.850 25.480 410.270 ;
+    END
+  END CoarseOneHot[42]
+  PIN CoarseOneHot[43]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 409.010 25.480 409.430 ;
+    END
+  END CoarseOneHot[43]
+  PIN CoarseOneHot[47]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 405.650 25.480 406.070 ;
+    END
+  END CoarseOneHot[47]
+  PIN CoarseOneHot[44]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 408.170 25.480 408.590 ;
+    END
+  END CoarseOneHot[44]
+  PIN CoarseOneHot[45]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 407.330 25.480 407.750 ;
+    END
+  END CoarseOneHot[45]
+  PIN CoarseOneHot[46]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 406.490 25.480 406.910 ;
+    END
+  END CoarseOneHot[46]
+  PIN CoarseOneHotLowBiasEn[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 398.930 24.340 399.350 ;
+    END
+  END CoarseOneHotLowBiasEn[5]
+  PIN FineCode[47]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 395.360 23.055 395.640 ;
+    END
+  END FineCode[47]
+  PIN nFineCode[47]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 394.800 23.055 395.080 ;
+    END
+  END nFineCode[47]
+  PIN FineCode[46]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 394.240 23.055 394.520 ;
+    END
+  END FineCode[46]
+  PIN nFineCode[46]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 393.680 23.055 393.960 ;
+    END
+  END nFineCode[46]
+  PIN FineCode[45]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 393.120 23.055 393.400 ;
+    END
+  END FineCode[45]
+  PIN nFineCode[45]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 392.560 23.055 392.840 ;
+    END
+  END nFineCode[45]
+  PIN nFineCode[40]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 386.960 23.055 387.240 ;
+    END
+  END nFineCode[40]
+  PIN FineCode[40]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 387.520 23.055 387.800 ;
+    END
+  END FineCode[40]
+  PIN nFineCode[41]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 388.080 23.055 388.360 ;
+    END
+  END nFineCode[41]
+  PIN FineCode[41]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 388.640 23.055 388.920 ;
+    END
+  END FineCode[41]
+  PIN nFineCode[43]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 390.320 23.055 390.600 ;
+    END
+  END nFineCode[43]
+  PIN FineCode[42]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 389.760 23.055 390.040 ;
+    END
+  END FineCode[42]
+  PIN FineCode[44]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 392.000 23.055 392.280 ;
+    END
+  END FineCode[44]
+  PIN nFineCode[44]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 391.440 23.055 391.720 ;
+    END
+  END nFineCode[44]
+  PIN FineCode[43]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 390.880 23.055 391.160 ;
+    END
+  END FineCode[43]
+  PIN nFineCode[42]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 389.200 23.055 389.480 ;
+    END
+  END nFineCode[42]
+  PIN BIT0[5]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 364.840 24.340 365.340 ;
+    END
+  END BIT0[5]
+  PIN PowerDown[5]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 368.200 24.340 368.700 ;
+    END
+  END PowerDown[5]
+  PIN PBiasEn[5]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 367.360 24.340 367.860 ;
+    END
+  END PBiasEn[5]
+  PIN NBiasEn[5]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 366.520 24.340 367.020 ;
+    END
+  END NBiasEn[5]
+  PIN BiasDisabled[5]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 365.680 24.340 366.180 ;
+    END
+  END BiasDisabled[5]
+  PIN nLowBiasInterfaceEn[4]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 348.135 20.030 348.605 ;
+    END
+  END nLowBiasInterfaceEn[4]
+  PIN LowBiasInterfaceEn[4]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 342.795 22.445 343.265 ;
+    END
+  END LowBiasInterfaceEn[4]
+  PIN CoarseOneHot[32]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 338.450 25.480 338.870 ;
+    END
+  END CoarseOneHot[32]
+  PIN CoarseOneHot[33]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 337.610 25.480 338.030 ;
+    END
+  END CoarseOneHot[33]
+  PIN CoarseOneHot[34]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 336.770 25.480 337.190 ;
+    END
+  END CoarseOneHot[34]
+  PIN CoarseOneHot[35]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 335.930 25.480 336.350 ;
+    END
+  END CoarseOneHot[35]
+  PIN CoarseOneHot[39]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 332.570 25.480 332.990 ;
+    END
+  END CoarseOneHot[39]
+  PIN CoarseOneHot[36]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 335.090 25.480 335.510 ;
+    END
+  END CoarseOneHot[36]
+  PIN CoarseOneHot[37]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 334.250 25.480 334.670 ;
+    END
+  END CoarseOneHot[37]
+  PIN CoarseOneHot[38]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 333.410 25.480 333.830 ;
+    END
+  END CoarseOneHot[38]
+  PIN CoarseOneHotLowBiasEn[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 325.850 24.340 326.270 ;
+    END
+  END CoarseOneHotLowBiasEn[4]
+  PIN FineCode[39]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 322.280 23.055 322.560 ;
+    END
+  END FineCode[39]
+  PIN nFineCode[39]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 321.720 23.055 322.000 ;
+    END
+  END nFineCode[39]
+  PIN FineCode[38]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 321.160 23.055 321.440 ;
+    END
+  END FineCode[38]
+  PIN nFineCode[38]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 320.600 23.055 320.880 ;
+    END
+  END nFineCode[38]
+  PIN FineCode[37]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 320.040 23.055 320.320 ;
+    END
+  END FineCode[37]
+  PIN nFineCode[37]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 319.480 23.055 319.760 ;
+    END
+  END nFineCode[37]
+  PIN nFineCode[32]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 313.880 23.055 314.160 ;
+    END
+  END nFineCode[32]
+  PIN FineCode[32]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 314.440 23.055 314.720 ;
+    END
+  END FineCode[32]
+  PIN nFineCode[33]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 315.000 23.055 315.280 ;
+    END
+  END nFineCode[33]
+  PIN FineCode[33]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 315.560 23.055 315.840 ;
+    END
+  END FineCode[33]
+  PIN nFineCode[35]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 317.240 23.055 317.520 ;
+    END
+  END nFineCode[35]
+  PIN FineCode[34]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 316.680 23.055 316.960 ;
+    END
+  END FineCode[34]
+  PIN FineCode[36]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 318.920 23.055 319.200 ;
+    END
+  END FineCode[36]
+  PIN nFineCode[36]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 318.360 23.055 318.640 ;
+    END
+  END nFineCode[36]
+  PIN FineCode[35]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 317.800 23.055 318.080 ;
+    END
+  END FineCode[35]
+  PIN nFineCode[34]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 316.120 23.055 316.400 ;
+    END
+  END nFineCode[34]
+  PIN BIT0[4]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 291.760 24.340 292.260 ;
+    END
+  END BIT0[4]
+  PIN PowerDown[4]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 295.120 24.340 295.620 ;
+    END
+  END PowerDown[4]
+  PIN PBiasEn[4]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 294.280 24.340 294.780 ;
+    END
+  END PBiasEn[4]
+  PIN NBiasEn[4]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 293.440 24.340 293.940 ;
+    END
+  END NBiasEn[4]
+  PIN BiasDisabled[4]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 292.600 24.340 293.100 ;
+    END
+  END BiasDisabled[4]
+  PIN nLowBiasInterfaceEn[3]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 275.055 20.030 275.525 ;
+    END
+  END nLowBiasInterfaceEn[3]
+  PIN LowBiasInterfaceEn[3]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 269.715 22.445 270.185 ;
+    END
+  END LowBiasInterfaceEn[3]
+  PIN CoarseOneHot[24]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 265.370 25.480 265.790 ;
+    END
+  END CoarseOneHot[24]
+  PIN CoarseOneHot[25]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 264.530 25.480 264.950 ;
+    END
+  END CoarseOneHot[25]
+  PIN CoarseOneHot[26]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 263.690 25.480 264.110 ;
+    END
+  END CoarseOneHot[26]
+  PIN CoarseOneHot[27]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 262.850 25.480 263.270 ;
+    END
+  END CoarseOneHot[27]
+  PIN CoarseOneHot[31]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 259.490 25.480 259.910 ;
+    END
+  END CoarseOneHot[31]
+  PIN CoarseOneHot[28]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 262.010 25.480 262.430 ;
+    END
+  END CoarseOneHot[28]
+  PIN CoarseOneHot[29]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 261.170 25.480 261.590 ;
+    END
+  END CoarseOneHot[29]
+  PIN CoarseOneHot[30]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 260.330 25.480 260.750 ;
+    END
+  END CoarseOneHot[30]
+  PIN CoarseOneHotLowBiasEn[3]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 252.770 24.340 253.190 ;
+    END
+  END CoarseOneHotLowBiasEn[3]
+  PIN FineCode[31]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 249.200 23.055 249.480 ;
+    END
+  END FineCode[31]
+  PIN nFineCode[31]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 248.640 23.055 248.920 ;
+    END
+  END nFineCode[31]
+  PIN FineCode[30]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 248.080 23.055 248.360 ;
+    END
+  END FineCode[30]
+  PIN nFineCode[30]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 247.520 23.055 247.800 ;
+    END
+  END nFineCode[30]
+  PIN FineCode[29]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 246.960 23.055 247.240 ;
+    END
+  END FineCode[29]
+  PIN nFineCode[29]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 246.400 23.055 246.680 ;
+    END
+  END nFineCode[29]
+  PIN nFineCode[24]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 240.800 23.055 241.080 ;
+    END
+  END nFineCode[24]
+  PIN FineCode[24]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 241.360 23.055 241.640 ;
+    END
+  END FineCode[24]
+  PIN nFineCode[25]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 241.920 23.055 242.200 ;
+    END
+  END nFineCode[25]
+  PIN FineCode[25]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 242.480 23.055 242.760 ;
+    END
+  END FineCode[25]
+  PIN nFineCode[27]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 244.160 23.055 244.440 ;
+    END
+  END nFineCode[27]
+  PIN FineCode[26]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 243.600 23.055 243.880 ;
+    END
+  END FineCode[26]
+  PIN FineCode[28]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 245.840 23.055 246.120 ;
+    END
+  END FineCode[28]
+  PIN nFineCode[28]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 245.280 23.055 245.560 ;
+    END
+  END nFineCode[28]
+  PIN FineCode[27]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 244.720 23.055 245.000 ;
+    END
+  END FineCode[27]
+  PIN nFineCode[26]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 243.040 23.055 243.320 ;
+    END
+  END nFineCode[26]
+  PIN BIT0[3]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 218.680 24.340 219.180 ;
+    END
+  END BIT0[3]
+  PIN PowerDown[3]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 222.040 24.340 222.540 ;
+    END
+  END PowerDown[3]
+  PIN PBiasEn[3]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 221.200 24.340 221.700 ;
+    END
+  END PBiasEn[3]
+  PIN NBiasEn[3]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 220.360 24.340 220.860 ;
+    END
+  END NBiasEn[3]
+  PIN BiasDisabled[3]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 219.520 24.340 220.020 ;
+    END
+  END BiasDisabled[3]
+  PIN nLowBiasInterfaceEn[2]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 201.975 20.030 202.445 ;
+    END
+  END nLowBiasInterfaceEn[2]
+  PIN LowBiasInterfaceEn[2]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 196.635 22.445 197.105 ;
+    END
+  END LowBiasInterfaceEn[2]
+  PIN CoarseOneHot[16]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 192.290 25.480 192.710 ;
+    END
+  END CoarseOneHot[16]
+  PIN CoarseOneHot[17]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 191.450 25.480 191.870 ;
+    END
+  END CoarseOneHot[17]
+  PIN CoarseOneHot[18]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 190.610 25.480 191.030 ;
+    END
+  END CoarseOneHot[18]
+  PIN CoarseOneHot[19]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 189.770 25.480 190.190 ;
+    END
+  END CoarseOneHot[19]
+  PIN CoarseOneHot[23]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 186.410 25.480 186.830 ;
+    END
+  END CoarseOneHot[23]
+  PIN CoarseOneHot[20]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 188.930 25.480 189.350 ;
+    END
+  END CoarseOneHot[20]
+  PIN CoarseOneHot[21]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 188.090 25.480 188.510 ;
+    END
+  END CoarseOneHot[21]
+  PIN CoarseOneHot[22]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 187.250 25.480 187.670 ;
+    END
+  END CoarseOneHot[22]
+  PIN CoarseOneHotLowBiasEn[2]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 179.690 24.340 180.110 ;
+    END
+  END CoarseOneHotLowBiasEn[2]
+  PIN FineCode[23]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 176.120 23.055 176.400 ;
+    END
+  END FineCode[23]
+  PIN nFineCode[23]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 175.560 23.055 175.840 ;
+    END
+  END nFineCode[23]
+  PIN FineCode[22]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 175.000 23.055 175.280 ;
+    END
+  END FineCode[22]
+  PIN nFineCode[22]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 174.440 23.055 174.720 ;
+    END
+  END nFineCode[22]
+  PIN FineCode[21]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 173.880 23.055 174.160 ;
+    END
+  END FineCode[21]
+  PIN nFineCode[21]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 173.320 23.055 173.600 ;
+    END
+  END nFineCode[21]
+  PIN nFineCode[16]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 167.720 23.055 168.000 ;
+    END
+  END nFineCode[16]
+  PIN FineCode[16]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 168.280 23.055 168.560 ;
+    END
+  END FineCode[16]
+  PIN nFineCode[17]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 168.840 23.055 169.120 ;
+    END
+  END nFineCode[17]
+  PIN FineCode[17]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 169.400 23.055 169.680 ;
+    END
+  END FineCode[17]
+  PIN nFineCode[19]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 171.080 23.055 171.360 ;
+    END
+  END nFineCode[19]
+  PIN FineCode[18]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 170.520 23.055 170.800 ;
+    END
+  END FineCode[18]
+  PIN FineCode[20]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 172.760 23.055 173.040 ;
+    END
+  END FineCode[20]
+  PIN nFineCode[20]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 172.200 23.055 172.480 ;
+    END
+  END nFineCode[20]
+  PIN FineCode[19]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 171.640 23.055 171.920 ;
+    END
+  END FineCode[19]
+  PIN nFineCode[18]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 169.960 23.055 170.240 ;
+    END
+  END nFineCode[18]
+  PIN BIT0[2]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 145.600 24.340 146.100 ;
+    END
+  END BIT0[2]
+  PIN PowerDown[2]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 148.960 24.340 149.460 ;
+    END
+  END PowerDown[2]
+  PIN PBiasEn[2]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 148.120 24.340 148.620 ;
+    END
+  END PBiasEn[2]
+  PIN NBiasEn[2]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 147.280 24.340 147.780 ;
+    END
+  END NBiasEn[2]
+  PIN BiasDisabled[2]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 146.440 24.340 146.940 ;
+    END
+  END BiasDisabled[2]
+  PIN nLowBiasInterfaceEn[1]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 128.895 20.030 129.365 ;
+    END
+  END nLowBiasInterfaceEn[1]
+  PIN LowBiasInterfaceEn[1]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 123.555 22.445 124.025 ;
+    END
+  END LowBiasInterfaceEn[1]
+  PIN CoarseOneHot[8]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 119.210 25.480 119.630 ;
+    END
+  END CoarseOneHot[8]
+  PIN CoarseOneHot[9]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 118.370 25.480 118.790 ;
+    END
+  END CoarseOneHot[9]
+  PIN CoarseOneHot[10]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 117.530 25.480 117.950 ;
+    END
+  END CoarseOneHot[10]
+  PIN CoarseOneHot[11]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 116.690 25.480 117.110 ;
+    END
+  END CoarseOneHot[11]
+  PIN CoarseOneHot[15]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 113.330 25.480 113.750 ;
+    END
+  END CoarseOneHot[15]
+  PIN CoarseOneHot[12]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 115.850 25.480 116.270 ;
+    END
+  END CoarseOneHot[12]
+  PIN CoarseOneHot[13]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 115.010 25.480 115.430 ;
+    END
+  END CoarseOneHot[13]
+  PIN CoarseOneHot[14]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 114.170 25.480 114.590 ;
+    END
+  END CoarseOneHot[14]
+  PIN CoarseOneHotLowBiasEn[1]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 106.610 24.340 107.030 ;
+    END
+  END CoarseOneHotLowBiasEn[1]
+  PIN FineCode[15]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 103.040 23.055 103.320 ;
+    END
+  END FineCode[15]
+  PIN nFineCode[15]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 102.480 23.055 102.760 ;
+    END
+  END nFineCode[15]
+  PIN FineCode[14]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 101.920 23.055 102.200 ;
+    END
+  END FineCode[14]
+  PIN nFineCode[14]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 101.360 23.055 101.640 ;
+    END
+  END nFineCode[14]
+  PIN FineCode[13]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 100.800 23.055 101.080 ;
+    END
+  END FineCode[13]
+  PIN nFineCode[13]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 100.240 23.055 100.520 ;
+    END
+  END nFineCode[13]
+  PIN nFineCode[8]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 94.640 23.055 94.920 ;
+    END
+  END nFineCode[8]
+  PIN FineCode[8]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 95.200 23.055 95.480 ;
+    END
+  END FineCode[8]
+  PIN nFineCode[9]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 95.760 23.055 96.040 ;
+    END
+  END nFineCode[9]
+  PIN FineCode[9]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 96.320 23.055 96.600 ;
+    END
+  END FineCode[9]
+  PIN nFineCode[11]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 98.000 23.055 98.280 ;
+    END
+  END nFineCode[11]
+  PIN FineCode[10]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 97.440 23.055 97.720 ;
+    END
+  END FineCode[10]
+  PIN FineCode[12]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 99.680 23.055 99.960 ;
+    END
+  END FineCode[12]
+  PIN nFineCode[12]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 99.120 23.055 99.400 ;
+    END
+  END nFineCode[12]
+  PIN FineCode[11]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 98.560 23.055 98.840 ;
+    END
+  END FineCode[11]
+  PIN nFineCode[10]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 96.880 23.055 97.160 ;
+    END
+  END nFineCode[10]
+  PIN BIT0[1]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 72.520 24.340 73.020 ;
+    END
+  END BIT0[1]
+  PIN PowerDown[1]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 75.880 24.340 76.380 ;
+    END
+  END PowerDown[1]
+  PIN PBiasEn[1]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 75.040 24.340 75.540 ;
+    END
+  END PBiasEn[1]
+  PIN NBiasEn[1]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 74.200 24.340 74.700 ;
+    END
+  END NBiasEn[1]
+  PIN BiasDisabled[1]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 73.360 24.340 73.860 ;
+    END
+  END BiasDisabled[1]
+  PIN nLowBiasInterfaceEn[0]
+    ANTENNAGATEAREA 32.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 55.815 20.030 56.285 ;
+    END
+  END nLowBiasInterfaceEn[0]
+  PIN LowBiasInterfaceEn[0]
+    ANTENNAGATEAREA 256.401001 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 50.475 22.445 50.945 ;
+    END
+  END LowBiasInterfaceEn[0]
+  PIN CoarseOneHot[0]
+    ANTENNAGATEAREA 0.382500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 46.130 25.480 46.550 ;
+    END
+  END CoarseOneHot[0]
+  PIN CoarseOneHot[1]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 45.290 25.480 45.710 ;
+    END
+  END CoarseOneHot[1]
+  PIN CoarseOneHot[2]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 44.450 25.480 44.870 ;
+    END
+  END CoarseOneHot[2]
+  PIN CoarseOneHot[3]
+    ANTENNAGATEAREA 2.082500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 43.610 25.480 44.030 ;
+    END
+  END CoarseOneHot[3]
+  PIN CoarseOneHot[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 40.250 25.480 40.670 ;
+    END
+  END CoarseOneHot[7]
+  PIN CoarseOneHot[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 42.770 25.480 43.190 ;
+    END
+  END CoarseOneHot[4]
+  PIN CoarseOneHot[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 41.930 25.480 42.350 ;
+    END
+  END CoarseOneHot[5]
+  PIN CoarseOneHot[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 41.090 25.480 41.510 ;
+    END
+  END CoarseOneHot[6]
+  PIN CoarseOneHotLowBiasEn[0]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 33.530 24.340 33.950 ;
+    END
+  END CoarseOneHotLowBiasEn[0]
+  PIN FineCode[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 29.960 23.055 30.240 ;
+    END
+  END FineCode[7]
+  PIN nFineCode[7]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 29.400 23.055 29.680 ;
+    END
+  END nFineCode[7]
+  PIN FineCode[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 28.840 23.055 29.120 ;
+    END
+  END FineCode[6]
+  PIN nFineCode[6]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 28.280 23.055 28.560 ;
+    END
+  END nFineCode[6]
+  PIN FineCode[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 27.720 23.055 28.000 ;
+    END
+  END FineCode[5]
+  PIN nFineCode[5]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 27.160 23.055 27.440 ;
+    END
+  END nFineCode[5]
+  PIN nFineCode[0]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 21.560 23.055 21.840 ;
+    END
+  END nFineCode[0]
+  PIN FineCode[0]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 22.120 23.055 22.400 ;
+    END
+  END FineCode[0]
+  PIN nFineCode[1]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 22.680 23.055 22.960 ;
+    END
+  END nFineCode[1]
+  PIN FineCode[1]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 23.240 23.055 23.520 ;
+    END
+  END FineCode[1]
+  PIN nFineCode[3]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 24.920 23.055 25.200 ;
+    END
+  END nFineCode[3]
+  PIN FineCode[2]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 24.360 23.055 24.640 ;
+    END
+  END FineCode[2]
+  PIN FineCode[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 26.600 23.055 26.880 ;
+    END
+  END FineCode[4]
+  PIN nFineCode[4]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 26.040 23.055 26.320 ;
+    END
+  END nFineCode[4]
+  PIN FineCode[3]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 25.480 23.055 25.760 ;
+    END
+  END FineCode[3]
+  PIN nFineCode[2]
+    ANTENNAGATEAREA 1.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 23.800 23.055 24.080 ;
+    END
+  END nFineCode[2]
+  PIN VMasterBiasN
+    ANTENNAGATEAREA 3000.000000 ;
+    ANTENNADIFFAREA 66.779999 ;
+    PORT
+      LAYER met2 ;
+        RECT 196.635 437.590 212.425 438.490 ;
+    END
+  END VMasterBiasN
+  PIN rx
+    ANTENNADIFFAREA 84.799995 ;
+    PORT
+      LAYER met2 ;
+        RECT 196.635 439.260 212.425 440.160 ;
+    END
+  END rx
+  PIN BIT0[0]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 -0.560 24.340 -0.060 ;
+    END
+  END BIT0[0]
+  PIN PowerDown[0]
+    ANTENNAGATEAREA 2.615000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 2.800 24.340 3.300 ;
+    END
+  END PowerDown[0]
+  PIN PBiasEn[0]
+    ANTENNAGATEAREA 2.246000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1.960 24.340 2.460 ;
+    END
+  END PBiasEn[0]
+  PIN NBiasEn[0]
+    ANTENNAGATEAREA 2.120000 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 1.120 24.340 1.620 ;
+    END
+  END NBiasEn[0]
+  PIN BiasDisabled[0]
+    ANTENNAGATEAREA 0.247500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.200 0.280 24.340 0.780 ;
+    END
+  END BiasDisabled[0]
+  OBS
+      LAYER nwell ;
+        RECT 20.995 6.100 205.760 1020.250 ;
+      LAYER li1 ;
+        RECT 21.305 6.870 206.070 1020.030 ;
+      LAYER met1 ;
+        RECT 15.495 -0.580 208.970 1022.130 ;
+      LAYER met2 ;
+        RECT 12.740 1019.640 205.270 1021.840 ;
+        RECT 13.160 1017.240 205.270 1019.640 ;
+        RECT 12.740 1016.880 205.270 1017.240 ;
+        RECT 14.615 1014.480 205.270 1016.880 ;
+        RECT 12.740 1006.605 205.270 1014.480 ;
+        RECT 20.310 1005.575 205.270 1006.605 ;
+        RECT 12.740 1001.265 205.270 1005.575 ;
+        RECT 22.725 1000.235 205.270 1001.265 ;
+        RECT 12.740 996.870 205.270 1000.235 ;
+        RECT 25.760 990.850 205.270 996.870 ;
+        RECT 25.760 990.010 174.520 990.850 ;
+        RECT 12.740 987.425 174.520 990.010 ;
+        RECT 12.740 984.270 205.270 987.425 ;
+        RECT 24.620 983.290 205.270 984.270 ;
+        RECT 12.740 980.560 205.270 983.290 ;
+        RECT 23.335 971.320 205.270 980.560 ;
+        RECT 12.740 953.620 205.270 971.320 ;
+        RECT 24.620 949.200 205.270 953.620 ;
+        RECT 12.740 933.525 205.270 949.200 ;
+        RECT 20.310 932.495 205.270 933.525 ;
+        RECT 12.740 928.185 205.270 932.495 ;
+        RECT 22.725 927.155 205.270 928.185 ;
+        RECT 12.740 923.790 205.270 927.155 ;
+        RECT 25.760 917.770 205.270 923.790 ;
+        RECT 25.760 916.930 174.520 917.770 ;
+        RECT 12.740 914.345 174.520 916.930 ;
+        RECT 12.740 911.190 205.270 914.345 ;
+        RECT 24.620 910.210 205.270 911.190 ;
+        RECT 12.740 907.480 205.270 910.210 ;
+        RECT 23.335 898.240 205.270 907.480 ;
+        RECT 12.740 880.540 205.270 898.240 ;
+        RECT 24.620 876.120 205.270 880.540 ;
+        RECT 12.740 860.445 205.270 876.120 ;
+        RECT 20.310 859.415 205.270 860.445 ;
+        RECT 12.740 855.105 205.270 859.415 ;
+        RECT 22.725 854.075 205.270 855.105 ;
+        RECT 12.740 850.710 205.270 854.075 ;
+        RECT 25.760 844.690 205.270 850.710 ;
+        RECT 25.760 843.850 174.520 844.690 ;
+        RECT 12.740 841.265 174.520 843.850 ;
+        RECT 12.740 838.110 205.270 841.265 ;
+        RECT 24.620 837.130 205.270 838.110 ;
+        RECT 12.740 834.400 205.270 837.130 ;
+        RECT 23.335 825.160 205.270 834.400 ;
+        RECT 12.740 807.460 205.270 825.160 ;
+        RECT 24.620 803.040 205.270 807.460 ;
+        RECT 12.740 787.365 205.270 803.040 ;
+        RECT 20.310 786.335 205.270 787.365 ;
+        RECT 12.740 782.025 205.270 786.335 ;
+        RECT 22.725 780.995 205.270 782.025 ;
+        RECT 12.740 777.630 205.270 780.995 ;
+        RECT 25.760 771.610 205.270 777.630 ;
+        RECT 25.760 770.770 174.520 771.610 ;
+        RECT 12.740 768.185 174.520 770.770 ;
+        RECT 12.740 765.030 205.270 768.185 ;
+        RECT 24.620 764.050 205.270 765.030 ;
+        RECT 12.740 761.320 205.270 764.050 ;
+        RECT 23.335 752.080 205.270 761.320 ;
+        RECT 12.740 734.380 205.270 752.080 ;
+        RECT 24.620 729.960 205.270 734.380 ;
+        RECT 12.740 714.285 205.270 729.960 ;
+        RECT 20.310 713.255 205.270 714.285 ;
+        RECT 12.740 708.945 205.270 713.255 ;
+        RECT 22.725 707.915 205.270 708.945 ;
+        RECT 12.740 704.550 205.270 707.915 ;
+        RECT 25.760 698.530 205.270 704.550 ;
+        RECT 25.760 697.690 174.520 698.530 ;
+        RECT 12.740 695.105 174.520 697.690 ;
+        RECT 12.740 691.950 205.270 695.105 ;
+        RECT 24.620 690.970 205.270 691.950 ;
+        RECT 12.740 688.240 205.270 690.970 ;
+        RECT 23.335 679.000 205.270 688.240 ;
+        RECT 12.740 661.300 205.270 679.000 ;
+        RECT 24.620 656.880 205.270 661.300 ;
+        RECT 12.740 641.205 205.270 656.880 ;
+        RECT 20.310 640.175 205.270 641.205 ;
+        RECT 12.740 635.865 205.270 640.175 ;
+        RECT 22.725 634.835 205.270 635.865 ;
+        RECT 12.740 631.470 205.270 634.835 ;
+        RECT 25.760 624.610 205.270 631.470 ;
+        RECT 12.740 618.870 205.270 624.610 ;
+        RECT 24.620 617.890 205.270 618.870 ;
+        RECT 12.740 615.160 205.270 617.890 ;
+        RECT 23.335 605.920 205.270 615.160 ;
+        RECT 12.740 511.920 205.270 605.920 ;
+        RECT 12.740 510.460 203.900 511.920 ;
+        RECT 12.740 470.790 205.270 510.460 ;
+        RECT 64.035 469.230 205.270 470.790 ;
+        RECT 12.740 460.935 205.270 469.230 ;
+        RECT 17.360 459.155 205.270 460.935 ;
+        RECT 12.740 458.715 205.270 459.155 ;
+        RECT 17.730 456.935 205.270 458.715 ;
+        RECT 12.740 456.495 205.270 456.935 ;
+        RECT 18.280 454.715 205.270 456.495 ;
+        RECT 12.740 454.275 205.270 454.715 ;
+        RECT 18.740 452.495 205.270 454.275 ;
+        RECT 12.740 452.055 205.270 452.495 ;
+        RECT 19.200 450.275 205.270 452.055 ;
+        RECT 12.740 449.835 205.270 450.275 ;
+        RECT 19.570 448.055 205.270 449.835 ;
+        RECT 12.740 447.615 205.270 448.055 ;
+        RECT 20.120 445.835 205.270 447.615 ;
+        RECT 12.740 445.395 205.270 445.835 ;
+        RECT 20.580 443.615 205.270 445.395 ;
+        RECT 12.740 440.440 205.270 443.615 ;
+        RECT 12.740 438.980 196.355 440.440 ;
+        RECT 12.740 438.770 205.270 438.980 ;
+        RECT 12.740 437.310 196.355 438.770 ;
+        RECT 12.740 421.965 205.270 437.310 ;
+        RECT 20.310 420.935 205.270 421.965 ;
+        RECT 12.740 416.625 205.270 420.935 ;
+        RECT 22.725 415.595 205.270 416.625 ;
+        RECT 12.740 412.230 205.270 415.595 ;
+        RECT 25.760 406.210 205.270 412.230 ;
+        RECT 25.760 405.370 174.520 406.210 ;
+        RECT 12.740 402.785 174.520 405.370 ;
+        RECT 12.740 399.630 205.270 402.785 ;
+        RECT 24.620 398.650 205.270 399.630 ;
+        RECT 12.740 395.920 205.270 398.650 ;
+        RECT 23.335 386.680 205.270 395.920 ;
+        RECT 12.740 368.980 205.270 386.680 ;
+        RECT 24.620 364.560 205.270 368.980 ;
+        RECT 12.740 348.885 205.270 364.560 ;
+        RECT 20.310 347.855 205.270 348.885 ;
+        RECT 12.740 343.545 205.270 347.855 ;
+        RECT 22.725 342.515 205.270 343.545 ;
+        RECT 12.740 339.150 205.270 342.515 ;
+        RECT 25.760 333.130 205.270 339.150 ;
+        RECT 25.760 332.290 174.520 333.130 ;
+        RECT 12.740 329.705 174.520 332.290 ;
+        RECT 12.740 326.550 205.270 329.705 ;
+        RECT 24.620 325.570 205.270 326.550 ;
+        RECT 12.740 322.840 205.270 325.570 ;
+        RECT 23.335 313.600 205.270 322.840 ;
+        RECT 12.740 295.900 205.270 313.600 ;
+        RECT 24.620 291.480 205.270 295.900 ;
+        RECT 12.740 275.805 205.270 291.480 ;
+        RECT 20.310 274.775 205.270 275.805 ;
+        RECT 12.740 270.465 205.270 274.775 ;
+        RECT 22.725 269.435 205.270 270.465 ;
+        RECT 12.740 266.070 205.270 269.435 ;
+        RECT 25.760 260.050 205.270 266.070 ;
+        RECT 25.760 259.210 174.520 260.050 ;
+        RECT 12.740 256.625 174.520 259.210 ;
+        RECT 12.740 253.470 205.270 256.625 ;
+        RECT 24.620 252.490 205.270 253.470 ;
+        RECT 12.740 249.760 205.270 252.490 ;
+        RECT 23.335 240.520 205.270 249.760 ;
+        RECT 12.740 222.820 205.270 240.520 ;
+        RECT 24.620 218.400 205.270 222.820 ;
+        RECT 12.740 202.725 205.270 218.400 ;
+        RECT 20.310 201.695 205.270 202.725 ;
+        RECT 12.740 197.385 205.270 201.695 ;
+        RECT 22.725 196.355 205.270 197.385 ;
+        RECT 12.740 192.990 205.270 196.355 ;
+        RECT 25.760 186.970 205.270 192.990 ;
+        RECT 25.760 186.130 174.520 186.970 ;
+        RECT 12.740 183.545 174.520 186.130 ;
+        RECT 12.740 180.390 205.270 183.545 ;
+        RECT 24.620 179.410 205.270 180.390 ;
+        RECT 12.740 176.680 205.270 179.410 ;
+        RECT 23.335 167.440 205.270 176.680 ;
+        RECT 12.740 149.740 205.270 167.440 ;
+        RECT 24.620 145.320 205.270 149.740 ;
+        RECT 12.740 129.645 205.270 145.320 ;
+        RECT 20.310 128.615 205.270 129.645 ;
+        RECT 12.740 124.305 205.270 128.615 ;
+        RECT 22.725 123.275 205.270 124.305 ;
+        RECT 12.740 119.910 205.270 123.275 ;
+        RECT 25.760 113.890 205.270 119.910 ;
+        RECT 25.760 113.050 174.520 113.890 ;
+        RECT 12.740 110.465 174.520 113.050 ;
+        RECT 12.740 107.310 205.270 110.465 ;
+        RECT 24.620 106.330 205.270 107.310 ;
+        RECT 12.740 103.600 205.270 106.330 ;
+        RECT 23.335 94.360 205.270 103.600 ;
+        RECT 12.740 76.660 205.270 94.360 ;
+        RECT 24.620 72.240 205.270 76.660 ;
+        RECT 12.740 56.565 205.270 72.240 ;
+        RECT 20.310 55.535 205.270 56.565 ;
+        RECT 12.740 51.225 205.270 55.535 ;
+        RECT 22.725 50.195 205.270 51.225 ;
+        RECT 12.740 46.830 205.270 50.195 ;
+        RECT 25.760 40.810 205.270 46.830 ;
+        RECT 25.760 39.970 174.520 40.810 ;
+        RECT 12.740 37.385 174.520 39.970 ;
+        RECT 12.740 34.230 205.270 37.385 ;
+        RECT 24.620 33.250 205.270 34.230 ;
+        RECT 12.740 30.520 205.270 33.250 ;
+        RECT 23.335 21.280 205.270 30.520 ;
+        RECT 12.740 3.580 205.270 21.280 ;
+        RECT 24.620 -0.560 205.270 3.580 ;
+      LAYER met3 ;
+        RECT 29.695 -0.560 193.700 1021.885 ;
+      LAYER met4 ;
+        RECT 26.000 5.440 146.390 971.485 ;
+  END
+END BiasBranchnMasterx11
+END LIBRARY
+

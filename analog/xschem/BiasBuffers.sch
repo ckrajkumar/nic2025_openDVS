@@ -650,17 +650,11 @@ spiceprefix=X
 }
 C {ipin.sym} 950 -20 0 0 {name=p75 lab=BIT0}
 C {iopin.sym} 950 -250 2 0 {name=p62 lab=PadBias}
-C {sky130_fd_sc_hd__and2_1.sym} 1930 370 3 0 {name=x1}
-C {sky130_fd_sc_hd__nor2_1.sym} 1360 660 0 0 {name=x2}
-C {sky130_fd_sc_hd__inv_1.sym} 1340 400 0 0 {name=x3}
-C {sky130_fd_sc_hd__inv_1.sym} 1630 400 0 0 {name=x4}
 C {lab_wire.sym} 1240 400 0 1 {name=p22 sig_type=std_logic lab=BIT0}
 C {lab_wire.sym} 1550 390 0 1 {name=p28 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1440 410 2 0 {name=p29 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 1690 400 0 1 {name=p46 sig_type=std_logic lab=B0}
 C {lab_wire.sym} 1500 400 0 1 {name=p48 sig_type=std_logic lab=nB0}
-C {sky130_fd_sc_hd__inv_1.sym} 1600 660 0 0 {name=x5}
-C {sky130_fd_sc_hd__inv_1.sym} 1340 520 0 0 {name=x6}
 C {lab_wire.sym} 1430 520 0 1 {name=p52 sig_type=std_logic lab=nPowerDown}
 C {lab_wire.sym} 1240 640 0 1 {name=p53 sig_type=std_logic lab=PowerDown}
 C {lab_wire.sym} 1330 510 0 1 {name=p54 sig_type=std_logic lab=VddA18}
@@ -677,3 +671,9 @@ C {lab_wire.sym} 1980 350 2 0 {name=p88 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} 1870 390 2 1 {name=p89 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 1870 350 2 1 {name=p90 sig_type=std_logic lab=VddA18}
 C {ipin.sym} 950 -40 0 0 {name=p45 lab=PowerDown}
+C {sky130_fd_sc_hd__nor2_1.sym} 1360 660 0 0 {name=x6}
+C {sky130_fd_sc_hd__and2_1.sym} 1930 370 3 0 {name=x1}
+C {sky130_fd_sc_hd__inv_1.sym} 1340 400 0 0 {name=x2}
+C {sky130_fd_sc_hd__inv_1.sym} 1630 400 0 0 {name=x3}
+C {sky130_fd_sc_hd__inv_1.sym} 1340 520 0 0 {name=x4}
+C {sky130_fd_sc_hd__inv_1.sym} 1600 660 0 0 {name=x5}

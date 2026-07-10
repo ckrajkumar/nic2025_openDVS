@@ -1,0 +1,1828 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Class BiasMultiplierCell (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+INext                                      |INext                                      
+VGate                                      |VGate                                      
+IPrev                                      |IPrev                                      
+IOut                                       |IOut                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasMultiplierCell and BiasMultiplierCell are equivalent.
+
+Class BiasDividerCell (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+IPrev                                      |IPrev                                      
+VGate                                      |VGate                                      
+INext                                      |INext                                      
+IOut                                       |IOut                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerCell and BiasDividerCell are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Class BiasDividerFineCell (0):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (6->3)         
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+INext                                      |INext                                      
+IOut                                       |IOut                                       
+INOut                                      |INOut                                      
+nSel                                       |nSel                                       
+Sel                                        |Sel                                        
+VddA18                                     |VddA18                                     
+VGate                                      |VGate                                      
+IPrev                                      |IPrev                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerFineCell and BiasDividerFineCell are equivalent.
+
+Cell BiasMultiplier (0) disconnected node: IOut1
+Class BiasMultiplier (0):  Merged 13 parallel devices.
+Cell BiasMultiplier (0) disconnected node: IOut1
+Subcircuit summary:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+BiasMultiplierCell (2)                     |BiasMultiplierCell (2)                     
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+IIn                                        |IIn                                        
+IOut0                                      |IOut0                                      
+BiasMultiplierCell_1/INext                 |VddA18 **Mismatch**                        
+BiasMultiplierCell_1/IOut                  |IOut1 **Mismatch**                         
+GndA                                       |GndA                                       
+IOut1                                      |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasMultiplier and BiasMultiplier altered to match.
+Device classes BiasMultiplier and BiasMultiplier are equivalent.
+
+Class BiasDivider (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+-------------------------------------------|-------------------------------------------
+BiasDividerCell (6)                        |BiasDividerCell (6)                        
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+-------------------------------------------|-------------------------------------------
+VddA18                                     |VddA18                                     
+IIn                                        |IIn                                        
+IOut0                                      |IOut0                                      
+GndA                                       |GndA                                       
+IOut5                                      |IOut5                                      
+IOut1                                      |IOut1                                      
+IOut2                                      |IOut2                                      
+IOut3                                      |IOut3                                      
+IOut4                                      |IOut4                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDivider and BiasDivider are equivalent.
+
+Class BiasCoarseSel8to1 (0):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (41->27)       |sky130_fd_pr__nfet_01v8_lvt (41->27)       
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 51                         |Number of nets: 51                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+CoarseBias                                 |CoarseBias                                 
+BiasCB[0]                                  |BiasCB[0]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+GndA                                       |GndA                                       
+VddA18                                     |VddA18                                     
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseSel8to1 and BiasCoarseSel8to1 are equivalent.
+
+Class BiasCoarseFineInterface (0):  Merged 51 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (42->8)            |sky130_fd_pr__pfet_01v8 (26->8)            
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (6->3)         
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+-------------------------------------------|-------------------------------------------
+GndA                                       |GndA                                       
+LowBiasEn                                  |LowBiasEn                                  
+nLowBiasEn                                 |nLowBiasEn                                 
+VddA18                                     |VddA18                                     
+IOut                                       |IOut                                       
+IIn                                        |IIn                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseFineInterface and BiasCoarseFineInterface are equivalent.
+Flattening unmatched subcell scs130hd_nor2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell scs130hd_inv_1 in circuit BiasBuffers (0)(4 instances)
+Flattening unmatched subcell scs130hd_and2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit BiasBuffers (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit BiasBuffers (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit BiasBuffers (1)(4 instances)
+
+Class BiasBuffers (0):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (9)            |sky130_fd_pr__pfet_01v8_hvt (9)            
+sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
+sky130_fd_pr__pfet_01v8 (11->10)           |sky130_fd_pr__pfet_01v8 (11->10)           
+sky130_fd_pr__nfet_01v8_lvt (27->3)        |sky130_fd_pr__nfet_01v8_lvt (27->3)        
+sky130_fd_pr__pfet_01v8_lvt (9->3)         |sky130_fd_pr__pfet_01v8_lvt (9->3)         
+Number of devices: 45                      |Number of devices: 45                      
+Number of nets: 31                         |Number of nets: 31                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+BufferNBias                                |BufferNBias                                
+BufferPBias                                |BufferPBias                                
+SplitterOutput                             |SplitterOutput                             
+PBiasEnabled                               |PBiasEnabled                               
+VBiasOut                                   |VBiasOut                                   
+PowerDown                                  |PowerDown                                  
+NBiasEnabled                               |NBiasEnabled                               
+PadBias                                    |PadBias                                    
+BiasDisabled                               |BiasDisabled                               
+BIT0                                       |BIT0                                       
+GND                                        |GndA **Mismatch**                          
+VddA18                                     |VddA18                                     
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBuffers and BiasBuffers altered to match.
+Device classes BiasBuffers and BiasBuffers are equivalent.
+
+Class BiasDividerFine (0):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+BiasDividerFineCell (8)                    |BiasDividerFineCell (8)                    
+sky130_fd_pr__pfet_01v8_lvt (2->1)         |sky130_fd_pr__pfet_01v8_lvt (2->1)         
+sky130_fd_pr__nfet_01v8_lvt (1)            |sky130_fd_pr__nfet_01v8_lvt (1)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+IOut                                       |IOut                                       
+nQ0                                        |nFineCode[0] **Mismatch**                  
+nQ1                                        |nFineCode[1] **Mismatch**                  
+nQ2                                        |nFineCode[2] **Mismatch**                  
+nQ3                                        |nFineCode[3] **Mismatch**                  
+nQ4                                        |nFineCode[4] **Mismatch**                  
+nQ5                                        |nFineCode[5] **Mismatch**                  
+nQ6                                        |nFineCode[6] **Mismatch**                  
+Q0                                         |FineCode[0] **Mismatch**                   
+Q1                                         |FineCode[1] **Mismatch**                   
+Q2                                         |FineCode[2] **Mismatch**                   
+Q3                                         |FineCode[3] **Mismatch**                   
+Q4                                         |FineCode[4] **Mismatch**                   
+Q5                                         |FineCode[5] **Mismatch**                   
+Q6                                         |FineCode[6] **Mismatch**                   
+IIn                                        |IIn                                        
+nQ7                                        |nFineCode[7] **Mismatch**                  
+Q7                                         |FineCode[7] **Mismatch**                   
+VGate                                      |VGate                                      
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasDividerFine and BiasDividerFine altered to match.
+Device classes BiasDividerFine and BiasDividerFine are equivalent.
+
+Class BiasMasterBias (0):  Merged 66 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (61->9)        |sky130_fd_pr__nfet_01v8_lvt (61->9)        
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (18->4)            |sky130_fd_pr__pfet_01v8 (18->4)            
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+-------------------------------------------|-------------------------------------------
+BiasPowerDown                              |BiasPowerDown                              
+IR                                         |IR                                         
+ICoarse2                                   |ICoarse2                                   
+ICoarse1                                   |ICoarse1                                   
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+VMasterBiasN                               |VMasterBiasN                               
+VMasterBiasP                               |VMasterBiasP                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasMasterBias and BiasMasterBias are equivalent.
+
+Cell BiasCoarseMBDivider (0) disconnected node: BiasMultiplier_0/IOut1
+Class BiasCoarseMBDivider (0):  Merged 14 parallel devices.
+Cell BiasCoarseMBDivider (0) disconnected node: BiasMultiplier_0/IOut1
+Subcircuit summary:
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+-------------------------------------------|-------------------------------------------
+BiasMultiplier (1)                         |BiasMultiplier (1)                         
+BiasDivider (1)                            |BiasDivider (1)                            
+sky130_fd_pr__nfet_01v8_lvt (64->50)       |sky130_fd_pr__nfet_01v8_lvt (64->50)       
+Number of devices: 52                      |Number of devices: 52                      
+Number of nets: 54                         |Number of nets: 54                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+-------------------------------------------|-------------------------------------------
+BiasCB2                                    |BiasCB2                                    
+BiasCB3                                    |BiasCB3                                    
+BiasCB4                                    |BiasCB4                                    
+BiasCB5                                    |BiasCB5                                    
+BiasCB6                                    |BiasCB6                                    
+BiasCB7                                    |BiasCB7                                    
+GndA                                       |GndA                                       
+ICoarse2                                   |ICoarse2                                   
+ICoarse1                                   |ICoarse1                                   
+VddA18                                     |VddA18                                     
+BiasCB0                                    |BiasCB0                                    
+BiasCB1                                    |BiasCB1                                    
+BiasMultiplier_0/IOut1                     |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseMBDivider and BiasCoarseMBDivider are equivalent.
+
+Subcircuit summary:
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+-------------------------------------------|-------------------------------------------
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+BiasCoarseFineInterface (1)                |BiasCoarseFineInterface (1)                
+BiasBuffers (1)                            |BiasBuffers (1)                            
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 49                         |Number of nets: 49                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+-------------------------------------------|-------------------------------------------
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+LowBiasInterfaceEn                         |LowBiasInterfaceEn                         
+nLowBiasInterfaceEn                        |nLowBiasInterfaceEn                        
+FineCode[7]                                |FineCode[7]                                
+FineCode[6]                                |FineCode[6]                                
+FineCode[5]                                |FineCode[5]                                
+FineCode[4]                                |FineCode[4]                                
+FineCode[3]                                |FineCode[3]                                
+FineCode[2]                                |FineCode[2]                                
+FineCode[1]                                |FineCode[1]                                
+FineCode[0]                                |FineCode[0]                                
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[0]                               |nFineCode[0]                               
+NBiasEn                                    |NBiasEn                                    
+PBiasEn                                    |PBiasEn                                    
+BiasDisable                                |BiasDisabled **Mismatch**                  
+BIT0                                       |BIT0                                       
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+VBiasOut                                   |VBiasOut                                   
+PadBias                                    |PadBias                                    
+PowerDown                                  |PowerDown                                  
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBranch and BiasBranch altered to match.
+Device classes BiasBranch and BiasBranch are equivalent.
+
+Class BiasBranchBuffer (0):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+-------------------------------------------|-------------------------------------------
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+BiasCoarseFineInterface (1)                |BiasCoarseFineInterface (1)                
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+sky130_fd_pr__nfet_01v8_lvt (32->2)        |sky130_fd_pr__nfet_01v8_lvt (32->2)        
+sky130_fd_pr__pfet_01v8_lvt (2->1)         |sky130_fd_pr__pfet_01v8_lvt (2->1)         
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 41                         |Number of nets: 41                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+-------------------------------------------|-------------------------------------------
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+GndA                                       |GndA                                       
+VddA18                                     |VddA18                                     
+LowBiasInterfaceEn                         |LowBiasInterfaceEn                         
+nLowBiasInterfaceEn                        |nLowBiasInterfaceEn                        
+FineCode[7]                                |FineCode[7]                                
+FineCode[6]                                |FineCode[6]                                
+FineCode[5]                                |FineCode[5]                                
+FineCode[4]                                |FineCode[4]                                
+FineCode[3]                                |FineCode[3]                                
+FineCode[2]                                |FineCode[2]                                
+FineCode[1]                                |FineCode[1]                                
+FineCode[0]                                |FineCode[0]                                
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[0]                               |nFineCode[0]                               
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasBranchBuffer and BiasBranchBuffer are equivalent.
+Flattening unmatched subcell BiasMasterCoarse in circuit BiasBranchnMasterx11 (0)(1 instance)
+Flattening unmatched subcell BiasMasternCoarse in circuit BiasBranchnMasterx11 (1)(1 instance)
+
+Cell BiasBranchnMasterx11 (1) disconnected node: Bias
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[0]
+Class BiasBranchnMasterx11 (1):  Merged 3 parallel devices.
+Cell BiasBranchnMasterx11 (1) disconnected node: Bias
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: FineCode_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: nFineCode_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit0[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit1[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit2[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit3[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit4[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit5[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit6[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: CoarseOneHot_bit7[0]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[10]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[9]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[8]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[7]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[6]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[5]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[4]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[3]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[2]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[1]
+Cell BiasBranchnMasterx11 (1) disconnected node: BiasDisable[0]
+Subcircuit summary:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+BiasBranch (11)                            |BiasBranch (11)                            
+BiasBranchBuffer (1)                       |BiasBranchBuffer (1)                       
+BiasMasterBias (1)                         |BiasMasterBias (1)                         
+BiasCoarseMBDivider (1)                    |BiasCoarseMBDivider (1)                    
+(no matching element)                      |sky130_fd_pr__cap_mim_m3_1 (4->1)          
+Number of devices: 14 **Mismatch**         |Number of devices: 15 **Mismatch**         
+Number of nets: 419                        |Number of nets: 419                        
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+
+---------------------------------------------------------------------------------------
+Net: VMasterBiasN                          |Net: VMasterBiasN                          
+  BiasMasterBias/VMasterBiasN = 1          |  BiasMasterBias/VMasterBiasN = 1          
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |                                           
+Net: GndA                                  |Net: GndA                                  
+  BiasBranch/GndA = 11                     |  BiasBranch/GndA = 11                     
+  BiasBranchBuffer/GndA = 1                |  BiasBranchBuffer/GndA = 1                
+  BiasMasterBias/GndA = 1                  |  BiasMasterBias/GndA = 1                  
+  BiasCoarseMBDivider/GndA = 1             |  BiasCoarseMBDivider/GndA = 1             
+                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: BiasMasternCoarse/sky130_fd_pr__ 
+                                           |  1 = 2                                    
+                                           |  2 = 15                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+VMasterBiasN                               |GndA **Mismatch**                          
+PowerDownM                                 |PowerDown **Mismatch**                     
+VMasterBiasP                               |VMasterBiasP                               
+rx                                         |rx                                         
+nFineCodeBuffer[5]                         |nFineCodeBuffer[5]                         
+FineCodeBuffer[5]                          |FineCodeBuffer[5]                          
+FineCodeBuffer[1]                          |FineCodeBuffer[1]                          
+CoarseOneHotBuffer[3]                      |CoarseOneHotBuffer[3]                      
+nFineCodeBuffer[4]                         |nFineCodeBuffer[4]                         
+FineCodeBuffer[4]                          |FineCodeBuffer[4]                          
+CoarseOneHotLowBiasEnBuffer                |CoarseOneHotLowBiasEnBuffer                
+nFineCodeBuffer[3]                         |nFineCodeBuffer[3]                         
+FineCodeBuffer[3]                          |FineCodeBuffer[3]                          
+nFineCodeBuffer[2]                         |nFineCodeBuffer[2]                         
+FineCodeBuffer[2]                          |FineCodeBuffer[2]                          
+nFineCodeBuffer[1]                         |nFineCodeBuffer[1]                         
+nFineCodeBuffer[0]                         |nFineCodeBuffer[0]                         
+FineCodeBuffer[0]                          |FineCodeBuffer[0]                          
+nFineCodeBuffer[6]                         |nFineCodeBuffer[6]                         
+CoarseOneHotBuffer[1]                      |CoarseOneHotBuffer[1]                      
+CoarseOneHotBuffer[5]                      |CoarseOneHotBuffer[5]                      
+LowBiasInterfaceEnBuffer                   |LowBiasInterfaceEnBuffer                   
+CoarseOneHotBuffer[7]                      |CoarseOneHotBuffer[7]                      
+CoarseOneHotBuffer[6]                      |CoarseOneHotBuffer[6]                      
+CoarseOneHotBuffer[2]                      |CoarseOneHotBuffer[2]                      
+nFineCodeBuffer[7]                         |nFineCodeBuffer[7]                         
+CoarseOneHotBuffer[4]                      |CoarseOneHotBuffer[4]                      
+CoarseOneHotBuffer[0]                      |CoarseOneHotBuffer[0]                      
+FineCodeBuffer[7]                          |FineCodeBuffer[7]                          
+nLowBiasInterfaceEnBuffer                  |nLowBiasInterfaceEnBuffer                  
+FineCodeBuffer[6]                          |FineCodeBuffer[6]                          
+nFineCode[77]                              |(no pin, node is nFineCode[85])            
+nFineCode[13]                              |(no pin, node is nFineCode[77])            
+nFineCode[53]                              |(no pin, node is nFineCode[69])            
+nFineCode[61]                              |(no pin, node is nFineCode[61])            
+nFineCode[29]                              |(no pin, node is nFineCode[53])            
+nFineCode[21]                              |(no pin, node is nFineCode[45])            
+nFineCode[37]                              |(no pin, node is nFineCode[37])            
+nFineCode[45]                              |(no pin, node is nFineCode[29])            
+nFineCode[5]                               |(no pin, node is nFineCode[21])            
+nFineCode[69]                              |(no pin, node is nFineCode[13])            
+nFineCode[85]                              |(no pin, node is nFineCode[5])             
+FineCode[77]                               |(no pin, node is FineCode[85])             
+FineCode[13]                               |(no pin, node is FineCode[77])             
+FineCode[53]                               |(no pin, node is FineCode[69])             
+FineCode[61]                               |(no pin, node is FineCode[61])             
+FineCode[29]                               |(no pin, node is FineCode[53])             
+FineCode[21]                               |(no pin, node is FineCode[45])             
+FineCode[37]                               |(no pin, node is FineCode[37])             
+FineCode[45]                               |(no pin, node is FineCode[29])             
+FineCode[5]                                |(no pin, node is FineCode[21])             
+FineCode[69]                               |(no pin, node is FineCode[13])             
+FineCode[85]                               |(no pin, node is FineCode[5])              
+nFineCode[79]                              |(no pin, node is nFineCode[87])            
+nFineCode[15]                              |(no pin, node is nFineCode[79])            
+nFineCode[55]                              |(no pin, node is nFineCode[71])            
+nFineCode[63]                              |(no pin, node is nFineCode[63])            
+nFineCode[31]                              |(no pin, node is nFineCode[55])            
+nFineCode[23]                              |(no pin, node is nFineCode[47])            
+nFineCode[39]                              |(no pin, node is nFineCode[39])            
+nFineCode[47]                              |(no pin, node is nFineCode[31])            
+nFineCode[7]                               |(no pin, node is nFineCode[23])            
+nFineCode[71]                              |(no pin, node is nFineCode[15])            
+nFineCode[87]                              |(no pin, node is nFineCode[7])             
+nFineCode[76]                              |(no pin, node is nFineCode[84])            
+nFineCode[12]                              |(no pin, node is nFineCode[76])            
+nFineCode[52]                              |(no pin, node is nFineCode[68])            
+nFineCode[60]                              |(no pin, node is nFineCode[60])            
+nFineCode[28]                              |(no pin, node is nFineCode[52])            
+nFineCode[20]                              |(no pin, node is nFineCode[44])            
+nFineCode[36]                              |(no pin, node is nFineCode[36])            
+nFineCode[44]                              |(no pin, node is nFineCode[28])            
+nFineCode[4]                               |(no pin, node is nFineCode[20])            
+nFineCode[68]                              |(no pin, node is nFineCode[12])            
+nFineCode[84]                              |(no pin, node is nFineCode[4])             
+FineCode[76]                               |(no pin, node is FineCode[84])             
+FineCode[12]                               |(no pin, node is FineCode[76])             
+FineCode[52]                               |(no pin, node is FineCode[68])             
+FineCode[60]                               |(no pin, node is FineCode[60])             
+FineCode[28]                               |(no pin, node is FineCode[52])             
+FineCode[20]                               |(no pin, node is FineCode[44])             
+FineCode[36]                               |(no pin, node is FineCode[36])             
+FineCode[44]                               |(no pin, node is FineCode[28])             
+FineCode[4]                                |(no pin, node is FineCode[20])             
+FineCode[68]                               |(no pin, node is FineCode[12])             
+FineCode[84]                               |(no pin, node is FineCode[4])              
+nLowBiasInterfaceEn[9]                     |nLowBiasInterfaceEn[10] **Mismatch**       
+nLowBiasInterfaceEn[1]                     |nLowBiasInterfaceEn[9] **Mismatch**        
+nLowBiasInterfaceEn[6]                     |nLowBiasInterfaceEn[8] **Mismatch**        
+nLowBiasInterfaceEn[7]                     |nLowBiasInterfaceEn[7]                     
+nLowBiasInterfaceEn[3]                     |nLowBiasInterfaceEn[6] **Mismatch**        
+nLowBiasInterfaceEn[2]                     |nLowBiasInterfaceEn[5] **Mismatch**        
+nLowBiasInterfaceEn[4]                     |nLowBiasInterfaceEn[4]                     
+nLowBiasInterfaceEn[5]                     |nLowBiasInterfaceEn[3] **Mismatch**        
+nLowBiasInterfaceEn[0]                     |nLowBiasInterfaceEn[2] **Mismatch**        
+nLowBiasInterfaceEn[8]                     |nLowBiasInterfaceEn[1] **Mismatch**        
+nLowBiasInterfaceEn[10]                    |nLowBiasInterfaceEn[0] **Mismatch**        
+CoarseOneHotLowBiasEn[9]                   |CoarseOneHotLowBiasEn[10] **Mismatch**     
+CoarseOneHotLowBiasEn[1]                   |CoarseOneHotLowBiasEn[9] **Mismatch**      
+CoarseOneHotLowBiasEn[6]                   |CoarseOneHotLowBiasEn[8] **Mismatch**      
+CoarseOneHotLowBiasEn[7]                   |CoarseOneHotLowBiasEn[7]                   
+CoarseOneHotLowBiasEn[3]                   |CoarseOneHotLowBiasEn[6] **Mismatch**      
+CoarseOneHotLowBiasEn[2]                   |CoarseOneHotLowBiasEn[5] **Mismatch**      
+CoarseOneHotLowBiasEn[4]                   |CoarseOneHotLowBiasEn[4]                   
+CoarseOneHotLowBiasEn[5]                   |CoarseOneHotLowBiasEn[3] **Mismatch**      
+CoarseOneHotLowBiasEn[0]                   |CoarseOneHotLowBiasEn[2] **Mismatch**      
+CoarseOneHotLowBiasEn[8]                   |CoarseOneHotLowBiasEn[1] **Mismatch**      
+CoarseOneHotLowBiasEn[10]                  |CoarseOneHotLowBiasEn[0] **Mismatch**      
+Bias[9]                                    |(no pin, node is Bias[10])                 
+Bias[1]                                    |(no pin, node is Bias[9])                  
+Bias[6]                                    |(no pin, node is Bias[8])                  
+Bias[7]                                    |(no pin, node is Bias[7])                  
+Bias[3]                                    |(no pin, node is Bias[6])                  
+Bias[2]                                    |(no pin, node is Bias[5])                  
+Bias[4]                                    |(no pin, node is Bias[4])                  
+Bias[5]                                    |(no pin, node is Bias[3])                  
+Bias[0]                                    |(no pin, node is Bias[2])                  
+Bias[8]                                    |(no pin, node is Bias[1])                  
+Bias[10]                                   |(no pin, node is Bias[0])                  
+nFineCode[75]                              |(no pin, node is nFineCode[83])            
+nFineCode[11]                              |(no pin, node is nFineCode[75])            
+nFineCode[51]                              |(no pin, node is nFineCode[67])            
+nFineCode[59]                              |(no pin, node is nFineCode[59])            
+nFineCode[27]                              |(no pin, node is nFineCode[51])            
+nFineCode[19]                              |(no pin, node is nFineCode[43])            
+nFineCode[35]                              |(no pin, node is nFineCode[35])            
+nFineCode[43]                              |(no pin, node is nFineCode[27])            
+nFineCode[3]                               |(no pin, node is nFineCode[19])            
+nFineCode[67]                              |(no pin, node is nFineCode[11])            
+nFineCode[83]                              |(no pin, node is nFineCode[3])             
+FineCode[75]                               |(no pin, node is FineCode[83])             
+FineCode[11]                               |(no pin, node is FineCode[75])             
+FineCode[51]                               |(no pin, node is FineCode[67])             
+FineCode[59]                               |(no pin, node is FineCode[59])             
+FineCode[27]                               |(no pin, node is FineCode[51])             
+FineCode[19]                               |(no pin, node is FineCode[43])             
+FineCode[35]                               |(no pin, node is FineCode[35])             
+FineCode[43]                               |(no pin, node is FineCode[27])             
+FineCode[3]                                |(no pin, node is FineCode[19])             
+FineCode[67]                               |(no pin, node is FineCode[11])             
+FineCode[83]                               |(no pin, node is FineCode[3])              
+nFineCode[74]                              |(no pin, node is nFineCode[82])            
+nFineCode[10]                              |(no pin, node is nFineCode[74])            
+nFineCode[50]                              |(no pin, node is nFineCode[66])            
+nFineCode[58]                              |(no pin, node is nFineCode[58])            
+nFineCode[26]                              |(no pin, node is nFineCode[50])            
+nFineCode[18]                              |(no pin, node is nFineCode[42])            
+nFineCode[34]                              |(no pin, node is nFineCode[34])            
+nFineCode[42]                              |(no pin, node is nFineCode[26])            
+nFineCode[2]                               |(no pin, node is nFineCode[18])            
+nFineCode[66]                              |(no pin, node is nFineCode[10])            
+nFineCode[82]                              |(no pin, node is nFineCode[2])             
+FineCode[74]                               |(no pin, node is FineCode[82])             
+FineCode[10]                               |(no pin, node is FineCode[74])             
+FineCode[50]                               |(no pin, node is FineCode[66])             
+FineCode[58]                               |(no pin, node is FineCode[58])             
+FineCode[26]                               |(no pin, node is FineCode[50])             
+FineCode[18]                               |(no pin, node is FineCode[42])             
+FineCode[34]                               |(no pin, node is FineCode[34])             
+FineCode[42]                               |(no pin, node is FineCode[26])             
+FineCode[2]                                |(no pin, node is FineCode[18])             
+FineCode[66]                               |(no pin, node is FineCode[10])             
+FineCode[82]                               |(no pin, node is FineCode[2])              
+nFineCode[73]                              |(no pin, node is nFineCode[81])            
+nFineCode[9]                               |(no pin, node is nFineCode[73])            
+nFineCode[49]                              |(no pin, node is nFineCode[65])            
+nFineCode[57]                              |(no pin, node is nFineCode[57])            
+nFineCode[25]                              |(no pin, node is nFineCode[49])            
+nFineCode[17]                              |(no pin, node is nFineCode[41])            
+nFineCode[33]                              |(no pin, node is nFineCode[33])            
+nFineCode[41]                              |(no pin, node is nFineCode[25])            
+nFineCode[1]                               |(no pin, node is nFineCode[17])            
+nFineCode[65]                              |(no pin, node is nFineCode[9])             
+nFineCode[81]                              |(no pin, node is nFineCode[1])             
+FineCode[72]                               |(no pin, node is FineCode[80])             
+FineCode[8]                                |(no pin, node is FineCode[72])             
+FineCode[48]                               |(no pin, node is FineCode[64])             
+FineCode[56]                               |(no pin, node is FineCode[56])             
+FineCode[24]                               |(no pin, node is FineCode[48])             
+FineCode[16]                               |(no pin, node is FineCode[40])             
+FineCode[32]                               |(no pin, node is FineCode[32])             
+FineCode[40]                               |(no pin, node is FineCode[24])             
+FineCode[0]                                |(no pin, node is FineCode[16])             
+FineCode[64]                               |(no pin, node is FineCode[8])              
+FineCode[80]                               |(no pin, node is FineCode[0])              
+FineCode[73]                               |(no pin, node is FineCode[81])             
+FineCode[9]                                |(no pin, node is FineCode[73])             
+FineCode[49]                               |(no pin, node is FineCode[65])             
+FineCode[57]                               |(no pin, node is FineCode[57])             
+FineCode[25]                               |(no pin, node is FineCode[49])             
+FineCode[17]                               |(no pin, node is FineCode[41])             
+FineCode[33]                               |(no pin, node is FineCode[33])             
+FineCode[41]                               |(no pin, node is FineCode[25])             
+FineCode[1]                                |(no pin, node is FineCode[17])             
+FineCode[65]                               |(no pin, node is FineCode[9])              
+FineCode[81]                               |(no pin, node is FineCode[1])              
+nFineCode[72]                              |(no pin, node is nFineCode[80])            
+nFineCode[8]                               |(no pin, node is nFineCode[72])            
+nFineCode[48]                              |(no pin, node is nFineCode[64])            
+nFineCode[56]                              |(no pin, node is nFineCode[56])            
+nFineCode[24]                              |(no pin, node is nFineCode[48])            
+nFineCode[16]                              |(no pin, node is nFineCode[40])            
+nFineCode[32]                              |(no pin, node is nFineCode[32])            
+nFineCode[40]                              |(no pin, node is nFineCode[24])            
+nFineCode[0]                               |(no pin, node is nFineCode[16])            
+nFineCode[64]                              |(no pin, node is nFineCode[8])             
+nFineCode[80]                              |(no pin, node is nFineCode[0])             
+CoarseOneHot[76]                           |(no pin, node is CoarseOneHot[84])         
+CoarseOneHot[12]                           |(no pin, node is CoarseOneHot[76])         
+CoarseOneHot[52]                           |(no pin, node is CoarseOneHot[68])         
+CoarseOneHot[60]                           |(no pin, node is CoarseOneHot[60])         
+CoarseOneHot[28]                           |(no pin, node is CoarseOneHot[52])         
+CoarseOneHot[20]                           |(no pin, node is CoarseOneHot[44])         
+CoarseOneHot[36]                           |(no pin, node is CoarseOneHot[36])         
+CoarseOneHot[44]                           |(no pin, node is CoarseOneHot[28])         
+CoarseOneHot[4]                            |(no pin, node is CoarseOneHot[20])         
+CoarseOneHot[68]                           |(no pin, node is CoarseOneHot[12])         
+CoarseOneHot[84]                           |(no pin, node is CoarseOneHot[4])          
+PadBias[9]                                 |PadBias[10] **Mismatch**                   
+PadBias[1]                                 |PadBias[9] **Mismatch**                    
+PadBias[6]                                 |PadBias[8] **Mismatch**                    
+PadBias[7]                                 |PadBias[7]                                 
+PadBias[3]                                 |PadBias[6] **Mismatch**                    
+PadBias[2]                                 |PadBias[5] **Mismatch**                    
+PadBias[4]                                 |PadBias[4]                                 
+PadBias[5]                                 |PadBias[3] **Mismatch**                    
+PadBias[0]                                 |PadBias[2] **Mismatch**                    
+PadBias[8]                                 |PadBias[1] **Mismatch**                    
+PadBias[10]                                |PadBias[0] **Mismatch**                    
+CoarseOneHot[78]                           |(no pin, node is CoarseOneHot[86])         
+CoarseOneHot[14]                           |(no pin, node is CoarseOneHot[78])         
+CoarseOneHot[54]                           |(no pin, node is CoarseOneHot[70])         
+CoarseOneHot[62]                           |(no pin, node is CoarseOneHot[62])         
+CoarseOneHot[30]                           |(no pin, node is CoarseOneHot[54])         
+CoarseOneHot[22]                           |(no pin, node is CoarseOneHot[46])         
+CoarseOneHot[38]                           |(no pin, node is CoarseOneHot[38])         
+CoarseOneHot[46]                           |(no pin, node is CoarseOneHot[30])         
+CoarseOneHot[6]                            |(no pin, node is CoarseOneHot[22])         
+CoarseOneHot[70]                           |(no pin, node is CoarseOneHot[14])         
+CoarseOneHot[86]                           |(no pin, node is CoarseOneHot[6])          
+LowBiasInterfaceEn[9]                      |LowBiasInterfaceEn[10] **Mismatch**        
+LowBiasInterfaceEn[1]                      |LowBiasInterfaceEn[9] **Mismatch**         
+LowBiasInterfaceEn[6]                      |LowBiasInterfaceEn[8] **Mismatch**         
+LowBiasInterfaceEn[7]                      |LowBiasInterfaceEn[7]                      
+LowBiasInterfaceEn[3]                      |LowBiasInterfaceEn[6] **Mismatch**         
+LowBiasInterfaceEn[2]                      |LowBiasInterfaceEn[5] **Mismatch**         
+LowBiasInterfaceEn[4]                      |LowBiasInterfaceEn[4]                      
+LowBiasInterfaceEn[5]                      |LowBiasInterfaceEn[3] **Mismatch**         
+LowBiasInterfaceEn[0]                      |LowBiasInterfaceEn[2] **Mismatch**         
+LowBiasInterfaceEn[8]                      |LowBiasInterfaceEn[1] **Mismatch**         
+LowBiasInterfaceEn[10]                     |LowBiasInterfaceEn[0] **Mismatch**         
+CoarseOneHot[79]                           |(no pin, node is CoarseOneHot[87])         
+CoarseOneHot[15]                           |(no pin, node is CoarseOneHot[79])         
+CoarseOneHot[55]                           |(no pin, node is CoarseOneHot[71])         
+CoarseOneHot[63]                           |(no pin, node is CoarseOneHot[63])         
+CoarseOneHot[31]                           |(no pin, node is CoarseOneHot[55])         
+CoarseOneHot[23]                           |(no pin, node is CoarseOneHot[47])         
+CoarseOneHot[39]                           |(no pin, node is CoarseOneHot[39])         
+CoarseOneHot[47]                           |(no pin, node is CoarseOneHot[31])         
+CoarseOneHot[7]                            |(no pin, node is CoarseOneHot[23])         
+CoarseOneHot[71]                           |(no pin, node is CoarseOneHot[15])         
+CoarseOneHot[87]                           |(no pin, node is CoarseOneHot[7])          
+CoarseOneHot[77]                           |(no pin, node is CoarseOneHot[85])         
+CoarseOneHot[13]                           |(no pin, node is CoarseOneHot[77])         
+CoarseOneHot[53]                           |(no pin, node is CoarseOneHot[69])         
+CoarseOneHot[61]                           |(no pin, node is CoarseOneHot[61])         
+CoarseOneHot[29]                           |(no pin, node is CoarseOneHot[53])         
+CoarseOneHot[21]                           |(no pin, node is CoarseOneHot[45])         
+CoarseOneHot[37]                           |(no pin, node is CoarseOneHot[37])         
+CoarseOneHot[45]                           |(no pin, node is CoarseOneHot[29])         
+CoarseOneHot[5]                            |(no pin, node is CoarseOneHot[21])         
+CoarseOneHot[69]                           |(no pin, node is CoarseOneHot[13])         
+CoarseOneHot[85]                           |(no pin, node is CoarseOneHot[5])          
+PBiasEn[9]                                 |PBiasEn[10] **Mismatch**                   
+PBiasEn[1]                                 |PBiasEn[9] **Mismatch**                    
+PBiasEn[6]                                 |PBiasEn[8] **Mismatch**                    
+PBiasEn[7]                                 |PBiasEn[7]                                 
+PBiasEn[3]                                 |PBiasEn[6] **Mismatch**                    
+PBiasEn[2]                                 |PBiasEn[5] **Mismatch**                    
+PBiasEn[4]                                 |PBiasEn[4]                                 
+PBiasEn[5]                                 |PBiasEn[3] **Mismatch**                    
+PBiasEn[0]                                 |PBiasEn[2] **Mismatch**                    
+PBiasEn[8]                                 |PBiasEn[1] **Mismatch**                    
+PBiasEn[10]                                |PBiasEn[0] **Mismatch**                    
+CoarseOneHot[75]                           |(no pin, node is CoarseOneHot[83])         
+CoarseOneHot[11]                           |(no pin, node is CoarseOneHot[75])         
+CoarseOneHot[51]                           |(no pin, node is CoarseOneHot[67])         
+CoarseOneHot[59]                           |(no pin, node is CoarseOneHot[59])         
+CoarseOneHot[27]                           |(no pin, node is CoarseOneHot[51])         
+CoarseOneHot[19]                           |(no pin, node is CoarseOneHot[43])         
+CoarseOneHot[35]                           |(no pin, node is CoarseOneHot[35])         
+CoarseOneHot[43]                           |(no pin, node is CoarseOneHot[27])         
+CoarseOneHot[3]                            |(no pin, node is CoarseOneHot[19])         
+CoarseOneHot[67]                           |(no pin, node is CoarseOneHot[11])         
+CoarseOneHot[83]                           |(no pin, node is CoarseOneHot[3])          
+CoarseOneHot[74]                           |(no pin, node is CoarseOneHot[82])         
+CoarseOneHot[10]                           |(no pin, node is CoarseOneHot[74])         
+CoarseOneHot[50]                           |(no pin, node is CoarseOneHot[66])         
+CoarseOneHot[58]                           |(no pin, node is CoarseOneHot[58])         
+CoarseOneHot[26]                           |(no pin, node is CoarseOneHot[50])         
+CoarseOneHot[18]                           |(no pin, node is CoarseOneHot[42])         
+CoarseOneHot[34]                           |(no pin, node is CoarseOneHot[34])         
+CoarseOneHot[42]                           |(no pin, node is CoarseOneHot[26])         
+CoarseOneHot[2]                            |(no pin, node is CoarseOneHot[18])         
+CoarseOneHot[66]                           |(no pin, node is CoarseOneHot[10])         
+CoarseOneHot[82]                           |(no pin, node is CoarseOneHot[2])          
+CoarseOneHot[72]                           |(no pin, node is CoarseOneHot[80])         
+CoarseOneHot[8]                            |(no pin, node is CoarseOneHot[72])         
+CoarseOneHot[48]                           |(no pin, node is CoarseOneHot[64])         
+CoarseOneHot[56]                           |(no pin, node is CoarseOneHot[56])         
+CoarseOneHot[24]                           |(no pin, node is CoarseOneHot[48])         
+CoarseOneHot[16]                           |(no pin, node is CoarseOneHot[40])         
+CoarseOneHot[32]                           |(no pin, node is CoarseOneHot[32])         
+CoarseOneHot[40]                           |(no pin, node is CoarseOneHot[24])         
+CoarseOneHot[0]                            |(no pin, node is CoarseOneHot[16])         
+CoarseOneHot[64]                           |(no pin, node is CoarseOneHot[8])          
+CoarseOneHot[80]                           |(no pin, node is CoarseOneHot[0])          
+CoarseOneHot[73]                           |(no pin, node is CoarseOneHot[81])         
+CoarseOneHot[9]                            |(no pin, node is CoarseOneHot[73])         
+CoarseOneHot[49]                           |(no pin, node is CoarseOneHot[65])         
+CoarseOneHot[57]                           |(no pin, node is CoarseOneHot[57])         
+CoarseOneHot[25]                           |(no pin, node is CoarseOneHot[49])         
+CoarseOneHot[17]                           |(no pin, node is CoarseOneHot[41])         
+CoarseOneHot[33]                           |(no pin, node is CoarseOneHot[33])         
+CoarseOneHot[41]                           |(no pin, node is CoarseOneHot[25])         
+CoarseOneHot[1]                            |(no pin, node is CoarseOneHot[17])         
+CoarseOneHot[65]                           |(no pin, node is CoarseOneHot[9])          
+CoarseOneHot[81]                           |(no pin, node is CoarseOneHot[1])          
+FineCode[79]                               |(no pin, node is FineCode[87])             
+FineCode[15]                               |(no pin, node is FineCode[79])             
+FineCode[55]                               |(no pin, node is FineCode[71])             
+FineCode[63]                               |(no pin, node is FineCode[63])             
+FineCode[31]                               |(no pin, node is FineCode[55])             
+FineCode[23]                               |(no pin, node is FineCode[47])             
+FineCode[39]                               |(no pin, node is FineCode[39])             
+FineCode[47]                               |(no pin, node is FineCode[31])             
+FineCode[7]                                |(no pin, node is FineCode[23])             
+FineCode[71]                               |(no pin, node is FineCode[15])             
+FineCode[87]                               |(no pin, node is FineCode[7])              
+FineCode[78]                               |(no pin, node is FineCode[86])             
+FineCode[14]                               |(no pin, node is FineCode[78])             
+FineCode[54]                               |(no pin, node is FineCode[70])             
+FineCode[62]                               |(no pin, node is FineCode[62])             
+FineCode[30]                               |(no pin, node is FineCode[54])             
+FineCode[22]                               |(no pin, node is FineCode[46])             
+FineCode[38]                               |(no pin, node is FineCode[38])             
+FineCode[46]                               |(no pin, node is FineCode[30])             
+FineCode[6]                                |(no pin, node is FineCode[22])             
+FineCode[70]                               |(no pin, node is FineCode[14])             
+FineCode[86]                               |(no pin, node is FineCode[6])              
+PowerDown[9]                               |PowerDown[10] **Mismatch**                 
+PowerDown[1]                               |PowerDown[9] **Mismatch**                  
+PowerDown[6]                               |PowerDown[8] **Mismatch**                  
+PowerDown[7]                               |PowerDown[7]                               
+PowerDown[3]                               |PowerDown[6] **Mismatch**                  
+PowerDown[2]                               |PowerDown[5] **Mismatch**                  
+PowerDown[4]                               |PowerDown[4]                               
+PowerDown[5]                               |PowerDown[3] **Mismatch**                  
+PowerDown[0]                               |PowerDown[2] **Mismatch**                  
+PowerDown[8]                               |PowerDown[1] **Mismatch**                  
+PowerDown[10]                              |PowerDown[0] **Mismatch**                  
+BIT0[9]                                    |BIT0[10] **Mismatch**                      
+BIT0[1]                                    |BIT0[9] **Mismatch**                       
+BIT0[6]                                    |BIT0[8] **Mismatch**                       
+BIT0[7]                                    |BIT0[7]                                    
+BIT0[3]                                    |BIT0[6] **Mismatch**                       
+BIT0[2]                                    |BIT0[5] **Mismatch**                       
+BIT0[4]                                    |BIT0[4]                                    
+BIT0[5]                                    |BIT0[3] **Mismatch**                       
+BIT0[0]                                    |BIT0[2] **Mismatch**                       
+BIT0[8]                                    |BIT0[1] **Mismatch**                       
+BIT0[10]                                   |BIT0[0] **Mismatch**                       
+BiasDisabled[9]                            |(no pin, node is BiasDisabled[10])         
+BiasDisabled[1]                            |(no pin, node is BiasDisabled[9])          
+BiasDisabled[6]                            |(no pin, node is BiasDisabled[8])          
+BiasDisabled[7]                            |(no pin, node is BiasDisabled[7])          
+BiasDisabled[3]                            |(no pin, node is BiasDisabled[6])          
+BiasDisabled[2]                            |(no pin, node is BiasDisabled[5])          
+BiasDisabled[4]                            |(no pin, node is BiasDisabled[4])          
+BiasDisabled[5]                            |(no pin, node is BiasDisabled[3])          
+BiasDisabled[0]                            |(no pin, node is BiasDisabled[2])          
+BiasDisabled[8]                            |(no pin, node is BiasDisabled[1])          
+BiasDisabled[10]                           |(no pin, node is BiasDisabled[0])          
+NBiasEn[9]                                 |NBiasEn[10] **Mismatch**                   
+NBiasEn[1]                                 |NBiasEn[9] **Mismatch**                    
+NBiasEn[6]                                 |NBiasEn[8] **Mismatch**                    
+NBiasEn[7]                                 |NBiasEn[7]                                 
+NBiasEn[3]                                 |NBiasEn[6] **Mismatch**                    
+NBiasEn[2]                                 |NBiasEn[5] **Mismatch**                    
+NBiasEn[4]                                 |NBiasEn[4]                                 
+NBiasEn[5]                                 |NBiasEn[3] **Mismatch**                    
+NBiasEn[0]                                 |NBiasEn[2] **Mismatch**                    
+NBiasEn[8]                                 |NBiasEn[1] **Mismatch**                    
+NBiasEn[10]                                |NBiasEn[0] **Mismatch**                    
+nFineCode[78]                              |(no pin, node is nFineCode[86])            
+nFineCode[14]                              |(no pin, node is nFineCode[78])            
+nFineCode[54]                              |(no pin, node is nFineCode[70])            
+nFineCode[62]                              |(no pin, node is nFineCode[62])            
+nFineCode[30]                              |(no pin, node is nFineCode[54])            
+nFineCode[22]                              |(no pin, node is nFineCode[46])            
+nFineCode[38]                              |(no pin, node is nFineCode[38])            
+nFineCode[46]                              |(no pin, node is nFineCode[30])            
+nFineCode[6]                               |(no pin, node is nFineCode[22])            
+nFineCode[70]                              |(no pin, node is nFineCode[14])            
+nFineCode[86]                              |(no pin, node is nFineCode[6])             
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+(no pin, node is VddA18)                   |VddA18                                     
+(no pin, node is VMasterBiasN)             |VMasterBiasN                               
+(no matching pin)                          |Bias                                       
+(no matching pin)                          |FineCode_bit0[10]                          
+(no matching pin)                          |FineCode_bit0[9]                           
+(no matching pin)                          |FineCode_bit0[8]                           
+(no matching pin)                          |FineCode_bit0[7]                           
+(no matching pin)                          |FineCode_bit0[6]                           
+(no matching pin)                          |FineCode_bit0[5]                           
+(no matching pin)                          |FineCode_bit0[4]                           
+(no matching pin)                          |FineCode_bit0[3]                           
+(no matching pin)                          |FineCode_bit0[2]                           
+(no matching pin)                          |FineCode_bit0[1]                           
+(no matching pin)                          |FineCode_bit0[0]                           
+(no matching pin)                          |FineCode_bit1[10]                          
+(no matching pin)                          |FineCode_bit1[9]                           
+(no matching pin)                          |FineCode_bit1[8]                           
+(no matching pin)                          |FineCode_bit1[7]                           
+(no matching pin)                          |FineCode_bit1[6]                           
+(no matching pin)                          |FineCode_bit1[5]                           
+(no matching pin)                          |FineCode_bit1[4]                           
+(no matching pin)                          |FineCode_bit1[3]                           
+(no matching pin)                          |FineCode_bit1[2]                           
+(no matching pin)                          |FineCode_bit1[1]                           
+(no matching pin)                          |FineCode_bit1[0]                           
+(no matching pin)                          |FineCode_bit2[10]                          
+(no matching pin)                          |FineCode_bit2[9]                           
+(no matching pin)                          |FineCode_bit2[8]                           
+(no matching pin)                          |FineCode_bit2[7]                           
+(no matching pin)                          |FineCode_bit2[6]                           
+(no matching pin)                          |FineCode_bit2[5]                           
+(no matching pin)                          |FineCode_bit2[4]                           
+(no matching pin)                          |FineCode_bit2[3]                           
+(no matching pin)                          |FineCode_bit2[2]                           
+(no matching pin)                          |FineCode_bit2[1]                           
+(no matching pin)                          |FineCode_bit2[0]                           
+(no matching pin)                          |FineCode_bit3[10]                          
+(no matching pin)                          |FineCode_bit3[9]                           
+(no matching pin)                          |FineCode_bit3[8]                           
+(no matching pin)                          |FineCode_bit3[7]                           
+(no matching pin)                          |FineCode_bit3[6]                           
+(no matching pin)                          |FineCode_bit3[5]                           
+(no matching pin)                          |FineCode_bit3[4]                           
+(no matching pin)                          |FineCode_bit3[3]                           
+(no matching pin)                          |FineCode_bit3[2]                           
+(no matching pin)                          |FineCode_bit3[1]                           
+(no matching pin)                          |FineCode_bit3[0]                           
+(no matching pin)                          |FineCode_bit4[10]                          
+(no matching pin)                          |FineCode_bit4[9]                           
+(no matching pin)                          |FineCode_bit4[8]                           
+(no matching pin)                          |FineCode_bit4[7]                           
+(no matching pin)                          |FineCode_bit4[6]                           
+(no matching pin)                          |FineCode_bit4[5]                           
+(no matching pin)                          |FineCode_bit4[4]                           
+(no matching pin)                          |FineCode_bit4[3]                           
+(no matching pin)                          |FineCode_bit4[2]                           
+(no matching pin)                          |FineCode_bit4[1]                           
+(no matching pin)                          |FineCode_bit4[0]                           
+(no matching pin)                          |FineCode_bit5[10]                          
+(no matching pin)                          |FineCode_bit5[9]                           
+(no matching pin)                          |FineCode_bit5[8]                           
+(no matching pin)                          |FineCode_bit5[7]                           
+(no matching pin)                          |FineCode_bit5[6]                           
+(no matching pin)                          |FineCode_bit5[5]                           
+(no matching pin)                          |FineCode_bit5[4]                           
+(no matching pin)                          |FineCode_bit5[3]                           
+(no matching pin)                          |FineCode_bit5[2]                           
+(no matching pin)                          |FineCode_bit5[1]                           
+(no matching pin)                          |FineCode_bit5[0]                           
+(no matching pin)                          |FineCode_bit6[10]                          
+(no matching pin)                          |FineCode_bit6[9]                           
+(no matching pin)                          |FineCode_bit6[8]                           
+(no matching pin)                          |FineCode_bit6[7]                           
+(no matching pin)                          |FineCode_bit6[6]                           
+(no matching pin)                          |FineCode_bit6[5]                           
+(no matching pin)                          |FineCode_bit6[4]                           
+(no matching pin)                          |FineCode_bit6[3]                           
+(no matching pin)                          |FineCode_bit6[2]                           
+(no matching pin)                          |FineCode_bit6[1]                           
+(no matching pin)                          |FineCode_bit6[0]                           
+(no matching pin)                          |FineCode_bit7[10]                          
+(no matching pin)                          |FineCode_bit7[9]                           
+(no matching pin)                          |FineCode_bit7[8]                           
+(no matching pin)                          |FineCode_bit7[7]                           
+(no matching pin)                          |FineCode_bit7[6]                           
+(no matching pin)                          |FineCode_bit7[5]                           
+(no matching pin)                          |FineCode_bit7[4]                           
+(no matching pin)                          |FineCode_bit7[3]                           
+(no matching pin)                          |FineCode_bit7[2]                           
+(no matching pin)                          |FineCode_bit7[1]                           
+(no matching pin)                          |FineCode_bit7[0]                           
+(no matching pin)                          |nFineCode_bit0[10]                         
+(no matching pin)                          |nFineCode_bit0[9]                          
+(no matching pin)                          |nFineCode_bit0[8]                          
+(no matching pin)                          |nFineCode_bit0[7]                          
+(no matching pin)                          |nFineCode_bit0[6]                          
+(no matching pin)                          |nFineCode_bit0[5]                          
+(no matching pin)                          |nFineCode_bit0[4]                          
+(no matching pin)                          |nFineCode_bit0[3]                          
+(no matching pin)                          |nFineCode_bit0[2]                          
+(no matching pin)                          |nFineCode_bit0[1]                          
+(no matching pin)                          |nFineCode_bit0[0]                          
+(no matching pin)                          |nFineCode_bit1[10]                         
+(no matching pin)                          |nFineCode_bit1[9]                          
+(no matching pin)                          |nFineCode_bit1[8]                          
+(no matching pin)                          |nFineCode_bit1[7]                          
+(no matching pin)                          |nFineCode_bit1[6]                          
+(no matching pin)                          |nFineCode_bit1[5]                          
+(no matching pin)                          |nFineCode_bit1[4]                          
+(no matching pin)                          |nFineCode_bit1[3]                          
+(no matching pin)                          |nFineCode_bit1[2]                          
+(no matching pin)                          |nFineCode_bit1[1]                          
+(no matching pin)                          |nFineCode_bit1[0]                          
+(no matching pin)                          |nFineCode_bit2[10]                         
+(no matching pin)                          |nFineCode_bit2[9]                          
+(no matching pin)                          |nFineCode_bit2[8]                          
+(no matching pin)                          |nFineCode_bit2[7]                          
+(no matching pin)                          |nFineCode_bit2[6]                          
+(no matching pin)                          |nFineCode_bit2[5]                          
+(no matching pin)                          |nFineCode_bit2[4]                          
+(no matching pin)                          |nFineCode_bit2[3]                          
+(no matching pin)                          |nFineCode_bit2[2]                          
+(no matching pin)                          |nFineCode_bit2[1]                          
+(no matching pin)                          |nFineCode_bit2[0]                          
+(no matching pin)                          |nFineCode_bit3[10]                         
+(no matching pin)                          |nFineCode_bit3[9]                          
+(no matching pin)                          |nFineCode_bit3[8]                          
+(no matching pin)                          |nFineCode_bit3[7]                          
+(no matching pin)                          |nFineCode_bit3[6]                          
+(no matching pin)                          |nFineCode_bit3[5]                          
+(no matching pin)                          |nFineCode_bit3[4]                          
+(no matching pin)                          |nFineCode_bit3[3]                          
+(no matching pin)                          |nFineCode_bit3[2]                          
+(no matching pin)                          |nFineCode_bit3[1]                          
+(no matching pin)                          |nFineCode_bit3[0]                          
+(no matching pin)                          |nFineCode_bit4[10]                         
+(no matching pin)                          |nFineCode_bit4[9]                          
+(no matching pin)                          |nFineCode_bit4[8]                          
+(no matching pin)                          |nFineCode_bit4[7]                          
+(no matching pin)                          |nFineCode_bit4[6]                          
+(no matching pin)                          |nFineCode_bit4[5]                          
+(no matching pin)                          |nFineCode_bit4[4]                          
+(no matching pin)                          |nFineCode_bit4[3]                          
+(no matching pin)                          |nFineCode_bit4[2]                          
+(no matching pin)                          |nFineCode_bit4[1]                          
+(no matching pin)                          |nFineCode_bit4[0]                          
+(no matching pin)                          |nFineCode_bit5[10]                         
+(no matching pin)                          |nFineCode_bit5[9]                          
+(no matching pin)                          |nFineCode_bit5[8]                          
+(no matching pin)                          |nFineCode_bit5[7]                          
+(no matching pin)                          |nFineCode_bit5[6]                          
+(no matching pin)                          |nFineCode_bit5[5]                          
+(no matching pin)                          |nFineCode_bit5[4]                          
+(no matching pin)                          |nFineCode_bit5[3]                          
+(no matching pin)                          |nFineCode_bit5[2]                          
+(no matching pin)                          |nFineCode_bit5[1]                          
+(no matching pin)                          |nFineCode_bit5[0]                          
+(no matching pin)                          |nFineCode_bit6[10]                         
+(no matching pin)                          |nFineCode_bit6[9]                          
+(no matching pin)                          |nFineCode_bit6[8]                          
+(no matching pin)                          |nFineCode_bit6[7]                          
+(no matching pin)                          |nFineCode_bit6[6]                          
+(no matching pin)                          |nFineCode_bit6[5]                          
+(no matching pin)                          |nFineCode_bit6[4]                          
+(no matching pin)                          |nFineCode_bit6[3]                          
+(no matching pin)                          |nFineCode_bit6[2]                          
+(no matching pin)                          |nFineCode_bit6[1]                          
+(no matching pin)                          |nFineCode_bit6[0]                          
+(no matching pin)                          |nFineCode_bit7[10]                         
+(no matching pin)                          |nFineCode_bit7[9]                          
+(no matching pin)                          |nFineCode_bit7[8]                          
+(no matching pin)                          |nFineCode_bit7[7]                          
+(no matching pin)                          |nFineCode_bit7[6]                          
+(no matching pin)                          |nFineCode_bit7[5]                          
+(no matching pin)                          |nFineCode_bit7[4]                          
+(no matching pin)                          |nFineCode_bit7[3]                          
+(no matching pin)                          |nFineCode_bit7[2]                          
+(no matching pin)                          |nFineCode_bit7[1]                          
+(no matching pin)                          |nFineCode_bit7[0]                          
+(no matching pin)                          |CoarseOneHot_bit0[10]                      
+(no matching pin)                          |CoarseOneHot_bit0[9]                       
+(no matching pin)                          |CoarseOneHot_bit0[8]                       
+(no matching pin)                          |CoarseOneHot_bit0[7]                       
+(no matching pin)                          |CoarseOneHot_bit0[6]                       
+(no matching pin)                          |CoarseOneHot_bit0[5]                       
+(no matching pin)                          |CoarseOneHot_bit0[4]                       
+(no matching pin)                          |CoarseOneHot_bit0[3]                       
+(no matching pin)                          |CoarseOneHot_bit0[2]                       
+(no matching pin)                          |CoarseOneHot_bit0[1]                       
+(no matching pin)                          |CoarseOneHot_bit0[0]                       
+(no matching pin)                          |CoarseOneHot_bit1[10]                      
+(no matching pin)                          |CoarseOneHot_bit1[9]                       
+(no matching pin)                          |CoarseOneHot_bit1[8]                       
+(no matching pin)                          |CoarseOneHot_bit1[7]                       
+(no matching pin)                          |CoarseOneHot_bit1[6]                       
+(no matching pin)                          |CoarseOneHot_bit1[5]                       
+(no matching pin)                          |CoarseOneHot_bit1[4]                       
+(no matching pin)                          |CoarseOneHot_bit1[3]                       
+(no matching pin)                          |CoarseOneHot_bit1[2]                       
+(no matching pin)                          |CoarseOneHot_bit1[1]                       
+(no matching pin)                          |CoarseOneHot_bit1[0]                       
+(no matching pin)                          |CoarseOneHot_bit2[10]                      
+(no matching pin)                          |CoarseOneHot_bit2[9]                       
+(no matching pin)                          |CoarseOneHot_bit2[8]                       
+(no matching pin)                          |CoarseOneHot_bit2[7]                       
+(no matching pin)                          |CoarseOneHot_bit2[6]                       
+(no matching pin)                          |CoarseOneHot_bit2[5]                       
+(no matching pin)                          |CoarseOneHot_bit2[4]                       
+(no matching pin)                          |CoarseOneHot_bit2[3]                       
+(no matching pin)                          |CoarseOneHot_bit2[2]                       
+(no matching pin)                          |CoarseOneHot_bit2[1]                       
+(no matching pin)                          |CoarseOneHot_bit2[0]                       
+(no matching pin)                          |CoarseOneHot_bit3[10]                      
+(no matching pin)                          |CoarseOneHot_bit3[9]                       
+(no matching pin)                          |CoarseOneHot_bit3[8]                       
+(no matching pin)                          |CoarseOneHot_bit3[7]                       
+(no matching pin)                          |CoarseOneHot_bit3[6]                       
+(no matching pin)                          |CoarseOneHot_bit3[5]                       
+(no matching pin)                          |CoarseOneHot_bit3[4]                       
+(no matching pin)                          |CoarseOneHot_bit3[3]                       
+(no matching pin)                          |CoarseOneHot_bit3[2]                       
+(no matching pin)                          |CoarseOneHot_bit3[1]                       
+(no matching pin)                          |CoarseOneHot_bit3[0]                       
+(no matching pin)                          |CoarseOneHot_bit4[10]                      
+(no matching pin)                          |CoarseOneHot_bit4[9]                       
+(no matching pin)                          |CoarseOneHot_bit4[8]                       
+(no matching pin)                          |CoarseOneHot_bit4[7]                       
+(no matching pin)                          |CoarseOneHot_bit4[6]                       
+(no matching pin)                          |CoarseOneHot_bit4[5]                       
+(no matching pin)                          |CoarseOneHot_bit4[4]                       
+(no matching pin)                          |CoarseOneHot_bit4[3]                       
+(no matching pin)                          |CoarseOneHot_bit4[2]                       
+(no matching pin)                          |CoarseOneHot_bit4[1]                       
+(no matching pin)                          |CoarseOneHot_bit4[0]                       
+(no matching pin)                          |CoarseOneHot_bit5[10]                      
+(no matching pin)                          |CoarseOneHot_bit5[9]                       
+(no matching pin)                          |CoarseOneHot_bit5[8]                       
+(no matching pin)                          |CoarseOneHot_bit5[7]                       
+(no matching pin)                          |CoarseOneHot_bit5[6]                       
+(no matching pin)                          |CoarseOneHot_bit5[5]                       
+(no matching pin)                          |CoarseOneHot_bit5[4]                       
+(no matching pin)                          |CoarseOneHot_bit5[3]                       
+(no matching pin)                          |CoarseOneHot_bit5[2]                       
+(no matching pin)                          |CoarseOneHot_bit5[1]                       
+(no matching pin)                          |CoarseOneHot_bit5[0]                       
+(no matching pin)                          |CoarseOneHot_bit6[10]                      
+(no matching pin)                          |CoarseOneHot_bit6[9]                       
+(no matching pin)                          |CoarseOneHot_bit6[8]                       
+(no matching pin)                          |CoarseOneHot_bit6[7]                       
+(no matching pin)                          |CoarseOneHot_bit6[6]                       
+(no matching pin)                          |CoarseOneHot_bit6[5]                       
+(no matching pin)                          |CoarseOneHot_bit6[4]                       
+(no matching pin)                          |CoarseOneHot_bit6[3]                       
+(no matching pin)                          |CoarseOneHot_bit6[2]                       
+(no matching pin)                          |CoarseOneHot_bit6[1]                       
+(no matching pin)                          |CoarseOneHot_bit6[0]                       
+(no matching pin)                          |CoarseOneHot_bit7[10]                      
+(no matching pin)                          |CoarseOneHot_bit7[9]                       
+(no matching pin)                          |CoarseOneHot_bit7[8]                       
+(no matching pin)                          |CoarseOneHot_bit7[7]                       
+(no matching pin)                          |CoarseOneHot_bit7[6]                       
+(no matching pin)                          |CoarseOneHot_bit7[5]                       
+(no matching pin)                          |CoarseOneHot_bit7[4]                       
+(no matching pin)                          |CoarseOneHot_bit7[3]                       
+(no matching pin)                          |CoarseOneHot_bit7[2]                       
+(no matching pin)                          |CoarseOneHot_bit7[1]                       
+(no matching pin)                          |CoarseOneHot_bit7[0]                       
+(no matching pin)                          |BiasDisable[10]                            
+(no matching pin)                          |BiasDisable[9]                             
+(no matching pin)                          |BiasDisable[8]                             
+(no matching pin)                          |BiasDisable[7]                             
+(no matching pin)                          |BiasDisable[6]                             
+(no matching pin)                          |BiasDisable[5]                             
+(no matching pin)                          |BiasDisable[4]                             
+(no matching pin)                          |BiasDisable[3]                             
+(no matching pin)                          |BiasDisable[2]                             
+(no matching pin)                          |BiasDisable[1]                             
+(no matching pin)                          |BiasDisable[0]                             
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBranchnMasterx11 and BiasBranchnMasterx11 altered to match.
+Device classes BiasBranchnMasterx11 and BiasBranchnMasterx11 are equivalent.
+
+Final result: Top level cell failed pin matching.

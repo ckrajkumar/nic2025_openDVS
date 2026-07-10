@@ -1,0 +1,101 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 7 -50 -180 -50 -160 {}
+L 7 -30 -180 -30 -160 {}
+L 7 -10 -180 -10 -160 {}
+L 7 90 -180 90 -160 {}
+L 7 10 -180 10 -160 {}
+L 7 30 -180 30 -160 {}
+L 7 70 -180 70 -160 {}
+L 7 50 -180 50 -160 {}
+L 7 130 -30 150 -30 {}
+L 7 130 -10 150 -10 {}
+L 7 130 80 150 80 {}
+L 7 130 100 150 100 {}
+L 7 130 10 150 10 {}
+L 7 10 160 10 180 {}
+L 7 -10 160 -10 180 {}
+L 7 130 30 150 30 {}
+L 7 -150 -30 -130 -30 {}
+L 7 -150 -10 -130 -10 {}
+L 7 -150 80 -130 80 {}
+L 7 -150 100 -130 100 {}
+L 7 -150 10 -130 10 {}
+L 7 -150 30 -130 30 {}
+L 7 130 -50 150 -50 {}
+L 7 130 -70 150 -70 {}
+L 7 -150 -50 -130 -50 {}
+L 7 -150 -70 -130 -70 {}
+L 7 110 -180 110 -160 {}
+L 7 130 50 150 50 {}
+L 7 -150 50 -130 50 {}
+B 5 -52.5 -182.5 -47.5 -177.5 {name=DiffBn dir=inout}
+B 5 -32.5 -182.5 -27.5 -177.5 {name=RefrBp dir=inout}
+B 5 -12.5 -182.5 -7.5 -177.5 {name=PrBp dir=inout}
+B 5 87.5 -182.5 92.5 -177.5 {name=GndA dir=inout}
+B 5 7.5 -182.5 12.5 -177.5 {name=PrSFBp dir=inout}
+B 5 27.5 -182.5 32.5 -177.5 {name=OffBn dir=inout}
+B 5 67.5 -182.5 72.5 -177.5 {name=VDD dir=inout}
+B 5 47.5 -182.5 52.5 -177.5 {name=OnBn dir=inout}
+B 5 147.5 -32.5 152.5 -27.5 {name=VTHRESH dir=inout}
+B 5 147.5 -12.5 152.5 -7.5 {name=nCHARGE dir=inout}
+B 5 147.5 77.5 152.5 82.5 {name=rowReadOFF[63:0] dir=inout}
+B 5 147.5 97.5 152.5 102.5 {name=rowReadON[63:0] dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=DETECT dir=inout}
+B 5 7.5 177.5 12.5 182.5 {name=pixRst[63:0] dir=inout}
+B 5 -12.5 177.5 -7.5 182.5 {name=voutn[63:0] dir=inout}
+B 5 147.5 27.5 152.5 32.5 {name=nDETECT dir=inout}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=VTHRESH dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=nCHARGE dir=inout}
+B 5 -152.5 77.5 -147.5 82.5 {name=rowReadOFF[63:0] dir=inout}
+B 5 -152.5 97.5 -147.5 102.5 {name=rowReadON[63:0] dir=inout}
+B 5 -152.5 7.5 -147.5 12.5 {name=DETECT dir=inout}
+B 5 -152.5 27.5 -147.5 32.5 {name=nDETECT dir=inout}
+B 5 147.5 -52.5 152.5 -47.5 {name=GndA dir=inout}
+B 5 147.5 -72.5 152.5 -67.5 {name=VDD dir=inout}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=GndA dir=inout}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=VDD dir=inout}
+B 5 107.5 -182.5 112.5 -177.5 {name=GndD dir=inout}
+B 5 147.5 47.5 152.5 52.5 {name=GndD dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=GndD dir=inout}
+P 4 5 130 -160 -130 -160 -130 160 130 160 130 -160 {}
+T {@symname} -82.5 -66 0 0 0.3 0.3 {}
+T {@name} -85 -82 0 0 0.2 0.2 {}
+T {DiffBn} -54 -155 3 1 0.2 0.2 {}
+T {RefrBp} -34 -155 3 1 0.2 0.2 {}
+T {PrBp} -14 -155 3 1 0.2 0.2 {}
+T {GndA} 86 -155 3 1 0.2 0.2 {}
+T {PrSFBp} 6 -155 3 1 0.2 0.2 {}
+T {OffBn} 26 -155 3 1 0.2 0.2 {}
+T {VDD} 66 -155 3 1 0.2 0.2 {}
+T {OnBn} 46 -155 3 1 0.2 0.2 {}
+T {VTHRESH} 125 -34 0 1 0.2 0.2 {}
+T {nCHARGE} 125 -14 0 1 0.2 0.2 {}
+T {rowReadOFF[63:0]} 125 76 0 1 0.2 0.2 {}
+T {rowReadON[63:0]} 125 96 0 1 0.2 0.2 {}
+T {DETECT} 125 6 0 1 0.2 0.2 {}
+T {pixRst[63:0]} 14 155 1 1 0.2 0.2 {}
+T {voutn[63:0]} -6 155 1 1 0.2 0.2 {}
+T {nDETECT} 125 26 0 1 0.2 0.2 {}
+T {VTHRESH} -125 -34 0 0 0.2 0.2 {}
+T {nCHARGE} -125 -14 0 0 0.2 0.2 {}
+T {rowReadOFF[63:0]} -125 76 0 0 0.2 0.2 {}
+T {rowReadON[63:0]} -125 96 0 0 0.2 0.2 {}
+T {DETECT} -125 6 0 0 0.2 0.2 {}
+T {nDETECT} -125 26 0 0 0.2 0.2 {}
+T {GndA} 125 -54 0 1 0.2 0.2 {}
+T {VDD} 125 -74 0 1 0.2 0.2 {}
+T {GndA} -125 -54 0 0 0.2 0.2 {}
+T {VDD} -125 -74 0 0 0.2 0.2 {}
+T {GndD} 106 -155 3 1 0.2 0.2 {}
+T {GndD} 125 46 0 1 0.2 0.2 {}
+T {GndD} -125 46 0 0 0.2 0.2 {}

@@ -1,0 +1,753 @@
+* NGSPICE file created from BiasBranchnMasterx11.ext - technology: sky130B
+
+.subckt BiasCoarseSel8to1 CoarseOneHot[0] CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3]
++ CoarseOneHot[4] CoarseOneHot[5] CoarseOneHot[6] CoarseOneHot[7] VddA18 BiasCB[0]
++ BiasCB[1] BiasCB[2] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] GndA CoarseBias
++ CoarseOneHotLowBiasEn
+X0 a_6277_1990# BiasCB[2] a_6277_948# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2079 ps=2.19 w=1.98 l=5
+X1 a_7252_1990# BiasCB[3] a_7000_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X2 a_3112_2440# CoarseOneHot[1] a_2531_1983# GndA sky130_fd_pr__nfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=1
+X3 VddA18 CoarseOneHot[0] a_1025_2440# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.15
+X4 a_9313_n55# CoarseOneHot[6] BiasCB[6] GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X5 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X6 a_6145_2440# CoarseOneHot[2] a_6277_1990# GndA sky130_fd_pr__nfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=1
+X7 a_7756_1990# BiasCB[3] a_8008_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X8 VddA18 CoarseOneHot[3] a_8582_2440# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.15
+X9 a_8260_1990# BiasCB[3] a_8512_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X10 a_13313_37# a_9313_n55# GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X11 a_8582_2440# CoarseOneHot[3] a_8764_1990# GndA sky130_fd_pr__nfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=1
+X12 a_5373_1990# BiasCB[2] a_5373_948# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2079 ps=2.19 w=1.98 l=5
+X13 a_7252_1990# BiasCB[3] a_7504_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X14 a_6277_948# BiasCB[2] a_5825_n105# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2079 pd=2.19 as=0.5247 ps=4.49 w=1.98 l=5
+X15 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X16 a_13313_977# a_9313_n55# a_9260_1133# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X17 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X18 a_13313_665# a_9313_n55# a_9260_509# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X19 a_9313_n55# CoarseOneHot[4] BiasCB[4] GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X20 a_5373_1990# BiasCB[2] a_5825_948# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2079 ps=2.19 w=1.98 l=5
+X21 CoarseBias CoarseOneHotLowBiasEn a_9260_1133# GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X22 a_9313_n55# CoarseOneHot[7] BiasCB[7] GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X23 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X24 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X25 a_5373_948# BiasCB[2] a_4921_n105# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2079 pd=2.19 as=0.5247 ps=4.49 w=1.98 l=5
+X26 a_8764_1990# BiasCB[3] a_8512_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X27 CoarseBias CoarseOneHot[0] a_1025_2440# GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X28 a_1100_2174# BiasCB[0] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.252 pd=2.08 as=0.477 ps=4.13 w=1.8 l=5
+X29 a_1100_2174# BiasCB[0] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.252 pd=2.08 as=0.477 ps=4.13 w=1.8 l=5
+X30 a_7756_1990# BiasCB[3] a_7504_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X31 GndA BiasCB[2] a_4921_948# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2079 ps=2.19 w=1.98 l=5
+X32 a_13313_665# a_9313_n55# a_9260_821# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X33 CoarseBias CoarseOneHot[1] a_3112_2440# GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=1
+X34 a_5825_948# BiasCB[2] a_5825_n105# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2079 pd=2.19 as=0.5247 ps=4.49 w=1.98 l=5
+X35 a_13313_37# a_9313_n55# a_9260_197# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X36 VddA18 CoarseOneHot[1] a_3112_2440# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.15
+X37 GndA BiasCB[3] a_7000_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X38 CoarseBias CoarseOneHot[2] a_6145_2440# GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=1
+X39 a_1100_2174# BiasCB[0] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.252 pd=2.08 as=0.477 ps=4.13 w=1.8 l=5
+X40 a_1100_2174# BiasCB[0] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.252 pd=2.08 as=0.477 ps=4.13 w=1.8 l=5
+X41 GndA BiasCB[0] a_1100_2174# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.477 pd=4.13 as=0.252 ps=2.08 w=1.8 l=5
+X42 VddA18 CoarseOneHot[2] a_6145_2440# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.15
+X43 a_13313_977# a_9313_n55# a_9260_821# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X44 a_9313_n55# CoarseOneHot[5] BiasCB[5] GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X45 GndA BiasCB[0] a_1100_2174# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.477 pd=4.13 as=0.252 ps=2.08 w=1.8 l=5
+X46 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X47 a_13313_353# a_9313_n55# a_9260_509# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X48 GndA BiasCB[0] a_1100_2174# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.477 pd=4.13 as=0.252 ps=2.08 w=1.8 l=5
+X49 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X50 a_4921_948# BiasCB[2] a_4921_n105# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2079 pd=2.19 as=0.5247 ps=4.49 w=1.98 l=5
+X51 CoarseBias CoarseOneHot[3] a_8582_2440# GndA sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=1
+X52 a_13313_353# a_9313_n55# a_9260_197# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X53 a_1025_2440# CoarseOneHot[0] a_1100_2174# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X54 a_8260_1990# BiasCB[3] a_8008_n59# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+X55 GndA BiasCB[0] a_1100_2174# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.477 pd=4.13 as=0.252 ps=2.08 w=1.8 l=5
+X56 a_2531_1983# BiasCB[1] GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2597 pd=2.49 as=0.2597 ps=2.49 w=0.98 l=9.98
+.ends
+
+.subckt BiasCoarseFineInterface IOut VddA18 IIn GndA nLowBiasEn LowBiasEn
+X0 a_4866_962# a_4774_1015# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=2
+X1 a_n8668_1590# LowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X2 VddA18 nLowBiasEn a_n8760_73# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.15
+X3 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X4 IOut LowBiasEn a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X5 a_n9486_n270# LowBiasEn a_n9123_n1309# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X6 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X7 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X8 a_5726_n150# a_4774_1015# a_5726_962# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=2
+X9 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X10 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X11 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X12 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X13 a_n9123_n1309# LowBiasEn a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X14 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X15 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X16 a_n9486_n270# LowBiasEn a_n9123_n1309# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X17 a_5726_962# a_4774_1015# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=2
+X18 a_4866_962# a_4774_1015# a_4774_1015# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=2
+X19 a_n9123_n1309# LowBiasEn a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X20 VddA18 a_4774_1015# a_4866_962# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=2
+X21 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X22 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X23 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X24 a_n9123_n1309# nLowBiasEn a_4774_1015# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=2
+X25 a_n9123_n1309# IIn IIn VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.385 pd=18.53 as=2.385 ps=18.53 w=9 l=1
+X26 a_n8668_1590# LowBiasEn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.1113 pd=1.37 as=0.1113 ps=1.37 w=0.42 l=0.15
+X27 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X28 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X29 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X30 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X31 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X32 IOut nLowBiasEn a_5726_n150# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=2
+X33 a_n9123_n1309# LowBiasEn a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X34 a_n8760_73# LowBiasEn a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=0.14575 pd=1.63 as=0.14575 ps=1.63 w=0.55 l=0.5
+X35 a_n9486_n270# LowBiasEn a_n9123_n1309# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X36 IOut LowBiasEn a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X37 IOut LowBiasEn a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X38 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X39 a_n8668_1590# LowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X40 a_n9486_n270# LowBiasEn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.1113 pd=1.37 as=0.1113 ps=1.37 w=0.42 l=0.15
+X41 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X42 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X43 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X44 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X45 a_5726_962# a_4774_1015# a_5726_n150# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=2
+X46 VddA18 a_4774_1015# a_5726_962# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=2
+X47 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X48 IOut LowBiasEn a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X49 a_4774_1015# a_4774_1015# a_4866_962# VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=2
+X50 a_n8668_1590# LowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X51 a_n8668_1590# LowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X52 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X53 a_4774_1015# nLowBiasEn a_n9123_n1309# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=2
+X54 a_n9123_n1309# LowBiasEn a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X55 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X56 a_5726_n150# nLowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=2
+X57 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X58 a_n9486_n270# LowBiasEn a_n9123_n1309# VddA18 sky130_fd_pr__pfet_01v8_hvt ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X59 VddA18 a_n8760_73# a_n8668_1590# VddA18 sky130_fd_pr__pfet_01v8 ad=8.48 pd=64.53 as=4.48 ps=32.28 w=32 l=0.5
+X60 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=8.48 ps=64.53 w=32 l=0.5
+X61 VddA18 a_n8760_73# a_n9486_n270# VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X62 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X63 a_n9123_n1309# IIn IIn VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.385 pd=18.53 as=2.385 ps=18.53 w=9 l=1
+X64 a_n8668_1590# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+X65 a_n9486_n270# a_n8760_73# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=4.48 pd=32.28 as=4.48 ps=32.28 w=32 l=0.5
+.ends
+
+.subckt scs130hd_nor2_1 vpwr vgnd vpb vnb Y B A
+X0 vpwr A a_109_297# vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.105 ps=1.21 w=1 l=0.15
+X1 vgnd A Y vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X2 a_109_297# B Y vpb sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.26 ps=2.52 w=1 l=0.15
+X3 Y B vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+.ends
+
+.subckt scs130hd_inv_1 vpwr vgnd vpb vnb Y A
+X0 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X1 Y A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+.subckt scs130hd_and2_1 vgnd vpwr vpb vnb A B X
+X0 vpwr B a_59_75# vpb sky130_fd_pr__pfet_01v8_hvt ad=0.16655 pd=1.39 as=0.0567 ps=0.69 w=0.42 l=0.15
+X1 X a_59_75# vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.475 pd=2.95 as=0.16655 ps=1.39 w=1 l=0.15
+X2 vgnd B a_145_75# vnb sky130_fd_pr__nfet_01v8 ad=0.1118 pd=1.04 as=0.0567 ps=0.69 w=0.42 l=0.15
+X3 a_59_75# A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+X4 X a_59_75# vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.1118 ps=1.04 w=0.65 l=0.15
+X5 a_145_75# A a_59_75# vnb sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+.ends
+
+.subckt BiasBuffers BufferNBias BIT0 VddA18 GND SplitterOutput NBiasEnabled PBiasEnabled
++ BiasDisabled PowerDown BufferPBias VBiasOut PadBias
+Xscs130hd_nor2_1_0 VddA18 GND VddA18 GND scs130hd_inv_1_3/A BiasDisabled PowerDown
++ scs130hd_nor2_1
+Xscs130hd_inv_1_0 VddA18 GND VddA18 GND scs130hd_inv_1_1/A BIT0 scs130hd_inv_1
+Xscs130hd_inv_1_1 VddA18 GND VddA18 GND scs130hd_inv_1_1/Y scs130hd_inv_1_1/A scs130hd_inv_1
+Xscs130hd_and2_1_0 GND VddA18 VddA18 GND scs130hd_inv_1_3/A PBiasEnabled scs130hd_and2_1_0/X
++ scs130hd_and2_1
+Xscs130hd_inv_1_2 VddA18 GND VddA18 GND scs130hd_inv_1_2/Y PowerDown scs130hd_inv_1
+Xscs130hd_inv_1_3 VddA18 GND VddA18 GND scs130hd_inv_1_3/Y scs130hd_inv_1_3/A scs130hd_inv_1
+X0 VddA18 scs130hd_inv_1_3/Y a_7275_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X1 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.636 ps=5.33 w=2.4 l=0.24
+X2 a_11534_4210# a_9449_4210# a_11265_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X3 a_11265_2204# scs130hd_inv_1_1/A a_8849_4119# GND sky130_fd_pr__nfet_01v8 ad=0.38 pd=2.76 as=0.38 ps=2.76 w=1 l=0.15
+X4 PadBias PowerDown VBiasOut GND sky130_fd_pr__nfet_01v8 ad=1.06 pd=8.53 as=1.48 ps=4.74 w=4 l=0.15
+X5 GND scs130hd_and2_1_0/X a_11534_4210# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X6 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X7 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X8 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X9 a_1598_677# scs130hd_inv_1_1/Y a_10376_2544# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.25125 ps=1.74 w=1 l=0.15
+X10 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X11 VBiasOut PowerDown a_8068_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=0.38
+X12 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X13 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X14 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X15 PadBias scs130hd_inv_1_2/Y VBiasOut VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=0.38
+X16 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X17 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X18 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X19 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X20 a_7650_2474# scs130hd_inv_1_1/Y a_1598_677# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.38
+X21 a_11534_4210# a_9449_4210# a_11265_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.568 ps=3.165 w=2.4 l=0.38
+X22 a_11265_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.636 pd=5.33 as=0.888 ps=3.14 w=2.4 l=0.38
+X23 a_8849_4119# scs130hd_inv_1_1/Y a_13395_4210# GND sky130_fd_pr__nfet_01v8 ad=0.38 pd=2.76 as=0.38 ps=2.76 w=1 l=0.15
+X24 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X25 a_11265_2204# scs130hd_inv_1_1/Y a_8849_4119# VddA18 sky130_fd_pr__pfet_01v8 ad=0.568 pd=3.165 as=0.8375 ps=4.88 w=1 l=0.38
+X26 a_7650_2474# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X27 a_11265_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X28 a_11534_4210# a_9449_4210# a_11265_2204# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X29 a_7650_2474# scs130hd_inv_1_1/A a_1598_677# GND sky130_fd_pr__nfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=0.15
+X30 VBiasOut scs130hd_inv_1_2/Y a_8068_4210# GND sky130_fd_pr__nfet_01v8 ad=1.48 pd=4.74 as=1.06 ps=8.53 w=4 l=0.15
+X31 VddA18 a_8849_4119# a_9449_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=1.59 pd=12.53 as=2.22 ps=6.74 w=6 l=3
+X32 a_8849_4119# BufferPBias VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.22 pd=6.74 as=1.59 ps=12.53 w=6 l=3
+X33 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X34 GND a_1598_677# SplitterOutput GND sky130_fd_pr__nfet_01v8 ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X35 a_8849_4119# PBiasEnabled a_8068_4210# GND sky130_fd_pr__nfet_01v8 ad=1.06 pd=8.53 as=1.48 ps=4.74 w=4 l=0.15
+X36 a_11265_2204# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.38
+X37 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X38 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X39 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X40 GND BufferNBias a_1598_677# GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X41 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X42 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X43 a_10376_2544# SplitterOutput a_7275_4210# GND sky130_fd_pr__nfet_01v8_lvt ad=0.25125 pd=1.74 as=0.43675 ps=3.14 w=0.5 l=2.4
+X44 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X45 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X46 a_1598_677# BufferNBias GND GND sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X47 a_1598_677# scs130hd_inv_1_1/A a_10376_2544# VddA18 sky130_fd_pr__pfet_01v8 ad=0.7775 pd=4.76 as=0.265 ps=2.53 w=1 l=0.38
+X48 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.43675 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X49 a_9449_4210# a_8849_4119# VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=2.22 pd=6.74 as=1.59 ps=12.53 w=6 l=3
+X50 a_8849_4119# NBiasEnabled a_8068_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.8375 pd=4.88 as=1.48 ps=4.74 w=4 l=0.38
+X51 a_8849_4119# scs130hd_inv_1_1/A a_13395_4210# VddA18 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.26625 ps=1.8 w=1 l=0.38
+X52 a_9449_4210# a_1598_677# GND GND sky130_fd_pr__nfet_01v8 ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=6
+X53 VddA18 BufferPBias a_8849_4119# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.59 pd=12.53 as=2.22 ps=6.74 w=6 l=3
+X54 a_8068_4210# PBiasEnabled a_1598_677# VddA18 sky130_fd_pr__pfet_01v8 ad=1.48 pd=4.74 as=0.7775 ps=4.76 w=4 l=0.38
+X55 a_7275_4210# SplitterOutput a_7650_2474# GND sky130_fd_pr__nfet_01v8_lvt ad=0.888 pd=3.14 as=0.888 ps=3.14 w=2.4 l=0.24
+X56 a_8068_4210# NBiasEnabled a_1598_677# GND sky130_fd_pr__nfet_01v8 ad=1.48 pd=4.74 as=1.06 ps=8.53 w=4 l=0.15
+X57 a_13395_4210# a_9449_4210# a_11534_4210# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=0.26625 pd=1.8 as=0.3075 ps=2.23 w=0.5 l=2.4
+.ends
+
+.subckt BiasDividerFineCell INext VGate Sel nSel INOut IOut VddA18 IPrev
+X0 IPrev VGate a_651_1380# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.42 pd=9.76 as=3.465 ps=9.77 w=9 l=1
+X1 a_651_1028# Sel INOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=1.455 pd=6.835 as=0.53 ps=4.53 w=2 l=0.5
+X2 INext VGate IPrev VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.42 pd=9.76 as=3.42 ps=9.76 w=9 l=1
+X3 IPrev VGate INext VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.42 pd=9.76 as=3.42 ps=9.76 w=9 l=1
+X4 a_651_1380# VGate a_651_1028# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.465 pd=9.77 as=1.455 ps=6.835 w=9 l=1
+X5 a_651_1028# nSel IOut VddA18 sky130_fd_pr__pfet_01v8_hvt ad=1.455 pd=6.835 as=0.53 ps=4.53 w=2 l=0.5
+X6 a_651_1028# VGate a_651_1380# VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.385 pd=18.53 as=3.42 ps=9.76 w=9 l=1
+X7 a_651_1380# VGate IPrev VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.42 pd=9.76 as=3.42 ps=9.76 w=9 l=1
+.ends
+
+.subckt BiasDividerFine Q0 nQ0 Q1 nQ1 nQ2 Q3 nQ3 Q4 nQ4 Q6 Q7 VGate GndA VddA18 IIn
++ IOut Q2 nQ7 Q5 nQ6 nQ5
+XBiasDividerFineCell_0[0] BiasDividerFineCell_0[1]/IPrev VGate Q7 nQ7 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 IIn BiasDividerFineCell
+XBiasDividerFineCell_0[1] BiasDividerFineCell_0[2]/IPrev VGate Q6 nQ6 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[1]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[2] BiasDividerFineCell_0[3]/IPrev VGate Q5 nQ5 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[2]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[3] BiasDividerFineCell_0[4]/IPrev VGate Q4 nQ4 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[3]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[4] BiasDividerFineCell_0[5]/IPrev VGate Q3 nQ3 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[4]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[5] BiasDividerFineCell_0[6]/IPrev VGate Q2 nQ2 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[5]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[6] BiasDividerFineCell_0[7]/IPrev VGate Q1 nQ1 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[6]/IPrev BiasDividerFineCell
+XBiasDividerFineCell_0[7] BiasDividerFineCell_0[7]/INext VGate Q0 nQ0 BiasDividerFineCell_0[7]/INOut
++ IOut VddA18 BiasDividerFineCell_0[7]/IPrev BiasDividerFineCell
+X0 BiasDividerFineCell_0[7]/INext VGate BiasDividerFineCell_0[7]/INOut VddA18 sky130_fd_pr__pfet_01v8_lvt ad=3.3975 pd=9.755 as=2.385 ps=18.53 w=9 l=1
+X1 BiasDividerFineCell_0[7]/INOut BiasDividerFineCell_0[7]/INOut GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=2.12 pd=16.53 as=2.12 ps=16.53 w=8 l=0.8
+X2 BiasDividerFineCell_0[7]/INOut VGate BiasDividerFineCell_0[7]/INext VddA18 sky130_fd_pr__pfet_01v8_lvt ad=2.385 pd=18.53 as=3.3975 ps=9.755 w=9 l=1
+.ends
+
+.subckt BiasBranch BufferP VddA18 nFineCode[6] NBiasEn BiasDisable BIT0 BiasCB[2]
++ PowerDown BiasCB[3] BiasCB[5] BiasCB[6] FineCode[6] FineCode[7] BiasCB[1] CoarseOneHot[1]
++ CoarseOneHot[0] CoarseOneHot[2] CoarseOneHot[3] PBiasEn CoarseOneHot[5] BiasCB[0]
++ CoarseOneHot[7] LowBiasInterfaceEn CoarseOneHot[6] PadBias CoarseOneHot[4] BiasCB[4]
++ GndA nFineCode[0] FineCode[1] FineCode[0] nFineCode[1] FineCode[2] nFineCode[2]
++ BiasCB[7] FineCode[3] nFineCode[3] VBiasOut CoarseOneHotLowBiasEn nLowBiasInterfaceEn
++ FineCode[4] nFineCode[4] BufferN nFineCode[7] FineCode[5] nFineCode[5]
+XBiasCoarseSel8to1_0 CoarseOneHot[0] CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3]
++ CoarseOneHot[4] CoarseOneHot[5] CoarseOneHot[6] CoarseOneHot[7] VddA18 BiasCB[0]
++ BiasCB[1] BiasCB[2] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] GndA BiasDividerFine_0/VGate
++ CoarseOneHotLowBiasEn BiasCoarseSel8to1
+XBiasCoarseFineInterface_0 BiasDividerFine_0/IIn VddA18 BiasDividerFine_0/VGate GndA
++ nLowBiasInterfaceEn LowBiasInterfaceEn BiasCoarseFineInterface
+XBiasBuffers_0 BufferN BIT0 VddA18 GndA BiasDividerFine_0/IOut NBiasEn PBiasEn BiasDisable
++ PowerDown BufferP VBiasOut PadBias BiasBuffers
+XBiasDividerFine_0 FineCode[0] nFineCode[0] FineCode[1] nFineCode[1] nFineCode[2]
++ FineCode[3] nFineCode[3] FineCode[4] nFineCode[4] FineCode[6] FineCode[7] BiasDividerFine_0/VGate
++ GndA VddA18 BiasDividerFine_0/IIn BiasDividerFine_0/IOut FineCode[2] nFineCode[7]
++ FineCode[5] nFineCode[6] nFineCode[5] BiasDividerFine
+.ends
+
+.subckt BiasBranchBuffer FineCode[6] nLowBiasInterfaceEn FineCode[7] BufferN BiasCB[0]
++ BiasCB[1] BufferP BiasCB[4] BiasCB[5] CoarseOneHot[0] BiasCB[7] CoarseOneHot[4]
++ nFineCode[7] CoarseOneHot[2] CoarseOneHot[6] BiasCB[6] CoarseOneHot[7] LowBiasInterfaceEn
++ CoarseOneHot[5] BiasCB[3] CoarseOneHot[1] nFineCode[6] BiasCB[2] FineCode[0] nFineCode[0]
++ VddA18 nFineCode[1] FineCode[2] nFineCode[2] FineCode[3] nFineCode[3] CoarseOneHotLowBiasEn
++ FineCode[4] nFineCode[4] CoarseOneHot[3] FineCode[1] GndA FineCode[5] nFineCode[5]
+XBiasCoarseSel8to1_0 CoarseOneHot[0] CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3]
++ CoarseOneHot[4] CoarseOneHot[5] CoarseOneHot[6] CoarseOneHot[7] VddA18 BiasCB[0]
++ BiasCB[1] BiasCB[2] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] GndA BiasDividerFine_0/VGate
++ CoarseOneHotLowBiasEn BiasCoarseSel8to1
+XBiasCoarseFineInterface_0 BiasDividerFine_0/IIn VddA18 BiasDividerFine_0/VGate GndA
++ nLowBiasInterfaceEn LowBiasInterfaceEn BiasCoarseFineInterface
+XBiasDividerFine_0 FineCode[0] nFineCode[0] FineCode[1] nFineCode[1] nFineCode[2]
++ FineCode[3] nFineCode[3] FineCode[4] nFineCode[4] FineCode[6] FineCode[7] BiasDividerFine_0/VGate
++ GndA VddA18 BiasDividerFine_0/IIn BufferN FineCode[2] nFineCode[7] FineCode[5] nFineCode[6]
++ nFineCode[5] BiasDividerFine
+X0 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X1 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X2 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=0.84 ps=6.28 w=6 l=6
+X3 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X4 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X5 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=0.84 ps=6.28 w=6 l=6
+X6 BufferP BufferP VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=3
+X7 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X8 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X9 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X10 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X11 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X12 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X13 BufferP BufferP VddA18 VddA18 sky130_fd_pr__pfet_01v8_lvt ad=1.59 pd=12.53 as=1.59 ps=12.53 w=6 l=3
+X14 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X15 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=1.59 ps=12.53 w=6 l=6
+X16 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X17 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X18 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X19 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X20 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X21 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=1.59 ps=12.53 w=6 l=6
+X22 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X23 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=0.84 ps=6.28 w=6 l=6
+X24 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=1.59 pd=12.53 as=0.84 ps=6.28 w=6 l=6
+X25 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X26 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X27 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X28 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=1.59 ps=12.53 w=6 l=6
+X29 BufferN BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=1.59 ps=12.53 w=6 l=6
+X30 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X31 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X32 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+X33 GndA BufferN BufferP GndA sky130_fd_pr__nfet_01v8_lvt ad=0.84 pd=6.28 as=0.84 ps=6.28 w=6 l=6
+.ends
+
+.subckt BiasMasterBias VMasterBiasP VMasterBiasN VddA18 BiasPowerDown ICoarse2 ICoarse1
++ IR GndA
+X0 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X1 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X2 VddA18 VMasterBiasP VddA18 GndA sky130_fd_pr__nfet_01v8 ad=4.24 pd=32.53 as=10.67288 ps=90.24 w=16 l=16
+X3 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X4 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X5 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X6 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X7 ICoarse1 a_7598_9142# a_24632_8272# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X8 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X9 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X10 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X11 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X12 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X13 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X14 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X15 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X16 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X17 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X18 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X19 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X20 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X21 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X22 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X23 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X24 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X25 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X26 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X27 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X28 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X29 a_26969_6396# VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X30 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X31 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X32 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X33 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X34 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X35 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X36 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X37 VddA18 a_3422_5905# a_7598_9142# VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=0.2
+X38 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X39 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X40 a_24632_8272# VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X41 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X42 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X43 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X44 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X45 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X46 BiasPowerDown a_3422_5905# BiasPowerDown GndA sky130_fd_pr__nfet_01v8 ad=4.24 pd=32.53 as=8.48 ps=65.06 w=16 l=16
+X47 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X48 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X49 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X50 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X51 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X52 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X53 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X54 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X55 a_7598_9142# BiasPowerDown GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=0.2
+X56 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X57 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X58 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X59 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X60 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X61 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X62 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X63 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X64 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X65 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X66 ICoarse2 a_7598_9142# a_26969_6396# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X67 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X68 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X69 VMasterBiasP VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X70 VMasterBiasP a_7598_9142# a_8409_754# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X71 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X72 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X73 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X74 a_7598_9142# VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=20
+X75 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X76 VddA18 VMasterBiasP a_3422_5905# VddA18 sky130_fd_pr__pfet_01v8 ad=0.53 pd=4.53 as=0.53 ps=4.53 w=2 l=0.2
+X77 a_7598_9142# a_7598_9142# VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=20
+X78 VMasterBiasN VMasterBiasN GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X79 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+X80 a_8409_754# VMasterBiasN IR GndA sky130_fd_pr__nfet_01v8_lvt ad=5.3 pd=40.53 as=5.3 ps=40.53 w=20 l=5
+.ends
+
+.subckt BiasMultiplierCell IOut VGate IPrev INext
+X0 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X1 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X2 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X3 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X4 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X5 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X6 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X7 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X8 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X9 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X10 INext VGate IPrev INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X11 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X12 INext VGate IPrev INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X13 IOut VGate INext INext sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X14 INext VGate IOut INext sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+.ends
+
+.subckt BiasMultiplier IOut1 BiasMultiplierCell_1/IOut BiasMultiplierCell_1/INext
++ IIn GndA IOut0
+XBiasMultiplierCell_0 IOut0 IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_1/IPrev
++ BiasMultiplierCell
+XBiasMultiplierCell_1 BiasMultiplierCell_1/IOut IIn BiasMultiplierCell_1/IPrev BiasMultiplierCell_1/INext
++ BiasMultiplierCell
+X0 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X1 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X2 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X3 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X4 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X5 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X6 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X7 BiasMultiplierCell_0/IPrev IIn GndA BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X8 BiasMultiplierCell_0/IPrev IIn GndA BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X9 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X10 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X11 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X12 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X13 IIn IIn BiasMultiplierCell_0/IPrev BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X14 BiasMultiplierCell_0/IPrev IIn IIn BiasMultiplierCell_0/IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+.ends
+
+.subckt BiasDividerCell IOut VGate IPrev INext
+X0 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X1 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X2 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X3 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X4 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X5 INext VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X6 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X7 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X8 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X9 INext VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X10 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X11 IPrev VGate IOut IPrev sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X12 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X13 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X14 IOut VGate IPrev IPrev sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+.ends
+
+.subckt BiasDivider IOut0 IOut3 VddA18 IOut2 IIn IOut5 IOut1 GndA IOut4
+XBiasDividerCell_0 IOut5 IIn BiasDividerCell_1/INext GndA BiasDividerCell
+XBiasDividerCell_1 IOut4 IIn BiasDividerCell_2/INext BiasDividerCell_1/INext BiasDividerCell
+XBiasDividerCell_2 IOut3 IIn BiasDividerCell_3/INext BiasDividerCell_2/INext BiasDividerCell
+XBiasDividerCell_3 IOut2 IIn BiasDividerCell_4/INext BiasDividerCell_3/INext BiasDividerCell
+XBiasDividerCell_4 IOut1 IIn BiasDividerCell_5/INext BiasDividerCell_4/INext BiasDividerCell
+XBiasDividerCell_5 IOut0 IIn VddA18 BiasDividerCell_5/INext BiasDividerCell
+X0 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X1 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X2 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=15.02 ps=119.51 w=4 l=8
+X3 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X4 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X5 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X6 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X7 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0 ps=0 w=4 l=8
+X8 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X9 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+X10 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X11 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=0.56 ps=4.28 w=4 l=8
+X12 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=1.06 ps=8.53 w=4 l=8
+X13 IIn IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=1.06 pd=8.53 as=1.06 ps=8.53 w=4 l=8
+X14 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 ad=0.56 pd=4.28 as=0.56 ps=4.28 w=4 l=8
+.ends
+
+.subckt BiasCoarseMBDivider BiasCB3 BiasCB6 BiasCB1 ICoarse2 ICoarse1 BiasMultiplier_0/IOut1
++ BiasCB2 BiasCB0 BiasCB5 VddA18 GndA BiasCB4 BiasCB7
+XBiasMultiplier_0 BiasMultiplier_0/IOut1 BiasCB0 VddA18 ICoarse1 GndA BiasCB1 BiasMultiplier
+XBiasDivider_0 BiasCB2 BiasCB5 VddA18 BiasCB4 ICoarse2 BiasCB7 BiasCB3 GndA BiasCB6
++ BiasDivider
+X0 a_20834_4648# BiasCB3 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X1 GndA BiasCB1 BiasCB1 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=10
+X2 GndA BiasCB0 BiasCB0 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.2772 ps=2.26 w=1.98 l=5
+X3 a_25182_4648# BiasCB3 a_23000_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X4 a_32484_4494# BiasCB4 a_28431_4494# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X5 a_18974_12626# BiasCB7 a_14812_12782# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X6 a_33072_12626# BiasCB5 a_29019_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X7 BiasCB1 BiasCB1 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=10
+X8 a_37234_12626# BiasCB5 a_33072_12782# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X9 a_18974_12314# BiasCB7 a_14812_12314# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X10 a_33072_12470# BiasCB5 a_29019_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X11 a_14328_4196# BiasCB2 a_13142_4196# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X12 BiasCB1 BiasCB1 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=10
+X13 a_37234_12314# BiasCB5 a_33072_12314# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X14 a_16726_4196# BiasCB2 a_15561_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X15 a_15561_4196# BiasCB2 a_14328_4196# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X16 a_27369_4392# BiasCB3 a_25182_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X17 a_28104_12626# BiasCB6 a_23942_12626# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X18 a_20834_4392# BiasCB3 BiasCB3 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X19 BiasCB1 BiasCB1 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=10
+X20 GndA BiasCB0 BiasCB0 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2772 ps=2.26 w=1.98 l=5
+X21 a_28104_12314# BiasCB6 a_23942_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X22 a_32484_4806# BiasCB4 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X23 a_14812_12782# BiasCB7 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X24 a_23942_12782# BiasCB6 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X25 a_32484_4650# BiasCB4 a_28431_4494# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X26 a_36692_4338# BiasCB4 a_32484_4494# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X27 a_13142_4648# BiasCB2 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X28 a_14812_12314# BiasCB7 BiasCB7 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X29 a_23942_12314# BiasCB6 BiasCB6 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X30 a_23000_4648# BiasCB3 a_20834_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X31 a_25182_4392# BiasCB3 a_23000_4392# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X32 BiasCB0 BiasCB0 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.5247 ps=4.49 w=1.98 l=5
+X33 a_16726_4196# BiasCB2 a_15561_4196# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X34 a_27369_4392# BiasCB3 a_25182_4392# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X35 a_36692_4650# BiasCB4 a_32484_4806# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X36 GndA BiasCB1 BiasCB1 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=10
+X37 a_36692_4650# BiasCB4 a_32484_4650# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X38 BiasCB0 BiasCB0 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.5247 ps=4.49 w=1.98 l=5
+X39 GndA BiasCB0 BiasCB0 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.2772 ps=2.26 w=1.98 l=5
+X40 a_18974_12626# BiasCB7 a_14812_12626# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X41 a_33072_12782# BiasCB5 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X42 a_32484_4338# BiasCB4 BiasCB4 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X43 GndA BiasCB1 BiasCB1 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=10
+X44 a_18974_12314# BiasCB7 a_14812_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X45 a_37234_12626# BiasCB5 a_33072_12626# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X46 a_33072_12314# BiasCB5 BiasCB5 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X47 a_37234_12314# BiasCB5 a_33072_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X48 a_13142_4196# BiasCB2 BiasCB2 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X49 BiasCB0 BiasCB0 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.2772 ps=2.26 w=1.98 l=5
+X50 BiasCB0 BiasCB0 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.2772 ps=2.26 w=1.98 l=5
+X51 a_28104_12626# BiasCB6 a_23942_12782# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X52 a_23000_4392# BiasCB3 a_20834_4392# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=10
+X53 BiasCB1 BiasCB1 GndA GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=10
+X54 a_28104_12314# BiasCB6 a_23942_12314# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X55 GndA BiasCB1 BiasCB1 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=10
+X56 GndA BiasCB0 BiasCB0 GndA sky130_fd_pr__nfet_01v8_lvt ad=0.2772 pd=2.26 as=0.2772 ps=2.26 w=1.98 l=5
+X57 a_23942_12626# BiasCB6 a_19889_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X58 a_14812_12626# BiasCB7 a_10759_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X59 a_23942_12470# BiasCB6 a_19889_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X60 a_14328_4648# BiasCB2 a_13142_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X61 a_15561_4648# BiasCB2 a_14328_4648# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.5247 pd=4.49 as=0.5247 ps=4.49 w=1.98 l=5
+X62 a_36692_4338# BiasCB4 a_32484_4338# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+X63 a_14812_12470# BiasCB7 a_10759_12470# GndA sky130_fd_pr__nfet_01v8_lvt ad=0.1325 pd=1.53 as=0.1325 ps=1.53 w=0.5 l=20
+.ends
+
+.subckt BiasMasterCoarse BiasCB[0] BiasCoarseMBDivider_0/BiasCB4 BiasCoarseMBDivider_0/BiasCB7
++ BiasMasterBias_0/IR VddA18 VSUBS BiasCB[3] BiasCoarseMBDivider_0/BiasCB6 VMasterBiasP
++ BiasMasterBias_0/BiasPowerDown BiasMasterBias_0/VMasterBiasN BiasCB[7] BiasCoarseMBDivider_0/BiasCB2
++ BiasCoarseMBDivider_0/BiasCB5 BiasCB[1]
+XBiasMasterBias_0 VMasterBiasP BiasMasterBias_0/VMasterBiasN VddA18 BiasMasterBias_0/BiasPowerDown
++ BiasMasterBias_0/ICoarse2 BiasMasterBias_0/ICoarse1 BiasMasterBias_0/IR VSUBS BiasMasterBias
+XBiasCoarseMBDivider_0 BiasCB[3] BiasCoarseMBDivider_0/BiasCB6 BiasCB[1] BiasMasterBias_0/ICoarse2
++ BiasMasterBias_0/ICoarse1 BiasCB[0] BiasCoarseMBDivider_0/BiasCB2 BiasCB[0] BiasCoarseMBDivider_0/BiasCB5
++ VddA18 VSUBS BiasCoarseMBDivider_0/BiasCB4 BiasCoarseMBDivider_0/BiasCB7 BiasCoarseMBDivider
+.ends
+
+.subckt BiasBranchnMasterx11 CoarseOneHotLowBiasEn[7] Bias[10] PadBias[9] Bias[9]
++ PadBias[8] Bias[8] PadBias[7] Bias[7] PadBias[10] BufferP nLowBiasInterfaceEn[10]
++ LowBiasInterfaceEn[10] CoarseOneHot[80] CoarseOneHot[81] CoarseOneHot[82] CoarseOneHot[83]
++ CoarseOneHot[87] CoarseOneHot[84] CoarseOneHot[85] CoarseOneHot[86] CoarseOneHotLowBiasEn[10]
++ FineCode[87] nFineCode[87] FineCode[86] nFineCode[86] FineCode[85] nFineCode[85]
++ nFineCode[80] FineCode[80] nFineCode[81] FineCode[81] nFineCode[83] FineCode[82]
++ FineCode[84] nFineCode[84] FineCode[83] nFineCode[82] BIT0[10] PowerDown[10] PBiasEn[10]
++ NBiasEn[10] BiasDisabled[10] nLowBiasInterfaceEn[9] LowBiasInterfaceEn[9] CoarseOneHot[72]
++ CoarseOneHot[73] CoarseOneHot[74] CoarseOneHot[75] CoarseOneHot[79] CoarseOneHot[76]
++ CoarseOneHot[77] CoarseOneHot[78] CoarseOneHotLowBiasEn[9] FineCode[79] nFineCode[79]
++ FineCode[78] nFineCode[78] FineCode[77] nFineCode[77] nFineCode[72] FineCode[72]
++ nFineCode[73] FineCode[73] nFineCode[75] FineCode[74] FineCode[76] nFineCode[76]
++ FineCode[75] nFineCode[74] BufferN PowerDown[9] PBiasEn[9] NBiasEn[9] BiasDisabled[9]
++ nLowBiasInterfaceEn[8] LowBiasInterfaceEn[8] CoarseOneHot[64] CoarseOneHot[65] CoarseOneHot[66]
++ CoarseOneHot[67] CoarseOneHot[71] CoarseOneHot[68] CoarseOneHot[69] CoarseOneHot[70]
++ CoarseOneHotLowBiasEn[8] FineCode[71] nFineCode[71] FineCode[70] nFineCode[70] FineCode[69]
++ nFineCode[69] nFineCode[64] FineCode[64] nFineCode[65] FineCode[65] nFineCode[67]
++ FineCode[66] FineCode[68] nFineCode[68] FineCode[67] nFineCode[66] BIT0[8] PowerDown[8]
++ PBiasEn[8] NBiasEn[8] BiasDisabled[8] nLowBiasInterfaceEn[7] LowBiasInterfaceEn[7]
++ CoarseOneHot[56] CoarseOneHot[57] CoarseOneHot[58] CoarseOneHot[59] CoarseOneHot[63]
++ CoarseOneHot[60] CoarseOneHot[61] CoarseOneHot[62] BIT0[9] FineCodeBuffer[7] nFineCodeBuffer[7]
++ FineCodeBuffer[6] nFineCodeBuffer[6] FineCodeBuffer[5] nLowBiasInterfaceEnBuffer
++ LowBiasInterfaceEnBuffer CoarseOneHotBuffer[0] CoarseOneHotBuffer[1] CoarseOneHotBuffer[2]
++ CoarseOneHotBuffer[3] CoarseOneHotBuffer[7] CoarseOneHotBuffer[4] CoarseOneHotBuffer[5]
++ CoarseOneHotBuffer[6] CoarseOneHotLowBiasEnBuffer FineCode[63] nFineCode[63] FineCode[62]
++ nFineCode[62] FineCode[61] nFineCode[61] nFineCode[56] FineCode[56] nFineCode[57]
++ FineCode[57] nFineCode[59] FineCode[58] FineCode[60] nFineCode[60] FineCode[59]
++ nFineCode[58] BIT0[7] PowerDown[7] PBiasEn[7] NBiasEn[7] BiasDisabled[7] nLowBiasInterfaceEn[6]
++ LowBiasInterfaceEn[6] CoarseOneHot[48] CoarseOneHot[49] CoarseOneHot[50] CoarseOneHot[51]
++ CoarseOneHot[55] CoarseOneHot[52] CoarseOneHot[53] CoarseOneHot[54] CoarseOneHotLowBiasEn[6]
++ FineCode[55] nFineCode[55] FineCode[54] nFineCode[54] FineCode[53] nFineCode[53]
++ nFineCode[48] FineCode[48] nFineCode[49] FineCode[49] nFineCode[51] FineCode[50]
++ FineCode[52] nFineCode[52] FineCode[51] nFineCode[50] BIT0[6] PowerDown[6] PBiasEn[6]
++ NBiasEn[6] BiasDisabled[6] nFineCodeBuffer[2] FineCodeBuffer[3] nFineCodeBuffer[4]
++ FineCodeBuffer[4] FineCodeBuffer[2] nFineCodeBuffer[3] FineCodeBuffer[1] nFineCodeBuffer[1]
++ FineCodeBuffer[0] nFineCodeBuffer[0] nFineCodeBuffer[5] Bias[6] VMasterBiasP PadBias[6]
++ PadBias[5] Bias[5] PadBias[4] Bias[4] PadBias[3] Bias[3] VMasterBiasN rx BiasCB[5]
++ BiasCB[4] BiasCB[7] BiasCB[6] PowerDownM BiasCB[0] BiasCB[1] nLowBiasInterfaceEn[5]
++ LowBiasInterfaceEn[5] CoarseOneHot[40] CoarseOneHot[41] CoarseOneHot[42] CoarseOneHot[43]
++ CoarseOneHot[47] CoarseOneHot[44] CoarseOneHot[45] CoarseOneHot[46] CoarseOneHotLowBiasEn[5]
++ FineCode[47] nFineCode[47] FineCode[46] nFineCode[46] FineCode[45] nFineCode[45]
++ nFineCode[40] FineCode[40] nFineCode[41] FineCode[41] nFineCode[43] FineCode[42]
++ FineCode[44] nFineCode[44] FineCode[43] nFineCode[42] BIT0[5] PowerDown[5] PBiasEn[5]
++ NBiasEn[5] BiasDisabled[5] nLowBiasInterfaceEn[4] LowBiasInterfaceEn[4] CoarseOneHot[32]
++ CoarseOneHot[33] CoarseOneHot[34] CoarseOneHot[35] CoarseOneHot[39] CoarseOneHot[36]
++ CoarseOneHot[37] CoarseOneHot[38] CoarseOneHotLowBiasEn[4] FineCode[39] nFineCode[39]
++ FineCode[38] nFineCode[38] FineCode[37] nFineCode[37] nFineCode[32] FineCode[32]
++ nFineCode[33] FineCode[33] nFineCode[35] FineCode[34] FineCode[36] nFineCode[36]
++ FineCode[35] nFineCode[34] BIT0[4] PowerDown[4] PBiasEn[4] NBiasEn[4] BiasDisabled[4]
++ nLowBiasInterfaceEn[3] LowBiasInterfaceEn[3] CoarseOneHot[24] CoarseOneHot[25] CoarseOneHot[26]
++ CoarseOneHot[27] CoarseOneHot[31] CoarseOneHot[28] CoarseOneHot[29] CoarseOneHot[30]
++ BiasCB[3] BiasCB[2] nFineCode[31] FineCode[30] nFineCode[30] FineCode[29] nFineCode[29]
++ nFineCode[24] FineCode[24] nFineCode[25] FineCode[25] nFineCode[27] FineCode[26]
++ FineCode[28] nFineCode[28] FineCode[27] nFineCode[26] BIT0[3] PowerDown[3] PBiasEn[3]
++ NBiasEn[3] BiasDisabled[3] nLowBiasInterfaceEn[2] LowBiasInterfaceEn[2] CoarseOneHot[16]
++ CoarseOneHot[17] CoarseOneHot[18] CoarseOneHot[19] CoarseOneHot[23] CoarseOneHot[20]
++ CoarseOneHot[21] CoarseOneHot[22] CoarseOneHotLowBiasEn[2] FineCode[23] nFineCode[23]
++ FineCode[22] nFineCode[22] FineCode[21] nFineCode[21] nFineCode[16] FineCode[16]
++ nFineCode[17] FineCode[17] nFineCode[19] FineCode[18] FineCode[20] nFineCode[20]
++ FineCode[19] nFineCode[18] BIT0[2] PowerDown[2] PBiasEn[2] NBiasEn[2] BiasDisabled[2]
++ nLowBiasInterfaceEn[1] CoarseOneHotLowBiasEn[3] FineCode[31] CoarseOneHot[9] CoarseOneHot[10]
++ CoarseOneHot[11] CoarseOneHot[15] CoarseOneHot[12] CoarseOneHot[13] CoarseOneHot[14]
++ CoarseOneHotLowBiasEn[1] FineCode[15] nFineCode[15] FineCode[14] nFineCode[14] FineCode[13]
++ nFineCode[13] nFineCode[8] FineCode[8] nFineCode[9] FineCode[9] nFineCode[11] FineCode[10]
++ FineCode[12] nFineCode[12] FineCode[11] nFineCode[10] BIT0[1] PowerDown[1] PBiasEn[1]
++ NBiasEn[1] BiasDisabled[1] nLowBiasInterfaceEn[0] LowBiasInterfaceEn[0] CoarseOneHot[0]
++ CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3] CoarseOneHot[7] CoarseOneHot[4]
++ CoarseOneHot[5] CoarseOneHot[6] CoarseOneHotLowBiasEn[0] FineCode[7] nFineCode[7]
++ FineCode[6] nFineCode[6] FineCode[5] nFineCode[5] nFineCode[0] FineCode[0] nFineCode[1]
++ FineCode[1] nFineCode[3] FineCode[2] FineCode[4] nFineCode[4] FineCode[3] nFineCode[2]
++ LowBiasInterfaceEn[1] CoarseOneHot[8] BIT0[0] PowerDown[0] PBiasEn[0] NBiasEn[0]
++ BiasDisabled[0] Bias[1] PadBias[0] Bias[0] PadBias[2] Bias[2] PadBias[1]
+XBiasBranch_8 BufferP VddA18 nFineCode[86] NBiasEn[10] BiasDisabled[10] BIT0[10] BiasCB[2]
++ PowerDown[10] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[86] FineCode[87] BiasCB[1]
++ CoarseOneHot[81] CoarseOneHot[80] CoarseOneHot[82] CoarseOneHot[83] PBiasEn[10]
++ CoarseOneHot[85] BiasCB[0] CoarseOneHot[87] LowBiasInterfaceEn[10] CoarseOneHot[86]
++ PadBias[10] CoarseOneHot[84] BiasCB[4] GndA nFineCode[80] FineCode[81] FineCode[80]
++ nFineCode[81] FineCode[82] nFineCode[82] BiasCB[7] FineCode[83] nFineCode[83] Bias[10]
++ CoarseOneHotLowBiasEn[10] nLowBiasInterfaceEn[10] FineCode[84] nFineCode[84] BufferN
++ nFineCode[87] FineCode[85] nFineCode[85] BiasBranch
+XBiasBranch_9 BufferP VddA18 nFineCode[70] NBiasEn[8] BiasDisabled[8] BIT0[8] BiasCB[2]
++ PowerDown[8] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[70] FineCode[71] BiasCB[1] CoarseOneHot[65]
++ CoarseOneHot[64] CoarseOneHot[66] CoarseOneHot[67] PBiasEn[8] CoarseOneHot[69] BiasCB[0]
++ CoarseOneHot[71] LowBiasInterfaceEn[8] CoarseOneHot[70] PadBias[8] CoarseOneHot[68]
++ BiasCB[4] GndA nFineCode[64] FineCode[65] FineCode[64] nFineCode[65] FineCode[66]
++ nFineCode[66] BiasCB[7] FineCode[67] nFineCode[67] Bias[8] CoarseOneHotLowBiasEn[8]
++ nLowBiasInterfaceEn[8] FineCode[68] nFineCode[68] BufferN nFineCode[71] FineCode[69]
++ nFineCode[69] BiasBranch
+XBiasBranchBuffer_0 FineCodeBuffer[6] nLowBiasInterfaceEnBuffer FineCodeBuffer[7]
++ BufferN BiasCB[0] BiasCB[1] BufferP BiasCB[4] BiasCB[5] CoarseOneHotBuffer[0] BiasCB[7]
++ CoarseOneHotBuffer[4] nFineCodeBuffer[7] CoarseOneHotBuffer[2] CoarseOneHotBuffer[6]
++ BiasCB[6] CoarseOneHotBuffer[7] LowBiasInterfaceEnBuffer CoarseOneHotBuffer[5] BiasCB[3]
++ CoarseOneHotBuffer[1] nFineCodeBuffer[6] BiasCB[2] FineCodeBuffer[0] nFineCodeBuffer[0]
++ VddA18 nFineCodeBuffer[1] FineCodeBuffer[2] nFineCodeBuffer[2] FineCodeBuffer[3]
++ nFineCodeBuffer[3] CoarseOneHotLowBiasEnBuffer FineCodeBuffer[4] nFineCodeBuffer[4]
++ CoarseOneHotBuffer[3] FineCodeBuffer[1] GndA FineCodeBuffer[5] nFineCodeBuffer[5]
++ BiasBranchBuffer
+XBiasBranch_10 BufferP VddA18 nFineCode[6] NBiasEn[0] BiasDisabled[0] BIT0[0] BiasCB[2]
++ PowerDown[0] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[6] FineCode[7] BiasCB[1] CoarseOneHot[1]
++ CoarseOneHot[0] CoarseOneHot[2] CoarseOneHot[3] PBiasEn[0] CoarseOneHot[5] BiasCB[0]
++ CoarseOneHot[7] LowBiasInterfaceEn[0] CoarseOneHot[6] PadBias[0] CoarseOneHot[4]
++ BiasCB[4] GndA nFineCode[0] FineCode[1] FineCode[0] nFineCode[1] FineCode[2] nFineCode[2]
++ BiasCB[7] FineCode[3] nFineCode[3] Bias[0] CoarseOneHotLowBiasEn[0] nLowBiasInterfaceEn[0]
++ FineCode[4] nFineCode[4] BufferN nFineCode[7] FineCode[5] nFineCode[5] BiasBranch
+XBiasMasterCoarse_0 BiasCB[0] BiasCB[4] BiasCB[7] rx VddA18 GndA BiasCB[3] BiasCB[6]
++ VMasterBiasP PowerDownM VMasterBiasN BiasCB[7] BiasCB[2] BiasCB[5] BiasCB[1] BiasMasterCoarse
+XBiasBranch_0 BufferP VddA18 nFineCode[46] NBiasEn[5] BiasDisabled[5] BIT0[5] BiasCB[2]
++ PowerDown[5] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[46] FineCode[47] BiasCB[1] CoarseOneHot[41]
++ CoarseOneHot[40] CoarseOneHot[42] CoarseOneHot[43] PBiasEn[5] CoarseOneHot[45] BiasCB[0]
++ CoarseOneHot[47] LowBiasInterfaceEn[5] CoarseOneHot[46] PadBias[5] CoarseOneHot[44]
++ BiasCB[4] GndA nFineCode[40] FineCode[41] FineCode[40] nFineCode[41] FineCode[42]
++ nFineCode[42] BiasCB[7] FineCode[43] nFineCode[43] Bias[5] CoarseOneHotLowBiasEn[5]
++ nLowBiasInterfaceEn[5] FineCode[44] nFineCode[44] BufferN nFineCode[47] FineCode[45]
++ nFineCode[45] BiasBranch
+XBiasBranch_1 BufferP VddA18 nFineCode[38] NBiasEn[4] BiasDisabled[4] BIT0[4] BiasCB[2]
++ PowerDown[4] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[38] FineCode[39] BiasCB[1] CoarseOneHot[33]
++ CoarseOneHot[32] CoarseOneHot[34] CoarseOneHot[35] PBiasEn[4] CoarseOneHot[37] BiasCB[0]
++ CoarseOneHot[39] LowBiasInterfaceEn[4] CoarseOneHot[38] PadBias[4] CoarseOneHot[36]
++ BiasCB[4] GndA nFineCode[32] FineCode[33] FineCode[32] nFineCode[33] FineCode[34]
++ nFineCode[34] BiasCB[7] FineCode[35] nFineCode[35] Bias[4] CoarseOneHotLowBiasEn[4]
++ nLowBiasInterfaceEn[4] FineCode[36] nFineCode[36] BufferN nFineCode[39] FineCode[37]
++ nFineCode[37] BiasBranch
+XBiasBranch_3 BufferP VddA18 nFineCode[22] NBiasEn[2] BiasDisabled[2] BIT0[2] BiasCB[2]
++ PowerDown[2] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[22] FineCode[23] BiasCB[1] CoarseOneHot[17]
++ CoarseOneHot[16] CoarseOneHot[18] CoarseOneHot[19] PBiasEn[2] CoarseOneHot[21] BiasCB[0]
++ CoarseOneHot[23] LowBiasInterfaceEn[2] CoarseOneHot[22] PadBias[2] CoarseOneHot[20]
++ BiasCB[4] GndA nFineCode[16] FineCode[17] FineCode[16] nFineCode[17] FineCode[18]
++ nFineCode[18] BiasCB[7] FineCode[19] nFineCode[19] Bias[2] CoarseOneHotLowBiasEn[2]
++ nLowBiasInterfaceEn[2] FineCode[20] nFineCode[20] BufferN nFineCode[23] FineCode[21]
++ nFineCode[21] BiasBranch
+XBiasBranch_2 BufferP VddA18 nFineCode[30] NBiasEn[3] BiasDisabled[3] BIT0[3] BiasCB[2]
++ PowerDown[3] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[30] FineCode[31] BiasCB[1] CoarseOneHot[25]
++ CoarseOneHot[24] CoarseOneHot[26] CoarseOneHot[27] PBiasEn[3] CoarseOneHot[29] BiasCB[0]
++ CoarseOneHot[31] LowBiasInterfaceEn[3] CoarseOneHot[30] PadBias[3] CoarseOneHot[28]
++ BiasCB[4] GndA nFineCode[24] FineCode[25] FineCode[24] nFineCode[25] FineCode[26]
++ nFineCode[26] BiasCB[7] FineCode[27] nFineCode[27] Bias[3] CoarseOneHotLowBiasEn[3]
++ nLowBiasInterfaceEn[3] FineCode[28] nFineCode[28] BufferN nFineCode[31] FineCode[29]
++ nFineCode[29] BiasBranch
+XBiasBranch_4 BufferP VddA18 nFineCode[62] NBiasEn[7] BiasDisabled[7] BIT0[7] BiasCB[2]
++ PowerDown[7] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[62] FineCode[63] BiasCB[1] CoarseOneHot[57]
++ CoarseOneHot[56] CoarseOneHot[58] CoarseOneHot[59] PBiasEn[7] CoarseOneHot[61] BiasCB[0]
++ CoarseOneHot[63] LowBiasInterfaceEn[7] CoarseOneHot[62] PadBias[7] CoarseOneHot[60]
++ BiasCB[4] GndA nFineCode[56] FineCode[57] FineCode[56] nFineCode[57] FineCode[58]
++ nFineCode[58] BiasCB[7] FineCode[59] nFineCode[59] Bias[7] CoarseOneHotLowBiasEn[7]
++ nLowBiasInterfaceEn[7] FineCode[60] nFineCode[60] BufferN nFineCode[63] FineCode[61]
++ nFineCode[61] BiasBranch
+XBiasBranch_5 BufferP VddA18 nFineCode[54] NBiasEn[6] BiasDisabled[6] BIT0[6] BiasCB[2]
++ PowerDown[6] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[54] FineCode[55] BiasCB[1] CoarseOneHot[49]
++ CoarseOneHot[48] CoarseOneHot[50] CoarseOneHot[51] PBiasEn[6] CoarseOneHot[53] BiasCB[0]
++ CoarseOneHot[55] LowBiasInterfaceEn[6] CoarseOneHot[54] PadBias[6] CoarseOneHot[52]
++ BiasCB[4] GndA nFineCode[48] FineCode[49] FineCode[48] nFineCode[49] FineCode[50]
++ nFineCode[50] BiasCB[7] FineCode[51] nFineCode[51] Bias[6] CoarseOneHotLowBiasEn[6]
++ nLowBiasInterfaceEn[6] FineCode[52] nFineCode[52] BufferN nFineCode[55] FineCode[53]
++ nFineCode[53] BiasBranch
+XBiasBranch_6 BufferP VddA18 nFineCode[14] NBiasEn[1] BiasDisabled[1] BIT0[1] BiasCB[2]
++ PowerDown[1] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[14] FineCode[15] BiasCB[1] CoarseOneHot[9]
++ CoarseOneHot[8] CoarseOneHot[10] CoarseOneHot[11] PBiasEn[1] CoarseOneHot[13] BiasCB[0]
++ CoarseOneHot[15] LowBiasInterfaceEn[1] CoarseOneHot[14] PadBias[1] CoarseOneHot[12]
++ BiasCB[4] GndA nFineCode[8] FineCode[9] FineCode[8] nFineCode[9] FineCode[10] nFineCode[10]
++ BiasCB[7] FineCode[11] nFineCode[11] Bias[1] CoarseOneHotLowBiasEn[1] nLowBiasInterfaceEn[1]
++ FineCode[12] nFineCode[12] BufferN nFineCode[15] FineCode[13] nFineCode[13] BiasBranch
+XBiasBranch_7 BufferP VddA18 nFineCode[78] NBiasEn[9] BiasDisabled[9] BIT0[9] BiasCB[2]
++ PowerDown[9] BiasCB[3] BiasCB[5] BiasCB[6] FineCode[78] FineCode[79] BiasCB[1] CoarseOneHot[73]
++ CoarseOneHot[72] CoarseOneHot[74] CoarseOneHot[75] PBiasEn[9] CoarseOneHot[77] BiasCB[0]
++ CoarseOneHot[79] LowBiasInterfaceEn[9] CoarseOneHot[78] PadBias[9] CoarseOneHot[76]
++ BiasCB[4] GndA nFineCode[72] FineCode[73] FineCode[72] nFineCode[73] FineCode[74]
++ nFineCode[74] BiasCB[7] FineCode[75] nFineCode[75] Bias[9] CoarseOneHotLowBiasEn[9]
++ nLowBiasInterfaceEn[9] FineCode[76] nFineCode[76] BufferN nFineCode[79] FineCode[77]
++ nFineCode[77] BiasBranch
+.ends
+
