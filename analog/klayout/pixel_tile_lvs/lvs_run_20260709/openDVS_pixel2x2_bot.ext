@@ -1,0 +1,2279 @@
+timestamp 1783594477
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use contact$30$1$1 contact$30$1$1_2 1 0 -2860 0 1 -2427
+use contact$1 contact$1_0 1 0 -2925 0 1 -2550
+use contact$26$1$1 contact$26$1$1_0 1 0 -1642 0 1 -2550
+use contact$26$1$1 contact$26$1$1_2 0 -1 -1519 1 0 -2390
+use contact$25$1$1 contact$25$1$1_0 1 0 -2000 0 1 -2322
+use contact$26$1$1 contact$26$1$1_3 0 -1 -847 1 0 -2390
+use contact$26$1$1 contact$26$1$1_5 1 0 -723 0 1 -2550
+use contact$25$1$1 contact$25$1$1_3 1 0 -366 0 1 -2322
+use contact$30$1$1 contact$30$1$1_3 1 0 494 0 1 -2427
+use contact$1 contact$1_3 1 0 559 0 1 -2550
+use contact$30$1$1 contact$30$1$1_0 1 0 -2860 0 1 2373
+use contact$1 contact$1_1 1 0 -2925 0 1 2250
+use contact$26$1$1 contact$26$1$1_1 1 0 -1642 0 1 2250
+use contact$26$1$1 contact$26$1$1_6 0 -1 -1519 1 0 2410
+use contact$25$1$1 contact$25$1$1_2 1 0 -2000 0 1 2478
+use contact$26$1$1 contact$26$1$1_4 1 0 -723 0 1 2250
+use contact$26$1$1 contact$26$1$1_7 0 -1 -847 1 0 2410
+use contact$25$1$1 contact$25$1$1_1 -1 0 -366 0 1 2478
+use contact$30$1$1 contact$30$1$1_1 1 0 494 0 1 2373
+use contact$1 contact$1_2 -1 0 559 0 1 2250
+use openDVS_pixel openDVS_pixel_3 -1 0 1249 0 1 -62
+use openDVS_pixel openDVS_pixel_2 1 0 -3615 0 -1 -10
+use openDVS_pixel openDVS_pixel_1 -1 0 1249 0 -1 -10
+use openDVS_pixel openDVS_pixel_0 1 0 -3615 0 1 -62
+port "GndA" 6 -4121 2644 1755 2902 m5
+port "VddA18" 7 -2362 -2602 -4 -2270 m4
+port "VddA18" 7 -2362 2198 -4 2530 m4
+port "VddA18" 7 -3808 -2436 -3358 2364 m4
+port "readLine[1]" 19 1121 2138 1187 2196 m3
+port "readLine[1]" 19 1121 -2604 1187 -2546 m3
+port "pixRst[1]" 18 995 2138 1061 2196 m3
+port "pixRst[1]" 18 995 -2604 1061 -2546 m3
+port "OnBn" 22 -901 -2436 -835 -2378 m3
+port "RefrBp" 13 -1027 -2436 -961 -2378 m3
+port "PrBp" 14 -1153 -2436 -1087 -2378 m3
+port "PrSFBp" 15 -1279 -2436 -1213 -2378 m3
+port "OffBn" 21 -1405 -2436 -1339 -2378 m3
+port "DiffBn" 20 -1531 -2436 -1465 -2378 m3
+port "pixRst[0]" 17 -3427 -2604 -3361 -2546 m3
+port "pixRst[0]" 17 -3427 2138 -3361 2196 m3
+port "readLine[0]" 16 -3553 -2604 -3487 -2546 m3
+port "readLine[0]" 16 -3553 2138 -3487 2196 m3
+port "OnBn" 22 -901 2306 -835 2364 m3
+port "RefrBp" 13 -1027 2306 -961 2364 m3
+port "PrBp" 14 -1153 2306 -1087 2364 m3
+port "PrSFBp" 15 -1279 2306 -1213 2364 m3
+port "OffBn" 21 -1405 2306 -1339 2364 m3
+port "DiffBn" 20 -1531 2306 -1465 2364 m3
+port "GndA" 6 1165 -2608 1217 -2492 m2
+port "GndA" 6 -3583 -2608 -3531 -2492 m2
+port "VddA18" 7 1165 -2380 1217 -2264 m2
+port "VddA18" 7 -3583 -2380 -3531 -2264 m2
+port "rowReadOFF[1]" 9 1165 -310 1217 -258 m2
+port "rowReadOFF[1]" 9 -3583 -310 -3531 -258 m2
+port "rowReadON[1]" 10 1165 -230 1217 -178 m2
+port "rowReadON[1]" 10 -3583 -230 -3531 -178 m2
+port "GndD" 8 1165 -150 1217 78 m2
+port "GndD" 8 -3583 -150 -3531 78 m2
+port "rowReadON[0]" 11 1165 106 1217 158 m2
+port "rowReadON[0]" 11 -3583 106 -3531 158 m2
+port "rowReadOFF[0]" 12 1165 186 1217 238 m2
+port "rowReadOFF[0]" 12 -3583 186 -3531 238 m2
+port "GndA" 6 1165 2192 1217 2308 m2
+port "GndA" 6 -3583 2192 -3531 2308 m2
+port "VddA18" 7 1165 2420 1217 2536 m2
+port "VddA18" 7 -3583 2420 -3531 2536 m2
+port "vpd[3]" 4 -12 -1266 46 -1208 m1
+port "vpd[1]" 3 -2412 -1266 -2354 -1208 m1
+port "vpd[2]" 5 -12 1136 46 1194 m1
+port "vpd[0]" 2 -2412 1136 -2354 1194 m1
+node "VddA18" 0 0 1442 -15 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DiffBn" 0 0 1217 -2222 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DiffBn" 0 0 1217 2150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "GndA" 2 8971.11 -4121 2644 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5797776 44944 0 0
+node "m4_992_n2604#" 1 2309.56 992 -2604 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2306064 11170 0 0 0 0
+node "VddA18" 0 1034.63 -2362 -2602 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 782856 5380 0 0 0 0
+node "VddA18" 0 1029.7 -2362 2198 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 782856 5380 0 0 0 0
+node "VddA18" 1 2311.13 -3808 -2436 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2311200 11172 0 0 0 0
+node "readLine[1]" 3 1144.14 1121 -2604 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 9732 0 0 0 0 0 0
+node "pixRst[1]" 3 1138.78 995 -2604 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 9732 0 0 0 0 0 0
+node "OnBn" 0 25.4879 -901 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "RefrBp" 0 24.1037 -1027 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "PrBp" 0 22.0723 -1153 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "PrSFBp" 0 22.3921 -1279 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "OffBn" 0 19.3402 -1405 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "DiffBn" 0 24.2195 -1531 -2436 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "pixRst[0]" 3 1138.67 -3427 2138 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 9732 0 0 0 0 0 0
+node "readLine[0]" 3 1144.22 -3553 2138 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 9732 0 0 0 0 0 0
+node "OnBn" 0 26.817 -901 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "RefrBp" 0 24.8736 -1027 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "PrBp" 0 22.8873 -1153 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "PrSFBp" 0 23.207 -1279 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "OffBn" 0 20.0459 -1405 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "DiffBn" 0 25.57 -1531 2306 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828 248 0 0 0 0 0 0
+node "GndA" 0 57.4678 1165 -2608 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "GndA" 0 57.4678 -3583 -2608 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "m2_61_n2492#" 1 359.749 61 -2492 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68544 1800 0 0 0 0 0 0 0 0
+node "m2_n789_n2464#" 1 347.832 -789 -2464 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67872 1784 0 0 0 0 0 0 0 0
+node "m2_n2385_n2464#" 1 347.832 -2385 -2464 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67872 1784 0 0 0 0 0 0 0 0
+node "m2_n3243_n2492#" 1 359.749 -3243 -2492 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68544 1800 0 0 0 0 0 0 0 0
+node "VddA18" 0 56.4524 1165 -2380 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "VddA18" 0 56.4535 -3583 -2380 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "m2_n1526_n2170#" 0 88.2028 -1526 -2170 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4330 266 3136 224 0 0 0 0 0 0
+node "m2_n1409_n2077#" 0 87.4478 -1409 -2077 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4144 260 3136 224 0 0 0 0 0 0
+node "m2_n905_n2021#" 0 80.7198 -905 -2021 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3640 242 3136 224 0 0 0 0 0 0
+node "rowReadOFF[1]" 0 30.9418 1165 -310 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadOFF[1]" 0 30.9418 -3583 -310 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadON[1]" 0 21.4302 1165 -230 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadON[1]" 0 21.4302 -3583 -230 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "GndD" 1 91.8918 1165 -150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11856 560 0 0 0 0 0 0 0 0
+node "GndD" 1 91.8918 -3583 -150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11856 560 0 0 0 0 0 0 0 0
+node "rowReadON[0]" 0 21.4302 1165 106 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadON[0]" 0 21.4302 -3583 106 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadOFF[0]" 0 30.9418 1165 186 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "rowReadOFF[0]" 0 30.9418 -3583 186 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0 0 0
+node "m2_n905_1893#" 0 73.4001 -905 1893 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3640 242 3136 224 0 0 0 0 0 0
+node "m2_n1409_1957#" 0 87.4078 -1409 1957 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4144 260 3136 224 0 0 0 0 0 0
+node "m2_n1527_2033#" 0 81.1839 -1527 2033 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4218 262 3136 224 0 0 0 0 0 0
+node "GndA" 0 56.4524 1165 2192 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "GndA" 0 56.4535 -3583 2192 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "m2_61_2308#" 1 359.714 61 2308 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68544 1800 0 0 0 0 0 0 0 0
+node "VddA18" 0 57.4678 1165 2420 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "m2_n3243_2308#" 1 359.726 -3243 2308 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68544 1800 0 0 0 0 0 0 0 0
+node "VddA18" 0 57.4678 -3583 2420 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6032 336 0 0 0 0 0 0 0 0
+node "m1_n1455_n2422#" 2 230.609 -1455 -2422 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15232 1144 0 0 0 0 0 0 0 0 0 0
+node "m1_1053_n2359#" 1 137.768 1053 -2359 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9412 466 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3469_n2359#" 1 137.488 -3469 -2359 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9412 466 3328 232 0 0 0 0 0 0 0 0
+node "m1_n1209_n1992#" 2 284.499 -1209 -1992 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 16404 1074 3136 224 0 0 0 0 0 0
+node "m1_899_n1928#" 0 93.0077 899 -1928 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3317_n1928#" 0 93.0077 -3317 -1928 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n1277_n1581#" 0 133.675 -1277 -1581 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 4144 260 3136 224 0 0 0 0 0 0
+node "m1_1025_n1432#" 0 86.982 1025 -1432 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3455_n1432#" 0 86.6677 -3455 -1432 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "vpd[3]" 0 49.2293 -12 -1266 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3364 232 0 0 0 0 0 0 0 0 0 0
+node "vpd[1]" 0 49.2293 -2412 -1266 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3364 232 0 0 0 0 0 0 0 0 0 0
+node "m1_n1027_n1115#" 0 146.889 -1027 -1115 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4736 276 4144 260 3136 224 0 0 0 0 0 0
+node "m1_n1027_969#" 0 146.989 -1027 969 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4736 276 4144 260 3136 224 0 0 0 0 0 0
+node "vpd[2]" 0 49.2293 -12 1136 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3364 232 0 0 0 0 0 0 0 0 0 0
+node "vpd[0]" 0 49.2293 -2412 1136 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3364 232 0 0 0 0 0 0 0 0 0 0
+node "m1_1025_1308#" 0 86.982 1025 1308 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3455_1308#" 0 86.6677 -3455 1308 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n1277_1457#" 0 133.92 -1277 1457 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 4144 260 3136 224 0 0 0 0 0 0
+node "m1_899_1792#" 0 93.0077 899 1792 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3317_1792#" 0 93.0077 -3317 1792 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 3328 232 0 0 0 0 0 0 0 0
+node "m1_n1209_1856#" 2 284.965 -1209 1856 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3328 232 16404 1074 3136 224 0 0 0 0 0 0
+node "m1_1053_2106#" 1 137.768 1053 2106 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9412 466 3328 232 0 0 0 0 0 0 0 0
+node "m1_n3469_2106#" 1 137.488 -3469 2106 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9412 466 3328 232 0 0 0 0 0 0 0 0
+node "m1_n1583_2378#" 7 1139.03 -1583 2378 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31616 1800 146980 4266 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "pixRst[0]" "VddA18" 3.95539
+cap "m2_61_2308#" "m1_n1583_2378#" 28.3722
+cap "m2_61_2308#" "m4_992_n2604#" 14.3285
+cap "rowReadON[1]" "rowReadOFF[1]" 29.5455
+cap "rowReadON[0]" "m4_992_n2604#" 3.07523
+cap "readLine[1]" "GndA" 9.03697
+cap "readLine[1]" "GndA" 19.9086
+cap "pixRst[0]" "GndA" 0.136393
+cap "pixRst[0]" "m1_n3317_n1928#" 9.41844
+cap "VddA18" "m1_n3455_1308#" 19.6107
+cap "GndA" "m1_n3455_1308#" 1.11017
+cap "m2_n1409_n2077#" "m1_n1455_n2422#" 0.670719
+cap "rowReadOFF[1]" "readLine[0]" 13.4547
+cap "vpd[2]" "VddA18" 0.0665411
+cap "VddA18" "m4_992_n2604#" 28.1153
+cap "GndD" "rowReadON[1]" 29.5455
+cap "m1_n1455_n2422#" "RefrBp" 4.00959
+cap "m2_n1409_n2077#" "OffBn" 11.5123
+cap "m1_n1583_2378#" "DiffBn" 17.9523
+cap "GndD" "m4_992_n2604#" 12.6629
+cap "GndA" "readLine[0]" 19.9086
+cap "m2_n905_n2021#" "m1_n1209_n1992#" 5.54241
+cap "m1_899_1792#" "pixRst[1]" 9.41844
+cap "m1_1053_2106#" "m4_992_n2604#" 20.5851
+cap "PrBp" "RefrBp" 30.6571
+cap "pixRst[0]" "VddA18" 997.186
+cap "m1_n1455_n2422#" "OnBn" 1.35788
+cap "m1_n1455_n2422#" "VddA18" 15.3168
+cap "GndA" "pixRst[0]" 3.72067
+cap "GndD" "readLine[0]" 36.7959
+cap "m2_61_2308#" "OffBn" 0.0146776
+cap "m1_899_n1928#" "pixRst[1]" 9.41844
+cap "m2_n789_n2464#" "m4_992_n2604#" 0.29103
+cap "m2_n1526_n2170#" "GndA" 1.15567
+cap "pixRst[0]" "vpd[0]" 0.253327
+cap "RefrBp" "PrBp" 30.6571
+cap "m1_n3469_2106#" "m1_n3455_1308#" 4.82214
+cap "GndA" "pixRst[1]" 3.72067
+cap "OffBn" "VddA18" 30.4946
+cap "PrBp" "VddA18" 30.4946
+cap "pixRst[1]" "m2_61_n2492#" 14.7486
+cap "PrBp" "m2_61_2308#" 0.0215486
+cap "VddA18" "VddA18" 0.78206
+cap "VddA18" "vpd[1]" 0.553168
+cap "m1_n3455_n1432#" "VddA18" 19.5045
+cap "m2_n905_n2021#" "GndA" 0.910494
+cap "GndA" "vpd[1]" 0.499248
+cap "pixRst[0]" "m2_n3243_n2492#" 14.7486
+cap "m2_n789_n2464#" "m1_n1455_n2422#" 4.63134
+cap "m1_1053_n2359#" "pixRst[1]" 23.301
+cap "GndA" "m1_n3455_n1432#" 1.11017
+cap "readLine[0]" "m1_n3455_1308#" 6.54051
+cap "readLine[1]" "m1_1025_n1432#" 6.54051
+cap "RefrBp" "m1_n1027_n1115#" 3.13649
+cap "m2_n905_1893#" "m1_n1583_2378#" 5.63152
+cap "rowReadOFF[1]" "m4_992_n2604#" 5.66741
+cap "readLine[1]" "rowReadON[1]" 9.52951
+cap "vpd[3]" "m4_992_n2604#" 0.552325
+cap "m1_1025_1308#" "readLine[1]" 6.54051
+cap "GndA" "RefrBp" 1.81368
+cap "m1_n1209_n1992#" "VddA18" 5.12
+cap "m2_n789_n2464#" "PrBp" 0.496702
+cap "m2_n789_n2464#" "OffBn" 0.172129
+cap "m2_n1409_n2077#" "GndA" 1.11331
+cap "pixRst[0]" "rowReadON[1]" 1.77311
+cap "GndA" "rowReadON[0]" 0.62419
+cap "GndA" "m2_61_2308#" 25.8513
+cap "OffBn" "DiffBn" 30.6571
+cap "pixRst[0]" "m1_n3469_2106#" 17.4314
+cap "VddA18" "m1_n1027_n1115#" 0.594367
+cap "m2_61_2308#" "PrSFBp" 0.0176226
+cap "readLine[1]" "vpd[2]" 0.0718189
+cap "GndA" "RefrBp" 1.81368
+cap "VddA18" "PrSFBp" 30.4946
+cap "rowReadOFF[0]" "m4_992_n2604#" 5.66741
+cap "m2_n1527_2033#" "m1_n1583_2378#" 7.34423
+cap "GndA" "pixRst[1]" 0.136393
+cap "pixRst[0]" "readLine[0]" 2537.14
+cap "GndA" "pixRst[1]" 3.819
+cap "OnBn" "RefrBp" 30.6571
+cap "m1_n1455_n2422#" "m2_n2385_n2464#" 4.63134
+cap "VddA18" "VddA18" 28.1153
+cap "GndA" "OnBn" 1.81368
+cap "RefrBp" "VddA18" 30.4946
+cap "OnBn" "m2_61_2308#" 0.736672
+cap "GndA" "VddA18" 557.372
+cap "OnBn" "m2_61_n2492#" 0.351018
+cap "VddA18" "m4_992_n2604#" 9.50998
+cap "m2_61_2308#" "VddA18" 13.575
+cap "VddA18" "m2_61_n2492#" 13.8062
+cap "VddA18" "m1_n3469_n2359#" 10.3834
+cap "GndA" "DiffBn" 1.81368
+cap "m2_n2385_n2464#" "PrBp" 0.274023
+cap "m2_n2385_n2464#" "OffBn" 1.10756
+cap "GndA" "GndD" 2.73683
+cap "m2_n789_n2464#" "PrSFBp" 0.274023
+cap "rowReadOFF[0]" "pixRst[0]" 1.77311
+cap "vpd[1]" "readLine[0]" 0.0718189
+cap "GndA" "m1_1053_2106#" 2.96188
+cap "m2_n1526_n2170#" "DiffBn" 15.5657
+cap "VddA18" "m1_1053_n2359#" 0.780141
+cap "VddA18" "GndA" 15.1163
+cap "m1_n3455_n1432#" "readLine[0]" 6.54051
+cap "VddA18" "m2_n3243_n2492#" 13.8062
+cap "m2_n789_n2464#" "GndA" 10.3428
+cap "m2_n789_n2464#" "m2_61_n2492#" 27.451
+cap "m1_n1583_2378#" "m1_n1027_969#" 2.04691
+cap "VddA18" "m4_992_n2604#" 9.94393
+cap "DiffBn" "VddA18" 38.064
+cap "pixRst[0]" "rowReadOFF[1]" 1.77311
+cap "m1_1053_2106#" "VddA18" 0.780141
+cap "m1_n1583_2378#" "m4_992_n2604#" 0.401194
+cap "readLine[1]" "pixRst[1]" 2537.14
+cap "m2_n2385_n2464#" "PrSFBp" 0.496702
+cap "VddA18" "GndA" 0.78206
+cap "GndA" "rowReadOFF[1]" 0.62419
+cap "m2_n905_1893#" "GndA" 0.495718
+cap "RefrBp" "m2_n3243_2308#" 0.0146776
+cap "VddA18" "VddA18" 9.95732
+cap "GndA" "vpd[3]" 0.499248
+cap "GndA" "VddA18" 2.16185
+cap "VddA18" "m1_n3469_n2359#" 18.8835
+cap "m2_n905_1893#" "m1_n1209_1856#" 5.54241
+cap "m1_1053_2106#" "GndA" 10.6594
+cap "m2_n2385_n2464#" "VddA18" 0.291462
+cap "GndA" "m1_n3469_n2359#" 2.95875
+cap "pixRst[0]" "GndA" 3.819
+cap "GndA" "m2_n2385_n2464#" 10.3428
+cap "rowReadON[0]" "VddA18" 3.08145
+cap "m1_1025_n1432#" "pixRst[1]" 32.3337
+cap "rowReadON[1]" "pixRst[1]" 1.77311
+cap "GndA" "rowReadON[0]" 0.62419
+cap "m1_1025_1308#" "pixRst[1]" 31.9948
+cap "GndD" "pixRst[0]" 7.77439
+cap "GndA" "rowReadOFF[0]" 0.62419
+cap "rowReadON[0]" "readLine[1]" 9.52951
+cap "m2_n1527_2033#" "GndA" 0.70472
+cap "m2_n905_1893#" "OnBn" 9.88669
+cap "VddA18" "DiffBn" 38.064
+cap "m2_n905_1893#" "VddA18" 3.26325
+cap "vpd[2]" "pixRst[1]" 0.253327
+cap "VddA18" "m1_n1277_n1581#" 1.58578
+cap "m2_n2385_n2464#" "m2_n3243_n2492#" 27.451
+cap "VddA18" "VddA18" 0.78206
+cap "GndA" "VddA18" 1.39242
+cap "m2_n3243_2308#" "DiffBn" 0.736672
+cap "pixRst[0]" "m1_n3455_1308#" 31.9842
+cap "m1_n1455_n2422#" "OffBn" 4.00959
+cap "m1_n1583_2378#" "OffBn" 2.83762
+cap "m1_n1455_n2422#" "PrBp" 4.17243
+cap "m1_n1583_2378#" "m1_n1277_1457#" 3.11853
+cap "m1_1053_n2359#" "VddA18" 10.6594
+cap "m2_n789_n2464#" "DiffBn" 0.117735
+cap "m2_n1527_2033#" "VddA18" 6.86165
+cap "m1_n3317_1792#" "VddA18" 5.7633
+cap "PrBp" "m1_n1583_2378#" 2.58314
+cap "readLine[1]" "GndD" 36.7959
+cap "GndA" "m1_n3317_1792#" 2.33937
+cap "VddA18" "readLine[0]" 0.729092
+cap "m1_899_1792#" "m4_992_n2604#" 5.7554
+cap "readLine[1]" "m1_1053_2106#" 10.808
+cap "readLine[0]" "m1_n3469_n2359#" 13.9324
+cap "m2_n2385_n2464#" "readLine[0]" 0.0233136
+cap "m2_n1409_1957#" "m1_n1583_2378#" 0.519781
+cap "GndA" "VddA18" 2.16185
+cap "m1_n1455_n2422#" "m1_n1209_n1992#" 5.32713
+cap "rowReadON[0]" "readLine[0]" 9.52951
+cap "m1_899_n1928#" "m4_992_n2604#" 5.7554
+cap "VddA18" "GndA" 0.78206
+cap "m2_n789_n2464#" "readLine[1]" 0.0233136
+cap "m1_n1583_2378#" "VddA18" 0.396082
+cap "GndD" "rowReadON[1]" 29.5455
+cap "m1_n1455_n2422#" "m1_n1027_n1115#" 2.13379
+cap "GndA" "m4_992_n2604#" 2109.06
+cap "GndA" "m1_n1583_2378#" 30.6318
+cap "GndA" "VddA18" 15.1163
+cap "m1_1025_1308#" "m1_1053_2106#" 4.58809
+cap "m2_61_n2492#" "m4_992_n2604#" 12.9889
+cap "m1_n1209_n1992#" "PrBp" 5.25426
+cap "m1_n1455_n2422#" "PrSFBp" 4.17243
+cap "m1_n1583_2378#" "vpd[0]" 0.0447744
+cap "m1_n1583_2378#" "m1_n1209_1856#" 4.72306
+cap "m2_n2385_n2464#" "DiffBn" 16.2675
+cap "m1_n1583_2378#" "PrSFBp" 2.58314
+cap "rowReadOFF[0]" "rowReadON[0]" 29.5455
+cap "pixRst[0]" "vpd[1]" 0.253327
+cap "m1_1053_n2359#" "m4_992_n2604#" 19.1909
+cap "readLine[1]" "rowReadOFF[1]" 13.4547
+cap "m1_n3455_n1432#" "pixRst[0]" 32.2966
+cap "PrBp" "PrSFBp" 30.6571
+cap "OffBn" "PrSFBp" 30.6571
+cap "GndA" "m1_n1455_n2422#" 4.37695
+cap "vpd[3]" "readLine[1]" 0.0718189
+cap "m1_n1027_969#" "VddA18" 0.608489
+cap "VddA18" "VddA18" 0.78206
+cap "m1_n1455_n2422#" "m2_61_n2492#" 0.0645294
+cap "OnBn" "m1_n1583_2378#" 17.9533
+cap "m1_n1583_2378#" "VddA18" 179.225
+cap "VddA18" "m4_992_n2604#" 28.1153
+cap "VddA18" "VddA18" 9.52385
+cap "GndA" "PrBp" 1.81368
+cap "GndA" "OffBn" 1.81368
+cap "GndA" "VddA18" 15.1163
+cap "GndA" "VddA18" 1.39242
+cap "rowReadON[1]" "rowReadOFF[1]" 29.5455
+cap "m1_n3317_1792#" "readLine[0]" 2.11618
+cap "rowReadOFF[0]" "readLine[1]" 13.4547
+cap "m2_n1409_1957#" "OffBn" 11.7741
+cap "rowReadON[0]" "pixRst[1]" 1.77311
+cap "m1_n1455_n2422#" "m2_n3243_n2492#" 0.0645294
+cap "GndA" "m4_992_n2604#" 12.8128
+cap "VddA18" "GndA" 12.8267
+cap "m1_n3317_n1928#" "VddA18" 5.7633
+cap "GndA" "m4_992_n2604#" 6.64107
+cap "GndA" "GndA" 1.39242
+cap "GndA" "m1_n3317_n1928#" 2.33937
+cap "GndA" "OffBn" 1.81368
+cap "readLine[1]" "VddA18" 25.0217
+cap "GndA" "m1_n1209_n1992#" 1.99005
+cap "GndA" "m1_n1277_1457#" 0.589584
+cap "pixRst[0]" "VddA18" 1.99724
+cap "m1_n1277_1457#" "m1_n1209_1856#" 0.476307
+cap "OffBn" "PrSFBp" 30.6571
+cap "GndA" "PrBp" 1.81368
+cap "m2_n1526_n2170#" "VddA18" 7.59833
+cap "RefrBp" "m2_61_2308#" 0.026943
+cap "m1_n1277_1457#" "PrSFBp" 4.97838
+cap "PrBp" "m1_n1209_1856#" 5.25426
+cap "GndA" "m1_899_1792#" 2.33937
+cap "rowReadON[0]" "GndD" 29.5455
+cap "VddA18" "pixRst[1]" 1.99724
+cap "PrBp" "PrSFBp" 30.6571
+cap "GndA" "PrSFBp" 1.81368
+cap "m2_n1409_1957#" "GndA" 1.12574
+cap "m2_n905_n2021#" "OnBn" 9.88669
+cap "GndD" "pixRst[1]" 7.77439
+cap "GndA" "m1_899_n1928#" 2.33937
+cap "GndA" "VddA18" 0.78206
+cap "VddA18" "vpd[1]" 0.066074
+cap "m2_n905_n2021#" "VddA18" 3.80633
+cap "m1_1053_2106#" "pixRst[1]" 16.7254
+cap "m1_n1583_2378#" "m2_n3243_2308#" 28.0894
+cap "GndA" "VddA18" 2121.39
+cap "OffBn" "VddA18" 30.4946
+cap "m1_n1277_1457#" "VddA18" 1.67879
+cap "VddA18" "vpd[0]" 0.553168
+cap "readLine[1]" "VddA18" 0.729092
+cap "GndA" "m2_61_n2492#" 26.2613
+cap "m1_n3469_2106#" "GndA" 10.3834
+cap "GndA" "m1_n1209_1856#" 1.99005
+cap "GndA" "vpd[0]" 0.499248
+cap "PrBp" "VddA18" 30.4946
+cap "VddA18" "readLine[0]" 25.0217
+cap "GndA" "PrSFBp" 1.81368
+cap "m2_n789_n2464#" "pixRst[1]" 0.887267
+cap "m1_n1455_n2422#" "DiffBn" 1.35788
+cap "m2_n1409_n2077#" "VddA18" 5.20856
+cap "readLine[1]" "m4_992_n2604#" 1718.65
+cap "m1_n1455_n2422#" "m1_n1277_n1581#" 3.32494
+cap "GndA" "m1_1053_n2359#" 2.96188
+cap "rowReadON[0]" "GndD" 29.5455
+cap "m2_61_2308#" "DiffBn" 0.0124125
+cap "OnBn" "RefrBp" 30.6571
+cap "VddA18" "m2_n3243_n2492#" 12.9941
+cap "m2_n1409_1957#" "VddA18" 5.39796
+cap "GndA" "readLine[0]" 9.03697
+cap "m1_n3317_n1928#" "readLine[0]" 2.11618
+cap "VddA18" "RefrBp" 30.4946
+cap "OffBn" "DiffBn" 30.6571
+cap "GndA" "m2_n3243_n2492#" 26.2613
+cap "VddA18" "VddA18" 28.1153
+cap "GndA" "OnBn" 1.81368
+cap "GndA" "VddA18" 557.372
+cap "pixRst[0]" "m1_n3469_n2359#" 24.3003
+cap "m1_1025_n1432#" "m4_992_n2604#" 19.5444
+cap "pixRst[1]" "rowReadOFF[1]" 1.77311
+cap "vpd[3]" "pixRst[1]" 0.253327
+cap "m2_n2385_n2464#" "pixRst[0]" 0.887267
+cap "rowReadON[1]" "m4_992_n2604#" 3.07523
+cap "VddA18" "rowReadON[1]" 3.08145
+cap "m1_1025_1308#" "m4_992_n2604#" 19.6506
+cap "m1_n1209_1856#" "VddA18" 5.28137
+cap "OnBn" "VddA18" 38.064
+cap "vpd[0]" "VddA18" 0.0665411
+cap "m1_n3469_2106#" "VddA18" 20.3687
+cap "VddA18" "PrSFBp" 30.4946
+cap "GndA" "rowReadON[1]" 0.62419
+cap "rowReadON[0]" "pixRst[0]" 1.77311
+cap "GndA" "m1_n3469_2106#" 2.95875
+cap "GndA" "GndA" 1.39242
+cap "GndA" "GndA" 2.16185
+cap "m2_n789_n2464#" "RefrBp" 1.10756
+cap "m1_n1583_2378#" "vpd[2]" 0.0461312
+cap "OffBn" "m2_n3243_2308#" 0.026943
+cap "vpd[2]" "m4_992_n2604#" 0.552325
+cap "m1_n1209_n1992#" "m1_n1277_n1581#" 0.476307
+cap "m1_n3455_n1432#" "m1_n3469_n2359#" 4.82214
+cap "VddA18" "readLine[0]" 1719.63
+cap "rowReadOFF[0]" "pixRst[1]" 1.77311
+cap "m2_n2385_n2464#" "vpd[1]" 0.0441281
+cap "OnBn" "VddA18" 38.064
+cap "GndA" "readLine[0]" 128.367
+cap "PrBp" "m2_n3243_2308#" 0.0176226
+cap "m2_n789_n2464#" "OnBn" 16.2675
+cap "vpd[0]" "readLine[0]" 0.0718189
+cap "m2_n789_n2464#" "VddA18" 65.6514
+cap "PrSFBp" "m1_n1277_n1581#" 4.89354
+cap "VddA18" "pixRst[1]" 3.95539
+cap "rowReadOFF[0]" "VddA18" 5.67363
+cap "m1_n3469_2106#" "VddA18" 0.784115
+cap "VddA18" "GndA" 15.1163
+cap "rowReadOFF[0]" "GndA" 0.62419
+cap "GndA" "VddA18" 0.78206
+cap "GndA" "DiffBn" 1.81368
+cap "VddA18" "m2_n3243_2308#" 14.3337
+cap "m2_n3243_n2492#" "readLine[0]" 1.01843
+cap "GndA" "m1_n1277_n1581#" 0.589584
+cap "rowReadON[0]" "rowReadOFF[0]" 29.5455
+cap "m1_899_1792#" "readLine[1]" 2.11618
+cap "pixRst[0]" "m1_n3317_1792#" 9.41844
+cap "m2_n2385_n2464#" "RefrBp" 0.172129
+cap "GndA" "m2_n3243_2308#" 25.8513
+cap "vpd[3]" "VddA18" 0.066074
+cap "m2_n3243_2308#" "PrSFBp" 0.0215486
+cap "m1_899_n1928#" "readLine[1]" 2.11618
+cap "rowReadON[1]" "readLine[0]" 9.52951
+cap "VddA18" "m1_n3469_n2359#" 0.784115
+cap "m2_n2385_n2464#" "OnBn" 0.117735
+cap "m1_n3469_2106#" "readLine[0]" 10.5235
+cap "GndA" "readLine[1]" 128.367
+cap "DiffBn" "m2_n3243_n2492#" 0.351018
+cap "m2_n2385_n2464#" "VddA18" 65.6514
+cap "VddA18" "rowReadOFF[1]" 5.67363
+cap "readLine[1]" "m2_61_n2492#" 1.01843
+cap "GndA" "rowReadOFF[1]" 0.62419
+cap "OnBn" "m2_n3243_2308#" 0.0124125
+cap "m2_n3243_2308#" "VddA18" 13.575
+cap "m2_n789_n2464#" "vpd[3]" 0.0441281
+cap "pixRst[1]" "m4_992_n2604#" 997.186
+cap "readLine[1]" "m1_1053_n2359#" 14.3283
+cap "GndA" "m1_1025_n1432#" 1.12511
+cap "GndA" "rowReadON[1]" 0.62419
+cap "m2_n1527_2033#" "DiffBn" 15.4905
+cap "VddA18" "GndA" 6.65447
+cap "GndA" "m1_1025_1308#" 1.12511
+cap "GndA" "GndA" 2.16185
+cap "m2_n789_n2464#" "m2_n2385_n2464#" 4.95283
+cap "VddA18" "VddA18" 0.78206
+cap "RefrBp" "m1_n1027_969#" 3.17375
+cap "GndD" "VddA18" 12.6902
+cap "m1_1053_n2359#" "m1_1025_n1432#" 4.58809
+cap "rowReadOFF[0]" "readLine[0]" 13.4547
+cap "GndA" "GndD" 2.73683
+cap "GndA" "vpd[2]" 0.499248
+cap "RefrBp" "m1_n1583_2378#" 2.83762
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_2/pixRst" -364.714
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vpd" 7.10543e-15
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2210_26#" 0.37256
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_0/m3_2084_26#" -2.87092
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m5_n506_n512#" 1.45661e-13
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vdiff" -14.9843
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/pixRst" -11.7638
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/rowReadON" 0.00161128
+cap "openDVS_pixel_2/pixRst" "openDVS_pixel_2/vpd" 0.10859
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_2/vdiff" -0.49513
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/ON" 0.031069
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_1/VddA18" -5.49322
+cap "openDVS_pixel_2/pixRst" "openDVS_pixel_2/vdiff" -0.26281
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vpd" 0.0299013
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2210_26#" -2.40493
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/vsf" 0.820367
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vdiff" 20.0904
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_0/m5_n506_n512#" 0.736525
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m5_n506_n512#" -0.0265656
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/ON" 1.42109e-13
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_0/m5_n506_n512#" -460.87
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2210_26#" -0.00677456
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/nRst" 0.000174498
+cap "openDVS_pixel_2/vd" "openDVS_pixel_2/vdiff" 3.55271e-15
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vdiff" -2.35538
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_2/m2_298_1861#" -1.83682
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/pixRst" -7.6066
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/nOFF" -4.16334e-17
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_1/VddA18" -241.749
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_0/m3_2084_26#" 2.09108
+cap "openDVS_pixel_2/pixRst" "openDVS_pixel_1/VddA18" -94.3364
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m5_n506_n512#" -0.572828
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/ON" 6.93889e-18
+cap "openDVS_pixel_2/readLine" "openDVS_pixel_0/m5_n506_n512#" -0.258353
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/a_95_497#" -0.0344149
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/VddA18" 11.28
+cap "openDVS_pixel_2/pixRst" "openDVS_pixel_0/m5_n506_n512#" 126.205
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_0/m3_2210_26#" 4.94431
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/vpd" 0.00103033
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vsf" 3.55271e-15
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/vd" 0.364792
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/vdiff" 14.4015
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m5_n506_n512#" 50.0519
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_2/vdiff" -1.3753
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_1/vsf" 0.19829
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2084_26#" 0.403227
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2714_26#" -0.0018631
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2084_26#" -75.68
+cap "openDVS_pixel_1/vd" "openDVS_pixel_1/VddA18" 0.100413
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2714_26#" -0.436887
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vpr" 0.575192
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_1/vd" 0.122959
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/VddA18" -0.347044
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2210_26#" -243.084
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_2/vd" 99.3972
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vpd" -1.18113e-15
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2210_26#" 0.773483
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_1/vpr" 9.12674
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2462_26#" -0.0899807
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vd" -8.87272
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2210_26#" -484.353
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2336_26#" -7.10543e-15
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_2/vpd" -2.84217e-14
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2588_26#" -0.0509229
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/VddA18" 1.45563
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2714_26#" 1.41692e-14
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2336_26#" -0.0406666
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vpd" 0.0704541
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vpr" 2.51256
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vsf" -0.28362
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/VddA18" 0.0920779
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2210_26#" -0.0122584
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2210_26#" -0.370747
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/vsf" 0.832432
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_1/vd" 0.00518854
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_0/m3_2588_26#" -0.297609
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2714_26#" 0.0262472
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vsf" 0.0370374
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/vpr" 0.334785
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/VddA18" 0.956138
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2588_26#" -0.326902
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_1/VddA18" 17.3919
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_2/vd" -0.0250965
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_1/VddA18" -564.712
+cap "openDVS_pixel_2/pixRst" "openDVS_pixel_2/vpd" -0.0138761
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m5_n506_n512#" 0.0644485
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/nRst" -2.58495
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_1/VddA18" 0.270148
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vd" -1.00862
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/pixRst" -0.00998214
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_0/m3_2714_26#" -0.744412
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/VddA18" 0.226899
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_1/vsf" 0.428425
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vdiff" -0.150067
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2336_26#" 0.324088
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_2/vsf" -0.224022
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2714_26#" -0.175474
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_1/vdiff" 0.100353
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_0/m3_2210_26#" -218.908
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_1/vpr" 0.127546
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2714_26#" -0.478469
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vsf" -1.42109e-13
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_2/vpr" 0.0140389
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2210_26#" -0.518649
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2210_26#" -14.6066
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_1/vpr" 0.144473
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_0/m3_2336_26#" 0.334983
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2588_26#" -0.492803
+cap "openDVS_pixel_1/VddA18" "openDVS_pixel_2/vpd" 0.781188
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_1/VddA18" 0.672688
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2210_26#" 1.69492
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2714_26#" 4.19853
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2336_26#" -0.0866398
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_2/vpr" 0.00456562
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/vsf" -0.0441129
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vpd" 1.09698
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vpr" 0.551675
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/VddA18" -126.202
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_2/vd" 1.13687e-13
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/readLine" -0.0325218
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m3_2336_26#" -17.1579
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/nRst" 0.561187
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_0/m3_2462_26#" 36.7998
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2462_26#" 144.303
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/m2_32_2482#" -75.9775
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/vdiff" -4.19899
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2714_26#" -6.56189
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_2/vd" 0.00518854
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2210_26#" -1.04658
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_1/m2_32_2482#" -1.54785
+cap "openDVS_pixel_2/vd" "openDVS_pixel_1/m2_32_2254#" 0.100413
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/vsf" -4.996e-16
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_2/vdiff" -0.0584464
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2336_26#" -0.106756
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2462_26#" 6.6139
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/m2_32_2482#" -15.2183
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/vdiff" -8.25229
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2714_26#" 0.289784
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2462_26#" 7.32845
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2714_26#" -0.816355
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_0/m3_2462_26#" -397.417
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_0/m3_2714_26#" -127.96
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_0/m3_2714_26#" 3.55271e-15
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_2/nRst" 0.00456562
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2210_26#" 0.0287424
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2462_26#" 4.4644
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2462_26#" -1.38778e-17
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_1/m2_32_2254#" 11.1876
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m3_2462_26#" 192.126
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2714_26#" -1.00862
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2714_26#" -0.561813
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m3_2714_26#" -1.88443
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2588_26#" -0.00838833
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2588_26#" -1.21785
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/m2_32_2482#" -4.19299
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_2/vdiff" 0.734747
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/m2_32_2254#" -226.093
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/nRst" 0.734747
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2336_26#" -431.355
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/vpr" -0.787587
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/vd" -0.493918
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/vdiff" -3.55271e-15
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2336_26#" -0.158891
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vsf" -1.26877
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2462_26#" -0.917193
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2336_26#" -0.290329
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/m2_32_2482#" -3.87378
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vdiff" 1.81361
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/m2_32_2254#" 27.6184
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_1/m2_32_2482#" -1.16536
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_1/vsf" 0.13656
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2336_26#" -0.161262
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/m2_32_2482#" 7.10543e-15
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_1/m2_32_2482#" -12.5835
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2210_26#" -1.29406
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/vsf" -0.224022
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/m2_32_2254#" -17.709
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/vsf" 28.3567
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2336_26#" -0.461838
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2462_26#" 3.66824
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/vsf" -0.303345
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/m2_32_2482#" -1.11797
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vpr" -0.0205442
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_2/vdiff" 1.08203
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2084_26#" -0.438009
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/m2_32_2482#" -0.45332
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vdiff" -7.74477
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_2/vdiff" -7.10543e-15
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2462_26#" -0.461838
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/m2_32_2198#" 0.268836
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/m2_32_2482#" -1174.84
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m2_32_2482#" 0.669928
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_2/vdiff" 13.4827
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/vsf" -3.00538
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2714_26#" -0.438009
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2462_26#" -487.551
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_1/m2_32_2482#" -0.520826
+cap "openDVS_pixel_1/vd" "openDVS_pixel_1/m2_32_2482#" -8.87272
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_2/vdiff" -0.154357
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/m2_32_2482#" -12.7424
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2714_26#" -486.286
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vdiff" 64.7965
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2336_26#" -244.24
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/vpr" 0.19829
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/nRst" -0.532445
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m3_2336_26#" -0.252566
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2084_26#" -0.498226
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/m2_32_2254#" -4.08061
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/m2_32_2254#" -1.76002
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/vsf" -0.82003
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_0/m3_2336_26#" -6.76085
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/vpd" 0.752474
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2336_26#" 12.5036
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_2/vpr" 38.8571
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/vd" -0.0236558
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2462_26#" -0.290329
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/vdiff" 0.0995225
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/m2_32_2482#" -1.25559
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vdiff" -0.139473
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2714_26#" -0.0978653
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_2/vpr" -4.74455
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/vd" 99.3972
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/m2_32_2254#" 11.8554
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_2/nRst" 15.2844
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vpr" 0.506841
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2336_26#" -1.05537
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2336_26#" 3.98502
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2588_26#" -0.812671
+cap "openDVS_pixel_2/vd" "openDVS_pixel_1/m2_32_2482#" 0.122959
+cap "openDVS_pixel_2/vd" "openDVS_pixel_2/vdiff" -0.0393907
+cap "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_0/m3_2336_26#" -315.366
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2084_26#" -1.1114
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2462_26#" 6.85454
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2714_26#" -2.97757
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m3_2462_26#" 17.1405
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/m2_32_2254#" -6.08208
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m3_2714_26#" 0.0299221
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/m3_2336_26#" 0.569997
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/m2_32_2482#" -0.0265656
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/vdiff" -0.49513
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_0/m3_2210_26#" 0.372967
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m2_32_2254#" 0.0263956
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/pixRst" -7.58212
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/readLine" -364.714
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/m2_32_2198#" -6.94583e-15
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2714_26#" 0.000174498
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/m2_32_2482#" 1.00635
+cap "openDVS_pixel_1/ON" "openDVS_pixel_1/m2_32_2482#" 2.04281e-13
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/m2_32_2254#" 1.55431e-14
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/vdiff" 19.9624
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/readLine" -1.83682
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/pixRst" -10.6591
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/vdiff" -14.9827
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/pixRst" 126.26
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vd" 0.364792
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/m2_32_2254#" -1.35706
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/m2_32_2254#" -94.3364
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/pixRst" 0.0969539
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/m2_32_2198#" 2.09108
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vsf" 0.820367
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vdiff" -2.35538
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/m2_32_2482#" -0.572828
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/readLine" -3.19129
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/m2_32_2482#" 1.12612
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/readLine" -0.11497
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/m2_32_2254#" -5.50407
+cap "openDVS_pixel_1/vd" "openDVS_pixel_1/m2_32_2198#" -2.22045e-16
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vpd" 0.00103033
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_1/pixRst" 2.22045e-16
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/m2_32_2254#" -241.749
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/m3_2714_26#" 0.00161128
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2210_26#" 4.94431
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/vsf" -1.15463e-14
+cap "openDVS_pixel_1/a_95_497#" "openDVS_pixel_1/m2_32_2482#" -0.0344149
+cap "openDVS_pixel_1/vd" "openDVS_pixel_1/m2_32_2254#" -1.25455e-14
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/m2_32_2198#" 50.2585
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/vdiff" -0.235014
+cap "openDVS_pixel_1/ON" "openDVS_pixel_0/m3_2714_26#" 0.031069
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/vsf" -1.13687e-13
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_1/m2_32_2254#" 1.77636e-15
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2210_26#" -0.00677456
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_1/m2_32_2254#" 10.4015
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m2_32_2198#" 0.0998469
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/m2_32_2254#" -208.395
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m2_32_2482#" 0.428002
+cap "openDVS_pixel_1/m2_32_2198#" "openDVS_pixel_0/m3_2210_26#" -2.28808
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vdiff" 14.4015
+cap "openDVS_pixel_1/m2_298_1861#" "openDVS_pixel_1/m2_32_2482#" -0.385481
+cap "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/m2_32_2254#" -0.605841
+cap "m4_992_n2604#" "openDVS_pixel_1/m2_32_2482#" -250.689
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/rowReadON" 3.09026
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" -10.4251
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/a_361_187#" 0.490307
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/nOFF" 3.12583
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_2/rowReadOFF" -13.4547
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_2/ON" -8.52651e-14
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2084_26#" -2.13993
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/ON" 0.0520932
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/ON" 0.0141831
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m3_2210_26#" 0.079945
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/GndD" 0.0476996
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/GndD" 0.414946
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/readLine" 0.326891
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vpd" -0.147708
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_2/rowReadON" 0.00621135
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_2/a_95_497#" -1.77636e-15
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_2/rowReadOFF" 0.00165114
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/VddA18" -2.39161
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/vdiff" -0.841494
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_0/m3_2210_26#" 3.9561
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nOFF" 0.0474127
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/readLine" -46.9073
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m3_2084_26#" 3.46945e-18
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/nRst" 0.013887
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vd" 1.13687e-13
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_0/VddA18" 0.0407527
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m5_n506_n512#" 0.0571495
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/readLine" 0.0990526
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/rowReadOFF" -1.77311
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/GndD" -0.0958552
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/ON" 1.95563
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/GndD" -0.621403
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/rowReadOFF" 0.188058
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vdiff" -6.04899
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_2/m2_298_1861#" 1.38778e-17
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/rowReadOFF" 0.331989
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/a_95_497#" 0.0927978
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_2/nRst" 1.07685
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_2/rowReadOFF" 1.41952
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/m3_2210_26#" -4.84736
+cap "openDVS_pixel_2/vpd" "openDVS_pixel_0/VddA18" -0.217692
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vsf" -2.84217e-14
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/nRst" -0.0754366
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nRst" 0.084303
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/VddA18" -479.371
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/GndD" 0.34167
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2210_26#" 0.0428682
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m3_2210_26#" 0.0198485
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/m5_n506_n512#" -1.80984
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m5_n506_n512#" -0.80636
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/rowReadOFF" -1.12024
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/nOFF" 0.115635
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/rowReadON" 0.232753
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/rowReadON" 0.346443
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/vsf" 0.0536397
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/rowReadOFF" 0.166913
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/rowReadOFF" 0.0720915
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndD" -0.0219794
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadOFF" 0.350855
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/readLine" -9.47393
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m3_2210_26#" 9.97021
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/VddA18" 0.10322
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2210_26#" 0.0557903
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/VddA18" -0.0501579
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/nRst" -0.458227
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/a_361_187#" -6.93889e-18
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/rowReadON" 0.00668909
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/m3_2210_26#" -23.8751
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m3_2210_26#" -1.1293e-15
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_2/ON" 0.187883
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m5_n506_n512#" 0.0547862
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/rowReadON" 0.100318
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/VddA18" -287.445
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadON" 0.545034
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_2/ON" 7.10543e-15
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/VddA18" -5.33129
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/GndD" -14.801
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/ON" -0.515117
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/ON" 0.011799
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_0/m3_2210_26#" 0.0178641
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/a_621_187#" 0.13508
+cap "openDVS_pixel_0/a_621_187#" "openDVS_pixel_2/rowReadOFF" 0.111246
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/ON" 0.191358
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/vsf" 0.593048
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/nRst" 0.00412526
+cap "openDVS_pixel_0/a_361_187#" "openDVS_pixel_2/ON" 0.13508
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/vsf" 0.126692
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2210_26#" 1.92707
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/rowReadON" -1.74217
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2210_26#" 20.6775
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_2/rowReadOFF" -29.5455
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/VddA18" 0.277014
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m5_n506_n512#" 0.0342008
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2084_26#" -0.0582163
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/VddA18" -377.002
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/m3_2210_26#" 0.0144378
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2084_26#" 8.67362e-19
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/m3_2210_26#" 0.127477
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/rowReadOFF" 0.140369
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/a_621_187#" 0.277082
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vsf" 0.596836
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/VddA18" 0.163065
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/m3_2084_26#" -0.00111201
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/a_95_497#" 0.0290239
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m5_n506_n512#" -1.74194
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/rowReadON" 0.162079
+cap "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/nRst" -0.539338
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/vpd" -0.163449
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/readLine" -739.892
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2210_26#" 0.00392581
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/m2_298_1861#" -0.030738
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2714_26#" 1.37737e-15
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m5_n506_n512#" -0.0899698
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m5_n506_n512#" -2.21788
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_2/vsf" 0.832432
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/VddA18" 0.116069
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_2/vsf" -0.00446175
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m5_n506_n512#" 0.456777
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m5_n506_n512#" 1.11383
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/nOFF" 0.0563943
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/VddA18" -0.458553
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/vd" 9.10611
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/vdiff" 0.701894
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/VddA18" 0.0423959
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2210_26#" -369.82
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m5_n506_n512#" 0.521076
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/nOFF" 0.349315
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/nOFF" 0.274859
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m5_n506_n512#" 0.12677
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m5_n506_n512#" 0.0848442
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2084_26#" -740
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/nRst" 0.0928151
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" -287.63
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/vsf" -0.0389946
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2336_26#" -8.88178e-16
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/vpd" -0.0898781
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2714_26#" 0.763025
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/nOFF" 0.0728841
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vsf" 0.0370374
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/vdiff" 0.886679
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_1/nRst" 9.69787
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/m5_n506_n512#" -0.236343
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_2/vdiff" -1.11022e-15
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/GndD" -0.318039
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/VddA18" 0.497823
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m5_n506_n512#" -1.29426
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/rowReadOFF" 0.0446464
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_2/vdiff" 0.565267
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" -0.310761
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vsf" 2.22045e-16
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/m5_n506_n512#" 0.426801
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/VddA18" -0.0375875
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/VddA18" 12.6558
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/rowReadON" 0.443096
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/ON" 3.56481
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/m5_n506_n512#" 0.548583
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/VddA18" 0.0104619
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/nOFF" 0.187562
+cap "openDVS_pixel_2/vpd" "openDVS_pixel_0/m5_n506_n512#" -0.203699
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_1/vdiff" 0.383942
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_2/vsf" 0.00747173
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/nOFF" -0.0307039
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/vdiff" 20.1521
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m3_2714_26#" 0.120196
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/VddA18" 0.101703
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m5_n506_n512#" 1.30614
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_1/vd" 0.0253786
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m5_n506_n512#" 1.32042
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/m5_n506_n512#" -1.18397
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/vsf" -0.0773646
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m5_n506_n512#" 0.0577131
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_0/m5_n506_n512#" 0.350338
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m5_n506_n512#" 1.72666
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndD" 1.11022e-16
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/rowReadOFF" 0.361916
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/ON" 0.280542
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m5_n506_n512#" -103.671
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2084_26#" 0.455497
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vdiff" 3.29597e-16
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/m5_n506_n512#" -433.973
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/VddA18" 5.33707
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/VddA18" 0.0453929
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2714_26#" -0.306907
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/m5_n506_n512#" -1.77636e-15
+cap "openDVS_pixel_2/vpr" "openDVS_pixel_0/VddA18" -0.000874441
+cap "openDVS_pixel_2/vpd" "openDVS_pixel_0/m3_2084_26#" 4.85723e-17
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m5_n506_n512#" 0.602296
+cap "openDVS_pixel_2/vpd" "openDVS_pixel_0/VddA18" -0.396106
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m5_n506_n512#" -0.363257
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/vdiff" 0.372935
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/ON" 0.57487
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2588_26#" 1.82559
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m5_n506_n512#" -0.160604
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m5_n506_n512#" 0.461907
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2588_26#" -0.107165
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m5_n506_n512#" 0.0910819
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_2/ON" 0.20572
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/vdiff" 1.61609
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_2/vpd" -0.0718189
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/VddA18" 0.807812
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/ON" 0.0120795
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_2/ON" 2.30009
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m5_n506_n512#" -13.8143
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2210_26#" 0.488942
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_0/VddA18" 0.0388798
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m5_n506_n512#" -1.77636e-15
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/VddA18" -115.486
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m5_n506_n512#" -1.35146
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/GndD" -0.0414845
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m5_n506_n512#" -0.372624
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_2/vsf" 1.19216
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/GndD" -1.08803
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/VddA18" -10.3644
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m5_n506_n512#" -1.98813
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/vd" 0.187562
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m5_n506_n512#" 0.0577131
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/VddA18" -333.957
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/nRst" 2.66e-16
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/m5_n506_n512#" -4.35696
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/vdiff" 0.274859
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/vd" 2.67054
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2084_26#" -0.387261
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/rowReadON" -3.22256
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m5_n506_n512#" 2.44249e-15
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/vdiff" 30.1094
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/rowReadON" -0.503813
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/VddA18" -4.1742
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m5_n506_n512#" -105.672
+cap "openDVS_pixel_2/vd" "openDVS_pixel_1/vd" 37.089
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/m3_2084_26#" -0.503813
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_0/VddA18" -0.395262
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_2/nRst" 57.4536
+cap "openDVS_pixel_1/ON" "openDVS_pixel_0/m5_n506_n512#" -6.66134e-16
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m5_n506_n512#" 0.0848442
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m5_n506_n512#" -0.241762
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" -45.3933
+cap "openDVS_pixel_2/vd" "openDVS_pixel_3/rowReadOFF" 0.0836744
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/nRst" 15.4191
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vd" -0.474811
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/rowReadOFF" -3.22256
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/m5_n506_n512#" -1.20734
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/nRst" -0.377698
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/vdiff" -4.9352
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/GndD" 4.26326e-14
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/VddA18" -620.041
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vdiff" -5.05152
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vsf" -0.0773646
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/VddA18" 0.0338357
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/GndD" -0.181197
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/vd" -0.5349
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/rowReadOFF" -0.503813
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2462_26#" -740.47
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_2/nRst" -0.491277
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/vd" 12.3568
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/vpd" -0.0718189
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_2/vpr" -0.404984
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/vdiff" 11.9256
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/vdiff" 1.61609
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m3_2336_26#" 1.48977
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/m3_2084_26#" -0.503813
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2588_26#" -737.528
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m5_n506_n512#" 0.0781345
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/VddA18" 0.116069
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/nRst" -0.869929
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2462_26#" -0.5349
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_1/vd" 0.381291
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_1/rowReadON" 8.52651e-14
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2084_26#" -0.751029
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/m5_n506_n512#" -1.20734
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_1/vdiff" 20.1521
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2714_26#" -0.396493
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m5_n506_n512#" 1.08998
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/nRst" -0.456898
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/rowReadON" -1.16115
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/m5_n506_n512#" 0.478985
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2336_26#" 0.438538
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_2/vdiff" 27.3245
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/VddA18" 0.0233739
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m5_n506_n512#" -13.5085
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2714_26#" -3.21174
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2336_26#" -738.724
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/pixRst" -0.0898781
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_1/vdiff" 0.886679
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m5_n506_n512#" -0.809362
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2336_26#" 8.42289
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/GndD" -0.225975
+cap "openDVS_pixel_1/vpr" "openDVS_pixel_0/m3_2714_26#" -0.435358
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_0/m5_n506_n512#" -0.203699
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/rowReadON" -1.16115
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_1/rowReadOFF" -1.16115
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2084_26#" -0.72277
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m5_n506_n512#" -0.396977
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_2/nRst" 0.501411
+cap "openDVS_pixel_2/vd" "openDVS_pixel_3/rowReadON" 0.103899
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/rowReadON" -3.22256
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/VddA18" -1.00947
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m5_n506_n512#" -0.156123
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/VddA18" 0.334639
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/m5_n506_n512#" 0.131507
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/VddA18" 0.0550385
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_1/vd" -0.00754241
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/VddA18" -0.369074
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/vd" 0.445591
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2588_26#" -0.474811
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_1/vdiff" -0.616965
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/vdiff" 0.0083556
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/VddA18" 0.101703
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_3/rowReadOFF" 0.565267
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/rowReadOFF" -1.16115
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/vd" 0.0928151
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m5_n506_n512#" 0.602296
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/VddA18" -13.4454
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/rowReadOFF" -3.22256
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2588_26#" -0.985259
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/VddA18" 1.45872
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/vdiff" -0.659149
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2336_26#" -1.55345
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/VddA18" -610.578
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_2/vdiff" 80.3326
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/m5_n506_n512#" 0.126428
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_1/vsf" 0.832432
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/vd" 0.543626
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_2/vdiff" 0.0370374
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" -153.091
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/vdiff" 1.31311
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vd" 0.455497
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2336_26#" 0.543626
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vdiff" -3.53684
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/VddA18" -23.4269
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vsf" -0.187525
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2084_26#" -0.396493
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_2/vdiff" 0.344732
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m3_2084_26#" -2.66669
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_2/vdiff" -1.21299
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/VddA18" -9.47058
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2336_26#" -371.002
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_1/nRst" -0.135399
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m3_2084_26#" -0.0224504
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/VddA18" -1148.27
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/VddA18" -0.00281623
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m5_n506_n512#" -2.19471
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_2/vdiff" -1.41906
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/m5_n506_n512#" 0.222051
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/nRst" 1.42109e-14
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/GndD" -0.544013
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/m5_n506_n512#" -6.93984
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/m5_n506_n512#" -0.160604
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/GndD" -1.08803
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m3_2714_26#" -0.212985
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_2/vdiff" -4.43093
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m5_n506_n512#" 0.063807
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2084_26#" -0.798184
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/VddA18" 0.06334
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_0/m5_n506_n512#" -1.77636e-15
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/vd" 3.25067
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/vd" 0.546994
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2462_26#" 5.24251
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m5_n506_n512#" 0.0275848
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/vdiff" 0.701894
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/VddA18" -9.47058
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/m5_n506_n512#" -0.0301617
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/a_95_497#" 0.0927978
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/a_95_497#" -1.77636e-15
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_3/rowReadON" 0.0990526
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/GndD" 0.101322
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/rowReadOFF" -29.5455
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/ON" 2.45939
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/rowReadON" -1.74217
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_0/m3_2210_26#" -23.9122
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/vdiff" -0.841494
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/nRst" -0.0754366
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/pixRst" 0.013887
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/ON" 0.393603
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/vsf" 0.126692
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2210_26#" 0.0428682
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/vdiff" 0.00621135
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/vdiff" 0.00392581
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/vpd" -0.163449
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/m2_32_2198#" 8.67362e-19
+cap "openDVS_pixel_3/a_361_187#" "openDVS_pixel_1/ON" 0.13508
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/rowReadON" 0.893701
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/ON" 0.356175
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/vsf" 0.665933
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/readLine" -9.47393
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/readLine" 0.326891
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_0/m3_2210_26#" -4.84736
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/nOFF" 3.47515
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_3/vsf" 0.0536397
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/rowReadON" 1.38778e-17
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/nRst" -0.539338
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2210_26#" 3.9561
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vdiff" -3.55271e-15
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/rowReadOFF" 0.00165114
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/GndD" 0.0476996
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/rowReadOFF" 2.99032e-18
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/m5_n506_n512#" -1.73572
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/m5_n506_n512#" 20.6671
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/vdiff" -6.04768
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/m5_n506_n512#" -0.45699
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/m5_n506_n512#" 0.183488
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/vsf" -2.84217e-14
+cap "openDVS_pixel_3/a_621_187#" "openDVS_pixel_1/rowReadOFF" 0.111246
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/nOFF" 0.373462
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/vsf" 1.77655
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/nOFF" 0.115635
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/m2_32_2198#" 3.46945e-18
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/rowReadOFF" -5.33129
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_0/VddA18" -287.448
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/m2_32_2198#" -2.02274
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/ON" 0.00668909
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/rowReadON" 3.09026
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/m2_32_2198#" -0.0582163
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/m5_n506_n512#" 0.117011
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/rowReadON" 0.0144378
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/ON" 0.0198485
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_3/rowReadON" 0.100318
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m5_n506_n512#" 7.10543e-15
+cap "openDVS_pixel_3/a_621_187#" "openDVS_pixel_1/nOFF" 0.13508
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/rowReadOFF" 1.41952
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/rowReadOFF" 0.188058
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/nOFF" -0.0375875
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/ON" 0.0141831
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/nOFF" 0.376636
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/readLine" -479.385
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/m5_n506_n512#" -0.676004
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/ON" -1.69667
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/m3_2210_26#" 0.079945
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/rowReadON" 0.00412526
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/m5_n506_n512#" 0.380056
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vdiff" 9.97021
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/m3_2210_26#" 1.92707
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/nRst" 1.07685
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" 0.0399927
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2210_26#" 0.0557903
+cap "openDVS_pixel_1/ON" "openDVS_pixel_1/m2_32_2198#" -0.00111201
+cap "openDVS_pixel_3/a_621_187#" "openDVS_pixel_1/m5_n506_n512#" 0.277082
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/rowReadOFF" -1.77311
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/ON" 5.52044
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/ON" 0.471901
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/m5_n506_n512#" -31.1989
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_1/nOFF" -0.0307039
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/m5_n506_n512#" 0.637386
+cap "openDVS_pixel_2/vd" "openDVS_pixel_1/nOFF" 0.0253786
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/rowReadOFF" -13.4547
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/GndD" -14.801
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/readLine" -739.892
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_1/ON" -8.52651e-14
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_1/GndD" -0.0958552
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/vd" 0.162079
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/ON" 0.127477
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/GndD" -0.0219794
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/vsf" 0.57487
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/vd" 1.52656e-16
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/rowReadON" -2.39801
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/rowReadOFF" -1.11747
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/m5_n506_n512#" -1.8086
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/nOFF" 1.04083e-17
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/vdiff" -0.0525524
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/nRst" 0.269136
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/m3_2210_26#" -10.4726
+cap "openDVS_pixel_1/vd" "openDVS_pixel_1/m5_n506_n512#" 6.75016e-14
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/rowReadOFF" 0.140369
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_1/readLine" 1.56125e-16
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2210_26#" 0.0178641
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_3/rowReadOFF" 0.0720915
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/vdiff" 0.0342008
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/nOFF" -0.89633
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/rowReadON" 0.166913
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/rowReadON" 0.232753
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/vpd" -0.217692
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/a_361_187#" 0.490307
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/ON" 0.34167
+cap "openDVS_pixel_3/vd" "openDVS_pixel_1/ON" 0.011799
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/m5_n506_n512#" -46.7086
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/ON" 0.0641727
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/nOFF" 0.402837
+cap "openDVS_pixel_3/a_95_497#" "openDVS_pixel_1/m5_n506_n512#" 0.0290239
+cap "openDVS_pixel_1/vpd" "openDVS_pixel_1/m5_n506_n512#" -0.147708
+cap "m4_992_n2604#" "openDVS_pixel_1/m5_n506_n512#" -340.743
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/nRst" 0.326891
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/rowReadOFF" -13.4547
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/rowReadOFF" 0.127916
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/vsf" 0.594272
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/nRst" -0.0754366
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/rowReadOFF" -1.77311
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadON" -1.90978
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/readLine" 0.0803647
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/rowReadON" 5.07373
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/vdiff" -0.00992113
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/GndD" -29.5621
+cap "openDVS_pixel_0/a_361_187#" "openDVS_pixel_0/m5_n506_n512#" -6.93889e-18
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/nRst" 7.10543e-15
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/readLine" -492.738
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/nRst" 0.926255
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/nOFF" -1.1293e-15
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/pixRst" -300.812
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m5_n506_n512#" 0.084303
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m2_298_1861#" -0.539338
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/ON" -0.000133938
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vdiff" 0.00130635
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/rowReadON" 2.60209e-18
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/m5_n506_n512#" 0.182587
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/vpd" -0.163449
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/vdiff" 5.55112e-16
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m2_298_1861#" 0.0141831
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/nRst" 0.277014
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/GndD" 0.0116825
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/rowReadOFF" -5.33129
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/ON" 0.0520932
+cap "openDVS_pixel_0/a_95_497#" "openDVS_pixel_0/nRst" -1.77636e-15
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vdiff" 0.133671
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/ON" 0.177671
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2210_26#" 0.0990374
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/ON" 3.9391
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/m5_n506_n512#" -53.9332
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/vsf" 0.00122373
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/rowReadOFF" -1.32186e-18
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/nOFF" 0.115635
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vsf" -16.0475
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m5_n506_n512#" -16.6443
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/ON" 0.0198485
+cap "openDVS_pixel_2/m2_196_1392#" "openDVS_pixel_0/m2_32_2482#" -7.97973e-17
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_2/rowReadON" 0.0990526
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/m5_n506_n512#" -7.51145
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/GndD" -59.5877
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/GndD" 0.125563
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/vdiff" 0.00392581
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/ON" 0.011799
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/GndD" 0.125563
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_2/rowReadON" 0.232753
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/GndD" -30.5184
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/a_95_497#" 0.0290239
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nRst" -0.458227
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_2/ON" 0.0146062
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadOFF" -1.2885
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/m5_n506_n512#" -0.974628
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/nOFF" 5.1093
+cap "openDVS_pixel_2/a_361_187#" "openDVS_pixel_0/rowReadON" 0.490307
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_2/rowReadON" 0.100318
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/rowReadON" 0.00412526
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_2/rowReadON" 0.166913
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/GndD" -0.0958552
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/rowReadON" 0.346443
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vpd" -0.217692
+cap "openDVS_pixel_2/a_621_187#" "openDVS_pixel_0/rowReadOFF" 0.111246
+cap "openDVS_pixel_2/a_621_187#" "openDVS_pixel_0/nOFF" 0.13508
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_0/GndD" 0.0133336
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vdiff" -0.070729
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m5_n506_n512#" -0.694841
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/GndD" 0.531771
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m5_n506_n512#" -0.231228
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/rowReadON" 0.140369
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/rowReadON" 0.191358
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_2/rowReadON" 0.0144378
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/GndD" 0.458495
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_298_1861#" -8.32667e-17
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndD" -0.0219794
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m5_n506_n512#" -1190.72
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/rowReadON" -9.47393
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/nRst" -0.0582163
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/ON" -0.122574
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/GndD" -121.461
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/rowReadON" -1.74217
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vdiff" 0.0342008
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/GndD" 0.116825
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/ON" -0.00111201
+cap "openDVS_pixel_0/vpd" "openDVS_pixel_0/m5_n506_n512#" -0.147708
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m5_n506_n512#" 1.13687e-13
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m5_n506_n512#" 0.0547862
+cap "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_0/rowReadON" -29.5455
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/rowReadON" -8.52651e-14
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m5_n506_n512#" -0.120855
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/rowReadON" -7.28584e-16
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/pixRst" 0.013887
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/rowReadON" 0.3772
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/vsf" 0.00122373
+cap "openDVS_pixel_2/a_621_187#" "openDVS_pixel_0/m5_n506_n512#" 0.277082
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/GndD" -410.118
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/GndD" 0.116825
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/pixRst" 0.188058
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_2/rowReadON" -14.761
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/nRst" 1.07685
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/rowReadON" -2.39161
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/rowReadON" 0.00668909
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/nRst" 0.0720915
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_2/vsf" 0.0536397
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/a_361_187#" 0.13508
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/rowReadOFF" 3.40299
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/nOFF" 0.331989
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/vsf" 92.5
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_2/vdiff" 0.00621135
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m3_2210_26#" 0.0557903
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/readLine" -739.892
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/rowReadON" 0.162079
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/ON" 0.187883
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m5_n506_n512#" 8.67362e-19
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/m3_2210_26#" 0.0178641
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/GndD" -78.028
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/nRst" 0.383942
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/rowReadOFF" 0.20572
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/m2_32_2482#" 0.0453929
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/nOFF" 5.73579
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/nRst" -0.306907
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vd" 0.0910819
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/vdiff" 0.565267
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/GndD" -0.281917
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/nRst" 0.12677
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/rowReadON" 0.0563943
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/vsf" 104.756
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/vdiff" -4.90922
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m5_n506_n512#" 0.294572
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/vdiff" 0.100301
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vd" -0.677203
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/nRst" 1.82559
+cap "openDVS_pixel_2/ON" "openDVS_pixel_0/m2_32_2482#" 0.698183
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/rowReadON" 0.426801
+cap "openDVS_pixel_0/vpd" "openDVS_pixel_0/readLine" -0.0718189
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/ON" 0.0120795
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/vdiff" 0.274859
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_2/vd" 1.61609
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/rowReadON" 0.280542
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/vdiff" 0.372935
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/m2_32_2482#" 0.442947
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/vdiff" 8.88178e-16
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_2/vdiff" 8.15035
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/vdiff" 0.701894
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vd" 0.488942
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/ON" 0.267064
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2084_26#" -740
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/GndD" -0.281917
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/vsf" 0.0728841
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m2_32_2482#" -314.365
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_2/vd" -1.13257
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/nRst" 1.68347
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/ON" 8.95129
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m2_32_2482#" 0.442947
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vsf" -17.6056
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/vdiff" -13.9123
+cap "openDVS_pixel_0/ON" "openDVS_pixel_2/vsf" 0.688863
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m3_2084_26#" 0.455497
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m2_32_2482#" 0.0711122
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m2_32_2482#" 7.22115
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m5_n506_n512#" -27.851
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_3/nRst" 9.69787
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_2/ON" -0.281917
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m2_32_2482#" -128.853
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vsf" -18.9117
+cap "openDVS_pixel_2/vsf" "openDVS_pixel_0/vdiff" 0.98698
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_2/vdiff" 293.589
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/m2_32_2482#" 0.660595
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vdiff" 3.29597e-16
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m2_32_2482#" -0.0499511
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vd" -2.42824
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_2/vdiff" -3.82119
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2084_26#" -120.195
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_32_2482#" -1639.82
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadOFF" -1.77636e-15
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/nOFF" -0.0307039
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndD" -22.7917
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m2_32_2482#" 2.99828
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/m5_n506_n512#" -0.343981
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/vpd" -0.0898781
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vdiff" 20.6901
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m5_n506_n512#" -0.250737
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/rowReadOFF" 0.361916
+cap "openDVS_pixel_2/rowReadOFF" "openDVS_pixel_0/m2_32_2482#" 0.0388798
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/nRst" 0.497823
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2336_26#" -370
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m2_32_2482#" -0.0404082
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/vd" -1.45061
+cap "openDVS_pixel_0/vpd" "openDVS_pixel_0/m2_32_2482#" -0.396904
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/m3_2084_26#" -22.7917
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/m2_32_2482#" -842.766
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vdiff" 0.334876
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m5_n506_n512#" -1.43798
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_2/rowReadOFF" 0.0446464
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2714_26#" -0.175092
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/nRst" 0.0928151
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/m2_32_2482#" 0.0711122
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vdiff" -16.7325
+cap "openDVS_pixel_2/nRst" "openDVS_pixel_0/m2_32_2482#" 0.101703
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_0/GndD" -0.323401
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/vd" 0.187562
+cap "openDVS_pixel_0/vd" "openDVS_pixel_2/vd" 75.8887
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/rowReadON" -2.22045e-15
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_2/rowReadOFF" 0.350338
+cap "openDVS_pixel_2/nOFF" "openDVS_pixel_0/m2_32_2482#" 0.698183
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_2/vd" 1.89453
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m5_n506_n512#" 1.28263
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nRst" -1.35146
+cap "openDVS_pixel_0/nOFF" "openDVS_pixel_3/vd" 0.0253786
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpd" -0.203699
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_2/ON" 0.113993
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m2_32_2482#" -1.11022e-16
+cap "openDVS_pixel_2/rowReadON" "openDVS_pixel_0/vd" 0.443096
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_3/vd" -0.655983
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_3/vdiff" 293.589
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_3/vd" -0.491277
+cap "openDVS_pixel_1/ON" "openDVS_pixel_0/VddA18" 0.266952
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2588_26#" -0.110198
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/GndD" -0.863044
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndD" -951.136
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_3/nRst" 15.4191
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/vd" -0.491277
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/vd" 0.103899
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/VddA18" 0.222982
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" -152.323
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/VddA18" 0.0453929
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/nOFF" 5.38647
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/GndA" -13.912
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2714_26#" -0.503813
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_3/vdiff" 2.66e-16
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/vd" -0.585009
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/vd" 0.187562
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/VddA18" 0.101703
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/nRst" -0.869929
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/VddA18" -359.657
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/nRst" -0.377698
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_3/vdiff" 58.0078
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2336_26#" -0.456898
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2588_26#" -1.16115
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2084_26#" -0.798184
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/VddA18" -9.47058
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/GndD" -1.76964
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/VddA18" 0.698183
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/vsf" 0.222982
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/vd" 0.445591
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_3/rowReadON" 1.13687e-13
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_3/vdiff" -4.90922
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" -44.3897
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_1/pixRst" -0.0898781
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/GndA" 1.0468
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/vd" 0.543626
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/vd" 47.7557
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/GndA" -0.203699
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/GndD" -36.9214
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/VddA18" -0.465965
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/vdiff" 0.98698
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vdiff" -1.65241
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/VddA18" -608.514
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/vdiff" 0.701894
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/GndA" -2.82586
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2210_26#" -1.16115
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/VddA18" -23.4703
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2336_26#" -3.22256
+cap "openDVS_pixel_1/ON" "openDVS_pixel_0/GndA" 0.124929
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2084_26#" -0.503813
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_3/vdiff" 30.1094
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2588_26#" -740.47
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/GndD" -78.3266
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/VddA18" 0.266952
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/GndA" -7.27221
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/GndA" -120.195
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/GndA" 0.0781345
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2210_26#" -0.110198
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2462_26#" -3.22256
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/vd" 40.8159
+cap "openDVS_pixel_1/vd" "openDVS_pixel_3/vd" 116.705
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2336_26#" -0.121083
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_0/VddA18" 0.698183
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/VddA18" -1.34057
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/vdiff" -3.38746
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/GndD" -3.82119
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/m3_2084_26#" -0.0947842
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/VddA18" -13.4454
+cap "openDVS_pixel_3/vd" "openDVS_pixel_3/vdiff" -0.00754241
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_3/vdiff" -4.44089e-16
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/GndA" -27.5453
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_0/GndA" 0.0275848
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_3/vdiff" -1.75708
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2336_26#" -740
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_3/vd" 0.543626
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/vd" 0.0836744
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/VddA18" 0.0388798
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/GndA" -1.20734
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/vd" -5.51477
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vsf" -7.39864
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/GndA" -0.254012
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndA" -0.228182
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/GndA" -4.10097
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/GndA" -14.2875
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_1/readLine" -0.0718189
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/VddA18" -9.47058
+cap "openDVS_pixel_2/vd" "openDVS_pixel_1/vd" 10.6667
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/GndA" -0.175092
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/vdiff" 0.274859
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/nRst" -0.491277
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_3/vsf" 0.100301
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_3/vdiff" -0.659149
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2462_26#" -0.121083
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/vdiff" -1.75708
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_3/vd" 0.381291
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_3/nRst" -0.135399
+cap "openDVS_pixel_1/ON" "openDVS_pixel_0/GndD" -0.107792
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/GndA" -0.0971221
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/vdiff" 0.565267
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/nRst" 0.501411
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/VddA18" 0.553969
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/vdiff" -3.27113
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/GndD" -25.0007
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_0/GndD" 4.26326e-14
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/vdiff" 11.7612
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_0/GndA" 0.224973
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/vd" -0.655983
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/GndA" -0.772286
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/GndA" -1.98813
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/VddA18" -608.514
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/GndD" -27.8829
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/m3_2462_26#" -3.22256
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/GndA" 0.063807
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2714_26#" -736.903
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/vsf" 0.0483371
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/GndD" 1.13687e-13
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/GndA" -1.58165
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndA" -2544.96
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_3/vsf" -7.10543e-15
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2714_26#" -0.503813
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/GndD" -0.281917
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndD" -5.0912
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/vsf" 40.9312
+cap "openDVS_pixel_1/vd" "openDVS_pixel_3/vdiff" 1.61609
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/GndA" -1.20734
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/GndD" -36.9214
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/GndD" -2.31365
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/GndD" -2.20903
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2588_26#" -1.16115
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/VddA18" 8.15008
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vd" 0.455497
+cap "openDVS_pixel_1/rowReadON" "openDVS_pixel_3/vd" 0.546994
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/ON" 2.05953
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2210_26#" -0.985259
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_3/nRst" 57.4536
+cap "openDVS_pixel_1/nRst" "openDVS_pixel_3/vd" 0.0928151
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/GndD" -0.107792
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2336_26#" -0.551566
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_3/vd" 2.67054
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/GndA" -1.77476
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/vdiff" 0.344732
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2210_26#" -1.16115
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/ON" 0.0483371
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2084_26#" -0.751029
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vdiff" -19.8925
+cap "openDVS_pixel_2/vdiff" "openDVS_pixel_0/vd" 0.0083556
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2336_26#" -3.22256
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/GndA" -14.0368
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_0/GndD" -0.281917
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2084_26#" -0.503813
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/VddA18" -10.3644
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/GndD" -0.637069
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/VddA18" -0.396745
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/vd" -0.585009
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/m3_2714_26#" -0.0947842
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2336_26#" -370
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/VddA18" 5.84198
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/vsf" 0.00122373
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/nOFF" 0.116825
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/vsf" 0.0656561
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_0/GndA" 0.0342008
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/a_621_187#" 0.277082
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/VddA18" -0.217692
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/GndA" 8.52651e-14
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_3/nRst" -0.0582163
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_3/ON" -8.52651e-14
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/vd" 0.0253786
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/rowReadON" -29.5621
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/vsf" 0.125563
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/vd" 0.380056
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/nOFF" 0.667156
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/vpd" -0.163449
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_0/GndA" 8.67362e-19
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/rowReadON" 0.232753
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/rowReadON" -8.88178e-16
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/nOFF" -0.0375875
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/nRst" 0.013887
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_0/GndA" -0.0512574
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_3/rowReadON" -29.5455
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/vd" 0.0711122
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/readLine" -9.47393
+cap "openDVS_pixel_1/vdiff" "openDVS_pixel_3/rowReadON" 0.00621135
+cap "openDVS_pixel_3/ON" "openDVS_pixel_1/rowReadON" 0.471901
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/a_95_497#" 0.0290239
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/VddA18" 0.131276
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/rowReadON" -14.761
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/rowReadON" -1.90356
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/nOFF" 0.376636
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/vsf" 0.219965
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/ON" 0.0641727
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vsf" -28.1574
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/a_361_187#" 0.490307
+cap "openDVS_pixel_3/a_95_497#" "openDVS_pixel_3/nRst" -1.77636e-15
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/rowReadON" 0.100318
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/nRst" 1.07685
+cap "openDVS_pixel_1/vd" "openDVS_pixel_3/rowReadON" 0.162079
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/rowReadON" 0.0144378
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_1/pixRst" -0.00992113
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/nOFF" 0.490286
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/nRst" 0.0557903
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/nOFF" -3.46945e-18
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/rowReadON" 0.166913
+cap "openDVS_pixel_1/readLine" "openDVS_pixel_1/rowReadON" 0.0990526
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_3/rowReadON" 3.46945e-18
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/GndA" 3.55271e-15
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/ON" 0.445567
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/ON" 0.640526
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_0/VddA18" -300.814
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/vsf" 0.00122373
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vdiff" -1.22125e-15
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/rowReadON" 0.725867
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/vsf" 0.125563
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/nRst" 0.183488
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/ON" 2.90495
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_0/VddA18" -254.475
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" 1.11022e-16
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/rowReadOFF" 0.188058
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/a_621_187#" 0.13508
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2210_26#" 0.00130635
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/nOFF" -1.0646
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/VddA18" 0.0711122
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/nRst" 0.269136
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/ON" 0.393603
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/rowReadOFF" 0.127916
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/ON" 10.8309
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_1/readLine" 0.0536397
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/rowReadOFF" 0.0116825
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/ON" -0.0573007
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" 0.0578691
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/GndD" -30.5184
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/vd" 0.115635
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/GndA" -0.0694234
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/rowReadOFF" -5.33129
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/readLine" -492.752
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_0/GndA" -26.3808
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/rowReadOFF" 0.0720915
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/rowReadON" 5.07373
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/ON" 0.28437
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_1/nRst" 0.00412526
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/nRst" -0.0754366
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/ON" 0.0141831
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndA" -1074.49
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/ON" 0.0198485
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/rowReadOFF" 0.0178641
+cap "openDVS_pixel_1/nOFF" "openDVS_pixel_3/nOFF" 5.45862
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/rowReadOFF" 3.40299
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/rowReadOFF" -1.77311
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_1/readLine" -739.892
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/nRst" -0.0958552
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/nRst" -0.539338
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/ON" -0.000133938
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/ON" 0.0197831
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/rowReadOFF" 0.469118
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/GndD" -0.0219794
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_0/GndA" -7.51022
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_1/readLine" -59.5877
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_3/nOFF" -0.0307039
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_3/rowReadOFF" 0.0133336
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/nRst" 0.926255
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/ON" -2.03307
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_1/readLine" 0.326891
+cap "openDVS_pixel_1/GndD" "openDVS_pixel_0/GndA" -435.079
+cap "openDVS_pixel_1/vsf" "openDVS_pixel_3/vsf" 156.325
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/GndA" -8.32667e-17
+cap "openDVS_pixel_1/a_361_187#" "openDVS_pixel_3/ON" 0.13508
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/rowReadON" -2.39801
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/readLine" 0.0803647
+cap "openDVS_pixel_1/vd" "openDVS_pixel_3/ON" 0.011799
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/vsf" 0.219965
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/GndA" -0.45699
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_1/vdiff" 0.00392581
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/readLine" -13.4547
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_1/rowReadON" 0.402837
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/VddA18" -0.0499511
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_3/ON" -0.00111201
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndA" -0.230652
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_1/a_621_187#" 0.111246
+cap "openDVS_pixel_3/rowReadOFF" "openDVS_pixel_0/GndA" -1.28574
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_3/rowReadON" 0.140369
+cap "openDVS_pixel_1/ON" "openDVS_pixel_3/rowReadON" 0.00668909
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_1/readLine" -53.7345
+cap "openDVS_pixel_1/pixRst" "openDVS_pixel_3/rowReadON" -1.74217
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_1/m5_n506_n512#" -0.147708
+cap "m4_992_n2604#" "openDVS_pixel_1/m5_n506_n512#" -340.743
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/a_95_497#" -0.0344149
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/pixRst" -209.467
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_32_2482#" -425.959
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/vd" 0.364792
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2210_26#" -4.54486
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/nRst" 1.00081
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m2_298_1861#" 14.4015
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/readLine" -510.6
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/m5_n506_n512#" -0.0265656
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/readLine" -41.7548
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/vpd" 0.00103033
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m2_32_2482#" -1.08247e-15
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m3_2210_26#" 0.0360936
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2084_26#" 20.0904
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/pixRst" -1.52551
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2210_26#" 7.61353
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/m2_32_2482#" -4.98443
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/vpd" 0.0299013
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vsf" 0.780902
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vpd" 3.05311e-16
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/m2_298_1861#" 0.00161128
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpr" -2.30489
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/a_95_497#" 0.0927978
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/ON" 3.55271e-15
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/readLine" -2.02946
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2084_26#" -17.8449
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2210_26#" -10.6304
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/pixRst" -7.76524
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_298_1861#" 0.57765
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/m3_2084_26#" -5.38935
+cap "openDVS_pixel_0/rowReadON" "openDVS_pixel_0/m3_2210_26#" 0.079945
+cap "openDVS_pixel_0/readLine" "openDVS_pixel_0/m3_2210_26#" -4.92773
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/vsf" 0.820367
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m2_298_1861#" 0.031069
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/m3_2084_26#" -12.3174
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2084_26#" 94.7958
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nRst" -0.572828
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m2_32_2482#" -0.547026
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/m3_2210_26#" -23.5628
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2210_26#" 21.5754
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m3_2084_26#" -1.33227e-15
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/readLine" -0.573839
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m3_2210_26#" -2.84217e-14
+cap "openDVS_pixel_0/ON" "openDVS_pixel_0/m3_2210_26#" 0.127611
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vd" 0.126267
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/pixRst" -1.18988
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vdiff" -21.3789
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/m3_2084_26#" 2.09108
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/nRst" 0.000174498
+cap "openDVS_pixel_0/pixRst" "openDVS_pixel_0/vpd" 5.55112e-17
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/readLine" -343.036
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nOFF" -1.41553e-14
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpd" -0.703183
+cap "openDVS_pixel_0/m2_298_1861#" "openDVS_pixel_0/m3_2210_26#" 8.90041
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2210_26#" -315.858
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/nRst" 0.167934
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vsf" 2.30926e-14
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/vpr" 0.19829
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2210_26#" -16.0925
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/vsf" 1.51625
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vd" 3.55271e-15
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vdiff" 8.88178e-16
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/vsf" -0.128287
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2714_26#" 2.27374e-13
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/vsf" 0.0740747
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2336_26#" 1.54855
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2588_26#" -0.495697
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vsf" 2.09451
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_3/vpr" 0.127546
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/vpd" 0.00971277
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/vpr" 0.00456562
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vdiff" 0.227384
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2714_26#" -0.107165
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m3_2714_26#" 0.763025
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m2_32_2482#" 11.0674
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vpr" 0.0068705
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m3_2714_26#" 0.0337189
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vd" -2.36738
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2714_26#" 0.120196
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2714_26#" -0.346325
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/vpr" -7.10543e-15
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/vpr" -0.492803
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m3_2714_26#" 7.10543e-15
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/vpr" 0.575192
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpr" 7.50633
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m2_32_2482#" 0.573156
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m2_32_2482#" -277.747
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2714_26#" -0.158095
+cap "openDVS_pixel_0/m3_2336_26#" "openDVS_pixel_0/m2_32_2482#" 0.599728
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2588_26#" -0.307169
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2084_26#" 3.55271e-15
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vsf" -0.0429516
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_3/vdiff" 0.269295
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_32_2482#" -504.782
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2462_26#" 2.22045e-16
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vd" 48.183
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2714_26#" -0.581139
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vpd" 5.9243e-15
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/vsf" -0.0831075
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2084_26#" -632.171
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2462_26#" -0.202501
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vpr" 0.626784
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/vpd" -0.224022
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vd" 0.207803
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpd" 2.58224
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m3_2084_26#" -8.52651e-14
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m3_2084_26#" -91.223
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/m3_2084_26#" 2.84217e-14
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/vpr" 0.334785
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_0/vpr" 0.0140389
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_3/vd" 0.00518854
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/nRst" 0.597974
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/vpr" 3.2685e-13
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/vsf" 1.66486
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vpr" 0.144473
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m2_32_2482#" -0.439076
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_3/vsf" 0.486138
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/nRst" -0.412005
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_0/m2_32_2482#" 0.0920779
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_3/vd" 0.100413
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/vpd" 0.226975
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/readLine" -0.0325218
+cap "openDVS_pixel_0/vpd" "openDVS_pixel_0/pixRst" -0.0138761
+cap "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_0/m3_2084_26#" -157.78
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/vdiff" -3.55271e-15
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/pixRst" -0.00998214
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/vpr" 9.12674
+cap "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_0/VddA18" 0.0161587
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2336_26#" 0.569997
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/vsf" -1.21785
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2714_26#" -0.966797
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/vsf" -1.21299
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/nRst" 0.00456562
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/m3_2210_26#" -6.63283
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/GndA" 31.1828
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_3/vd" -1.38778e-17
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2336_26#" 4.44089e-16
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/VddA18" -4.24858
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2714_26#" -0.438009
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_3/vsf" -3.62235
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/m3_2336_26#" -438.028
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/VddA18" -173.629
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/vsf" 0.19829
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/GndA" -1.20379
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/GndA" -20.0476
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/GndA" -11.385
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2462_26#" 194.175
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/vsf" -1.02934
+cap "openDVS_pixel_0/vsf" "openDVS_pixel_0/m3_2336_26#" 4.42356
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2210_26#" -9.40884
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/m3_2210_26#" -1.34614
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_3/vsf" 17.1405
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/VddA18" 0.282805
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/GndA" -0.510983
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2210_26#" 6.85454
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/VddA18" 0.100413
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_3/vdiff" 87.1212
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2588_26#" -7.10543e-15
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_3/vsf" 0.173597
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/GndA" -95.4784
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/m3_2336_26#" -13.6223
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/VddA18" -7.64815
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vd" -1.64313e-14
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/VddA18" -4.74455
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2210_26#" 0.0287424
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2588_26#" -633.412
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2210_26#" -1.04658
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2462_26#" 142.884
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2210_26#" 0.507517
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_1/rowReadON" 0.0179471
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/GndA" 0.655513
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/VddA18" 8.89855
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2336_26#" -5.23229
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2714_26#" -3.76886
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vsf" -0.153141
+cap "openDVS_pixel_0/vd" "openDVS_pixel_0/GndA" 0.207803
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/m3_2336_26#" 1.23721
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/vdiff" 0.734747
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2588_26#" -9.91636
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2462_26#" 6.6139
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/m3_2084_26#" -2.44615
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2210_26#" -1.29406
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/vsf" -1.76002
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2336_26#" -575.904
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2714_26#" 8.91075
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/m3_2336_26#" -318.233
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2210_26#" -6.1893
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/GndA" -0.520826
+cap "openDVS_pixel_0/GndD" "openDVS_pixel_0/VddA18" -0.00281623
+cap "openDVS_pixel_1/vd" "openDVS_pixel_0/VddA18" 0.0233739
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2588_26#" 1.64608e-14
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/vdiff" 1.08203
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/GndA" -0.628021
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2084_26#" -5.10861
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2336_26#" -0.406844
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2714_26#" -7.10543e-15
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2336_26#" 40.5635
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2336_26#" -1.14917
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/m3_2714_26#" -632.797
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_3/vsf" -0.84248
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2714_26#" -8.75727
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/VddA18" -1220.22
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_3/vdiff" 0.506841
+cap "openDVS_pixel_2/vd" "openDVS_pixel_0/VddA18" 0.0233739
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/vd" 48.2004
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/vsf" -0.395607
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/m3_2084_26#" -0.917193
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2210_26#" -0.498226
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/nRst" 0.734747
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2336_26#" -1.05537
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2714_26#" -0.0299007
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2462_26#" 4.4644
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2210_26#" -0.0205442
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/VddA18" -6.07809
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2336_26#" 8.31613
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/VddA18" -1.6895
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2084_26#" -0.438009
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/m3_2084_26#" 5.55112e-17
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/nRst" -0.406844
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2210_26#" 0.561187
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/vsf" 0.0995225
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/vsf" 29.1891
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vd" -2.39076
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/VddA18" -510.673
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_0/m3_2588_26#" -0.787587
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/VddA18" -20.7862
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/vd" 0.00518854
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/m3_2714_26#" -0.0607413
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/nRst" 15.2844
+cap "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_0/vsf" 7.32845
+cap "openDVS_pixel_0/nRst" "openDVS_pixel_0/m3_2588_26#" -0.532445
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/m3_2084_26#" -1.11133
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_0/GndA" 3.55271e-15
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/GndA" -11.516
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/VddA18" 19.3928
+cap "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_0/m3_2336_26#" -0.829526
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vsf" -0.971906
+cap "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/VddA18" -286.923
+cap "openDVS_pixel_0/vdiff" "openDVS_pixel_0/VddA18" -4.86519
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2084_26#" -0.387261
+cap "openDVS_pixel_0/vpr" "openDVS_pixel_3/vpr" 38.8571
+cap "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_0/GndA" 95.2233
+cap "openDVS_pixel_3/vd" "openDVS_pixel_3/m2_32_2198#" -1.22125e-15
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_3/m2_32_2198#" 0.0998469
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/m2_32_2198#" -4.31082
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/GndA" -0.0265656
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/GndA" 2.96557
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_3/vsf" -0.224022
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/GndA" -0.572828
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/GndA" 5.04724
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/m3_2210_26#" 2.84217e-14
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2210_26#" 0.079945
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2210_26#" 1.00081
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/m3_2714_26#" 0.031069
+cap "openDVS_pixel_3/pixRst" "openDVS_pixel_3/m2_32_2198#" -11.506
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/GndA" -21.3554
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/m2_32_2198#" -18.2631
+cap "openDVS_pixel_3/readLine" "openDVS_pixel_0/m3_2714_26#" -2.02946
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2210_26#" 7.61353
+cap "openDVS_pixel_3/vpr" "openDVS_pixel_0/VddA18" 1.77636e-15
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_3/pixRst" -1.16208
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/GndA" -1.29681e-13
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/VddA18" -0.550623
+cap "openDVS_pixel_3/ON" "openDVS_pixel_0/m3_2210_26#" 0.127611
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/vd" 0.364792
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/GndA" 0.993628
+cap "openDVS_pixel_3/readLine" "openDVS_pixel_0/GndA" -41.6198
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/m3_2714_26#" 0.00103033
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_0/m3_2210_26#" 8.90041
+cap "openDVS_pixel_3/readLine" "openDVS_pixel_0/m3_2210_26#" -4.92773
+cap "openDVS_pixel_3/pixRst" "openDVS_pixel_0/m3_2714_26#" -7.74076
+cap "openDVS_pixel_3/pixRst" "openDVS_pixel_3/readLine" -510.6
+cap "openDVS_pixel_3/vd" "openDVS_pixel_0/GndA" 0.14965
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/readLine" -343.036
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/m3_2714_26#" -4.99605
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/GndA" 1.21989
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_0/GndA" 21.6089
+cap "openDVS_pixel_0/m3_2210_26#" "openDVS_pixel_3/vd" 0.0360936
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/m3_2210_26#" -3.33067e-15
+cap "openDVS_pixel_3/nOFF" "openDVS_pixel_0/GndA" -8.77076e-15
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_3/m2_32_2198#" 19.9624
+cap "openDVS_pixel_3/pixRst" "openDVS_pixel_0/GndA" -1.47076
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_3/pixRst" -0.0116357
+cap "openDVS_pixel_3/pixRst" "openDVS_pixel_0/m3_2210_26#" -23.5733
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndA" -106.636
+cap "openDVS_pixel_3/a_95_497#" "openDVS_pixel_0/GndA" -0.0344149
+cap "openDVS_pixel_3/vpd" "openDVS_pixel_0/VddA18" 0.0160015
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/m3_2210_26#" -10.6771
+cap "openDVS_pixel_3/a_95_497#" "openDVS_pixel_0/m3_2210_26#" 0.0927978
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_3/pixRst" -209.467
+cap "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/m2_32_2198#" 2.09108
+cap "openDVS_pixel_3/readLine" "openDVS_pixel_3/m2_32_2198#" -5.59834
+cap "openDVS_pixel_3/rowReadON" "openDVS_pixel_0/m3_2714_26#" 0.00161128
+cap "openDVS_pixel_3/vsf" "openDVS_pixel_0/m3_2714_26#" 0.820367
+cap "openDVS_pixel_3/nRst" "openDVS_pixel_0/m3_2714_26#" 0.000174498
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_0/m3_2714_26#" 14.4015
+cap "openDVS_pixel_3/vdiff" "openDVS_pixel_3/readLine" -0.573839
+cap "openDVS_pixel_1/m5_n506_n512#" "m4_992_n2604#" -317.864
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/m2_32_2198#" -9.21549e-17
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/m2_298_1861#" -0.385481
+cap "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_3/m2_32_2482#" -0.647289
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_298_1861#" -0.293756
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_32_2482#" -0.0337036
+cap "openDVS_pixel_0/m5_n506_n512#" "VddA18" -98.0292
+cap "openDVS_pixel_0/m2_32_2198#" "openDVS_pixel_0/m5_n506_n512#" -0.592844
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_196_1392#" -0.50355
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/m2_32_2482#" -162.762
+cap "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/vpd" -0.147841
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/PrSFBp" -0.232691
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/VddA18" -205.844
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/m2_298_1861#" -0.401806
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/PrBp" -1.25707
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_3/vpd" -0.147841
+cap "openDVS_pixel_0/VddA18" "openDVS_pixel_0/GndA" -0.0337036
+cap "openDVS_pixel_0/GndA" "openDVS_pixel_0/m2_298_1861#" -0.293756
+cap "m4_992_n2604#" "openDVS_pixel_0/GndA" -97.8113
+merge "openDVS_pixel_0/m3_2714_26#" "openDVS_pixel_3/OnBn" -1722.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7038 -582 -12068 -1250 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_3/OnBn" "m1_899_1792#"
+merge "m1_899_1792#" "openDVS_pixel_0/m2_298_1861#"
+merge "openDVS_pixel_0/m2_298_1861#" "m2_n905_1893#"
+merge "m2_n905_1893#" "openDVS_pixel_3/m2_298_1861#"
+merge "openDVS_pixel_3/m2_298_1861#" "openDVS_pixel_0/OnBn"
+merge "openDVS_pixel_0/OnBn" "m1_n3317_1792#"
+merge "m1_n3317_1792#" "openDVS_pixel_1/OnBn"
+merge "openDVS_pixel_1/OnBn" "m1_899_n1928#"
+merge "m1_899_n1928#" "openDVS_pixel_1/m3_2084_26#"
+merge "openDVS_pixel_1/m3_2084_26#" "openDVS_pixel_1/m2_298_1861#"
+merge "openDVS_pixel_1/m2_298_1861#" "openDVS_pixel_2/m2_298_1861#"
+merge "openDVS_pixel_2/m2_298_1861#" "openDVS_pixel_2/OnBn"
+merge "openDVS_pixel_2/OnBn" "m1_n3317_n1928#"
+merge "m1_n3317_n1928#" "openDVS_pixel_2/m3_2714_26#"
+merge "openDVS_pixel_2/m3_2714_26#" "OnBn"
+merge "OnBn" "openDVS_pixel_3/m3_2084_26#"
+merge "openDVS_pixel_3/m3_2084_26#" "m2_n905_n2021#"
+merge "contact$25$1$1_1/m1_n288_n64#" "contact$26$1$1_7/m1_n32_n64#" -22668.8 0 0 0 0 -990428 -16712 0 0 -12240 -992 -92160 -4032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60112 -4352 -621120 -19934 -668768 -26110 0 0 -9183776 -56124 0 0 0 0
+merge "contact$26$1$1_7/m1_n32_n64#" "openDVS_pixel_0/m2_32_2482#"
+merge "openDVS_pixel_0/m2_32_2482#" "openDVS_pixel_3/m2_32_2482#"
+merge "openDVS_pixel_3/m2_32_2482#" "contact$25$1$1_3/m1_n288_n64#"
+merge "contact$25$1$1_3/m1_n288_n64#" "contact$25$1$1_2/m1_n288_n64#"
+merge "contact$25$1$1_2/m1_n288_n64#" "contact$26$1$1_6/m1_n32_n64#"
+merge "contact$26$1$1_6/m1_n32_n64#" "m1_n1583_2378#"
+merge "m1_n1583_2378#" "m4_992_n2604#"
+merge "m4_992_n2604#" "contact$26$1$1_3/m1_n32_n64#"
+merge "contact$26$1$1_3/m1_n32_n64#" "m2_n789_n2464#"
+merge "m2_n789_n2464#" "openDVS_pixel_0/VddA18"
+merge "openDVS_pixel_0/VddA18" "openDVS_pixel_1/m2_32_2254#"
+merge "openDVS_pixel_1/m2_32_2254#" "openDVS_pixel_1/VddA18"
+merge "openDVS_pixel_1/VddA18" "openDVS_pixel_2/m2_32_2254#"
+merge "openDVS_pixel_2/m2_32_2254#" "VddA18"
+merge "VddA18" "openDVS_pixel_2/VddA18"
+merge "openDVS_pixel_2/VddA18" "openDVS_pixel_3/VddA18"
+merge "openDVS_pixel_3/VddA18" "contact$25$1$1_0/m1_n288_n64#"
+merge "contact$25$1$1_0/m1_n288_n64#" "contact$26$1$1_2/m1_n32_n64#"
+merge "contact$26$1$1_2/m1_n32_n64#" "m1_n1455_n2422#"
+merge "m1_n1455_n2422#" "m2_n2385_n2464#"
+merge "contact$1_2/VSUBS" "contact$1_2/m1_n224_n64#" -25994.8 0 0 0 0 0 0 0 0 0 0 -1768 -240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1768 -240 -212430 -8968 -444480 -21264 0 0 -826944 -8896 -20664272 -86728 0 0
+merge "contact$1_2/m1_n224_n64#" "contact$30$1$1_1/VSUBS"
+merge "contact$30$1$1_1/VSUBS" "contact$30$1$1_1/m4_n438_n118#"
+merge "contact$30$1$1_1/m4_n438_n118#" "openDVS_pixel_3/m2_372_2398#"
+merge "openDVS_pixel_3/m2_372_2398#" "m2_61_2308#"
+merge "m2_61_2308#" "contact$26$1$1_4/m1_n32_n64#"
+merge "contact$26$1$1_4/m1_n32_n64#" "contact$25$1$1_1/VSUBS"
+merge "contact$25$1$1_1/VSUBS" "contact$26$1$1_7/VSUBS"
+merge "contact$26$1$1_7/VSUBS" "contact$26$1$1_4/VSUBS"
+merge "contact$26$1$1_4/VSUBS" "openDVS_pixel_0/m2_32_2254#"
+merge "openDVS_pixel_0/m2_32_2254#" "contact$30$1$1_0/m4_n438_n118#"
+merge "contact$30$1$1_0/m4_n438_n118#" "openDVS_pixel_3/m2_32_2254#"
+merge "openDVS_pixel_3/m2_32_2254#" "openDVS_pixel_0/m2_372_2398#"
+merge "openDVS_pixel_0/m2_372_2398#" "contact$25$1$1_2/VSUBS"
+merge "contact$25$1$1_2/VSUBS" "contact$26$1$1_1/m1_n32_n64#"
+merge "contact$26$1$1_1/m1_n32_n64#" "contact$1_1/m1_n224_n64#"
+merge "contact$1_1/m1_n224_n64#" "m2_n3243_2308#"
+merge "m2_n3243_2308#" "contact$26$1$1_6/VSUBS"
+merge "contact$26$1$1_6/VSUBS" "contact$26$1$1_1/VSUBS"
+merge "contact$26$1$1_1/VSUBS" "contact$1_1/VSUBS"
+merge "contact$1_1/VSUBS" "contact$30$1$1_0/VSUBS"
+merge "contact$30$1$1_0/VSUBS" "contact$1_3/VSUBS"
+merge "contact$1_3/VSUBS" "contact$1_3/m1_n224_n64#"
+merge "contact$1_3/m1_n224_n64#" "contact$30$1$1_3/VSUBS"
+merge "contact$30$1$1_3/VSUBS" "contact$30$1$1_3/m4_n438_n118#"
+merge "contact$30$1$1_3/m4_n438_n118#" "openDVS_pixel_1/m2_372_2398#"
+merge "openDVS_pixel_1/m2_372_2398#" "m2_61_n2492#"
+merge "m2_61_n2492#" "contact$26$1$1_5/m1_n32_n64#"
+merge "contact$26$1$1_5/m1_n32_n64#" "contact$25$1$1_3/VSUBS"
+merge "contact$25$1$1_3/VSUBS" "contact$26$1$1_5/VSUBS"
+merge "contact$26$1$1_5/VSUBS" "contact$26$1$1_3/VSUBS"
+merge "contact$26$1$1_3/VSUBS" "openDVS_pixel_0/m5_n506_n512#"
+merge "openDVS_pixel_0/m5_n506_n512#" "openDVS_pixel_0/GndA"
+merge "openDVS_pixel_0/GndA" "openDVS_pixel_1/m5_n506_n512#"
+merge "openDVS_pixel_1/m5_n506_n512#" "openDVS_pixel_1/m2_32_2482#"
+merge "openDVS_pixel_1/m2_32_2482#" "openDVS_pixel_1/GndA"
+merge "openDVS_pixel_1/GndA" "openDVS_pixel_2/m5_n506_n512#"
+merge "openDVS_pixel_2/m5_n506_n512#" "openDVS_pixel_3/GndA"
+merge "openDVS_pixel_3/GndA" "contact$25$1$1_0/VSUBS"
+merge "contact$25$1$1_0/VSUBS" "contact$26$1$1_2/VSUBS"
+merge "contact$26$1$1_2/VSUBS" "contact$26$1$1_0/VSUBS"
+merge "contact$26$1$1_0/VSUBS" "contact$1_0/VSUBS"
+merge "contact$1_0/VSUBS" "contact$30$1$1_2/VSUBS"
+merge "contact$30$1$1_2/VSUBS" "VSUBS"
+merge "VSUBS" "openDVS_pixel_3/m5_n506_n512#"
+merge "openDVS_pixel_3/m5_n506_n512#" "openDVS_pixel_2/m2_32_2482#"
+merge "openDVS_pixel_2/m2_32_2482#" "contact$30$1$1_2/m4_n438_n118#"
+merge "contact$30$1$1_2/m4_n438_n118#" "GndA"
+merge "GndA" "openDVS_pixel_2/m2_372_2398#"
+merge "openDVS_pixel_2/m2_372_2398#" "openDVS_pixel_2/GndA"
+merge "openDVS_pixel_2/GndA" "contact$26$1$1_0/m1_n32_n64#"
+merge "contact$26$1$1_0/m1_n32_n64#" "contact$1_0/m1_n224_n64#"
+merge "contact$1_0/m1_n224_n64#" "m2_n3243_n2492#"
+merge "openDVS_pixel_0/PrBp" "openDVS_pixel_0/m3_2462_26#" -886.344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7128 -480 0 0 -4488 -400 -11592 -872 0 0 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_0/m3_2462_26#" "openDVS_pixel_3/PrBp"
+merge "openDVS_pixel_3/PrBp" "m1_n1209_1856#"
+merge "m1_n1209_1856#" "openDVS_pixel_1/m3_2336_26#"
+merge "openDVS_pixel_1/m3_2336_26#" "openDVS_pixel_1/PrBp"
+merge "openDVS_pixel_1/PrBp" "openDVS_pixel_2/m3_2462_26#"
+merge "openDVS_pixel_2/m3_2462_26#" "PrBp"
+merge "PrBp" "openDVS_pixel_3/m3_2336_26#"
+merge "openDVS_pixel_3/m3_2336_26#" "openDVS_pixel_2/PrBp"
+merge "openDVS_pixel_2/PrBp" "m1_n1209_n1992#"
+merge "openDVS_pixel_0/m3_2588_26#" "openDVS_pixel_0/RefrBp" -751.788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5888 -624 0 0 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_0/RefrBp" "m1_n1027_969#"
+merge "m1_n1027_969#" "openDVS_pixel_3/RefrBp"
+merge "openDVS_pixel_3/RefrBp" "openDVS_pixel_1/m3_2210_26#"
+merge "openDVS_pixel_1/m3_2210_26#" "openDVS_pixel_1/RefrBp"
+merge "openDVS_pixel_1/RefrBp" "openDVS_pixel_2/RefrBp"
+merge "openDVS_pixel_2/RefrBp" "openDVS_pixel_2/m3_2588_26#"
+merge "openDVS_pixel_2/m3_2588_26#" "RefrBp"
+merge "RefrBp" "openDVS_pixel_3/m3_2210_26#"
+merge "openDVS_pixel_3/m3_2210_26#" "m1_n1027_n1115#"
+merge "openDVS_pixel_0/PrSFBp" "openDVS_pixel_3/PrSFBp" -582.769 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5888 -624 0 0 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_3/PrSFBp" "openDVS_pixel_0/m3_2336_26#"
+merge "openDVS_pixel_0/m3_2336_26#" "m1_n1277_1457#"
+merge "m1_n1277_1457#" "openDVS_pixel_1/m3_2462_26#"
+merge "openDVS_pixel_1/m3_2462_26#" "openDVS_pixel_1/PrSFBp"
+merge "openDVS_pixel_1/PrSFBp" "openDVS_pixel_2/m3_2336_26#"
+merge "openDVS_pixel_2/m3_2336_26#" "PrSFBp"
+merge "PrSFBp" "openDVS_pixel_3/m3_2462_26#"
+merge "openDVS_pixel_3/m3_2462_26#" "openDVS_pixel_2/PrSFBp"
+merge "openDVS_pixel_2/PrSFBp" "m1_n1277_n1581#"
+merge "openDVS_pixel_3/m2_32_2198#" "openDVS_pixel_3/DiffBn" -1919.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -416 -15494 -1258 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_3/DiffBn" "m1_1053_2106#"
+merge "m1_1053_2106#" "openDVS_pixel_0/m2_32_2198#"
+merge "openDVS_pixel_0/m2_32_2198#" "openDVS_pixel_0/DiffBn"
+merge "openDVS_pixel_0/DiffBn" "m1_n3469_2106#"
+merge "m1_n3469_2106#" "openDVS_pixel_1/m2_32_2198#"
+merge "openDVS_pixel_1/m2_32_2198#" "m2_n1527_2033#"
+merge "m2_n1527_2033#" "openDVS_pixel_1/DiffBn"
+merge "openDVS_pixel_1/DiffBn" "m1_1053_n2359#"
+merge "m1_1053_n2359#" "openDVS_pixel_0/m3_2084_26#"
+merge "openDVS_pixel_0/m3_2084_26#" "openDVS_pixel_1/m3_2714_26#"
+merge "openDVS_pixel_1/m3_2714_26#" "openDVS_pixel_2/m3_2084_26#"
+merge "openDVS_pixel_2/m3_2084_26#" "DiffBn"
+merge "DiffBn" "openDVS_pixel_3/m3_2714_26#"
+merge "openDVS_pixel_3/m3_2714_26#" "openDVS_pixel_2/m2_32_2198#"
+merge "openDVS_pixel_2/m2_32_2198#" "m2_n1526_n2170#"
+merge "m2_n1526_n2170#" "openDVS_pixel_2/DiffBn"
+merge "openDVS_pixel_2/DiffBn" "m1_n3469_n2359#"
+merge "openDVS_pixel_1/readLine" "openDVS_pixel_3/readLine" -1100.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -294096 -9176 0 0 0 0 0 0
+merge "openDVS_pixel_3/readLine" "readLine[1]"
+merge "openDVS_pixel_0/m2_196_1392#" "openDVS_pixel_0/OffBn" -882.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11776 -880 -11056 -1080 -330728 -10940 0 0 0 0 0 0
+merge "openDVS_pixel_0/OffBn" "m1_n3455_1308#"
+merge "m1_n3455_1308#" "openDVS_pixel_3/m2_196_1392#"
+merge "openDVS_pixel_3/m2_196_1392#" "openDVS_pixel_3/OffBn"
+merge "openDVS_pixel_3/OffBn" "m1_1025_1308#"
+merge "m1_1025_1308#" "openDVS_pixel_0/m3_2210_26#"
+merge "openDVS_pixel_0/m3_2210_26#" "m2_n1409_1957#"
+merge "m2_n1409_1957#" "openDVS_pixel_1/OffBn"
+merge "openDVS_pixel_1/OffBn" "m1_1025_n1432#"
+merge "m1_1025_n1432#" "openDVS_pixel_1/m3_2588_26#"
+merge "openDVS_pixel_1/m3_2588_26#" "openDVS_pixel_1/m2_196_1392#"
+merge "openDVS_pixel_1/m2_196_1392#" "openDVS_pixel_2/m3_2210_26#"
+merge "openDVS_pixel_2/m3_2210_26#" "OffBn"
+merge "OffBn" "openDVS_pixel_3/m3_2588_26#"
+merge "openDVS_pixel_3/m3_2588_26#" "openDVS_pixel_2/m2_196_1392#"
+merge "openDVS_pixel_2/m2_196_1392#" "m2_n1409_n2077#"
+merge "m2_n1409_n2077#" "openDVS_pixel_2/OffBn"
+merge "openDVS_pixel_2/OffBn" "m1_n3455_n1432#"
+merge "openDVS_pixel_0/GndD" "openDVS_pixel_1/GndD" -2919.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49152 -1280 -1142688 -12344 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_1/GndD" "openDVS_pixel_2/GndD"
+merge "openDVS_pixel_2/GndD" "openDVS_pixel_3/GndD"
+merge "openDVS_pixel_3/GndD" "GndD"
+merge "openDVS_pixel_1/pixRst" "openDVS_pixel_3/pixRst" -1145.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -294096 -9176 0 0 0 0 0 0
+merge "openDVS_pixel_3/pixRst" "pixRst[1]"
+merge "openDVS_pixel_0/rowReadOFF" "openDVS_pixel_3/rowReadOFF" -89.765 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -520 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_3/rowReadOFF" "rowReadOFF[0]"
+merge "openDVS_pixel_1/rowReadON" "openDVS_pixel_2/rowReadON" -78.8712 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -520 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_2/rowReadON" "rowReadON[1]"
+merge "openDVS_pixel_0/readLine" "openDVS_pixel_2/readLine" -1100.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -294096 -9176 0 0 0 0 0 0
+merge "openDVS_pixel_2/readLine" "readLine[0]"
+merge "openDVS_pixel_1/vpd" "vpd[3]" -49.2323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3364 -232 0 0 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_1/rowReadOFF" "openDVS_pixel_2/rowReadOFF" -89.765 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -520 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_2/rowReadOFF" "rowReadOFF[1]"
+merge "openDVS_pixel_0/pixRst" "openDVS_pixel_2/pixRst" -1145.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -294096 -9176 0 0 0 0 0 0
+merge "openDVS_pixel_2/pixRst" "pixRst[0]"
+merge "openDVS_pixel_0/rowReadON" "openDVS_pixel_3/rowReadON" -78.8712 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -520 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_3/rowReadON" "rowReadON[0]"
+merge "openDVS_pixel_0/vpd" "vpd[0]" -49.2293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3364 -232 0 0 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_3/vpd" "vpd[2]" -49.2293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3364 -232 0 0 0 0 0 0 0 0 0 0
+merge "openDVS_pixel_2/vpd" "vpd[1]" -49.2323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3364 -232 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,164 @@
+
+Magic 8.3 revision 617 - Compiled on Tue Mar 10 07:41:29 PM EDT 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "lvs_run_20260709/run_magic_extract_v4.tcl" from command line.
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: openDVS_layout
+Reading "M2M3_CDNS_783591052410".
+Saving contents of cell M2M3_CDNS_783591052410
+Reading "M2M3_CDNS_783591052411".
+Saving contents of cell M2M3_CDNS_783591052411
+Reading "M2M3_CDNS_783591052412".
+Saving contents of cell M2M3_CDNS_783591052412
+Reading "M3M4_CDNS_783591052413".
+Saving contents of cell M3M4_CDNS_783591052413
+Reading "M1M2_CDNS_783591052414".
+Saving contents of cell M1M2_CDNS_783591052414
+Reading "M2M3_CDNS_783591052415".
+Saving contents of cell M2M3_CDNS_783591052415
+Reading "contact$1".
+Reading "contact$25$1$1".
+Reading "contact$26$1$1".
+Reading "contact$30$1$1".
+Reading "openDVS_pixel2x2_top".
+Reading "M3M4_CDNS_783591052416".
+Saving contents of cell M3M4_CDNS_783591052416
+Reading "M3M4_CDNS_783591052417".
+Saving contents of cell M3M4_CDNS_783591052417
+Reading "M2M3_CDNS_783591052418".
+Saving contents of cell M2M3_CDNS_783591052418
+Reading "M2M3_CDNS_783591052419".
+Saving contents of cell M2M3_CDNS_783591052419
+Reading "L1M1_CDNS_7835910524110".
+Saving contents of cell L1M1_CDNS_7835910524110
+Reading "L1M1_CDNS_7835910524111".
+Saving contents of cell L1M1_CDNS_7835910524111
+Reading "M1M2_CDNS_7835910524112".
+Saving contents of cell M1M2_CDNS_7835910524112
+Reading "L1M1_CDNS_7835910524113".
+Saving contents of cell L1M1_CDNS_7835910524113
+Reading "M2M3_CDNS_7835910524114".
+Saving contents of cell M2M3_CDNS_7835910524114
+Reading "M2M3_CDNS_7835910524115".
+Saving contents of cell M2M3_CDNS_7835910524115
+Reading "M1M2_CDNS_7835910524116".
+Saving contents of cell M1M2_CDNS_7835910524116
+Reading "M2M3_CDNS_7835910524117".
+Saving contents of cell M2M3_CDNS_7835910524117
+Reading "M3M4_CDNS_7835910524118".
+Saving contents of cell M3M4_CDNS_7835910524118
+Reading "M1M2_CDNS_7835910524119".
+Saving contents of cell M1M2_CDNS_7835910524119
+Reading "M2M3_CDNS_7835910524120".
+Saving contents of cell M2M3_CDNS_7835910524120
+Reading "M3M4_CDNS_7835910524121".
+Saving contents of cell M3M4_CDNS_7835910524121
+Reading "M1M2_CDNS_7835910524122".
+Saving contents of cell M1M2_CDNS_7835910524122
+Reading "pmos_CDNS_783591052410".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Saving contents of cell pmos_CDNS_783591052410
+Reading "nmos_CDNS_783591052411".
+Saving contents of cell nmos_CDNS_783591052411
+Reading "M1M2_CDNS_7835910524123".
+Saving contents of cell M1M2_CDNS_7835910524123
+Reading "L1M1_CDNS_7835910524124".
+Saving contents of cell L1M1_CDNS_7835910524124
+Reading "M2M3_CDNS_7835910524125".
+Saving contents of cell M2M3_CDNS_7835910524125
+Reading "M1M2_CDNS_7835910524126".
+Saving contents of cell M1M2_CDNS_7835910524126
+Reading "L1M1_CDNS_7835910524127".
+Saving contents of cell L1M1_CDNS_7835910524127
+Reading "M1M2_CDNS_7835910524128".
+Saving contents of cell M1M2_CDNS_7835910524128
+Reading "sky130_fd_pr__nfet_01v8_9ZWGZ9".
+Reading "L1M1_CDNS_7835910524129".
+Saving contents of cell L1M1_CDNS_7835910524129
+Reading "sky130_fd_pr__nfet_01v8_ML4XRG".
+Reading "sky130_fd_pr__pfet_01v8_KDZMJM".
+Reading "sky130_fd_pr__pfet_01v8_U2XPXD".
+Reading "sky130_fd_pr__nfet_01v8_V52S8A".
+Reading "sky130_fd_pr__pfet_01v8_D48SMA".
+Reading "sky130_fd_pr__nfet_01v8_9ZAZEB".
+Reading "dyn_comp_v1".
+Reading "col_periphery".
+Reading "col_periphery_1x2".
+Reading "pixel_layout_tile".
+Reading "M3M4_CDNS_7835910524130".
+Saving contents of cell M3M4_CDNS_7835910524130
+Reading "M2M3_CDNS_7835910524131".
+Saving contents of cell M2M3_CDNS_7835910524131
+Reading "M3M4_CDNS_7835910524132".
+Saving contents of cell M3M4_CDNS_7835910524132
+Reading "M2M3_CDNS_7835910524133".
+Saving contents of cell M2M3_CDNS_7835910524133
+Reading "M2M3_CDNS_7835910524134".
+Saving contents of cell M2M3_CDNS_7835910524134
+Reading "M1M2_CDNS_7835910524135".
+Saving contents of cell M1M2_CDNS_7835910524135
+Reading "pixel_layout_biasgen_connector_v2".
+Reading "openDVS_pixel2x2_bot".
+Reading "pixel_layout_tile_bot".
+Reading "pixel_layout_biasgen_connector_v3".
+Reading "pixel_4tile".
+Reading "LVS_FIX_v3_20260709".
+CIF file read warning: Input off lambda grid by 3/5; snapped to grid.
+Reading "openDVS_pixel".
+Box must be present
+Box must be present
+Box must be present
+Box must be present
+=== Magic extract starting (this may take several minutes) ===
+Extracting LVS_FIX_v3_20260709 into LVS_FIX_v3_20260709.ext:
+Extracting pixel_layout_biasgen_connector_v3 into pixel_layout_biasgen_connector_v3.ext:
+Extracting sky130_fd_pr__nfet_01v8_9ZAZEB into sky130_fd_pr__nfet_01v8_9ZAZEB.ext:
+Extracting sky130_fd_pr__pfet_01v8_D48SMA into sky130_fd_pr__pfet_01v8_D48SMA.ext:
+Extracting sky130_fd_pr__nfet_01v8_V52S8A into sky130_fd_pr__nfet_01v8_V52S8A.ext:
+Extracting sky130_fd_pr__pfet_01v8_U2XPXD into sky130_fd_pr__pfet_01v8_U2XPXD.ext:
+Extracting sky130_fd_pr__pfet_01v8_KDZMJM into sky130_fd_pr__pfet_01v8_KDZMJM.ext:
+Extracting sky130_fd_pr__nfet_01v8_ML4XRG into sky130_fd_pr__nfet_01v8_ML4XRG.ext:
+Extracting sky130_fd_pr__nfet_01v8_9ZWGZ9 into sky130_fd_pr__nfet_01v8_9ZWGZ9.ext:
+Extracting dyn_comp_v1 into dyn_comp_v1.ext:
+Extracting col_periphery into col_periphery.ext:
+Extracting col_periphery_1x2 into col_periphery_1x2.ext:
+col_periphery_1x2: 6 warnings
+Extracting openDVS_pixel into openDVS_pixel.ext:
+openDVS_pixel: 18 warnings
+Extracting contact$30$1$1 into contact$30$1$1.ext:
+Extracting contact$26$1$1 into contact$26$1$1.ext:
+Extracting contact$25$1$1 into contact$25$1$1.ext:
+Extracting contact$1 into contact$1.ext:
+Extracting openDVS_pixel2x2_bot into openDVS_pixel2x2_bot.ext:
+openDVS_pixel2x2_bot: 37 warnings
+Extracting pixel_layout_tile_bot into pixel_layout_tile_bot.ext:
+pixel_layout_tile_bot: 33 warnings
+Extracting pixel_layout_biasgen_connector_v2 into pixel_layout_biasgen_connector_v2.ext:
+Extracting openDVS_pixel2x2_top into openDVS_pixel2x2_top.ext:
+openDVS_pixel2x2_top: 37 warnings
+Extracting pixel_layout_tile into pixel_layout_tile.ext:
+Extracting pixel_4tile into pixel_4tile.ext:
+pixel_4tile: 7 warnings
+Total of 138 warnings.
+exttospice finished.
+=== Wrote layout extract: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/openDVS-layout/lvs_run_20260709/netgen/pixel_4tile_layout_extract.spice ===

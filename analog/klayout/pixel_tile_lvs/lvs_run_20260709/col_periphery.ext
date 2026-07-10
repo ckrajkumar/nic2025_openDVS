@@ -1,0 +1,348 @@
+timestamp 1783594477
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use dyn_comp_v1 dyn_comp_v1_0 1 0 360 0 1 4126
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "voutn" 10 711 7793 865 7853 m3
+port "pixRst" 8 156 -2093 222 -2021 m3
+port "pixRst" 8 156 7769 222 7829 m3
+port "VTHRESH" 6 0 3250 60 3850 m2
+port "DETECT" 7 0 3994 60 4194 m2
+port "nDETECT" 5 0 5700 60 5900 m2
+port "COL_LINE" 9 30 -2090 96 -1890 m3
+port "NCHARGE" 4 0 1682 60 1884 m2
+port "VDD" 3 0 2950 60 3150 m2
+port "GND" 2 360 7377 2052 7865 m1
+node "m4_566_7702#" 2 3284.56 566 7702 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5225600 29136 0 0 0 0
+node "m4_106_7678#" 2 3833.3 106 7678 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3925824 29000 0 0 0 0
+node "voutn" 0 494.851 711 7793 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125972 1944 0 0 0 0 0 0
+node "pixRst" 7 3596.64 156 7769 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 684222 20866 0 0 0 0 0 0
+node "VTHRESH" 2 2448.67 0 3250 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1440000 6000 138396 3794 0 0 0 0 0 0
+node "DETECT" 0 160.98 0 3994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0
+node "nDETECT" 0 200.998 0 5700 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0
+node "li_401_5035#" 352 888.652 401 5035 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105772 3536 0 0 0 0 0 0 0 0 0 0 0 0
+node "COL_LINE" 6287 2957.01 30 -2090 m3 0 0 0 0 0 0 0 0 89600 4096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74800 4672 547776 5844 256000 2960 193908 6008 0 0 0 0 0 0
+node "a_391_371#" 17951 6837.41 391 371 p 0 0 0 0 0 0 0 0 129600 6096 98400 3384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1304000 14640 0 0 470632 18744 984040 19226 165648 3088 195112 5386 0 0 0 0 0 0
+node "NCHARGE" 1726 1256.29 0 1682 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 630400 7904 0 0 143648 5360 232064 8648 695456 12436 0 0 0 0 0 0 0 0
+node "VDD" 25710 15939.7 0 2950 m2 0 0 0 0 2323208 6282 0 0 190740 11220 112000 2720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360424 14096 214112 5678 519400 6388 979008 14208 2167809 29788 0 0 0 0
+substrate "GND" 0 0 360 7377 m1 0 0 0 0 0 0 0 0 0 0 893928 52584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2208814 44560 3476662 39400 0 0 0 0 0 0 0 0 0 0
+cap "m4_566_7702#" "m4_106_7678#" 4479.19
+cap "li_401_5035#" "nDETECT" 2.32978
+cap "VDD" "pixRst" 1010.8
+cap "VTHRESH" "li_401_5035#" 0.575058
+cap "m4_106_7678#" "pixRst" 83.7505
+cap "NCHARGE" "a_391_371#" 3810.41
+cap "NCHARGE" "VTHRESH" 17.2401
+cap "COL_LINE" "a_391_371#" 3418.77
+cap "DETECT" "a_391_371#" 0.253395
+cap "DETECT" "nDETECT" 1.91571
+cap "DETECT" "VTHRESH" 14.8556
+cap "voutn" "m4_566_7702#" 157.202
+cap "a_391_371#" "pixRst" 282.393
+cap "a_391_371#" "VDD" 3477.81
+cap "nDETECT" "pixRst" 17.974
+cap "VTHRESH" "pixRst" 358.735
+cap "VTHRESH" "VDD" 2400.66
+cap "voutn" "pixRst" 103.262
+cap "li_401_5035#" "pixRst" 17.2479
+cap "voutn" "VDD" 2.17908
+cap "li_401_5035#" "VDD" 65.5019
+cap "voutn" "m4_106_7678#" 3.28682
+cap "NCHARGE" "COL_LINE" 58.6427
+cap "NCHARGE" "pixRst" 289.381
+cap "m4_566_7702#" "pixRst" 1.62603
+cap "NCHARGE" "VDD" 5519.71
+cap "VTHRESH" "a_391_371#" 919.547
+cap "m4_566_7702#" "VDD" 657.705
+cap "COL_LINE" "pixRst" 1673.18
+cap "DETECT" "pixRst" 17.974
+cap "COL_LINE" "VDD" 0.251182
+cap "DETECT" "VDD" 2.92147
+cap "a_391_371#" "li_401_5035#" 0.110708
+device msubckt sky130_fd_pr__nfet_01v8 1730 371 1731 372 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 10600,506 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1314 371 1315 372 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 10600,506 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 898 371 899 372 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 10600,506 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 482 371 483 372 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 10600,506 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1730 627 1731 628 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1314 627 1315 628 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 898 627 899 628 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 482 627 483 628 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1730 883 1731 884 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 5600,256 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1314 883 1315 884 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 5600,256 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 898 883 899 884 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 5600,256 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 482 883 483 884 l=200 w=200 "GND" "a_391_371#" 400 0 "a_391_371#" 200 5600,256 "COL_LINE" 200 5600,256
+device msubckt sky130_fd_pr__nfet_01v8 1730 1139 1731 1140 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 1314 1139 1315 1140 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 898 1139 899 1140 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__nfet_01v8 482 1139 483 1140 l=200 w=200 "GND" "a_391_371#" 400 0 "COL_LINE" 200 5600,256 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 1612 1966 1613 1967 l=200 w=200 "VDD" "NCHARGE" 400 0 "VDD" 200 14000,340 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 1272 1966 1273 1967 l=200 w=200 "VDD" "NCHARGE" 400 0 "a_391_371#" 200 14000,340 "VDD" 200 14000,340
+device msubckt sky130_fd_pr__pfet_01v8 932 1966 933 1967 l=200 w=200 "VDD" "NCHARGE" 400 0 "VDD" 200 14000,340 "a_391_371#" 200 14000,340
+device msubckt sky130_fd_pr__pfet_01v8 592 1966 593 1967 l=200 w=200 "VDD" "NCHARGE" 400 0 "a_391_371#" 200 10600,506 "VDD" 200 14000,340
+device msubckt sky130_fd_pr__pfet_01v8 1612 2372 1613 2373 l=200 w=200 "VDD" "NCHARGE" 400 0 "VDD" 200 14000,340 "a_391_371#" 200 10600,506
+device msubckt sky130_fd_pr__pfet_01v8 1272 2372 1273 2373 l=200 w=200 "VDD" "NCHARGE" 400 0 "a_391_371#" 200 14000,340 "VDD" 200 14000,340
+device msubckt sky130_fd_pr__pfet_01v8 932 2372 933 2373 l=200 w=200 "VDD" "NCHARGE" 400 0 "VDD" 200 14000,340 "a_391_371#" 200 14000,340
+device msubckt sky130_fd_pr__pfet_01v8 592 2372 593 2373 l=200 w=200 "VDD" "NCHARGE" 400 0 "a_391_371#" 200 10600,506 "VDD" 200 14000,340
+cap "VDD" "NCHARGE" -0.298013
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/G" "a_391_371#" 0.0893792
+cap "VDD" "a_391_371#" -0.90442
+cap "NCHARGE" "a_391_371#" -0.515597
+cap "VDD" "dyn_comp_v1_0/GND" 9.99868
+cap "VDD" "VTHRESH" -0.423973
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_0/G" 0.462973
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_3/G" 0.0365246
+cap "a_391_371#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_3/G" 0.155404
+cap "a_391_371#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_0/G" 0.316499
+cap "NCHARGE" "VTHRESH" -0.515597
+cap "NCHARGE" "dyn_comp_v1_0/GND" 8.18778
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZAZEB_0/S" 0.0111156
+cap "a_391_371#" "dyn_comp_v1_0/GND" 4.56484
+cap "dyn_comp_v1_0/DETECT" "NCHARGE" 1.17621
+cap "a_391_371#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZAZEB_0/S" 0.924131
+cap "dyn_comp_v1_0/DETECT" "a_391_371#" 1.00376
+cap "a_391_371#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_2/G" 0.0893792
+cap "a_391_371#" "VDD" -0.362305
+cap "dyn_comp_v1_0/GND" "NCHARGE" 4.55667
+cap "a_391_371#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_3/G" 0.14381
+cap "dyn_comp_v1_0/DETECT" "a_391_371#" 0.0827473
+cap "dyn_comp_v1_0/GND" "VDD" 5.525
+cap "dyn_comp_v1_0/GND" "a_391_371#" 1.70434
+cap "NCHARGE" "VDD" -0.348446
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_3/G" 0.496795
+cap "dyn_comp_v1_0/DETECT" "NCHARGE" 0.0731826
+cap "VTHRESH" "VDD" 1.77636e-15
+cap "dyn_comp_v1_0/GND" "NCHARGE" 8.27359
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 0.0369541
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/vp" 62.861
+cap "dyn_comp_v1_0/DETECT" "NCHARGE" 1.01376
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" "dyn_comp_v1_0/vm" 0.332579
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" "dyn_comp_v1_0/vp" 0.31771
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" "dyn_comp_v1_0/vm" 8.29721
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "dyn_comp_v1_0/vp" 0.470037
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "NCHARGE" 0.484967
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vm" -18.6875
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vm" 170.703
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/vm" 0.291916
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" 30.2291
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" -0.28816
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/vm" 395.173
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 0.0248308
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/GND" 40.0356
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/DETECT" -2.17114
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" "dyn_comp_v1_0/DETECT" -2.32342
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/DETECT" 233.062
+cap "pixRst" "dyn_comp_v1_0/vm" -5.65465
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/DETECT" 205.664
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" "pixRst" 0.300105
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" "dyn_comp_v1_0/vm" 0.31771
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "dyn_comp_v1_0/vm" 1.5965
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/vm" -69.768
+cap "dyn_comp_v1_0/GND" "pixRst" -26.3936
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" -0.0713563
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" "dyn_comp_v1_0/vp" 1.32564
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" "NCHARGE" 0.0911063
+cap "pixRst" "dyn_comp_v1_0/DETECT" 117.004
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vp" -10.7266
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 2.59201
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vp" 26.7603
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" -0.0830939
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 0.984377
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 0.642788
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/GND" 298.626
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/vm" 1.77052
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vm" -28.4951
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" -0.0694095
+cap "NCHARGE" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" 0.0860721
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" 28.4869
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "NCHARGE" 0.52044
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/GND" 65.9833
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/VDD" 3.65399
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" 0.0921083
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" "dyn_comp_v1_0/vp" 0.396426
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/GND" 0.931131
+cap "NCHARGE" "dyn_comp_v1_0/GND" 4.73717
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/GND" 11.8
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/vp" 0.0869838
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/DETECT" -1.32503
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/G" 0.243582
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/vm" 245.098
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" -2.17892
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vp" 1.47588
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/DETECT" 311.89
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" "dyn_comp_v1_0/VDD" 1.18928
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/S" 8.80735
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "pixRst" 0.869258
+cap "pixRst" "dyn_comp_v1_0/DETECT" 1.41514
+cap "pixRst" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 14.0742
+cap "dyn_comp_v1_0/vp" "VDD" 0.00531612
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/VDD" 100.639
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/vm" 1.27997
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/vm" 0.0625555
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/GND" 0.0324315
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/GND" 80.6046
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 59.4426
+cap "pixRst" "dyn_comp_v1_0/vp" 0.237327
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/vm" 4.43718
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/DETECT" 220.011
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 416.305
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/DETECT" 0.251727
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/GND" 6.49013
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 2.38577
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/DETECT" 54.0151
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -26.7067
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" 1.64262
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -0.441076
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" 0.306335
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" 0.0200571
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vp" -96.0588
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" 8.88178e-16
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" -3.55271e-15
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/vp" -171.553
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" "dyn_comp_v1_0/vp" 1.63487
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vp" -2.81107
+cap "dyn_comp_v1_0/vm" "VDD" 0.00531612
+cap "dyn_comp_v1_0/VDD" "pixRst" 3.54964
+cap "dyn_comp_v1_0/GND" "pixRst" 44.0825
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vm" -44.3218
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/GND" 47.5034
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 0.131802
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" -0.270917
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/GND" -1.09801
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/DETECT" -24.1442
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 1.8728
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -0.880514
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" "dyn_comp_v1_0/vp" -0.297591
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -36.3549
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/vp" 0.0578337
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/vp" 0.290472
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/vp" 0.25174
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -1.42109e-14
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 8.73081
+cap "dyn_comp_v1_0/nDETECT" "pixRst" 42.7895
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" "dyn_comp_v1_0/vp" 0.306337
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" "dyn_comp_v1_0/vp" 0.0200571
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/DETECT" 227.893
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/DETECT" 53.602
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.835798
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_9ZWGZ9_1/S" 2.3583
+cap "dyn_comp_v1_0/DETECT" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" -34.0669
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 12.6043
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 80.8703
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" 1.80094
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.0279323
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/nDETECT" 125.183
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/nDETECT" 126.842
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" -2.66454e-15
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" -0.292559
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "pixRst" 0.047658
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 0.369668
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/vm" -44.7945
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vm" -3.8191
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 1.76955
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 4.42636
+cap "dyn_comp_v1_0/vm" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 2.73522
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" 0.0264111
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/VDD" 163.49
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 2.63703
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" -0.439056
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/VDD" 1.3829
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/vp" -2.15916
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_1/D" 0.033507
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/DETECT" -21.9528
+cap "dyn_comp_v1_0/GND" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" -21.1508
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 407.023
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 0.0351977
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "pixRst" 0.198014
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/VDD" -7.63577
+cap "dyn_comp_v1_0/nDETECT" "pixRst" 96.0852
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "pixRst" 13.3556
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/G" -2.22045e-16
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/S" -1.38778e-17
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" "pixRst" 0.0575634
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 4.93921
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" 2.49924
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/nDETECT" 107.157
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" 0.193918
+cap "pixRst" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 153.427
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/G" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 2.22045e-16
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 21.9307
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/vm" 0.11077
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/VDD" -0.000785607
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "m4_566_7702#" 3.1227
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/VDD" 0.4725
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/VDD" -6.97192
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" 5.55112e-17
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" "dyn_comp_v1_0/VDD" -7.10543e-15
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "pixRst" 40.7219
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 2.15285
+cap "m4_566_7702#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.695515
+cap "dyn_comp_v1_0/vp" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.13523
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -0.000942728
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" 0.725103
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 1.13687e-13
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" "dyn_comp_v1_0/VDD" -4.54747e-13
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" -2.50608
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 3.24292
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "VDD" -0.0808118
+cap "dyn_comp_v1_0/VDD" "pixRst" 43.6703
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 1.13687e-13
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" -1.59162e-12
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/nDETECT" 196.58
+cap "dyn_comp_v1_0/VDD" "VDD" 49.1377
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.557464
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "VDD" 1.29409
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 43.5649
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" 24.3604
+cap "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" "VDD" 1.714
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "VDD" 8.24964
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 140.478
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" -0.236373
+cap "VDD" "dyn_comp_v1_0/nDETECT" 47.2574
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_2/D" -3.33067e-16
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/nDETECT" -5.36123
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "VDD" 10.8319
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "VDD" 32.6217
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" "VDD" 9.90565
+cap "dyn_comp_v1_0/VDD" "m4_566_7702#" 4.18851
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 3.81416
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 4.52805
+cap "dyn_comp_v1_0/VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 6.6533
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" 1.31622
+cap "m4_106_7678#" "dyn_comp_v1_0/VDD" 0.54216
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "m4_566_7702#" 3.68186
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "m4_566_7702#" 2.74271
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "m4_566_7702#" 4.05941
+cap "dyn_comp_v1_0/nDETECT" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" -0.0811653
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 8.19539
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 7.08716
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 50.476
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "pixRst" 19.6631
+cap "m4_106_7678#" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" 9.42155
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "pixRst" 0.140144
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" -0.691581
+cap "VDD" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" 0.168353
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" 0.0502736
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" 6.42795
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/G" "VDD" 1.00947
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/S" "VDD" 1.70301
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/VDD" 6.52666
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "VDD" 14.3472
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/nDETECT" -0.017466
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" 4.39827
+cap "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/G" "VDD" 1.48398
+merge "dyn_comp_v1_0/sky130_fd_pr__pfet_01v8_KDZMJM_3/G" "dyn_comp_v1_0/DETECT" -642 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12000 -520 0 0 0 0 0 0 0 0
+merge "dyn_comp_v1_0/DETECT" "DETECT"
+merge "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_0/D" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_ML4XRG_1/D" -5363.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -176754 -4328 -365762 -17172 0 0 0 0 0 0 0 0 0 0
+merge "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_ML4XRG_1/D" "dyn_comp_v1_0/GND"
+merge "dyn_comp_v1_0/GND" "GND"
+merge "dyn_comp_v1_0/nDETECT" "nDETECT" -274.167 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12000 -520 0 0 0 0 0 0 0 0
+merge "dyn_comp_v1_0/VDD" "VDD" -3153.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105772 -3536 0 0 -4500 -490 0 0 -500976 -6963 0 0 0 0
+merge "VDD" "li_401_5035#"
+merge "dyn_comp_v1_0/voutn" "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" -169.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11242 -454 0 0 0 0 0 0
+merge "dyn_comp_v1_0/sky130_fd_pr__nfet_01v8_V52S8A_1/D" "voutn"
+merge "dyn_comp_v1_0/vp" "a_391_371#" -482.423 0 0 0 0 0 0 0 0 0 0 -87800 -2878 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62176 -2268 -248720 -6698 -165648 -3088 -103018 -3182 0 0 0 0 0 0
+merge "dyn_comp_v1_0/vm" "VTHRESH" -495.905 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68950 -2110 0 0 0 0 0 0

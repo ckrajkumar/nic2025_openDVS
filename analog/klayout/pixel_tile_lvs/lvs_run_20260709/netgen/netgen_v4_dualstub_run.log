@@ -1,0 +1,291 @@
+Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file lvs_run_20260709/netgen/pixel_4tile_layout_extract_stub.spice
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Warning:  Property area passed to cell sky130_fd_pr__model__parasitic__diode_ps2dn which does not define a default.
+Reading netlist file lvs_run_20260709/pixel_4tile_open_lvsfix_stub.spice
+Call to undefined subcircuit pixel_layout_tile
+Creating placeholder cell definition.
+Call to undefined subcircuit pixel_layout_tile_bot
+Creating placeholder cell definition.
+Call to undefined subcircuit openDVS_pixel2x2
+Creating placeholder cell definition.
+Call to undefined subcircuit col_amp_2x1
+Creating placeholder cell definition.
+Call to undefined subcircuit openDVS_pixel
+Creating placeholder cell definition.
+Call to undefined subcircuit dyn_comp
+Creating placeholder cell definition.
+Call to undefined subcircuit col_amp
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelPhotoreceptor
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelSourceFollower
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelChangeAmplifier
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelComparators
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelHandshake
+Creating placeholder cell definition.
+Call to undefined subcircuit PixelResetGen
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Warning:  Property perim passed to cell sky130_fd_pr__model__parasitic__diode_ps2dn which does not define a default.
+Warning:  Property area passed to cell sky130_fd_pr__model__parasitic__diode_ps2dn which does not define a default.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+
+Reading setup file /home/alienfalcon/.ciel/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8
+No property ad found for device sky130_fd_pr__nfet_01v8
+No property ps found for device sky130_fd_pr__nfet_01v8
+No property pd found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8
+No property ad found for device sky130_fd_pr__pfet_01v8
+No property ps found for device sky130_fd_pr__pfet_01v8
+No property pd found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8_hvt
+No property ad found for device sky130_fd_pr__pfet_01v8_hvt
+No property ps found for device sky130_fd_pr__pfet_01v8_hvt
+No property pd found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file lvs_run_20260709/netgen/pixel_4tile_netgen_v4_dualstub.report
+Logging to file "lvs_run_20260709/netgen/pixel_4tile_netgen_v4_dualstub.report" enabled
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_pr__model__parasitic__diode_ps2dn'
+Circuit sky130_fd_pr__model__parasitic__diode_ps2dn contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_pr__model__parasitic__diode_ps2dn'
+Circuit sky130_fd_pr__model__parasitic__diode_ps2dn contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+
+Circuit sky130_fd_pr__model__parasitic__diode_ps2dn contains no devices.
+Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
+Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'openDVS_pixel'
+Circuit openDVS_pixel contains 24 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
+Circuit contains 24 nets, and 12 disconnected pins.
+Contents of circuit 2:  Circuit: 'openDVS_pixel'
+Circuit openDVS_pixel contains 24 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
+Circuit contains 24 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'openDVS_pixel'
+Circuit openDVS_pixel contains 23 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
+Circuit contains 24 nets, and 12 disconnected pins.
+Contents of circuit 2:  Circuit: 'openDVS_pixel'
+Circuit openDVS_pixel contains 23 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
+Circuit contains 24 nets.
+
+Circuit 1 contains 23 devices, Circuit 2 contains 23 devices.
+Circuit 1 contains 24 nets,    Circuit 2 contains 24 nets.
+
+
+Contents of circuit 1:  Circuit: 'pixel_layout_tile_bot'
+Circuit pixel_layout_tile_bot contains 7040 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 1984
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 960
+Circuit contains 4973 nets, and 32 disconnected pins.
+Contents of circuit 2:  Circuit: 'pixel_layout_tile_bot'
+Circuit pixel_layout_tile_bot contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 9101 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'pixel_layout_tile_bot'
+Circuit pixel_layout_tile_bot contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 4973 nets, and 32 disconnected pins.
+Contents of circuit 2:  Circuit: 'pixel_layout_tile_bot'
+Circuit pixel_layout_tile_bot contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 9101 nets.
+
+Circuit 1 contains 5248 devices, Circuit 2 contains 5248 devices.
+Circuit 1 contains 4973 nets,    Circuit 2 contains 9101 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits pixel_layout_tile_bot pixel_layout_tile_bot
+
+Flattening instances of pixel_layout_tile_bot in file lvs_run_20260709/netgen/pixel_4tile_layout_extract_stub.spice
+Flattening instances of pixel_layout_tile_bot in file lvs_run_20260709/pixel_4tile_open_lvsfix_stub.spice
+
+Contents of circuit 1:  Circuit: 'pixel_layout_tile'
+Circuit pixel_layout_tile contains 7040 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 1984
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 960
+Circuit contains 4973 nets.
+Contents of circuit 2:  Circuit: 'pixel_layout_tile'
+Circuit pixel_layout_tile contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 9101 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'pixel_layout_tile'
+Circuit pixel_layout_tile contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 4973 nets.
+Contents of circuit 2:  Circuit: 'pixel_layout_tile'
+Circuit pixel_layout_tile contains 5248 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 640
+  Class: openDVS_pixel         instances: 4096
+  Class: sky130_fd_pr__pfet_01v8 instances: 512
+Circuit contains 9101 nets.
+
+Circuit 1 contains 5248 devices, Circuit 2 contains 5248 devices.
+Circuit 1 contains 4973 nets,    Circuit 2 contains 9101 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits pixel_layout_tile pixel_layout_tile
+
+Flattening instances of pixel_layout_tile in file lvs_run_20260709/netgen/pixel_4tile_layout_extract_stub.spice
+Flattening instances of pixel_layout_tile in file lvs_run_20260709/pixel_4tile_open_lvsfix_stub.spice
+
+Contents of circuit 1:  Circuit: 'pixel_4tile'
+Circuit pixel_4tile contains 20992 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 2560
+  Class: openDVS_pixel         instances: 16384
+  Class: sky130_fd_pr__pfet_01v8 instances: 2048
+Circuit contains 19534 nets.
+Contents of circuit 2:  Circuit: 'pixel_4tile'
+Circuit pixel_4tile contains 20992 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 2560
+  Class: openDVS_pixel         instances: 16384
+  Class: sky130_fd_pr__pfet_01v8 instances: 2048
+Circuit contains 36112 nets.
+
+Circuit 1 contains 20992 devices, Circuit 2 contains 20992 devices.
+Circuit 1 contains 19534 nets,    Circuit 2 contains 36112 nets. *** MISMATCH ***
+
+
+Final result: 
+Top level cell failed pin matching.
+
+
+The following cells had property errors:
+ openDVS_pixel
+
+Logging to file "lvs_run_20260709/netgen/pixel_4tile_netgen_v4_dualstub.report" disabled
+LVS Done.

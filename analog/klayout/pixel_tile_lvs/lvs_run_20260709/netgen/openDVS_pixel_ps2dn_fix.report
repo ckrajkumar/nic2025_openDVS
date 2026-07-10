@@ -1,0 +1,135 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Cell sky130_fd_pr__model__parasitic__diode_ps2dn (0) disconnected node: anode
+Cell sky130_fd_pr__model__parasitic__diode_ps2dn (0) disconnected node: cathode
+Warning: Equate pins:  cell sky130_fd_pr__model__parasitic__diode_ps2dn is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__model__parasitic_ |Circuit 2: sky130_fd_pr__model__parasitic_ 
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |1                                          
+(no matching pin)                          |1                                          
+(no matching pin)                          |2                                          
+(no matching pin)                          |2                                          
+anode                                      |(no matching pin)                          
+cathode                                    |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__model__parasitic__diode_ps2dn and sky130_fd_pr__model__parasitic__diode_ps2dn are equivalent.
+
+Class openDVS_pixel (0):  Merged 1 parallel devices.
+Class openDVS_pixel (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: openDVS_pixel                   |Circuit 2: openDVS_pixel                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (11)               |sky130_fd_pr__nfet_01v8 (11)               
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__cap_mim_m3_1 (3->2)          |sky130_fd_pr__cap_mim_m3_1 (3->2)          
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__model__parasitic__diode_ps2d |sky130_fd_pr__model__parasitic__diode_ps2d 
+Number of devices: 23                      |Number of devices: 23                      
+Number of nets: 26 **Mismatch**            |Number of nets: 24 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: openDVS_pixel                   |Circuit 2: openDVS_pixel                   
+
+---------------------------------------------------------------------------------------
+Net: vpd                                   |Net: vpd                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__model__parasitic__diode_ps 
+                                           |                                           
+Net: GndA                                  |Net: GndA                                  
+  sky130_fd_pr__nfet_01v8/4 = 11           |  sky130_fd_pr__nfet_01v8/4 = 11           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
+                                           |  sky130_fd_pr__model__parasitic__diode_ps 
+                                           |                                           
+Net: dummy_25                              |(no matching net)                          
+  sky130_fd_pr__model__parasitic__diode_ps |                                           
+                                           |                                           
+Net: dummy_26                              |(no matching net)                          
+  sky130_fd_pr__model__parasitic__diode_ps |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: openDVS_pixel                   |Circuit 2: openDVS_pixel                   
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |RefrBp **Mismatch**                        
+(no pin, node is rowReadON)                |rowReadON                                  
+(no pin, node is VddA18)                   |VddA18                                     
+(no pin, node is PrBp)                     |PrBp                                       
+(no pin, node is dummy_26)                 |GndA                                       
+(no pin, node is dummy_26)                 |vpd                                        
+(no pin, node is rowReadOFF)               |rowReadOFF                                 
+(no pin, node is pixRst)                   |pixRst                                     
+(no pin, node is PrSFBp)                   |PrSFBp                                     
+(no pin, node is DiffBn)                   |DiffBn                                     
+(no pin, node is OnBn)                     |OnBn                                       
+(no pin, node is OffBn)                    |OffBn                                      
+(no pin, node is readLine)                 |readLine                                   
+(no pin, node is GndD)                     |GndD                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for openDVS_pixel and openDVS_pixel altered to match.
+Device classes openDVS_pixel and openDVS_pixel are equivalent.
+
+Final result: Top level cell failed pin matching.

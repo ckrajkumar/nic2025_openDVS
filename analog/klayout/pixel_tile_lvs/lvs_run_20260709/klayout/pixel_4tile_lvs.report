@@ -1,0 +1,73 @@
+KLayout LVS report summary
+Source: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/openDVS-layout/lvs_run_20260709/klayout/pixel_4tile.lvsdb
+
+=== Circuit comparison status ===
+Circuits pixel_4tile and PIXEL_4TILE could not be compared because the following subcircuits failed to compare:
+  A: pixel_layout_tile,pixel_layout_tile_bot
+  B: PIXEL_LAYOUT_TILE,PIXEL_LAYOUT_TILE_BOT
+Circuits pixel_layout_tile and PIXEL_LAYOUT_TILE could not be compared because the following subcircuits failed to compare:
+  A: openDVS_pixel
+  B: OPENDVS_PIXEL
+Circuits pixel_layout_tile_bot and PIXEL_LAYOUT_TILE_BOT could not be compared because the following subcircuits failed to compare:
+  A: openDVS_pixel
+  B: OPENDVS_PIXEL
+
+=== Unmatched layout nets (21) ===
+  PrBp
+  pixRst
+  rowReadOFF
+  vsf
+  vd
+  vpd
+  readLine
+  $23
+  $18
+  $17
+  GndD
+  rowReadON
+  nOFF
+  ON
+  vdiff
+  nRst
+  vpr
+  GndA
+  VddA18
+  $6
+  sky130_gnd
+
+=== Other markers (32) ===
+  [1x] Circuits pixel_layout_tile and PIXEL_LAYOUT_TILE could not be compared because the following subcircuits failed to compare:\n  A: openDVS_pixel\n  B: OPENDVS_PIXEL
+  [1x] Circuits pixel_layout_tile_bot and PIXEL_LAYOUT_TILE_BOT could not be compared because the following subcircuits failed to compare:\n  A: openDVS_pixel\n  B: OPENDVS_PIXEL
+  [1x] Circuits pixel_4tile and PIXEL_4TILE could not be compared because the following subcircuits failed to compare:\n  A: pixel_layout_tile,pixel_layout_tile_bot\n  B: PIXEL_LAYOUT_TILE,PIXEL_LAYOUT_TILE_BOT
+  [1x] No equivalent pin GndD from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin readLine from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin pixRst from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin VddA18 from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin $5 from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin ON from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin nOFF from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin vd from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin rowReadOFF from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin rowReadON from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin nRst from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin vdiff from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin GndA from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin vsf from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin PrBp from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin sky130_gnd from netlist found in reference netlist.\nThis is an indication that additional physical connections are made to the subcircuit cell.
+  [1x] No equivalent pin ROWREADON from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin VDDA18 from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin PRBP from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin GNDA from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin ROWREADOFF from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin PIXRST from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin PRSFBP from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin DIFFBN from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin ONBN from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin OFFBN from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin REFRBP from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin READLINE from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+  [1x] No equivalent pin GNDD from reference netlist found in netlist.\nThis is an indication that a physical connection is not made to the subcircuit.
+
+=== Result ===
+FAIL — netlists do not match (see details above)
