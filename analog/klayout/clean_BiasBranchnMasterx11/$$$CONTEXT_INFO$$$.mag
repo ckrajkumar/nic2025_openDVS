@@ -1,0 +1,80 @@
+magic
+tech sky130A
+timestamp 1785258666
+<< error_s >>
+rect 3124 14500 3156 14506
+rect 3156 14474 3164 14500
+rect 3116 14466 3164 14474
+rect 24 494 3796 14466
+rect 1 484 3796 494
+rect 11 456 11 484
+rect 24 456 3796 484
+rect 11 456 3796 456
+rect 24 454 3796 456
+rect 1 444 3796 454
+rect 11 416 11 444
+rect 24 416 3796 444
+rect 11 416 3796 416
+rect 24 414 3796 416
+rect 1 404 3796 414
+rect 0 394 3796 404
+rect 6 94 3796 394
+rect 0 86 3796 94
+rect 4 34 3796 86
+rect 4 14 404 34
+rect 3116 26 3164 34
+rect 6 6 404 14
+rect 6 2 124 6
+rect 126 2 164 6
+rect 166 2 204 6
+rect 3156 0 3164 26
+rect 3124 0 3164 0
+use mim_cap$1  mim_cap$1_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box -20 -20 4536 14520
+use mim_cap  mim_cap_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box -20 -20 3166 14520
+use vias_gen$2  vias_gen$2_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 400 100
+use vias_gen$3  vias_gen$3_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 50 500
+use vias_gen$4  vias_gen$4_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 200 50
+use vias_gen$5  vias_gen$5_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 200 33
+use vias_gen$6  vias_gen$6_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 100 33
+use vias_gen$7  vias_gen$7_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 100 100
+use vias_gen$8  vias_gen$8_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 100 50
+use vias_gen$9  vias_gen$9_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 100 75
+use vias_gen$11  vias_gen$11_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 400 400
+use vias_gen  vias_gen_0
+timestamp 1785258666
+transform 1 0 0 0 1 0
+box 0 0 150 150
+<< end >>

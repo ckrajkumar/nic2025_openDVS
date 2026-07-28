@@ -1,0 +1,69 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1785260014
+<< pwell >>
+rect -79 -26 279 226
+<< nmos >>
+rect 0 0 200 200
+<< ndiff >>
+rect -53 151 0 200
+rect -53 117 -45 151
+rect -11 117 0 151
+rect -53 83 0 117
+rect -53 49 -45 83
+rect -11 49 0 83
+rect -53 0 0 49
+rect 200 151 253 200
+rect 200 117 211 151
+rect 245 117 253 151
+rect 200 83 253 117
+rect 200 49 211 83
+rect 245 49 253 83
+rect 200 0 253 49
+<< ndiffc >>
+rect -45 117 -11 151
+rect -45 49 -11 83
+rect 211 117 245 151
+rect 211 49 245 83
+<< poly >>
+rect 0 281 200 291
+rect 0 247 49 281
+rect 83 247 117 281
+rect 151 247 200 281
+rect 0 200 200 247
+rect 0 -47 200 0
+rect 0 -81 49 -47
+rect 83 -81 117 -47
+rect 151 -81 200 -47
+rect 0 -91 200 -81
+<< polycont >>
+rect 49 247 83 281
+rect 117 247 151 281
+rect 49 -81 83 -47
+rect 117 -81 151 -47
+<< locali >>
+rect 33 247 49 281
+rect 83 247 117 281
+rect 151 247 167 281
+rect -45 151 -11 167
+rect -45 83 -11 117
+rect -45 33 -11 49
+rect 211 151 245 167
+rect 211 83 245 117
+rect 211 33 245 49
+rect 33 -81 49 -47
+rect 83 -81 117 -47
+rect 151 -81 167 -47
+<< labels >>
+flabel locali s 33 -81 167 -47 0 FreeSans 90 0 0 0 g
+port 4 nsew
+flabel locali s 33 247 167 281 0 FreeSans 90 0 0 0 g
+port 4 nsew
+flabel mvpdiff s 200 0 253 200 0 FreeSans 130 0 0 0 d
+port 2 nsew
+flabel mvpdiff s -53 0 0 200 0 FreeSans 130 0 0 0 s
+port 3 nsew
+flabel pwell s -53 0 253 200 0 FreeSans 600 0 0 0 b
+port 5 nsew
+<< end >>
