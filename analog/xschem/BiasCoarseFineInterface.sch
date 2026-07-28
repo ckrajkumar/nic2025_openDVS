@@ -91,7 +91,7 @@ N 1350 160 1400 160 {lab=VddA18}
 N 890 320 890 370 {lab=IOut}
 N 890 230 890 320 {lab=IOut}
 C {sky130_fd_pr/pfet_01v8.sym} 580 -60 0 1 {name=MpDisableHighBias
-W=0.42
+W=0.55
 L=0.15
 nf=1
 mult=1
@@ -110,8 +110,8 @@ C {lab_wire.sym} 560 -140 3 0 {name=p1 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 510 -60 2 0 {name=p2 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 630 -60 0 0 {name=p3 sig_type=std_logic lab=nLowBiasEn}
 C {sky130_fd_pr/pfet_01v8.sym} 460 -10 0 1 {name=MpDioHighBias
-W=32
-L=1
+W=64
+L=0.5
 nf=2
 mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -125,8 +125,8 @@ spiceprefix=X
 }
 C {lab_wire.sym} 390 -10 2 0 {name=p4 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} 670 -10 0 0 {name=MpMirrHighBias
-W=32
-L=1
+W=64
+L=0.5
 nf=2
 mult=8
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -141,7 +141,7 @@ spiceprefix=X
 C {lab_wire.sym} 440 -100 3 0 {name=p5 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} 690 -90 3 0 {name=p6 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} 490 70 3 0 {name=MpswDioHighBias
-W=0.42
+W=0.55
 L=0.5
 nf=1
 mult=1
