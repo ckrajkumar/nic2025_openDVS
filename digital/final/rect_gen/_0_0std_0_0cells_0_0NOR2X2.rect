@@ -1,0 +1,24 @@
+bbox 0 0 40 64
+rect GND ndiffusion 22 6 27 16 right
+rect Y pdiffusion 22 23 27 53 right
+rect # polysilicon 20 4 22 6
+rect # ntransistor 20 6 22 16
+rect B polysilicon 20 16 22 18
+rect B polysilicon 20 21 22 23
+rect # ptransistor 20 23 22 53
+rect # polysilicon 20 53 22 55
+rect Y ndiffusion 15 6 20 16 center
+rect # pdiffusion 15 23 20 53
+rect # polysilicon 13 4 15 6
+rect # ntransistor 13 6 15 16
+rect A polysilicon 13 16 15 18
+rect A polysilicon 13 21 15 23
+rect # ptransistor 13 23 15 53
+rect # polysilicon 13 53 15 55
+rect GND ndiffusion 8 6 13 16 left
+rect Vdd pdiffusion 8 23 13 53 left
+inrect GND m1 32 56 36 60
+inrect Vdd m1 24 56 28 60
+inrect B m1 16 56 20 60
+outrect Y m1 8 4 12 8
+inrect A m1 8 56 12 60

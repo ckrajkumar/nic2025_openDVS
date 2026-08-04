@@ -1,0 +1,65 @@
+bbox 0 0 176 40
+rect Vdd pdiffusion 130 19 135 25 right
+rect # ptransistor 106 19 130 25
+rect # polysilicon 106 25 130 27
+rect GND polysilicon 106 17 130 19
+rect # pdiffusion 103 19 106 25
+rect #13 ndiffusion 103 6 108 12 right
+rect # ptransistor 101 19 103 25
+rect # polysilicon 101 25 103 27
+rect # polysilicon 101 4 103 6
+rect # ntransistor 101 6 103 12
+rect #11 polysilicon 101 12 103 14
+rect #11 polysilicon 101 17 103 19
+rect # pdiffusion 100 19 101 25
+rect out ndiffusion 96 6 101 12 center
+rect out pdiffusion 96 19 100 29 right
+rect # polysilicon 94 29 96 31
+rect # polysilicon 94 4 96 6
+rect # ntransistor 94 6 96 12
+rect in[3] polysilicon 94 12 96 14
+rect in[3] polysilicon 94 17 96 19
+rect # ptransistor 94 19 96 29
+rect # ndiffusion 91 6 94 12
+rect # pdiffusion 91 19 94 29
+rect # polysilicon 89 29 91 31
+rect # polysilicon 89 4 91 6
+rect # ntransistor 89 6 91 12
+rect in[2] polysilicon 89 12 91 14
+rect in[2] polysilicon 89 17 91 19
+rect # ptransistor 89 19 91 29
+rect GND ndiffusion 84 6 89 12 center
+rect # pdiffusion 15 19 89 29
+rect # polysilicon 13 4 84 6
+rect # ntransistor 13 6 84 12
+rect Vdd polysilicon 13 12 84 14
+rect in[1] polysilicon 13 17 15 19
+rect # ptransistor 13 19 15 29
+rect # polysilicon 13 29 15 31
+rect #13 ndiffusion 8 6 13 12 left
+rect #9 pdiffusion 8 19 13 29 left
+rect #11 ndiffusion 157 6 162 12 right
+rect #11 pdiffusion 157 19 162 29 right
+rect # polysilicon 153 4 157 6
+rect # ntransistor 153 6 157 12
+rect out polysilicon 153 12 157 14
+rect out polysilicon 153 17 157 19
+rect # ptransistor 153 19 157 29
+rect # polysilicon 153 29 157 31
+rect GND ndiffusion 148 6 153 12 center
+rect Vdd pdiffusion 148 19 153 29 center
+rect # polysilicon 146 4 148 6
+rect # ntransistor 146 6 148 12
+rect in[0] polysilicon 146 12 148 14
+rect in[0] polysilicon 146 17 148 19
+rect # ptransistor 146 19 148 29
+rect # polysilicon 146 29 148 31
+rect out ndiffusion 141 6 146 12 left
+rect #9 pdiffusion 141 19 146 29 left
+inrect GND m1 168 32 172 36
+inrect Vdd m1 136 32 140 36
+inrect in[3] m1 104 32 108 36
+inrect in[2] m1 72 32 76 36
+inrect in[1] m1 40 32 44 36
+outrect out m1 8 4 12 8
+inrect in[0] m1 8 32 12 36

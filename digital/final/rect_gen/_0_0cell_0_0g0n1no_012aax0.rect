@@ -1,0 +1,57 @@
+bbox 0 0 112 48
+rect #8 ndiffusion 52 14 57 20 right
+rect #8 pdiffusion 52 27 57 37 right
+rect # polysilicon 48 37 52 39
+rect # polysilicon 48 12 52 14
+rect # ntransistor 48 14 52 20
+rect out polysilicon 48 20 52 22
+rect # ptransistor 48 27 52 37
+rect # ndiffusion 45 14 48 20
+rect out polysilicon 48 25 52 27
+rect # pdiffusion 44 27 48 37
+rect GND ndiffusion 41 5 45 20 right
+rect Vdd pdiffusion 41 27 44 33 right
+rect # polysilicon 39 3 41 5
+rect # ntransistor 39 5 41 20
+rect in[0] polysilicon 39 20 41 22
+rect in[0] polysilicon 39 25 41 27
+rect # ptransistor 39 27 41 33
+rect # polysilicon 39 33 41 35
+rect # ndiffusion 34 5 39 20
+rect out pdiffusion 34 27 39 33 center
+rect # polysilicon 32 3 34 5
+rect # ntransistor 32 5 34 20
+rect in[1] polysilicon 32 20 34 22
+rect in[1] polysilicon 32 25 34 27
+rect # ptransistor 32 27 34 33
+rect # polysilicon 32 33 34 35
+rect # ndiffusion 15 5 32 20
+rect Vdd pdiffusion 27 27 32 33 center
+rect # polysilicon 13 3 15 5
+rect # ntransistor 13 5 15 20
+rect in[2] polysilicon 13 20 15 22
+rect GND polysilicon 13 25 27 27
+rect # ptransistor 13 27 27 33
+rect # polysilicon 13 33 27 35
+rect out ndiffusion 8 5 13 20 left
+rect #9 pdiffusion 8 27 13 33 left
+rect GND ndiffusion 101 14 106 20 right
+rect # polysilicon 73 12 101 14
+rect # ntransistor 73 14 101 20
+rect Vdd polysilicon 73 20 101 22
+rect # ndiffusion 70 14 73 20
+rect #9 pdiffusion 70 27 75 33 right
+rect # polysilicon 68 12 70 14
+rect # ntransistor 68 14 70 20
+rect #8 polysilicon 68 20 70 22
+rect #8 polysilicon 68 25 70 27
+rect # ptransistor 68 27 70 33
+rect # polysilicon 68 33 70 35
+rect out ndiffusion 63 14 68 20 left
+rect out pdiffusion 63 27 68 33 left
+inrect GND m1 104 40 108 44
+inrect Vdd m1 80 40 84 44
+inrect in[2] m1 56 40 60 44
+inrect in[1] m1 32 40 36 44
+outrect out m1 8 4 12 8
+inrect in[0] m1 8 40 12 44

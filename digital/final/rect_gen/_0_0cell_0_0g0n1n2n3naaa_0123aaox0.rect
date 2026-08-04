@@ -1,0 +1,69 @@
+bbox 0 0 144 40
+rect Vdd pdiffusion 115 19 120 29 right
+rect # polysilicon 113 29 115 31
+rect out ndiffusion 115 6 120 12 right
+rect # ptransistor 113 19 115 29
+rect # polysilicon 113 4 115 6
+rect # ntransistor 113 6 115 12
+rect in[0] polysilicon 113 12 115 14
+rect in[0] polysilicon 113 17 115 19
+rect # pdiffusion 108 19 113 29
+rect # polysilicon 106 29 108 31
+rect GND ndiffusion 108 6 113 12 center
+rect # ptransistor 106 19 108 29
+rect # polysilicon 106 4 108 6
+rect # ntransistor 106 6 108 12
+rect in[1] polysilicon 106 12 108 14
+rect in[1] polysilicon 106 17 108 19
+rect # pdiffusion 103 19 106 29
+rect # polysilicon 101 29 103 31
+rect # ndiffusion 103 6 106 12
+rect # ptransistor 101 19 103 29
+rect # polysilicon 101 4 103 6
+rect # ntransistor 101 6 103 12
+rect in[2] polysilicon 101 12 103 14
+rect in[2] polysilicon 101 17 103 19
+rect # pdiffusion 98 19 101 29
+rect # polysilicon 96 29 98 31
+rect # ndiffusion 98 6 101 12
+rect # ptransistor 96 19 98 29
+rect # polysilicon 96 4 98 6
+rect # ntransistor 96 6 98 12
+rect in[3] polysilicon 96 12 98 14
+rect in[3] polysilicon 96 17 98 19
+rect # pdiffusion 92 19 96 29
+rect out ndiffusion 89 6 96 12 center
+rect out pdiffusion 89 19 92 25 right
+rect # polysilicon 87 25 89 27
+rect # polysilicon 87 4 89 6
+rect # ntransistor 87 6 89 12
+rect #12 polysilicon 87 12 89 14
+rect #12 polysilicon 87 17 89 19
+rect # ptransistor 87 19 89 25
+rect # ndiffusion 84 6 87 12
+rect # pdiffusion 51 19 87 25
+rect # polysilicon 13 4 84 6
+rect # ntransistor 13 6 84 12
+rect Vdd polysilicon 13 12 84 14
+rect GND polysilicon 13 17 51 19
+rect # ptransistor 13 19 51 25
+rect # polysilicon 13 25 51 27
+rect GND ndiffusion 8 6 13 12 left
+rect Vdd pdiffusion 8 19 13 25 left
+rect #12 ndiffusion 135 6 140 12 right
+rect Vdd pdiffusion 135 19 140 29 right
+rect # polysilicon 131 4 135 6
+rect # ntransistor 131 6 135 12
+rect out polysilicon 131 12 135 14
+rect out polysilicon 131 17 135 19
+rect # ptransistor 131 19 135 29
+rect # polysilicon 131 29 135 31
+rect GND ndiffusion 126 6 131 12 left
+rect #12 pdiffusion 126 19 131 29 left
+inrect GND m1 128 32 132 36
+inrect Vdd m1 104 32 108 36
+inrect in[3] m1 80 32 84 36
+inrect in[2] m1 56 32 60 36
+inrect in[1] m1 32 32 36 36
+outrect out m1 8 4 12 8
+inrect in[0] m1 8 32 12 36
