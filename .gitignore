@@ -34,3 +34,5 @@ analog/netlist/
 \#*
 .*
 
+*local_cache.conf
+*bugs.md

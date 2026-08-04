@@ -6,41 +6,42 @@ open syn;
 open syn::decomp;
 /* decomposition output - might have fresh instances */
 
-defproc decomp_rawbits (chan?(int<64>) L; chan!(int<7>) R)
+defproc decomp_rawbits <: rawbits()
 {
-    int<1> _va21;
-  int<64> _va23;
+  refine <2> {
+    int<6> _va6;
   int<72> _va20;
-  int<6> _va1;
-  int<8> _va5;
-  int<1> _va19;
-  int<1> _va15;
-  int<3> _va9;
-  int<1> _va14;
-  int<1> _va13;
-  int<64> _va16;
-  int<1> _va7;
-  int<3> _va8;
-  int<1> _va18;
-  int<64> _va3;
-  int<7> _va10;
-  int<1> _va12;
   int<6> _va17;
-  int<6> _va22;
   int<1> _va2;
-  int<7> _va4;
-  int<6> _va6;
+  int<1> _va18;
+  int<1> _va19;
   int<1> _va11;
+  int<64> _va16;
+  int<1> _va13;
+  int<1> _va7;
+  int<1> _va12;
+  int<7> _va10;
+  int<1> _va14;
+  int<6> _va1;
+  int<64> _va23;
   int<1> _va0;
-  chan(int<8>) _ch_0_8;
-  chan(int<72>) _ch_0_7;
-  chan(int<1>) _ch_0_6;
-  chan(int<1>) _ch_0_5;
-  chan(int<1>) _ch_0_4;
-  chan(int<1>) _ch_0_3;
-  chan(int<7>) _ch_0_2;
-  chan(int<7>) _ch_0_1;
-  chan(int<7>) _ch_0_0;
+  int<3> _va8;
+  int<6> _va22;
+  int<8> _va5;
+  int<7> _va4;
+  int<3> _va9;
+  int<64> _va3;
+  int<1> _va21;
+  int<1> _va15;
+  chan(int<8>) _ch_1_8;
+  chan(int<72>) _ch_1_7;
+  chan(int<1>) _ch_1_6;
+  chan(int<1>) _ch_1_5;
+  chan(int<1>) _ch_1_4;
+  chan(int<1>) _ch_1_3;
+  chan(int<7>) _ch_1_2;
+  chan(int<7>) _ch_1_1;
+  chan(int<7>) _ch_1_0;
   
   /* raw output */
   /* end raw output */
@@ -52,21 +53,21 @@ chp {top_decomp:(
  *[ 
      _va2:=int(1,1);
      L?_va3;
-     _ch_0_5!bool(~((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1))) ? int(1,1) : bool((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1)) ? int(0,1) : int(0,1);
+     _ch_1_5!bool(~((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1))) ? int(1,1) : bool((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1)) ? int(0,1) : int(0,1);
       [bool((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1)) -> skip
       []bool(~((_va3>>int(1,1))=int(0,1) ? int(int(_va3,1)=int(0,1)) : int(0,1))) -> 
-       _ch_0_0! {_va1,_va0};
+       _ch_1_0! {_va1,_va0};
        _va4:=int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(int(_va3,64)>>int(0,1),1)+int(int(_va3,64)>>int(1,1),1)+int(int(_va3,64)>>int(2,2),1)+int(int(_va3,64)>>int(3,2),1)+int(int(_va3,64)>>int(4,3),1)+int(int(_va3,64)>>int(5,3),1)+int(int(_va3,64)>>int(6,3),1),6)+int(int(_va3,64)>>int(7,3),1),6)+int(int(_va3,64)>>int(8,4),1),6)+int(int(_va3,64)>>int(9,4),1),6)+int(int(_va3,64)>>int(10,4),1),6)+int(int(_va3,64)>>int(11,4),1),6)+int(int(_va3,64)>>int(12,4),1),6)+int(int(_va3,64)>>int(13,4),1),6)+int(int(_va3,64)>>int(14,4),1),6)+int(int(_va3,64)>>int(15,4),1),6)+int(int(_va3,64)>>int(16,5),1),6)+int(int(_va3,64)>>int(17,5),1),6)+int(int(_va3,64)>>int(18,5),1),6)+int(int(_va3,64)>>int(19,5),1),6)+int(int(_va3,64)>>int(20,5),1),6)+int(int(_va3,64)>>int(21,5),1),6)+int(int(_va3,64)>>int(22,5),1),6)+int(int(_va3,64)>>int(23,5),1),6)+int(int(_va3,64)>>int(24,5),1),6)+int(int(_va3,64)>>int(25,5),1),6)+int(int(_va3,64)>>int(26,5),1),6)+int(int(_va3,64)>>int(27,5),1),6)+int(int(_va3,64)>>int(28,5),1),6)+int(int(_va3,64)>>int(29,5),1),6)+int(int(_va3,64)>>int(30,5),1),6)+int(int(_va3,64)>>int(31,5),1),6)+int(int(_va3,64)>>int(32,6),1),6)+int(int(_va3,64)>>int(33,6),1),6)+int(int(_va3,64)>>int(34,6),1),6)+int(int(_va3,64)>>int(35,6),1),6)+int(int(_va3,64)>>int(36,6),1),6)+int(int(_va3,64)>>int(37,6),1),6)+int(int(_va3,64)>>int(38,6),1),6)+int(int(_va3,64)>>int(39,6),1),6)+int(int(_va3,64)>>int(40,6),1),6)+int(int(_va3,64)>>int(41,6),1),6)+int(int(_va3,64)>>int(42,6),1),6)+int(int(_va3,64)>>int(43,6),1),6)+int(int(_va3,64)>>int(44,6),1),6)+int(int(_va3,64)>>int(45,6),1),6)+int(int(_va3,64)>>int(46,6),1),6)+int(int(_va3,64)>>int(47,6),1),6)+int(int(_va3,64)>>int(48,6),1),6)+int(int(_va3,64)>>int(49,6),1),6)+int(int(_va3,64)>>int(50,6),1),6)+int(int(_va3,64)>>int(51,6),1),6)+int(int(_va3,64)>>int(52,6),1),6)+int(int(_va3,64)>>int(53,6),1),6)+int(int(_va3,64)>>int(54,6),1),6)+int(int(_va3,64)>>int(55,6),1),6)+int(int(_va3,64)>>int(56,6),1),6)+int(int(_va3,64)>>int(57,6),1),6)+int(int(_va3,64)>>int(58,6),1),6)+int(int(_va3,64)>>int(59,6),1),6)+int(int(_va3,64)>>int(60,6),1),6)+int(int(_va3,64)>>int(61,6),1),6)+int(int(_va3,64)>>int(62,6),1),6)+int(int(_va3,64)>>int(63,6),1),6)+int(62,6),6)+int(1,1),6),7);
-       _ch_0_1!_va4;
-       _ch_0_7! { { {_va2,_va0},_va1},_va3};
-       _ch_0_8?_va5;
+       _ch_1_1!_va4;
+       _ch_1_7! { { {_va2,_va0},_va1},_va3};
+       _ch_1_8?_va5;
        (_va2:=_va5{7..7}),(_va0:=_va5{6..6}),(_va1:=int(_va5,6))
       ];
      _va6:=int(_va1+_va0,6);
      _va1:=_va6;
      _va7:=~_va0;
      _va0:=_va7;
-     _ch_0_6!bool(_va2) ? int(0,1) : int(1,1) <- bool(_va2)    ]
+     _ch_1_6!bool(_va2) ? int(0,1) : int(1,1) <- bool(_va2)    ]
 ),(
    _va8:=int(0,3);
    _va9:=int(0,3);
@@ -74,9 +75,9 @@ chp {top_decomp:(
    
  *[ 
       [_va8=int(0,3) -> skip
-      []_va8=int(1,3) ->  [#_ch_0_0 -> _va10:=_ch_0_0        ]
-      []_va8=int(2,3) ->  [#_ch_0_1 -> _va10:=_ch_0_1        ]
-      []_va8=int(3,3) ->  [#_ch_0_2 -> _va10:=_ch_0_2        ]
+      []_va8=int(1,3) ->  [#_ch_1_0 -> _va10:=_ch_1_0        ]
+      []_va8=int(2,3) ->  [#_ch_1_1 -> _va10:=_ch_1_1        ]
+      []_va8=int(3,3) ->  [#_ch_1_2 -> _va10:=_ch_1_2        ]
       []_va8=int(4,3) -> skip
       []_va8=int(5,3) -> skip
       []_va8=int(6,3) -> skip
@@ -87,25 +88,25 @@ chp {top_decomp:(
       ];
       [_va8=int(0,3) -> _va9:=int(6,3)
       []_va8=int(1,3) -> 
-       _ch_0_0?;
+       _ch_1_0?;
        _va9:=int(2,3)
       []_va8=int(2,3) -> 
-       _ch_0_1?;
+       _ch_1_1?;
        _va9:=int(4,3)
       []_va8=int(3,3) -> 
-       _ch_0_2?;
+       _ch_1_2?;
        _va9:=int(5,3)
       []_va8=int(4,3) -> 
-       _ch_0_3?_va11;
+       _ch_1_3?_va11;
        _va9:=_va11=int(1,1) ? int(5,3) : _va11=int(0,1) ? int(3,3) : int(0,3)
       []_va8=int(5,3) -> 
-       _ch_0_4?_va12;
+       _ch_1_4?_va12;
        _va9:=_va12=int(1,1) ? int(7,3) : _va12=int(0,1) ? int(4,3) : int(0,3)
       []_va8=int(6,3) -> 
-       _ch_0_5?_va13;
+       _ch_1_5?_va13;
        _va9:=_va13=int(1,1) ? int(1,3) : _va13=int(0,1) ? int(7,3) : int(0,3)
       []_va8=int(7,3) -> 
-       _ch_0_6?_va14;
+       _ch_1_6?_va14;
        _va9:=_va14=int(1,1) ? int(0,3) : _va14=int(0,1) ? int(6,3) : int(0,3)
       ];
      _va8:=_va9 <- bool(int(1,1))    ]
@@ -118,24 +119,24 @@ chp {top_decomp:(
    
  *[ 
       [_va15=int(0,1) -> 
-       _ch_0_7?_va20;
+       _ch_1_7?_va20;
        (_va19:=_va20{71..71}),(_va18:=_va20{70..70}),(_va17:=_va20{69..64}),(_va16:=int(_va20,64));
        _va15:=int(1,1)
       []_va15=int(1,1) -> skip
       ];
      _va21:=int(1,1);
-     _ch_0_3!bool(~(((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1))|int(0,1))) ? int(1,1) : bool((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1)) ? int(0,1) : int(0,1);
+     _ch_1_3!bool(~(((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1))|int(0,1))) ? int(1,1) : bool((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1)) ? int(0,1) : int(0,1);
       [bool((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1)) -> 
        _va22:=int(int(int(_va16,64)>>int(63,6),1)=int(1,1) ? int(63,6) : int(int(int(_va16,64)>>int(62,6),1)=int(1,1) ? int(62,6) : int(int(int(_va16,64)>>int(61,6),1)=int(1,1) ? int(61,6) : int(int(int(_va16,64)>>int(60,6),1)=int(1,1) ? int(60,6) : int(int(int(_va16,64)>>int(59,6),1)=int(1,1) ? int(59,6) : int(int(int(_va16,64)>>int(58,6),1)=int(1,1) ? int(58,6) : int(int(int(_va16,64)>>int(57,6),1)=int(1,1) ? int(57,6) : int(int(int(_va16,64)>>int(56,6),1)=int(1,1) ? int(56,6) : int(int(int(_va16,64)>>int(55,6),1)=int(1,1) ? int(55,6) : int(int(int(_va16,64)>>int(54,6),1)=int(1,1) ? int(54,6) : int(int(int(_va16,64)>>int(53,6),1)=int(1,1) ? int(53,6) : int(int(int(_va16,64)>>int(52,6),1)=int(1,1) ? int(52,6) : int(int(int(_va16,64)>>int(51,6),1)=int(1,1) ? int(51,6) : int(int(int(_va16,64)>>int(50,6),1)=int(1,1) ? int(50,6) : int(int(int(_va16,64)>>int(49,6),1)=int(1,1) ? int(49,6) : int(int(int(_va16,64)>>int(48,6),1)=int(1,1) ? int(48,6) : int(int(int(_va16,64)>>int(47,6),1)=int(1,1) ? int(47,6) : int(int(int(_va16,64)>>int(46,6),1)=int(1,1) ? int(46,6) : int(int(int(_va16,64)>>int(45,6),1)=int(1,1) ? int(45,6) : int(int(int(_va16,64)>>int(44,6),1)=int(1,1) ? int(44,6) : int(int(int(_va16,64)>>int(43,6),1)=int(1,1) ? int(43,6) : int(int(int(_va16,64)>>int(42,6),1)=int(1,1) ? int(42,6) : int(int(int(_va16,64)>>int(41,6),1)=int(1,1) ? int(41,6) : int(int(int(_va16,64)>>int(40,6),1)=int(1,1) ? int(40,6) : int(int(int(_va16,64)>>int(39,6),1)=int(1,1) ? int(39,6) : int(int(int(_va16,64)>>int(38,6),1)=int(1,1) ? int(38,6) : int(int(int(_va16,64)>>int(37,6),1)=int(1,1) ? int(37,6) : int(int(int(_va16,64)>>int(36,6),1)=int(1,1) ? int(36,6) : int(int(int(_va16,64)>>int(35,6),1)=int(1,1) ? int(35,6) : int(int(int(_va16,64)>>int(34,6),1)=int(1,1) ? int(34,6) : int(int(int(_va16,64)>>int(33,6),1)=int(1,1) ? int(33,6) : int(int(int(_va16,64)>>int(32,6),1)=int(1,1) ? int(32,6) : int(int(int(_va16,64)>>int(31,5),1)=int(1,1) ? int(int(31,5),6) : int(int(int(_va16,64)>>int(30,5),1)=int(1,1) ? int(int(30,5),6) : int(int(int(_va16,64)>>int(29,5),1)=int(1,1) ? int(int(29,5),6) : int(int(int(_va16,64)>>int(28,5),1)=int(1,1) ? int(int(28,5),6) : int(int(int(_va16,64)>>int(27,5),1)=int(1,1) ? int(int(27,5),6) : int(int(int(_va16,64)>>int(26,5),1)=int(1,1) ? int(int(26,5),6) : int(int(int(_va16,64)>>int(25,5),1)=int(1,1) ? int(int(25,5),6) : int(int(int(_va16,64)>>int(24,5),1)=int(1,1) ? int(int(24,5),6) : int(int(int(_va16,64)>>int(23,5),1)=int(1,1) ? int(int(23,5),6) : int(int(int(_va16,64)>>int(22,5),1)=int(1,1) ? int(int(22,5),6) : int(int(int(_va16,64)>>int(21,5),1)=int(1,1) ? int(int(21,5),6) : int(int(int(_va16,64)>>int(20,5),1)=int(1,1) ? int(int(20,5),6) : int(int(int(_va16,64)>>int(19,5),1)=int(1,1) ? int(int(19,5),6) : int(int(int(_va16,64)>>int(18,5),1)=int(1,1) ? int(int(18,5),6) : int(int(int(_va16,64)>>int(17,5),1)=int(1,1) ? int(int(17,5),6) : int(int(int(_va16,64)>>int(16,5),1)=int(1,1) ? int(int(16,5),6) : int(int(int(_va16,64)>>int(15,4),1)=int(1,1) ? int(int(15,4),6) : int(int(int(_va16,64)>>int(14,4),1)=int(1,1) ? int(int(14,4),6) : int(int(int(_va16,64)>>int(13,4),1)=int(1,1) ? int(int(13,4),6) : int(int(int(_va16,64)>>int(12,4),1)=int(1,1) ? int(int(12,4),6) : int(int(int(_va16,64)>>int(11,4),1)=int(1,1) ? int(int(11,4),6) : int(int(int(_va16,64)>>int(10,4),1)=int(1,1) ? int(int(10,4),6) : int(int(int(_va16,64)>>int(9,4),1)=int(1,1) ? int(int(9,4),6) : int(int(int(_va16,64)>>int(8,4),1)=int(1,1) ? int(int(8,4),6) : int(int(int(_va16,64)>>int(7,3),1)=int(1,1) ? int(int(7,3),6) : int(int(int(_va16,64)>>int(6,3),1)=int(1,1) ? int(int(6,3),6) : int(int(int(_va16,64)>>int(5,3),1)=int(1,1) ? int(int(5,3),6) : int(int(int(_va16,64)>>int(4,3),1)=int(1,1) ? int(int(4,3),6) : int(int(int(_va16,64)>>int(3,2),1)=int(1,1) ? int(int(3,2),6) : int(int(int(_va16,64)>>int(2,2),1)=int(1,1) ? int(int(2,2),6) : int(int(int(_va16,64)>>int(1,1),1)=int(1,1) ? int(int(1,1),6) : int(int(int(_va16,64)>>int(0,1),1)=int(1,1) ? int(int(0,1),6) : int(int(0,1),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6),6);
        _va23:=(int(64,7)-_va22>>int(7,3))!=int(0,1) ? int(int(0,1),64) : int(_va16<<int(int(64,7)-_va22,7),64);
        _va16:=_va23;
-       _ch_0_2!int(~_va22,7)
+       _ch_1_2!int(~_va22,7)
       []bool(~(int(0,1)|((_va16>>int(1,1))=int(0,1) ? int(int(_va16,1)!=int(0,1)) : int(1,1)))) -> _va21:=int(0,1)
       ];
-     _ch_0_4!bool(_va21) ? int(0,1) : int(1,1);
+     _ch_1_4!bool(_va21) ? int(0,1) : int(1,1);
       [bool(_va21) -> skip
       []bool(~(int(0,1)|_va21)) -> 
-       _ch_0_8! { {_va19,_va18},_va17};
+       _ch_1_8! { {_va19,_va18},_va17};
        _va15:=int(0,1)
       ] <- bool(int(1,1))    ]
 )
@@ -143,5 +144,7 @@ chp {top_decomp:(
 
 
 /* end decomp */
+  /* end refine */
+  }
   /* end process */
 }
