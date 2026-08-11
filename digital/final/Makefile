@@ -39,7 +39,7 @@ $(CACHE_CONF):
 ring: $(RING_OUT)
 
 $(RING_OUT) $(EXPR_OUT) &: $(DECOMP_SRC) $(CACHE_CONF)
-	synth2 -F ring -C bd -Tsky130l -ref=$(REF_RING) -cnf=$(CACHE_CONF) \
+	synth2 -F ring -C bd -ref=$(REF_RING) -cnf=$(CACHE_CONF) \
 		-p $(TOP_DECOMP) -o $(RING_OUT) -e $(EXPR_OUT) $(DECOMP_SRC)
 
 # --- cell-map + transistor netlist + LEF + per-cell .rect layout ---

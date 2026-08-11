@@ -1,0 +1,19 @@
+*
+* SPICE model include for sky130A characterization.
+*
+* You need the actual sky130 SPICE model deck installed - I could not find
+* one anywhere on this machine (searched for sky130A/ciel/pdk directories,
+* nothing found). Typically obtained via the "open_pdks"/"ciel" sky130
+* PDK install (cad_setup in the repo root references
+* PDK_ROOT=/home/rpgraca/.ciel/ but that's a different machine's path, not
+* set up here yet).
+*
+* Once installed, this line should point at sky130's combined SPICE model
+* file, e.g. something like:
+*   $PDK_ROOT/sky130A/libs.tech/ngspice/sky130.lib.spice
+* (exact path/filename depends on how the PDK was installed - check
+* $PDK_ROOT/sky130A/libs.tech/ngspice/ or .../combined/ once available.)
+*
+* "TT" here must match a corner name actually defined inside that .lib file.
+*
+.lib '/path/to/sky130A/libs.tech/ngspice/sky130.lib.spice' TT

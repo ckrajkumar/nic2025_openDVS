@@ -1,0 +1,34 @@
+import std;
+import std::cells;
+
+defproc characterize()
+{
+  std::cells::TIELOX1  g1;
+  std::cells::TIEHIX1  g2;
+  std::cells::INVX1    g3;
+  std::cells::INVX2    g4;
+  std::cells::INVX4    g5;
+  std::cells::INVX8    g6;
+  std::cells::BUFX2    g7;
+  std::cells::NOR2X1   g8;
+  std::cells::NOR2X2   g9;
+  std::cells::NOR3X1   g10;
+  std::cells::OR2X1    g11;
+  std::cells::OR2X2    g12;
+  std::cells::NAND2X1  g13;
+  std::cells::NAND3X1  g14;
+  std::cells::AND2X1   g15;
+  std::cells::AND2X2   g16;
+  std::cells::XOR2X1   g17;
+  std::cells::XNOR2X1  g18;
+  std::cells::MUX2X1   g19;
+  std::cells::OAI21X1  g20;
+  std::cells::AOI21X1  g21;
+  std::cells::OAI22X1  g22;
+  std::cells::AOI22X1  g23;
+  std::cells::TBUF1    g24;
+  std::cells::LATCH    g25;
+  std::cells::LATCHINV g26;
+}
+
+characterize c;
