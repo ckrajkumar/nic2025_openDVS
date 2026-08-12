@@ -1,29 +1,29 @@
-* Extracted by KLayout with SKY130 LVS runset on : 27/07/2026 23:04
+* Extracted by KLayout with SKY130 LVS runset on : 12/08/2026 17:41
 
 * cell BiasBranchnMasterx11
+* pin VddA18
 * pin BIT0[0]
 * pin BiasDisabled[0]
 * pin NBiasEn[0]
 * pin PBiasEn[0]
 * pin PowerDown[0]
 * pin nFineCode[0]
-* pin VddA18
-* pin FineCode[0]
-* pin FineCode[1]
 * pin nFineCode[1]
-* pin FineCode[2]
+* pin FineCode[0]
 * pin nFineCode[2]
+* pin FineCode[1]
 * pin nFineCode[3]
-* pin nFineCode[4]
+* pin FineCode[2]
 * pin FineCode[3]
 * pin FineCode[4]
+* pin nFineCode[4]
 * pin FineCode[5]
 * pin nFineCode[5]
-* pin FineCode[6]
 * pin nFineCode[6]
-* pin FineCode[7]
 * pin nFineCode[7]
+* pin FineCode[6]
 * pin CoarseOneHotLowBiasEn[0]
+* pin FineCode[7]
 * pin Bias[0]
 * pin PadBias[0]
 * pin CoarseOneHot[4]
@@ -35,8 +35,8 @@
 * pin CoarseOneHot[1]
 * pin CoarseOneHot[2]
 * pin CoarseOneHot[3]
-* pin BIT0[1]
 * pin nLowBiasInterfaceEn[0]
+* pin BIT0[1]
 * pin PowerDown[1]
 * pin BiasDisabled[1]
 * pin PBiasEn[1]
@@ -90,8 +90,8 @@
 * pin nFineCode[22]
 * pin FineCode[22]
 * pin nFineCode[23]
-* pin CoarseOneHotLowBiasEn[2]
 * pin FineCode[23]
+* pin CoarseOneHotLowBiasEn[2]
 * pin Bias[2]
 * pin CoarseOneHot[21]
 * pin CoarseOneHot[23]
@@ -103,8 +103,8 @@
 * pin LowBiasInterfaceEn[2]
 * pin CoarseOneHot[16]
 * pin CoarseOneHot[17]
-* pin BIT0[3]
 * pin nLowBiasInterfaceEn[2]
+* pin BIT0[3]
 * pin BiasDisabled[3]
 * pin NBiasEn[3]
 * pin PBiasEn[3]
@@ -128,8 +128,8 @@
 * pin CoarseOneHotLowBiasEn[3]
 * pin PadBias[3]
 * pin Bias[3]
-* pin CoarseOneHot[30]
 * pin CoarseOneHot[31]
+* pin CoarseOneHot[30]
 * pin CoarseOneHot[29]
 * pin CoarseOneHot[28]
 * pin CoarseOneHot[27]
@@ -202,33 +202,24 @@
 * pin CoarseOneHot[43]
 * pin CoarseOneHot[44]
 * pin CoarseOneHot[45]
-* pin CoarseOneHot[41]
 * pin CoarseOneHot[40]
-* pin LowBiasInterfaceEn[5]
+* pin CoarseOneHot[41]
 * pin nLowBiasInterfaceEn[5]
-* pin VMasterBiasN
+* pin LowBiasInterfaceEn[5]
 * pin rx
-* pin BiasCB[2]
-* pin BiasCB[0]
-* pin BiasCB[1]
-* pin BiasCB[3]
-* pin BiasCB[4]
-* pin BiasCB[5]
-* pin BiasCB[6]
-* pin BiasCB[7]
 * pin PowerDownM
 * pin nFineCodeBuffer[0]
 * pin FineCodeBuffer[0]
 * pin nFineCodeBuffer[1]
 * pin FineCodeBuffer[1]
-* pin FineCodeBuffer[2]
-* pin nFineCodeBuffer[4]
-* pin nFineCodeBuffer[3]
 * pin FineCodeBuffer[3]
+* pin nFineCodeBuffer[3]
+* pin FineCodeBuffer[2]
 * pin nFineCodeBuffer[2]
-* pin FineCodeBuffer[4]
 * pin FineCodeBuffer[5]
 * pin nFineCodeBuffer[5]
+* pin FineCodeBuffer[4]
+* pin nFineCodeBuffer[4]
 * pin nFineCodeBuffer[6]
 * pin FineCodeBuffer[6]
 * pin nFineCodeBuffer[7]
@@ -238,12 +229,12 @@
 * pin CoarseOneHotBuffer[6]
 * pin CoarseOneHotBuffer[5]
 * pin CoarseOneHotBuffer[4]
-* pin CoarseOneHotBuffer[0]
-* pin CoarseOneHotBuffer[1]
-* pin CoarseOneHotBuffer[2]
 * pin CoarseOneHotBuffer[3]
-* pin nLowBiasInterfaceEnBuffer
+* pin CoarseOneHotBuffer[2]
+* pin CoarseOneHotBuffer[1]
+* pin CoarseOneHotBuffer[0]
 * pin LowBiasInterfaceEnBuffer
+* pin nLowBiasInterfaceEnBuffer
 * pin BIT0[6]
 * pin BiasDisabled[6]
 * pin NBiasEn[6]
@@ -274,8 +265,8 @@
 * pin CoarseOneHot[51]
 * pin CoarseOneHot[52]
 * pin CoarseOneHot[53]
-* pin CoarseOneHot[48]
 * pin CoarseOneHot[49]
+* pin CoarseOneHot[48]
 * pin LowBiasInterfaceEn[6]
 * pin nLowBiasInterfaceEn[6]
 * pin NBiasEn[7]
@@ -303,8 +294,8 @@
 * pin CoarseOneHot[61]
 * pin CoarseOneHot[62]
 * pin CoarseOneHot[63]
-* pin Bias[7]
 * pin PadBias[7]
+* pin Bias[7]
 * pin CoarseOneHot[58]
 * pin CoarseOneHot[59]
 * pin CoarseOneHot[60]
@@ -334,10 +325,10 @@
 * pin nFineCode[71]
 * pin FineCode[71]
 * pin CoarseOneHotLowBiasEn[8]
+* pin CoarseOneHot[71]
+* pin CoarseOneHot[70]
 * pin CoarseOneHot[69]
 * pin CoarseOneHot[68]
-* pin CoarseOneHot[70]
-* pin CoarseOneHot[71]
 * pin PadBias[8]
 * pin Bias[8]
 * pin CoarseOneHot[66]
@@ -372,8 +363,8 @@
 * pin CoarseOneHot[78]
 * pin CoarseOneHot[77]
 * pin CoarseOneHot[76]
-* pin Bias[9]
 * pin PadBias[9]
+* pin Bias[9]
 * pin CoarseOneHot[74]
 * pin CoarseOneHot[75]
 * pin CoarseOneHot[73]
@@ -399,9 +390,9 @@
 * pin FineCode[85]
 * pin nFineCode[86]
 * pin FineCode[86]
-* pin nFineCode[87]
-* pin FineCode[87]
 * pin CoarseOneHotLowBiasEn[10]
+* pin FineCode[87]
+* pin nFineCode[87]
 * pin CoarseOneHot[87]
 * pin CoarseOneHot[86]
 * pin CoarseOneHot[85]
@@ -410,253 +401,252 @@
 * pin CoarseOneHot[82]
 * pin Bias[10]
 * pin PadBias[10]
+* pin CoarseOneHot[81]
 * pin LowBiasInterfaceEn[10]
 * pin CoarseOneHot[80]
-* pin CoarseOneHot[81]
 * pin nLowBiasInterfaceEn[10]
 * pin GndA
-.SUBCKT BiasBranchnMasterx11 BIT0[0] BiasDisabled[0] NBiasEn[0] PBiasEn[0]
-+ PowerDown[0] nFineCode[0] VddA18 FineCode[0] FineCode[1] nFineCode[1]
-+ FineCode[2] nFineCode[2] nFineCode[3] nFineCode[4] FineCode[3] FineCode[4]
-+ FineCode[5] nFineCode[5] FineCode[6] nFineCode[6] FineCode[7] nFineCode[7]
-+ CoarseOneHotLowBiasEn[0] Bias[0] PadBias[0] CoarseOneHot[4] CoarseOneHot[6]
-+ CoarseOneHot[7] CoarseOneHot[5] LowBiasInterfaceEn[0] CoarseOneHot[0]
-+ CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3] BIT0[1]
-+ nLowBiasInterfaceEn[0] PowerDown[1] BiasDisabled[1] PBiasEn[1] NBiasEn[1]
-+ nFineCode[8] FineCode[8] nFineCode[9] FineCode[9] nFineCode[10] FineCode[10]
-+ nFineCode[11] FineCode[11] nFineCode[12] FineCode[12] nFineCode[13]
-+ FineCode[13] nFineCode[14] FineCode[14] CoarseOneHotLowBiasEn[1] FineCode[15]
-+ nFineCode[15] CoarseOneHot[14] CoarseOneHot[15] Bias[1] PadBias[1]
-+ CoarseOneHot[11] CoarseOneHot[12] CoarseOneHot[13] CoarseOneHot[10]
-+ CoarseOneHot[9] CoarseOneHot[8] nLowBiasInterfaceEn[1] LowBiasInterfaceEn[1]
-+ NBiasEn[2] BiasDisabled[2] BIT0[2] PBiasEn[2] PowerDown[2] nFineCode[16]
-+ FineCode[16] nFineCode[17] FineCode[17] nFineCode[18] FineCode[18]
-+ nFineCode[19] FineCode[19] nFineCode[21] FineCode[20] nFineCode[20]
-+ FineCode[21] nFineCode[22] FineCode[22] nFineCode[23]
-+ CoarseOneHotLowBiasEn[2] FineCode[23] Bias[2] CoarseOneHot[21]
-+ CoarseOneHot[23] CoarseOneHot[22] PadBias[2] CoarseOneHot[20]
-+ CoarseOneHot[19] CoarseOneHot[18] LowBiasInterfaceEn[2] CoarseOneHot[16]
-+ CoarseOneHot[17] BIT0[3] nLowBiasInterfaceEn[2] BiasDisabled[3] NBiasEn[3]
-+ PBiasEn[3] FineCode[24] nFineCode[24] PowerDown[3] nFineCode[25] FineCode[25]
-+ nFineCode[26] FineCode[26] nFineCode[27] FineCode[27] nFineCode[28]
-+ FineCode[28] nFineCode[29] FineCode[29] nFineCode[30] FineCode[30]
-+ nFineCode[31] FineCode[31] CoarseOneHotLowBiasEn[3] PadBias[3] Bias[3]
-+ CoarseOneHot[30] CoarseOneHot[31] CoarseOneHot[29] CoarseOneHot[28]
-+ CoarseOneHot[27] CoarseOneHot[26] LowBiasInterfaceEn[3] CoarseOneHot[24]
-+ CoarseOneHot[25] BIT0[4] nLowBiasInterfaceEn[3] BiasDisabled[4] NBiasEn[4]
-+ PBiasEn[4] FineCode[32] nFineCode[32] PowerDown[4] nFineCode[33] FineCode[33]
-+ nFineCode[34] FineCode[34] nFineCode[35] FineCode[35] nFineCode[36]
-+ FineCode[36] nFineCode[37] FineCode[37] nFineCode[38] FineCode[38]
-+ nFineCode[39] FineCode[39] CoarseOneHotLowBiasEn[4] Bias[4] PadBias[4]
-+ CoarseOneHot[39] CoarseOneHot[38] CoarseOneHot[37] CoarseOneHot[36]
-+ CoarseOneHot[35] CoarseOneHot[34] LowBiasInterfaceEn[4] CoarseOneHot[32]
-+ CoarseOneHot[33] BIT0[5] nLowBiasInterfaceEn[4] BiasDisabled[5] NBiasEn[5]
-+ PBiasEn[5] FineCode[40] nFineCode[40] PowerDown[5] nFineCode[41] FineCode[41]
+.SUBCKT BiasBranchnMasterx11 VddA18 BIT0[0] BiasDisabled[0] NBiasEn[0]
++ PBiasEn[0] PowerDown[0] nFineCode[0] nFineCode[1] FineCode[0] nFineCode[2]
++ FineCode[1] nFineCode[3] FineCode[2] FineCode[3] FineCode[4] nFineCode[4]
++ FineCode[5] nFineCode[5] nFineCode[6] nFineCode[7] FineCode[6]
++ CoarseOneHotLowBiasEn[0] FineCode[7] Bias[0] PadBias[0] CoarseOneHot[4]
++ CoarseOneHot[6] CoarseOneHot[7] CoarseOneHot[5] LowBiasInterfaceEn[0]
++ CoarseOneHot[0] CoarseOneHot[1] CoarseOneHot[2] CoarseOneHot[3]
++ nLowBiasInterfaceEn[0] BIT0[1] PowerDown[1] BiasDisabled[1] PBiasEn[1]
++ NBiasEn[1] nFineCode[8] FineCode[8] nFineCode[9] FineCode[9] nFineCode[10]
++ FineCode[10] nFineCode[11] FineCode[11] nFineCode[12] FineCode[12]
++ nFineCode[13] FineCode[13] nFineCode[14] FineCode[14]
++ CoarseOneHotLowBiasEn[1] FineCode[15] nFineCode[15] CoarseOneHot[14]
++ CoarseOneHot[15] Bias[1] PadBias[1] CoarseOneHot[11] CoarseOneHot[12]
++ CoarseOneHot[13] CoarseOneHot[10] CoarseOneHot[9] CoarseOneHot[8]
++ nLowBiasInterfaceEn[1] LowBiasInterfaceEn[1] NBiasEn[2] BiasDisabled[2]
++ BIT0[2] PBiasEn[2] PowerDown[2] nFineCode[16] FineCode[16] nFineCode[17]
++ FineCode[17] nFineCode[18] FineCode[18] nFineCode[19] FineCode[19]
++ nFineCode[21] FineCode[20] nFineCode[20] FineCode[21] nFineCode[22]
++ FineCode[22] nFineCode[23] FineCode[23] CoarseOneHotLowBiasEn[2] Bias[2]
++ CoarseOneHot[21] CoarseOneHot[23] CoarseOneHot[22] PadBias[2]
++ CoarseOneHot[20] CoarseOneHot[19] CoarseOneHot[18] LowBiasInterfaceEn[2]
++ CoarseOneHot[16] CoarseOneHot[17] nLowBiasInterfaceEn[2] BIT0[3]
++ BiasDisabled[3] NBiasEn[3] PBiasEn[3] FineCode[24] nFineCode[24] PowerDown[3]
++ nFineCode[25] FineCode[25] nFineCode[26] FineCode[26] nFineCode[27]
++ FineCode[27] nFineCode[28] FineCode[28] nFineCode[29] FineCode[29]
++ nFineCode[30] FineCode[30] nFineCode[31] FineCode[31]
++ CoarseOneHotLowBiasEn[3] PadBias[3] Bias[3] CoarseOneHot[31] CoarseOneHot[30]
++ CoarseOneHot[29] CoarseOneHot[28] CoarseOneHot[27] CoarseOneHot[26]
++ LowBiasInterfaceEn[3] CoarseOneHot[24] CoarseOneHot[25] BIT0[4]
++ nLowBiasInterfaceEn[3] BiasDisabled[4] NBiasEn[4] PBiasEn[4] FineCode[32]
++ nFineCode[32] PowerDown[4] nFineCode[33] FineCode[33] nFineCode[34]
++ FineCode[34] nFineCode[35] FineCode[35] nFineCode[36] FineCode[36]
++ nFineCode[37] FineCode[37] nFineCode[38] FineCode[38] nFineCode[39]
++ FineCode[39] CoarseOneHotLowBiasEn[4] Bias[4] PadBias[4] CoarseOneHot[39]
++ CoarseOneHot[38] CoarseOneHot[37] CoarseOneHot[36] CoarseOneHot[35]
++ CoarseOneHot[34] LowBiasInterfaceEn[4] CoarseOneHot[32] CoarseOneHot[33]
++ BIT0[5] nLowBiasInterfaceEn[4] BiasDisabled[5] NBiasEn[5] PBiasEn[5]
++ FineCode[40] nFineCode[40] PowerDown[5] nFineCode[41] FineCode[41]
 + nFineCode[42] FineCode[42] nFineCode[43] FineCode[43] nFineCode[44]
 + FineCode[44] nFineCode[45] FineCode[45] nFineCode[46] FineCode[46]
 + nFineCode[47] FineCode[47] CoarseOneHotLowBiasEn[5] Bias[5] CoarseOneHot[46]
 + CoarseOneHot[47] PadBias[5] CoarseOneHot[42] CoarseOneHot[43]
-+ CoarseOneHot[44] CoarseOneHot[45] CoarseOneHot[41] CoarseOneHot[40]
-+ LowBiasInterfaceEn[5] nLowBiasInterfaceEn[5] VMasterBiasN rx BiasCB[2]
-+ BiasCB[0] BiasCB[1] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7]
-+ PowerDownM nFineCodeBuffer[0] FineCodeBuffer[0] nFineCodeBuffer[1]
-+ FineCodeBuffer[1] FineCodeBuffer[2] nFineCodeBuffer[4] nFineCodeBuffer[3]
-+ FineCodeBuffer[3] nFineCodeBuffer[2] FineCodeBuffer[4] FineCodeBuffer[5]
-+ nFineCodeBuffer[5] nFineCodeBuffer[6] FineCodeBuffer[6] nFineCodeBuffer[7]
-+ FineCodeBuffer[7] CoarseOneHotLowBiasEnBuffer CoarseOneHotBuffer[7]
-+ CoarseOneHotBuffer[6] CoarseOneHotBuffer[5] CoarseOneHotBuffer[4]
-+ CoarseOneHotBuffer[0] CoarseOneHotBuffer[1] CoarseOneHotBuffer[2]
-+ CoarseOneHotBuffer[3] nLowBiasInterfaceEnBuffer LowBiasInterfaceEnBuffer
-+ BIT0[6] BiasDisabled[6] NBiasEn[6] PBiasEn[6] FineCode[48] nFineCode[48]
-+ PowerDown[6] nFineCode[49] FineCode[49] nFineCode[50] FineCode[50]
-+ nFineCode[51] FineCode[51] nFineCode[52] FineCode[52] nFineCode[53]
-+ FineCode[53] nFineCode[54] FineCode[54] nFineCode[55] FineCode[55]
-+ CoarseOneHotLowBiasEn[6] Bias[6] CoarseOneHot[54] CoarseOneHot[55] PadBias[6]
-+ CoarseOneHot[50] CoarseOneHot[51] CoarseOneHot[52] CoarseOneHot[53]
-+ CoarseOneHot[48] CoarseOneHot[49] LowBiasInterfaceEn[6]
-+ nLowBiasInterfaceEn[6] NBiasEn[7] BiasDisabled[7] BIT0[7] nFineCode[56]
-+ PowerDown[7] PBiasEn[7] FineCode[56] nFineCode[57] FineCode[57] nFineCode[58]
-+ FineCode[58] nFineCode[59] FineCode[59] nFineCode[60] FineCode[60]
-+ nFineCode[61] FineCode[61] nFineCode[62] FineCode[62] nFineCode[63]
-+ FineCode[63] CoarseOneHotLowBiasEn[7] CoarseOneHot[61] CoarseOneHot[62]
-+ CoarseOneHot[63] Bias[7] PadBias[7] CoarseOneHot[58] CoarseOneHot[59]
-+ CoarseOneHot[60] CoarseOneHot[57] CoarseOneHot[56] LowBiasInterfaceEn[7]
++ CoarseOneHot[44] CoarseOneHot[45] CoarseOneHot[40] CoarseOneHot[41]
++ nLowBiasInterfaceEn[5] LowBiasInterfaceEn[5] rx PowerDownM nFineCodeBuffer[0]
++ FineCodeBuffer[0] nFineCodeBuffer[1] FineCodeBuffer[1] FineCodeBuffer[3]
++ nFineCodeBuffer[3] FineCodeBuffer[2] nFineCodeBuffer[2] FineCodeBuffer[5]
++ nFineCodeBuffer[5] FineCodeBuffer[4] nFineCodeBuffer[4] nFineCodeBuffer[6]
++ FineCodeBuffer[6] nFineCodeBuffer[7] FineCodeBuffer[7]
++ CoarseOneHotLowBiasEnBuffer CoarseOneHotBuffer[7] CoarseOneHotBuffer[6]
++ CoarseOneHotBuffer[5] CoarseOneHotBuffer[4] CoarseOneHotBuffer[3]
++ CoarseOneHotBuffer[2] CoarseOneHotBuffer[1] CoarseOneHotBuffer[0]
++ LowBiasInterfaceEnBuffer nLowBiasInterfaceEnBuffer BIT0[6] BiasDisabled[6]
++ NBiasEn[6] PBiasEn[6] FineCode[48] nFineCode[48] PowerDown[6] nFineCode[49]
++ FineCode[49] nFineCode[50] FineCode[50] nFineCode[51] FineCode[51]
++ nFineCode[52] FineCode[52] nFineCode[53] FineCode[53] nFineCode[54]
++ FineCode[54] nFineCode[55] FineCode[55] CoarseOneHotLowBiasEn[6] Bias[6]
++ CoarseOneHot[54] CoarseOneHot[55] PadBias[6] CoarseOneHot[50]
++ CoarseOneHot[51] CoarseOneHot[52] CoarseOneHot[53] CoarseOneHot[49]
++ CoarseOneHot[48] LowBiasInterfaceEn[6] nLowBiasInterfaceEn[6] NBiasEn[7]
++ BiasDisabled[7] BIT0[7] nFineCode[56] PowerDown[7] PBiasEn[7] FineCode[56]
++ nFineCode[57] FineCode[57] nFineCode[58] FineCode[58] nFineCode[59]
++ FineCode[59] nFineCode[60] FineCode[60] nFineCode[61] FineCode[61]
++ nFineCode[62] FineCode[62] nFineCode[63] FineCode[63]
++ CoarseOneHotLowBiasEn[7] CoarseOneHot[61] CoarseOneHot[62] CoarseOneHot[63]
++ PadBias[7] Bias[7] CoarseOneHot[58] CoarseOneHot[59] CoarseOneHot[60]
++ CoarseOneHot[57] CoarseOneHot[56] LowBiasInterfaceEn[7]
 + nLowBiasInterfaceEn[7] BIT0[8] BiasDisabled[8] NBiasEn[8] PBiasEn[8]
 + FineCode[64] nFineCode[64] PowerDown[8] nFineCode[65] FineCode[65]
 + nFineCode[66] FineCode[66] nFineCode[67] FineCode[67] nFineCode[68]
 + FineCode[68] nFineCode[69] FineCode[69] nFineCode[70] FineCode[70]
-+ nFineCode[71] FineCode[71] CoarseOneHotLowBiasEn[8] CoarseOneHot[69]
-+ CoarseOneHot[68] CoarseOneHot[70] CoarseOneHot[71] PadBias[8] Bias[8]
++ nFineCode[71] FineCode[71] CoarseOneHotLowBiasEn[8] CoarseOneHot[71]
++ CoarseOneHot[70] CoarseOneHot[69] CoarseOneHot[68] PadBias[8] Bias[8]
 + CoarseOneHot[66] CoarseOneHot[67] CoarseOneHot[65] CoarseOneHot[64]
 + LowBiasInterfaceEn[8] nLowBiasInterfaceEn[8] NBiasEn[9] BiasDisabled[9]
 + BIT0[9] PBiasEn[9] PowerDown[9] nFineCode[72] FineCode[72] nFineCode[73]
 + FineCode[73] nFineCode[74] FineCode[74] nFineCode[75] FineCode[75]
 + nFineCode[76] FineCode[76] nFineCode[77] FineCode[77] nFineCode[78]
 + FineCode[78] nFineCode[79] FineCode[79] CoarseOneHotLowBiasEn[9]
-+ CoarseOneHot[79] CoarseOneHot[78] CoarseOneHot[77] CoarseOneHot[76] Bias[9]
-+ PadBias[9] CoarseOneHot[74] CoarseOneHot[75] CoarseOneHot[73]
++ CoarseOneHot[79] CoarseOneHot[78] CoarseOneHot[77] CoarseOneHot[76]
++ PadBias[9] Bias[9] CoarseOneHot[74] CoarseOneHot[75] CoarseOneHot[73]
 + CoarseOneHot[72] LowBiasInterfaceEn[9] nLowBiasInterfaceEn[9]
 + BiasDisabled[10] BIT0[10] NBiasEn[10] PBiasEn[10] PowerDown[10] nFineCode[81]
 + FineCode[80] nFineCode[80] FineCode[81] nFineCode[82] FineCode[82]
 + nFineCode[83] FineCode[83] nFineCode[84] FineCode[84] nFineCode[85]
-+ FineCode[85] nFineCode[86] FineCode[86] nFineCode[87] FineCode[87]
-+ CoarseOneHotLowBiasEn[10] CoarseOneHot[87] CoarseOneHot[86] CoarseOneHot[85]
++ FineCode[85] nFineCode[86] FineCode[86] CoarseOneHotLowBiasEn[10]
++ FineCode[87] nFineCode[87] CoarseOneHot[87] CoarseOneHot[86] CoarseOneHot[85]
 + CoarseOneHot[84] CoarseOneHot[83] CoarseOneHot[82] Bias[10] PadBias[10]
-+ LowBiasInterfaceEn[10] CoarseOneHot[80] CoarseOneHot[81]
++ CoarseOneHot[81] LowBiasInterfaceEn[10] CoarseOneHot[80]
 + nLowBiasInterfaceEn[10] GndA
 * cell instance $2 r0 *1 19.14,0.45
 X$2 VddA18 FineCode[1] nFineCode[1] FineCode[2] nFineCode[2] FineCode[0]
 + nFineCode[0] nFineCode[3] FineCode[3] FineCode[4] nFineCode[4] nFineCode[5]
 + FineCode[5] nFineCode[6] BiasDisabled[0] FineCode[6] FineCode[7] nFineCode[7]
-+ BIT0[0] PowerDown[0] CoarseOneHotLowBiasEn[0] BiasCB[1] BiasCB[0] PBiasEn[0]
-+ NBiasEn[0] BiasCB[2] BiasCB[4] BiasCB[3] BiasCB[5] BiasCB[6] BiasCB[7]
-+ PadBias[0] Bias[0] CoarseOneHot[6] CoarseOneHot[7] CoarseOneHot[4]
-+ CoarseOneHot[5] CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1]
-+ CoarseOneHot[0] \$72 \$73 GndA nLowBiasInterfaceEn[0] LowBiasInterfaceEn[0]
-+ BiasBranch
-* cell instance $16 m90 *1 212.385,439.36
-X$16 VddA18 VMasterBiasN PowerDownM BiasCB[1] BiasCB[0] BiasCB[2] BiasCB[3]
-+ BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] \$453 rx GndA BiasMasterCoarse
-* cell instance $17 r0 *1 19.14,585.09
-X$17 VddA18 FineCodeBuffer[1] nFineCodeBuffer[1] FineCodeBuffer[2]
-+ nFineCodeBuffer[2] FineCodeBuffer[0] nFineCodeBuffer[0] nFineCodeBuffer[3]
-+ FineCodeBuffer[3] nFineCodeBuffer[4] nFineCodeBuffer[5] FineCodeBuffer[4]
-+ FineCodeBuffer[5] nFineCodeBuffer[6] FineCodeBuffer[6]
-+ CoarseOneHotLowBiasEnBuffer FineCodeBuffer[7] nFineCodeBuffer[7] BiasCB[0]
-+ BiasCB[1] BiasCB[2] BiasCB[4] BiasCB[3] BiasCB[5] BiasCB[6] BiasCB[7]
-+ CoarseOneHotBuffer[7] CoarseOneHotBuffer[3] CoarseOneHotBuffer[4]
-+ CoarseOneHotBuffer[6] CoarseOneHotBuffer[5] CoarseOneHotBuffer[0]
-+ CoarseOneHotBuffer[1] CoarseOneHotBuffer[2] \$72 LowBiasInterfaceEnBuffer
-+ nLowBiasInterfaceEnBuffer \$73 GndA BiasBranchBuffer
-* cell instance $18 r0 *1 19.14,292.77
-X$18 VddA18 FineCode[33] nFineCode[33] FineCode[34] nFineCode[34] FineCode[32]
-+ nFineCode[32] nFineCode[35] FineCode[35] FineCode[36] nFineCode[36]
-+ nFineCode[37] FineCode[37] nFineCode[38] BiasDisabled[4] FineCode[38]
-+ FineCode[39] nFineCode[39] BIT0[4] PowerDown[4] CoarseOneHotLowBiasEn[4]
-+ BiasCB[1] BiasCB[0] PBiasEn[4] NBiasEn[4] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[4] Bias[4] CoarseOneHot[38]
-+ CoarseOneHot[39] CoarseOneHot[36] CoarseOneHot[37] CoarseOneHot[35]
-+ CoarseOneHot[34] CoarseOneHot[33] CoarseOneHot[32] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[4] LowBiasInterfaceEn[4] BiasBranch
-* cell instance $19 r0 *1 19.14,365.85
-X$19 VddA18 FineCode[41] nFineCode[41] FineCode[42] nFineCode[42] FineCode[40]
-+ nFineCode[40] nFineCode[43] FineCode[43] FineCode[44] nFineCode[44]
-+ nFineCode[45] FineCode[45] nFineCode[46] BiasDisabled[5] FineCode[46]
-+ FineCode[47] nFineCode[47] BIT0[5] PowerDown[5] CoarseOneHotLowBiasEn[5]
-+ BiasCB[1] BiasCB[0] PBiasEn[5] NBiasEn[5] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[5] Bias[5] CoarseOneHot[46]
-+ CoarseOneHot[47] CoarseOneHot[44] CoarseOneHot[45] CoarseOneHot[43]
-+ CoarseOneHot[42] CoarseOneHot[41] CoarseOneHot[40] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[5] LowBiasInterfaceEn[5] BiasBranch
-* cell instance $20 r0 *1 19.14,146.61
-X$20 VddA18 FineCode[17] nFineCode[17] FineCode[18] nFineCode[18] FineCode[16]
-+ nFineCode[16] nFineCode[19] FineCode[19] FineCode[20] nFineCode[20]
-+ nFineCode[21] FineCode[21] nFineCode[22] BiasDisabled[2] FineCode[22]
-+ FineCode[23] nFineCode[23] BIT0[2] PowerDown[2] CoarseOneHotLowBiasEn[2]
-+ BiasCB[1] BiasCB[0] PBiasEn[2] NBiasEn[2] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[2] Bias[2] CoarseOneHot[22]
-+ CoarseOneHot[23] CoarseOneHot[20] CoarseOneHot[21] CoarseOneHot[19]
-+ CoarseOneHot[18] CoarseOneHot[17] CoarseOneHot[16] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[2] LowBiasInterfaceEn[2] BiasBranch
-* cell instance $21 r0 *1 19.14,950.49
-X$21 VddA18 FineCode[81] nFineCode[81] FineCode[82] nFineCode[82] FineCode[80]
-+ nFineCode[80] nFineCode[83] FineCode[83] FineCode[84] nFineCode[84]
-+ nFineCode[85] FineCode[85] nFineCode[86] BiasDisabled[10] FineCode[86]
-+ FineCode[87] nFineCode[87] BIT0[10] PowerDown[10] CoarseOneHotLowBiasEn[10]
-+ BiasCB[1] BiasCB[0] PBiasEn[10] NBiasEn[10] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[10] Bias[10] CoarseOneHot[86]
-+ CoarseOneHot[87] CoarseOneHot[84] CoarseOneHot[85] CoarseOneHot[83]
-+ CoarseOneHot[82] CoarseOneHot[81] CoarseOneHot[80] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[10] LowBiasInterfaceEn[10] BiasBranch
-* cell instance $22 r0 *1 19.14,73.53
-X$22 VddA18 FineCode[9] nFineCode[9] FineCode[10] nFineCode[10] FineCode[8]
-+ nFineCode[8] nFineCode[11] FineCode[11] FineCode[12] nFineCode[12]
-+ nFineCode[13] FineCode[13] nFineCode[14] BiasDisabled[1] FineCode[14]
-+ FineCode[15] nFineCode[15] BIT0[1] PowerDown[1] CoarseOneHotLowBiasEn[1]
-+ BiasCB[1] BiasCB[0] PBiasEn[1] NBiasEn[1] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[1] Bias[1] CoarseOneHot[14]
-+ CoarseOneHot[15] CoarseOneHot[12] CoarseOneHot[13] CoarseOneHot[11]
-+ CoarseOneHot[10] CoarseOneHot[9] CoarseOneHot[8] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[1] LowBiasInterfaceEn[1] BiasBranch
-* cell instance $23 r0 *1 19.14,877.41
-X$23 VddA18 FineCode[73] nFineCode[73] FineCode[74] nFineCode[74] FineCode[72]
++ BIT0[0] PowerDown[0] CoarseOneHotLowBiasEn[0] \$434 \$436 PBiasEn[0]
++ NBiasEn[0] \$435 \$440 \$441 \$446 \$445 \$444 Bias[0] PadBias[0]
++ CoarseOneHot[6] CoarseOneHot[7] CoarseOneHot[4] CoarseOneHot[5]
++ CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0]
++ LowBiasInterfaceEn[0] nLowBiasInterfaceEn[0] \$72 \$73 GndA BiasBranch
+* cell instance $4 r0 *1 19.14,585.09
+X$4 VddA18 nFineCodeBuffer[1] FineCodeBuffer[0] nFineCodeBuffer[0]
++ FineCodeBuffer[2] nFineCodeBuffer[2] FineCodeBuffer[1] FineCodeBuffer[3]
++ nFineCodeBuffer[3] nFineCodeBuffer[4] FineCodeBuffer[4] nFineCodeBuffer[5]
++ FineCodeBuffer[5] nFineCodeBuffer[6] FineCodeBuffer[6] nFineCodeBuffer[7]
++ FineCodeBuffer[7] CoarseOneHotLowBiasEnBuffer \$434 \$435 \$440 \$441 \$436
++ \$446 \$445 \$444 CoarseOneHotBuffer[7] CoarseOneHotBuffer[3]
++ CoarseOneHotBuffer[4] CoarseOneHotBuffer[6] CoarseOneHotBuffer[5]
++ CoarseOneHotBuffer[0] CoarseOneHotBuffer[1] CoarseOneHotBuffer[2] \$72
++ LowBiasInterfaceEnBuffer nLowBiasInterfaceEnBuffer \$73 GndA BiasBranchBuffer
+* cell instance $5 r0 *1 19.14,877.41
+X$5 VddA18 FineCode[73] nFineCode[73] FineCode[74] nFineCode[74] FineCode[72]
 + nFineCode[72] nFineCode[75] FineCode[75] FineCode[76] nFineCode[76]
 + nFineCode[77] FineCode[77] nFineCode[78] BiasDisabled[9] FineCode[78]
 + FineCode[79] nFineCode[79] BIT0[9] PowerDown[9] CoarseOneHotLowBiasEn[9]
-+ BiasCB[1] BiasCB[0] PBiasEn[9] NBiasEn[9] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[9] Bias[9] CoarseOneHot[78]
-+ CoarseOneHot[79] CoarseOneHot[76] CoarseOneHot[77] CoarseOneHot[75]
-+ CoarseOneHot[74] CoarseOneHot[73] CoarseOneHot[72] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[9] LowBiasInterfaceEn[9] BiasBranch
-* cell instance $24 r0 *1 19.14,804.33
-X$24 VddA18 FineCode[65] nFineCode[65] FineCode[66] nFineCode[66] FineCode[64]
++ \$434 \$436 PBiasEn[9] NBiasEn[9] \$435 \$440 \$441 \$446 \$445 \$444 Bias[9]
++ PadBias[9] CoarseOneHot[78] CoarseOneHot[79] CoarseOneHot[76]
++ CoarseOneHot[77] CoarseOneHot[75] CoarseOneHot[74] CoarseOneHot[73]
++ CoarseOneHot[72] LowBiasInterfaceEn[9] nLowBiasInterfaceEn[9] \$72 \$73 GndA
++ BiasBranch
+* cell instance $6 r0 *1 19.14,804.33
+X$6 VddA18 FineCode[65] nFineCode[65] FineCode[66] nFineCode[66] FineCode[64]
 + nFineCode[64] nFineCode[67] FineCode[67] FineCode[68] nFineCode[68]
 + nFineCode[69] FineCode[69] nFineCode[70] BiasDisabled[8] FineCode[70]
 + FineCode[71] nFineCode[71] BIT0[8] PowerDown[8] CoarseOneHotLowBiasEn[8]
-+ BiasCB[1] BiasCB[0] PBiasEn[8] NBiasEn[8] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[8] Bias[8] CoarseOneHot[70]
-+ CoarseOneHot[71] CoarseOneHot[68] CoarseOneHot[69] CoarseOneHot[67]
-+ CoarseOneHot[66] CoarseOneHot[65] CoarseOneHot[64] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[8] LowBiasInterfaceEn[8] BiasBranch
-* cell instance $25 r0 *1 19.14,731.25
-X$25 VddA18 FineCode[57] nFineCode[57] FineCode[58] nFineCode[58] FineCode[56]
++ \$434 \$436 PBiasEn[8] NBiasEn[8] \$435 \$440 \$441 \$446 \$445 \$444 Bias[8]
++ PadBias[8] CoarseOneHot[70] CoarseOneHot[71] CoarseOneHot[68]
++ CoarseOneHot[69] CoarseOneHot[67] CoarseOneHot[66] CoarseOneHot[65]
++ CoarseOneHot[64] LowBiasInterfaceEn[8] nLowBiasInterfaceEn[8] \$72 \$73 GndA
++ BiasBranch
+* cell instance $7 r0 *1 19.14,731.25
+X$7 VddA18 FineCode[57] nFineCode[57] FineCode[58] nFineCode[58] FineCode[56]
 + nFineCode[56] nFineCode[59] FineCode[59] FineCode[60] nFineCode[60]
 + nFineCode[61] FineCode[61] nFineCode[62] BiasDisabled[7] FineCode[62]
 + FineCode[63] nFineCode[63] BIT0[7] PowerDown[7] CoarseOneHotLowBiasEn[7]
-+ BiasCB[1] BiasCB[0] PBiasEn[7] NBiasEn[7] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[7] Bias[7] CoarseOneHot[62]
-+ CoarseOneHot[63] CoarseOneHot[60] CoarseOneHot[61] CoarseOneHot[59]
-+ CoarseOneHot[58] CoarseOneHot[57] CoarseOneHot[56] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[7] LowBiasInterfaceEn[7] BiasBranch
-* cell instance $26 r0 *1 19.14,658.17
-X$26 VddA18 FineCode[49] nFineCode[49] FineCode[50] nFineCode[50] FineCode[48]
++ \$434 \$436 PBiasEn[7] NBiasEn[7] \$435 \$440 \$441 \$446 \$445 \$444 Bias[7]
++ PadBias[7] CoarseOneHot[62] CoarseOneHot[63] CoarseOneHot[60]
++ CoarseOneHot[61] CoarseOneHot[59] CoarseOneHot[58] CoarseOneHot[57]
++ CoarseOneHot[56] LowBiasInterfaceEn[7] nLowBiasInterfaceEn[7] \$72 \$73 GndA
++ BiasBranch
+* cell instance $8 r0 *1 19.14,658.17
+X$8 VddA18 FineCode[49] nFineCode[49] FineCode[50] nFineCode[50] FineCode[48]
 + nFineCode[48] nFineCode[51] FineCode[51] FineCode[52] nFineCode[52]
 + nFineCode[53] FineCode[53] nFineCode[54] BiasDisabled[6] FineCode[54]
 + FineCode[55] nFineCode[55] BIT0[6] PowerDown[6] CoarseOneHotLowBiasEn[6]
-+ BiasCB[1] BiasCB[0] PBiasEn[6] NBiasEn[6] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[6] Bias[6] CoarseOneHot[54]
-+ CoarseOneHot[55] CoarseOneHot[52] CoarseOneHot[53] CoarseOneHot[51]
-+ CoarseOneHot[50] CoarseOneHot[49] CoarseOneHot[48] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[6] LowBiasInterfaceEn[6] BiasBranch
-* cell instance $27 r0 *1 19.14,219.69
-X$27 VddA18 FineCode[25] nFineCode[25] FineCode[26] nFineCode[26] FineCode[24]
++ \$434 \$436 PBiasEn[6] NBiasEn[6] \$435 \$440 \$441 \$446 \$445 \$444 Bias[6]
++ PadBias[6] CoarseOneHot[54] CoarseOneHot[55] CoarseOneHot[52]
++ CoarseOneHot[53] CoarseOneHot[51] CoarseOneHot[50] CoarseOneHot[49]
++ CoarseOneHot[48] LowBiasInterfaceEn[6] nLowBiasInterfaceEn[6] \$72 \$73 GndA
++ BiasBranch
+* cell instance $9 r0 *1 19.14,292.77
+X$9 VddA18 FineCode[33] nFineCode[33] FineCode[34] nFineCode[34] FineCode[32]
++ nFineCode[32] nFineCode[35] FineCode[35] FineCode[36] nFineCode[36]
++ nFineCode[37] FineCode[37] nFineCode[38] BiasDisabled[4] FineCode[38]
++ FineCode[39] nFineCode[39] BIT0[4] PowerDown[4] CoarseOneHotLowBiasEn[4]
++ \$434 \$436 PBiasEn[4] NBiasEn[4] \$435 \$440 \$441 \$446 \$445 \$444 Bias[4]
++ PadBias[4] CoarseOneHot[38] CoarseOneHot[39] CoarseOneHot[36]
++ CoarseOneHot[37] CoarseOneHot[35] CoarseOneHot[34] CoarseOneHot[33]
++ CoarseOneHot[32] LowBiasInterfaceEn[4] nLowBiasInterfaceEn[4] \$72 \$73 GndA
++ BiasBranch
+* cell instance $10 r0 *1 19.14,365.85
+X$10 VddA18 FineCode[41] nFineCode[41] FineCode[42] nFineCode[42] FineCode[40]
++ nFineCode[40] nFineCode[43] FineCode[43] FineCode[44] nFineCode[44]
++ nFineCode[45] FineCode[45] nFineCode[46] BiasDisabled[5] FineCode[46]
++ FineCode[47] nFineCode[47] BIT0[5] PowerDown[5] CoarseOneHotLowBiasEn[5]
++ \$434 \$436 PBiasEn[5] NBiasEn[5] \$435 \$440 \$441 \$446 \$445 \$444 Bias[5]
++ PadBias[5] CoarseOneHot[46] CoarseOneHot[47] CoarseOneHot[44]
++ CoarseOneHot[45] CoarseOneHot[43] CoarseOneHot[42] CoarseOneHot[41]
++ CoarseOneHot[40] LowBiasInterfaceEn[5] nLowBiasInterfaceEn[5] \$72 \$73 GndA
++ BiasBranch
+* cell instance $11 r0 *1 19.14,146.61
+X$11 VddA18 FineCode[17] nFineCode[17] FineCode[18] nFineCode[18] FineCode[16]
++ nFineCode[16] nFineCode[19] FineCode[19] FineCode[20] nFineCode[20]
++ nFineCode[21] FineCode[21] nFineCode[22] BiasDisabled[2] FineCode[22]
++ FineCode[23] nFineCode[23] BIT0[2] PowerDown[2] CoarseOneHotLowBiasEn[2]
++ \$434 \$436 PBiasEn[2] NBiasEn[2] \$435 \$440 \$441 \$446 \$445 \$444 Bias[2]
++ PadBias[2] CoarseOneHot[22] CoarseOneHot[23] CoarseOneHot[20]
++ CoarseOneHot[21] CoarseOneHot[19] CoarseOneHot[18] CoarseOneHot[17]
++ CoarseOneHot[16] LowBiasInterfaceEn[2] nLowBiasInterfaceEn[2] \$72 \$73 GndA
++ BiasBranch
+* cell instance $12 r0 *1 19.14,219.69
+X$12 VddA18 FineCode[25] nFineCode[25] FineCode[26] nFineCode[26] FineCode[24]
 + nFineCode[24] nFineCode[27] FineCode[27] FineCode[28] nFineCode[28]
 + nFineCode[29] FineCode[29] nFineCode[30] BiasDisabled[3] FineCode[30]
 + FineCode[31] nFineCode[31] BIT0[3] PowerDown[3] CoarseOneHotLowBiasEn[3]
-+ BiasCB[1] BiasCB[0] PBiasEn[3] NBiasEn[3] BiasCB[2] BiasCB[4] BiasCB[3]
-+ BiasCB[5] BiasCB[6] BiasCB[7] PadBias[3] Bias[3] CoarseOneHot[30]
-+ CoarseOneHot[31] CoarseOneHot[28] CoarseOneHot[29] CoarseOneHot[27]
-+ CoarseOneHot[26] CoarseOneHot[25] CoarseOneHot[24] \$72 \$73 GndA
-+ nLowBiasInterfaceEn[3] LowBiasInterfaceEn[3] BiasBranch
++ \$434 \$436 PBiasEn[3] NBiasEn[3] \$435 \$440 \$441 \$446 \$445 \$444 Bias[3]
++ PadBias[3] CoarseOneHot[30] CoarseOneHot[31] CoarseOneHot[28]
++ CoarseOneHot[29] CoarseOneHot[27] CoarseOneHot[26] CoarseOneHot[25]
++ CoarseOneHot[24] LowBiasInterfaceEn[3] nLowBiasInterfaceEn[3] \$72 \$73 GndA
++ BiasBranch
+* cell instance $13 r0 *1 19.14,73.53
+X$13 VddA18 FineCode[9] nFineCode[9] FineCode[10] nFineCode[10] FineCode[8]
++ nFineCode[8] nFineCode[11] FineCode[11] FineCode[12] nFineCode[12]
++ nFineCode[13] FineCode[13] nFineCode[14] BiasDisabled[1] FineCode[14]
++ FineCode[15] nFineCode[15] BIT0[1] PowerDown[1] CoarseOneHotLowBiasEn[1]
++ \$434 \$436 PBiasEn[1] NBiasEn[1] \$435 \$440 \$441 \$446 \$445 \$444 Bias[1]
++ PadBias[1] CoarseOneHot[14] CoarseOneHot[15] CoarseOneHot[12]
++ CoarseOneHot[13] CoarseOneHot[11] CoarseOneHot[10] CoarseOneHot[9]
++ CoarseOneHot[8] LowBiasInterfaceEn[1] nLowBiasInterfaceEn[1] \$72 \$73 GndA
++ BiasBranch
+* cell instance $14 r0 *1 19.14,950.49
+X$14 VddA18 FineCode[81] nFineCode[81] FineCode[82] nFineCode[82] FineCode[80]
++ nFineCode[80] nFineCode[83] FineCode[83] FineCode[84] nFineCode[84]
++ nFineCode[85] FineCode[85] nFineCode[86] BiasDisabled[10] FineCode[86]
++ FineCode[87] nFineCode[87] BIT0[10] PowerDown[10] CoarseOneHotLowBiasEn[10]
++ \$434 \$436 PBiasEn[10] NBiasEn[10] \$435 \$440 \$441 \$446 \$445 \$444
++ Bias[10] PadBias[10] CoarseOneHot[86] CoarseOneHot[87] CoarseOneHot[84]
++ CoarseOneHot[85] CoarseOneHot[83] CoarseOneHot[82] CoarseOneHot[81]
++ CoarseOneHot[80] LowBiasInterfaceEn[10] nLowBiasInterfaceEn[10] \$72 \$73
++ GndA BiasBranch
+* cell instance $1050 r0 *1 50.785,439.36
+X$1050 \$423 rx PowerDownM VddA18 \$453 \$I1490 \$I1491 GndA BiasMasterBias
+* cell instance $1051 m90 *1 209.155,517.655
+X$1051 \$436 \$434 VddA18 \$435 \$I1491 \$440 \$441 \$444 \$445 \$446 \$I1490
++ GndA BiasCoarseMBDivider
 * device instance $1 r0 *1 258.43,501.33 sky130_fd_pr__model__cap_mim
-XC$1 GndA VMasterBiasN sky130_fd_pr__model__cap_mim C=38.773 A=1.93865e+16
-+ P=1427400000
+XC$1 GndA \$423 sky130_fd_pr__model__cap_mim C=38.773 A=1.93865e+16 P=1427400000
 .ENDS BiasBranchnMasterx11
 
 * cell BiasBranchBuffer
 * pin VddA18
-* pin FineCode[1]
 * pin nFineCode[1]
-* pin FineCode[2]
-* pin nFineCode[2]
 * pin FineCode[0]
 * pin nFineCode[0]
-* pin nFineCode[3]
+* pin FineCode[2]
+* pin nFineCode[2]
+* pin FineCode[1]
 * pin FineCode[3]
+* pin nFineCode[3]
 * pin nFineCode[4]
-* pin nFineCode[5]
 * pin FineCode[4]
+* pin nFineCode[5]
 * pin FineCode[5]
 * pin nFineCode[6]
 * pin FineCode[6]
-* pin CoarseOneHotLowBiasEn
-* pin FineCode[7]
 * pin nFineCode[7]
-* pin BiasCB[0]
+* pin FineCode[7]
+* pin CoarseOneHotLowBiasEn
 * pin BiasCB[1]
 * pin BiasCB[2]
 * pin BiasCB[4]
 * pin BiasCB[3]
+* pin BiasCB[0]
 * pin BiasCB[5]
 * pin BiasCB[6]
 * pin BiasCB[7]
@@ -673,13 +663,13 @@ XC$1 GndA VMasterBiasN sky130_fd_pr__model__cap_mim C=38.773 A=1.93865e+16
 * pin nLowBiasInterfaceEn
 * pin BufferN
 * pin GndA
-.SUBCKT BiasBranchBuffer VddA18 FineCode[1] nFineCode[1] FineCode[2]
-+ nFineCode[2] FineCode[0] nFineCode[0] nFineCode[3] FineCode[3] nFineCode[4]
-+ nFineCode[5] FineCode[4] FineCode[5] nFineCode[6] FineCode[6]
-+ CoarseOneHotLowBiasEn FineCode[7] nFineCode[7] BiasCB[0] BiasCB[1] BiasCB[2]
-+ BiasCB[4] BiasCB[3] BiasCB[5] BiasCB[6] BiasCB[7] CoarseOneHot[7]
-+ CoarseOneHot[3] CoarseOneHot[4] CoarseOneHot[6] CoarseOneHot[5]
-+ CoarseOneHot[0] CoarseOneHot[1] CoarseOneHot[2] BufferP LowBiasInterfaceEn
+.SUBCKT BiasBranchBuffer VddA18 nFineCode[1] FineCode[0] nFineCode[0]
++ FineCode[2] nFineCode[2] FineCode[1] FineCode[3] nFineCode[3] nFineCode[4]
++ FineCode[4] nFineCode[5] FineCode[5] nFineCode[6] FineCode[6] nFineCode[7]
++ FineCode[7] CoarseOneHotLowBiasEn BiasCB[1] BiasCB[2] BiasCB[4] BiasCB[3]
++ BiasCB[0] BiasCB[5] BiasCB[6] BiasCB[7] CoarseOneHot[7] CoarseOneHot[3]
++ CoarseOneHot[4] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[0]
++ CoarseOneHot[1] CoarseOneHot[2] BufferP LowBiasInterfaceEn
 + nLowBiasInterfaceEn BufferN GndA
 * cell instance $1 m0 *1 8.365,23.135
 X$1 FineCode[7] nFineCode[7] FineCode[6] nFineCode[6] FineCode[5] nFineCode[5]
@@ -704,103 +694,6 @@ XM$3 GndA BufferN BufferN GndA sky130_fd_pr__nfet_01v8_lvt L=6000000 W=96000000
 XM$11 BufferP BufferN GndA GndA sky130_fd_pr__nfet_01v8_lvt L=6000000
 + W=96000000 AS=1.494e+13 AD=1.494e+13 PS=112980000 PD=112980000
 .ENDS BiasBranchBuffer
-
-* cell BiasMasterCoarse
-* pin VddA18
-* pin VMasterBiasN
-* pin PowerDown
-* pin BiasCB[1]
-* pin BiasCB[0]
-* pin BiasCB[2]
-* pin BiasCB[3]
-* pin BiasCB[4]
-* pin BiasCB[5]
-* pin BiasCB[6]
-* pin BiasCB[7]
-* pin VMasterBiasP
-* pin IR
-* pin GndA
-.SUBCKT BiasMasterCoarse VddA18 VMasterBiasN PowerDown BiasCB[1] BiasCB[0]
-+ BiasCB[2] BiasCB[3] BiasCB[4] BiasCB[5] BiasCB[6] BiasCB[7] VMasterBiasP IR
-+ GndA
-* cell instance $1 m90 *1 161.6,0
-X$1 VMasterBiasN IR PowerDown VddA18 VMasterBiasP \$5 \$24 GndA BiasMasterBias
-* cell instance $2 r0 *1 3.23,78.295
-X$2 BiasCB[0] BiasCB[1] VddA18 BiasCB[2] \$24 BiasCB[4] BiasCB[3] BiasCB[7]
-+ BiasCB[6] BiasCB[5] \$5 GndA BiasCoarseMBDivider
-.ENDS BiasMasterCoarse
-
-* cell BiasBranch
-* pin VddA18
-* pin FineCode[1]
-* pin nFineCode[1]
-* pin FineCode[2]
-* pin nFineCode[2]
-* pin FineCode[0]
-* pin nFineCode[0]
-* pin nFineCode[3]
-* pin FineCode[3]
-* pin FineCode[4]
-* pin nFineCode[4]
-* pin nFineCode[5]
-* pin FineCode[5]
-* pin nFineCode[6]
-* pin BiasDisable
-* pin FineCode[6]
-* pin FineCode[7]
-* pin nFineCode[7]
-* pin BIT0
-* pin PowerDown
-* pin CoarseOneHotLowBiasEn
-* pin BiasCB[1]
-* pin BiasCB[0]
-* pin PBiasEn
-* pin NBiasEn
-* pin BiasCB[2]
-* pin BiasCB[4]
-* pin BiasCB[3]
-* pin BiasCB[5]
-* pin BiasCB[6]
-* pin BiasCB[7]
-* pin 
-* pin 
-* pin CoarseOneHot[6]
-* pin CoarseOneHot[7]
-* pin CoarseOneHot[4]
-* pin CoarseOneHot[5]
-* pin CoarseOneHot[3]
-* pin CoarseOneHot[2]
-* pin CoarseOneHot[1]
-* pin CoarseOneHot[0]
-* pin BufferP
-* pin BufferN
-* pin GndA
-* pin 
-* pin 
-.SUBCKT BiasBranch VddA18 FineCode[1] nFineCode[1] FineCode[2] nFineCode[2]
-+ FineCode[0] nFineCode[0] nFineCode[3] FineCode[3] FineCode[4] nFineCode[4]
-+ nFineCode[5] FineCode[5] nFineCode[6] BiasDisable FineCode[6] FineCode[7]
-+ nFineCode[7] BIT0 PowerDown CoarseOneHotLowBiasEn BiasCB[1] BiasCB[0] PBiasEn
-+ NBiasEn BiasCB[2] BiasCB[4] BiasCB[3] BiasCB[5] BiasCB[6] BiasCB[7] \$44 \$45
-+ CoarseOneHot[6] CoarseOneHot[7] CoarseOneHot[4] CoarseOneHot[5]
-+ CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0] BufferP
-+ BufferN GndA \$I2 \$I1
-* cell instance $1 r0 *1 83.465,28.825
-X$1 BIT0 BiasDisable BufferN \$3 PowerDown \$45 \$44 NBiasEn PBiasEn VddA18
-+ BufferP GndA BiasBuffers
-* cell instance $2 m90 *1 35.235,54.945
-X$2 \$46 \$I1 VddA18 \$2 \$I2 GndA BiasCoarseFineInterface
-* cell instance $3 r0 *1 11.085,27.96
-X$3 BiasCB[0] BiasCB[1] BiasCB[2] BiasCB[3] CoarseOneHot[0] CoarseOneHot[1]
-+ CoarseOneHot[2] CoarseOneHot[3] BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4]
-+ CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] VddA18
-+ CoarseOneHotLowBiasEn \$46 GndA BiasCoarseSel8to1
-* cell instance $4 m0 *1 8.365,23.135
-X$4 FineCode[7] nFineCode[7] FineCode[6] nFineCode[6] FineCode[5] nFineCode[5]
-+ FineCode[4] nFineCode[4] FineCode[3] nFineCode[3] FineCode[2] nFineCode[2]
-+ FineCode[1] nFineCode[1] FineCode[0] nFineCode[0] \$3 VddA18 \$46 \$2 GndA
-+ BiasDividerFine
-.ENDS BiasBranch
 
 * cell BiasCoarseMBDivider
 * pin BiasCB0
@@ -841,10 +734,10 @@ XM$19 \$14 BiasCB2 \$15 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
 XM$20 \$15 BiasCB2 \$16 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
 + AS=524700000000 AD=524700000000 PS=4490000 PD=4490000
 * device instance $21 r0 *1 152.42,21.94 sky130_fd_pr__nfet_01v8_lvt
-XM$21 BiasCB4 BiasCB4 \$30 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$21 BiasCB4 BiasCB4 \$31 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $22 r0 *1 173.46,21.94 sky130_fd_pr__nfet_01v8_lvt
-XM$22 \$30 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$22 \$31 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $23 r0 *1 99.17,22.46 sky130_fd_pr__nfet_01v8_lvt
 XM$23 BiasCB3 BiasCB3 \$23 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000
@@ -859,10 +752,10 @@ XM$25 \$25 BiasCB3 \$27 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
 XM$26 \$27 BiasCB3 \$28 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
 + AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
 * device instance $27 r0 *1 152.42,22.72 sky130_fd_pr__nfet_01v8_lvt
-XM$27 \$29 BiasCB4 \$31 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$27 \$29 BiasCB4 \$32 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $28 r0 *1 173.46,22.72 sky130_fd_pr__nfet_01v8_lvt
-XM$28 \$31 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$28 \$32 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $29 r0 *1 63.21,24.23 sky130_fd_pr__nfet_01v8_lvt
 XM$29 GndA BiasCB2 \$19 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000 W=1980000
@@ -889,34 +782,34 @@ XM$35 \$24 BiasCB3 \$26 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
 XM$36 \$26 BiasCB3 \$28 GndA sky130_fd_pr__nfet_01v8_lvt L=10000000 W=1000000
 + AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
 * device instance $37 r0 *1 152.42,23.5 sky130_fd_pr__nfet_01v8_lvt
-XM$37 \$29 BiasCB4 \$32 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$37 \$29 BiasCB4 \$30 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $38 r0 *1 173.46,23.5 sky130_fd_pr__nfet_01v8_lvt
-XM$38 \$32 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$38 \$30 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $39 r0 *1 64.06,61.82 sky130_fd_pr__nfet_01v8_lvt
-XM$39 BiasCB7 BiasCB7 \$56 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$39 BiasCB7 BiasCB7 \$58 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $40 r0 *1 64.06,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$40 \$55 BiasCB7 \$57 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$40 \$55 BiasCB7 \$56 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $41 r0 *1 84.87,61.82 sky130_fd_pr__nfet_01v8_lvt
-XM$41 \$56 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$41 \$58 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $42 r0 *1 84.87,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$42 \$57 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$42 \$56 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $43 r0 *1 109.71,61.82 sky130_fd_pr__nfet_01v8_lvt
-XM$43 BiasCB6 BiasCB6 \$66 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$43 BiasCB6 BiasCB6 \$63 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $44 r0 *1 109.71,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$44 \$62 BiasCB6 \$65 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$44 \$62 BiasCB6 \$66 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $45 r0 *1 130.52,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$45 \$65 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$45 \$66 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $46 r0 *1 130.52,61.82 sky130_fd_pr__nfet_01v8_lvt
-XM$46 \$66 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$46 \$63 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $47 r0 *1 152.42,24.28 sky130_fd_pr__nfet_01v8_lvt
 XM$47 GndA BiasCB4 \$33 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
@@ -925,52 +818,52 @@ XM$47 GndA BiasCB4 \$33 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 XM$48 BiasCB5 BiasCB5 \$70 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $49 r0 *1 155.36,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$49 \$69 BiasCB5 \$71 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$49 \$69 BiasCB5 \$73 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $50 r0 *1 173.46,24.28 sky130_fd_pr__nfet_01v8_lvt
-XM$50 \$33 BiasCB4 \$35 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$50 \$33 BiasCB4 \$34 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $51 r0 *1 176.17,62.6 sky130_fd_pr__nfet_01v8_lvt
-XM$51 \$71 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$51 \$73 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $52 r0 *1 176.17,61.82 sky130_fd_pr__nfet_01v8_lvt
-XM$52 \$70 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$52 \$70 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $53 r0 *1 64.06,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$53 \$55 BiasCB7 \$58 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$53 \$55 BiasCB7 \$57 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $54 r0 *1 84.87,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$54 \$58 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$54 \$57 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $55 r0 *1 109.71,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$55 \$62 BiasCB6 \$64 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$55 \$62 BiasCB6 \$65 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $56 r0 *1 130.52,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$56 \$64 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$56 \$65 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $57 r0 *1 155.36,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$57 \$69 BiasCB5 \$73 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$57 \$69 BiasCB5 \$72 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $58 r0 *1 176.17,63.38 sky130_fd_pr__nfet_01v8_lvt
-XM$58 \$73 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$58 \$72 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $59 r0 *1 64.06,64.16 sky130_fd_pr__nfet_01v8_lvt
 XM$59 GndA BiasCB7 \$59 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $60 r0 *1 84.87,64.16 sky130_fd_pr__nfet_01v8_lvt
-XM$60 \$59 BiasCB7 \$60 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$60 \$59 BiasCB7 \$61 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $61 r0 *1 109.71,64.16 sky130_fd_pr__nfet_01v8_lvt
-XM$61 GndA BiasCB6 \$63 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$61 GndA BiasCB6 \$64 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $62 r0 *1 130.52,64.16 sky130_fd_pr__nfet_01v8_lvt
-XM$62 \$63 BiasCB6 \$68 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$62 \$64 BiasCB6 \$67 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $63 r0 *1 155.36,64.16 sky130_fd_pr__nfet_01v8_lvt
-XM$63 GndA BiasCB5 \$72 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$63 GndA BiasCB5 \$71 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 * device instance $64 r0 *1 176.17,64.16 sky130_fd_pr__nfet_01v8_lvt
-XM$64 \$72 BiasCB5 \$75 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
+XM$64 \$71 BiasCB5 \$74 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=500000
 + AS=132500000000 AD=132500000000 PS=1530000 PD=1530000
 .ENDS BiasCoarseMBDivider
 
@@ -1031,6 +924,129 @@ XM$64 GndA VMasterBiasN \$14 GndA sky130_fd_pr__nfet_01v8_lvt L=5000000
 XM$65 \$14 \$21 ICoarse2 GndA sky130_fd_pr__nfet_01v8_lvt L=20000000 W=1000000
 + AS=265000000000 AD=265000000000 PS=2530000 PD=2530000
 .ENDS BiasMasterBias
+
+* cell BiasBranch
+* pin VddA18
+* pin FineCode[1]
+* pin nFineCode[1]
+* pin FineCode[2]
+* pin nFineCode[2]
+* pin FineCode[0]
+* pin nFineCode[0]
+* pin nFineCode[3]
+* pin FineCode[3]
+* pin FineCode[4]
+* pin nFineCode[4]
+* pin nFineCode[5]
+* pin FineCode[5]
+* pin nFineCode[6]
+* pin BiasDisable
+* pin FineCode[6]
+* pin FineCode[7]
+* pin nFineCode[7]
+* pin BIT0
+* pin PowerDown
+* pin CoarseOneHotLowBiasEn
+* pin BiasCB[1]
+* pin BiasCB[0]
+* pin PBiasEn
+* pin NBiasEn
+* pin BiasCB[2]
+* pin BiasCB[4]
+* pin BiasCB[3]
+* pin BiasCB[5]
+* pin BiasCB[6]
+* pin BiasCB[7]
+* pin VBiasOut
+* pin PadBias
+* pin CoarseOneHot[6]
+* pin CoarseOneHot[7]
+* pin CoarseOneHot[4]
+* pin CoarseOneHot[5]
+* pin CoarseOneHot[3]
+* pin CoarseOneHot[2]
+* pin CoarseOneHot[1]
+* pin CoarseOneHot[0]
+* pin LowBiasInterfaceEn
+* pin nLowBiasInterfaceEn
+* pin BufferP
+* pin BufferN
+* pin GndA
+.SUBCKT BiasBranch VddA18 FineCode[1] nFineCode[1] FineCode[2] nFineCode[2]
++ FineCode[0] nFineCode[0] nFineCode[3] FineCode[3] FineCode[4] nFineCode[4]
++ nFineCode[5] FineCode[5] nFineCode[6] BiasDisable FineCode[6] FineCode[7]
++ nFineCode[7] BIT0 PowerDown CoarseOneHotLowBiasEn BiasCB[1] BiasCB[0] PBiasEn
++ NBiasEn BiasCB[2] BiasCB[4] BiasCB[3] BiasCB[5] BiasCB[6] BiasCB[7] VBiasOut
++ PadBias CoarseOneHot[6] CoarseOneHot[7] CoarseOneHot[4] CoarseOneHot[5]
++ CoarseOneHot[3] CoarseOneHot[2] CoarseOneHot[1] CoarseOneHot[0]
++ LowBiasInterfaceEn nLowBiasInterfaceEn BufferP BufferN GndA
+* cell instance $1 r0 *1 83.465,28.825
+X$1 BIT0 BiasDisable BufferN \$3 PowerDown VBiasOut PadBias NBiasEn PBiasEn
++ VddA18 BufferP GndA BiasBuffers
+* cell instance $2 m90 *1 35.235,54.945
+X$2 \$44 LowBiasInterfaceEn VddA18 \$2 nLowBiasInterfaceEn GndA
++ BiasCoarseFineInterface
+* cell instance $3 r0 *1 11.085,27.96
+X$3 BiasCB[0] BiasCB[1] BiasCB[2] BiasCB[3] CoarseOneHot[0] CoarseOneHot[1]
++ CoarseOneHot[2] CoarseOneHot[3] BiasCB[7] BiasCB[6] BiasCB[5] BiasCB[4]
++ CoarseOneHot[7] CoarseOneHot[6] CoarseOneHot[5] CoarseOneHot[4] VddA18
++ CoarseOneHotLowBiasEn \$44 GndA BiasCoarseSel8to1
+* cell instance $4 m0 *1 8.365,23.135
+X$4 FineCode[7] nFineCode[7] FineCode[6] nFineCode[6] FineCode[5] nFineCode[5]
++ FineCode[4] nFineCode[4] FineCode[3] nFineCode[3] FineCode[2] nFineCode[2]
++ FineCode[1] nFineCode[1] FineCode[0] nFineCode[0] \$3 VddA18 \$44 \$2 GndA
++ BiasDividerFine
+.ENDS BiasBranch
+
+* cell BiasDivider
+* pin IOut2
+* pin IOut1
+* pin IOut0
+* pin IIn
+* pin VddA18
+* pin GndA
+* pin IOut5
+* pin IOut4
+* pin IOut3
+.SUBCKT BiasDivider IOut2 IOut1 IOut0 IIn VddA18 GndA IOut5 IOut4 IOut3
+* cell instance $1 r0 *1 137.14,0.19
+X$1 IOut2 IIn \$I66 \$6 BiasDividerCell
+* cell instance $2 r0 *1 91.49,0.19
+X$2 IOut1 IIn \$I76 \$I66 BiasDividerCell
+* cell instance $3 r0 *1 45.84,0.19
+X$3 IOut0 IIn VddA18 \$I76 BiasDividerCell
+* cell instance $4 r180 *1 96.065,34.09
+X$4 IOut5 IIn \$I69 GndA BiasDividerCell
+* cell instance $5 r180 *1 141.715,34.09
+X$5 IOut4 IIn \$I68 \$I69 BiasDividerCell
+* cell instance $6 r180 *1 187.365,34.09
+X$6 IOut3 IIn \$6 \$I68 BiasDividerCell
+* device instance $1 r0 *1 42.44,4.565 sky130_fd_pr__pfet_01v8
+XM$1 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
++ AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
+* device instance $2 r0 *1 8.24,4.565 sky130_fd_pr__pfet_01v8
+XM$2 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
++ AS=9.28e+12 AD=9.28e+12 PS=72640000 PD=72640000
+.ENDS BiasDivider
+
+* cell BiasMultiplier
+* pin IOut1
+* pin IOut0
+* pin IIn
+* pin GndA
+* pin VddA18
+.SUBCKT BiasMultiplier IOut1 IOut0 IIn GndA VddA18
+* cell instance $1 r0 *1 91.975,0.19
+X$1 IOut1 IIn \$I64 VddA18 BiasMultiplierCell
+* cell instance $2 r0 *1 46.325,0.19
+X$2 IOut0 IIn \$5 \$I64 BiasMultiplierCell
+* device instance $1 r0 *1 17.14,4.565 sky130_fd_pr__pfet_01v8
+XM$1 \$5 IIn IIn \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000 AS=9.28e+12
++ AD=9.28e+12 PS=72640000 PD=72640000
+* device instance $6 r0 *1 7.78,4.565 sky130_fd_pr__pfet_01v8
+XM$6 GndA IIn \$5 \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000 AS=2.12e+12
++ AD=2.12e+12 PS=17060000 PD=17060000
+.ENDS BiasMultiplier
 
 * cell BiasCoarseSel8to1
 * pin BiasCB[0]
@@ -1245,37 +1261,37 @@ XM$3 GndA \$3 \$3 GndA sky130_fd_pr__nfet_01v8_lvt L=800000 W=8000000
 * pin GndA
 .SUBCKT BiasCoarseFineInterface IIn LowBiasEn VddA18 IOut nLowBiasEn GndA
 * device instance $1 r0 *1 -11.015,-1.585 sky130_fd_pr__pfet_01v8
-XM$1 \$4 LowBiasEn \$13 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=550000
+XM$1 \$4 LowBiasEn \$16 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=550000
 + AS=145750000000 AD=145750000000 PS=1630000 PD=1630000
 * device instance $2 r0 *1 -27.34,0.615 sky130_fd_pr__pfet_01v8
-XM$2 VddA18 \$13 \$4 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=512000000
+XM$2 VddA18 \$16 \$4 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=512000000
 + AS=7.968e+13 AD=7.968e+13 PS=580980000 PD=580980000
 * device instance $18 r0 *1 26.33,6.075 sky130_fd_pr__pfet_01v8
-XM$18 \$19 \$15 \$15 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
+XM$18 \$19 \$14 \$14 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
 + AS=1.62e+12 AD=1.12e+12 PS=12810000 PD=8560000
 * device instance $20 r0 *1 26.33,10.635 sky130_fd_pr__pfet_01v8
-XM$20 \$19 \$15 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
+XM$20 \$19 \$14 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
 + AS=1.12e+12 AD=1.62e+12 PS=8560000 PD=12810000
 * device instance $22 r0 *1 30.63,6.075 sky130_fd_pr__pfet_01v8
-XM$22 \$20 \$15 \$16 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
+XM$22 \$20 \$14 \$15 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
 + AS=1.62e+12 AD=1.12e+12 PS=12810000 PD=8560000
 * device instance $24 r0 *1 30.63,10.635 sky130_fd_pr__pfet_01v8
-XM$24 \$20 \$15 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
+XM$24 \$20 \$14 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=2000000 W=8000000
 + AS=1.12e+12 AD=1.62e+12 PS=8560000 PD=12810000
 * device instance $26 r0 *1 -27.34,7.7 sky130_fd_pr__pfet_01v8
-XM$26 VddA18 \$13 \$6 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=512000000
+XM$26 VddA18 \$16 \$6 VddA18 sky130_fd_pr__pfet_01v8 L=500000 W=512000000
 + AS=7.968e+13 AD=7.968e+13 PS=580980000 PD=580980000
 * device instance $42 r0 *1 22.045,14.295 sky130_fd_pr__pfet_01v8
-XM$42 \$13 nLowBiasEn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=150000 W=550000
+XM$42 \$16 nLowBiasEn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=150000 W=550000
 + AS=145750000000 AD=145750000000 PS=1630000 PD=1630000
 * device instance $43 r0 *1 26.33,0.515 sky130_fd_pr__pfet_01v8_lvt
-XM$43 \$15 nLowBiasEn \$7 VddA18 sky130_fd_pr__pfet_01v8_lvt L=2000000
+XM$43 \$14 nLowBiasEn \$7 VddA18 sky130_fd_pr__pfet_01v8_lvt L=2000000
 + W=8000000 AS=1.62e+12 AD=1.62e+12 PS=12810000 PD=12810000
 * device instance $45 r0 *1 -6.405,-10.525 sky130_fd_pr__pfet_01v8_lvt
 XM$45 IIn IIn \$7 VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
 + AS=4.77e+12 AD=4.77e+12 PS=37060000 PD=37060000
 * device instance $47 r0 *1 30.63,0.515 sky130_fd_pr__pfet_01v8_lvt
-XM$47 \$16 nLowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_lvt L=2000000
+XM$47 \$15 nLowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_lvt L=2000000
 + W=8000000 AS=1.62e+12 AD=1.62e+12 PS=12810000 PD=12810000
 * device instance $49 r0 *1 7.585,-6.795 sky130_fd_pr__pfet_01v8_hvt
 XM$49 \$6 LowBiasEn IOut VddA18 sky130_fd_pr__pfet_01v8_hvt L=500000
@@ -1443,83 +1459,6 @@ XM$76 \$4 PowerDown GND GND sky130_fd_pr__nfet_01v8 L=150000 W=650000
 + AS=87750000000 AD=169000000000 PS=920000 PD=1820000
 .ENDS BiasBuffers
 
-* cell BiasDivider
-* pin IOut2
-* pin IOut1
-* pin IOut0
-* pin IIn
-* pin VddA18
-* pin GndA
-* pin IOut5
-* pin IOut4
-* pin IOut3
-.SUBCKT BiasDivider IOut2 IOut1 IOut0 IIn VddA18 GndA IOut5 IOut4 IOut3
-* cell instance $1 r0 *1 137.14,0.19
-X$1 IOut2 IIn \$I66 \$6 BiasDividerCell
-* cell instance $2 r0 *1 91.49,0.19
-X$2 IOut1 IIn \$I76 \$I66 BiasDividerCell
-* cell instance $3 r0 *1 45.84,0.19
-X$3 IOut0 IIn VddA18 \$I76 BiasDividerCell
-* cell instance $4 r180 *1 96.065,34.09
-X$4 IOut5 IIn \$I69 GndA BiasDividerCell
-* cell instance $5 r180 *1 141.715,34.09
-X$5 IOut4 IIn \$I68 \$I69 BiasDividerCell
-* cell instance $6 r180 *1 187.365,34.09
-X$6 IOut3 IIn \$6 \$I68 BiasDividerCell
-* device instance $1 r0 *1 42.44,4.565 sky130_fd_pr__pfet_01v8
-XM$1 VddA18 IIn VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
-+ AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
-* device instance $2 r0 *1 8.24,4.565 sky130_fd_pr__pfet_01v8
-XM$2 VddA18 IIn IIn VddA18 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
-+ AS=9.28e+12 AD=9.28e+12 PS=72640000 PD=72640000
-.ENDS BiasDivider
-
-* cell BiasMultiplier
-* pin IOut1
-* pin IOut0
-* pin IIn
-* pin GndA
-* pin VddA18
-.SUBCKT BiasMultiplier IOut1 IOut0 IIn GndA VddA18
-* cell instance $1 r0 *1 91.975,0.19
-X$1 IOut1 IIn \$I64 VddA18 BiasMultiplierCell
-* cell instance $2 r0 *1 46.325,0.19
-X$2 IOut0 IIn \$5 \$I64 BiasMultiplierCell
-* device instance $1 r0 *1 17.14,4.565 sky130_fd_pr__pfet_01v8
-XM$1 \$5 IIn IIn \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=52000000 AS=9.28e+12
-+ AD=9.28e+12 PS=72640000 PD=72640000
-* device instance $6 r0 *1 7.78,4.565 sky130_fd_pr__pfet_01v8
-XM$6 GndA IIn \$5 \$5 sky130_fd_pr__pfet_01v8 L=8000000 W=8000000 AS=2.12e+12
-+ AD=2.12e+12 PS=17060000 PD=17060000
-.ENDS BiasMultiplier
-
-* cell BiasDividerFineCell
-* pin INOut
-* pin IOut
-* pin Sel
-* pin nSel
-* pin VGate
-* pin VddA18
-* pin IPrev
-* pin INext
-.SUBCKT BiasDividerFineCell INOut IOut Sel nSel VGate VddA18 IPrev INext
-* device instance $1 r0 *1 7.755,6.4 sky130_fd_pr__pfet_01v8_lvt
-XM$1 \$5 VGate \$8 VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
-+ AS=7.785e+12 AD=5.85e+12 PS=30270000 PD=28300000
-* device instance $2 r0 *1 7.755,8.17 sky130_fd_pr__pfet_01v8_lvt
-XM$2 \$8 VGate IPrev VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
-+ AS=6.885e+12 AD=6.84e+12 PS=19530000 PD=19520000
-* device instance $3 r0 *1 7.755,9.93 sky130_fd_pr__pfet_01v8_lvt
-XM$3 IPrev VGate INext VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
-+ AS=6.84e+12 AD=6.84e+12 PS=19520000 PD=19520000
-* device instance $7 r0 *1 4.255,4.89 sky130_fd_pr__pfet_01v8_hvt
-XM$7 INOut Sel \$5 VddA18 sky130_fd_pr__pfet_01v8_hvt L=500000 W=2000000
-+ AS=530000000000 AD=2.1825e+12 PS=4530000 PD=10255000
-* device instance $8 r0 *1 11.255,4.89 sky130_fd_pr__pfet_01v8_hvt
-XM$8 IOut nSel \$5 VddA18 sky130_fd_pr__pfet_01v8_hvt L=500000 W=2000000
-+ AS=530000000000 AD=2.1825e+12 PS=4530000 PD=10255000
-.ENDS BiasDividerFineCell
-
 * cell BiasDividerCell
 * pin IOut
 * pin VGate
@@ -1547,3 +1486,30 @@ XM$1 INext VGate IOut INext sky130_fd_pr__pfet_01v8 L=8000000 W=52000000
 XM$6 IPrev VGate INext INext sky130_fd_pr__pfet_01v8 L=8000000 W=8000000
 + AS=2.12e+12 AD=2.12e+12 PS=17060000 PD=17060000
 .ENDS BiasMultiplierCell
+
+* cell BiasDividerFineCell
+* pin INOut
+* pin IOut
+* pin Sel
+* pin nSel
+* pin VGate
+* pin VddA18
+* pin IPrev
+* pin INext
+.SUBCKT BiasDividerFineCell INOut IOut Sel nSel VGate VddA18 IPrev INext
+* device instance $1 r0 *1 7.755,6.4 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$5 VGate \$8 VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
++ AS=7.785e+12 AD=5.85e+12 PS=30270000 PD=28300000
+* device instance $2 r0 *1 7.755,8.17 sky130_fd_pr__pfet_01v8_lvt
+XM$2 \$8 VGate IPrev VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
++ AS=6.885e+12 AD=6.84e+12 PS=19530000 PD=19520000
+* device instance $3 r0 *1 7.755,9.93 sky130_fd_pr__pfet_01v8_lvt
+XM$3 IPrev VGate INext VddA18 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=18000000
++ AS=6.84e+12 AD=6.84e+12 PS=19520000 PD=19520000
+* device instance $7 r0 *1 4.255,4.89 sky130_fd_pr__pfet_01v8_hvt
+XM$7 INOut Sel \$5 VddA18 sky130_fd_pr__pfet_01v8_hvt L=500000 W=2000000
++ AS=530000000000 AD=2.1825e+12 PS=4530000 PD=10255000
+* device instance $8 r0 *1 11.255,4.89 sky130_fd_pr__pfet_01v8_hvt
+XM$8 IOut nSel \$5 VddA18 sky130_fd_pr__pfet_01v8_hvt L=500000 W=2000000
++ AS=530000000000 AD=2.1825e+12 PS=4530000 PD=10255000
+.ENDS BiasDividerFineCell
