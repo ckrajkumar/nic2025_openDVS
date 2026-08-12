@@ -1,5 +1,7 @@
 import std;
 import std::cells;
+import std::delay_lines;
+import "../async_readout_cells.act";
 
 defproc characterize()
 {
@@ -29,6 +31,45 @@ defproc characterize()
   std::cells::TBUF1    g24;
   std::cells::LATCH    g25;
   std::cells::LATCHINV g26;
+
+  /*
+   * Custom ring/expression-synthesis cells - the other 19 of the 45
+   * cells `interact` reported as "used in the design" during
+   * `make layout` (the std::cells above account for the remaining 26).
+   * Defined in ../async_readout_cells.act, namespace `cell`, which is
+   * itself an output artifact (ckt:cell-save in layout_gen.scm) capturing
+   * exactly the cell library the actual design used - not hand-written.
+   */
+  cell::ginvx0                   g27;
+  cell::ginvx1                   g28;
+  cell::ginvx2                   g29;
+  cell::ginvx3                   g30;
+  cell::ginvx4                   g31;
+  cell::ginvx5                   g32;
+  cell::ginvx8                   g33;
+  cell::ginvx9                   g34;
+  cell::gac1x1                   g35;
+  cell::gcelem2x0                g36;
+  cell::gcelem3x0                g37;
+  cell::gnand2x0                 g38;
+  cell::gnor2x0                  g39;
+  cell::gnor3x0                  g40;
+  cell::g0n1n2n3naaa_023aox0     g41;
+  cell::g0n1n2n3naaa_0123aaox0   g42;
+  cell::g0n1n2n3naaa_0123aaox1   g43;
+  cell::g0n1n2naa_012aox0        g44;
+  cell::g0n1no_012aax0           g45;
+
+  /*
+   * Ring's own delay-line building blocks (std::delay_elements, from
+   * std/delay_lines.act) - not part of this design's netlist directly,
+   * but what synth.conf's pulse_width and delay_params/delay_vals tables
+   * actually calibrate (see ring_forge.cc's delay_line_0..3 ->
+   * chain_delay_buffer<N> / chain_weak_delay_buffer<N,5>). Needed to
+   * close the loop on the deferred parts of Stage 3.
+   */
+  std::delay_elements::delay_buffer         g46;
+  std::delay_elements::weak_delay_buffer<5> g47;
 }
 
 characterize c;

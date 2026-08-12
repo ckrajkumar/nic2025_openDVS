@@ -1,0 +1,5 @@
+[2026-08-12 16:02:32.318197] [0x00000001f62b9d80] [info] Empty block list, nothing to place!
+[2026-08-12 16:02:32.318712] [0x00000001f62b9d80] [info] Empty net list, nothing to optimize!
+[2026-08-12 16:02:32.318717] [0x00000001f62b9d80] [fatal] [0;31mFATAL ERROR:
+    Cannot set target density smaller than average white space utility!
+/Users/kamerongano/actflow/Dali/dali/placer/placer.cc : 99 : SetPlacementDensity[0m

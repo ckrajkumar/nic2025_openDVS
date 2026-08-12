@@ -1,19 +1,12 @@
 *
 * SPICE model include for sky130A characterization.
 *
-* You need the actual sky130 SPICE model deck installed - I could not find
-* one anywhere on this machine (searched for sky130A/ciel/pdk directories,
-* nothing found). Typically obtained via the "open_pdks"/"ciel" sky130
-* PDK install (cad_setup in the repo root references
-* PDK_ROOT=/home/rpgraca/.ciel/ but that's a different machine's path, not
-* set up here yet).
+* PDK installed via ciel (commit 026824c7969ce6f4fc9678e6ca04b0a06a596c4b).
+* The section name below is lowercase "tt" because that's the literal
+* section name inside sky130.lib.spice (`.lib tt`, not `.lib TT`) - checked
+* directly. This is independent of xcell.conf's `corner "TT"` string, which
+* is just metadata xcell writes into the output liberty file's
+* operating_conditions/process_label fields - it doesn't select a .lib
+* section, so it doesn't need to match this file's case.
 *
-* Once installed, this line should point at sky130's combined SPICE model
-* file, e.g. something like:
-*   $PDK_ROOT/sky130A/libs.tech/ngspice/sky130.lib.spice
-* (exact path/filename depends on how the PDK was installed - check
-* $PDK_ROOT/sky130A/libs.tech/ngspice/ or .../combined/ once available.)
-*
-* "TT" here must match a corner name actually defined inside that .lib file.
-*
-.lib '/path/to/sky130A/libs.tech/ngspice/sky130.lib.spice' TT
+.lib '/Users/kamerongano/.ciel/sky130A/libs.tech/ngspice/sky130.lib.spice' tt

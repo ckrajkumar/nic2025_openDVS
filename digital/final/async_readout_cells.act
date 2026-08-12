@@ -136,6 +136,14 @@ export defcell ginvx1 (bool? in[1]; bool! out)
    }
 }
 
+export defcell ginvx10 (bool? in[1]; bool! out)
+{
+   prs {
+   in[0]<1,5> -> out-
+   ~in[0] -> out+
+   }
+}
+
 export defcell ginvx2 (bool? in[1]; bool! out)
 {
    prs * {

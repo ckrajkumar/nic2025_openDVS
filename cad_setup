@@ -13,4 +13,5 @@ export KLAYOUT_PATH=$PDK_ROOT/$PDK/libs.tech/klayout
 export LD_LIBRARY_PATH=$HOME/git/klayout/build-release:$HOME/anaconda3/lib/:$LD_LIBRARY_PATH
 export PATH=$HOME/git/klayout/build-release:$PATH
 export KLAYOUT_PYTHONPATH=$HOME/anaconda3/lib/python3.12/site-packages/
+export PATH=/usr/local/XyceNF_7.10/bin:$PATH
 

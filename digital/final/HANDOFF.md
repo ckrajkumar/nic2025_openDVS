@@ -1,19 +1,20 @@
 # HANDOFF: sky130 tapeout tooling — what changed, where, why, how to redo or undo it
 
-Status as of 2026-08-07. Covers the `rawbits` ring-synthesis → sky130 cell-mapping
+Status as of 2026-08-11. Covers the `rawbits` ring-synthesis → sky130 cell-mapping
 effort for this project. Written so a human can decide what to keep, and so
 another agent could reproduce (or undo) any of it without re-deriving it.
 
-> **REVERTED 2026-08-07.** All of §2–§5 below (the sky130l config rewrite,
-> `std/cells.act` additions, filtered liberty file, and project-local
-> synthesis output) has been rolled back at the user's request — none of it
-> exists on disk anymore. The ciel PDK enable and the `cad_setup` fix (§1)
-> were kept. This document is preserved as a record of the investigation —
-> the root causes described (config first-write-wins, the hardcoded
-> `bundled.cell_lib` path, the deny-list→allow-list liberty story, the X-vs-Y
-> pin-naming convention) are all still true and still apply if this work is
-> picked up again; the recipe in "Full reproduction recipe" is exactly how
-> to redo it from scratch.
+> **REVERTED 2026-08-07, PARTIALLY REDONE 2026-08-11.** §2–§5 below (the
+> sky130l config rewrite, `std/cells.act` additions, filtered liberty file,
+> and project-local synthesis output) was rolled back at the user's request
+> on 2026-08-07 — as of that date none of it existed on disk. On 2026-08-11,
+> **§2 was redone** (real `synth.conf`, now also recalibrated with real
+> sky130 measurements — see §6) but **§3–§5 (real `sky130_fd_sc_hd` cell
+> mapping) were not** — ABC still maps expression logic onto generic 180nm
+> gates, same as the reverted state. This document's TL;DR and Open Issues
+> reflect the current (2026-08-11) state; §1–§5 below are preserved
+> unchanged as the historical record of the first attempt, and §6 covers
+> what actually changed this session.
 
 **Scope note on how this doc was assembled:** this session's context was
 compacted partway through a long debugging effort. Bugs 1–3 and the two
@@ -32,20 +33,26 @@ said so explicitly rather than guessed.
 - **Goal:** get `decomp_rawbits` (from `async_readout.decomp.act`) through
   ring synthesis and cell-mapping targeting real sky130 (not generic/180nm),
   toward physical layout.
-- **Working today, verified:** `synth2 -F ring -ref=2 -Tsky130l -C bd
-  -cnf=local_cache.conf` on this design completes cleanly and produces a
-  netlist genuinely mapped onto real `sky130_fd_sc_hd` standard cells (47
-  distinct cells, all drive-strength variants of ~19 basic gate families).
-  Output: `async_readout_ring_bd.decomp.act` + `expr_bd.act`.
-- **Not yet done:** running that bundled-data output through
-  `interact`/`ckt:cell-map`/phyDB (the QDI path got this far before — see
-  Bug 2 and `layout_gen.scm` — bundled-data hasn't been tried through that
-  stage yet).
+- **Working today, verified (2026-08-11):** `make clean && make` in this
+  directory runs the whole pipeline end-to-end — `synth2 -F ring -Tsky130l`
+  then `interact`/`layout_gen.scm` — producing a DRC-rule-compliant
+  `output.lef` + one `.rect` per cell in `rect_gen/` (46 unique cells this
+  run). This is the **generic-cell-logic / real-sky130-geometry** path (see
+  §6), not the real-`sky130_fd_sc_hd`-cell-mapping path from §3–§5 below,
+  which is not currently done. Ring's own delay-line/mux/OR/select timing
+  calibration in `synth.conf` is now real measured sky130 data (§6), not
+  the placeholder numbers §2 originally installed.
+- **Not yet done:** §3–§5's real `sky130_fd_sc_hd` cell-mapping work
+  (filtered liberty, `expropt.conf` rewrite, `cells.act` defcells) — this
+  is what Stage 4 of the current session's plan is about to redo. Also not
+  done: bundled-data ring-synthesis output through the QDI-specific
+  `interact`/`ckt:cell-map`/phyDB path described in §3–§5's original
+  history (this session's pipeline uses generic-tech ring output directly,
+  sidestepping that).
 - **Known still-broken:** the default QDI/DI ring-synthesis path hits a
   `probe_clause`/`sdtexprchan` type-mismatch bug that was never resolved
-  (found in this session, not documented elsewhere — see "Open issues"
-  below). Bundled-data (`-C bd`) was adopted specifically to route around
-  this, at the user's direction.
+  (found in the 2026-08-07 session — see "Open issues" below). Bundled-data
+  (`-C bd`) was adopted specifically to route around this.
 - **Everything that touches shared ACT install files is additive** — new
   files, or appended blocks at the end of existing files. Nothing pre-existing
   was deleted or rewritten in place, except `sky130l/expropt.conf`, whose
@@ -367,6 +374,286 @@ nothing before that point was modified.
 
 ---
 
+## 6. Real sky130 characterization (xcell) and `synth.conf` recalibration — 2026-08-11 session
+
+This session started from the **fully reverted** 2026-08-07 state (no PDK,
+no `synth.conf`, generic-only `cells.act`) and rebuilt the pipeline up
+through real SPICE-based characterization of the generic-cell-logic path —
+**not** the real-`sky130_fd_sc_hd`-cell-mapping path (§3–§5), which is
+Stage 4, still pending as of this section.
+
+### 6a. Rebuilding the mechanical pipeline
+
+Three bugs were fixing to get `make clean && make` working again in this
+directory (all still true/current, unlike §2's `synth.conf`-missing bug
+which is now fixed for a second time the same way as before — `cp
+~/Desktop/synth.conf ~/.local/act/conf/sky130l/synth.conf`):
+
+1. **`digital/final/Makefile`** had `-Tsky130l` stripped from the `ring`
+   target's `synth2` call (from whatever the 2026-08-07 revert or the
+   subsequent "not super working" commit left it in) — added back.
+2. **`digital/final/layout_gen.scm`**'s `act:merge` pointed at
+   `/Users/kamerongano/git/actflow/sky130l/cells/control/cells.act` — the
+   real actflow checkout on this machine is at `~/actflow/...` (no `git`
+   subdirectory). Fixed the path.
+3. PDK re-enabled via `ciel` exactly per §1 (same commit,
+   `026824c7969ce6f4fc9678e6ca04b0a06a596c4b` — confirmed via `ciel
+   ls-remote --pdk sky130` to still be the newest available, so "latest"
+   and "the previously-pinned commit" are the same thing right now).
+
+With those three fixes, `make clean && make ring && make layout` runs
+clean, producing `output.lef` + `rect_gen/*.rect` — the generic-cell/
+real-sky130-geometry hybrid described in the updated TL;DR above.
+
+### 6b. Installing `xcell`'s dependencies (PDK's SPICE models + Xyce)
+
+`digital/final/xcell_char/` existed (added in the "not super working"
+commit) but couldn't actually characterize anything: `stdspice.spi` had a
+literal `/path/to/sky130A/...` placeholder, and `Xyce` (the SPICE simulator
+`xcell.conf` specifies via `spice_binary`) wasn't installed anywhere on the
+machine — not via Homebrew, not via conda-forge, not present as a binary.
+`xcell`'s own code (`~/actflow/xcell/cell.cc`) only knows how to drive
+`Xyce` or `hspice` (string-matched on `spice_binary`); it does **not**
+support `ngspice` (which *is* trivially available via Homebrew) — the
+invocation logic (`format=raw` print directive, `.spi.raw` output naming)
+is Xyce-specific.
+
+**Fix:** downloaded Sandia's official prebuilt ARM64 macOS serial installer
+directly (`https://xyce.sandia.gov/downloads/executables/` →
+`XyceNF-7.10.0-Darwin.pkg`, unsigned, ~18MB zip). Installed via the
+command-line `installer` tool (sidesteps the Finder/Gatekeeper
+"unidentified developer" prompt the website warns about, since that's a
+LaunchServices/Finder behavior, not something the CLI installer enforces):
+
+```sh
+sudo installer -pkg XyceNF-7.10.0-Darwin.pkg -target /
+```
+
+Installs to `/usr/local/XyceNF_7.10/bin/Xyce` — **not** on `PATH` by
+default. Added `export PATH=/usr/local/XyceNF_7.10/bin:$PATH` to
+`cad_setup` (repo root), matching the existing pattern there for
+`klayout`'s path.
+
+**`stdspice.spi` fix:** points at the real, now-installed deck,
+`~/.ciel/sky130A/libs.tech/ngspice/sky130.lib.spice`. One non-obvious
+detail: the real file's typical-corner section is `.lib tt` (**lowercase**),
+not `.lib TT` as the placeholder/example assumed. This is independent of
+`xcell.conf`'s `corner "TT"` string, which is just metadata `xcell` writes
+into the output liberty's `operating_conditions`/`process_label` fields
+(confirmed by reading `~/actflow/xcell/liberty.cc:275,280` and
+`cell.cc:921-929` — `xcell.corner` never touches SPICE `.lib` section
+selection) — so that string didn't need to change, only the `.spi` file's
+own `.lib '<path>' tt` line.
+
+**Also discovered:** `xcell` accepts `-T<tech>` on its command line, same
+as `synth2`/`interact` — undocumented in its own `Usage:` string (which
+only mentions `<act-cell-file> <libname>`), but `Act::Init()` (the shared
+ACT startup path every one of these tools calls) consumes `-T` before
+`xcell`'s own `argc` check runs. This matters a lot: **without** `-Tsky130l`,
+`xcell` reads the *generic* tech's `prs2net.conf`, which emits plain
+`M<name> ... n/p W=.. L=..` MOSFET lines with bare `n`/`p` model names that
+don't exist in any real sky130 SPICE deck (Xyce error: "Model is required
+... no valid model card found"). **With** `-Tsky130l`, it picks up
+`sky130l/prs2net.conf`'s `use_subckt_models 1`, which makes the shared
+ACT netlist-emission pass (`act/passes/netgen/emit.cc`) emit real
+`X<name> ... sky130_fd_pr__nfet_01v8/pfet_01v8 ...` subcircuit
+instantiations instead — the actual SkyWater device models. Always pass
+`-Tsky130l` to `xcell` for this project; without it, characterization
+either fails outright or (worse) silently characterizes something that
+isn't sky130 at all.
+
+### 6c. Characterizing the design's actual cells
+
+`char.act` originally listed only 26 generic `std::cells` (the tool's
+own example set, which happened to already match every generic cell this
+design uses). Missing: the other 19 of the design's 45 unique cells —
+custom ring/expression-synthesis compound gates (`ginvx0-9`, `gac1x1`,
+`gcelem2x0/3x0`, `gnand2x0`, `gnor2x0/3x0`, the `g0n1n2n...aox` family),
+defined in `../async_readout_cells.act` (namespace `cell` — itself an
+output artifact of `ckt:cell-save` in `layout_gen.scm`, not hand-written).
+Added all 19, plus (for closing the delay-line-calibration loop, §6e)
+`std::delay_elements::delay_buffer` and `weak_delay_buffer<5>` from
+`std::delay_lines` — 47 cells characterized total. Real output:
+`digital/final/xcell_char/characterize.lib`.
+
+**One gotcha hit while extending `char.act`:** a doc-comment containing
+the substring `delay_params_*/delay_vals_*` accidentally closes a `/* */`
+block comment early (the `*/` inside the text, not intended as a comment
+terminator) — `Parse error: Expecting token '::', got '*'`. Reworded to
+avoid the accidental `*/`. Worth remembering if writing more comments in
+`.act` files here.
+
+### 6d. The capacitance-measurement warning investigation (false positive, not a bug)
+
+Characterizing all 47 cells produces the same ~20 "unusual measurement for
+leakage" warnings every run (a real, self-flagged quirk in `xcell`'s own
+code — `cell.cc:885-896` takes the absolute value of a negative leakage
+measurement and warns, rather than treating it as a hard failure; likely
+still-settling transient/short-circuit current caught in too-short a
+measurement window for real (fast) sky130 devices, not a bug worth fixing
+since it doesn't affect the timing data Stage 3 actually needed) — plus 4
+"`>> Measurement CAP_TUP_0_0_0 failed` / `Bad news: no counts for input
+pin #0`" warnings, on `INVX8`, `ginvx3`, `ginvx5`, `ginvx8` specifically
+(deterministic — same 4 cells every rerun).
+
+**Investigated and resolved: this is a false positive, not a data problem.**
+Wrapped `Xyce` in a shim script that copies the intermediate `.mt0`
+measurement-result file immediately after each simulation, both in
+isolation (single-cell `char.act`) and inside the real 45-cell batch. Both
+captures are byte-for-byte identical and contain valid, physically
+sensible numbers — no `FAILED` token anywhere. The final `characterize.lib`
+output for all 4 flagged cells has real, reasonable `rise_capacitance`/
+`fall_capacitance` values (not zero, not garbage). Root cause (well-
+supported, not independently proven via `strace`/Xyce source): `Xyce`
+appears to flush its `.mt0` file more than once during a single transient
+run — an early, incomplete pass can log the literal string `FAILED` for a
+measurement whose trigger/target crossing hasn't resolved yet, then a
+later pass overwrites it with the real value once the simulation
+converges. `xcell`'s own read happens immediately after `Xyce` returns;
+the capture shim's extra process overhead apparently lands reliably after
+the final overwrite instead. Deterministic per cell (ties to how long each
+one's simulation takes), didn't reproduce in isolation (less I/O
+contention). **Bottom line: trust the capacitance data in
+`characterize.lib`, including for these 4 cells** — don't be alarmed by
+the warning text alone.
+
+### 6e. `synth.conf` recalibration with real measurements
+
+All under `~/.local/act/conf/sky130l/synth.conf` (shared, machine-wide —
+same file §2 installs). Each replaced parameter is commented in-place with
+what real cell/measurement it's derived from and what dummy number it
+replaced; read the file directly for the exact current text. Summary:
+
+- **`capture_delay`** (210.0 → 175.98 ps): real `std::cells::LATCH` CLK→Q
+  delay (worst of rise/fall, 26.4ps-slew/1fF-load corner). Confirmed this
+  is the right physical mapping by reading `chp_cost.cc`'s
+  `ACT_CHP_RECV` case (`recv_delay + capture_delay`) — it's used as a
+  scalar latch-capture time directly, not something more exotic.
+- **`mux_delays`** / **`or_delays`**: real `MUX2X1` / `OR2X1` per-gate
+  delay (same corner), with N>2 modeled as `ceil(log2(N))` series stages
+  of the 2-input primitive (tree decomposition — no wider mux/OR was
+  characterized, and none of this design's actual synthesized cells
+  needed one).
+- **`sel_delays`**: this one is *not* a ring-synthesis parameter — it's
+  read by `chp_cost.cc` (the CHP decomposition cost model, a different
+  tool), added to `or_delays[way]` as the estimated overhead of an N-way
+  CHP `select` statement's arbitration logic. No dedicated selector
+  circuit exists to characterize, so modeled the same way as `mux_delays`
+  (tree of `MUX2X1`).
+- **`pulse_width`** (210.0 → 175.98 ps): no dedicated pulse-generator
+  circuit was characterized separately; reuses `capture_delay`'s real
+  value as an approximation, matching what looks like the original dummy
+  file's own assumption (both were 210.0). Flagged in the config file
+  itself as lower-confidence than the other replacements.
+- **`delay_params_DFF/L/L2P`, `delay_offsets_DFF/L/L2P`,
+  `delay_vals_DFF/L/L2P`**: the actual calibration curve
+  `_compute_delay_line_param()` (`ring_forge.cc:383`) inverts to turn a
+  target ps delay into a delay-line structural parameter `N`. Traced all
+  the way through `chp2prs/lib/ring/delay_lines.act` →
+  `std/delay_lines.act` to the real underlying structures:
+  `delay_line_0`/`delay_line_1` both build `std::delay_lines::
+  chain_delay_buffer<N>` (`N` copies of `std::delay_elements::
+  delay_buffer` = 2×`INVX1` in series, measured **134.022 ps/stage**);
+  `delay_line_2`/`delay_line_3` both build `chain_weak_delay_buffer<N,5>`
+  (`N` copies of `weak_delay_buffer<L=5>`, measured **410.536 ps/stage**).
+  Built a 5-breakpoint monotonic curve from these two real per-stage
+  numbers (region-boundary offsets chosen so the light→weak switch at
+  N=40 doesn't dip below itself — see the in-file comments for the exact
+  math). Same curve applied to all three datapath styles (DFF/L/L2P),
+  since `delay_line<N>` itself doesn't depend on datapath style — verified
+  in `ring_forge.cc`/`delay_lines.act`, not assumed.
+- **`send_delay`/`recv_delay`/`assn_delay` — deliberately left as the
+  original dummy/TODO numbers (40.0/40.0/0.0).** These are `chp_cost.cc`
+  fixed overheads added on top of per-expression delay for CHP
+  send/receive/assign actions respectively. Best guess (not verified by
+  tracing the actual lowering templates) is that they map to a
+  completion-detection gate like `gcelem2x0` (already characterized, and
+  structurally a Muller C-element - the canonical async completion-detect
+  primitive) - but this wasn't confirmed, and the original `assn_delay=0.0`
+  (vs `40.0` for the other two) might reflect a deliberate "negligible"
+  judgment call rather than an unfilled placeholder. Lower value, lower
+  confidence than everything else in this section - left as an open item
+  (see Open Issues) rather than guessed at.
+
+**Verified effect, not just cosmetic:** re-running `make clean && make`
+after this recalibration produces a **different** cell inventory (47
+unique cells including a new `ginvx10`, vs. 46 before) - confirming the
+real numbers actually changed ring synthesis's delay-line sizing
+decisions, not just documentation.
+
+**To reproduce `characterize.lib` from scratch:** `cd digital/final/xcell_char
+&& xcell -Tsky130l char.act characterize` (needs `Xyce` on `PATH` - source
+`cad_setup` - and `stdspice.spi` pointing at a real, enabled PDK per §6b).
+
+**To undo:** `synth.conf`'s changes are all within the `begin bundled ...
+end` block already discussed in §2 - the file's own dummy-number comments
+(now updated to real-number provenance comments) mark exactly what changed
+and from what.
+
+---
+
+## 7. Real `sky130_fd_sc_hd` cell mapping, redone (Stage 4) — 2026-08-11 session
+
+§3–§5's real-cell-mapping work, done for real this time (not just planned).
+Same recipe as originally documented, executed fresh:
+
+- **Filtered liberty regenerated** exactly per §4a/§4b's allow-list (script
+  now saved at the scratch path used this session, not committed anywhere
+  permanent - reproduce via the `ALLOW_BASES` set already documented in
+  §4b, brace-depth-tracked cell-block extraction) - **80 cells**, matching
+  §4b's original count exactly.
+- **`sky130l/expropt.conf` rewritten standalone** exactly per §3's
+  reasoning (first-write-wins means `include` + override doesn't work) -
+  `synth.liberty.typical` now points at
+  `${PDK_ROOT}/sky130A/libs.ref/sky130_fd_sc_hd/lib/
+  sky130_fd_sc_hd__tt_025C_1v80_synth.lib`. Rest of the file copied
+  unchanged from generic, same as before.
+- **`~/.local/act/act/std/cells.act` extended** - but with one correction
+  to §5's original approach worth calling out explicitly: **defcell names
+  must be the full prefixed sky130 name** (`sky130_fd_sc_hd__and2_0`, not
+  `and2_0`). Traced this precisely: `v2act`'s module lookup
+  (`act/verilog/vnet.cc:1150`, `verilog_find_lib()`) builds
+  `"<s2a.lib_namespace>::<verilog-module-name>"` and does an exact
+  `Act::findProcess()` lookup - `-n std::cells` sets `s2a.lib_namespace`,
+  and the mapped Verilog's module names are the *full* SkyWater names
+  (`sky130_fd_sc_hd__and2_0`), not stripped. A short name like `and2_0`
+  silently never matches, and just reappears in the next "missing
+  modules" error as if it had never been added - there's no error
+  pointing at the name mismatch itself. §5's own prose ("Currently
+  defined: `inv_*`, `and2_*`, ...") appears to have been shorthand for
+  brevity, not the literal identifiers actually used.
+- **Iterative convergence**, same pattern §4b describes: re-running
+  `make ring` after each batch of `defcell`s surfaced the next batch of
+  "missing modules" from `v2act`, shrinking each time (7 → 3 → 2 → 2 → 0).
+  15 cells now defined total (the same 7 from the first pass, plus
+  `inv_2`, `inv_8`, `nor3_1`, `nor2_4`, `or2_0`, `clkbuf_1`, `clkinv_1`) -
+  far short of the 80 in the filtered liberty; only what *this* design's
+  expression logic actually needed. Every one derived from that cell's
+  real liberty `function:` string, with output-pin name (`Y` vs `X`)
+  checked per cell before writing PRS - not assumed from the family name.
+  One mechanical gotcha hit while adding the very first (`X`-output)
+  cell: the two-stage pattern's internal node (`_X`) must be explicitly
+  declared `bool _X;` before use in `prs*` - omitting it is a parse-time
+  error (`identifier does not exist in current scope`), not a silent bug.
+- **Verified end-to-end**: `make clean && make` completes cleanly.
+  `expr.act` contains real `sky130_fd_sc_hd__*` instances (confirmed via
+  `grep -oE "sky130_fd_sc_hd__[a-z0-9_]+" expr.act`). `make layout`'s
+  "cells used in the design" list shows real sky130 cells
+  (`sky130_fd_sc_hd__nor2_1<>`, `sky130_fd_sc_hd__and2_0<>`, etc.)
+  alongside the still-generic ring-control-fabric cells (`LATCH<>`,
+  `NOR2X1<>`, the custom `g*` compound gates) - exactly the split §3's
+  caveat predicts (ring's own handshake/capture circuitry hardcodes
+  `std::cells` unconditionally in `ring_engine.cc`, regardless of `-T`;
+  only ABC-mapped expression-block logic benefits from this section).
+  60 unique cells this run, `output.lef` + 61 `.rect` files generated.
+
+**To reproduce:** same recipe as §4/§5, plus the full-name correction
+above. **To undo:** same as §4/§5 - `rm` the filtered liberty file,
+restore `expropt.conf`'s 11-line `include`-only version (verbatim in §3),
+delete the `/* sky130_fd_sc_hd aliases. */`-marked block in `cells.act`.
+
+---
+
 ## Full reproduction recipe (bundled-data path, from a clean checkout)
 
 ```sh
@@ -440,13 +727,24 @@ run yet; check before assuming.
    `act2lef`/`stk2layout` output does obey real sky130 design rules
    (`layout.conf`), but the PRS/sizing underneath is unverified against
    sky130 device models.
-4. **`synth.conf`'s delay-line calibration numbers are placeholders** (§2)
-   and **this session's new `cells.act` sizing hints are approximate** (§5)
-   — both affect only ABC's/ring's internal timing *estimates*, not
-   functional correctness or physical layout sizing (confirmed separately
-   correct, via `prs2net.conf`). Real sky130 characterization (e.g. via
-   `xcell` — there's a partial setup already at `digital/final/xcell_char/`)
-   would be needed before trusting any timing numbers this flow reports.
+4. **`synth.conf`'s delay-line calibration is now real (2026-08-11, §6e)
+   for `capture_delay`, `mux_delays`, `or_delays`, `sel_delays`,
+   `pulse_width` (approximate), and the `delay_params/offsets/vals_*`
+   tables** — no longer placeholders. **Still not done: `cells.act`'s
+   sizing hints from §5 are approximate** (this remains true only if/when
+   §3–§5's real-cell-mapping work is redone — as of now §3–§5 isn't active
+   at all, see the updated TL;DR). Neither affects functional correctness
+   or physical layout sizing (confirmed separately correct, via
+   `prs2net.conf`).
 5. **`act2lef` (the standalone binary) crashes unconditionally**, unrelated
    to this design (bugs.md Bug 3) — use `interact` directly instead
    (`layout_gen.scm` shows the working pattern).
+6. **`chp_cost.cc`'s `send_delay`/`recv_delay`/`assn_delay` are still the
+   original dummy/TODO numbers** (40.0/40.0/0.0) — deliberately not
+   recalibrated this session (§6e) since the real physical mapping
+   (guessed at: a completion-detection gate like `gcelem2x0`) wasn't
+   confirmed by tracing the actual CHP-lowering templates for
+   send/receive/assign actions, and `assn_delay`'s original `0.0` might be
+   a deliberate "negligible" judgment rather than an unfilled placeholder.
+   Only affects decomp's decomposition-choice cost heuristic, not ring
+   synthesis's own timing or physical correctness.
