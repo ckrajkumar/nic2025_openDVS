@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785260014
+timestamp 1786572700
 << error_s >>
 rect -1925 1762 -1799 1826
 rect -567 1762 -441 1826
@@ -226,198 +226,198 @@ rect -4121 -2716 -3863 2644
 rect 1497 -2716 1755 2644
 rect -4121 -2974 1755 -2716
 use contact$1  contact$1_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -2925 0 1 -2550
 box -224 -64 224 64
 use contact$1  contact$1_1
-timestamp 1785260014
-transform 1 0 559 0 1 -2550
-box -224 -64 224 64
-use contact$1  contact$1_2
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -2925 0 1 2250
 box -224 -64 224 64
-use contact$1  contact$1_3
-timestamp 1785260014
+use contact$1  contact$1_2
+timestamp 1786572700
 transform -1 0 559 0 1 2250
 box -224 -64 224 64
+use contact$1  contact$1_3
+timestamp 1786572700
+transform 1 0 559 0 1 -2550
+box -224 -64 224 64
 use contact$25$1$1  contact$25$1$1_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -2000 0 1 -2322
 box -288 -64 288 64
 use contact$25$1$1  contact$25$1$1_1
-timestamp 1785260014
-transform 1 0 -366 0 1 -2322
+timestamp 1786572700
+transform -1 0 -366 0 1 2478
 box -288 -64 288 64
 use contact$25$1$1  contact$25$1$1_2
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -2000 0 1 2478
 box -288 -64 288 64
 use contact$25$1$1  contact$25$1$1_3
-timestamp 1785260014
-transform -1 0 -366 0 1 2478
+timestamp 1786572700
+transform 1 0 -366 0 1 -2322
 box -288 -64 288 64
 use contact$26$1$1  contact$26$1$1_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -1642 0 1 -2550
 box -32 -64 32 64
 use contact$26$1$1  contact$26$1$1_1
-timestamp 1785260014
-transform 0 -1 -1519 1 0 -2390
-box -32 -64 32 64
-use contact$26$1$1  contact$26$1$1_2
-timestamp 1785260014
-transform 0 -1 -847 1 0 -2390
-box -32 -64 32 64
-use contact$26$1$1  contact$26$1$1_3
-timestamp 1785260014
-transform 1 0 -723 0 1 -2550
-box -32 -64 32 64
-use contact$26$1$1  contact$26$1$1_4
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -1642 0 1 2250
 box -32 -64 32 64
-use contact$26$1$1  contact$26$1$1_5
-timestamp 1785260014
-transform 0 -1 -1519 1 0 2410
+use contact$26$1$1  contact$26$1$1_2
+timestamp 1786572700
+transform 0 -1 -1519 1 0 -2390
 box -32 -64 32 64
-use contact$26$1$1  contact$26$1$1_6
-timestamp 1785260014
+use contact$26$1$1  contact$26$1$1_3
+timestamp 1786572700
+transform 0 -1 -847 1 0 -2390
+box -32 -64 32 64
+use contact$26$1$1  contact$26$1$1_4
+timestamp 1786572700
 transform 1 0 -723 0 1 2250
 box -32 -64 32 64
+use contact$26$1$1  contact$26$1$1_5
+timestamp 1786572700
+transform 1 0 -723 0 1 -2550
+box -32 -64 32 64
+use contact$26$1$1  contact$26$1$1_6
+timestamp 1786572700
+transform 0 -1 -1519 1 0 2410
+box -32 -64 32 64
 use contact$26$1$1  contact$26$1$1_7
-timestamp 1785260014
+timestamp 1786572700
 transform 0 -1 -847 1 0 2410
 box -32 -64 32 64
 use contact$30$1$1  contact$30$1$1_0
-timestamp 1785260014
-transform 1 0 -2860 0 1 -2427
-box -462 -142 462 178
-use contact$30$1$1  contact$30$1$1_1
-timestamp 1785260014
-transform 1 0 494 0 1 -2427
-box -462 -142 462 178
-use contact$30$1$1  contact$30$1$1_2
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -2860 0 1 2373
 box -462 -142 462 178
-use contact$30$1$1  contact$30$1$1_3
-timestamp 1785260014
+use contact$30$1$1  contact$30$1$1_1
+timestamp 1786572700
 transform 1 0 494 0 1 2373
 box -462 -142 462 178
+use contact$30$1$1  contact$30$1$1_2
+timestamp 1786572700
+transform 1 0 -2860 0 1 -2427
+box -462 -142 462 178
+use contact$30$1$1  contact$30$1$1_3
+timestamp 1786572700
+transform 1 0 494 0 1 -2427
+box -462 -142 462 178
 use openDVS_pixel  openDVS_pixel_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -3615 0 1 -62
 box -506 -512 2971 2964
 use openDVS_pixel  openDVS_pixel_1
-timestamp 1785260014
+timestamp 1786572700
 transform -1 0 1249 0 -1 -10
 box -506 -512 2971 2964
 use openDVS_pixel  openDVS_pixel_2
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -3615 0 -1 -10
 box -506 -512 2971 2964
 use openDVS_pixel  openDVS_pixel_3
-timestamp 1785260014
+timestamp 1786572700
 transform -1 0 1249 0 1 -62
 box -506 -512 2971 2964
 << labels >>
-flabel metal1 s -2412 1136 -2354 1194 2 FreeSans 44 0 0 0 vpd[0]
-port 22 nsew
-flabel metal1 s -2412 -1266 -2354 -1208 2 FreeSans 44 0 0 0 vpd[1]
-port 21 nsew
-flabel metal1 s -12 -1266 46 -1208 2 FreeSans 44 0 0 0 vpd[3]
-port 20 nsew
-flabel metal1 s -12 1136 46 1194 2 FreeSans 44 0 0 0 vpd[2]
+flabel metal1 s -12 1136 46 1194 2 FreeSans 56 0 0 0 vpd[2]
+port 18 nsew
+flabel metal1 s -12 -1266 46 -1208 2 FreeSans 56 0 0 0 vpd[3]
 port 19 nsew
-flabel metal2 s 1165 2192 1217 2308 2 FreeSans 44 0 0 0 GndA
-port 7 nsew
-flabel metal2 s -3583 2420 -3531 2536 2 FreeSans 44 0 0 0 VddA18
+flabel metal1 s -2412 -1266 -2354 -1208 2 FreeSans 56 0 0 0 vpd[1]
+port 20 nsew
+flabel metal1 s -2412 1136 -2354 1194 2 FreeSans 56 0 0 0 vpd[0]
+port 21 nsew
+flabel metal2 s 1217 2150 1217 2150 2 FreeSans 56 0 0 0 DiffBn
+flabel metal2 s 1217 -2222 1217 -2222 2 FreeSans 56 0 0 0 DiffBn
+flabel metal2 s 1165 -2380 1217 -2264 2 FreeSans 56 0 0 0 VddA18
 port 1 nsew
-flabel metal2 s -3583 2192 -3531 2308 2 FreeSans 44 0 0 0 GndA
-port 7 nsew
-flabel metal2 s 1165 -150 1217 78 2 FreeSans 44 0 0 0 GndD
-port 4 nsew
-flabel metal2 s 1165 -310 1217 -258 2 FreeSans 44 0 0 0 rowReadOFF[1]
+flabel metal2 s -3583 -2380 -3531 -2264 2 FreeSans 56 0 0 0 VddA18
+port 1 nsew
+flabel metal2 s 1165 2420 1217 2536 2 FreeSans 56 0 0 0 VddA18
+port 1 nsew
+flabel metal2 s -3583 2420 -3531 2536 2 FreeSans 56 0 0 0 VddA18
+port 1 nsew
+flabel metal2 s -3583 -310 -3531 -258 2 FreeSans 56 0 0 0 rowReadOFF[1]
 port 2 nsew
-flabel metal2 s 1165 -230 1217 -178 2 FreeSans 44 0 0 0 rowReadON[1]
-port 3 nsew
-flabel metal2 s 1165 106 1217 158 2 FreeSans 44 0 0 0 rowReadON[0]
-port 6 nsew
-flabel metal2 s 1165 186 1217 238 2 FreeSans 44 0 0 0 rowReadOFF[0]
-port 5 nsew
-flabel metal2 s -3583 -150 -3531 78 2 FreeSans 44 0 0 0 GndD
-port 4 nsew
-flabel metal2 s -3583 -310 -3531 -258 2 FreeSans 44 0 0 0 rowReadOFF[1]
+flabel metal2 s 1165 -310 1217 -258 2 FreeSans 56 0 0 0 rowReadOFF[1]
 port 2 nsew
-flabel metal2 s -3583 -230 -3531 -178 2 FreeSans 44 0 0 0 rowReadON[1]
+flabel metal2 s -3583 -230 -3531 -178 2 FreeSans 56 0 0 0 rowReadON[1]
 port 3 nsew
-flabel metal2 s -3583 106 -3531 158 2 FreeSans 44 0 0 0 rowReadON[0]
-port 6 nsew
-flabel metal2 s -3583 186 -3531 238 2 FreeSans 44 0 0 0 rowReadOFF[0]
+flabel metal2 s 1165 -230 1217 -178 2 FreeSans 56 0 0 0 rowReadON[1]
+port 3 nsew
+flabel metal2 s -3583 -150 -3531 78 2 FreeSans 56 0 0 0 GndD
+port 4 nsew
+flabel metal2 s 1165 -150 1217 78 2 FreeSans 56 0 0 0 GndD
+port 4 nsew
+flabel metal2 s -3583 186 -3531 238 2 FreeSans 56 0 0 0 rowReadOFF[0]
 port 5 nsew
-flabel metal2 s 1165 2420 1217 2536 2 FreeSans 44 0 0 0 VddA18
-port 1 nsew
-flabel metal2 s 1165 -2608 1217 -2492 2 FreeSans 44 0 0 0 GndA
+flabel metal2 s 1165 186 1217 238 2 FreeSans 56 0 0 0 rowReadOFF[0]
+port 5 nsew
+flabel metal2 s -3583 106 -3531 158 2 FreeSans 56 0 0 0 rowReadON[0]
+port 6 nsew
+flabel metal2 s 1165 106 1217 158 2 FreeSans 56 0 0 0 rowReadON[0]
+port 6 nsew
+flabel metal2 s -3583 -2608 -3531 -2492 2 FreeSans 56 0 0 0 GndA
 port 7 nsew
-flabel metal2 s -3583 -2380 -3531 -2264 2 FreeSans 44 0 0 0 VddA18
-port 1 nsew
-flabel metal2 s -3583 -2608 -3531 -2492 2 FreeSans 44 0 0 0 GndA
+flabel metal2 s 1165 -2608 1217 -2492 2 FreeSans 56 0 0 0 GndA
 port 7 nsew
-flabel metal2 s 1165 -2380 1217 -2264 2 FreeSans 44 0 0 0 VddA18
+flabel metal2 s -3583 2192 -3531 2308 2 FreeSans 56 0 0 0 GndA
+port 7 nsew
+flabel metal2 s 1165 2192 1217 2308 2 FreeSans 56 0 0 0 GndA
+port 7 nsew
+flabel metal4 s 992 -2436 1441 2364 2 FreeSans 120 0 0 0 VddA18
 port 1 nsew
-flabel metal2 s 1217 2150 1217 2150 2 FreeSans 44 0 0 0 DiffBn
-flabel metal2 s 1217 -2222 1217 -2222 2 FreeSans 44 0 0 0 DiffBn
-flabel metal3 s -1027 -2436 -961 -2378 2 FreeSans 96 180 0 0 RefrBp
+flabel metal4 s -3808 -2436 -3358 2364 2 FreeSans 120 0 0 0 VddA18
+port 1 nsew
+flabel metal4 s -2362 -2602 -4 -2270 2 FreeSans 120 0 0 0 VddA18
+port 1 nsew
+flabel metal4 s -2362 2198 -4 2530 2 FreeSans 120 0 0 0 VddA18
+port 1 nsew
+flabel metal5 s -4121 2644 1755 2902 2 FreeSans 640 0 0 0 GndA
+port 7 nsew
+flabel metal3 s -1027 2306 -961 2364 2 FreeSans 120 180 0 0 RefrBp
+port 8 nsew
+flabel metal3 s -1027 -2436 -961 -2378 2 FreeSans 120 180 0 0 RefrBp
+port 8 nsew
+flabel metal3 s -1153 2306 -1087 2364 2 FreeSans 120 180 0 0 PrBp
 port 9 nsew
-flabel metal3 s -1153 -2436 -1087 -2378 2 FreeSans 96 180 0 0 PrBp
-port 10 nsew
-flabel metal3 s -1279 -2436 -1213 -2378 2 FreeSans 96 180 0 0 PrSFBp
-port 11 nsew
-flabel metal3 s -1027 2306 -961 2364 2 FreeSans 96 180 0 0 RefrBp
+flabel metal3 s -1153 -2436 -1087 -2378 2 FreeSans 120 180 0 0 PrBp
 port 9 nsew
-flabel metal3 s -1153 2306 -1087 2364 2 FreeSans 96 180 0 0 PrBp
+flabel metal3 s -1279 2306 -1213 2364 2 FreeSans 120 180 0 0 PrSFBp
 port 10 nsew
-flabel metal3 s -1279 2306 -1213 2364 2 FreeSans 96 180 0 0 PrSFBp
+flabel metal3 s -1279 -2436 -1213 -2378 2 FreeSans 120 180 0 0 PrSFBp
+port 10 nsew
+flabel metal3 s -3553 -2268 -3487 -2210 2 FreeSans 120 0 0 0 readLine[0]
 port 11 nsew
-flabel metal3 s -3553 2474 -3487 2532 2 FreeSans 96 0 0 0 readLine[0]
+flabel metal3 s -3553 2474 -3487 2532 2 FreeSans 120 0 0 0 readLine[0]
+port 11 nsew
+flabel metal3 s -3427 -2268 -3361 -2210 2 FreeSans 120 0 0 0 pixRst[0]
 port 12 nsew
-flabel metal3 s -3427 2474 -3361 2532 2 FreeSans 96 0 0 0 pixRst[0]
-port 13 nsew
-flabel metal3 s -3427 -2268 -3361 -2210 2 FreeSans 96 0 0 0 pixRst[0]
-port 13 nsew
-flabel metal3 s -3553 -2268 -3487 -2210 2 FreeSans 96 0 0 0 readLine[0]
+flabel metal3 s -3427 2474 -3361 2532 2 FreeSans 120 0 0 0 pixRst[0]
 port 12 nsew
-flabel metal3 s 995 -2268 1061 -2210 2 FreeSans 96 180 0 0 pixRst[1]
+flabel metal3 s 995 2474 1061 2532 2 FreeSans 120 180 0 0 pixRst[1]
+port 13 nsew
+flabel metal3 s 995 -2268 1061 -2210 2 FreeSans 120 180 0 0 pixRst[1]
+port 13 nsew
+flabel metal3 s 1121 2474 1187 2532 2 FreeSans 120 180 0 0 readLine[1]
 port 14 nsew
-flabel metal3 s 1121 -2268 1187 -2210 2 FreeSans 96 180 0 0 readLine[1]
-port 15 nsew
-flabel metal3 s 1121 2474 1187 2532 2 FreeSans 96 180 0 0 readLine[1]
-port 15 nsew
-flabel metal3 s 995 2474 1061 2532 2 FreeSans 96 180 0 0 pixRst[1]
+flabel metal3 s 1121 -2268 1187 -2210 2 FreeSans 120 180 0 0 readLine[1]
 port 14 nsew
-flabel metal3 s -1531 -2436 -1465 -2378 2 FreeSans 96 180 0 0 DiffBn
+flabel metal3 s -1531 2306 -1465 2364 2 FreeSans 120 180 0 0 DiffBn
+port 15 nsew
+flabel metal3 s -1531 -2436 -1465 -2378 2 FreeSans 120 180 0 0 DiffBn
+port 15 nsew
+flabel metal3 s -1405 2306 -1339 2364 2 FreeSans 120 180 0 0 OffBn
 port 16 nsew
-flabel metal3 s -1405 -2436 -1339 -2378 2 FreeSans 96 180 0 0 OffBn
-port 17 nsew
-flabel metal3 s -901 -2436 -835 -2378 2 FreeSans 96 180 0 0 OnBn
-port 18 nsew
-flabel metal3 s -1405 2306 -1339 2364 2 FreeSans 96 180 0 0 OffBn
-port 17 nsew
-flabel metal3 s -1531 2306 -1465 2364 2 FreeSans 96 180 0 0 DiffBn
+flabel metal3 s -1405 -2436 -1339 -2378 2 FreeSans 120 180 0 0 OffBn
 port 16 nsew
-flabel metal3 s -901 2306 -835 2364 2 FreeSans 96 180 0 0 OnBn
-port 18 nsew
-flabel metal4 s -2362 2198 -4 2530 2 FreeSans 96 0 0 0 VddA18
-port 1 nsew
-flabel metal4 s -2362 -2602 -4 -2270 2 FreeSans 96 0 0 0 VddA18
-port 1 nsew
-flabel metal4 s -3808 -2436 -3358 2364 2 FreeSans 96 0 0 0 VddA18
-port 1 nsew
-flabel metal4 s 992 -2436 1441 2364 2 FreeSans 96 0 0 0 VddA18
-port 1 nsew
-flabel metal5 s -4121 2644 1755 2902 2 FreeSans 512 0 0 0 GndA
-port 7 nsew
+flabel metal3 s -901 2306 -835 2364 2 FreeSans 120 180 0 0 OnBn
+port 17 nsew
+flabel metal3 s -901 -2436 -835 -2378 2 FreeSans 120 180 0 0 OnBn
+port 17 nsew
 << properties >>
 string FIXED_BBOX -3583 -2608 1217 2536
 << end >>

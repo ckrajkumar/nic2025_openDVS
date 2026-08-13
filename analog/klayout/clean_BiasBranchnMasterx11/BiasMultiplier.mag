@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785258666
+timestamp 1786572931
 << nwell >>
 rect 667 477 9397 3069
 << pmos >>
@@ -4571,11 +4571,11 @@ rect 5248 7 5276 146
 rect 6939 7 6967 146
 rect 8586 7 8614 146
 use BiasMultiplierCell  BiasMultiplierCell_0
-timestamp 1785258666
+timestamp 1786572931
 transform 1 0 9265 0 1 38
 box 0 -31 9856 3413
 use BiasMultiplierCell  BiasMultiplierCell_1
-timestamp 1785258666
+timestamp 1786572931
 transform 1 0 18395 0 1 38
 box 0 -31 9856 3413
 << labels >>

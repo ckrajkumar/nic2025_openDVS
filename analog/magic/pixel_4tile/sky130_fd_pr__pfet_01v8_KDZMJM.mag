@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785260014
+timestamp 1786572700
 << nwell >>
 rect -144 -198 144 164
 << pmos >>
@@ -79,7 +79,7 @@ rect 56 -89 62 -55
 rect 96 -89 102 -55
 rect 56 -136 102 -89
 use L1M1_MAG_7849107791413  L1M1_MAG_7849107791413_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 0 0 1 128
 box -65 -23 65 23
 << labels >>

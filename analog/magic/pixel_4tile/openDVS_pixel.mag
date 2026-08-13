@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785260014
+timestamp 1786572700
 << error_p >>
 rect 1690 1824 1816 1888
 rect 2487 1295 2509 1329
@@ -2685,48 +2685,48 @@ rect -506 -512 2971 656
 << glass >>
 rect 662 656 1802 1796
 << labels >>
-flabel metal1 s 2086 950 2086 950 2 FreeSans 500 0 0 0 nRst
-flabel metal1 s 2340 1570 2340 1570 2 FreeSans 500 0 0 0 PrSFBp
-flabel metal1 s 2044 1226 2044 1226 2 FreeSans 500 0 0 0 nRst
-flabel metal1 s 1601 465 1601 465 2 FreeSans 500 0 0 0 vdiff
-flabel metal1 s 55 1272 55 1272 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 203 2395 203 2395 2 FreeSans 500 0 0 0 DiffBn
-flabel metal1 s 203 1907 203 1907 2 FreeSans 500 0 0 0 OnBn
-flabel metal1 s 203 1419 203 1419 2 FreeSans 500 0 0 0 OffBn
-flabel metal1 s 273 649 273 649 2 FreeSans 500 0 0 0 rowReadON
-flabel metal1 s 163 410 163 410 2 FreeSans 500 0 0 0 nRst
-flabel metal1 s 2340 1105 2340 1105 2 FreeSans 500 0 0 0 RefrBp
-flabel metal1 s 69 1419 69 1419 2 FreeSans 500 0 0 0 OffBn
-flabel metal1 s 2051 373 2051 373 2 FreeSans 500 0 0 0 vdiff
-flabel metal1 s 1179 323 1179 323 2 FreeSans 500 0 0 0 ON
-flabel metal1 s 1039 2218 1039 2218 2 FreeSans 500 180 0 0 vpr
-flabel metal1 s 2244 482 2244 482 2 FreeSans 500 0 0 0 vd
-flabel metal1 s 2086 861 2086 861 2 FreeSans 500 0 0 0 VddA18
-flabel metal1 s 1319 2326 1319 2326 2 FreeSans 500 180 0 0 VddA18
-flabel metal1 s 1543 323 1543 323 2 FreeSans 500 0 0 0 VddA18
-flabel metal1 s 2415 375 2415 375 2 FreeSans 500 0 0 0 VddA18
-flabel metal1 s 889 2326 889 2326 2 FreeSans 500 180 0 0 GndA
-flabel metal1 s 55 2191 55 2191 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 55 1781 55 1781 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 163 686 163 686 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 2432 1807 2432 1807 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 2043 1462 2043 1462 2 FreeSans 500 0 0 0 vsf
-flabel metal1 s 1903 374 1903 374 2 FreeSans 500 0 0 0 nOFF
-flabel metal1 s 271 394 271 394 2 FreeSans 500 0 0 0 pixRst
-flabel metal1 s 442 365 442 365 2 FreeSans 500 0 0 0 rowReadON
-flabel metal1 s 597 365 597 365 2 FreeSans 500 0 0 0 rowReadOFF
-flabel metal1 s 512 256 512 256 2 FreeSans 500 0 0 0 readLine
-flabel metal1 s 2469 1973 2469 1973 2 FreeSans 500 0 0 0 PrBp
-flabel metal1 s 2407 1462 2407 1462 2 FreeSans 500 0 0 0 VddA18
-flabel metal1 s 2225 2300 2225 2300 2 FreeSans 500 0 0 0 vd
-flabel metal1 s 2285 2235 2285 2235 2 FreeSans 500 0 0 0 nRst
-flabel metal1 s 2390 2300 2390 2300 2 FreeSans 500 0 0 0 vdiff
-flabel metal1 s 2315 2021 2315 2021 2 FreeSans 500 0 0 0 VddA18
-flabel metal1 s 2218 1935 2218 1935 2 FreeSans 500 0 0 0 vpr
-flabel metal1 s 808 238 808 238 2 FreeSans 500 0 0 0 GndD
-flabel metal1 s 881 158 881 158 2 FreeSans 500 0 0 0 GndA
-flabel metal1 s 1180 2095 1180 2095 2 FreeSans 500 180 0 0 vpd
-flabel metal1 s 1255 1204 1255 1204 2 FreeSans 500 0 0 0 vpd
+flabel metal1 s 2086 950 2086 950 2 FreeSans 626 0 0 0 nRst
+flabel metal1 s 2340 1570 2340 1570 2 FreeSans 626 0 0 0 PrSFBp
+flabel metal1 s 2044 1226 2044 1226 2 FreeSans 626 0 0 0 nRst
+flabel metal1 s 1601 465 1601 465 2 FreeSans 626 0 0 0 vdiff
+flabel metal1 s 55 1272 55 1272 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 203 2395 203 2395 2 FreeSans 626 0 0 0 DiffBn
+flabel metal1 s 203 1907 203 1907 2 FreeSans 626 0 0 0 OnBn
+flabel metal1 s 203 1419 203 1419 2 FreeSans 626 0 0 0 OffBn
+flabel metal1 s 273 649 273 649 2 FreeSans 626 0 0 0 rowReadON
+flabel metal1 s 163 410 163 410 2 FreeSans 626 0 0 0 nRst
+flabel metal1 s 2340 1105 2340 1105 2 FreeSans 626 0 0 0 RefrBp
+flabel metal1 s 69 1419 69 1419 2 FreeSans 626 0 0 0 OffBn
+flabel metal1 s 2051 373 2051 373 2 FreeSans 626 0 0 0 vdiff
+flabel metal1 s 1179 323 1179 323 2 FreeSans 626 0 0 0 ON
+flabel metal1 s 1039 2218 1039 2218 2 FreeSans 626 180 0 0 vpr
+flabel metal1 s 2244 482 2244 482 2 FreeSans 626 0 0 0 vd
+flabel metal1 s 2086 861 2086 861 2 FreeSans 626 0 0 0 VddA18
+flabel metal1 s 1319 2326 1319 2326 2 FreeSans 626 180 0 0 VddA18
+flabel metal1 s 1543 323 1543 323 2 FreeSans 626 0 0 0 VddA18
+flabel metal1 s 2415 375 2415 375 2 FreeSans 626 0 0 0 VddA18
+flabel metal1 s 889 2326 889 2326 2 FreeSans 626 180 0 0 GndA
+flabel metal1 s 55 2191 55 2191 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 55 1781 55 1781 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 163 686 163 686 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 2432 1807 2432 1807 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 2043 1462 2043 1462 2 FreeSans 626 0 0 0 vsf
+flabel metal1 s 1903 374 1903 374 2 FreeSans 626 0 0 0 nOFF
+flabel metal1 s 271 394 271 394 2 FreeSans 626 0 0 0 pixRst
+flabel metal1 s 442 365 442 365 2 FreeSans 626 0 0 0 rowReadON
+flabel metal1 s 597 365 597 365 2 FreeSans 626 0 0 0 rowReadOFF
+flabel metal1 s 512 256 512 256 2 FreeSans 626 0 0 0 readLine
+flabel metal1 s 2469 1973 2469 1973 2 FreeSans 626 0 0 0 PrBp
+flabel metal1 s 2407 1462 2407 1462 2 FreeSans 626 0 0 0 VddA18
+flabel metal1 s 2225 2300 2225 2300 2 FreeSans 626 0 0 0 vd
+flabel metal1 s 2285 2235 2285 2235 2 FreeSans 626 0 0 0 nRst
+flabel metal1 s 2390 2300 2390 2300 2 FreeSans 626 0 0 0 vdiff
+flabel metal1 s 2315 2021 2315 2021 2 FreeSans 626 0 0 0 VddA18
+flabel metal1 s 2218 1935 2218 1935 2 FreeSans 626 0 0 0 vpr
+flabel metal1 s 808 238 808 238 2 FreeSans 626 0 0 0 GndD
+flabel metal1 s 881 158 881 158 2 FreeSans 626 0 0 0 GndA
+flabel metal1 s 1180 2095 1180 2095 2 FreeSans 626 180 0 0 vpd
+flabel metal1 s 1255 1204 1255 1204 2 FreeSans 626 0 0 0 vpd
 << properties >>
 string FIXED_BBOX 2089 145 2102 146
 << end >>

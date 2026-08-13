@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785260014
+timestamp 1786572700
 << pdiff >>
 rect 845 2401 879 2601
 rect 1185 2401 1219 2601
@@ -40,78 +40,78 @@ rect 156 -2058 222 -1992
 rect 4578 -2058 4644 -1993
 rect 4704 -2057 4770 -1857
 use col_periphery  col_periphery_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 0 0 1 29
 box 0 -2648 2400 21902
 use col_periphery  col_periphery_1
-timestamp 1785260014
+timestamp 1786572700
 transform -1 0 4800 0 1 29
 box 0 -2648 2400 21902
 use M2M3_MAG_784910779148  M2M3_MAG_784910779148_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 37 0 1 5829
 box -37 -77 37 77
 use M2M3_MAG_784910779148  M2M3_MAG_784910779148_1
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 37 0 1 4123
 box -37 -77 37 77
 use M2M3_MAG_784910779148  M2M3_MAG_784910779148_2
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 37 0 1 3079
 box -37 -77 37 77
 use M2M3_MAG_784910779148  M2M3_MAG_784910779148_3
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 37 0 1 1813
 box -37 -77 37 77
 use M2M3_MAG_784910779149  M2M3_MAG_784910779149_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 37 0 1 3579
 box -37 -277 37 277
 use M3M4_MAG_784910779146  M3M4_MAG_784910779146_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 190 0 1 7780
 box -33 -78 33 78
 use M3M4_MAG_784910779146  M3M4_MAG_784910779146_1
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 4611 0 1 7780
 box -33 -78 33 78
 use M3M4_MAG_784910779147  M3M4_MAG_784910779147_0
-timestamp 1785260014
+timestamp 1786572700
 transform 0 -1 789 1 0 7804
 box -78 -73 78 73
 use M3M4_MAG_784910779147  M3M4_MAG_784910779147_1
-timestamp 1785260014
+timestamp 1786572700
 transform 0 -1 4013 1 0 7804
 box -78 -73 78 73
 << labels >>
-flabel metal1 s 360 7406 2052 7894 0 FreeSans 500 0 0 0 GND
-port 13 nsew
-flabel metal2 s 4740 3279 4800 3879 0 FreeSans 500 0 0 0 VTHRESH
-port 1 nsew
-flabel metal2 s 0 2979 60 3179 0 FreeSans 500 0 0 0 VDD
-port 2 nsew
-flabel metal2 s 0 4023 60 4223 0 FreeSans 500 0 0 0 DETECT
-port 3 nsew
-flabel metal2 s 0 5729 60 5929 0 FreeSans 500 0 0 0 nDETECT
-port 4 nsew
-flabel metal2 s 0 3279 60 3879 0 FreeSans 500 0 0 0 VTHRESH
-port 1 nsew
-flabel metal2 s 0 1711 60 1913 0 FreeSans 500 0 0 0 NCHARGE
-port 5 nsew
-flabel metal3 s 156 -2058 222 -1992 0 FreeSans 500 0 0 0 pixRst0
-port 7 nsew
-flabel metal3 s 4578 -2058 4644 -1993 0 FreeSans 500 0 0 0 pixRst1
-port 8 nsew
-flabel metal3 s 156 7792 222 7858 0 FreeSans 500 0 0 0 pixRst0
-port 7 nsew
-flabel metal3 s 4578 7798 4644 7858 0 FreeSans 500 0 0 0 pixRst1
-port 8 nsew
-flabel metal3 s 30 -2058 96 -1858 0 FreeSans 500 180 0 0 COL_LINE0
-port 9 nsew
-flabel metal3 s 4704 -2057 4770 -1857 0 FreeSans 500 0 0 0 COL_LINE1
-port 10 nsew
-flabel metal3 s 711 7822 865 7882 0 FreeSans 500 180 0 0 voutn0
-port 11 nsew
-flabel metal3 s 3935 7822 4089 7882 0 FreeSans 500 180 0 0 voutn1
+flabel metal1 s 360 7406 2052 7894 0 FreeSans 626 0 0 0 GND
 port 12 nsew
+flabel metal2 s 0 3279 60 3879 0 FreeSans 626 0 0 0 VTHRESH
+port 1 nsew
+flabel metal2 s 4740 3279 4800 3879 0 FreeSans 626 0 0 0 VTHRESH
+port 1 nsew
+flabel metal2 s 0 2979 60 3179 0 FreeSans 626 0 0 0 VDD
+port 2 nsew
+flabel metal2 s 0 4023 60 4223 0 FreeSans 626 0 0 0 DETECT
+port 3 nsew
+flabel metal2 s 0 5729 60 5929 0 FreeSans 626 0 0 0 nDETECT
+port 4 nsew
+flabel metal2 s 0 1711 60 1913 0 FreeSans 626 0 0 0 NCHARGE
+port 5 nsew
+flabel metal3 s 156 7792 222 7858 0 FreeSans 626 0 0 0 pixRst0
+port 6 nsew
+flabel metal3 s 156 -2058 222 -1992 0 FreeSans 626 0 0 0 pixRst0
+port 6 nsew
+flabel metal3 s 4578 7798 4644 7858 0 FreeSans 626 0 0 0 pixRst1
+port 7 nsew
+flabel metal3 s 4578 -2058 4644 -1993 0 FreeSans 626 0 0 0 pixRst1
+port 7 nsew
+flabel metal3 s 30 -2058 96 -1858 0 FreeSans 626 180 0 0 COL_LINE0
+port 8 nsew
+flabel metal3 s 4704 -2057 4770 -1857 0 FreeSans 626 0 0 0 COL_LINE1
+port 9 nsew
+flabel metal3 s 711 7822 865 7882 0 FreeSans 626 180 0 0 voutn0
+port 10 nsew
+flabel metal3 s 3935 7822 4089 7882 0 FreeSans 626 180 0 0 voutn1
+port 11 nsew
 << end >>
