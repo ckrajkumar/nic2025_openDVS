@@ -6,6 +6,13 @@ ckt:cell-map -l
 ckt:map
 ckt:cell-save "async_readout_cells.act"
 load-scm "phydb.scm"
-phydb:create 1.8 1 "out.lef"
+
+# Self-draw everything (real-sky130-mapped cells included - the hybrid
+# swap happens afterward, outside interact: build_hybrid_lef.py replaces
+# the self-drawn macros for real-mapped cells with SkyWater's actual LEF,
+# then Dali places the result. See HANDOFF.md's hybrid-placement section.
+act:layout:create
+act:layout:lef "custom.lef" "custom.cell"
+act:layout:def "seed.def" #t 3.0 1
 act:layout:rect
 quit

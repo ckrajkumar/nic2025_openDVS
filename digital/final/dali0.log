@@ -1,3 +1,633 @@
-[2026-08-12 15:59:05.412185] [0x00000001f62b9d80] [fatal] [0;31mFATAL ERROR:
-    Cannot set target density smaller than average white space utility!
-/Users/kamerongano/actflow/Dali/dali/placer/placer.cc : 99 : SetPlacementDensity[0m
+[2026-08-14 15:46:11.398595] [0x00000001f62b9d80] [info] Today is: Fri Aug 14 15:46:11 2026
+
+[2026-08-14 15:46:11.399770] [0x00000001f62b9d80] [info] Command:
+[2026-08-14 15:46:11.399775] [0x00000001f62b9d80] [info] dali -lef output.lef -def seed.def -cell custom.cell -o placed -d 0.7 
+
+[2026-08-14 15:46:11.399797] [0x00000001f62b9d80] [info] ------------------------------------------------------------
+[2026-08-14 15:46:11.399801] [0x00000001f62b9d80] [info] Load information from PhyDB
+[2026-08-14 15:46:11.399808] [0x00000001f62b9d80] [info]   placement grid not set in PhyDB
+[2026-08-14 15:46:11.399812] [0x00000001f62b9d80] [info]   checking sites
+[2026-08-14 15:46:11.399814] [0x00000001f62b9d80] [info]     width : 0.6um
+[2026-08-14 15:46:11.399821] [0x00000001f62b9d80] [info]     height: 0.3um
+[2026-08-14 15:46:11.399909] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.399918] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.399926] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.399931] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.399950] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+    width: 2.76 um
+    grid value x: 0.6 um
+    residual: 0.24
+    adjusted up to: 5 * 0.6 um
+[2026-08-14 15:46:11.399956] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.399963] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.399968] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.399975] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.399979] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.399986] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+    width: 2.76 um
+    grid value x: 0.6 um
+    residual: 0.24
+    adjusted up to: 5 * 0.6 um
+[2026-08-14 15:46:11.399999] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400007] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.400055] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400064] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400069] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400077] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400081] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400088] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400092] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400099] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.400103] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400110] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400114] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400124] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400129] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400135] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400139] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400168] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400174] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400181] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400185] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400195] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+    width: 5.52 um
+    grid value x: 0.6 um
+    residual: 0.12
+    adjusted up to: 10 * 0.6 um
+[2026-08-14 15:46:11.400200] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400210] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400215] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400222] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400226] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400234] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
+    width: 1.84 um
+    grid value x: 0.6 um
+    residual: 0.04
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400238] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400245] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
+    width: 3.68 um
+    grid value x: 0.6 um
+    residual: 0.08
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400249] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400256] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand4_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400261] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand4_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400291] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_1
+    width: 1.38 um
+    grid value x: 0.6 um
+    residual: 0.18
+    adjusted up to: 3 * 0.6 um
+[2026-08-14 15:46:11.400296] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400303] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400307] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400314] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400319] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400326] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
+    width: 1.84 um
+    grid value x: 0.6 um
+    residual: 0.04
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400330] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400339] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+    width: 3.68 um
+    grid value x: 0.6 um
+    residual: 0.08
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400344] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400351] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400356] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400363] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_2
+    width: 4.6 um
+    grid value x: 0.6 um
+    residual: 0.2
+    adjusted up to: 8 * 0.6 um
+[2026-08-14 15:46:11.400368] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400375] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
+    width: 7.82 um
+    grid value x: 0.6 um
+    residual: 0.02
+    adjusted up to: 14 * 0.6 um
+[2026-08-14 15:46:11.400399] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400411] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_0
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400416] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_0
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400423] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400427] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400436] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400441] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400448] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.400453] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400464] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+    width: 2.3 um
+    grid value x: 0.6 um
+    residual: 0.1
+    adjusted up to: 4 * 0.6 um
+[2026-08-14 15:46:11.400469] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400476] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+    width: 4.14 um
+    grid value x: 0.6 um
+    residual: 0.06
+    adjusted up to: 7 * 0.6 um
+[2026-08-14 15:46:11.400480] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400487] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
+    width: 2.76 um
+    grid value x: 0.6 um
+    residual: 0.24
+    adjusted up to: 5 * 0.6 um
+[2026-08-14 15:46:11.400492] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400540] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.400546] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400553] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+    width: 5.98 um
+    grid value x: 0.6 um
+    residual: 0.02
+    adjusted up to: 10 * 0.6 um
+[2026-08-14 15:46:11.400557] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400567] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+    width: 10.12 um
+    grid value x: 0.6 um
+    residual: 0.08
+    adjusted up to: 17 * 0.6 um
+[2026-08-14 15:46:11.400572] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400578] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+    width: 8.28 um
+    grid value x: 0.6 um
+    residual: 0.12
+    adjusted up to: 14 * 0.6 um
+[2026-08-14 15:46:11.400583] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400590] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
+    width: 8.74 um
+    grid value x: 0.6 um
+    residual: 0.26
+    adjusted up to: 15 * 0.6 um
+[2026-08-14 15:46:11.400594] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400601] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
+    width: 3.22 um
+    grid value x: 0.6 um
+    residual: 0.22
+    adjusted up to: 6 * 0.6 um
+[2026-08-14 15:46:11.400605] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400615] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+    width: 5.98 um
+    grid value x: 0.6 um
+    residual: 0.02
+    adjusted up to: 10 * 0.6 um
+[2026-08-14 15:46:11.400619] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400626] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
+    width: 10.12 um
+    grid value x: 0.6 um
+    residual: 0.08
+    adjusted up to: 17 * 0.6 um
+[2026-08-14 15:46:11.400631] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400657] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+    width: 8.74 um
+    grid value x: 0.6 um
+    residual: 0.26
+    adjusted up to: 15 * 0.6 um
+[2026-08-14 15:46:11.400663] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.400670] [0x00000001f62b9d80] [warning] BlockType width is not integer multiple of the grid value along X: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+    width: 9.2 um
+    grid value x: 0.6 um
+    residual: 0.2
+    adjusted up to: 16 * 0.6 um
+[2026-08-14 15:46:11.400674] [0x00000001f62b9d80] [warning] BlockType height is not integer multiple of the grid value along Y: _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+    height: 2.72 um
+    grid value y: 0.3 um
+    residual: 0.02
+    adjusted up to: 10 * 0.3 um
+[2026-08-14 15:46:11.412089] [0x00000001f62b9d80] [info] No P-well layer info provided, creating fake info
+[2026-08-14 15:46:11.412120] [0x00000001f62b9d80] [info] (wall time: 0.012321s, cpu time: 0.012202)
+[2026-08-14 15:46:11.412123] [0x00000001f62b9d80] [info] ------------------------------------------------------------
+[2026-08-14 15:46:11.412125] [0x00000001f62b9d80] [info] Circuit brief summary:
+[2026-08-14 15:46:11.412127] [0x00000001f62b9d80] [info]   movable blocks: 12868
+[2026-08-14 15:46:11.412129] [0x00000001f62b9d80] [info]   fixed blocks:   0
+[2026-08-14 15:46:11.412131] [0x00000001f62b9d80] [info]   blocks:         12868
+[2026-08-14 15:46:11.412132] [0x00000001f62b9d80] [info]   iopins:         76
+[2026-08-14 15:46:11.412134] [0x00000001f62b9d80] [info]   nets:           12571
+[2026-08-14 15:46:11.412136] [0x00000001f62b9d80] [info]   grid size x/y:  0.6/0.3um
+[2026-08-14 15:46:11.412138] [0x00000001f62b9d80] [info]   total movable blk area: 611260
+[2026-08-14 15:46:11.412139] [0x00000001f62b9d80] [info]   total white space     : 2032128
+[2026-08-14 15:46:11.412141] [0x00000001f62b9d80] [info]   total block area      : 611260
+[2026-08-14 15:46:11.412142] [0x00000001f62b9d80] [info]   total space: 2032128
+[2026-08-14 15:46:11.412144] [0x00000001f62b9d80] [info]     left:   10
+[2026-08-14 15:46:11.412145] [0x00000001f62b9d80] [info]     right:  1018
+[2026-08-14 15:46:11.412146] [0x00000001f62b9d80] [info]     bottom: 18
+[2026-08-14 15:46:11.412148] [0x00000001f62b9d80] [info]     top:    2034
+[2026-08-14 15:46:11.412149] [0x00000001f62b9d80] [info]   average movable width/height: 4.57251/10.0753um
+[2026-08-14 15:46:11.412151] [0x00000001f62b9d80] [info]   white space utility: 0.300798
+[2026-08-14 15:46:11.412153] [0x00000001f62b9d80] [info]   current weighted HPWL: 26920.5um
+[2026-08-14 15:46:11.412949] [0x00000001f62b9d80] [info] ------------------------------------------------------------
+[2026-08-14 15:46:11.412953] [0x00000001f62b9d80] [info] Start global placement
+[2026-08-14 15:46:11.412956] [0x00000001f62b9d80] [info]   target density: 0.7
+[2026-08-14 15:46:11.412973] [0x00000001f62b9d80] [info]   Block location initialization:
+    HPWL before, 26920.5
+[2026-08-14 15:46:11.413431] [0x00000001f62b9d80] [info]     HPWL after, 5.52255e+06
+[2026-08-14 15:46:11.694806] [0x00000001f62b9d80] [info]   iter-0  : 2.2747e+04  5.5471e+05
+[2026-08-14 15:46:12.289161] [0x00000001f62b9d80] [info]   iter-1  : 2.8226e+04  3.8616e+05
+[2026-08-14 15:46:12.515759] [0x00000001f62b9d80] [info]   iter-2  : 3.1944e+04  3.4106e+05
+[2026-08-14 15:46:12.766813] [0x00000001f62b9d80] [info]   iter-3  : 3.7610e+04  2.8634e+05
+[2026-08-14 15:46:13.072538] [0x00000001f62b9d80] [info]   iter-4  : 4.4680e+04  2.6709e+05
+[2026-08-14 15:46:13.377621] [0x00000001f62b9d80] [info]   iter-5  : 5.3656e+04  2.5290e+05
+[2026-08-14 15:46:13.540633] [0x00000001f62b9d80] [info]   iter-6  : 6.0078e+04  2.2567e+05
+[2026-08-14 15:46:13.717451] [0x00000001f62b9d80] [info]   iter-7  : 6.5528e+04  1.9999e+05
+[2026-08-14 15:46:13.879250] [0x00000001f62b9d80] [info]   iter-8  : 6.9213e+04  1.8533e+05
+[2026-08-14 15:46:13.967006] [0x00000001f62b9d80] [info]   iter-9  : 7.3123e+04  1.7858e+05
+[2026-08-14 15:46:14.134459] [0x00000001f62b9d80] [info]   iter-10 : 7.9589e+04  1.6301e+05
+[2026-08-14 15:46:14.255457] [0x00000001f62b9d80] [info]   iter-11 : 8.5717e+04  1.5723e+05
+[2026-08-14 15:46:14.385456] [0x00000001f62b9d80] [info]   iter-12 : 9.2953e+04  1.5101e+05
+[2026-08-14 15:46:14.467428] [0x00000001f62b9d80] [info]   iter-13 : 9.6572e+04  1.4288e+05
+[2026-08-14 15:46:14.582433] [0x00000001f62b9d80] [info]   iter-14 : 9.9547e+04  1.3799e+05
+[2026-08-14 15:46:14.658830] [0x00000001f62b9d80] [info]   iter-15 : 1.0274e+05  1.3730e+05
+[2026-08-14 15:46:14.721721] [0x00000001f62b9d80] [info]   iter-16 : 1.0588e+05  1.3162e+05
+[2026-08-14 15:46:14.789490] [0x00000001f62b9d80] [info]   iter-17 : 1.0787e+05  1.3108e+05
+[2026-08-14 15:46:14.851970] [0x00000001f62b9d80] [info]   iter-18 : 1.0943e+05  1.2868e+05
+[2026-08-14 15:46:14.941687] [0x00000001f62b9d80] [info]   iter-19 : 1.1067e+05  1.2800e+05
+[2026-08-14 15:46:15.004772] [0x00000001f62b9d80] [info]   iter-20 : 1.1150e+05  1.2659e+05
+[2026-08-14 15:46:15.059404] [0x00000001f62b9d80] [info]   iter-21 : 1.1226e+05  1.2644e+05
+[2026-08-14 15:46:15.119212] [0x00000001f62b9d80] [info]   iter-22 : 1.1325e+05  1.2568e+05
+[2026-08-14 15:46:15.146415] [0x00000001f62b9d80] [info]   iter-23 : 1.1364e+05  1.2570e+05
+[2026-08-14 15:46:15.207710] [0x00000001f62b9d80] [info]   iter-24 : 1.1422e+05  1.2417e+05
+[2026-08-14 15:46:15.207746] [0x00000001f62b9d80] [info]   current weighted HPWL: 124174um
+[2026-08-14 15:46:15.208020] [0x00000001f62b9d80] [info] [0;36mGlobal placement completed[0m
+[2026-08-14 15:46:15.208023] [0x00000001f62b9d80] [info] (wall time: 3.795085s, cpu time: 1.709569)
+[2026-08-14 15:46:15.208027] [0x00000001f62b9d80] [info] (peak memory: 41MB,  current memory: 41MB)
+[2026-08-14 15:46:15.208083] [0x00000001f62b9d80] [info] ------------------------------------------------------------
+[2026-08-14 15:46:15.208086] [0x00000001f62b9d80] [info] Start standard cluster well legalization
+[2026-08-14 15:46:15.208102] [0x00000001f62b9d80] [info]   Well max plug distance: 75um, 125 
+[2026-08-14 15:46:15.208104] [0x00000001f62b9d80] [info]   GridValueX: 0.6 um
+[2026-08-14 15:46:15.208106] [0x00000001f62b9d80] [info]   Well spacing: 1.275um, 3
+[2026-08-14 15:46:15.208108] [0x00000001f62b9d80] [info]   Well tap cell width: 2
+[2026-08-14 15:46:15.208251] [0x00000001f62b9d80] [info] Max movable cell width: 22
+[2026-08-14 15:46:15.208253] [0x00000001f62b9d80] [info] Using default gridded row width: 2*max_unplug_length_
+[2026-08-14 15:46:15.208255] [0x00000001f62b9d80] [info]   Total number of columns: 4
+[2026-08-14 15:46:15.208256] [0x00000001f62b9d80] [info]   Gridded row width: 150um, 250
+[2026-08-14 15:46:15.208529] [0x00000001f62b9d80] [info] Maximum possible number of gridded rows in a column: 223
+[2026-08-14 15:46:15.209915] [0x00000001f62b9d80] [info] Form block clustering
+[2026-08-14 15:46:15.213877] [0x00000001f62b9d80] [info]   current weighted HPWL: 158889um
+[2026-08-14 15:46:15.214175] [0x00000001f62b9d80] [info] Flip cluster orientation
+[2026-08-14 15:46:15.214190] [0x00000001f62b9d80] [info]   current weighted HPWL: 161914um
+[2026-08-14 15:46:15.214507] [0x00000001f62b9d80] [info] Perform local reordering
+[2026-08-14 15:46:15.214508] [0x00000001f62b9d80] [info] reorder iteration: 0
+[2026-08-14 15:46:15.302625] [0x00000001f62b9d80] [info]   current weighted HPWL: 162057um
+[2026-08-14 15:46:15.302964] [0x00000001f62b9d80] [info] reorder iteration: 1
+[2026-08-14 15:46:15.362316] [0x00000001f62b9d80] [info]   current weighted HPWL: 161165um
+[2026-08-14 15:46:15.362667] [0x00000001f62b9d80] [info] reorder iteration: 2
+[2026-08-14 15:46:15.442788] [0x00000001f62b9d80] [info]   current weighted HPWL: 161640um
+[2026-08-14 15:46:15.443161] [0x00000001f62b9d80] [info] reorder iteration: 3
+[2026-08-14 15:46:15.542517] [0x00000001f62b9d80] [info]   current weighted HPWL: 162126um
+[2026-08-14 15:46:15.543170] [0x00000001f62b9d80] [info] reorder iteration: 4
+[2026-08-14 15:46:15.614503] [0x00000001f62b9d80] [info]   current weighted HPWL: 162613um
+[2026-08-14 15:46:15.614861] [0x00000001f62b9d80] [info] reorder iteration: 5
+[2026-08-14 15:46:15.700132] [0x00000001f62b9d80] [info]   current weighted HPWL: 163129um
+[2026-08-14 15:46:15.700475] [0x00000001f62b9d80] [info] Insert well tap cells
+[2026-08-14 15:46:15.700742] [0x00000001f62b9d80] [info] Insertion complete: 754 well tap cell created
+[2026-08-14 15:46:15.700745] [0x00000001f62b9d80] [info] Skip creating end cap cells
+[2026-08-14 15:46:15.700748] [0x00000001f62b9d80] [info]   current weighted HPWL: 164100um
+[2026-08-14 15:46:15.701048] [0x00000001f62b9d80] [info] [0;36mStandard Cluster Well Legalization completed[0m
+[2026-08-14 15:46:15.701056] [0x00000001f62b9d80] [info] (wall time: 0.492969s, cpu time: 0.215691)
+[2026-08-14 15:46:15.701060] [0x00000001f62b9d80] [info] (peak memory: 42MB,  current memory: 42MB)
+[2026-08-14 15:46:15.701067] [0x00000001f62b9d80] [info] Writing PP and NP rect file: dali_outppnp.rect
+[2026-08-14 15:46:15.702048] [0x00000001f62b9d80] [info] Writing N-well rect file: dali_outwell.rect
+[2026-08-14 15:46:15.702253] [0x00000001f62b9d80] [info] Writing cluster rect file: dali_out_router.cluster
+[2026-08-14 15:46:15.702452] [0x00000001f62b9d80] [info] ------------------------------------------------------------
+[2026-08-14 15:46:15.702455] [0x00000001f62b9d80] [info] Start I/O Placement
+[2026-08-14 15:46:15.702479] [0x00000001f62b9d80] [info] [0;36mI/O Placement complete![0m
+[2026-08-14 15:46:15.702485] [0x00000001f62b9d80] [info] Writing DEF file: placed.def
+[2026-08-14 15:46:15.723504] [0x00000001f62b9d80] [info] Writing DEF file: placed_io.def
+[2026-08-14 15:46:15.742376] [0x00000001f62b9d80] [info] Writing DEF file: placed_filling.def
+[2026-08-14 15:46:15.750332] [0x00000001f62b9d80] [info] Writing DEF file: placed_comp.def
+[2026-08-14 15:46:15.838679] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.838703] [0x00000001f62b9d80] [info]                                          Net histogram
+[2026-08-14 15:46:15.838706] [0x00000001f62b9d80] [info] =================================================================================================
+[2026-08-14 15:46:15.838708] [0x00000001f62b9d80] [info]   Net         Count     Percent/%      sum HPWL        ave HPWL        min HPWL        max HPWL
+[2026-08-14 15:46:15.838712] [0x00000001f62b9d80] [info]    2          10076       82.2         1.47e+05        1.46e+01        1.79e+00        3.34e+02
+[2026-08-14 15:46:15.838714] [0x00000001f62b9d80] [info]    3           1503       12.3         5.88e+04        3.91e+01        6.65e+00        3.55e+02
+[2026-08-14 15:46:15.838717] [0x00000001f62b9d80] [info]    4-19         648        5.3         5.56e+04        8.58e+01        7.64e+00        4.28e+02
+[2026-08-14 15:46:15.838719] [0x00000001f62b9d80] [info]   20-39           3        0.0         9.09e+02        3.03e+02        2.52e+02        3.46e+02
+[2026-08-14 15:46:15.838721] [0x00000001f62b9d80] [info]   40-79          34        0.3         1.04e+04        3.05e+02        2.14e+02        4.92e+02
+[2026-08-14 15:46:15.838723] [0x00000001f62b9d80] [info]   80-159          0        0.0         0.00e+00        0.00e+00        0.00e+00        0.00e+00
+[2026-08-14 15:46:15.838726] [0x00000001f62b9d80] [info]  160+             1        0.0         1.09e+03        1.09e+03        1.09e+03        1.09e+03
+[2026-08-14 15:46:15.838727] [0x00000001f62b9d80] [info] =================================================================================================
+[2026-08-14 15:46:15.838728] [0x00000001f62b9d80] [info]  * HPWL unit, grid value in X: 0.6 um
+[2026-08-14 15:46:15.838732] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.839098] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.839100] [0x00000001f62b9d80] [info]                   HPWL histogram (linear scale bins)
+[2026-08-14 15:46:15.839122] [0x00000001f62b9d80] [info] ===================================================================
+[2026-08-14 15:46:15.839124] [0x00000001f62b9d80] [info]    HPWL interval         Count
+[2026-08-14 15:46:15.839127] [0x00000001f62b9d80] [info]   [0.0e+00, 1.1e+02)    12315  *************************************************
+[2026-08-14 15:46:15.839129] [0x00000001f62b9d80] [info]   [1.1e+02, 2.2e+02)      139  *
+[2026-08-14 15:46:15.839131] [0x00000001f62b9d80] [info]   [2.2e+02, 3.3e+02)       88  *
+[2026-08-14 15:46:15.839132] [0x00000001f62b9d80] [info]   [3.3e+02, 4.4e+02)       24  *
+[2026-08-14 15:46:15.839134] [0x00000001f62b9d80] [info]   [4.4e+02, 5.5e+02)        4  *
+[2026-08-14 15:46:15.839135] [0x00000001f62b9d80] [info]   [5.5e+02, 6.6e+02)        0  
+[2026-08-14 15:46:15.839137] [0x00000001f62b9d80] [info]   [6.6e+02, 7.7e+02)        0  
+[2026-08-14 15:46:15.839138] [0x00000001f62b9d80] [info]   [7.7e+02, 8.8e+02)        0  
+[2026-08-14 15:46:15.839139] [0x00000001f62b9d80] [info]   [8.8e+02, 9.9e+02)        0  
+[2026-08-14 15:46:15.839141] [0x00000001f62b9d80] [info]   [9.9e+02, 1.1e+03)        1  *
+[2026-08-14 15:46:15.839142] [0x00000001f62b9d80] [info] ===================================================================
+[2026-08-14 15:46:15.839143] [0x00000001f62b9d80] [info]  * HPWL unit, grid value in X: 0.6 um
+[2026-08-14 15:46:15.839145] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.839511] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.839513] [0x00000001f62b9d80] [info]                   HPWL histogram (log scale bins)
+[2026-08-14 15:46:15.839514] [0x00000001f62b9d80] [info] ===================================================================
+[2026-08-14 15:46:15.839515] [0x00000001f62b9d80] [info]    HPWL interval         Count
+[2026-08-14 15:46:15.839517] [0x00000001f62b9d80] [info]   [1.8e+00, 3.4e+00)      117  
+[2026-08-14 15:46:15.839519] [0x00000001f62b9d80] [info]   [3.4e+00, 6.5e+00)      635  **
+[2026-08-14 15:46:15.839524] [0x00000001f62b9d80] [info]   [6.5e+00, 1.2e+01)     6043  ************************
+[2026-08-14 15:46:15.839526] [0x00000001f62b9d80] [info]   [1.2e+01, 2.3e+01)     2451  *********
+[2026-08-14 15:46:15.839528] [0x00000001f62b9d80] [info]   [2.3e+01, 4.4e+01)     1789  *******
+[2026-08-14 15:46:15.839530] [0x00000001f62b9d80] [info]   [4.4e+01, 8.4e+01)      823  ***
+[2026-08-14 15:46:15.839531] [0x00000001f62b9d80] [info]   [8.4e+01, 1.6e+02)      247  
+[2026-08-14 15:46:15.839533] [0x00000001f62b9d80] [info]   [1.6e+02, 3.0e+02)      121  
+[2026-08-14 15:46:15.839534] [0x00000001f62b9d80] [info]   [3.0e+02, 5.8e+02)       38  
+[2026-08-14 15:46:15.839536] [0x00000001f62b9d80] [info]   [5.8e+02, 1.1e+03)        1  
+[2026-08-14 15:46:15.839537] [0x00000001f62b9d80] [info] ===================================================================
+[2026-08-14 15:46:15.839538] [0x00000001f62b9d80] [info]  * HPWL unit, grid value in X: 0.6 um
+[2026-08-14 15:46:15.839540] [0x00000001f62b9d80] [info] 
+[2026-08-14 15:46:15.840415] [0x00000001f62b9d80] [info] Export Pplus/Nplus fillings to PhyDB
+[2026-08-14 15:46:15.840442] [0x00000001f62b9d80] [info] Export N wells to PhyDB
+[2026-08-14 15:46:15.934986] [0x00000001f62b9d80] [info] ****End of placement (wall time: 4.58901s, cpu time: 2.09081s)****

@@ -14,4 +14,8 @@ export LD_LIBRARY_PATH=$HOME/git/klayout/build-release:$HOME/anaconda3/lib/:$LD_
 export PATH=$HOME/git/klayout/build-release:$PATH
 export KLAYOUT_PYTHONPATH=$HOME/anaconda3/lib/python3.12/site-packages/
 export PATH=/usr/local/XyceNF_7.10/bin:$PATH
+export PATH=/Applications/KLayout/klayout.app/Contents/MacOS:$PATH
+# ~/.local/bin holds `ciel` (pinned to the miniconda python3 it was pip-installed
+# under - not whatever python3 happens to be first on PATH otherwise)
+export PATH=$HOME/.local/bin:$PATH
 

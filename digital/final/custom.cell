@@ -30,14 +30,14 @@ MACRO _0_0cell_0_0ginvx8
     END VERSION
 END _0_0cell_0_0ginvx8
 
-MACRO _0_0std_0_0cells_0_0INVX8
-    VERSION _0_0std_0_0cells_0_0INVX8
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.500000 3.300000 3.075000 ;
+        RECT 0.375000 1.500000 1.725000 3.075000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0INVX8
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
 
 MACRO _0_0std_0_0cells_0_0TBUF1
     VERSION _0_0std_0_0cells_0_0TBUF1
@@ -147,59 +147,59 @@ MACRO _0_0cell_0_0ginvx5
     END VERSION
 END _0_0cell_0_0ginvx5
 
-MACRO _0_0std_0_0cells_0_0NAND2X1
-    VERSION _0_0std_0_0cells_0_0NAND2X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 2.250000 2.550000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0NAND2X1
-
-MACRO _0_0std_0_0cells_0_0XOR2X1
-    VERSION _0_0std_0_0cells_0_0XOR2X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
         UNPLUG
         LAYER nwell ;
         RECT 0.375000 1.500000 3.825000 3.075000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0XOR2X1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
 
-MACRO _0_0std_0_0cells_0_0NOR2X1
-    VERSION _0_0std_0_0cells_0_0NOR2X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.200000 2.250000 2.775000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0NOR2X1
-
-MACRO _0_0std_0_0cells_0_0XNOR2X1
-    VERSION _0_0std_0_0cells_0_0XNOR2X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 3.975000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0XNOR2X1
-
-MACRO _0_0std_0_0cells_0_0NAND3X1
-    VERSION _0_0std_0_0cells_0_0NAND3X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
         UNPLUG
         LAYER nwell ;
         RECT 0.375000 1.800000 2.775000 2.850000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0NAND3X1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
 
-MACRO _0_0std_0_0cells_0_0INVX4
-    VERSION _0_0std_0_0cells_0_0INVX4
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.500000 2.250000 3.075000 ;
+        RECT 0.375000 1.500000 3.975000 3.075000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0INVX4
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.250000 2.550000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 3.975000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 3.000000 2.775000 4.575000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
 
 MACRO _0_0cell_0_0gcelem3x0
     VERSION _0_0cell_0_0gcelem3x0
@@ -300,6 +300,15 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
 
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.200000 2.250000 2.250000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+
 MACRO _0_0cell_0_0ginvx3
     VERSION _0_0cell_0_0ginvx3
         UNPLUG
@@ -399,15 +408,6 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
 
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
-    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 2.250000 2.550000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
-
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
     VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
         UNPLUG
@@ -417,86 +417,14 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
 
-MACRO _0_0std_0_0cells_0_0OAI21X1
-    VERSION _0_0std_0_0cells_0_0OAI21X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.500000 2.925000 3.075000 ;
+        RECT 0.375000 1.800000 3.300000 2.850000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0OAI21X1
-
-MACRO _0_0std_0_0cells_0_0OR2X2
-    VERSION _0_0std_0_0cells_0_0OR2X2
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 2.925000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0OR2X2
-
-MACRO _0_0std_0_0cells_0_0AOI21X1
-    VERSION _0_0std_0_0cells_0_0AOI21X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 2.775000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0AOI21X1
-
-MACRO _0_0std_0_0cells_0_0AND2X2
-    VERSION _0_0std_0_0cells_0_0AND2X2
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 2.925000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0AND2X2
-
-MACRO _0_0std_0_0cells_0_0AOI22X1
-    VERSION _0_0std_0_0cells_0_0AOI22X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 3.300000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0AOI22X1
-
-MACRO _0_0std_0_0cells_0_0MUX2X1
-    VERSION _0_0std_0_0cells_0_0MUX2X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 5.625000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0MUX2X1
-
-MACRO _0_0std_0_0cells_0_0OAI22X1
-    VERSION _0_0std_0_0cells_0_0OAI22X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.500000 3.300000 3.075000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0OAI22X1
-
-MACRO _0_0std_0_0cells_0_0NOR3X1
-    VERSION _0_0std_0_0cells_0_0NOR3X1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.200000 2.775000 3.375000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0NOR3X1
-
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
-    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
-        UNPLUG
-        LAYER nwell ;
-        RECT 0.375000 1.200000 2.250000 2.250000 ;
-        END
-    END VERSION
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
 
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
     VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
@@ -507,23 +435,176 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
 
-MACRO _0_0cell_0_0ginvx10
-    VERSION _0_0cell_0_0ginvx10
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.200000 1.725000 2.400000 ;
+        RECT 0.900000 2.100000 8.250000 4.800000 ;
         END
     END VERSION
-END _0_0cell_0_0ginvx10
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
 
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
-    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.500000 1.725000 3.075000 ;
+        RECT 0.375000 2.100000 2.925000 4.800000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.900000 1.500000 8.250000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 5.175000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.775000 2.550000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 7.425000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 3.825000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.775000 5.325000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 7.425000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.200000 3.300000 3.375000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.200000 2.775000 2.775000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 3.975000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 2.925000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.250000 4.200000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.925000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 5.325000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.200000 1.725000 2.250000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 2.250000 3.675000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 2.925000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
 
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
     VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
@@ -534,6 +615,51 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
 
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 3.600000 3.975000 8.550000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 3.450000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.500000 5.325000 3.075000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 3.825000 3.150000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 1.800000 3.450000 3.375000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
     VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
         UNPLUG
@@ -543,14 +669,32 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
     END VERSION
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
 
-MACRO _0_0std_0_0cells_0_0INVX2
-    VERSION _0_0std_0_0cells_0_0INVX2
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
         UNPLUG
         LAYER nwell ;
-        RECT 0.375000 1.500000 1.725000 3.075000 ;
+        RECT 0.375000 1.200000 3.825000 3.900000 ;
         END
     END VERSION
-END _0_0std_0_0cells_0_0INVX2
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 2.100000 1.725000 4.800000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
+    VERSION _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
+        UNPLUG
+        LAYER nwell ;
+        RECT 0.375000 3.600000 3.825000 8.550000 ;
+        END
+    END VERSION
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
 
 MACRO welltap_svt
    VERSION welltap_svt

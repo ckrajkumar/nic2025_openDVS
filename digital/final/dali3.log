@@ -1,3 +1,0 @@
-[2026-08-12 16:01:37.986068] [0x00000001f62b9d80] [fatal] [0;31mFATAL ERROR:
-    Cannot set target density smaller than average white space utility!
-/Users/kamerongano/actflow/Dali/dali/placer/placer.cc : 99 : SetPlacementDensity[0m

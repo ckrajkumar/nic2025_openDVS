@@ -312,11 +312,11 @@ MACRO _0_0cell_0_0ginvx8
     END GND
 END _0_0cell_0_0ginvx8
 
-MACRO _0_0std_0_0cells_0_0INVX8
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0INVX8 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 3.600000 BY 3.600000 ;
+    SIZE 2.400000 BY 3.600000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
     PIN A
@@ -334,27 +334,27 @@ MACRO _0_0std_0_0cells_0_0INVX8
         LAYER li ;
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
-        ANTENNADIFFAREA 1.687500 ;
+        ANTENNADIFFAREA 0.703125 ;
     END Y
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        RECT 1.200000 3.000000 1.500000 3.300000 ;
         END
-        ANTENNADIFFAREA 1.265625 ;
+        ANTENNADIFFAREA 0.421875 ;
     END Vdd
     PIN GND
         DIRECTION INPUT ;
         USE GROUND ;
         PORT
         LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        RECT 1.800000 3.000000 2.100000 3.300000 ;
         END
-        ANTENNADIFFAREA 0.562500 ;
+        ANTENNADIFFAREA 0.281250 ;
     END GND
-END _0_0std_0_0cells_0_0INVX8
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
 
 MACRO _0_0std_0_0cells_0_0TBUF1
     CLASS CORE ;
@@ -972,61 +972,9 @@ MACRO _0_0cell_0_0ginvx5
     END
 END _0_0cell_0_0ginvx5
 
-MACRO _0_0std_0_0cells_0_0NAND2X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0NAND2X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.000000 BY 3.000000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 2.400000 0.900000 2.700000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 2.400000 1.500000 2.700000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.506250 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 2.400000 2.100000 2.700000 ;
-        END
-        ANTENNADIFFAREA 0.450000 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 2.400000 2.700000 2.700000 ;
-        END
-        ANTENNADIFFAREA 0.281250 ;
-    END GND
-END _0_0std_0_0cells_0_0NAND2X1
-
-MACRO _0_0std_0_0cells_0_0XOR2X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0XOR2X1 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
     SIZE 4.800000 BY 3.600000 ;
     SYMMETRY X Y ;
@@ -1047,7 +995,7 @@ MACRO _0_0std_0_0cells_0_0XOR2X1
         RECT 1.800000 3.000000 2.100000 3.300000 ;
         END
     END B
-    PIN Y
+    PIN X
         DIRECTION OUTPUT ;
         USE SIGNAL ;
         PORT
@@ -1055,7 +1003,7 @@ MACRO _0_0std_0_0cells_0_0XOR2X1
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
         ANTENNADIFFAREA 0.646875 ;
-    END Y
+    END X
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
@@ -1074,115 +1022,11 @@ MACRO _0_0std_0_0cells_0_0XOR2X1
         END
         ANTENNADIFFAREA 0.618750 ;
     END GND
-END _0_0std_0_0cells_0_0XOR2X1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_1
 
-MACRO _0_0std_0_0cells_0_0NOR2X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0NOR2X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.000000 BY 3.300000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 2.700000 0.900000 3.000000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 2.700000 1.500000 3.000000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.590625 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 2.700000 2.100000 3.000000 ;
-        END
-        ANTENNADIFFAREA 0.421875 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 2.700000 2.700000 3.000000 ;
-        END
-        ANTENNADIFFAREA 0.337500 ;
-    END GND
-END _0_0std_0_0cells_0_0NOR2X1
-
-MACRO _0_0std_0_0cells_0_0XNOR2X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0XNOR2X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 9.000000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.416250 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 5.400000 3.000000 5.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.787500 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 7.800000 3.000000 8.100000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.675000 ;
-    END GND
-END _0_0std_0_0cells_0_0XNOR2X1
-
-MACRO _0_0std_0_0cells_0_0NAND3X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0NAND3X1 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
     SIZE 3.600000 BY 3.300000 ;
     SYMMETRY X Y ;
@@ -1238,13 +1082,13 @@ MACRO _0_0std_0_0cells_0_0NAND3X1
         END
         ANTENNADIFFAREA 0.421875 ;
     END GND
-END _0_0std_0_0cells_0_0NAND3X1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_1
 
-MACRO _0_0std_0_0cells_0_0INVX4
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0INVX4 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 2.400000 BY 3.600000 ;
+    SIZE 9.000000 BY 3.600000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
     PIN A
@@ -1255,6 +1099,14 @@ MACRO _0_0std_0_0cells_0_0INVX4
         RECT 0.600000 3.000000 0.900000 3.300000 ;
         END
     END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        END
+    END B
     PIN Y
         DIRECTION OUTPUT ;
         USE SIGNAL ;
@@ -1262,14 +1114,198 @@ MACRO _0_0std_0_0cells_0_0INVX4
         LAYER li ;
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
-        ANTENNADIFFAREA 0.984375 ;
+        ANTENNADIFFAREA 0.416250 ;
     END Y
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        RECT 5.400000 3.000000 5.700000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.787500 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 3.000000 8.100000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.675000 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 3.000000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 2.400000 0.900000 2.700000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 2.400000 1.500000 2.700000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.506250 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 2.400000 2.100000 2.700000 ;
+        END
+        ANTENNADIFFAREA 0.450000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 2.400000 2.700000 2.700000 ;
+        END
+        ANTENNADIFFAREA 0.281250 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.200000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.800000 1.500000 5.100000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+    END C
+    PIN D
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.800000 2.700000 5.100000 ;
+        END
+    END D
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.406250 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.585000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.600000 4.800000 3.900000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.787500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 3.525000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.600000 BY 5.100000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.500000 0.900000 4.800000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.500000 1.500000 4.800000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.500000 2.100000 4.800000 ;
+        END
+    END C
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.687500 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.500000 2.700000 4.800000 ;
         END
         ANTENNADIFFAREA 0.843750 ;
     END Vdd
@@ -1278,11 +1314,15 @@ MACRO _0_0std_0_0cells_0_0INVX4
         USE GROUND ;
         PORT
         LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        RECT 3.000000 4.500000 3.300000 4.800000 ;
         END
-        ANTENNADIFFAREA 0.281250 ;
+        ANTENNADIFFAREA 0.843750 ;
     END GND
-END _0_0std_0_0cells_0_0INVX4
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.925000 3.225000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand3_2
 
 MACRO _0_0cell_0_0gcelem3x0
     CLASS CORE ;
@@ -1867,6 +1907,50 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
          RECT 0.600000 1.800000 2.325000 5.625000 ;
     END
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.400000 BY 2.700000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 2.100000 0.900000 2.400000 ;
+        END
+    END A
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 2.100000 1.500000 2.400000 ;
+        END
+        ANTENNADIFFAREA 0.225000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 2.100000 2.100000 2.400000 ;
+        END
+        ANTENNADIFFAREA 0.168750 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
 
 MACRO _0_0cell_0_0ginvx3
     CLASS CORE ;
@@ -2536,58 +2620,6 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
     END
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor4_4
 
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.000000 BY 3.000000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 2.400000 0.900000 2.700000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 2.400000 1.500000 2.700000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.506250 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 2.400000 2.100000 2.700000 ;
-        END
-        ANTENNADIFFAREA 0.450000 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 2.400000 2.700000 2.700000 ;
-        END
-        ANTENNADIFFAREA 0.281250 ;
-    END GND
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_1
-
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
     CLASS CORE ;
     FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0 0.000000 0.000000 ;
@@ -2640,11 +2672,11 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
     END GND
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_0
 
-MACRO _0_0std_0_0cells_0_0OAI21X1
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0OAI21X1 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 3.600000 BY 3.600000 ;
+    SIZE 3.600000 BY 3.300000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
     PIN A
@@ -2652,7 +2684,7 @@ MACRO _0_0std_0_0cells_0_0OAI21X1
         USE SIGNAL ;
         PORT
         LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        RECT 0.600000 2.700000 0.900000 3.000000 ;
         END
     END A
     PIN B
@@ -2660,7 +2692,7 @@ MACRO _0_0std_0_0cells_0_0OAI21X1
         USE SIGNAL ;
         PORT
         LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        RECT 1.200000 2.700000 1.500000 3.000000 ;
         END
     END B
     PIN C
@@ -2668,477 +2700,9 @@ MACRO _0_0std_0_0cells_0_0OAI21X1
         USE SIGNAL ;
         PORT
         LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        RECT 1.800000 2.700000 2.100000 3.000000 ;
         END
     END C
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.416250 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.646875 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.281250 ;
-    END GND
-END _0_0std_0_0cells_0_0OAI21X1
-
-MACRO _0_0std_0_0cells_0_0OR2X2
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0OR2X2 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.000000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.703125 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.590625 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.270000 ;
-    END GND
-END _0_0std_0_0cells_0_0OR2X2
-
-MACRO _0_0std_0_0cells_0_0AOI21X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0AOI21X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.600000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
-        END
-    END B
-    PIN C
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-    END C
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.646875 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.421875 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.450000 ;
-    END GND
-END _0_0std_0_0cells_0_0AOI21X1
-
-MACRO _0_0std_0_0cells_0_0AND2X2
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0AND2X2 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.000000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.703125 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.360000 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.393750 ;
-    END GND
-END _0_0std_0_0cells_0_0AND2X2
-
-MACRO _0_0std_0_0cells_0_0AOI22X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0AOI22X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 4.200000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
-        END
-    END B
-    PIN C
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-    END C
-    PIN D
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-    END D
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.703125 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.843750 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 3.600000 3.000000 3.900000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.281250 ;
-    END GND
-END _0_0std_0_0cells_0_0AOI22X1
-
-MACRO _0_0std_0_0cells_0_0MUX2X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0MUX2X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 6.000000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-    END B
-    PIN S
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-    END S
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 1.406250 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 4.200000 3.000000 4.500000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.759375 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 5.400000 3.000000 5.700000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.382500 ;
-    END GND
-END _0_0std_0_0cells_0_0MUX2X1
-
-MACRO _0_0std_0_0cells_0_0OAI22X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0OAI22X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 4.200000 BY 3.600000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
-        END
-    END B
-    PIN C
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
-        END
-    END C
-    PIN D
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.000000 2.700000 3.300000 ;
-        END
-    END D
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.703125 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.000000 3.300000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.843750 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 3.600000 3.000000 3.900000 3.300000 ;
-        END
-        ANTENNADIFFAREA 0.281250 ;
-    END GND
-END _0_0std_0_0cells_0_0OAI22X1
-
-MACRO _0_0std_0_0cells_0_0NOR3X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0NOR3X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 3.600000 BY 3.900000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 3.300000 0.900000 3.600000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.200000 3.300000 1.500000 3.600000 ;
-        END
-    END B
-    PIN C
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 1.800000 3.300000 2.100000 3.600000 ;
-        END
-    END C
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 0.300000 0.900000 0.600000 ;
-        END
-        ANTENNADIFFAREA 0.984375 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER li ;
-        RECT 2.400000 3.300000 2.700000 3.600000 ;
-        END
-        ANTENNADIFFAREA 0.646875 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER li ;
-        RECT 3.000000 3.300000 3.300000 3.600000 ;
-        END
-        ANTENNADIFFAREA 0.337500 ;
-    END GND
-    OBS
-      LAYER li ;
-         RECT 0.600000 1.800000 2.925000 2.025000 ;
-    END
-END _0_0std_0_0cells_0_0NOR3X1
-
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 2.400000 BY 2.700000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER li ;
-        RECT 0.600000 2.100000 0.900000 2.400000 ;
-        END
-    END A
     PIN X
         DIRECTION OUTPUT ;
         USE SIGNAL ;
@@ -3153,20 +2717,20 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.200000 2.100000 1.500000 2.400000 ;
+        RECT 2.400000 2.700000 2.700000 3.000000 ;
         END
-        ANTENNADIFFAREA 0.225000 ;
+        ANTENNADIFFAREA 0.450000 ;
     END Vdd
     PIN GND
         DIRECTION INPUT ;
         USE GROUND ;
         PORT
         LAYER li ;
-        RECT 1.800000 2.100000 2.100000 2.400000 ;
+        RECT 3.000000 2.700000 3.300000 3.000000 ;
         END
-        ANTENNADIFFAREA 0.168750 ;
+        ANTENNADIFFAREA 0.337500 ;
     END GND
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkbuf_1
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_1
 
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
     CLASS CORE ;
@@ -3212,55 +2776,131 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
     END GND
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_1
 
-MACRO _0_0cell_0_0ginvx10
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
     CLASS CORE ;
-    FOREIGN _0_0cell_0_0ginvx10 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 2.400000 BY 3.000000 ;
+    SIZE 12.000000 BY 5.400000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
-    PIN in_50_6
+    PIN A
         DIRECTION INPUT ;
         USE SIGNAL ;
         PORT
         LAYER li ;
-        RECT 0.600000 2.400000 0.900000 2.700000 ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
         END
-    END in_50_6
-    PIN out
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 4.800000 5.700000 5.100000 ;
+        END
+    END C
+    PIN X
         DIRECTION OUTPUT ;
         USE SIGNAL ;
         PORT
         LAYER li ;
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
-        ANTENNADIFFAREA 0.450000 ;
-    END out
+        ANTENNADIFFAREA 1.828125 ;
+    END X
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.200000 2.400000 1.500000 2.700000 ;
+        RECT 7.800000 4.800000 8.100000 5.100000 ;
         END
-        ANTENNADIFFAREA 0.281250 ;
+        ANTENNADIFFAREA 0.725625 ;
     END Vdd
     PIN GND
         DIRECTION INPUT ;
         USE GROUND ;
         PORT
         LAYER li ;
-        RECT 1.800000 2.400000 2.100000 2.700000 ;
+        RECT 10.200000 4.800000 10.500000 5.100000 ;
+        END
+        ANTENNADIFFAREA 1.001250 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 11.325000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.800000 1.500000 5.100000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.406250 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.360000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.800000 2.700000 5.100000 ;
         END
         ANTENNADIFFAREA 0.168750 ;
     END GND
-END _0_0cell_0_0ginvx10
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.325000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_4
 
-MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 2.400000 BY 3.600000 ;
+    SIZE 12.000000 BY 3.600000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
     PIN A
@@ -3271,6 +2911,314 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
         RECT 0.600000 3.000000 0.900000 3.300000 ;
         END
     END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 3.000000 5.700000 3.300000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.928125 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 3.000000 8.100000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.607500 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 10.200000 3.000000 10.500000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.776250 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.000000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A0
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A0
+    PIN A1
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        END
+    END A1
+    PIN S
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        END
+    END S
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 3.000000 4.500000 3.300000 ;
+        END
+        ANTENNADIFFAREA 1.068750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 3.000000 5.700000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.450000 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 3.000000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 2.400000 0.900000 2.700000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 2.400000 1.500000 2.700000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 2.400000 2.100000 2.700000 ;
+        END
+        ANTENNADIFFAREA 0.450000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 2.400000 2.700000 2.700000 ;
+        END
+        ANTENNADIFFAREA 0.225000 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 8.400000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.800000 2.700000 5.100000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 4.800000 4.500000 5.100000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.293750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 6.000000 4.800000 6.300000 5.100000 ;
+        END
+        ANTENNADIFFAREA 1.096875 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 4.800000 8.100000 5.100000 ;
+        END
+        ANTENNADIFFAREA 1.575000 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 7.725000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.800000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.293750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.675000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 4.800000 4.500000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.956250 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 4.125000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.600000 BY 5.700000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 5.100000 0.900000 5.400000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 5.100000 1.500000 5.400000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 5.100000 2.100000 5.400000 ;
+        END
+    END C
     PIN Y
         DIRECTION OUTPUT ;
         USE SIGNAL ;
@@ -3278,27 +3226,643 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
         LAYER li ;
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
-        ANTENNADIFFAREA 0.703125 ;
+        ANTENNADIFFAREA 1.828125 ;
     END Y
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        RECT 2.400000 5.100000 2.700000 5.400000 ;
         END
-        ANTENNADIFFAREA 0.421875 ;
+        ANTENNADIFFAREA 1.265625 ;
     END Vdd
     PIN GND
         DIRECTION INPUT ;
         USE GROUND ;
         PORT
         LAYER li ;
+        RECT 3.000000 5.100000 3.300000 5.400000 ;
+        END
+        ANTENNADIFFAREA 0.562500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.925000 3.825000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 8.400000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.000000 2.700000 3.300000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 3.000000 4.500000 3.300000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.646875 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 6.000000 3.000000 6.300000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.843750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 3.000000 8.100000 3.300000 ;
+        END
+        ANTENNADIFFAREA 1.237500 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.600000 BY 3.900000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.300000 0.900000 3.600000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.300000 1.500000 3.600000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.300000 2.100000 3.600000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.300000 2.700000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.517500 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.300000 3.300000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.337500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.925000 2.025000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 3.300000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 2.700000 0.900000 3.000000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 2.700000 1.500000 3.000000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 2.700000 2.100000 3.000000 ;
+        END
+        ANTENNADIFFAREA 0.337500 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 2.700000 2.700000 3.000000 ;
+        END
+        ANTENNADIFFAREA 0.337500 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 9.000000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.815625 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 4.800000 5.700000 5.100000 ;
+        END
+        ANTENNADIFFAREA 1.321875 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 4.800000 8.100000 5.100000 ;
+        END
+        ANTENNADIFFAREA 1.237500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 8.325000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.800000 1.500000 5.100000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.406250 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.253125 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.800000 2.700000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.270000 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.325000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 4.800000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.200000 0.900000 4.500000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.200000 1.500000 4.500000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.125000 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.200000 2.100000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.843750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.200000 2.700000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.562500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.325000 2.925000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.703125 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
         RECT 1.800000 3.000000 2.100000 3.300000 ;
         END
-        ANTENNADIFFAREA 0.281250 ;
+        ANTENNADIFFAREA 0.360000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.000000 2.700000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
     END GND
-END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_2
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.000000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A0
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A0
+    PIN A1
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+    END A1
+    PIN S
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+    END S
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.406250 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 4.800000 4.500000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.978750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 4.800000 5.700000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.382500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 5.325000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.400000 BY 2.700000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 2.100000 0.900000 2.400000 ;
+        END
+    END A
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 2.100000 1.500000 2.400000 ;
+        END
+        ANTENNADIFFAREA 0.225000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 2.100000 2.100000 2.400000 ;
+        END
+        ANTENNADIFFAREA 0.168750 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 4.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.600000 0.900000 3.900000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.600000 1.500000 3.900000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.984375 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.600000 2.100000 3.900000 ;
+        END
+        ANTENNADIFFAREA 0.843750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.600000 2.700000 3.900000 ;
+        END
+        ANTENNADIFFAREA 0.562500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.325000 2.325000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nand2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.000000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.703125 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.590625 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.000000 2.700000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.270000 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or2_2
 
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
     CLASS CORE ;
@@ -3364,6 +3928,318 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
     END
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__nor3_1
 
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 9.000000 BY 9.000000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 8.400000 0.900000 8.700000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 8.400000 3.300000 8.700000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.631250 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 8.400000 5.700000 8.700000 ;
+        END
+        ANTENNADIFFAREA 2.418750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 7.800000 8.400000 8.100000 8.700000 ;
+        END
+        ANTENNADIFFAREA 2.475000 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 8.325000 7.125000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xnor2_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.600000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 4.800000 1.500000 5.100000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 1.406250 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 4.800000 2.700000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.388125 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 4.800000 3.300000 5.100000 ;
+        END
+        ANTENNADIFFAREA 0.270000 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.925000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or3_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.000000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A0
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A0
+    PIN A1
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        END
+    END A1
+    PIN S
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        END
+    END S
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.703125 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 3.000000 4.500000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.978750 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 5.400000 3.000000 5.700000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.382500 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__mux2_2
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.200000 BY 3.600000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        END
+    END C
+    PIN D
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.000000 2.700000 3.300000 ;
+        END
+    END D
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.000000 3.300000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.675000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.600000 3.000000 3.900000 3.300000 ;
+        END
+        ANTENNADIFFAREA 0.450000 ;
+    END GND
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and4_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.600000 BY 3.900000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 3.300000 0.900000 3.600000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.300000 1.500000 3.600000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.300000 2.100000 3.600000 ;
+        END
+    END C
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.703125 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.300000 2.700000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.360000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.300000 3.300000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.337500 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 2.925000 2.025000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__and3_2
+
 MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
     CLASS CORE ;
     FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8 0.000000 0.000000 ;
@@ -3412,11 +4288,11 @@ MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
     END
 END _0_0std_0_0cells_0_0sky130_fd_sc_hd__inv_8
 
-MACRO _0_0std_0_0cells_0_0INVX2
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
     CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0INVX2 0.000000 0.000000 ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1 0.000000 0.000000 ;
     ORIGIN 0.000000 0.000000 ;
-    SIZE 2.400000 BY 3.600000 ;
+    SIZE 4.200000 BY 4.500000 ;
     SYMMETRY X Y ;
     SITE CoreSite ;
     PIN A
@@ -3424,7 +4300,79 @@ MACRO _0_0std_0_0cells_0_0INVX2
         USE SIGNAL ;
         PORT
         LAYER li ;
-        RECT 0.600000 3.000000 0.900000 3.300000 ;
+        RECT 0.600000 3.900000 0.900000 4.200000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.200000 3.900000 1.500000 4.200000 ;
+        END
+    END B
+    PIN C
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 3.900000 2.100000 4.200000 ;
+        END
+    END C
+    PIN D
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 2.400000 3.900000 2.700000 4.200000 ;
+        END
+    END D
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 0.393750 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 3.900000 3.300000 4.200000 ;
+        END
+        ANTENNADIFFAREA 0.675000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 3.600000 3.900000 3.900000 4.200000 ;
+        END
+        ANTENNADIFFAREA 0.506250 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 3.525000 2.625000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__or4_1
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.400000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 4.800000 0.900000 5.100000 ;
         END
     END A
     PIN Y
@@ -3434,27 +4382,87 @@ MACRO _0_0std_0_0cells_0_0INVX2
         LAYER li ;
         RECT 0.600000 0.300000 0.900000 0.600000 ;
         END
-        ANTENNADIFFAREA 0.703125 ;
+        ANTENNADIFFAREA 1.406250 ;
     END Y
     PIN Vdd
         DIRECTION INPUT ;
         USE POWER ;
         PORT
         LAYER li ;
-        RECT 1.200000 3.000000 1.500000 3.300000 ;
+        RECT 1.200000 4.800000 1.500000 5.100000 ;
         END
-        ANTENNADIFFAREA 0.421875 ;
+        ANTENNADIFFAREA 0.843750 ;
     END Vdd
     PIN GND
         DIRECTION INPUT ;
         USE GROUND ;
         PORT
         LAYER li ;
-        RECT 1.800000 3.000000 2.100000 3.300000 ;
+        RECT 1.800000 4.800000 2.100000 5.100000 ;
         END
-        ANTENNADIFFAREA 0.281250 ;
+        ANTENNADIFFAREA 0.562500 ;
     END GND
-END _0_0std_0_0cells_0_0INVX2
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 1.725000 3.525000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__clkinv_4
+
+MACRO _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.800000 BY 9.000000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 8.400000 0.900000 8.700000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 1.800000 8.400000 2.100000 8.700000 ;
+        END
+    END B
+    PIN X
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER li ;
+        RECT 0.600000 0.300000 0.900000 0.600000 ;
+        END
+        ANTENNADIFFAREA 2.587500 ;
+    END X
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER li ;
+        RECT 3.000000 8.400000 3.300000 8.700000 ;
+        END
+        ANTENNADIFFAREA 1.350000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER li ;
+        RECT 4.200000 8.400000 4.500000 8.700000 ;
+        END
+        ANTENNADIFFAREA 1.743750 ;
+    END GND
+    OBS
+      LAYER li ;
+         RECT 0.600000 1.800000 4.125000 7.125000 ;
+    END
+END _0_0std_0_0cells_0_0sky130_fd_sc_hd__xor2_4
 
 MACRO welltap_svt
     CLASS CORE WELLTAP ;
