@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785258666
+timestamp 1786572931
 << nwell >>
 rect 9969 5844 14084 7133
 rect 7068 3810 14084 5844
@@ -22546,27 +22546,27 @@ rect 7054 0 11303 116
 rect 11419 0 12391 116
 rect 12507 0 12513 116
 use scs130hd_and2_1  scs130hd_and2_1_0
-timestamp 1785258666
+timestamp 1786572931
 transform 0 -1 12993 1 0 566
 box -38 -48 498 592
 use scs130hd_inv_1  scs130hd_inv_1_0
-timestamp 1785258666
+timestamp 1786572931
 transform 0 1 10817 1 0 566
 box -38 -48 314 592
 use scs130hd_inv_1  scs130hd_inv_1_1
-timestamp 1785258666
+timestamp 1786572931
 transform 0 1 10817 1 0 842
 box -38 -48 314 592
 use scs130hd_inv_1  scs130hd_inv_1_2
-timestamp 1785258666
+timestamp 1786572931
 transform 0 -1 11905 1 0 842
 box -38 -48 314 592
 use scs130hd_inv_1  scs130hd_inv_1_3
-timestamp 1785258666
+timestamp 1786572931
 transform 0 1 11905 1 0 750
 box -38 -48 314 592
 use scs130hd_nor2_1  scs130hd_nor2_1_0
-timestamp 1785258666
+timestamp 1786572931
 transform 0 -1 11905 1 0 566
 box -38 -48 314 592
 << labels >>

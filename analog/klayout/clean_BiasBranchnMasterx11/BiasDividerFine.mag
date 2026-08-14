@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785258666
+timestamp 1786572931
 << nwell >>
 rect 134 1642 25860 3497
 rect 134 777 23586 1642
@@ -1525,7 +1525,7 @@ rect 23750 484 23751 628
 rect 23445 483 23751 484
 use BiasDividerFineCell  BiasDividerFineCell_0
 array 0 7 2922 0 0 -102
-timestamp 1785258666
+timestamp 1786572931
 transform 1 0 49 0 1 102
 box -350 0 3274 3778
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1785260014
+timestamp 1786572700
 << error_s >>
 rect -65 -107 -7 -101
 rect -65 -141 -53 -107
@@ -66,11 +66,11 @@ rect 17 -141 33 -107
 rect -67 -69 -21 131
 rect 21 -69 67 131
 use L1M1_MAG_7849107791429  L1M1_MAG_7849107791429_0
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 36 0 1 -124
 box -29 -23 29 23
 use L1M1_MAG_7849107791429  L1M1_MAG_7849107791429_1
-timestamp 1785260014
+timestamp 1786572700
 transform 1 0 -36 0 1 -124
 box -29 -23 29 23
 << labels >>
