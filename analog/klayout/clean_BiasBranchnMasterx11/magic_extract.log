@@ -1,0 +1,84 @@
+
+Magic 8.3 revision 617 - Compiled on Tue Mar 10 07:41:29 PM EDT 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130B ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130B Device Generator Menu ...
+Loading "/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/openDVS-layout/BiasBranchnMasterx11_v9/clean_gds/run_magic_extract_biasbranchnmasterx11.tcl" from command line.
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: BiasBranchnMasterx11
+Reading "$$$CONTEXT_INFO$$$".
+Reading "BiasMultiplierCell".
+Reading "BiasDividerCell".
+Reading "scs130hd_nor2_1".
+Reading "scs130hd_inv_1".
+Reading "scs130hd_and2_1".
+Reading "BiasDividerFineCell".
+Reading "BiasMultiplier".
+Reading "BiasDivider".
+Reading "vias_gen$3".
+Reading "vias_gen".
+Reading "mim_cap$1".
+Reading "mim_cap".
+Reading "BiasBuffers".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "BiasCoarseFineInterface".
+Reading "BiasDividerFine".
+Reading "BiasCoarseSel8to1".
+Reading "BiasBranch_0".
+Reading "BiasMasterBias".
+Reading "BiasCoarseMBDivider".
+Reading "BiasBranchBuffer_0".
+Reading "BiasBranch".
+Reading "BiasMasterCoarse".
+CIF file read warning: Input off lambda grid by 3/5; snapped to grid.
+Reading "BiasBranchBuffer".
+Reading "BiasBranchnMasterx11".
+Box must be present
+=== Magic extract starting ===
+Extracting BiasBranch_0 into BiasBranch_0.ext:
+Extracting BiasCoarseSel8to1 into BiasCoarseSel8to1.ext:
+Extracting BiasDividerFineCell into BiasDividerFineCell.ext:
+Extracting BiasDividerFine into BiasDividerFine.ext:
+Extracting BiasCoarseFineInterface into BiasCoarseFineInterface.ext:
+Extracting scs130hd_and2_1 into scs130hd_and2_1.ext:
+Extracting scs130hd_inv_1 into scs130hd_inv_1.ext:
+Extracting scs130hd_nor2_1 into scs130hd_nor2_1.ext:
+Extracting BiasBuffers into BiasBuffers.ext:
+Extracting BiasBranch into BiasBranch.ext:
+Extracting BiasDividerCell into BiasDividerCell.ext:
+Extracting BiasDivider into BiasDivider.ext:
+BiasDivider: 2 warnings
+Extracting BiasMultiplierCell into BiasMultiplierCell.ext:
+Extracting BiasMultiplier into BiasMultiplier.ext:
+Extracting BiasCoarseMBDivider into BiasCoarseMBDivider.ext:
+Extracting BiasMasterBias into BiasMasterBias.ext:
+BiasMasterBias: 2 warnings
+Extracting vias_gen$3 into vias_gen$3.ext:
+Extracting vias_gen into vias_gen.ext:
+Extracting mim_cap$1 into mim_cap$1.ext:
+Extracting mim_cap into mim_cap.ext:
+Extracting BiasMasterCoarse into BiasMasterCoarse.ext:
+Extracting BiasBranchBuffer_0 into BiasBranchBuffer_0.ext:
+Extracting BiasBranchBuffer into BiasBranchBuffer.ext:
+Extracting BiasBranchnMasterx11 into BiasBranchnMasterx11.ext:
+Total of 4 warnings.
+exttospice finished.
+=== Wrote layout extract: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/openDVS-layout/BiasBranchnMasterx11_v9/clean_gds/BiasBranchnMasterx11_layout.spice ===

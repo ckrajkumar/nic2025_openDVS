@@ -1,0 +1,166 @@
+* Extracted by KLayout with SKY130 LVS runset on : 07/07/2026 00:49
+
+.SUBCKT BiasMasterBias
+M$1 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$2 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$3 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$4 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$5 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$6 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$7 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$8 VddA18 VMasterBiasP VMasterBiasP VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2
++ AS=0.53 AD=0.53 PS=4.53 PD=4.53
+M$9 \$11 VMasterBiasP VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$10 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$11 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$12 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$13 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$14 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$15 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$16 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$17 VddA18 VMasterBiasP \$21 VddA18 sky130_fd_pr__pfet_01v8 L=20 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$18 \$21 \$11 VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.2 W=2 AS=0.53 AD=0.53
++ PS=4.53 PD=4.53
+M$19 BiasPowerDown \$11 BiasPowerDown GndA sky130_fd_pr__nfet_01v8 L=16 W=16
++ AS=4.24 AD=4.24 PS=32.53 PD=32.53
+M$20 VddA18 VMasterBiasP VddA18 GndA sky130_fd_pr__nfet_01v8 L=16 W=16 AS=4.24
++ AD=4.24 PS=32.53 PD=32.53
+M$21 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$22 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$23 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$24 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$25 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$26 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$27 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$28 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$29 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$30 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$31 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$32 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$33 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$34 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$35 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$36 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$37 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$38 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$39 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$40 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$41 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$42 IR VMasterBiasN \$8 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$43 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$44 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$45 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$46 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$47 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$48 GndA VMasterBiasN VMasterBiasN GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20
++ AS=5.3 AD=5.3 PS=40.53 PD=40.53
+M$49 GndA BiasPowerDown \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=0.2 W=2 AS=0.53
++ AD=0.53 PS=4.53 PD=4.53
+M$50 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$51 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$52 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$53 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$54 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$55 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$56 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$57 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$58 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$59 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$60 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$61 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$62 GndA VMasterBiasN \$17 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$63 \$17 \$21 ICoarse1 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$64 GndA VMasterBiasN \$14 GndA sky130_fd_pr__nfet_01v8_lvt L=5 W=20 AS=5.3
++ AD=5.3 PS=40.53 PD=40.53
+M$65 \$14 \$21 ICoarse2 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$66 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$67 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$68 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$69 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$70 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$71 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$72 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$73 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$74 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$75 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$76 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$77 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$78 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$79 VMasterBiasN \$21 \$21 GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$80 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+M$81 \$8 \$21 VMasterBiasP GndA sky130_fd_pr__nfet_01v8_lvt L=20 W=1 AS=0.265
++ AD=0.265 PS=2.53 PD=2.53
+.ENDS BiasMasterBias

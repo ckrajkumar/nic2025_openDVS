@@ -1,0 +1,734 @@
+Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file BiasBranchnMasterx11.spice
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Reading netlist file BiasBranchnMasterx11_schem.spice
+Call to undefined subcircuit BiasBranch
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasMasterCoarse
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasBranchBuffer
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasCoarseFineInterface
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasDividerFine
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasBuffers
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasCoarseSel8to1
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasMasterBias
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasCoarseMBDivider
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasDividerFineCell
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__and2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasDivider
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasMultiplier
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasDividerCell
+Creating placeholder cell definition.
+Call to undefined subcircuit BiasMultiplierCell
+Creating placeholder cell definition.
+
+Reading setup file /home/alienfalcon/.ciel/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8
+No property ad found for device sky130_fd_pr__nfet_01v8
+No property ps found for device sky130_fd_pr__nfet_01v8
+No property pd found for device sky130_fd_pr__nfet_01v8
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8_lvt pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8_lvt
+No property sa found for device sky130_fd_pr__nfet_01v8_lvt
+No property sb found for device sky130_fd_pr__nfet_01v8_lvt
+No property sd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nf found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__nfet_01v8_lvt
+No property area found for device sky130_fd_pr__nfet_01v8_lvt
+No property perim found for device sky130_fd_pr__nfet_01v8_lvt
+No property topography found for device sky130_fd_pr__nfet_01v8_lvt
+Model sky130_fd_pr__nfet_01v8_lvt pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8_lvt
+No property ad found for device sky130_fd_pr__nfet_01v8_lvt
+No property ps found for device sky130_fd_pr__nfet_01v8_lvt
+No property pd found for device sky130_fd_pr__nfet_01v8_lvt
+No property mult found for device sky130_fd_pr__nfet_01v8_lvt
+No property sa found for device sky130_fd_pr__nfet_01v8_lvt
+No property sb found for device sky130_fd_pr__nfet_01v8_lvt
+No property sd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__nfet_01v8_lvt
+No property area found for device sky130_fd_pr__nfet_01v8_lvt
+No property perim found for device sky130_fd_pr__nfet_01v8_lvt
+No property topography found for device sky130_fd_pr__nfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8
+No property ad found for device sky130_fd_pr__pfet_01v8
+No property ps found for device sky130_fd_pr__pfet_01v8
+No property pd found for device sky130_fd_pr__pfet_01v8
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8_lvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_lvt
+No property sa found for device sky130_fd_pr__pfet_01v8_lvt
+No property sb found for device sky130_fd_pr__pfet_01v8_lvt
+No property sd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nf found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_lvt
+No property area found for device sky130_fd_pr__pfet_01v8_lvt
+No property perim found for device sky130_fd_pr__pfet_01v8_lvt
+No property topography found for device sky130_fd_pr__pfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8_lvt pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8_lvt
+No property ad found for device sky130_fd_pr__pfet_01v8_lvt
+No property ps found for device sky130_fd_pr__pfet_01v8_lvt
+No property pd found for device sky130_fd_pr__pfet_01v8_lvt
+No property mult found for device sky130_fd_pr__pfet_01v8_lvt
+No property sa found for device sky130_fd_pr__pfet_01v8_lvt
+No property sb found for device sky130_fd_pr__pfet_01v8_lvt
+No property sd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_lvt
+No property area found for device sky130_fd_pr__pfet_01v8_lvt
+No property perim found for device sky130_fd_pr__pfet_01v8_lvt
+No property topography found for device sky130_fd_pr__pfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8_hvt
+No property ad found for device sky130_fd_pr__pfet_01v8_hvt
+No property ps found for device sky130_fd_pr__pfet_01v8_hvt
+No property pd found for device sky130_fd_pr__pfet_01v8_hvt
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file BiasBranchnMasterx11_user_lvs.out
+Logging to file "BiasBranchnMasterx11_user_lvs.out" enabled
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8_lvt contains no devices.
+
+Contents of circuit 1:  Circuit: 'BiasMultiplierCell'
+Circuit BiasMultiplierCell contains 15 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  15
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'BiasMultiplierCell'
+Circuit BiasMultiplierCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasMultiplierCell'
+Circuit BiasMultiplierCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'BiasMultiplierCell'
+Circuit BiasMultiplierCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasDividerCell'
+Circuit BiasDividerCell contains 15 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  15
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerCell'
+Circuit BiasDividerCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasDividerCell'
+Circuit BiasDividerCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerCell'
+Circuit BiasDividerCell contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+Circuit sky130_fd_pr__nfet_01v8_lvt contains no devices.
+
+Contents of circuit 1:  Circuit: 'BiasDividerFineCell'
+Circuit BiasDividerFineCell contains 8 device instances.
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   6
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerFineCell'
+Circuit BiasDividerFineCell contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 10 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasDividerFineCell'
+Circuit BiasDividerFineCell contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerFineCell'
+Circuit BiasDividerFineCell contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 10 nets.
+
+Circuit 1 contains 5 devices, Circuit 2 contains 5 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
+
+Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'BiasMultiplier'
+Circuit BiasMultiplier contains 17 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  15
+  Class: BiasMultiplierCell    instances:   2
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'BiasMultiplier'
+Circuit BiasMultiplier contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: BiasMultiplierCell    instances:   2
+Circuit contains 7 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasMultiplier'
+Circuit BiasMultiplier contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: BiasMultiplierCell    instances:   2
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'BiasMultiplier'
+Circuit BiasMultiplier contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: BiasMultiplierCell    instances:   2
+Circuit contains 7 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasDivider'
+Circuit BiasDivider contains 21 device instances.
+  Class: BiasDividerCell       instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:  15
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'BiasDivider'
+Circuit BiasDivider contains 8 device instances.
+  Class: BiasDividerCell       instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 14 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasDivider'
+Circuit BiasDivider contains 8 device instances.
+  Class: BiasDividerCell       instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'BiasDivider'
+Circuit BiasDivider contains 8 device instances.
+  Class: BiasDividerCell       instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 14 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 14 nets,    Circuit 2 contains 14 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasCoarseSel8to1'
+Circuit BiasCoarseSel8to1 contains 57 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  12
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  41
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 51 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseSel8to1'
+Circuit BiasCoarseSel8to1 contains 43 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  12
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  27
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 51 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasCoarseSel8to1'
+Circuit BiasCoarseSel8to1 contains 43 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  12
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  27
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 51 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseSel8to1'
+Circuit BiasCoarseSel8to1 contains 43 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  12
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  27
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 51 nets.
+
+Circuit 1 contains 43 devices, Circuit 2 contains 43 devices.
+Circuit 1 contains 51 nets,    Circuit 2 contains 51 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasCoarseFineInterface'
+Circuit BiasCoarseFineInterface contains 66 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  16
+  Class: sky130_fd_pr__pfet_01v8 instances:  42
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   6
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseFineInterface'
+Circuit BiasCoarseFineInterface contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 14 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasCoarseFineInterface'
+Circuit BiasCoarseFineInterface contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseFineInterface'
+Circuit BiasCoarseFineInterface contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 14 nets.
+
+Circuit 1 contains 15 devices, Circuit 2 contains 15 devices.
+Circuit 1 contains 14 nets,    Circuit 2 contains 14 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasBuffers'
+Circuit BiasBuffers contains 76 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  20
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  27
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:  11
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   9
+Circuit contains 31 nets.
+Contents of circuit 2:  Circuit: 'BiasBuffers'
+Circuit BiasBuffers contains 45 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  20
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   3
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:  10
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 31 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasBuffers'
+Circuit BiasBuffers contains 45 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  20
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   3
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:  10
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 31 nets.
+Contents of circuit 2:  Circuit: 'BiasBuffers'
+Circuit BiasBuffers contains 45 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  20
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   3
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:  10
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 31 nets.
+
+Circuit 1 contains 45 devices, Circuit 2 contains 45 devices.
+Circuit 1 contains 31 nets,    Circuit 2 contains 31 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasDividerFine'
+Circuit BiasDividerFine contains 11 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   1
+  Class: BiasDividerFineCell   instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   2
+Circuit contains 30 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerFine'
+Circuit BiasDividerFine contains 10 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   1
+  Class: BiasDividerFineCell   instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+Circuit contains 30 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasDividerFine'
+Circuit BiasDividerFine contains 10 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   1
+  Class: BiasDividerFineCell   instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+Circuit contains 30 nets.
+Contents of circuit 2:  Circuit: 'BiasDividerFine'
+Circuit BiasDividerFine contains 10 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   1
+  Class: BiasDividerFineCell   instances:   8
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+Circuit contains 30 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 30 nets,    Circuit 2 contains 30 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasMasterBias'
+Circuit BiasMasterBias contains 81 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  61
+  Class: sky130_fd_pr__pfet_01v8 instances:  18
+Circuit contains 13 nets.
+Contents of circuit 2:  Circuit: 'BiasMasterBias'
+Circuit BiasMasterBias contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 13 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasMasterBias'
+Circuit BiasMasterBias contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 13 nets.
+Contents of circuit 2:  Circuit: 'BiasMasterBias'
+Circuit BiasMasterBias contains 15 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   9
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 13 nets.
+
+Circuit 1 contains 15 devices, Circuit 2 contains 15 devices.
+Circuit 1 contains 13 nets,    Circuit 2 contains 13 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasCoarseMBDivider'
+Circuit BiasCoarseMBDivider contains 66 device instances.
+  Class: BiasDivider           instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  64
+  Class: BiasMultiplier        instances:   1
+Circuit contains 54 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseMBDivider'
+Circuit BiasCoarseMBDivider contains 52 device instances.
+  Class: BiasDivider           instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  50
+  Class: BiasMultiplier        instances:   1
+Circuit contains 54 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasCoarseMBDivider'
+Circuit BiasCoarseMBDivider contains 52 device instances.
+  Class: BiasDivider           instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  50
+  Class: BiasMultiplier        instances:   1
+Circuit contains 54 nets.
+Contents of circuit 2:  Circuit: 'BiasCoarseMBDivider'
+Circuit BiasCoarseMBDivider contains 52 device instances.
+  Class: BiasDivider           instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  50
+  Class: BiasMultiplier        instances:   1
+Circuit contains 54 nets.
+
+Circuit 1 contains 52 devices, Circuit 2 contains 52 devices.
+Circuit 1 contains 54 nets,    Circuit 2 contains 54 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasBranch'
+Circuit BiasBranch contains 4 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: BiasBuffers           instances:   1
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 49 nets.
+Contents of circuit 2:  Circuit: 'BiasBranch'
+Circuit BiasBranch contains 4 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: BiasBuffers           instances:   1
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 49 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 49 nets,    Circuit 2 contains 49 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasBranchBuffer'
+Circuit BiasBranchBuffer contains 37 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:  32
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   2
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 41 nets.
+Contents of circuit 2:  Circuit: 'BiasBranchBuffer'
+Circuit BiasBranchBuffer contains 6 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 41 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasBranchBuffer'
+Circuit BiasBranchBuffer contains 6 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 41 nets.
+Contents of circuit 2:  Circuit: 'BiasBranchBuffer'
+Circuit BiasBranchBuffer contains 6 device instances.
+  Class: BiasCoarseFineInterface instances:   1
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   2
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   1
+  Class: BiasCoarseSel8to1     instances:   1
+  Class: BiasDividerFine       instances:   1
+Circuit contains 41 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 41 nets,    Circuit 2 contains 41 nets.
+
+
+Contents of circuit 1:  Circuit: 'BiasMasterCoarse'
+Circuit BiasMasterCoarse contains 6 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   4
+  Class: BiasMasterBias        instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 17 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'BiasMasterCoarse'
+Circuit BiasMasterCoarse contains 6 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   4
+  Class: BiasMasterBias        instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 16 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasMasterCoarse'
+Circuit BiasMasterCoarse contains 4 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+  Class: BiasMasterBias        instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 17 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'BiasMasterCoarse'
+Circuit BiasMasterCoarse contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: BiasMasterBias        instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 16 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 3 devices. *** MISMATCH ***
+Circuit 1 contains 17 nets,    Circuit 2 contains 16 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits BiasMasterCoarse BiasMasterCoarse
+
+Flattening instances of BiasMasterCoarse in file BiasBranchnMasterx11.spice
+Flattening instances of BiasMasterCoarse in file BiasBranchnMasterx11_schem.spice
+Duplicate pin FineCode[10] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[9] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[8] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[7] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[6] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[5] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[4] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[3] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[2] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[1] in cell BiasBranchnMasterx11 (1)
+Duplicate pin FineCode[0] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[10] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[9] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[8] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[7] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[6] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[5] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[4] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[3] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[2] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[1] in cell BiasBranchnMasterx11 (1)
+Duplicate pin nFineCode[0] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[10] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[9] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[8] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[7] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[6] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[5] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[4] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[3] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[2] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[1] in cell BiasBranchnMasterx11 (1)
+Duplicate pin CoarseOneHot[0] in cell BiasBranchnMasterx11 (1)
+
+Contents of circuit 1:  Circuit: 'BiasBranchnMasterx11'
+Circuit BiasBranchnMasterx11 contains 16 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+  Class: BiasMasterBias        instances:   1
+  Class: BiasBranch            instances:  11
+  Class: BiasBranchBuffer      instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 419 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'BiasBranchnMasterx11'
+Circuit BiasBranchnMasterx11 contains 15 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: BiasMasterBias        instances:   1
+  Class: BiasBranch            instances:  11
+  Class: BiasBranchBuffer      instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 419 nets, and 12 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'BiasBranchnMasterx11'
+Circuit BiasBranchnMasterx11 contains 15 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: BiasMasterBias        instances:   1
+  Class: BiasBranch            instances:  11
+  Class: BiasBranchBuffer      instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 419 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'BiasBranchnMasterx11'
+Circuit BiasBranchnMasterx11 contains 15 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: BiasMasterBias        instances:   1
+  Class: BiasBranch            instances:  11
+  Class: BiasBranchBuffer      instances:   1
+  Class: BiasCoarseMBDivider   instances:   1
+Circuit contains 419 nets, and 12 disconnected pins.
+
+Circuit 1 contains 15 devices, Circuit 2 contains 15 devices.
+Circuit 1 contains 419 nets,    Circuit 2 contains 419 nets.
+
+No more changes can be made to series/parallel networks.
+
+Final result: 
+Top level cell failed pin matching.
+
+Logging to file "BiasBranchnMasterx11_user_lvs.out" disabled
+LVS Done.
