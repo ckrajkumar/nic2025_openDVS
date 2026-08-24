@@ -30,7 +30,7 @@ N 250 -750 250 -620 {lab=vsf}
 N 250 -750 290 -750 {lab=vsf}
 N 350 -750 390 -750 {lab=vd}
 N 390 -750 390 -620 {lab=vd}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 1 0 {name=C1b model=cap_mim_m3_1 W=6.47 L=1.05 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -620 1 0 {name=C1b model=cap_mim_m3_1 W=6.47 L=1.505 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -560 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 480 -290 0 0 {name=MchAmpBias
 W=1.5
