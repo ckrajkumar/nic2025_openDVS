@@ -1,0 +1,227 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO pixel_test_structure
+  CLASS BLOCK ;
+  FOREIGN pixel_test_structure ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 107.710 BY 113.240 ;
+  PIN vssa1
+    ANTENNAGATEAREA 6.400000 ;
+    ANTENNADIFFAREA 1154.272583 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 99.725 107.710 103.725 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 0.000 27.985 107.710 31.985 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 9.445 0.000 13.445 113.240 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 94.265 0.000 98.265 113.240 ;
+    END
+  END vssa1
+  PIN vdda1
+    ANTENNADIFFAREA 106.722198 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 106.310 107.710 110.310 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 0.000 3.000 107.710 7.000 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 3.000 0.000 6.980 113.240 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 100.730 0.000 104.710 113.240 ;
+    END
+  END vdda1
+  PIN rowReadON[0]
+    ANTENNAGATEAREA 0.252000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 20.355 107.710 21.085 ;
+    END
+  END rowReadON[0]
+  PIN rowReadOFF[0]
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 21.585 107.710 22.315 ;
+    END
+  END rowReadOFF[0]
+  PIN rowReadOFF[1]
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 22.840 107.710 23.570 ;
+    END
+  END rowReadOFF[1]
+  PIN rowReadON[1]
+    ANTENNAGATEAREA 0.252000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 24.070 107.710 24.850 ;
+    END
+  END rowReadON[1]
+  PIN vssc1
+    ANTENNAGATEAREA 9.000000 ;
+    ANTENNADIFFAREA 2.373000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 15.360 107.710 19.855 ;
+    END
+  END vssc1
+  PIN vsf_buf
+    ANTENNAGATEAREA 38.399998 ;
+    ANTENNADIFFAREA 13.040000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 52.295 3.000 53.025 ;
+    END
+  END vsf_buf
+  PIN vdiff_buff
+    ANTENNAGATEAREA 38.399998 ;
+    ANTENNADIFFAREA 13.040000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 78.685 3.000 79.415 ;
+    END
+  END vdiff_buff
+  PIN vpr_buff
+    ANTENNAGATEAREA 38.399998 ;
+    ANTENNADIFFAREA 13.040000 ;
+    PORT
+      LAYER met4 ;
+        RECT 104.710 78.685 107.710 79.415 ;
+    END
+  END vpr_buff
+  PIN dac_config_7
+    ANTENNAGATEAREA 32.000000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 65.090 3.000 66.620 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 104.710 65.090 107.710 66.620 ;
+    END
+  END dac_config_7
+  PIN vpd_buff
+    ANTENNAGATEAREA 38.399998 ;
+    ANTENNADIFFAREA 13.040000 ;
+    PORT
+      LAYER met4 ;
+        RECT 104.710 52.295 107.710 53.025 ;
+    END
+  END vpd_buff
+  PIN readOut[1]
+    ANTENNADIFFAREA 0.891000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 26.705 107.710 27.485 ;
+    END
+  END readOut[1]
+  PIN readOut[0]
+    ANTENNADIFFAREA 0.891000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 25.425 107.710 26.205 ;
+    END
+  END readOut[0]
+  PIN dac_config_2
+    ANTENNAGATEAREA 9.000000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 14.130 107.710 14.860 ;
+    END
+  END dac_config_2
+  PIN dac_config_5
+    ANTENNAGATEAREA 2.520000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 12.875 107.710 13.605 ;
+    END
+  END dac_config_5
+  PIN dac_config_3
+    ANTENNAGATEAREA 0.300000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 11.645 107.710 12.375 ;
+    END
+  END dac_config_3
+  PIN dac_config_4
+    ANTENNAGATEAREA 2.520000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 10.415 107.710 11.145 ;
+    END
+  END dac_config_4
+  PIN dac_config_1
+    ANTENNAGATEAREA 9.000000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 9.160 107.710 9.890 ;
+    END
+  END dac_config_1
+  PIN dac_config_0
+    ANTENNAGATEAREA 9.000000 ;
+    ANTENNADIFFAREA 2.373000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 7.930 107.710 8.660 ;
+    END
+  END dac_config_0
+  PIN pixRst[1]
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met3 ;
+        RECT 64.475 0.000 65.075 3.000 ;
+    END
+  END pixRst[1]
+  PIN pixRst[0]
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.635 0.000 43.235 3.000 ;
+    END
+  END pixRst[0]
+  OBS
+      LAYER nwell ;
+        RECT 7.360 23.735 100.350 106.315 ;
+      LAYER li1 ;
+        RECT 7.490 23.865 100.220 106.185 ;
+      LAYER met1 ;
+        RECT 7.430 23.225 100.280 106.245 ;
+      LAYER met2 ;
+        RECT 7.695 23.225 100.015 110.310 ;
+      LAYER met3 ;
+        RECT 7.380 3.000 9.045 110.270 ;
+        RECT 13.845 3.400 93.865 110.270 ;
+        RECT 13.845 3.000 42.235 3.400 ;
+        RECT 43.635 3.000 64.075 3.400 ;
+        RECT 65.475 3.000 93.865 3.400 ;
+        RECT 98.665 3.000 100.330 110.270 ;
+      LAYER met4 ;
+        RECT 3.400 78.285 104.310 79.415 ;
+        RECT 3.000 67.020 104.710 78.285 ;
+        RECT 3.400 64.690 104.310 67.020 ;
+        RECT 3.000 53.425 104.710 64.690 ;
+        RECT 3.400 51.895 104.310 53.425 ;
+        RECT 3.000 32.385 104.710 51.895 ;
+      LAYER met5 ;
+        RECT 39.165 31.985 68.545 61.365 ;
+  END
+END pixel_test_structure
+END LIBRARY
+

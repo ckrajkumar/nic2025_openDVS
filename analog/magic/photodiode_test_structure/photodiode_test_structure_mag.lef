@@ -1,0 +1,149 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO photodiode_test_structure
+  CLASS BLOCK ;
+  FOREIGN photodiode_test_structure ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 66.480 BY 69.170 ;
+  PIN vdda1
+    ANTENNADIFFAREA 31.261799 ;
+    PORT
+      LAYER met1 ;
+        RECT 46.130 36.130 46.140 36.140 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 25.520 53.750 33.560 54.170 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 29.705 60.380 29.715 60.390 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 0.000 62.170 66.480 66.170 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 0.000 3.000 66.480 7.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 59.480 0.000 63.480 69.170 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 3.000 0.000 7.000 69.170 ;
+    END
+  END vdda1
+  PIN vssa1
+    ANTENNAGATEAREA 1.600000 ;
+    ANTENNADIFFAREA 55.168049 ;
+    PORT
+      LAYER met1 ;
+        RECT 43.430 35.695 43.440 35.705 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 21.780 15.355 46.405 15.935 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 34.085 13.460 34.095 13.470 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 0.000 54.170 66.480 58.170 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 0.000 11.000 66.480 15.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 11.000 0.000 15.000 69.170 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 51.480 0.000 55.480 69.170 ;
+    END
+  END vssa1
+  PIN vpd_out
+    ANTENNAGATEAREA 38.399998 ;
+    ANTENNADIFFAREA 13.040000 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 38.440 3.000 39.080 ;
+    END
+  END vpd_out
+  PIN dac_config_7
+    ANTENNAGATEAREA 8.000000 ;
+    PORT
+      LAYER met2 ;
+        RECT 63.480 49.025 66.480 50.325 ;
+    END
+  END dac_config_7
+  PIN dac_config_8
+    ANTENNAGATEAREA 0.150000 ;
+    PORT
+      LAYER met2 ;
+        RECT 63.480 34.875 66.480 35.875 ;
+    END
+  END dac_config_8
+  PIN vpd
+    ANTENNAGATEAREA 19.199999 ;
+    ANTENNADIFFAREA 0.318100 ;
+    PORT
+      LAYER met1 ;
+        RECT 45.810 30.085 45.820 30.095 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 45.435 34.540 45.445 34.550 ;
+    END
+  END vpd
+  OBS
+      LAYER nwell ;
+        RECT 14.995 14.995 51.485 54.175 ;
+      LAYER li1 ;
+        RECT 15.125 15.125 51.355 54.045 ;
+      LAYER met1 ;
+        RECT 15.065 36.420 51.415 54.105 ;
+        RECT 15.065 35.985 45.850 36.420 ;
+        RECT 15.065 35.415 43.150 35.985 ;
+        RECT 43.720 35.850 45.850 35.985 ;
+        RECT 46.420 35.850 51.415 36.420 ;
+        RECT 43.720 35.415 51.415 35.850 ;
+        RECT 15.065 34.830 51.415 35.415 ;
+        RECT 15.065 34.260 45.155 34.830 ;
+        RECT 45.725 34.260 51.415 34.830 ;
+        RECT 15.065 30.375 51.415 34.260 ;
+        RECT 15.065 29.805 45.530 30.375 ;
+        RECT 46.100 29.805 51.415 30.375 ;
+        RECT 15.065 15.065 51.415 29.805 ;
+      LAYER met2 ;
+        RECT 3.000 60.670 63.480 66.170 ;
+        RECT 3.000 60.100 29.425 60.670 ;
+        RECT 29.995 60.100 63.480 60.670 ;
+        RECT 3.000 54.450 63.480 60.100 ;
+        RECT 3.000 53.470 25.240 54.450 ;
+        RECT 33.840 53.470 63.480 54.450 ;
+        RECT 3.000 50.605 63.480 53.470 ;
+        RECT 3.000 48.745 63.200 50.605 ;
+        RECT 3.000 39.360 63.480 48.745 ;
+        RECT 3.280 38.160 63.480 39.360 ;
+        RECT 3.000 36.155 63.480 38.160 ;
+        RECT 3.000 34.595 63.200 36.155 ;
+        RECT 3.000 16.215 63.480 34.595 ;
+        RECT 3.000 15.075 21.500 16.215 ;
+        RECT 46.685 15.075 63.480 16.215 ;
+        RECT 3.000 13.750 63.480 15.075 ;
+        RECT 3.000 13.180 33.805 13.750 ;
+        RECT 34.375 13.180 63.480 13.750 ;
+        RECT 3.000 11.000 63.480 13.180 ;
+  END
+END photodiode_test_structure
+END LIBRARY
+
