@@ -1,0 +1,64 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1788457481
+<< locali >>
+rect 24 224 58 246
+rect 24 152 58 190
+rect 24 80 58 118
+rect 24 24 58 46
+<< viali >>
+rect 24 190 58 224
+rect 24 118 58 152
+rect 24 46 58 80
+<< metal1 >>
+rect 9 205 15 257
+rect 67 205 73 257
+rect 9 193 24 205
+rect 58 193 73 205
+rect 9 141 15 193
+rect 67 141 73 193
+rect 9 129 24 141
+rect 58 129 73 141
+rect 9 77 15 129
+rect 67 77 73 129
+rect 9 65 24 77
+rect 58 65 73 77
+rect 9 13 15 65
+rect 67 13 73 65
+<< via1 >>
+rect 15 224 67 257
+rect 15 205 24 224
+rect 24 205 58 224
+rect 58 205 67 224
+rect 15 190 24 193
+rect 24 190 58 193
+rect 58 190 67 193
+rect 15 152 67 190
+rect 15 141 24 152
+rect 24 141 58 152
+rect 58 141 67 152
+rect 15 118 24 129
+rect 24 118 58 129
+rect 58 118 67 129
+rect 15 80 67 118
+rect 15 77 24 80
+rect 24 77 58 80
+rect 58 77 67 80
+rect 15 46 24 65
+rect 24 46 58 65
+rect 58 46 67 65
+rect 15 13 67 46
+<< metal2 >>
+rect 9 205 15 257
+rect 67 205 73 257
+rect 9 193 73 205
+rect 9 141 15 193
+rect 67 141 73 193
+rect 9 129 73 141
+rect 9 77 15 129
+rect 67 77 73 129
+rect 9 65 73 77
+rect 9 13 15 65
+rect 67 13 73 65
+<< end >>

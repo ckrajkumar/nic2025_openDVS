@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1788456640
+use vias_gen  vias_gen_0
+timestamp 1788456640
+transform 1 0 0 0 1 0
+box 0 0 117 153
+<< end >>
