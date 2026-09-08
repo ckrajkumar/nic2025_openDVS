@@ -1,16 +1,13 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1788457552
-<< error_s >>
-rect 4795 10474 7021 10514
-rect 7374 3247 9309 3273
-rect 7402 3219 9281 3245
+timestamp 1788825115
 << photodiode >>
 rect 8570 5470 9710 6610
 << nwell >>
 rect 3192 10474 10104 10642
 rect 3192 3360 3360 10474
+rect 5049 10260 6767 10474
 rect 8786 5686 9494 6394
 rect 9936 3360 10104 10474
 rect 3192 3192 10104 3360
@@ -6203,7 +6200,9 @@ rect 10225 3275 10237 3309
 rect 10271 3275 10283 3309
 rect 3013 3181 3025 3215
 rect 3059 3181 3071 3215
-rect 7402 3187 9281 3245
+rect 10225 3237 10283 3275
+rect 10225 3203 10237 3237
+rect 10271 3203 10283 3237
 rect 3013 3143 3071 3181
 rect 3013 3109 3025 3143
 rect 3059 3109 3071 3143
@@ -6221,9 +6220,6 @@ rect 7954 3071 8301 3187
 rect 8417 3071 8696 3187
 rect 8812 3071 9159 3187
 rect 9275 3071 9281 3187
-rect 10225 3237 10283 3275
-rect 10225 3203 10237 3237
-rect 10271 3203 10283 3237
 rect 10225 3165 10283 3203
 rect 10225 3131 10237 3165
 rect 10271 3131 10283 3165
@@ -6487,62 +6483,78 @@ rect 11896 0 12696 608
 << glass >>
 rect 8570 5470 9710 6610
 use infiniamp_xl  infiniamp_xl_0
-timestamp 1788457481
+timestamp 1788825115
 transform -1 0 8339 0 1 3443
 box 0 0 4890 6948
 << labels >>
-flabel metal1 s 9163 6018 9163 6018 2 FreeSans 626 0 0 0 vpd
-port 6 ne
-flabel metal1 s 9088 6909 9088 6909 2 FreeSans 626 180 0 0 vpd
-port 6 ne
-flabel metal1 s 9227 7227 9227 7227 2 FreeSans 626 180 0 0 vdda1
+flabel metal1 s 9227 7227 9227 7227 2 FreeSans 782 180 0 0 vdda1
 port 1 ne
-flabel metal1 s 8687 7140 8687 7140 2 FreeSans 626 180 0 0 vssa1
+flabel metal1 s 8687 7140 8687 7140 2 FreeSans 782 180 0 0 vssa1
 port 2 ne
-flabel metal2 s 5104 10750 6712 10834 0 FreeSans 400 0 0 0 vdda1
+flabel metal1 s 9088 6909 9088 6909 2 FreeSans 782 180 0 0 vpd
+port 6 ne
+flabel metal1 s 9163 6018 9163 6018 2 FreeSans 782 0 0 0 vpd
+port 6 ne
+flabel metal2 s 5942 12077 5942 12077 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal2 s 4356 3071 9281 3187 0 FreeSans 400 0 0 0 vssa1
+flabel metal2 s 5104 10750 6712 10834 0 FreeSans 500 0 0 0 vdda1
+port 1 nsew
+flabel metal2 s 6818 2693 6818 2693 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal2 s 0 7688 600 7816 0 FreeSans 400 0 0 0 vpd_out
+flabel metal2 s 4356 3071 9281 3187 0 FreeSans 500 0 0 0 vssa1
+port 2 nsew
+flabel metal2 s 0 7688 600 7816 0 FreeSans 500 0 0 0 vpd_out
 port 3 nsew
-flabel metal2 s 12696 9805 13296 10065 0 FreeSans 400 0 0 0 dac_config_7
+flabel metal2 s 12696 9805 13296 10065 0 FreeSans 500 0 0 0 dac_config_7
 port 4 nsew
-flabel metal2 s 12696 6975 13296 7175 0 FreeSans 400 0 0 0 dac_config_8
+flabel metal2 s 12696 6975 13296 7175 0 FreeSans 500 0 0 0 dac_config_8
 port 5 nsew
-flabel metal2 s 5942 12077 5942 12077 0 FreeSans 4000 0 0 0 vdda1
+flabel metal4 s 600 0 1400 13834 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal2 s 6818 2693 6818 2693 0 FreeSans 4000 0 0 0 vssa1
+flabel metal4 s 2200 0 3000 13834 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal3 s 0 10834 13296 11634 0 FreeSans 4000 0 0 0 vssa1
-port 2 nsew
-flabel metal3 s 895 11194 895 11194 0 FreeSans 4000 0 0 0 vssa1
-port 2 nsew
-flabel metal3 s 0 2200 13296 3000 0 FreeSans 4000 0 0 0 vssa1
-port 2 nsew
-flabel metal3 s 12079 2610 12079 2610 0 FreeSans 4000 0 0 0 vssa1
-port 2 nsew
-flabel metal3 s 0 12434 13296 13234 0 FreeSans 4000 0 0 0 vdda1
+flabel metal4 s 11896 0 12696 13834 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal3 s 871 12831 871 12831 0 FreeSans 4000 0 0 0 vdda1
-port 1 nsew
-flabel metal3 s 0 600 13296 1400 0 FreeSans 4000 0 0 0 vdda1
-port 1 nsew
-flabel metal3 s 12118 1038 12118 1038 0 FreeSans 4000 0 0 0 vdda1
-port 1 nsew
-flabel metal4 s 2200 0 3000 13834 0 FreeSans 4000 0 0 0 vssa1
+flabel metal4 s 10296 0 11096 13834 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal4 s 2605 354 2605 354 0 FreeSans 4000 0 0 0 vssa1
+flabel metal4 s 995 13520 995 13520 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal4 s 1000 6917 1000 6917 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal4 s 12301 356 12301 356 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal4 s 12296 6917 12296 6917 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal4 s 10692 295 10692 295 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal4 s 10296 0 11096 13834 0 FreeSans 4000 0 0 0 vssa1
+flabel metal4 s 10696 6917 10696 6917 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal4 s 10692 295 10692 295 0 FreeSans 4000 0 0 0 vssa1
+flabel metal4 s 2605 354 2605 354 0 FreeSans 5000 0 0 0 vssa1
 port 2 nsew
-flabel metal4 s 11896 0 12696 13834 0 FreeSans 4000 0 0 0 vdda1
+flabel metal4 s 2600 6917 2600 6917 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 0 2200 13296 3000 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 0 600 13296 1400 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal4 s 12301 356 12301 356 0 FreeSans 4000 0 0 0 vdda1
+flabel metal3 s 0 12434 13296 13234 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal4 s 600 0 1400 13834 0 FreeSans 4000 0 0 0 vdda1
+flabel metal3 s 0 10834 13296 11634 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 12118 1038 12118 1038 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
-flabel metal4 s 995 13520 995 13520 0 FreeSans 4000 0 0 0 vdda1
+flabel metal3 s 6648 1000 6648 1000 0 FreeSans 5000 0 0 0 vdda1
 port 1 nsew
+flabel metal3 s 871 12831 871 12831 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal3 s 6648 12834 6648 12834 0 FreeSans 5000 0 0 0 vdda1
+port 1 nsew
+flabel metal3 s 12079 2610 12079 2610 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 6648 2600 6648 2600 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 895 11194 895 11194 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
+flabel metal3 s 6648 11234 6648 11234 0 FreeSans 5000 0 0 0 vssa1
+port 2 nsew
 << end >>
