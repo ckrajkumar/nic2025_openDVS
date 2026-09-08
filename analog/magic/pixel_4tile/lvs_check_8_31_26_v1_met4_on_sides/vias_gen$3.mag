@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1788203828
+<< metal1 >>
+rect 0 44 78 62
+rect 0 18 10 44
+rect 36 18 42 44
+rect 68 18 78 44
+rect 0 0 78 18
+<< via1 >>
+rect 10 18 36 44
+rect 42 18 68 44
+<< metal2 >>
+rect 0 44 78 62
+rect 0 18 10 44
+rect 36 18 42 44
+rect 68 18 78 44
+rect 0 0 78 18
+<< end >>

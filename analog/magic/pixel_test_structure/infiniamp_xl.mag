@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1788456640
+timestamp 1788821923
 << nwell >>
 rect 1572 5571 3290 6817
 rect 150 1783 2304 5271
@@ -12284,186 +12284,186 @@ rect 3755 730 3761 782
 rect 3813 730 3819 782
 rect 3755 368 3819 730
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_0
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2210 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_1
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2314 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_2
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2314 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_3
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2824 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_4
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3082 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_5
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2466 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_6
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2570 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_7
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2978 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_8
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3082 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_9
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2210 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_10
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2466 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_11
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2570 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_12
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2978 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_13
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2722 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_14
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2824 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_15
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2722 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_16
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2058 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_17
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1954 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_18
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 2058 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_19
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1954 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_20
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1802 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_21
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1698 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_22
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1802 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_23
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1698 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_24
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1546 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_25
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1442 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_26
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1546 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_27
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1442 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_28
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1290 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_29
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3234 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_30
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1290 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_31
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3234 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_32
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3338 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_33
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3490 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_34
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1186 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_35
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1034 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_36
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3594 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_37
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3594 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_38
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3746 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_39
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3746 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_40
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3490 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_41
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 3338 0 1 951
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_42
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1034 0 1 355
 box 9 13 73 257
 use infiniamp_via_Mnbuff  infiniamp_via_Mnbuff_43
-timestamp 1788456640
+timestamp 1788821923
 transform 1 0 1186 0 1 355
 box 9 13 73 257
 << labels >>
 flabel metal1 s 879 0 3983 95 0 FreeSans 376 0 0 0 GND
-port 4 nsew
+port 1 nsew
 flabel metal1 s 1627 6848 3235 6948 0 FreeSans 376 0 0 0 VDD
-port 5 nsew
+port 2 nsew
 flabel metal1 s 3027 6645 3027 6645 0 FreeSans 376 0 0 0 VBIAS
 flabel metal1 s 1817 6639 1817 6639 0 FreeSans 376 0 0 0 VBIAS
 flabel metal1 s 1811 5745 1811 5745 0 FreeSans 376 0 0 0 VBIAS
@@ -12563,7 +12563,7 @@ flabel metal2 s 3099 6186 3099 6186 0 FreeSans 376 90 0 0 VBIAS
 flabel metal2 s 4523 4813 4523 4813 0 FreeSans 376 90 0 0 VOUT
 flabel metal2 s 4520 3751 4520 3751 0 FreeSans 376 90 0 0 VOUT
 flabel metal2 s 4790 4245 4890 4373 0 FreeSans 376 0 0 0 VOUT
-port 3 nsew
+port 5 nsew
 flabel metal2 s 3289 3674 3289 3674 0 FreeSans 376 90 0 0 DIODE_LD
 flabel metal2 s 2993 3675 2993 3675 0 FreeSans 376 90 0 0 DIODE_LD
 flabel metal2 s 2760 3754 2760 3754 0 FreeSans 376 90 0 0 N_VIN
@@ -12593,7 +12593,7 @@ flabel metal2 s 1755 6539 1755 6539 0 FreeSans 376 90 0 0 VBIAS
 flabel metal2 s 1757 6173 1757 6173 0 FreeSans 376 90 0 0 VBIAS
 flabel metal2 s 1760 5863 1760 5863 0 FreeSans 376 90 0 0 VBIAS
 flabel metal2 s 1183 6362 1283 6622 0 FreeSans 376 0 0 0 VBIAS
-port 1 nsew
+port 3 nsew
 flabel metal2 s 1191 3518 1191 3518 0 FreeSans 376 90 0 0 VIN
 flabel metal2 s 1265 4698 1265 4698 0 FreeSans 376 90 0 0 N_VIN
 flabel metal2 s 1496 4982 1496 4982 0 FreeSans 376 90 0 0 N_VIN
@@ -12646,7 +12646,7 @@ flabel metal2 s 951 2068 951 2068 0 FreeSans 376 90 0 0 N_VIN
 flabel metal2 s 662 2073 662 2073 0 FreeSans 376 90 0 0 N_VIN
 flabel metal2 s 1326 1603 1326 1603 0 FreeSans 376 90 0 0 VOUT
 flabel metal2 s 0 3373 100 3473 0 FreeSans 376 0 0 0 VIN
-port 2 nsew
+port 4 nsew
 flabel metal2 s 1847 796 1847 796 0 FreeSans 376 90 0 0 VOUT
 flabel metal2 s 1496 3489 1496 3489 0 FreeSans 376 90 0 0 VOUT
 flabel metal2 s 519 2007 519 2007 0 FreeSans 376 90 0 0 MAIN_SOURCE

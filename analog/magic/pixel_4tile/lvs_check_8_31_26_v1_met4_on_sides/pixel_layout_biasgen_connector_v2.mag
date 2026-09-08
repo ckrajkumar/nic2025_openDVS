@@ -1,0 +1,62 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1788203828
+<< metal1 >>
+rect 6254 2638 19876 2866
+rect 5885 1069 15876 2070
+<< metal2 >>
+rect 5318 4924 6890 4952
+rect 5338 2638 6254 2866
+rect 5318 552 6890 580
+rect 5338 408 5821 524
+rect 5318 180 11876 296
+use M1M2_MAG_7849107791419  M1M2_MAG_7849107791419_0
+timestamp 1788203828
+transform 1 0 5789 0 1 466
+box -32 -58 32 58
+use M1M2_MAG_7849107791435  M1M2_MAG_7849107791435_0
+timestamp 1788203828
+transform 1 0 14876 0 1 1569
+box 0 0 1 1
+use M2M3_MAG_7849107791415  M2M3_MAG_7849107791415_0
+timestamp 1788203828
+transform 1 0 6890 0 1 585
+box -77 -33 77 33
+use M2M3_MAG_7849107791415  M2M3_MAG_7849107791415_1
+timestamp 1788203828
+transform 1 0 6890 0 1 4919
+box -77 -33 77 33
+use M2M3_MAG_7849107791433  M2M3_MAG_7849107791433_0
+timestamp 1788203828
+transform 1 0 10865 0 1 238
+box 0 0 1 1
+use M2M3_MAG_7849107791434  M2M3_MAG_7849107791434_0
+timestamp 1788203828
+transform 1 0 14876 0 1 1569
+box 0 0 1 1
+use M3M4_MAG_7849107791430  M3M4_MAG_7849107791430_0
+timestamp 1788203828
+transform 1 0 10865 0 1 238
+box 0 0 1 1
+use M3M4_MAG_7849107791432  M3M4_MAG_7849107791432_0
+timestamp 1788203828
+transform 1 0 14876 0 1 1569
+box 0 0 1 1
+use vias_gen$8  vias_gen$8_0
+timestamp 1788203828
+transform 1 0 6094 0 1 2638
+box 0 0 160 228
+use vias_gen$16  vias_gen$16_0
+timestamp 1788203828
+transform 1 0 13876 0 1 1069
+box 0 0 2000 1001
+use vias_gen$18  vias_gen$18_0
+timestamp 1788203828
+transform 1 0 17876 0 1 2638
+box 0 0 2000 228
+use vias_gen$19  vias_gen$19_0
+timestamp 1788203828
+transform 1 0 9876 0 1 180
+box 0 0 2000 116
+<< end >>
