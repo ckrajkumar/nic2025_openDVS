@@ -1,0 +1,167 @@
+* NGSPICE file created from pixel_test_structure.ext - technology: sky130A
+
+.subckt openDVS_pixel m2_32_2198# vpr rowReadOFF m2_298_1861# m3_2210_26# m2_196_1392#
++ PrSFBp m5_n506_n512# m2_32_2482# rowReadON vdiff m2_32_2254# RefrBp m3_2462_26#
++ m2_372_2398# readLine VddA18 m3_2084_26# vpd vsf pixRst PrBp m3_2714_26# GndD m3_2336_26#
++ GndA OnBn DiffBn OffBn m3_2588_26#
+X0 a_361_187# ON GndD GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 ps=1.44 w=0.42 l=0.15
+X1 GndD nOFF a_621_187# GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.105 ps=0.92 w=0.42 l=0.15
+X2 VddA18 vpr vpd GndA sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.3
+X3 GndA vpr vsf VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.25
+X4 a_95_497# pixRst nRst GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 ps=1.44 w=0.42 l=0.15
+X5 VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=2.202 ps=18.88 w=1.5 l=1.5
+X6 vd vdiff sky130_fd_pr__cap_mim_m3_1 l=1 w=1
+X7 vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.42
+XD0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+X8 nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X9 vd vsf sky130_fd_pr__cap_mim_m3_1 l=1.505 w=6.47
+X10 vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.3
+X11 ON OnBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X12 vdiff DiffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X13 VddA18 vdiff ON VddA18 sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.8 as=0.45 ps=3.6 w=1.5 l=1.5
+X14 VddA18 PrBp vpr VddA18 sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.15
+X15 VddA18 vd vdiff VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
+X16 nOFF vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=0.225 ps=1.8 w=1.5 l=1.5
+X17 vd vsf sky130_fd_pr__cap_mim_m3_1 l=2.27 w=3.985
+X18 VddA18 PrSFBp vsf VddA18 sky130_fd_pr__pfet_01v8_hvt ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=1.5
+X19 a_621_187# rowReadOFF readLine GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.105 ps=0.92 w=0.42 l=0.15
+X20 GndA rowReadON a_95_497# GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.105 ps=0.92 w=0.42 l=0.15
+X21 readLine rowReadON a_361_187# GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.105 ps=0.92 w=0.42 l=0.15
+X22 VddA18 RefrBp nRst VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=1.5
+.ends
+
+.subckt openDVS_pixel2x2_bot vpd[1] vpd[3] vpd[2] rowReadON[0] GndD rowReadON[1] rowReadOFF[1]
++ OnBn OffBn DiffBn readLine[1] pixRst[1] pixRst[0] readLine[0] PrSFBp PrBp RefrBp
++ openDVS_pixel_3/vdiff vpd[0] openDVS_pixel_3/vsf rowReadOFF[0] openDVS_pixel_3/vpr
++ GndA VddA18
+XopenDVS_pixel_1 DiffBn openDVS_pixel_1/vpr rowReadOFF[1] OnBn OffBn OffBn PrSFBp
++ GndA GndA rowReadON[1] openDVS_pixel_1/vdiff VddA18 RefrBp PrBp GndA readLine[0]
++ VddA18 DiffBn vpd[1] openDVS_pixel_1/vsf pixRst[0] PrBp OnBn GndD PrSFBp GndA OnBn
++ DiffBn OffBn RefrBp openDVS_pixel
+XopenDVS_pixel_2 DiffBn openDVS_pixel_2/vpr rowReadOFF[1] OnBn RefrBp OffBn PrSFBp
++ GndA GndA rowReadON[1] openDVS_pixel_2/vdiff VddA18 RefrBp PrSFBp GndA readLine[1]
++ VddA18 OnBn vpd[3] openDVS_pixel_2/vsf pixRst[1] PrBp DiffBn GndD PrBp GndA OnBn
++ DiffBn OffBn OffBn openDVS_pixel
+XopenDVS_pixel_3 DiffBn openDVS_pixel_3/vpr rowReadOFF[0] OnBn OffBn OffBn PrSFBp
++ GndA VddA18 rowReadON[0] openDVS_pixel_3/vdiff GndA RefrBp PrBp GndA readLine[0]
++ VddA18 DiffBn vpd[0] openDVS_pixel_3/vsf pixRst[0] PrBp OnBn GndD PrSFBp GndA OnBn
++ DiffBn OffBn RefrBp openDVS_pixel
+XopenDVS_pixel_0 DiffBn openDVS_pixel_0/vpr rowReadOFF[0] OnBn RefrBp OffBn PrSFBp
++ GndA VddA18 rowReadON[0] openDVS_pixel_0/vdiff GndA RefrBp PrSFBp GndA readLine[1]
++ VddA18 OnBn vpd[2] openDVS_pixel_0/vsf pixRst[1] PrBp DiffBn GndD PrBp GndA OnBn
++ DiffBn OffBn OffBn openDVS_pixel
+.ends
+
+.subckt scs130hd_inv_1 vpwr vgnd vpb vnb Y A
+X0 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X1 Y A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+.subckt infiniamp_xl GND VDD VBIAS VIN VOUT
+X0 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X1 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X2 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X3 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X4 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X5 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X6 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X7 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X8 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X9 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=14.64 ps=110.64 w=2 l=0.4
+X10 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X11 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X12 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X13 VDD VBIAS AUX_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X14 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X15 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X16 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X17 DIODE_LD DIODE_LD GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X18 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0 ps=0 w=2 l=0.4
+X19 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X20 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X21 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X22 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X23 VDD VBIAS AUX_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X24 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X25 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X26 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X27 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X28 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X29 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X30 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X31 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X32 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X33 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X34 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X35 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X36 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X37 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X38 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X39 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X40 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X41 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X42 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X43 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X44 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X45 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X46 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X47 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X48 MAIN_BIAS MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X49 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X50 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X51 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X52 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X53 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X54 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X55 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X56 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X57 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X58 AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X59 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X60 GND MAIN_BIAS MAIN_BIAS GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X61 DIODE_LD DIODE_LD GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X62 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X63 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X64 AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X65 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X66 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X67 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X68 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X69 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X70 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X71 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X72 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X73 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+.ends
+
+.subckt scs130hd_inv_4 vgnd vpwr vpb vnb Y A
+X0 vpwr A Y vpb sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 vpwr A Y vpb sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 vgnd A Y vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X5 Y A vpwr vpb sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X6 vgnd A Y vnb sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X7 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt pixel_test_structure vssa1 vdda1 rowReadON[0] rowReadOFF[0] rowReadOFF[1]
++ rowReadON[1] vssc1 vsf_buf vdiff_buff vpr_buff dac_config_7 vpd_buff readOut[1]
++ readOut[0] dac_config_2 dac_config_5 dac_config_3 dac_config_4 dac_config_1 dac_config_0
++ pixRst[1] pixRst[0] vpd vpr vdiff readLine[0] readLine[1] vsf
+XopenDVS_pixel2x2_bot_0 openDVS_pixel2x2_bot_0/vpd[1] openDVS_pixel2x2_bot_0/vpd[3]
++ openDVS_pixel2x2_bot_0/vpd[2] rowReadON[0] vssc1 rowReadON[1] rowReadOFF[1] dac_config_2
++ dac_config_1 dac_config_0 readLine[1] pixRst[1] pixRst[0] readLine[0] dac_config_4
++ dac_config_3 dac_config_5 vdiff vpd vsf rowReadOFF[0] vpr vssa1 vdda1 openDVS_pixel2x2_bot
+Xscs130hd_inv_1_0 vdda1 vssc1 vdda1 vssa1 scs130hd_inv_4_0/A readLine[0] scs130hd_inv_1
+Xscs130hd_inv_1_1 vdda1 vssc1 vdda1 vssa1 scs130hd_inv_4_1/A readLine[1] scs130hd_inv_1
+Xinfiniamp_xl_0 vssa1 vdda1 dac_config_7 vsf vsf_buf infiniamp_xl
+Xinfiniamp_xl_1 vssa1 vdda1 dac_config_7 vdiff vdiff_buff infiniamp_xl
+Xinfiniamp_xl_2 vssa1 vdda1 dac_config_7 vpd vpd_buff infiniamp_xl
+Xinfiniamp_xl_3 vssa1 vdda1 dac_config_7 vpr vpr_buff infiniamp_xl
+Xscs130hd_inv_4_0 vssc1 vdda1 vdda1 vssa1 readOut[0] scs130hd_inv_4_0/A scs130hd_inv_4
+Xscs130hd_inv_4_1 vssc1 vdda1 vdda1 vssa1 readOut[1] scs130hd_inv_4_1/A scs130hd_inv_4
+X0 readLine[1] readLine[1] vdda1 vdda1 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+X1 vdda1 readLine[0] readLine[0] vdda1 sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.265 ps=2.53 w=1 l=1
+.ends
+

@@ -1,0 +1,38 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/photodiode_test_structure.sch
+** LVS-aligned to photodiode_test_structure_layout.spice / Mag GDS pins:
+**   dac_config_8 = PD gate, dac_config_7 = buffer bias, vpd_out = buffer out, vpd = PD node
+** Parasitic diode uses Mag pin names 1/2 (not anode/cathode).
+.subckt photodiode_test_structure vdda1 vssa1 vpd_out dac_config_7 dac_config_8 vpd
+*.PININFO vdda1:B vssa1:B vpd_out:B dac_config_7:B dac_config_8:B vpd:B
+XMpd vdda1 dac_config_8 vpd vssa1 sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1
+* Mag extracts D0 vssa1 vpd ... ; LVS sed converts to XD0. Pins must be 1,2.
+XD1 vssa1 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+x2 vdda1 dac_config_7 vpd vpd_out vssa1 infiniamp_xl_layout
+.ends
+
+* Placeholder matching Mag extracted diode pin names
+.subckt sky130_fd_pr__model__parasitic__diode_ps2dn 1 2
+.ends
+
+* expanding   symbol:  infiniamp_xl_layout.sym # of pins=5
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/infiniamp_xl_layout.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/infiniamp_xl_layout.sch
+.subckt infiniamp_xl_layout VDD VBIAS VIN VOUT GndA
+*.PININFO VDD:B GndA:B VIN:I VBIAS:B VOUT:B
+XMpAuxBias AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1
+XMpSrcBias MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1
+XMP_MSRC_VIN_M1 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_MSRC_VOUT_M1 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMnDiodeLD DIODE_LD DIODE_LD GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=2
+XMnMainBias MAIN_BIAS MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=2
+XMnNVin N_VIN MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=8
+XMnVout VOUT MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=8
+XMP_MSRC_VIN_M2 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_MSRC_VOUT_M2 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_NVIN_M2 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_VOUT_M2 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_NVIN_M1 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_VOUT_M1 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMnDiodeLD1 GndA GndA GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1
+XMnDiodeLD2 GndA GndA GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1
+.ends

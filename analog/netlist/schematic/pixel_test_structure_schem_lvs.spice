@@ -1,0 +1,184 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS2x2_test_pixel.sch
+** LVS-oriented top ports aligned to pixel_test_structure_layout.spice:
+**   buffer outs use *_buff names; probed analog nets use scalar vpd/vsf/vpr/vdiff
+**   (same nets as layout's buffered pixel); readLine[*] exposed as ports.
+** Parasitic ps2dn diodes kept in PixelPhotoreceptor as XD* to match Mag D0->XD0.
+.subckt openDVS2x2_test_pixel dac_config_7 vpd_buff vpr_buff vsf_buf vdiff_buff readOut[1] pixRst[1] pixRst[0] rowReadON[1]
++ rowReadON[0] readOut[0] rowReadOFF[1] rowReadOFF[0] dac_config_3 dac_config_5 dac_config_4 dac_config_0 vssa1 vdda1 vssc1 dac_config_1
++ dac_config_2 vpd vpr vdiff vsf readLine[0] readLine[1]
+*.PININFO dac_config_7:B vpd_buff:B vpr_buff:B vsf_buf:B vdiff_buff:B pixRst[1:0]:B rowReadON[1:0]:B rowReadOFF[1:0]:B vssa1:B
+*+ vdda1:B vssc1:B readOut[1]:O readOut[0]:O vpd:B vpr:B vdiff:B vsf:B readLine[1:0]:B
+* Buffers sense the same scalar probe nets Mag exposes (vpd/vsf/vpr/vdiff)
+x2 vdda1 dac_config_7 vpd vpd_buff vssa1 infiniamp_xl_layout
+x3 vdda1 dac_config_7 vpr vpr_buff vssa1 infiniamp_xl_layout
+x4 vdda1 dac_config_7 vsf vsf_buf vssa1 infiniamp_xl_layout
+x5 vdda1 dac_config_7 vdiff vdiff_buff vssa1 infiniamp_xl_layout
+* Pixel[0] probes map to scalar vpd/vsf/vpr/vdiff (layout openDVS_pixel_3 / vpd[0])
+xPix_test pixRst[1] pixRst[0] rowReadON[1] rowReadON[0] rowReadOFF[1] rowReadOFF[0] readLine[1] readLine[0] vdiff[3] vdiff[2]
++ vdiff[1] vdiff vdda1 vssa1 vssc1 dac_config_2 dac_config_1 dac_config_0 dac_config_4 dac_config_5 dac_config_3 vsf[3] vsf[2] vsf[1]
++ vsf vpr[3] vpr[2] vpr[1] vpr vpd[3] vpd[2] vpd[1] vpd openDVS_pixel2x2_test_pixel
+XM2 readLine[0] readLine[0] vdda1 vdda1 sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1
+XM1 readLine[1] readLine[1] vdda1 vdda1 sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1
+x6 readLine[0] inv_readLine[0] vdda1 vdda1 vssc1 vssa1 sky130_fd_sc_hd__inv_1
+x8 readLine[1] inv_readLine[1] vdda1 vdda1 vssc1 vssa1 sky130_fd_sc_hd__inv_1
+x7 inv_readLine[0] readOut[0] vdda1 vdda1 vssc1 vssa1 sky130_fd_sc_hd__inv_4
+x9 inv_readLine[1] readOut[1] vdda1 vdda1 vssc1 vssa1 sky130_fd_sc_hd__inv_4
+.ends
+
+* expanding   symbol:  infiniamp_xl_layout.sym # of pins=5
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/infiniamp_xl_layout.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/infiniamp_xl_layout.sch
+.subckt infiniamp_xl_layout VDD VBIAS VIN VOUT GndA
+*.PININFO VDD:B GndA:B VIN:I VBIAS:B VOUT:B
+XMpAuxBias AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1
+XMpSrcBias MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1
+XMP_MSRC_VIN_M1 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_MSRC_VOUT_M1 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMnDiodeLD DIODE_LD DIODE_LD GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=2
+XMnMainBias MAIN_BIAS MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=2
+XMnNVin N_VIN MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=8
+XMnVout VOUT MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 m=8
+XMP_MSRC_VIN_M2 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_MSRC_VOUT_M2 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_NVIN_M2 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_VOUT_M2 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_NVIN_M1 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMP_ASRC_VOUT_M1 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=4
+XMnDiodeLD1 GndA GndA GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1
+XMnDiodeLD2 GndA GndA GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1
+.ends
+
+
+* expanding   symbol:  openDVS_pixel2x2_test_pixel.sym # of pins=17
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_test_pixel.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS_pixel2x2_test_pixel.sch
+.subckt openDVS_pixel2x2_test_pixel pixRst[1] pixRst[0] rowReadON[1] rowReadON[0] rowReadOFF[1] rowReadOFF[0] readLine[1]
++ readLine[0] vdiff[3] vdiff[2] vdiff[1] vdiff[0] VddA18 GndA GndD OnBn OffBn DiffBn PrSFBp RefrBp PrBp vsf[3] vsf[2] vsf[1] vsf[0] vpr[3]
++ vpr[2] vpr[1] vpr[0] vpd[3] vpd[2] vpd[1] vpd[0]
+*.PININFO PrBp:B GndA:B VddA18:B PrSFBp:B DiffBn:B OnBn:B OffBn:B RefrBp:B GndD:B vpd[3],vpd[2],vpd[1],vpd[0]:B pixRst[1:0]:I
+*+ rowReadON[1:0]:I rowReadOFF[1:0]:I readLine[1:0]:B vdiff[3],vdiff[2],vdiff[1],vdiff[0]:B vsf[3],vsf[2],vsf[1],vsf[0]:B
+*+ vpr[3],vpr[2],vpr[1],vpr[0]:B
+xPix[3] rowReadON[1] VddA18 PrBp GndA vpd[3] rowReadOFF[1] pixRst[1] PrSFBp DiffBn OnBn OffBn RefrBp readLine[1] GndD vdiff[3]
++ vsf[3] vpr[3] openDVS_pixel_test_structure
+xPix[2] rowReadON[0] VddA18 PrBp GndA vpd[2] rowReadOFF[0] pixRst[1] PrSFBp DiffBn OnBn OffBn RefrBp readLine[1] GndD vdiff[2]
++ vsf[2] vpr[2] openDVS_pixel_test_structure
+xPix[1] rowReadON[1] VddA18 PrBp GndA vpd[1] rowReadOFF[1] pixRst[0] PrSFBp DiffBn OnBn OffBn RefrBp readLine[0] GndD vdiff[1]
++ vsf[1] vpr[1] openDVS_pixel_test_structure
+xPix[0] rowReadON[0] VddA18 PrBp GndA vpd[0] rowReadOFF[0] pixRst[0] PrSFBp DiffBn OnBn OffBn RefrBp readLine[0] GndD vdiff[0]
++ vsf[0] vpr[0] openDVS_pixel_test_structure
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__inv_1.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_1.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_1.sch
+.subckt sky130_fd_sc_hd__inv_1 A Y VPWR VPB VGND VNB
+*.PININFO A:I Y:O VNB:B VPB:B VPWR:B VGND:B
+XX0 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1
+XX1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1
+.ends
+
+
+* expanding   symbol:  sky130_fd_sc_hd__inv_4.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_4.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/sky130_fd_sc_hd__inv_4.sch
+.subckt sky130_fd_sc_hd__inv_4 A Y VPWR VPB VGND VNB
+*.PININFO A:I Y:O VNB:B VPB:B VPWR:B VGND:B
+XX0 Y A VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=4
+XX1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=4
+.ends
+
+
+* expanding   symbol:  openDVS_pixel_test_structure.sym # of pins=17
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS_pixel_test_structure.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS_pixel_test_structure.sch
+.subckt openDVS_pixel_test_structure rowReadON VddA18 PrBp GndA vpd rowReadOFF pixRst PrSFBp DiffBn OnBn OffBn RefrBp readLine
++ GndD vdiff vsf vpr
+*.PININFO vpd:B PrBp:B GndA:B VddA18:B PrSFBp:B DiffBn:B OnBn:B OffBn:B RefrBp:B pixRst:I rowReadON:I rowReadOFF:I readLine:B
+*+ GndD:B vpr:B vsf:B vdiff:B
+xpr VddA18 PrBp GndA vpd vpr PixelPhotoreceptor
+xsf VddA18 PrSFBp GndA vpr vsf PixelSourceFollower
+xchAmp VddA18 DiffBn GndA vsf vdiff nRst PixelChangeAmplifier
+xcomp VddA18 OnBn GndA vdiff ON OffBn nOFF PixelComparators
+xhandshake rowReadOFF GndA rowReadON readLine ON nOFF GndD PixelHandshake
+xrst rowReadON GndA pixRst nRst RefrBp VddA18 PixelResetGen
+.ends
+
+
+* expanding   symbol:  PixelPhotoreceptor.sym # of pins=5
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelPhotoreceptor.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelPhotoreceptor.sch
+.subckt PixelPhotoreceptor VddA18 PrBp GndA vpd vpr
+*.PININFO PrBp:B VddA18:B vpd:B GndA:B vpr:B
+XMpd VddA18 vpr vpd GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1
+XMpr_amp vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 nf=1
+XMprBias vpr PrBp VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1
+* Parasitic psub/diff diode. Mag writes D0 with pins 1,2; LVS sed -> XD0.
+* Pin names MUST be 1/2 (not anode/cathode) to match Mag extraction.
+XD1 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+.ends
+
+* Placeholder matching Mag's extracted diode pin names (1=GndA side, 2=vpd side)
+.subckt sky130_fd_pr__model__parasitic__diode_ps2dn 1 2
+.ends
+
+
+* expanding   symbol:  PixelSourceFollower.sym # of pins=5
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelSourceFollower.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelSourceFollower.sch
+.subckt PixelSourceFollower VddA18 PrSFBp GndA vpr vsf
+*.PININFO GndA:B PrSFBp:B vpr:B vsf:B VddA18:B
+XMsfBias vsf PrSFBp VddA18 VddA18 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42 nf=1
+XMsf GndA vpr vsf VddA18 sky130_fd_pr__pfet_01v8 L=0.25 W=0.42 nf=1
+.ends
+
+
+* expanding   symbol:  PixelChangeAmplifier.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelChangeAmplifier.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelChangeAmplifier.sch
+.subckt PixelChangeAmplifier VddA18 DiffBn GndA vsf vdiff nRst
+*.PININFO DiffBn:B vsf:B VddA18:B GndA:B vdiff:B nRst:B
+XC1b vd vsf sky130_fd_pr__cap_mim_m3_1 W=6.47 L=1.505
+XC2 vd vdiff sky130_fd_pr__cap_mim_m3_1 W=1 L=1
+XMchAmpBias vdiff DiffBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1
+XMrst vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt L=0.42 W=0.42 nf=1
+XMchAmp vdiff vd VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1
+XC1a vd vsf sky130_fd_pr__cap_mim_m3_1 W=2.27 L=3.985
+.ends
+
+
+* expanding   symbol:  PixelComparators.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelComparators.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelComparators.sch
+.subckt PixelComparators VddA18 OnBn GndA vdiff ON OffBn nOFF
+*.PININFO OnBn:B OffBn:B VddA18:B vdiff:B GndA:B ON:B nOFF:B
+XMonBias ON OnBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1
+XMoffBias nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1
+XMon ON vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1
+XMoff nOFF vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1
+.ends
+
+
+* expanding   symbol:  PixelHandshake.sym # of pins=7
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelHandshake.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelHandshake.sch
+.subckt PixelHandshake rowReadOFF GndA rowReadON readLine ON nOFF GndD
+*.PININFO rowReadON:I rowReadOFF:I readLine:B ON:B nOFF:B GndD:B GndA:B
+XMswON readLine rowReadON readLineONpd GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+XMoutON readLineONpd ON GndD GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+XMswOFF readLine rowReadOFF readLineOFFpd GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+XMoutOFF readLineOFFpd nOFF GndD GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+.ends
+
+
+* expanding   symbol:  PixelResetGen.sym # of pins=6
+** sym_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelResetGen.sym
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/PixelResetGen.sch
+.subckt PixelResetGen rowRst GndA colRst nRst RefrBp VddA18
+*.PININFO rowRst:I colRst:I RefrBp:B GndA:B VddA18:B nRst:B
+XMPDrefrCol nRst colRst net1 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+XMrefrBias nRst RefrBp VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 nf=1
+XMcapRefr VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1
+XMPDRefrRow net1 rowRst GndA GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1
+.ends
+
