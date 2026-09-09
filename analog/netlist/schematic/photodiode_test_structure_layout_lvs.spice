@@ -1,0 +1,85 @@
+* NGSPICE file created from photodiode_test_structure.ext - technology: sky130A
+
+.subckt infiniamp_xl VBIAS VIN VOUT GND VDD
+X0 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X1 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X2 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X3 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X4 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X5 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X6 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X7 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X8 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X9 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=14.64 ps=110.64 w=2 l=0.4
+X10 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X11 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X12 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X13 VDD VBIAS AUX_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X14 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X15 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X16 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X17 DIODE_LD DIODE_LD GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X18 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0 ps=0 w=2 l=0.4
+X19 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X20 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X21 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X22 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X23 VDD VBIAS AUX_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X24 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X25 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X26 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X27 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X28 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X29 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X30 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X31 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X32 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X33 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X34 MAIN_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X35 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X36 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X37 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X38 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X39 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X40 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X41 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X42 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X43 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X44 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.4
+X45 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X46 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X47 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X48 MAIN_BIAS MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X49 VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X50 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X51 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X52 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X53 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X54 AUX_SOURCE VOUT MAIN_BIAS AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X55 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X56 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X57 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X58 AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X59 MAIN_SOURCE VOUT VOUT MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X60 GND MAIN_BIAS MAIN_BIAS GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X61 DIODE_LD DIODE_LD GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X62 MAIN_SOURCE VIN N_VIN MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+X63 DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X64 AUX_SOURCE VBIAS VDD VDD sky130_fd_pr__pfet_01v8 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.4
+X65 MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.77 ps=12.59 w=6 l=0.4
+X66 VOUT MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X67 GND MAIN_BIAS N_VIN GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X68 N_VIN MAIN_BIAS GND GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X69 N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.02 pd=6.34 as=1.02 ps=6.34 w=6 l=0.4
+X70 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X71 GND MAIN_BIAS VOUT GND sky130_fd_pr__nfet_01v8 ad=0.61 pd=4.61 as=0.61 ps=4.61 w=2 l=0.4
+X72 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.4
+X73 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
+.ends
+
+.subckt photodiode_test_structure_layout vdda1 vssa1 vpd_out dac_config_7 dac_config_8 vpd
+Xinfiniamp_xl_0 dac_config_7 vpd vpd_out vssa1 vdda1 infiniamp_xl
+XD0 vssa1 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+X0 vdda1 dac_config_8 vpd vssa1 sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.3
+.ends
+
