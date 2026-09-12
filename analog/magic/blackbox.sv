@@ -43,9 +43,6 @@ module photodiode_test_structure_mag (
     input dac_config_7 /* verilator public */,
     input dac_config_8 /* verilator public */,
 
-    // Photodiode node (analog probe)
-    inout vpd /* verilator public */,
-
     // Buffered / observed photodiode output
     output vpd_out /* verilator public */
 );
