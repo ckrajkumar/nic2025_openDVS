@@ -7,20 +7,8 @@ MACRO photodiode_test_structure
   FOREIGN photodiode_test_structure ;
   ORIGIN 0.000 115.415 ;
   SIZE 66.480 BY 300.000 ;
-  PIN vdda1
+  PIN vdda2
     ANTENNADIFFAREA 31.261799 ;
-    PORT
-      LAYER met1 ;
-        RECT 46.130 36.130 46.140 36.140 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 25.520 53.750 33.560 54.170 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 29.705 60.380 29.715 60.390 ;
-    END
     PORT
       LAYER met3 ;
         RECT 0.000 62.170 66.480 66.170 ;
@@ -37,22 +25,10 @@ MACRO photodiode_test_structure
       LAYER met4 ;
         RECT 3.000 -115.415 7.000 184.585 ;
     END
-  END vdda1
-  PIN vssa1
+  END vdda2
+  PIN vssa2
     ANTENNAGATEAREA 1.600000 ;
     ANTENNADIFFAREA 55.168049 ;
-    PORT
-      LAYER met1 ;
-        RECT 43.430 35.695 43.440 35.705 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 21.780 15.355 46.405 15.935 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 34.085 13.460 34.095 13.470 ;
-    END
     PORT
       LAYER met3 ;
         RECT 0.000 54.170 66.480 58.170 ;
@@ -63,13 +39,13 @@ MACRO photodiode_test_structure
     END
     PORT
       LAYER met4 ;
-        RECT 11.000 -115.415 15.000 184.585 ;
+        RECT 51.480 -115.415 55.480 184.585 ;
     END
     PORT
       LAYER met4 ;
-        RECT 51.480 -115.415 55.480 184.585 ;
+        RECT 11.000 -115.415 15.000 184.585 ;
     END
-  END vssa1
+  END vssa2
   PIN vpd_out
     ANTENNAGATEAREA 38.399998 ;
     ANTENNADIFFAREA 13.040000 ;
@@ -92,42 +68,15 @@ MACRO photodiode_test_structure
         RECT 63.480 34.875 66.480 35.875 ;
     END
   END dac_config_8
-  PIN vpd
-    ANTENNAGATEAREA 19.199999 ;
-    ANTENNADIFFAREA 0.318100 ;
-    PORT
-      LAYER met1 ;
-        RECT 45.810 30.085 45.820 30.095 ;
-    END
-    PORT
-      LAYER met1 ;
-        RECT 45.435 34.540 45.445 34.550 ;
-    END
-  END vpd
   OBS
       LAYER nwell ;
         RECT 14.995 14.995 51.485 54.175 ;
       LAYER li1 ;
         RECT 15.125 15.125 51.355 54.045 ;
       LAYER met1 ;
-        RECT 15.065 36.420 51.415 54.105 ;
-        RECT 15.065 35.985 45.850 36.420 ;
-        RECT 15.065 35.415 43.150 35.985 ;
-        RECT 43.720 35.850 45.850 35.985 ;
-        RECT 46.420 35.850 51.415 36.420 ;
-        RECT 43.720 35.415 51.415 35.850 ;
-        RECT 15.065 34.830 51.415 35.415 ;
-        RECT 15.065 34.260 45.155 34.830 ;
-        RECT 45.725 34.260 51.415 34.830 ;
-        RECT 15.065 30.375 51.415 34.260 ;
-        RECT 15.065 29.805 45.530 30.375 ;
-        RECT 46.100 29.805 51.415 30.375 ;
-        RECT 15.065 15.065 51.415 29.805 ;
+        RECT 15.065 15.065 51.415 54.105 ;
       LAYER met2 ;
-        RECT 3.000 60.670 63.480 66.170 ;
-        RECT 3.000 60.100 29.425 60.670 ;
-        RECT 29.995 60.100 63.480 60.670 ;
-        RECT 3.000 54.450 63.480 60.100 ;
+        RECT 3.000 54.450 63.480 66.170 ;
         RECT 3.000 53.470 25.240 54.450 ;
         RECT 33.840 53.470 63.480 54.450 ;
         RECT 3.000 50.605 63.480 53.470 ;
@@ -139,10 +88,7 @@ MACRO photodiode_test_structure
         RECT 3.000 16.215 63.480 34.595 ;
         RECT 3.000 15.075 21.500 16.215 ;
         RECT 46.685 15.075 63.480 16.215 ;
-        RECT 3.000 13.750 63.480 15.075 ;
-        RECT 3.000 13.180 33.805 13.750 ;
-        RECT 34.375 13.180 63.480 13.750 ;
-        RECT 3.000 11.000 63.480 13.180 ;
+        RECT 3.000 11.000 63.480 15.075 ;
       LAYER met3 ;
         RECT 42.850 27.345 48.550 33.050 ;
       LAYER met4 ;
