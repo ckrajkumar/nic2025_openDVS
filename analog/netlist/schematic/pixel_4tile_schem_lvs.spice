@@ -20,7 +20,7 @@
 * ============================================================================
 ** sch_path: (derived) /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/pixel_4tile_schem_lvs.spice
 ** layout pin order: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/magic/pixel_4tile/check_lvs/pixel_4tile_layout.spice
-.subckt pixel_4tile_schem array_col_top_right[1]
+.subckt pixel_4tile array_col_top_right[1]
 + array_col_top_right[5] col_event_rst_top_right[17] array_col_top_right[28]
 + col_event_rst_top_right[24] col_event_rst_top_right[16] array_col_top_right[8]
 + array_col_top_right[9] col_event_rst_top_right[23] col_event_rst_top_right[15]

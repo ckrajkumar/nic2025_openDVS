@@ -1,5 +1,5 @@
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/openDVS2x2_test_pixel.sch
-.subckt pixel_test_structure_schem dac_config_7 vpd_buff vpr_buff vsf_buf vdiff_buff readOut[1] pixRst[1] pixRst[0] rowReadON[1]
+.subckt pixel_test_structure dac_config_7 vpd_buff vpr_buff vsf_buf vdiff_buff readOut[1] pixRst[1] pixRst[0] rowReadON[1]
 + rowReadON[0] readOut[0] rowReadOFF[1] rowReadOFF[0] dac_config_3 dac_config_5 dac_config_4 dac_config_0 vssa1 vdda1 vssc1 dac_config_1
 + dac_config_2
 *.PININFO dac_config_7:B vpd_buff:B vpr_buff:B vsf_buf:B vdiff_buff:B pixRst[1:0]:B rowReadON[1:0]:B rowReadOFF[1:0]:B vssa1:B
