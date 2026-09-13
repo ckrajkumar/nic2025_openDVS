@@ -1,0 +1,42 @@
+======== BiasBranchnMasterx11 ========
+layout: BiasBranchnMasterx11_layout_lvs.spice (BiasBranchnMasterx11)
+schem:  BiasBranchnMasterx11_schem_lvs.spice (BiasBranchnMasterx11_schem)
+Final result: Circuits match uniquely. .
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 41                         |Number of nets: 41                         
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 419                        |Number of nets: 419                        
+Number of devices: 236                     |Number of devices: 236                     
+Number of nets: 616                        |Number of nets: 616                        
+
+======== photodiode_test_structure ========
+layout: photodiode_test_structure_layout_lvs.spice (photodiode_test_structure_layout)
+schem:  photodiode_test_structure_schem_lvs.spice (photodiode_test_structure_schem)
+Final result: Circuits match uniquely. Property errors were found.
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 11                         |Number of nets: 11                         
+Property errors: photodiode_test_structure_layout
+
+
+======== pixel_test_structure ========
+layout: pixel_test_structure_layout_lvs.spice (pixel_test_structure)
+schem:  pixel_test_structure_schem_lvs.spice (pixel_test_structure_schem)
+Final result: Circuits match uniquely. Property errors were found.
+Number of devices: 143                     |Number of devices: 143                     
+Number of nets: 90                         |Number of nets: 90                         
+Property errors: pixel_test_structure
+
+
+======== pixel_4tile ========
+layout: pixel_4tile_layout_lvs.spice (pixel_4tile_layout)
+schem:  pixel_4tile_schem_lvs.spice (pixel_4tile_schem)
+Final result: Circuits match uniquely. .
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 21                         |Number of nets: 21                         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 21                         |Number of nets: 21                         
+Number of devices: 4352                    |Number of devices: 4352                    
+Number of nets: 17680                      |Number of nets: 17680                      
+Property errors: openDVS_pixel
+
+

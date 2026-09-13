@@ -1,10 +1,5 @@
 * NGSPICE file created from pixel_4tile.ext - technology: sky130A
 
-* 2-pin LVS stub for Magic photodiode (avoids dummy_25/26)
-* ps2dn 2-pin X-instance sky130_fd_pr__model__parasitic__diode_ps2dn [1 rewritten]
-.subckt sky130_fd_pr__model__parasitic__diode_ps2dn PLUS MINUS
-.ends
-
 .subckt openDVS_pixel m2_32_2198# rowReadOFF m2_298_1861# m3_2210_26# m2_196_1392#
 + PrSFBp m5_n506_n512# m2_32_2482# rowReadON m2_32_2254# RefrBp m3_2462_26# m2_372_2398#
 + readLine VddA18 m3_2084_26# vpd pixRst PrBp m3_2714_26# GndD m3_2336_26# GndA OnBn
@@ -17,7 +12,7 @@ X4 a_95_497# pixRst nRst GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 
 X5 VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=2.202 ps=18.88 w=1.5 l=1.5
 X6 vd vdiff sky130_fd_pr__cap_mim_m3_1 l=1 w=1
 X7 vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.42
-XD0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+D0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
 X8 nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
 X9 vd vsf sky130_fd_pr__cap_mim_m3_1 l=1.505 w=6.47
 X10 vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.3

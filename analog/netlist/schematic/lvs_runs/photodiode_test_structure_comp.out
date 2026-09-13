@@ -1,0 +1,87 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell infiniamp_xl in circuit photodiode_test_structure_layout (0)(1 instance)
+Flattening unmatched subcell infiniamp_xl_layout in circuit photodiode_test_structure_schem (1)(1 instance)
+
+Class photodiode_test_structure_layout (0):  Merged 63 parallel devices.
+Class photodiode_test_structure_schem (1):  Merged 5 parallel devices.
+Subcircuit summary:
+Circuit 1: photodiode_test_structure_layou |Circuit 2: photodiode_test_structure_schem 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (32->4)        |sky130_fd_pr__pfet_01v8_lvt (8->4)         
+sky130_fd_pr__pfet_01v8 (20->2)            |sky130_fd_pr__pfet_01v8 (20->2)            
+sky130_fd_pr__nfet_01v8 (23->6)            |sky130_fd_pr__nfet_01v8 (23->6)            
+sky130_fd_pr__model__parasitic__diode_ps2d |sky130_fd_pr__model__parasitic__diode_ps2d 
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:0 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:14 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:7 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:8 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: photodiode_test_structure_layou |Circuit 2: photodiode_test_structure_schem 
+-------------------------------------------|-------------------------------------------
+dac_config_8                               |dac_config_8                               
+vdda1                                      |vdda1                                      
+vssa1                                      |vssa1                                      
+vpd_out                                    |vpd_out                                    
+dac_config_7                               |dac_config_7                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes photodiode_test_structure_layout and photodiode_test_structure_schem are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ photodiode_test_structure_layout

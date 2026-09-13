@@ -1,0 +1,192 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+Flattening unmatched subcell openDVS_pixel2x2_bot in circuit pixel_test_structure (0)(1 instance)
+Flattening unmatched subcell openDVS_pixel in circuit pixel_test_structure (0)(4 instances)
+Flattening unmatched subcell scs130hd_inv_1 in circuit pixel_test_structure (0)(2 instances)
+Flattening unmatched subcell infiniamp_xl in circuit pixel_test_structure (0)(4 instances)
+Flattening unmatched subcell scs130hd_inv_4 in circuit pixel_test_structure (0)(2 instances)
+Flattening unmatched subcell infiniamp_xl_layout in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell openDVS_pixel2x2_test_pixel in circuit pixel_test_structure_schem (1)(1 instance)
+Flattening unmatched subcell openDVS_pixel_test_structure in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelPhotoreceptor in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelSourceFollower in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelChangeAmplifier in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelComparators in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelHandshake in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell PixelResetGen in circuit pixel_test_structure_schem (1)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit pixel_test_structure_schem (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit pixel_test_structure_schem (1)(2 instances)
+
+Class pixel_test_structure (0):  Merged 271 parallel devices.
+Class pixel_test_structure_schem (1):  Merged 27 parallel devices.
+Subcircuit summary:
+Circuit 1: pixel_test_structure            |Circuit 2: pixel_test_structure_schem      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (142->65)          |sky130_fd_pr__nfet_01v8 (136->65)          
+sky130_fd_pr__pfet_01v8 (110->38)          |sky130_fd_pr__pfet_01v8 (110->38)          
+sky130_fd_pr__cap_mim_m3_1 (12->8)         |sky130_fd_pr__cap_mim_m3_1 (12->8)         
+sky130_fd_pr__pfet_01v8_hvt (18->12)       |sky130_fd_pr__pfet_01v8_hvt (12)           
+sky130_fd_pr__model__parasitic__diode_ps2d |sky130_fd_pr__model__parasitic__diode_ps2d 
+sky130_fd_pr__pfet_01v8_lvt (128->16)      |sky130_fd_pr__pfet_01v8_lvt (32->16)       
+Number of devices: 143                     |Number of devices: 143                     
+Number of nets: 90                         |Number of nets: 90                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:14 vs. infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:14 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:14 vs. infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:14 vs. infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:0 vs. infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:0 vs. infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:0 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:0 vs. infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:7 vs. infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:7 vs. infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:7 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:7 vs. infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:8 vs. infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:8 vs. infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:8 vs. infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:8 vs. infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2:
+ w circuit1: 48   circuit2: 12   (delta=120%, cutoff=1%)
+scs130hd_inv_4_0/sky130_fd_pr__pfet_01v8_hvt:0 vs. sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__pfet_01v8_hvt:X1:
+ w circuit1: 4   circuit2: 1   (delta=120%, cutoff=1%)
+scs130hd_inv_4_1/sky130_fd_pr__pfet_01v8_hvt:0 vs. sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__pfet_01v8_hvt:X1:
+ w circuit1: 4   circuit2: 1   (delta=120%, cutoff=1%)
+openDVS_pixel2x2_bot_0//openDVS_pixel_2/sky130_fd_pr__cap_mim_m3_1:9 vs. openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[3]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b:
+ w circuit1: 3.985   circuit2: 2.27   (delta=54.8%, cutoff=1%)
+ l circuit1: 2.27   circuit2: 3.985   (delta=54.8%, cutoff=1%)
+openDVS_pixel2x2_bot_0//openDVS_pixel_0/sky130_fd_pr__cap_mim_m3_1:9 vs. openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[2]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b:
+ w circuit1: 3.985   circuit2: 2.27   (delta=54.8%, cutoff=1%)
+ l circuit1: 2.27   circuit2: 3.985   (delta=54.8%, cutoff=1%)
+openDVS_pixel2x2_bot_0//openDVS_pixel_1/sky130_fd_pr__cap_mim_m3_1:9 vs. openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[1]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b:
+ w circuit1: 3.985   circuit2: 2.27   (delta=54.8%, cutoff=1%)
+ l circuit1: 2.27   circuit2: 3.985   (delta=54.8%, cutoff=1%)
+openDVS_pixel2x2_bot_0//openDVS_pixel_3/sky130_fd_pr__cap_mim_m3_1:9 vs. openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[0]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b:
+ w circuit1: 3.985   circuit2: 2.27   (delta=54.8%, cutoff=1%)
+ l circuit1: 2.27   circuit2: 3.985   (delta=54.8%, cutoff=1%)
+scs130hd_inv_4_0/sky130_fd_pr__nfet_01v8:2 vs. sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__nfet_01v8:X0:
+ w circuit1: 2.6   circuit2: 0.65   (delta=120%, cutoff=1%)
+scs130hd_inv_4_1/sky130_fd_pr__nfet_01v8:2 vs. sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__nfet_01v8:X0:
+ w circuit1: 2.6   circuit2: 0.65   (delta=120%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: pixel_test_structure            |Circuit 2: pixel_test_structure_schem      
+-------------------------------------------|-------------------------------------------
+vssa1                                      |vssa1                                      
+dac_config_7                               |dac_config_7                               
+vdda1                                      |vdda1                                      
+pixRst[0]                                  |pixRst[0]                                  
+pixRst[1]                                  |pixRst[1]                                  
+rowReadOFF[1]                              |rowReadOFF[1]                              
+rowReadOFF[0]                              |rowReadOFF[0]                              
+readOut[0]                                 |readOut[0]                                 
+readOut[1]                                 |readOut[1]                                 
+vssc1                                      |vssc1                                      
+vpr_buff                                   |vpr_buff                                   
+vdiff_buff                                 |vdiff_buff                                 
+vpd_buff                                   |vpd_buff                                   
+vsf_buf                                    |vsf_buf                                    
+rowReadON[1]                               |rowReadON[1]                               
+rowReadON[0]                               |rowReadON[0]                               
+dac_config_2                               |dac_config_2                               
+dac_config_1                               |dac_config_1                               
+dac_config_0                               |dac_config_0                               
+dac_config_4                               |dac_config_4                               
+dac_config_5                               |dac_config_5                               
+dac_config_3                               |dac_config_3                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pixel_test_structure and pixel_test_structure_schem are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ pixel_test_structure
