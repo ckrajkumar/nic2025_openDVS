@@ -1,0 +1,188 @@
+[
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2"
+      ], [
+        "1",
+        "2"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "photodiode_test_structure_layout",
+      "photodiode_test_structure"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__pfet_01v8_lvt", 4],
+         ["sky130_fd_pr__pfet_01v8", 2],
+         ["sky130_fd_pr__nfet_01v8", 6],
+         ["sky130_fd_pr__model__parasitic__diode_ps2dn", 1 ]
+       ], [
+         ["sky130_fd_pr__pfet_01v8_lvt", 4 ],
+         ["sky130_fd_pr__pfet_01v8", 2 ],
+         ["sky130_fd_pr__nfet_01v8", 6 ],
+         ["sky130_fd_pr__model__parasitic__diode_ps2dn", 1 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "properties": [
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:13",
+           [
+             ["w", "4.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpAuxBias",
+           [
+             ["W", "1.0"]
+           ]
+         ]
+      ],
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:1",
+           [
+             ["w", "16.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpSrcBias",
+           [
+             ["W", "1.0"]
+           ]
+         ]
+      ],
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:0",
+           [
+             ["w", "48.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VOUT_M1",
+           [
+             ["W", "12.0"]
+           ]
+         ]
+      ],
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:14",
+           [
+             ["w", "48.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_MSRC_VIN_M1",
+           [
+             ["W", "12.0"]
+           ]
+         ]
+      ],
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:7",
+           [
+             ["w", "48.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_NVIN_M2",
+           [
+             ["W", "12.0"]
+           ]
+         ]
+      ],
+      [
+         [
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:8",
+           [
+             ["w", "48.0"]
+           ]
+         ],
+         [
+           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8_lvt:MP_ASRC_VOUT_M2",
+           [
+             ["W", "12.0"]
+           ]
+         ]
+      ]
+   ],
+   "pins": [
+      [
+        "dac_config_8",
+        "vdda1",
+        "vssa1",
+        "vpd_out",
+        "vpd",
+        "dac_config_7"
+      ], [
+        "dac_config_8",
+        "vdda1",
+        "vssa1",
+        "vpd_out",
+        "vpd",
+        "dac_config_7"
+      ]
+   ]
+  }
+]

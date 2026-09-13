@@ -77,9 +77,9 @@ X72 VDD VBIAS MAIN_SOURCE VDD sky130_fd_pr__pfet_01v8 ad=0.14 pd=1.28 as=0.14 ps
 X73 AUX_SOURCE N_VIN DIODE_LD AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt ad=1.77 pd=12.59 as=1.02 ps=6.34 w=6 l=0.4
 .ends
 
-.subckt photodiode_test_structure_layout vdda1 vssa1 vpd_out dac_config_7 dac_config_8 vpd
+.subckt photodiode_test_structure_layout vdda1 vssa1 vpd_out dac_config_7 dac_config_8
 Xinfiniamp_xl_0 dac_config_7 vpd vpd_out vssa1 vdda1 infiniamp_xl
-XD0 vssa1 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+D0 vssa1 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
 X0 vdda1 dac_config_8 vpd vssa1 sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.6 as=0.15 ps=1.6 w=0.5 l=0.3
 .ends
 

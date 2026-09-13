@@ -12,7 +12,7 @@ X4 a_95_497# pixRst nRst GndA sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.126 
 X5 VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 ad=0.45 pd=3.6 as=2.202 ps=18.88 w=1.5 l=1.5
 X6 vd vdiff sky130_fd_pr__cap_mim_m3_1 l=1 w=1
 X7 vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.42
-XD0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
+D0 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=32.49
 X8 nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 ad=0.45 pd=3.6 as=0.45 ps=3.6 w=1.5 l=1.5
 X9 vd vsf sky130_fd_pr__cap_mim_m3_1 l=1.505 w=6.47
 X10 vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.3
@@ -31,9 +31,9 @@ X22 VddA18 RefrBp nRst VddA18 sky130_fd_pr__pfet_01v8 ad=0.126 pd=1.44 as=0.126 
 .ends
 
 .subckt openDVS_pixel2x2_bot vpd[1] vpd[3] vpd[2] rowReadON[0] GndD rowReadON[1] rowReadOFF[1]
-+ OnBn OffBn DiffBn readLine[1] pixRst[1] pixRst[0] readLine[0] PrSFBp PrBp RefrBp
-+ openDVS_pixel_3/vdiff vpd[0] openDVS_pixel_3/vsf rowReadOFF[0] openDVS_pixel_3/vpr
-+ GndA VddA18
++ VddA18 OnBn OffBn DiffBn readLine[1] pixRst[1] pixRst[0] readLine[0] PrSFBp PrBp
++ RefrBp openDVS_pixel_3/vdiff vpd[0] openDVS_pixel_3/vsf rowReadOFF[0] openDVS_pixel_3/vpr
++ GndA
 XopenDVS_pixel_1 DiffBn openDVS_pixel_1/vpr rowReadOFF[1] OnBn OffBn OffBn PrSFBp
 + GndA GndA rowReadON[1] openDVS_pixel_1/vdiff VddA18 RefrBp PrBp GndA readLine[0]
 + VddA18 DiffBn vpd[1] openDVS_pixel_1/vsf pixRst[0] PrBp OnBn GndD PrSFBp GndA OnBn
@@ -148,11 +148,11 @@ X7 Y A vgnd vnb sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=
 .subckt pixel_test_structure vssa1 vdda1 rowReadON[0] rowReadOFF[0] rowReadOFF[1]
 + rowReadON[1] vssc1 vsf_buf vdiff_buff vpr_buff dac_config_7 vpd_buff readOut[1]
 + readOut[0] dac_config_2 dac_config_5 dac_config_3 dac_config_4 dac_config_1 dac_config_0
-+ pixRst[1] pixRst[0] vpd vpr vdiff readLine[0] readLine[1] vsf
++ pixRst[1] pixRst[0]
 XopenDVS_pixel2x2_bot_0 openDVS_pixel2x2_bot_0/vpd[1] openDVS_pixel2x2_bot_0/vpd[3]
-+ openDVS_pixel2x2_bot_0/vpd[2] rowReadON[0] vssc1 rowReadON[1] rowReadOFF[1] dac_config_2
-+ dac_config_1 dac_config_0 readLine[1] pixRst[1] pixRst[0] readLine[0] dac_config_4
-+ dac_config_3 dac_config_5 vdiff vpd vsf rowReadOFF[0] vpr vssa1 vdda1 openDVS_pixel2x2_bot
++ openDVS_pixel2x2_bot_0/vpd[2] rowReadON[0] vssc1 rowReadON[1] rowReadOFF[1] vdda1
++ dac_config_2 dac_config_1 dac_config_0 readLine[1] pixRst[1] pixRst[0] readLine[0]
++ dac_config_4 dac_config_3 dac_config_5 vdiff vpd vsf rowReadOFF[0] vpr vssa1 openDVS_pixel2x2_bot
 Xscs130hd_inv_1_0 vdda1 vssc1 vdda1 vssa1 scs130hd_inv_4_0/A readLine[0] scs130hd_inv_1
 Xscs130hd_inv_1_1 vdda1 vssc1 vdda1 vssa1 scs130hd_inv_4_1/A readLine[1] scs130hd_inv_1
 Xinfiniamp_xl_0 vssa1 vdda1 dac_config_7 vsf vsf_buf infiniamp_xl
