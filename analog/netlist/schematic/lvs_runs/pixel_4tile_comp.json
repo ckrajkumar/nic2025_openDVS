@@ -32,17 +32,6 @@
   {
    "pins": [
       [
-        "PLUS",
-        "MINUS"
-      ], [
-        "PLUS",
-        "MINUS"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
         "1",
         "2",
         "3",
@@ -100,16 +89,14 @@
            "sky130_fd_pr__cap_mim_m3_1:9",
            [
              ["w", "3.985"],
-             ["l", "2.27"],
-             ["l", "1.505"]
+             ["l", "2.27"]
            ]
          ],
          [
            "PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b",
            [
              ["W", "2.27"],
-             ["L", "3.985"],
-             ["L", "1.05"]
+             ["L", "3.985"]
            ]
          ]
       ]
@@ -335,7 +322,7 @@
   {
    "name": [
       "pixel_4tile_layout",
-      "pixel_4tile_schem"
+      "pixel_4tile"
    ],
    "devices": [
        [

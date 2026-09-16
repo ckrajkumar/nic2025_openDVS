@@ -33,17 +33,6 @@
    "pins": [
       [
         "1",
-        "2"
-      ], [
-        "1",
-        "2"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
-        "1",
         "2",
         "3",
         "4"
@@ -88,15 +77,15 @@
    ],
    "devices": [
        [
-         ["sky130_fd_pr__nfet_01v8", 65],
          ["sky130_fd_pr__pfet_01v8", 38],
+         ["sky130_fd_pr__nfet_01v8", 65],
          ["sky130_fd_pr__cap_mim_m3_1", 8],
          ["sky130_fd_pr__pfet_01v8_hvt", 12],
          ["sky130_fd_pr__model__parasitic__diode_ps2dn", 4],
          ["sky130_fd_pr__pfet_01v8_lvt", 16 ]
        ], [
-         ["sky130_fd_pr__nfet_01v8", 65 ],
          ["sky130_fd_pr__pfet_01v8", 38 ],
+         ["sky130_fd_pr__nfet_01v8", 65 ],
          ["sky130_fd_pr__cap_mim_m3_1", 8 ],
          ["sky130_fd_pr__pfet_01v8_hvt", 12 ],
          ["sky130_fd_pr__model__parasitic__diode_ps2dn", 4 ],
@@ -114,7 +103,7 @@
    "properties": [
       [
          [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:14",
+           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:1",
            [
              ["w", "48.0"]
            ]
@@ -128,7 +117,7 @@
       ],
       [
          [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:14",
+           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:1",
            [
              ["w", "48.0"]
            ]
@@ -142,7 +131,7 @@
       ],
       [
          [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:14",
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:1",
            [
              ["w", "48.0"]
            ]
@@ -156,7 +145,7 @@
       ],
       [
          [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:14",
+           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:1",
            [
              ["w", "48.0"]
            ]
@@ -170,7 +159,7 @@
       ],
       [
          [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:0",
+           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:11",
            [
              ["w", "48.0"]
            ]
@@ -184,7 +173,7 @@
       ],
       [
          [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:0",
+           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:11",
            [
              ["w", "48.0"]
            ]
@@ -198,7 +187,7 @@
       ],
       [
          [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:0",
+           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:11",
            [
              ["w", "48.0"]
            ]
@@ -212,7 +201,7 @@
       ],
       [
          [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:0",
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:11",
            [
              ["w", "48.0"]
            ]
@@ -226,7 +215,7 @@
       ],
       [
          [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:7",
+           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:3",
            [
              ["w", "48.0"]
            ]
@@ -240,7 +229,7 @@
       ],
       [
          [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:7",
+           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:3",
            [
              ["w", "48.0"]
            ]
@@ -254,7 +243,7 @@
       ],
       [
          [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:7",
+           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:3",
            [
              ["w", "48.0"]
            ]
@@ -268,7 +257,7 @@
       ],
       [
          [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:7",
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:3",
            [
              ["w", "48.0"]
            ]
@@ -282,7 +271,7 @@
       ],
       [
          [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:8",
+           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8_lvt:9",
            [
              ["w", "48.0"]
            ]
@@ -296,7 +285,7 @@
       ],
       [
          [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:8",
+           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8_lvt:9",
            [
              ["w", "48.0"]
            ]
@@ -310,7 +299,7 @@
       ],
       [
          [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:8",
+           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:9",
            [
              ["w", "48.0"]
            ]
@@ -324,7 +313,7 @@
       ],
       [
          [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:8",
+           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8_lvt:9",
            [
              ["w", "48.0"]
            ]
@@ -338,13 +327,13 @@
       ],
       [
          [
-           "scs130hd_inv_4_0/sky130_fd_pr__pfet_01v8_hvt:0",
+           "scs130hd_inv_4_0/sky130_fd_pr__pfet_01v8_hvt:4",
            [
              ["w", "4.0"]
            ]
          ],
          [
-           "sky130_fd_sc_hd__inv_4:7/sky130_fd_pr__pfet_01v8_hvt:X1",
+           "sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__pfet_01v8_hvt:X1",
            [
              ["W", "1.0"]
            ]
@@ -352,13 +341,13 @@
       ],
       [
          [
-           "scs130hd_inv_4_1/sky130_fd_pr__pfet_01v8_hvt:0",
+           "scs130hd_inv_4_1/sky130_fd_pr__pfet_01v8_hvt:4",
            [
              ["w", "4.0"]
            ]
          ],
          [
-           "sky130_fd_sc_hd__inv_4:9/sky130_fd_pr__pfet_01v8_hvt:X1",
+           "sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__pfet_01v8_hvt:X1",
            [
              ["W", "1.0"]
            ]
@@ -366,189 +355,93 @@
       ],
       [
          [
-           "openDVS_pixel2x2_bot_0//openDVS_pixel_2/sky130_fd_pr__cap_mim_m3_1:9",
+           "openDVS_pixel2x2_bot_0//openDVS_pixel_2/sky130_fd_pr__cap_mim_m3_1:3",
            [
-             ["w", "3.985"],
-             ["l", "2.27"]
+             ["w", "1.505"],
+             ["l", "6.47"],
+             ["w", "2.27"],
+             ["l", "3.985"]
            ]
          ],
          [
            "openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[3]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b",
            [
              ["W", "2.27"],
-             ["L", "3.985"]
+             ["L", "3.985"],
+             ["W", "6.47"],
+             ["L", "1.505"]
            ]
          ]
       ],
       [
          [
-           "openDVS_pixel2x2_bot_0//openDVS_pixel_0/sky130_fd_pr__cap_mim_m3_1:9",
+           "openDVS_pixel2x2_bot_0//openDVS_pixel_0/sky130_fd_pr__cap_mim_m3_1:3",
            [
-             ["w", "3.985"],
-             ["l", "2.27"]
+             ["w", "1.505"],
+             ["l", "6.47"],
+             ["w", "2.27"],
+             ["l", "3.985"]
            ]
          ],
          [
            "openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[2]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b",
            [
              ["W", "2.27"],
-             ["L", "3.985"]
+             ["L", "3.985"],
+             ["W", "6.47"],
+             ["L", "1.505"]
            ]
          ]
       ],
       [
          [
-           "openDVS_pixel2x2_bot_0//openDVS_pixel_1/sky130_fd_pr__cap_mim_m3_1:9",
+           "openDVS_pixel2x2_bot_0//openDVS_pixel_1/sky130_fd_pr__cap_mim_m3_1:3",
            [
-             ["w", "3.985"],
-             ["l", "2.27"]
+             ["w", "1.505"],
+             ["l", "6.47"],
+             ["w", "2.27"],
+             ["l", "3.985"]
            ]
          ],
          [
            "openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[1]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b",
            [
              ["W", "2.27"],
-             ["L", "3.985"]
+             ["L", "3.985"],
+             ["W", "6.47"],
+             ["L", "1.505"]
            ]
          ]
       ],
       [
          [
-           "openDVS_pixel2x2_bot_0//openDVS_pixel_3/sky130_fd_pr__cap_mim_m3_1:9",
+           "openDVS_pixel2x2_bot_0//openDVS_pixel_3/sky130_fd_pr__cap_mim_m3_1:3",
            [
-             ["w", "3.985"],
-             ["l", "2.27"]
+             ["w", "1.505"],
+             ["l", "6.47"],
+             ["w", "2.27"],
+             ["l", "3.985"]
            ]
          ],
          [
            "openDVS_pixel2x2_test_pixel:Pix_test/openDVS_pixel_test_structure:Pix[0]/PixelChangeAmplifier:chAmp/sky130_fd_pr__cap_mim_m3_1:C1b",
            [
              ["W", "2.27"],
-             ["L", "3.985"]
+             ["L", "3.985"],
+             ["W", "6.47"],
+             ["L", "1.505"]
            ]
          ]
       ],
       [
          [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8:1",
-           [
-             ["w", "16.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8:MpSrcBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8:1",
-           [
-             ["w", "16.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8:MpSrcBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_3/sky130_fd_pr__pfet_01v8:13",
-           [
-             ["w", "4.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:3/sky130_fd_pr__pfet_01v8:MpAuxBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8:13",
-           [
-             ["w", "4.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpAuxBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:13",
-           [
-             ["w", "4.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8:MpAuxBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_1/sky130_fd_pr__pfet_01v8:13",
-           [
-             ["w", "4.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:5/sky130_fd_pr__pfet_01v8:MpAuxBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_2/sky130_fd_pr__pfet_01v8:1",
-           [
-             ["w", "16.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpSrcBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:1",
-           [
-             ["w", "16.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:4/sky130_fd_pr__pfet_01v8:MpSrcBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "scs130hd_inv_4_0/sky130_fd_pr__nfet_01v8:2",
+           "scs130hd_inv_4_0/sky130_fd_pr__nfet_01v8:0",
            [
              ["w", "2.6"]
            ]
          ],
          [
-           "sky130_fd_sc_hd__inv_4:7/sky130_fd_pr__nfet_01v8:X0",
+           "sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__nfet_01v8:X0",
            [
              ["W", "0.65"]
            ]
@@ -556,13 +449,13 @@
       ],
       [
          [
-           "scs130hd_inv_4_1/sky130_fd_pr__nfet_01v8:2",
+           "scs130hd_inv_4_1/sky130_fd_pr__nfet_01v8:0",
            [
              ["w", "2.6"]
            ]
          ],
          [
-           "sky130_fd_sc_hd__inv_4:9/sky130_fd_pr__nfet_01v8:X0",
+           "sky130_fd_sc_hd__inv_4:1/sky130_fd_pr__nfet_01v8:X0",
            [
              ["W", "0.65"]
            ]
@@ -571,22 +464,9 @@
    ],
    "pins": [
       [
-        "vdda1",
-        "vssa1",
-        "vpr",
-        "vdiff",
+        "vssa2",
         "dac_config_7",
-        "readLine[1]",
-        "readLine[0]",
-        "pixRst[0]",
-        "pixRst[1]",
-        "rowReadOFF[1]",
-        "rowReadOFF[0]",
-        "readOut[0]",
-        "readOut[1]",
-        "vssc1",
-        "vpd",
-        "vsf",
+        "vssd2",
         "vpr_buff",
         "vdiff_buff",
         "vpd_buff",
@@ -598,24 +478,18 @@
         "dac_config_0",
         "dac_config_4",
         "dac_config_5",
-        "dac_config_3"
+        "dac_config_3",
+        "pixRst[1]",
+        "pixRst[0]",
+        "rowReadOFF[1]",
+        "rowReadOFF[0]",
+        "readOut[0]",
+        "readOut[1]",
+        "vdda2"
       ], [
-        "vdda1",
-        "vssa1",
-        "vpr",
-        "vdiff",
+        "vssa2",
         "dac_config_7",
-        "readLine[1]",
-        "readLine[0]",
-        "pixRst[0]",
-        "pixRst[1]",
-        "rowReadOFF[1]",
-        "rowReadOFF[0]",
-        "readOut[0]",
-        "readOut[1]",
-        "vssc1",
-        "vpd",
-        "vsf",
+        "vssd2",
         "vpr_buff",
         "vdiff_buff",
         "vpd_buff",
@@ -627,7 +501,14 @@
         "dac_config_0",
         "dac_config_4",
         "dac_config_5",
-        "dac_config_3"
+        "dac_config_3",
+        "pixRst[1]",
+        "pixRst[0]",
+        "rowReadOFF[1]",
+        "rowReadOFF[0]",
+        "readOut[0]",
+        "readOut[1]",
+        "vdda2"
       ]
    ]
   }

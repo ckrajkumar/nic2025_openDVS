@@ -1,6 +1,7 @@
 Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
 Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/photodiode_test_structure_layout_lvs.spice
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
 Creating placeholder cell definition.
@@ -102,15 +103,15 @@ Circuit sky130_fd_pr__pfet_01v8_lvt contains no devices.
 Circuit sky130_fd_pr__pfet_01v8 contains no devices.
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
 
-Contents of circuit 1:  Circuit: 'photodiode_test_structure_layout'
-Circuit photodiode_test_structure_layout contains 76 device instances.
+Contents of circuit 1:  Circuit: 'photodiode_test_structure'
+Circuit photodiode_test_structure contains 76 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  23
   Class: sky130_fd_pr__pfet_01v8 instances:  20
   Class: sky130_fd_pr__pfet_01v8_lvt instances:  32
   Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
 Circuit contains 11 nets.
-Contents of circuit 2:  Circuit: 'photodiode_test_structure_schem'
-Circuit photodiode_test_structure_schem contains 18 device instances.
+Contents of circuit 2:  Circuit: 'photodiode_test_structure'
+Circuit photodiode_test_structure contains 18 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   7
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__pfet_01v8_lvt instances:   8
@@ -120,15 +121,15 @@ Circuit contains 11 nets.
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
-Contents of circuit 1:  Circuit: 'photodiode_test_structure_layout'
-Circuit photodiode_test_structure_layout contains 13 device instances.
+Contents of circuit 1:  Circuit: 'photodiode_test_structure'
+Circuit photodiode_test_structure contains 13 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   6
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__pfet_01v8_lvt instances:   4
   Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   1
 Circuit contains 11 nets.
-Contents of circuit 2:  Circuit: 'photodiode_test_structure_schem'
-Circuit photodiode_test_structure_schem contains 13 device instances.
+Contents of circuit 2:  Circuit: 'photodiode_test_structure'
+Circuit photodiode_test_structure contains 13 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   6
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__pfet_01v8_lvt instances:   4
@@ -144,7 +145,7 @@ Circuits match uniquely.
 Property errors were found.
 
 The following cells had property errors:
- photodiode_test_structure_layout
+ photodiode_test_structure
 
 Logging to file "/home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/lvs_runs/photodiode_test_structure_comp.out" disabled
 LVS Done.

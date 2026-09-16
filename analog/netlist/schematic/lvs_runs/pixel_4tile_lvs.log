@@ -1,6 +1,7 @@
 Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
 Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/pixel_4tile_layout_lvs.spice
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
@@ -246,8 +247,8 @@ Circuit pixel_4tile_layout contains 4352 device instances.
   Class: col_periphery         instances: 256
   Class: openDVS_pixel2x2_bot  instances: 2048
 Circuit contains 17680 nets.
-Contents of circuit 2:  Circuit: 'pixel_4tile_schem'
-Circuit pixel_4tile_schem contains 4352 device instances.
+Contents of circuit 2:  Circuit: 'pixel_4tile'
+Circuit pixel_4tile contains 4352 device instances.
   Class: openDVS_pixel2x2_top  instances: 2048
   Class: col_periphery         instances: 256
   Class: openDVS_pixel2x2_bot  instances: 2048

@@ -1,10 +1,11 @@
 Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
 Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/pixel_test_structure_layout_lvs.spice
-Call to undefined subcircuit sky130_fd_pr__nfet_01v8
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
@@ -176,8 +177,8 @@ Circuit pixel_test_structure contains 414 device instances.
   Class: sky130_fd_pr__pfet_01v8_lvt instances: 128
   Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   4
 Circuit contains 90 nets.
-Contents of circuit 2:  Circuit: 'pixel_test_structure_schem'
-Circuit pixel_test_structure_schem contains 170 device instances.
+Contents of circuit 2:  Circuit: 'openDVS2x2_test_pixel'
+Circuit openDVS2x2_test_pixel contains 170 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  72
   Class: sky130_fd_pr__cap_mim_m3_1 instances:  12
   Class: sky130_fd_pr__pfet_01v8_hvt instances:  12
@@ -198,8 +199,8 @@ Circuit pixel_test_structure contains 143 device instances.
   Class: sky130_fd_pr__pfet_01v8_lvt instances:  16
   Class: sky130_fd_pr__model__parasitic__diode_ps2dn instances:   4
 Circuit contains 90 nets.
-Contents of circuit 2:  Circuit: 'pixel_test_structure_schem'
-Circuit pixel_test_structure_schem contains 143 device instances.
+Contents of circuit 2:  Circuit: 'openDVS2x2_test_pixel'
+Circuit openDVS2x2_test_pixel contains 143 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  65
   Class: sky130_fd_pr__cap_mim_m3_1 instances:   8
   Class: sky130_fd_pr__pfet_01v8_hvt instances:  12

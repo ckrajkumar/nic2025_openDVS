@@ -1,6 +1,7 @@
 Netgen 1.5.305 compiled on Tue Nov  4 12:45:24 PM EST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
 Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/BiasBranchnMasterx11_layout_lvs.spice
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
 Creating placeholder cell definition.
@@ -14,7 +15,7 @@ Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
-Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/BiasBranchnMasterx11_schem_lvs.spice
+Reading netlist file /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/netlist/schematic/lvs_runs/_tmp/BiasBranchnMasterx11_schem_lvs_renamed.spice
 Call to undefined subcircuit BiasBranchnMasterx11
 Creating placeholder cell definition.
 Call to undefined subcircuit BiasBranch
