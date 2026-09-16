@@ -1,9 +1,9 @@
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/photodiode_test_structure.sch
-.subckt photodiode_test_structure vdda1 dac_config_8 dac_config_7 vpd_out vssa1
-*.PININFO vssa1:B vdda1:B dac_config_8:B dac_config_7:B vpd_out:B
-XMpd vdda1 dac_config_8 vpd vssa1 sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1
-DD1 vssa1 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=1e12 perim=4e6
-x2 vdda1 dac_config_7 vpd vpd_out vssa1 infiniamp_xl_layout
+.subckt photodiode_test_structure vdda2 dac_config_8 dac_config_7 vpd_out vssa2
+*.PININFO vssa2:B vdda2:B dac_config_8:B dac_config_7:B vpd_out:B
+XMpd vdda2 dac_config_8 vpd vssa2 sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1
+DD1 vssa2 vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=1e12 perim=4e6
+x2 vdda2 dac_config_7 vpd vpd_out vssa2 infiniamp_xl_layout
 .ends
 
 * expanding   symbol:  infiniamp_xl_layout.sym # of pins=5

@@ -268,10 +268,10 @@ Flattening unmatched subcell pixel_layout_tile_bot in circuit pixel_4tile_layout
 Flattening unmatched subcell col_periphery_1x2 in circuit pixel_4tile_layout (0)(64 instances)
 Flattening unmatched subcell pixel_layout_tile in circuit pixel_4tile_layout (0)(2 instances)
 Flattening unmatched subcell col_periphery_1x2 in circuit pixel_4tile_layout (0)(64 instances)
-Flattening unmatched subcell col_amp_2x1 in circuit pixel_4tile_schem (1)(128 instances)
+Flattening unmatched subcell col_amp_2x1 in circuit pixel_4tile (1)(128 instances)
 
 Subcircuit summary:
-Circuit 1: pixel_4tile_layout              |Circuit 2: pixel_4tile_schem               
+Circuit 1: pixel_4tile_layout              |Circuit 2: pixel_4tile                     
 -------------------------------------------|-------------------------------------------
 openDVS_pixel2x2_bot (2048)                |openDVS_pixel2x2_bot (2048)                
 col_periphery (256)                        |col_periphery (256)                        
@@ -284,7 +284,7 @@ Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: pixel_4tile_layout              |Circuit 2: pixel_4tile_schem               
+Circuit 1: pixel_4tile_layout              |Circuit 2: pixel_4tile                     
 -------------------------------------------|-------------------------------------------
 dac_config_6                               |dac_config_6                               
 vdda1                                      |vdda1                                      
@@ -1072,7 +1072,7 @@ row_off_detect_bot<60>                     |row_off_detect_bot[60]
 row_off_detect_bot<62>                     |row_off_detect_bot[62]                     
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes pixel_4tile_layout and pixel_4tile_schem are equivalent.
+Device classes pixel_4tile_layout and pixel_4tile are equivalent.
 
 Final result: Circuits match uniquely.
 .

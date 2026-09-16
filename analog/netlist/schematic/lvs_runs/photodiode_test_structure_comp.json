@@ -45,19 +45,8 @@
    ]
   },
   {
-   "pins": [
-      [
-        "1",
-        "2"
-      ], [
-        "1",
-        "2"
-      ]
-   ]
-  },
-  {
    "name": [
-      "photodiode_test_structure_layout",
+      "photodiode_test_structure",
       "photodiode_test_structure"
    ],
    "devices": [
@@ -82,34 +71,6 @@
    "badelements": [
    ],
    "properties": [
-      [
-         [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:13",
-           [
-             ["w", "4.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpAuxBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
-      [
-         [
-           "infiniamp_xl_0/sky130_fd_pr__pfet_01v8:1",
-           [
-             ["w", "16.0"]
-           ]
-         ],
-         [
-           "infiniamp_xl_layout:2/sky130_fd_pr__pfet_01v8:MpSrcBias",
-           [
-             ["W", "1.0"]
-           ]
-         ]
-      ],
       [
          [
            "infiniamp_xl_0/sky130_fd_pr__pfet_01v8_lvt:0",
@@ -170,17 +131,15 @@
    "pins": [
       [
         "dac_config_8",
-        "vdda1",
-        "vssa1",
+        "vdda2",
+        "vssa2",
         "vpd_out",
-        "vpd",
         "dac_config_7"
       ], [
         "dac_config_8",
-        "vdda1",
-        "vssa1",
+        "vdda2",
+        "vssa2",
         "vpd_out",
-        "vpd",
         "dac_config_7"
       ]
    ]

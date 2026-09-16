@@ -1,5 +1,5 @@
 ** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/BiasBranchnMasterx11_layout.sch
-.subckt BiasBranchnMasterx11 VddA18 GndA rx Bias[10] Bias[9] Bias[8] Bias[7] Bias[6] Bias[5] Bias[4] Bias[3] Bias[2]
+.subckt BiasBranchnMasterx11_schem VddA18 GndA rx Bias[10] Bias[9] Bias[8] Bias[7] Bias[6] Bias[5] Bias[4] Bias[3] Bias[2]
 + Bias[1] Bias[0] FineCodeBuffer[7] FineCodeBuffer[6] FineCodeBuffer[5] FineCodeBuffer[4] FineCodeBuffer[3] FineCodeBuffer[2]
 + FineCodeBuffer[1] FineCodeBuffer[0] CoarseOneHot[87] CoarseOneHot[86] CoarseOneHot[85] CoarseOneHot[84] CoarseOneHot[83] CoarseOneHot[82]
 + CoarseOneHot[81] CoarseOneHot[80] CoarseOneHot[79] CoarseOneHot[78] CoarseOneHot[77] CoarseOneHot[76] CoarseOneHot[75] CoarseOneHot[74]
