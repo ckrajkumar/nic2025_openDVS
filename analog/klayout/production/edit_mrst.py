@@ -120,6 +120,176 @@ COMBOS = {"base": [], "m1": ["m1"], "m2": ["m2"], "m3": ["m1", "p1"], "m4": ["m1
           "w1": ["w1"],   # on top of the applied k state
           "kb": [], "y1": ["y1"], "y6": ["y6"], "y": ["y1", "y6"], "z1": ["z1"], "z2": ["z2"], "yz": ["y1", "y6", "z1"],
           "keq": ["z1rm"], "z3": ["z1rm", "a1", "g2", "s3"], "z3b": ["z1rm", "g2", "s3n"], "z3a": ["z1rm", "a1"]}   # round 9 on top of the applied l state   # round 8 on top of the applied k state
+R10 = {
+# --- round 10 (on top of the applied m state): pixRst column off met3 -> met4, Rui 15:20 "pixRst toggles frequently, critical it has no coupling"
+# pr4: pixRst met3 column (0.94-1.27 x 0.13-11.27) cut to three stubs (0.13-0.60 bottom edge, 1.66-1.99 around the existing via2 at 1.005-1.205 x 1.725-1.925,
+#      10.90-11.27 top edge) so the 2x2 bridge cells still meet met3; met4 column 0.94-1.27 x 0.13-11.27 with via3 on each stub; VddA18 met4 plane slotted
+#      0.64-1.57 (0.3 each side of the column); vd met4 ring west arm narrowed 1.855 -> 2.33 (its notch at y 2.3-3.4 already sits at 2.33); VddA18 met4 shield
+#      strip 1.57-2.03 x 0.68-10.99 between column and ring, tied to the plane's bottom strip (1.285-3.0 x 0-0.68); slivers at 1.24-1.285 removed by the slot.
+"pr4": [("met3", B(0.94, 0.60, 1.27, 1.66), "cut"), ("met3", B(0.94, 1.99, 1.27, 10.90), "cut"),
+        ("met4", B(-1.57, -3.0, 1.57, 15.0), "cut"),                   # slot over the cell's full y extent (the cell overhangs its pitch by 2.5 um and the
+                                                                        # mirrored neighbours draw the same overhang) and incl. the west overhang: the
+                                                                        # VddA18 met4 strip along the pair boundary (|x| < 0.64) would be floating -> removed
+        ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),                  # vd ring west arm 1.855-2.64 -> 2.33-2.64
+        ("met4", B(0.94, 0.13, 1.27, 11.27), "add"),                    # pixRst met4 column
+        ("met4", B(1.57, 0.68, 2.03, 10.99), "add"),                    # VddA18 shield strip (joins the plane's bottom band 1.57-3.0 x -0.42-0.68)
+        ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 11.00, 1.205, 11.20), "add")],
+# gs: GndA met3 strip in the vacated lane (0.3 from the stubs, from readLine met3 at 0.64 and from the s3 strip at 1.57; 1.34 from capm at 2.61), via2 to the GndA met2 below
+"gs": [("met3", B(0.94, 2.35, 1.27, 10.60), "add"), ("met3", B(1.27, 4.50, 1.57, 4.80), "add")],   # tied to the s3 GndA met3 strip (no GndA met2 under the lane)
+# rl4: readLine met3 column (0.31-0.64) -> met4 the same way (stubs 0.13-0.60 / 1.66-1.99 around its via2 0.375-0.575 x 1.725-1.925 / 10.90-11.27)
+"rl4": [("met3", B(0.31, 0.60, 0.64, 1.66), "cut"), ("met3", B(0.31, 1.99, 0.64, 10.90), "cut"),
+        ("met4", B(0.31, 0.13, 0.64, 11.27), "add"),
+        ("via3", B(0.375, 0.28, 0.575, 0.48), "add"), ("via3", B(0.375, 1.725, 0.575, 1.925), "add"), ("via3", B(0.375, 11.00, 0.575, 11.20), "add")],
+# gs2: with both columns on met4 the whole met3 lane 0.31-1.27 becomes a GndA shield (0.3 from the mid stubs at 1.99 and the top stubs at 10.90), tied to s3
+"gs2": [("met3", B(0.31, 2.29, 1.27, 10.60), "add"), ("met3", B(1.27, 4.50, 1.57, 4.80), "add")],
+# --- round 11: the row lines (rowReadON met2 0.84-1.10, rowReadOFF 1.24-1.50) run under the C1a (capm 0.87-3.14) and C2 (0.87-1.87) plates:
+# Quantus m: rowReadOFF->vsf 0.26 / ->vdiff 0.29, rowReadON->vsf 0.17 / ->vdiff 0.10.  Row lines move south (0.35-0.61 / 0.75-1.01), the GndD row
+# line (was -0.44..0.70 across the pair mirror plane at y 0.13) moves under the plates (1.15-1.41, one via1 per nfet-source plate), C1a +0.35 and
+# C2 +0.15 north (capm.11: C2 to the vd met3 pad 9.465x3.345 allows 1.38 um at +0.15 only).  The s3 GndA strip retreats to y 4.85 (1.36 from the moved C1a).
+"rowmv": [("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+          ("met2", B(0.16, 0.35, 12.16, 0.61), "add"), ("met2", B(0.16, 0.75, 12.16, 1.01), "add"), ("met2", B(0.0, 1.15, 12.16, 1.41), "add"),
+          ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(2.185, 0.41, 2.335, 0.56), "add"),
+          ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"), ("via1", B(3.075, 0.81, 3.225, 0.96), "add"),
+          ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+          ("via1", B(1.445, 1.20, 1.595, 1.35), "add"), ("via1", B(3.815, 1.20, 3.965, 1.35), "add"),
+          ("met1", B(2.10, 0.38, 2.42, 0.84), "add"), ("met1", B(2.99, 0.78, 3.31, 1.24), "add"),
+          ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"), ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),
+          ("met1", B(1.36, 1.29, 1.65, 1.45), "add"), ("met1", B(3.76, 1.29, 4.05, 1.45), "add")],
+"c1a35": [("capm", B(2.61, 0.87, 6.595, 1.22), "cut"), ("capm", B(2.61, 3.14, 6.595, 3.49), "add"),
+          ("met3", B(2.47, 0.73, 6.735, 1.08), "cut"), ("met3", B(2.47, 3.28, 6.735, 3.63), "add")],
+"c2p15": [("capm", B(8.08, 0.87, 9.08, 1.02), "cut"), ("capm", B(8.08, 1.87, 9.08, 2.02), "add"),
+          ("met3", B(7.94, 0.73, 9.22, 0.88), "cut"), ("met3", B(7.94, 2.01, 9.22, 2.16), "add"),
+          ("via3", B(8.28, 1.07, 8.88, 1.67), "cut"),
+          ("via3", B(8.28, 1.22, 8.48, 1.42), "add"), ("via3", B(8.68, 1.22, 8.88, 1.42), "add"), ("via3", B(8.28, 1.62, 8.48, 1.82), "add"), ("via3", B(8.68, 1.62, 8.88, 1.82), "add")],
+"s3up": [("met3", B(1.57, 4.50, 2.60, 4.85), "cut")],
+"gs3": [("met3", B(0.31, 2.29, 1.27, 10.60), "add"), ("met3", B(1.27, 4.85, 1.57, 5.15), "add")],
+# round 11b: C1a +0.80 instead of +0.35 (met3 rim 1.53 clears rowReadOFF 0.75-1.01 by 0.52 and GndD 1.15-1.41 by 0.12); its four via3 top-plate
+# contacts (4.265-4.865 x 1.52-2.12) move with it and the vd met4 ring's south bar gets a tab up to y 3.0 to enclose them; s3 retreats to 5.28 (1.34 from capm 3.94)
+"c1a80": [("capm", B(2.61, 0.87, 6.595, 1.67), "cut"), ("capm", B(2.61, 3.14, 6.595, 3.94), "add"),
+          ("met3", B(2.47, 0.73, 6.735, 1.53), "cut"), ("met3", B(2.47, 3.28, 6.735, 4.08), "add"),
+          ("via3", B(4.265, 1.52, 4.865, 2.12), "cut"),
+          ("via3", B(4.265, 2.32, 4.465, 2.52), "add"), ("via3", B(4.665, 2.32, 4.865, 2.52), "add"), ("via3", B(4.265, 2.72, 4.465, 2.92), "add"), ("via3", B(4.665, 2.72, 4.865, 2.92), "add"),
+          ("met4", B(4.20, 2.245, 4.93, 3.00), "add")],
+"s3up80": [("met3", B(1.57, 4.50, 2.60, 5.28), "cut")],
+"gs4": [("met3", B(0.31, 2.29, 1.27, 10.60), "add"), ("met3", B(1.27, 5.30, 1.57, 5.60), "add")],
+# rowmv2: as rowmv but cuts before adds (rowmv cut the new rowReadON met1 back to a 0.10 sliver), Magic-safe via1 enclosures (0.055 met1/met2 all
+# round -> lines 0.26 wide at 0.385-0.645 / 0.795-1.055 / 1.205-1.465, via1 0.44-0.59 / 0.85-1.00 / 1.26-1.41, GndD met1 plates to 1.47)
+"rowmv2": [("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+           ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"),
+           ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+           ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"), ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),
+           ("met2", B(0.16, 0.385, 12.16, 0.645), "add"), ("met2", B(0.16, 0.795, 12.16, 1.055), "add"), ("met2", B(0.0, 1.205, 12.16, 1.465), "add"),
+           ("via1", B(2.185, 0.44, 2.335, 0.59), "add"), ("via1", B(3.075, 0.85, 3.225, 1.00), "add"),
+           ("via1", B(1.445, 1.26, 1.595, 1.41), "add"), ("via1", B(3.815, 1.26, 3.965, 1.41), "add"),
+           ("met1", B(2.10, 0.385, 2.42, 0.84), "add"), ("met1", B(2.99, 0.795, 3.31, 1.24), "add"),
+           ("met1", B(1.36, 1.29, 1.65, 1.47), "add"), ("met1", B(3.76, 1.29, 4.05, 1.47), "add")],
+# rowmv3: GndD line 1.20-1.46 (0.145 from rowReadOFF and from the ON/nOFF met1 at 1.605 after the plate extensions to 1.46), via1 1.255-1.405
+"rowmv3": [("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+           ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"),
+           ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+           ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"), ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),
+           ("met2", B(0.16, 0.385, 12.16, 0.645), "add"), ("met2", B(0.16, 0.795, 12.16, 1.055), "add"), ("met2", B(0.0, 1.20, 12.16, 1.46), "add"),
+           ("via1", B(2.185, 0.44, 2.335, 0.59), "add"), ("via1", B(3.075, 0.85, 3.225, 1.00), "add"),
+           ("via1", B(1.445, 1.255, 1.595, 1.405), "add"), ("via1", B(3.815, 1.255, 3.965, 1.405), "add"),
+           ("met1", B(2.10, 0.385, 2.42, 0.84), "add"), ("met1", B(2.99, 0.795, 3.31, 1.24), "add"),
+           ("met1", B(1.36, 1.29, 1.65, 1.46), "add"), ("met1", B(3.76, 1.29, 4.05, 1.46), "add")],
+# pr4b: as pr4 with the VddA18 shield strip at 1.60-2.03 (Magic flags the 0.30 column-strip gap as met4.2)
+"pr4b": [("met3", B(0.94, 0.60, 1.27, 1.66), "cut"), ("met3", B(0.94, 1.99, 1.27, 10.90), "cut"),
+         ("met4", B(-1.57, -3.0, 1.57, 15.0), "cut"), ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),
+         ("met4", B(0.94, 0.13, 1.27, 11.27), "add"), ("met4", B(1.60, 0.68, 2.03, 10.99), "add"), ("met4", B(1.57, 0.68, 1.60, 10.99), "cut"),
+         ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 11.00, 1.205, 11.20), "add")],
+# round 11f: met3 stubs 0.73 tall for met3.6 min area (0.24 um2) and via3.5 (0.09 one-direction enclosure): 0.13-0.86 / 1.50-2.23 / 10.54-11.27;
+# lane GndA strip 2.53-10.24; GndD nfet-source met1 plates 1.36-1.66 / 3.75-4.05 (via.5a 0.06 one-direction enclosure); vd ring notch sliver
+# 5.14-5.87 x 2.245-2.255 removed (0.21 from the via3 tab).
+"pr4c": [("met3", B(0.94, 0.86, 1.27, 1.50), "cut"), ("met3", B(0.94, 2.23, 1.27, 10.54), "cut"),
+         ("met4", B(-1.57, -3.0, 1.57, 15.0), "cut"), ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),
+         ("met4", B(0.94, 0.13, 1.27, 11.27), "add"), ("met4", B(1.57, 0.68, 2.03, 10.99), "add"),
+         ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 11.00, 1.205, 11.20), "add")],
+"rl4b": [("met3", B(0.31, 0.86, 0.64, 1.50), "cut"), ("met3", B(0.31, 2.23, 0.64, 10.54), "cut"),
+         ("met4", B(0.31, 0.13, 0.64, 11.27), "add"),
+         ("via3", B(0.375, 0.28, 0.575, 0.48), "add"), ("via3", B(0.375, 1.725, 0.575, 1.925), "add"), ("via3", B(0.375, 11.00, 0.575, 11.20), "add")],
+"gs5": [("met3", B(0.31, 2.53, 1.27, 10.24), "add"), ("met3", B(1.27, 5.30, 1.57, 5.60), "add")],
+"rowmv4": [("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+           ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"),
+           ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+           ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"), ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),
+           ("met2", B(0.16, 0.385, 12.16, 0.645), "add"), ("met2", B(0.16, 0.795, 12.16, 1.055), "add"), ("met2", B(0.0, 1.20, 12.16, 1.46), "add"),
+           ("via1", B(2.185, 0.44, 2.335, 0.59), "add"), ("via1", B(3.075, 0.85, 3.225, 1.00), "add"),
+           ("via1", B(1.445, 1.255, 1.595, 1.405), "add"), ("via1", B(3.815, 1.255, 3.965, 1.405), "add"),
+           ("met1", B(2.10, 0.385, 2.42, 0.84), "add"), ("met1", B(2.99, 0.795, 3.31, 1.24), "add"),
+           ("met1", B(1.36, 1.29, 1.66, 1.46), "add"), ("met1", B(1.65, 0.70, 1.66, 1.29), "add"), ("met1", B(3.75, 1.29, 4.05, 1.46), "add"), ("met1", B(3.75, 0.70, 3.76, 1.29), "add")],
+"ringfix": [("met4", B(5.14, 2.245, 5.87, 2.26), "cut")],
+# round 11g: GndD plates 1.36-1.68 / 3.73-4.05 (via.5a 0.085 one-direction); VddA18 shield strip at 1.62-2.03 (test of the met4.2 flag on the 0.30 gap)
+"rowmv5": [("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+           ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"),
+           ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+           ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"), ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),
+           ("met2", B(0.16, 0.385, 12.16, 0.645), "add"), ("met2", B(0.16, 0.795, 12.16, 1.055), "add"), ("met2", B(0.0, 1.20, 12.16, 1.46), "add"),
+           ("via1", B(2.185, 0.44, 2.335, 0.59), "add"), ("via1", B(3.075, 0.85, 3.225, 1.00), "add"),
+           ("via1", B(1.445, 1.255, 1.595, 1.405), "add"), ("via1", B(3.815, 1.255, 3.965, 1.405), "add"),
+           ("met1", B(2.10, 0.385, 2.42, 0.84), "add"), ("met1", B(2.99, 0.795, 3.31, 1.24), "add"),
+           ("met1", B(1.36, 0.70, 1.68, 1.46), "add"), ("met1", B(3.73, 0.70, 4.05, 1.46), "add")],
+"pr4d": [("met3", B(0.94, 0.86, 1.27, 1.50), "cut"), ("met3", B(0.94, 2.23, 1.27, 10.54), "cut"),
+         ("met4", B(-1.57, -3.0, 1.57, 15.0), "cut"), ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),
+         ("met4", B(0.94, 0.13, 1.27, 11.27), "add"), ("met4", B(1.62, 0.68, 2.03, 10.99), "add"), ("met4", B(1.57, 0.68, 1.62, 10.99), "cut"),
+         ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 11.00, 1.205, 11.20), "add")],
+# round 11h: VddA18 met4 west edge (shield strip and the plane's bottom band) at 1.67 = 0.40 from the pixRst column (Magic flags 0.30 next to the wide plane)
+"pr4e": [("met3", B(0.94, 0.86, 1.27, 1.50), "cut"), ("met3", B(0.94, 2.23, 1.27, 10.54), "cut"),
+         ("met4", B(-1.67, -3.0, 1.67, 15.0), "cut"), ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),
+         ("met4", B(0.94, 0.13, 1.27, 11.27), "add"), ("met4", B(1.67, 0.68, 2.03, 10.99), "add"),
+         ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 11.00, 1.205, 11.20), "add")],
+# round 11i: top via3 of both met4 columns at 10.85-11.05 (via3.5: 0.09 enclosure in one direction within the 10.54-11.27 stub)
+"pr4f": [("met3", B(0.94, 0.86, 1.27, 1.50), "cut"), ("met3", B(0.94, 2.23, 1.27, 10.54), "cut"),
+         ("met4", B(-1.67, -3.0, 1.67, 15.0), "cut"), ("met4", B(1.855, 1.005, 2.33, 10.55), "cut"),
+         ("met4", B(0.94, 0.13, 1.27, 11.27), "add"), ("met4", B(1.67, 0.68, 2.03, 10.99), "add"),
+         ("via3", B(1.005, 0.28, 1.205, 0.48), "add"), ("via3", B(1.005, 1.725, 1.205, 1.925), "add"), ("via3", B(1.005, 10.85, 1.205, 11.05), "add")],
+"rl4c": [("met3", B(0.31, 0.86, 0.64, 1.50), "cut"), ("met3", B(0.31, 2.23, 0.64, 10.54), "cut"),
+         ("met4", B(0.31, 0.13, 0.64, 11.27), "add"),
+         ("via3", B(0.375, 0.28, 0.575, 0.48), "add"), ("via3", B(0.375, 1.725, 0.575, 1.925), "add"), ("via3", B(0.375, 10.85, 0.575, 11.05), "add")],
+}
+E.update(R10)
+COMBOS.update({"r10": ["pr4", "gs"], "pr4": ["pr4"], "gs": ["gs"], "m_ref": [], "r10b": ["pr4", "rl4", "gs2"], "r11": ["pr4", "rl4", "s3up", "gs3", "rowmv", "c1a35", "c2p15"], "r11rows": ["rowmv"], "r11plates": ["c1a35", "c2p15", "s3up"], "r11b": ["pr4", "rl4", "s3up80", "gs4", "rowmv", "c1a80", "c2p15"], "r11c": ["pr4", "rl4", "s3up80", "gs4", "rowmv2", "c1a80", "c2p15"], "r11d": ["pr4b", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11e": ["pr4", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11f": ["pr4c", "rl4b", "s3up80", "gs5", "rowmv4", "c1a80", "c2p15", "ringfix"], "r11g": ["pr4d", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11h": ["pr4e", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11i": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11j": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"]})
+
+# --- 2x2-level pin overlays (openDVS_pixel2x2_top / _bot carry flattened copies of the pixel's edge structures as LVS pins:
+# readLine/pixRst met3 columns, rowReadON/OFF/GndD met2 stubs + pin shapes (69/16) at x 0.16-0.42, the VddA18 met4 rail + pin (71/16)).
+# Every set that moves those (r11d and later) needs this on each 2x2 cell.  Boxes are pixel-local and transformed by each pixel instance.
+LNP = dict(LN, met2pin=(69, 16), met3pin=(70, 16), met4pin=(71, 16))
+TOPFIX = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"),
+          ("met2", B(0.10, -0.5, 0.45, 1.55), "cut"),
+          ("met2", B(-0.26, -0.94, 0.0, 1.46), "add"),
+          ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),
+          ("met2pin", B(0.10, -0.5, 0.45, 1.55), "cut"),
+          ("met2pin", B(0.16, 0.385, 0.42, 0.645), "add"), ("met2pin", B(0.16, 0.795, 0.42, 1.055), "add"), ("met2pin", B(-0.26, 0.0, 0.0, 0.26), "add"),
+          ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]
+def apply_topfix(ly, c):
+    """c = a 2x2 cell (openDVS_pixel2x2_top or _bot).  Returns the number of labels moved."""
+    insts = [i.trans for i in c.each_inst() if i.cell.name == "openDVS_pixel"]
+    for ln, box, op in TOPFIX:
+        lay = ly.find_layer(*LNP[ln])
+        if lay is None: lay = ly.layer(*LNP[ln])
+        r = pya.Region(c.shapes(lay))
+        for t in insts:
+            bb = box.transformed(t); r = (r - pya.Region(bb)) if op == "cut" else (r + pya.Region(bb))
+        r = r.merged(); c.shapes(lay).clear(); c.shapes(lay).insert(r)
+    # labels: the pixel instances sit at x = -18075 (west, r0/m0) and 6245 (east, r180/m90), rows at y -310 (row 0) / -50 (row 1, mirrored)
+    xs = sorted({i.trans.disp.x for i in c.each_inst() if i.cell.name == "openDVS_pixel"})
+    moved = 0
+    for lay in ly.layer_indexes():
+        info = ly.get_info(lay)
+        if info.datatype != 5 or info.layer not in (69, 71): continue
+        for s in c.shapes(lay):
+            if not s.is_text(): continue
+            tx = s.text; nm = tx.string; x, y = tx.x, tx.y
+            west = x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
+            if info.layer == 69 and nm.startswith("rowReadON["): ny = 205 if y > -600 else -565
+            elif info.layer == 69 and nm.startswith("rowReadOFF["): ny = 615 if y > -600 else -975
+            elif info.layer == 69 and nm == "GndD" and abs(y + 180) < 5: ny = y; x = (xs[0] - 130) if west else (xs[-1] + 130)
+            elif info.layer == 71 and nm == "VddA18" and abs(y + 180) < 5: ny = y; x = (xs[0] + 2000) if west else (xs[-1] - 2000)
+            else: continue
+            s.text = pya.Text(nm, pya.Trans(pya.Point(x, ny))); moved += 1
+    return moved
+NEEDS_TOPFIX = {"r11d", "r11e", "r11f", "r11g", "r11h", "r11i", "r11j", "r11k", "n"}
+
 def apply_sets(ly, px, sets):
     for s in sets:
         for ln, box, op in E[s]:
@@ -138,4 +308,7 @@ else:
     sets = globals()["sets"].split(","); bak = "pixel_4tile_work.before-mrst.gds"
     if not os.path.exists(bak): shutil.copy("pixel_4tile_work.gds", bak)
     ly = pya.Layout(); ly.read("pixel_4tile_work.gds"); px = ly.cell("openDVS_pixel"); apply_sets(ly, px, sets)
+    if globals().get("topfix", "") == "1":
+        for cn in ("openDVS_pixel2x2_top", "openDVS_pixel2x2_bot"):
+            c = ly.cell(cn); print("topfix", cn, "labels moved:", apply_topfix(ly, c) if c else "MISSING CELL")
     ly.write("pixel_4tile_work.gds"); print("applied", sets, "to pixel_4tile_work.gds (backup:", bak + ")")
