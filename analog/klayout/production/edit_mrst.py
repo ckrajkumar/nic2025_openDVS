@@ -404,6 +404,80 @@ E["t8"] = [("met2", B(9.605, 1.865, 9.96, 2.005), "cut"), ("met2", B(10.385, 1.8
            ("met2", B(9.465, 1.60, 11.67, 1.74), "add"), ("met2", B(9.465, 1.74, 9.605, 1.865), "add"), ("met2", B(9.96, 1.74, 10.385, 2.005), "add"), ("met2", B(11.53, 1.74, 11.67, 1.865), "add")]
 COMBOS.update({"v_t8": ["t8"], "v_t3578": ["t3", "t7", "t5", "t8"], "r15a_delta": ["t3", "t7", "t5", "nrs_vdd"], "r15b_delta": ["t3", "t7", "t5", "t8", "nrs_vdd"]})
 NEEDS_TOPFIX = NEEDS_TOPFIX | {"r15a_delta", "r15b_delta"}
+# r16 (Rui 21:55: as little interface change as possible): production row lines/GndD (no rows14/gndd76); TOPFIX v3 behaviour selected with -rd topfixv=3
+TOPFIX3 = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"), ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),
+           ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]
+if globals().get("topfixv", "4") == "3":
+    TOPFIX = TOPFIX3
+    _apply_topfix_v4 = apply_topfix
+    def apply_topfix(ly, c):
+        insts = [i.trans for i in c.each_inst() if i.cell.name == "openDVS_pixel"]
+        for ln, box, op in TOPFIX:
+            lay = ly.find_layer(*LNP[ln])
+            if lay is None: lay = ly.layer(*LNP[ln])
+            r = pya.Region(c.shapes(lay))
+            for t in insts:
+                bb = box.transformed(t); r = (r - pya.Region(bb)) if op == "cut" else (r + pya.Region(bb))
+            r = r.merged(); c.shapes(lay).clear(); c.shapes(lay).insert(r)
+        xs = sorted({i.trans.disp.x for i in c.each_inst() if i.cell.name == "openDVS_pixel"}); moved = 0
+        for lay in ly.layer_indexes():
+            info = ly.get_info(lay)
+            if info.datatype != 5 or info.layer != 71: continue
+            for s in c.shapes(lay):
+                if not s.is_text() or s.text.string != "VddA18" or abs(s.text.y) > 2500: continue
+                tx = s.text; west = tx.x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
+                x = (xs[0] + 2000) if west else (xs[-1] - 2000)
+                if (x, -180) != (tx.x, tx.y): s.text = pya.Text("VddA18", pya.Trans(pya.Point(x, -180))); moved += 1
+        return moved
+COMBOS["r16"] = ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "t3", "t7", "t5", "nrs_vdd"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"r16"}
+# r17 (Rui 22:00 "keep the improved version, interface changes minimal"): r15a band inside the pixel, production interface at the pixel west edge.
+# GndA corner met1 foot + L-block removed (pure met1; the tap is on the li strap), li vertical 0.08-0.32 x 0.03-1.75 + mcon onto the GndA met1 west vertical;
+# GndD met1 corner piece restored and joined to the nfet-source plate (bar 0.16-1.36 x 0.90-1.20), production axis via1 pair, met2 GndD pad 0.16-0.42 x -0.18..0.44
+# (= the periphery GndD bar A+-0.31), per-row GndD met2 line from x 1.36; rowReadON/OFF production-height stubs at the west edge with met2 jogs into the band.
+E["iface17"] = [   # cuts first (the rowReadOFF band cut must not sever the rowReadON jog added later)
+    ("mcon", B(0.655, 0.30, 0.825, 0.47), "cut"), ("met1", B(-0.2, 0.02, 0.86, 1.48), "cut"),
+    ("met2", B(-0.5, 0.76, 1.36, 1.46), "cut"), ("met2", B(0.16, 0.20, 0.56, 0.34), "cut"), ("met2", B(0.16, 0.48, 0.86, 0.62), "cut"),
+    ("li", B(0.02, 0.03, 0.85, 0.23), "add"), ("li", B(0.02, 0.03, 0.30, 1.75), "add"), ("mcon", B(0.075, 1.55, 0.245, 1.72), "add"),
+    ("met1", B(-0.16, -0.35, 0.48, 1.20), "add"), ("met1", B(0.16, 0.90, 1.36, 1.20), "add"),
+    ("via1", B(0.085, 0.055, 0.235, 0.205), "add"), ("met2", B(0.02, -0.18, 0.42, 0.44), "add"),
+    ("met2", B(0.16, 0.84, 0.56, 1.10), "add"), ("met2", B(0.56, 0.20, 0.70, 1.10), "add"),
+    ("met2", B(0.16, 1.24, 0.86, 1.50), "add"), ("met2", B(0.86, 0.48, 1.00, 1.50), "add")]
+COMBOS["r17"] = ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "rows14", "gndd76", "t3", "t7", "t5", "nrs_vdd", "iface17"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"r17"}
+if globals().get("topfixv", "4") == "5":   # v5: overlay pins/labels of the row nets at the production heights (the pixel carries the jogs)
+    TOPFIX = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"), ("met2", B(0.10, -0.5, 0.45, 1.55), "cut"), ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),
+              ("met2pin", B(0.10, -0.5, 0.45, 1.55), "cut"),
+              ("met2pin", B(0.16, 0.84, 0.42, 1.10), "add"), ("met2pin", B(0.16, 1.24, 0.42, 1.50), "add"), ("met2pin", B(0.16, -0.18, 0.42, 0.44), "add"),
+              ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]
+    _Y5 = {"rowReadON": 970, "rowReadOFF": 1370, "GndD": 130}
+    _src = apply_topfix.__code__
+    def apply_topfix(ly, c, _Y=_Y5):
+        insts = [i.trans for i in c.each_inst() if i.cell.name == "openDVS_pixel"]
+        for ln, box, op in TOPFIX:
+            lay = ly.find_layer(*LNP[ln])
+            if lay is None: lay = ly.layer(*LNP[ln])
+            r = pya.Region(c.shapes(lay))
+            for t in insts:
+                bb = box.transformed(t); r = (r - pya.Region(bb)) if op == "cut" else (r + pya.Region(bb))
+            r = r.merged(); c.shapes(lay).clear(); c.shapes(lay).insert(r)
+        xs = sorted({i.trans.disp.x for i in c.each_inst() if i.cell.name == "openDVS_pixel"}); moved = 0
+        for lay in ly.layer_indexes():
+            info = ly.get_info(lay)
+            if info.datatype != 5 or info.layer not in (69, 71): continue
+            for s in c.shapes(lay):
+                if not s.is_text(): continue
+                tx = s.text; nm = tx.string; x, y = tx.x, tx.y; base = nm.split("[")[0]
+                west = x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
+                if info.layer == 69 and base in _Y:
+                    upper = y > -180 if base != "GndD" else False
+                    ny = (_Y[base] - 310) if upper else (-_Y[base] - 50)
+                elif info.layer == 71 and nm == "VddA18" and abs(y) < 2500: ny = -180; x = (xs[0] + 2000) if west else (xs[-1] - 2000)
+                else: continue
+                if (x, ny) != (tx.x, tx.y): s.text = pya.Text(nm, pya.Trans(pya.Point(x, ny))); moved += 1
+        return moved
+# gnddvias (Rui 22:25 "add more vias to the gndd line"): second via1 on each nfet-source plate (y 0.82-0.97), GndD corner bar widened to 0.88-1.22 with a
+# via1 at 1.16-1.31 x 0.96-1.11, per-row GndD met2 line extended west to x 1.14 (0.14 from the rowReadOFF jog at 0.86-1.00)
+E["gnddvias"] = [("via1", B(1.445, 0.82, 1.595, 0.97), "add"), ("via1", B(3.815, 0.82, 3.965, 0.97), "add")]   # a bar via at 1.16-1.31 was 0.135 from the plate via (via.2)
+COMBOS["r17b"] = COMBOS["r17"] + ["gnddvias"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"r17b"}
 MODE = globals().get("mode", "variants")
 if MODE == "variants":
     os.makedirs("rcc/attrib_mrst", exist_ok=True)
