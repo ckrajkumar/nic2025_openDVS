@@ -256,9 +256,17 @@ R10 = {
 # padtrim2: the trimmed pad (0.49 x 0.34) is under met3.6 min area 0.24 um2 -> pad 9.465-10.12 x 3.495-3.895 (0.262 um2; 0.30 to the VddA18 met3 at 4.195 and to the $35 column at 10.42)
 "padtrim2": [("met3", B(9.465, 3.345, 9.955, 3.495), "cut"), ("met3", B(9.955, 3.495, 10.12, 3.895), "add"), ("met3", B(9.465, 3.835, 9.955, 3.895), "add"),
              ("via3", B(9.665, 3.505, 9.865, 3.705), "cut"), ("via3", B(9.665, 3.56, 9.865, 3.76), "add"), ("met4", B(9.575, 3.795, 9.955, 3.835), "add")],
+# round 13b: C1a +1.0 instead of +0.8 (Quantus p: rowReadOFF 1.24-1.50 still fringes 0.18 fF into vsf with the C1a met3 rim at 1.53); s3 -> 5.48, bridge 5.50-5.80
+"c1a100": [("capm", B(2.61, 0.87, 6.595, 1.87), "cut"), ("capm", B(2.61, 3.14, 6.595, 4.14), "add"),
+           ("met3", B(2.47, 0.73, 6.735, 1.73), "cut"), ("met3", B(2.47, 3.28, 6.735, 4.28), "add"),
+           ("via3", B(4.265, 1.52, 4.865, 2.12), "cut"),
+           ("via3", B(4.265, 2.52, 4.465, 2.72), "add"), ("via3", B(4.665, 2.52, 4.865, 2.72), "add"), ("via3", B(4.265, 2.92, 4.465, 3.12), "add"), ("via3", B(4.665, 2.92, 4.865, 3.12), "add"),
+           ("met4", B(4.20, 2.245, 4.93, 3.20), "add")],
+"s3up100": [("met3", B(1.57, 4.50, 2.60, 5.48), "cut")],
+"gs6": [("met3", B(0.31, 2.53, 1.27, 10.24), "add"), ("met3", B(1.27, 5.50, 1.57, 5.80), "add")],
 }
 E.update(R10)
-COMBOS.update({"r10": ["pr4", "gs"], "pr4": ["pr4"], "gs": ["gs"], "m_ref": [], "r10b": ["pr4", "rl4", "gs2"], "r11": ["pr4", "rl4", "s3up", "gs3", "rowmv", "c1a35", "c2p15"], "r11rows": ["rowmv"], "r11plates": ["c1a35", "c2p15", "s3up"], "r11b": ["pr4", "rl4", "s3up80", "gs4", "rowmv", "c1a80", "c2p15"], "r11c": ["pr4", "rl4", "s3up80", "gs4", "rowmv2", "c1a80", "c2p15"], "r11d": ["pr4b", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11e": ["pr4", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11f": ["pr4c", "rl4b", "s3up80", "gs5", "rowmv4", "c1a80", "c2p15", "ringfix"], "r11g": ["pr4d", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11h": ["pr4e", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11i": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11j": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r12": ["c2p18", "padtrim"], "r12b": ["c2p18", "padtrim2"], "n_ref": [], "r13": ["pr4f", "rl4c", "s3up80", "gs5", "c1a80", "c2p15", "c2p18", "padtrim2", "ringfix"]})
+COMBOS.update({"r10": ["pr4", "gs"], "pr4": ["pr4"], "gs": ["gs"], "m_ref": [], "r10b": ["pr4", "rl4", "gs2"], "r11": ["pr4", "rl4", "s3up", "gs3", "rowmv", "c1a35", "c2p15"], "r11rows": ["rowmv"], "r11plates": ["c1a35", "c2p15", "s3up"], "r11b": ["pr4", "rl4", "s3up80", "gs4", "rowmv", "c1a80", "c2p15"], "r11c": ["pr4", "rl4", "s3up80", "gs4", "rowmv2", "c1a80", "c2p15"], "r11d": ["pr4b", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11e": ["pr4", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11f": ["pr4c", "rl4b", "s3up80", "gs5", "rowmv4", "c1a80", "c2p15", "ringfix"], "r11g": ["pr4d", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11h": ["pr4e", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11i": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11j": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r12": ["c2p18", "padtrim"], "r12b": ["c2p18", "padtrim2"], "n_ref": [], "r13": ["pr4f", "rl4c", "s3up80", "gs5", "c1a80", "c2p15", "c2p18", "padtrim2", "ringfix"], "r13b": ["pr4f", "rl4c", "s3up100", "gs6", "c1a100", "c2p15", "c2p18", "padtrim2", "ringfix"]})
 
 # --- 2x2-level pin overlays (openDVS_pixel2x2_top / _bot carry flattened copies of the pixel's edge structures as LVS pins:
 # readLine/pixRst met3 columns, rowReadON/OFF/GndD met2 stubs + pin shapes (69/16) at x 0.16-0.42, the VddA18 met4 rail + pin (71/16)).
@@ -289,7 +297,7 @@ def apply_topfix(ly, c):
             x = (xs[0] + 2000) if west else (xs[-1] - 2000)
             if (x, -180) != (tx.x, tx.y): s.text = pya.Text("VddA18", pya.Trans(pya.Point(x, -180))); moved += 1
     return moved
-NEEDS_TOPFIX = {"r11d", "r11e", "r11f", "r11g", "r11h", "r11i", "r11j", "r11k", "n", "r12", "r12b", "n_ref", "r13"}
+NEEDS_TOPFIX = {"r11d", "r11e", "r11f", "r11g", "r11h", "r11i", "r11j", "r11k", "n", "r12", "r12b", "n_ref", "r13", "r13b"}
 
 def apply_sets(ly, px, sets):
     for s in sets:
@@ -297,6 +305,80 @@ def apply_sets(ly, px, sets):
             lay = ly.find_layer(*LN[ln]); r = pya.Region(px.shapes(lay))
             r = (r - pya.Region(box)) if op == "cut" else (r + pya.Region(box))
             r = r.merged(); px.shapes(lay).clear(); px.shapes(lay).insert(r)
+# --- round 14 (2026-09-22 19:10): C1a back at the production position (the +0.8/+1.0 of n/p/q covered the photodiode, dnwell from y 3.28).
+# The row lines leave the C1a plate (met3 rim 0.73) by going INTO the pair-mirror band: rowReadON 0.20-0.34, rowReadOFF 0.48-0.62 (0.14 wide,
+# 0.26 tabs at their via1), GndD becomes one met2 line per row (1.20-1.46, under the plate: quiet) and is joined across the mirror axis inside
+# the pixel by the two nfet-source met1 plates (extended down across y 0.13, merging with their mirror copies) -> the 2x2 keeps ONE GndD net,
+# no 2x2-level connector.  The GndA met1 strap on the bottom edge (0.855-4.295 x 0.02-0.24, pure met1: no li/mcon under it) is replaced by a li
+# strap (0.63-4.50 x 0.03-0.23) contacted at the GndA corner foot (mcon 0.655-0.825 x 0.30-0.47), so the met1 axis band is free for the plates.
+R14 = {
+"gs7": [("met3", B(0.31, 2.53, 1.27, 10.24), "add"), ("met3", B(1.27, 4.50, 1.57, 4.80), "add")],   # GndA lane (rl4c/pr4f stubs) bridged to the untouched s3 (bottom 4.50)
+"rows14": [
+    # cuts
+    ("met2", B(-0.5, -0.5, 12.2, 0.70), "cut"), ("met2", B(0.16, 0.84, 12.16, 1.10), "cut"), ("met2", B(0.16, 1.24, 12.16, 1.50), "cut"),
+    ("via1", B(2.185, 0.895, 2.335, 1.045), "cut"), ("via1", B(3.075, 1.295, 3.225, 1.445), "cut"),
+    ("via1", B(1.44, 0.46, 2.24, 0.62), "cut"), ("via1", B(3.17, 0.46, 3.97, 0.62), "cut"), ("via1", B(-0.08, -0.27, 0.40, 0.53), "cut"),
+    ("met1", B(-0.2, -0.4, 0.48, 0.61), "cut"),                                                   # GndD corner piece (only fed the axis line)
+    ("met1", B(1.65, 0.38, 2.32, 0.70), "cut"), ("met1", B(3.09, 0.38, 3.76, 0.70), "cut"),        # wide feet of the GndD plates (made room for the met1 legs of the row lines)
+    ("met1", B(0.855, 0.02, 4.295, 0.24), "cut"),                                                  # GndA met1 strap -> li
+    # GndA li strap + contact at the corner foot (met1 0.62-0.855 x 0.02-0.94)
+    ("li", B(0.63, 0.03, 4.50, 0.23), "add"), ("li", B(0.63, 0.03, 0.85, 0.60), "add"), ("mcon", B(0.655, 0.30, 0.825, 0.47), "add"),
+    # GndD plates across the axis (merge with the mirror copies) + via1 to the per-row GndD line
+    ("met1", B(1.36, 0.10, 1.68, 1.465), "add"), ("met1", B(3.73, 0.10, 4.05, 1.465), "add"),
+    ("met2", B(0.0, 1.20, 12.16, 1.46), "add"),
+    ("via1", B(1.445, 1.255, 1.595, 1.405), "add"), ("via1", B(3.815, 1.255, 3.965, 1.405), "add"),
+    # rowReadON 0.20-0.34 with a via tab at x 2.13-2.39; met1 leg down from the handshake gate contact
+    ("met2", B(0.16, 0.20, 12.16, 0.34), "add"), ("met2", B(2.10, 0.20, 2.42, 0.46), "add"),
+    ("via1", B(2.185, 0.255, 2.335, 0.405), "add"), ("met1", B(2.10, 0.20, 2.42, 0.84), "add"),
+    # rowReadOFF 0.48-0.62, raised to 0.60-0.74 around the rowReadON tab (x 1.95-2.57, 0.14 clear), via tab at x 3.02-3.28
+    ("met2", B(0.16, 0.48, 12.16, 0.62), "add"), ("met2", B(1.95, 0.60, 2.57, 0.74), "add"), ("met2", B(1.81, 0.48, 1.95, 0.74), "add"), ("met2", B(2.57, 0.48, 2.71, 0.74), "add"),
+    ("met2", B(1.95, 0.48, 2.57, 0.60), "cut"),                                                    # the lowered part must not pass over the rowReadON tab
+    ("met2", B(2.99, 0.48, 3.31, 0.74), "add"),
+    ("via1", B(3.075, 0.535, 3.225, 0.685), "add"), ("met1", B(2.99, 0.48, 3.31, 1.24), "add")],
+}
+E.update(R14)
+COMBOS.update({"r14": ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "rows14"], "r14rows": ["rows14"], "r14b": ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "rows14"]})
+# TOPFIX v4: column overlays as v3 + the three row nets' overlay stubs/pins at the new y (no GndD connector: GndD is joined inside the pixel)
+TOPFIX = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"),
+          ("met2", B(0.10, -0.5, 0.45, 1.55), "cut"),
+          ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),
+          ("met2pin", B(0.10, -0.5, 0.45, 1.55), "cut"),
+          ("met2pin", B(0.16, 0.20, 0.42, 0.34), "add"), ("met2pin", B(0.16, 0.48, 0.42, 0.62), "add"), ("met2pin", B(0.16, 1.20, 0.42, 1.46), "add"),
+          ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]
+def apply_topfix(ly, c):
+    """c = a 2x2 cell.  Row 1 (upper instance): 2x2 y = local y - 0.31; row 0: 2x2 y = -local y - 0.05; the axis is at -180.  Idempotent."""
+    insts = [i.trans for i in c.each_inst() if i.cell.name == "openDVS_pixel"]
+    for ln, box, op in TOPFIX:
+        lay = ly.find_layer(*LNP[ln])
+        if lay is None: lay = ly.layer(*LNP[ln])
+        r = pya.Region(c.shapes(lay))
+        for t in insts:
+            bb = box.transformed(t); r = (r - pya.Region(bb)) if op == "cut" else (r + pya.Region(bb))
+        r = r.merged(); c.shapes(lay).clear(); c.shapes(lay).insert(r)
+    xs = sorted({i.trans.disp.x for i in c.each_inst() if i.cell.name == "openDVS_pixel"})
+    Y = {"rowReadON": 270, "rowReadOFF": 550, "GndD": 1330}   # local line centres (nm)
+    moved = 0
+    for lay in ly.layer_indexes():
+        info = ly.get_info(lay)
+        if info.datatype != 5 or info.layer not in (69, 71): continue
+        for s in c.shapes(lay):
+            if not s.is_text(): continue
+            tx = s.text; nm = tx.string; x, y = tx.x, tx.y
+            west = x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
+            base = nm.split("[")[0]
+            if info.layer == 69 and base in Y:
+                upper = y > -180 if base != "GndD" else False          # GndD's single label goes to row 0's line
+                ny = (Y[base] - 310) if upper else (-Y[base] - 50)
+            elif info.layer == 71 and nm == "VddA18" and abs(y) < 2500: ny = -180; x = (xs[0] + 2000) if west else (xs[-1] - 2000)
+            else: continue
+            if (x, ny) != (tx.x, tx.y): s.text = pya.Text(nm, pya.Trans(pya.Point(x, ny))); moved += 1
+    return moved
+NEEDS_TOPFIX = NEEDS_TOPFIX | {"r14", "r14b"}
+
+# r14c: GndD line extended south to 0.76 as a lateral shield between the rowReadOFF top edge (0.62) and the C1a met3 rim (0.73); notch to 0.88 over the
+# rowReadOFF raised part (1.81-2.71) and its via tab (3.02-3.28)
+E["gndd76"] = [("met2", B(0.0, 0.76, 12.16, 1.20), "add"), ("met2", B(1.67, 0.76, 3.45, 0.88), "cut")]
+COMBOS["r14c_delta"] = ["gndd76"]; COMBOS["r14d"] = ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "rows14", "gndd76"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"r14c_delta", "r14d"}
 MODE = globals().get("mode", "variants")
 if MODE == "variants":
     os.makedirs("rcc/attrib_mrst", exist_ok=True)
