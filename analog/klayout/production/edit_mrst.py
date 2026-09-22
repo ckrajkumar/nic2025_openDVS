@@ -96,6 +96,17 @@ E = {
   "z1":  [("met3", B(1.57, 0.73, 1.87, 10.79), "add"), ("met3", B(1.585, 10.25, 1.955, 10.65), "add"), ("via2", B(1.67, 10.35, 1.87, 10.55), "add")],
   # z2: DRC-clean variant of z1 - strip only along the vsf met3 arm (y >= 4.50, i.e. >= 1.34 from the capm top edge 3.14): 1.57-1.87 x 4.50-10.79 + the same via2 tab
   "z2":  [("met3", B(1.57, 4.50, 1.87, 10.79), "add"), ("met3", B(1.585, 10.25, 1.955, 10.65), "add"), ("via2", B(1.67, 10.35, 1.87, 10.55), "add")],
+  # ---- round 9 (2026-09-22 14:30): legal replacement of z1 (capm.11: unrelated met3 >= 1.34 um from any capm) ----
+  # z1rm: remove the z1 strip + its via2 tab (back to the k geometry on met3/via2)
+  "z1rm": [("met3", B(1.57, 0.73, 1.955, 10.79), "cut"), ("via2", B(1.67, 10.35, 1.87, 10.55), "cut")],
+  # a1: narrow the vsf met3 arm from 2.47-3.31 to 2.90-3.31 between the two plates (y 3.58-8.68 keeps 0.3 to the plate junctions)
+  "a1":  [("met3", B(2.47, 3.58, 2.90, 8.68), "cut")],
+  # g2: GndA met2 strip under the met3 gap, east of the ON met2 vertical (1.54-1.68) and tied to the e2 GndA met2 piece by a bridge
+  "g2":  [("met2", B(1.82, 3.45, 2.19, 7.48), "add"), ("met2", B(2.19, 3.45, 2.335, 3.955), "add")],
+  # s3: legal GndA met3 strip 1.57-2.60 x 4.50-7.76 (>= 1.34 from both capm plates, 0.3 from pixRst met3 and from the narrowed arm), via2 down to g2
+  "s3":  [("met3", B(1.57, 4.50, 2.60, 7.76), "add"), ("via2", B(1.90, 6.00, 2.10, 6.20), "add")],
+  # s3n: same strip without the arm narrowing (east edge 2.17 = 0.3 from the arm at 2.47)
+  "s3n": [("met3", B(1.57, 4.50, 2.17, 7.76), "add"), ("via2", B(1.90, 6.00, 2.10, 6.20), "add")],
 }
 COMBOS = {"base": [], "m1": ["m1"], "m2": ["m2"], "m3": ["m1", "p1"], "m4": ["m1", "d1"], "m5": ["d1"],
           "m1b": ["m1b"], "m1c": ["m1c"], "m1s": ["m1", "ls"], "m1_s1": ["m1", "s1"], "m1_s2": ["m1", "s2"], "m1_s4": ["m1", "s4"],
@@ -107,7 +118,8 @@ COMBOS = {"base": [], "m1": ["m1"], "m2": ["m2"], "m3": ["m1", "p1"], "m4": ["m1
           "wx": ["w2x", "w3", "e2x", "x1"], "x1": ["x1"], "j": ["v4", "p2b"],
           "k": ["w2x", "w3", "e2x"], "s7": ["s7"],   # k, s7: on top of the applied j state
           "w1": ["w1"],   # on top of the applied k state
-          "kb": [], "y1": ["y1"], "y6": ["y6"], "y": ["y1", "y6"], "z1": ["z1"], "z2": ["z2"], "yz": ["y1", "y6", "z1"]}   # round 8 on top of the applied k state
+          "kb": [], "y1": ["y1"], "y6": ["y6"], "y": ["y1", "y6"], "z1": ["z1"], "z2": ["z2"], "yz": ["y1", "y6", "z1"],
+          "keq": ["z1rm"], "z3": ["z1rm", "a1", "g2", "s3"], "z3b": ["z1rm", "g2", "s3n"], "z3a": ["z1rm", "a1"]}   # round 9 on top of the applied l state   # round 8 on top of the applied k state
 def apply_sets(ly, px, sets):
     for s in sets:
         for ln, box, op in E[s]:
