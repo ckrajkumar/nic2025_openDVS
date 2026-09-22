@@ -246,21 +246,27 @@ R10 = {
 "rl4c": [("met3", B(0.31, 0.86, 0.64, 1.50), "cut"), ("met3", B(0.31, 2.23, 0.64, 10.54), "cut"),
          ("met4", B(0.31, 0.13, 0.64, 11.27), "add"),
          ("via3", B(0.375, 0.28, 0.575, 0.48), "add"), ("via3", B(0.375, 1.725, 0.575, 1.925), "add"), ("via3", B(0.375, 10.85, 0.575, 11.05), "add")],
+# round 12 (on top of the applied n state): C2 a further +0.19 north (total +0.34; the vd met3 pad 9.465-9.955 x 3.345-3.835 is trimmed to
+# y >= 3.495 so capm.11 (1.34 um euclidean) still holds: sqrt(0.385^2 + (3.495-2.21)^2) = 1.34); rowReadOFF (0.795-1.055) then clears the C2 met3 rim (1.07)
+"c2p18": [("capm", B(8.08, 1.02, 9.08, 1.20), "cut"), ("capm", B(8.08, 2.02, 9.08, 2.20), "add"),
+          ("met3", B(7.94, 0.88, 9.22, 1.06), "cut"), ("met3", B(7.94, 2.16, 9.22, 2.34), "add"),
+          ("via3", B(8.28, 1.22, 8.88, 1.82), "cut"),
+          ("via3", B(8.28, 1.40, 8.48, 1.60), "add"), ("via3", B(8.68, 1.40, 8.88, 1.60), "add"), ("via3", B(8.28, 1.80, 8.48, 2.00), "add"), ("via3", B(8.68, 1.80, 8.88, 2.00), "add")],
+"padtrim": [("met3", B(9.465, 3.345, 9.955, 3.495), "cut"), ("via3", B(9.665, 3.505, 9.865, 3.705), "cut"), ("via3", B(9.665, 3.56, 9.865, 3.76), "add"), ("met4", B(9.575, 3.795, 9.955, 3.835), "add")],
+# padtrim2: the trimmed pad (0.49 x 0.34) is under met3.6 min area 0.24 um2 -> pad 9.465-10.12 x 3.495-3.895 (0.262 um2; 0.30 to the VddA18 met3 at 4.195 and to the $35 column at 10.42)
+"padtrim2": [("met3", B(9.465, 3.345, 9.955, 3.495), "cut"), ("met3", B(9.955, 3.495, 10.12, 3.895), "add"), ("met3", B(9.465, 3.835, 9.955, 3.895), "add"),
+             ("via3", B(9.665, 3.505, 9.865, 3.705), "cut"), ("via3", B(9.665, 3.56, 9.865, 3.76), "add"), ("met4", B(9.575, 3.795, 9.955, 3.835), "add")],
 }
 E.update(R10)
-COMBOS.update({"r10": ["pr4", "gs"], "pr4": ["pr4"], "gs": ["gs"], "m_ref": [], "r10b": ["pr4", "rl4", "gs2"], "r11": ["pr4", "rl4", "s3up", "gs3", "rowmv", "c1a35", "c2p15"], "r11rows": ["rowmv"], "r11plates": ["c1a35", "c2p15", "s3up"], "r11b": ["pr4", "rl4", "s3up80", "gs4", "rowmv", "c1a80", "c2p15"], "r11c": ["pr4", "rl4", "s3up80", "gs4", "rowmv2", "c1a80", "c2p15"], "r11d": ["pr4b", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11e": ["pr4", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11f": ["pr4c", "rl4b", "s3up80", "gs5", "rowmv4", "c1a80", "c2p15", "ringfix"], "r11g": ["pr4d", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11h": ["pr4e", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11i": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11j": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"]})
+COMBOS.update({"r10": ["pr4", "gs"], "pr4": ["pr4"], "gs": ["gs"], "m_ref": [], "r10b": ["pr4", "rl4", "gs2"], "r11": ["pr4", "rl4", "s3up", "gs3", "rowmv", "c1a35", "c2p15"], "r11rows": ["rowmv"], "r11plates": ["c1a35", "c2p15", "s3up"], "r11b": ["pr4", "rl4", "s3up80", "gs4", "rowmv", "c1a80", "c2p15"], "r11c": ["pr4", "rl4", "s3up80", "gs4", "rowmv2", "c1a80", "c2p15"], "r11d": ["pr4b", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11e": ["pr4", "rl4", "s3up80", "gs4", "rowmv3", "c1a80", "c2p15"], "r11f": ["pr4c", "rl4b", "s3up80", "gs5", "rowmv4", "c1a80", "c2p15", "ringfix"], "r11g": ["pr4d", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11h": ["pr4e", "rl4b", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11i": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r11j": ["pr4f", "rl4c", "s3up80", "gs5", "rowmv5", "c1a80", "c2p15", "ringfix"], "r12": ["c2p18", "padtrim"], "r12b": ["c2p18", "padtrim2"], "n_ref": [], "r13": ["pr4f", "rl4c", "s3up80", "gs5", "c1a80", "c2p15", "c2p18", "padtrim2", "ringfix"]})
 
 # --- 2x2-level pin overlays (openDVS_pixel2x2_top / _bot carry flattened copies of the pixel's edge structures as LVS pins:
 # readLine/pixRst met3 columns, rowReadON/OFF/GndD met2 stubs + pin shapes (69/16) at x 0.16-0.42, the VddA18 met4 rail + pin (71/16)).
 # Every set that moves those (r11d and later) needs this on each 2x2 cell.  Boxes are pixel-local and transformed by each pixel instance.
 LNP = dict(LN, met2pin=(69, 16), met3pin=(70, 16), met4pin=(71, 16))
-TOPFIX = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"),
-          ("met2", B(0.10, -0.5, 0.45, 1.55), "cut"),
-          ("met2", B(-0.26, -0.94, 0.0, 1.46), "add"),
-          ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),
-          ("met2pin", B(0.10, -0.5, 0.45, 1.55), "cut"),
-          ("met2pin", B(0.16, 0.385, 0.42, 0.645), "add"), ("met2pin", B(0.16, 0.795, 0.42, 1.055), "add"), ("met2pin", B(-0.26, 0.0, 0.0, 0.26), "add"),
-          ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]
+TOPFIX = [("met3", B(0.30, 0.13, 1.28, 11.27), "cut"),                       # overlay readLine/pixRst met3 columns inside the pixel span (pins stay in the bands)
+          ("met4", B(-1.0, -13.5, 1.30, 13.5), "cut"),                        # the VddA18 met4 rail (would be an isolated piece; the pixels' planes reach the bands)
+          ("met4pin", B(-1.0, -13.5, 1.30, 13.5), "cut"), ("met4pin", B(1.75, -0.1, 2.25, 0.35), "add")]   # its pin shape; new VddA18 pin on the plane band
 def apply_topfix(ly, c):
     """c = a 2x2 cell (openDVS_pixel2x2_top or _bot).  Returns the number of labels moved."""
     insts = [i.trans for i in c.each_inst() if i.cell.name == "openDVS_pixel"]
@@ -273,22 +279,17 @@ def apply_topfix(ly, c):
         r = r.merged(); c.shapes(lay).clear(); c.shapes(lay).insert(r)
     # labels: the pixel instances sit at x = -18075 (west, r0/m0) and 6245 (east, r180/m90), rows at y -310 (row 0) / -50 (row 1, mirrored)
     xs = sorted({i.trans.disp.x for i in c.each_inst() if i.cell.name == "openDVS_pixel"})
-    moved = 0
+    moved = 0   # round 13: only the VddA18 (met4) label moves, onto the plane's bottom band (pixel-local x 2.0, y 0.13); idempotent
     for lay in ly.layer_indexes():
         info = ly.get_info(lay)
-        if info.datatype != 5 or info.layer not in (69, 71): continue
+        if info.datatype != 5 or info.layer != 71: continue
         for s in c.shapes(lay):
-            if not s.is_text(): continue
-            tx = s.text; nm = tx.string; x, y = tx.x, tx.y
-            west = x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
-            if info.layer == 69 and nm.startswith("rowReadON["): ny = 205 if y > -600 else -565
-            elif info.layer == 69 and nm.startswith("rowReadOFF["): ny = 615 if y > -600 else -975
-            elif info.layer == 69 and nm == "GndD" and abs(y + 180) < 5: ny = y; x = (xs[0] - 130) if west else (xs[-1] + 130)
-            elif info.layer == 71 and nm == "VddA18" and abs(y + 180) < 5: ny = y; x = (xs[0] + 2000) if west else (xs[-1] - 2000)
-            else: continue
-            s.text = pya.Text(nm, pya.Trans(pya.Point(x, ny))); moved += 1
+            if not s.is_text() or s.text.string != "VddA18" or abs(s.text.y) > 2500: continue
+            tx = s.text; west = tx.x < (xs[0] + xs[-1]) / 2 if len(xs) > 1 else True
+            x = (xs[0] + 2000) if west else (xs[-1] - 2000)
+            if (x, -180) != (tx.x, tx.y): s.text = pya.Text("VddA18", pya.Trans(pya.Point(x, -180))); moved += 1
     return moved
-NEEDS_TOPFIX = {"r11d", "r11e", "r11f", "r11g", "r11h", "r11i", "r11j", "r11k", "n"}
+NEEDS_TOPFIX = {"r11d", "r11e", "r11f", "r11g", "r11h", "r11i", "r11j", "r11k", "n", "r12", "r12b", "n_ref", "r13"}
 
 def apply_sets(ly, px, sets):
     for s in sets:

@@ -16,6 +16,11 @@ for c in lay.each_circuit():
 # nwell has no tap inside the 2x2 (taps sit at tile level): the pfet-bulk-only net is tied to VddA18
 # for the compare, as the schematic does.
 for c in lay.each_circuit():
+    # round 12 (2026-09-22): GndD is one met2 line per pixel row (the shared line across the row mirror plane sat under the MIM plates);
+    # the rows are tied at the array periphery, so the two GndD-labelled layout nets are joined by name here.
+    gnd = [n for n in c.each_net() if n.name and n.name.split(",")[0] == "GndD"]
+    if len(gnd) > 1:
+        for n in gnd[1:]: print("joining GndD net %s into %s (per-row GndD lines, tied at the periphery)" % (n.expanded_name(), gnd[0].expanded_name())); c.join_nets(gnd[0], n)
     vdd = c.net_by_name("VddA18")
     for n in list(c.each_net()):
         terms = list(n.each_terminal())
