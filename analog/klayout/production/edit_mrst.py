@@ -379,6 +379,31 @@ NEEDS_TOPFIX = NEEDS_TOPFIX | {"r14", "r14b"}
 # rowReadOFF raised part (1.81-2.71) and its via tab (3.02-3.28)
 E["gndd76"] = [("met2", B(0.0, 0.76, 12.16, 1.20), "add"), ("met2", B(1.67, 0.76, 3.45, 0.88), "cut")]
 COMBOS["r14c_delta"] = ["gndd76"]; COMBOS["r14d"] = ["pr4f", "rl4c", "gs7", "c2p15", "c2p18", "padtrim2", "rows14", "gndd76"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"r14c_delta", "r14d"}
+# r15 (Rui 19:55: shield nRst from the MIM with VddA18/GndA instead of vdiff): the vdiff met2 band 3.31-7.235 x 2.83-3.28 under the C1a plate is
+# narrowed to the 0.14 route 2.83-2.97 (kept full at 3.31-3.45 to meet the vdiff vertical 3.17-3.31 x 3.14-5.5); a VddA18 met2 strip 3.59-9.375 x
+# 3.11-3.28 over the nRst met1 run (3.14-3.28), joined to the s1 VddA18 met2 L at 9.235-9.375 x 3.0-4.40.
+E["nrs_vdd"] = [("met2", B(3.45, 2.97, 7.235, 3.28), "cut"), ("met2", B(3.59, 3.11, 9.375, 3.28), "add")]
+COMBOS["sfvdd_delta"] = ["nrs_vdd"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"sfvdd_delta"}
+# armsh: GndA met2 strip 2.33-3.03 x 3.40-8.10 under the vsf plate's left arm (met3 2.47-2.90), between the arm and the vdiff met2 vertical 3.17-3.31
+# (joins the GndA met2 L at 2.72-3.03 x 3.35 / 2.335-2.72 x 3.4-3.955; 0.14 from nRst met2 top 3.26 and from the GndA met2 vertical 1.82-2.19)
+E["armsh"] = [("met2", B(2.33, 3.40, 3.03, 7.95), "add")]
+COMBOS["sfvdd2_delta"] = ["nrs_vdd", "armsh"]; NEEDS_TOPFIX = NEEDS_TOPFIX | {"sfvdd2_delta"}
+# r15 (Rui 20:15: reduce the vd-vdiff wiring parasitic in the change-amp core; 0.29 of the 0.65 fF is the C2 MIM rim fringe, inherent):
+# t3: drop the westmost gate contact of the input pfet (licon/mcon 10.635-10.805 x 2.225-2.395) and shorten the vd li row (to 10.915) and the
+#     vd met1 bar (to 10.935) so they sit 0.44 instead of 0.1 um from the vdiff met1 vertical (10.245-10.48)
+# t7: the vdiff met2 stub 9.96-10.385 x 2.005-2.99 only carries the via1 at 2.09-2.24: cut it above 2.30 (it ran beside the vd met4 stub and under the vd met3 pad)
+# t5: VddA18 met2 shield 11.185-11.39 x 2.655-3.79 between the vd met2 bar (10.905-11.045) and the vdiff met2 vertical (11.53-11.67), foot 11.09-11.39 x 3.79-4.13
+#     with via1 11.16-11.31 x 3.88-4.03 onto the VddA18 met1 plate
+E["t3"] = [("licon", B(10.635, 2.225, 10.805, 2.395), "cut"), ("mcon", B(10.635, 2.225, 10.805, 2.395), "cut"), ("li", B(10.555, 2.225, 10.915, 2.395), "cut"), ("met1", B(10.575, 2.195, 10.935, 2.515), "cut")]
+E["t7"] = [("met2", B(9.96, 2.30, 10.385, 2.99), "cut")]
+E["t5"] = [("met2", B(11.185, 2.655, 11.39, 3.80), "add"), ("met2", B(11.09, 3.80, 11.39, 4.14), "add"), ("via1", B(11.16, 3.89, 11.31, 4.04), "add")]   # foot corner 0.147 from the vd met2 horizontal corner (11.045, 3.66)
+COMBOS.update({"v_t3": ["t3"], "v_t7": ["t7"], "v_t5": ["t5"], "v_t357": ["t3", "t7", "t5"], "v_t357n": ["t3", "t7", "t5", "nrs_vdd"]})
+# t8: the vdiff met2 band 9.465-11.67 x 1.865-2.005 (0.19 under the vd met1 bar / li gate row and the vd met2 bar) drops to 1.60-1.74 (0.14 above the GndD line),
+#     with three legs up: the west connector 9.465-9.605, the via1 stub 9.96-10.385, the east vertical 11.53-11.67
+E["t8"] = [("met2", B(9.605, 1.865, 9.96, 2.005), "cut"), ("met2", B(10.385, 1.865, 11.53, 2.005), "cut"),
+           ("met2", B(9.465, 1.60, 11.67, 1.74), "add"), ("met2", B(9.465, 1.74, 9.605, 1.865), "add"), ("met2", B(9.96, 1.74, 10.385, 2.005), "add"), ("met2", B(11.53, 1.74, 11.67, 1.865), "add")]
+COMBOS.update({"v_t8": ["t8"], "v_t3578": ["t3", "t7", "t5", "t8"], "r15a_delta": ["t3", "t7", "t5", "nrs_vdd"], "r15b_delta": ["t3", "t7", "t5", "t8", "nrs_vdd"]})
+NEEDS_TOPFIX = NEEDS_TOPFIX | {"r15a_delta", "r15b_delta"}
 MODE = globals().get("mode", "variants")
 if MODE == "variants":
     os.makedirs("rcc/attrib_mrst", exist_ok=True)
