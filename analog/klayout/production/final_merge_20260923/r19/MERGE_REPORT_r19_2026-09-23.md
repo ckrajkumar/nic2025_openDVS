@@ -28,12 +28,12 @@ The test structure keeps the r18b pixel (its own wiring meets the pixel at the p
 **LVS:**
 - 2x2 macro: PVS (Cadence, production deck) **MATCH**.
 - `pixel_test_structure`: **Circuits match uniquely**, 143 devices / 90 nets (unchanged from r18b).
-- `pixel_4tile` vs `pixel_4tile_schem_lvs.spice` (Magic 8.3.471 + netgen, `lvs_setup_2x2.tcl`, diode stub): TILE_LVS_R19_PLACEHOLDER
+- `pixel_4tile` vs `pixel_4tile_schem_lvs.spice` (Magic 8.3.471 + netgen, `lvs_setup_2x2.tcl`, diode stub): **Circuits match uniquely** (netgen 1.5 on rpgraca-ini, 7 min, on the Magic 8.3.471 extraction of the merged `pixel_4tile`; 381440 devices on both sides).
 - Connectivity check on a clipped west-edge window (KLayout extraction, two pairs): GndD, VddA18 and each rowReadON/OFF[k] are separate nets.
 
 **Parasitics (Quantus, pixel 0, fF, r19 vs r18b):** vsf–vd 2.204 / 2.203, vsf–vdiff 0.518 / 0.518, vd–vdiff 0.543 / 0.543, nRst→vsf 0.119 / 0.119, pixRst→vsf 0.052 / 0.053, rowReadOFF→vsf 0.096 / 0.101, rowReadON→vsf 0.031 / 0.031, readLine→vsf 0.055 / 0.055, GndD→vsf 0.444 / 0.434 — no coupling changed by more than 0.01 fF.
 
-**cf_precheck 1.3.7 on the r19 wrapper:** PRECHECK_R19_PLACEHOLDER
+**cf_precheck 1.3.7 on the r19 wrapper:** topcell pass, gpio_defines pass, xor 0 differences, klayout feol/beol/offgrid/met_min_ca_density/pin_label/zeroarea "No DRC violations found", spike none, illegal cellname pass; LVS+OEB stage (32 min): the top-level `user_project_wrapper` compare ends exactly as the collaborators' own run and as r18b (30466 = 30466 devices, 28815 vs 29262 nets, "Subcell(s) failed matching" = the top-port-order artefact, 116 mismatch lines), OEB stat=5 (the vssa* extraction-tooling artefact documented in their `failures_analysis.md`).
 
 ## 3. Simulations on the r19 pixel (Magic RCC netlist with the density fill; every floating fill node tied to ground through 1e15 Ω so the operating point is not singular)
 
@@ -47,7 +47,7 @@ The test structure keeps the r18b pixel (its own wiring meets the pixel at the p
 | crosstalk at 1 ms: rowReadOFF / readLine pulse | fires only in the pixels that already sit 30 mV low from the coincident edge at the reset release (the known periphery-timing case: keep row/column edges ≥ 3 µs away from pixRst) |
 | coincident-edge control | row-0 offset −21.5 mV at 5 pA, −32.3 mV at 95 pA (as r15a/r17b) |
 
-Three-path PEX campaign (Quantus/Spectre, Magic/ngspice, schematic/ngspice × 45 corners): CAMPAIGN_PLACEHOLDER
+Three-path PEX campaign (Quantus/Spectre, Magic/ngspice, schematic/ngspice × 45 corners): running since 03:20 on rpgraca-ini (Quantus/Spectre) and the workstation (Magic and schematic ngspice); results in a follow-up.
 
 ## 4. Files
 
