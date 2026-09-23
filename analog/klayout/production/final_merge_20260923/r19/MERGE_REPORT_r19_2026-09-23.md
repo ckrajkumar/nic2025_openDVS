@@ -29,6 +29,7 @@ The test structure keeps the r18b pixel (its own wiring meets the pixel at the p
 - 2x2 macro: PVS (Cadence, production deck) **MATCH**.
 - `pixel_test_structure`: **Circuits match uniquely**, 143 devices / 90 nets (unchanged from r18b).
 - `pixel_4tile` vs `pixel_4tile_schem_lvs.spice` (Magic 8.3.471 + netgen, `lvs_setup_2x2.tcl`, diode stub): **Circuits match uniquely** (netgen 1.5 on rpgraca-ini, 7 min, on the Magic 8.3.471 extraction of the merged `pixel_4tile`; 381440 devices on both sides).
+- July-flow check (PDK `sky130A_setup.tcl`, no stub, July xschem `pixel_4tile_schem.spice`) on the Magic 8.3.471 extractions of the collaborators' production tile and of the r19 tile: both "Top level cell failed pin matching" with 778 mismatch lines each (the known top-level artefact); the two mismatch lists differ only in the arbitrary pairing inside symmetric net classes (vpd[k] orderings, dummy nets). A rerun with the frozen July Magic on the corrected tile crashed the extractor (memory, while three Quantus reset shards were starting on the same machine) and was not repeated.
 - Connectivity check on a clipped west-edge window (KLayout extraction, two pairs): GndD, VddA18 and each rowReadON/OFF[k] are separate nets.
 
 **Parasitics (Quantus, pixel 0, fF, r19 vs r18b):** vsf–vd 2.204 / 2.203, vsf–vdiff 0.518 / 0.518, vd–vdiff 0.543 / 0.543, nRst→vsf 0.119 / 0.119, pixRst→vsf 0.052 / 0.053, rowReadOFF→vsf 0.096 / 0.101, rowReadON→vsf 0.031 / 0.031, readLine→vsf 0.055 / 0.055, GndD→vsf 0.444 / 0.434 — no coupling changed by more than 0.01 fF.
@@ -47,7 +48,7 @@ The test structure keeps the r18b pixel (its own wiring meets the pixel at the p
 | crosstalk at 1 ms: rowReadOFF / readLine pulse | fires only in the pixels that already sit 30 mV low from the coincident edge at the reset release (the known periphery-timing case: keep row/column edges ≥ 3 µs away from pixRst) |
 | coincident-edge control | row-0 offset −21.5 mV at 5 pA, −32.3 mV at 95 pA (as r15a/r17b) |
 
-Three-path PEX campaign (Quantus/Spectre, Magic/ngspice, schematic/ngspice × 45 corners): running since 03:20 on rpgraca-ini (Quantus/Spectre) and the workstation (Magic and schematic ngspice); results in a follow-up.
+Three-path PEX campaign (Quantus/Spectre, Magic/ngspice, schematic/ngspice × 46 corners, static and reset-transient rows): static rows running since 03:06 (Quantus/Spectre complete, 322/322 valid, on rpgraca-ini; schematic 315/322 with the usual 9 comparator gmin failures and the Magic path in progress on the workstation); the reset-transient rows had failed at launch on a stale base hash in the Magic reset netlist (the fill shunts were added after its derivation) and were re-derived and relaunched at 05:09 on both machines; results in a follow-up.
 
 ## 4. Files
 
