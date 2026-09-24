@@ -34,3 +34,11 @@ analog/netlist/
 \#*
 .*
 
+analog/klayout/production/final_merge_20260923/user_project_wrapper.r18b.gds
+analog/klayout/production/final_merge_20260923/r19/user_project_wrapper.r19.gds
+analog/klayout/production/final_merge_20260923/**/user_project_wrapper.*.gds
+analog/klayout/production/pixel_4tile_work.*.gds
+analog/klayout/production/pixel_4tile_mag_9_1_pruned.gds
+analog/klayout/production/rcc/**/*.gds
+analog/klayout/production/lvs/*.gds
+analog/klayout/production/**/*.bak-*

@@ -19,12 +19,16 @@ steps = rawfile.get_steps()
 v_exp = np.real(np.array(rawfile.get_trace('v(exp)').get_wave(steps[0])))
 
 # Internal nets of Pix[0] inside the 2x2 array
-# Schematic hierarchy: xpix2x2.xpix[0].vpr / .vsf
-# PEX hierarchy:       xpix2x2.pix[0].vpr  / .vsf
+# Schematic: xpix2x2.xpix[0].vpr / .vsf
+# Calibre PEX: named nets are split into parasitic RC sub-nodes;
+#   use device terminals instead: mmsf.g = vpr, mmsf.s = vsf
 traces = rawfile.get_trace_names()
 if 'v(xpix2x2.xpix[0].vpr)' in traces:
     vpr_trace = 'v(xpix2x2.xpix[0].vpr)'
     vsf_trace = 'v(xpix2x2.xpix[0].vsf)'
+elif 'v(xpix2x2.xpix[0].mmsf.g)' in traces:
+    vpr_trace = 'v(xpix2x2.xpix[0].mmsf.g)'
+    vsf_trace = 'v(xpix2x2.xpix[0].mmsf.s)'
 else:
     vpr_trace = 'v(xpix2x2.pix[0].vpr)'
     vsf_trace = 'v(xpix2x2.pix[0].vsf)'

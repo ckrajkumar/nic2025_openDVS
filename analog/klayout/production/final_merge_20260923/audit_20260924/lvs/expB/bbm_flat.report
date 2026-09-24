@@ -1,0 +1,530 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class BiasBranchnMasterx11 (0):  Merged 3 parallel devices.
+Class BiasBranchnMasterx11 (1):  Merged 1665 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (958->430)     |sky130_fd_pr__nfet_01v8_lvt (958->430)     
+sky130_fd_pr__nfet_01v8 (390)              |sky130_fd_pr__nfet_01v8 (390)              
+sky130_fd_pr__pfet_01v8 (841->278)         |sky130_fd_pr__pfet_01v8 (841->278)         
+sky130_fd_pr__pfet_01v8_hvt (483->315)     |sky130_fd_pr__pfet_01v8_hvt (483->315)     
+sky130_fd_pr__pfet_01v8_lvt (773->370)     |sky130_fd_pr__pfet_01v8_lvt (773->370)     
+sky130_fd_pr__cap_mim_m3_1 (4->1)          |sky130_fd_pr__cap_mim_m3_1 (4->1)          
+Number of devices: 1784                    |Number of devices: 1784                    
+Number of nets: 1485                       |Number of nets: 1485                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+LJ_BiasMasterCoarse:BiasMasterCoarse_0//LJ_mim_cap_0/sky130_fd_pr__cap_mim_m3_1:0 vs. LJ_BiasMasterCoarse:BiasMasterCoarse_0/LJ_mim_cap:mim_cap_2/sky130_fd_pr__cap_mim_m3_1:0:
+ w circuit1: 43.7   circuit2: 30   (delta=37.2%, cutoff=1%)
+ M circuit1: 1   circuit2: 3   (delta=2, cutoff=0)
+LJ_BiasMasterCoarse:BiasMasterCoarse_0//LJ_mim_cap_0/sky130_fd_pr__cap_mim_m3_1:0 vs. LJ_BiasMasterCoarse:BiasMasterCoarse_0/LJ_mim_cap:mim_cap_2/sky130_fd_pr__cap_mim_m3_1:0:
+ w circuit1: 30   circuit2: 43.7   (delta=37.2%, cutoff=1%)
+ M circuit1: 3   circuit2: 1   (delta=2, cutoff=0)
+
+Subcircuit pins:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+GndA                                       |GndA                                       
+LowBiasInterfaceEnBuffer                   |LowBiasInterfaceEnBuffer                   
+LowBiasInterfaceEn[10]                     |LowBiasInterfaceEn[10]                     
+LowBiasInterfaceEn[8]                      |LowBiasInterfaceEn[8]                      
+LowBiasInterfaceEn[0]                      |LowBiasInterfaceEn[0]                      
+LowBiasInterfaceEn[5]                      |LowBiasInterfaceEn[5]                      
+LowBiasInterfaceEn[4]                      |LowBiasInterfaceEn[4]                      
+LowBiasInterfaceEn[3]                      |LowBiasInterfaceEn[3]                      
+LowBiasInterfaceEn[2]                      |LowBiasInterfaceEn[2]                      
+LowBiasInterfaceEn[7]                      |LowBiasInterfaceEn[7]                      
+LowBiasInterfaceEn[6]                      |LowBiasInterfaceEn[6]                      
+LowBiasInterfaceEn[1]                      |LowBiasInterfaceEn[1]                      
+LowBiasInterfaceEn[9]                      |LowBiasInterfaceEn[9]                      
+PowerDown[10]                              |PowerDown[10]                              
+PowerDown[8]                               |PowerDown[8]                               
+PowerDown[0]                               |PowerDown[0]                               
+PowerDown[5]                               |PowerDown[5]                               
+PowerDown[4]                               |PowerDown[4]                               
+PowerDown[3]                               |PowerDown[3]                               
+PowerDown[2]                               |PowerDown[2]                               
+PowerDown[7]                               |PowerDown[7]                               
+PowerDown[6]                               |PowerDown[6]                               
+PowerDown[1]                               |PowerDown[1]                               
+PowerDown[9]                               |PowerDown[9]                               
+NBiasEn[10]                                |NBiasEn[10]                                
+NBiasEn[8]                                 |NBiasEn[8]                                 
+NBiasEn[0]                                 |NBiasEn[0]                                 
+NBiasEn[5]                                 |NBiasEn[5]                                 
+NBiasEn[4]                                 |NBiasEn[4]                                 
+NBiasEn[3]                                 |NBiasEn[3]                                 
+NBiasEn[2]                                 |NBiasEn[2]                                 
+NBiasEn[7]                                 |NBiasEn[7]                                 
+NBiasEn[6]                                 |NBiasEn[6]                                 
+NBiasEn[1]                                 |NBiasEn[1]                                 
+NBiasEn[9]                                 |NBiasEn[9]                                 
+BiasDisabled[10]                           |BiasDisabled[10]                           
+BiasDisabled[8]                            |BiasDisabled[8]                            
+BiasDisabled[0]                            |BiasDisabled[0]                            
+BiasDisabled[5]                            |BiasDisabled[5]                            
+BiasDisabled[4]                            |BiasDisabled[4]                            
+BiasDisabled[3]                            |BiasDisabled[3]                            
+BiasDisabled[2]                            |BiasDisabled[2]                            
+BiasDisabled[7]                            |BiasDisabled[7]                            
+BiasDisabled[6]                            |BiasDisabled[6]                            
+BiasDisabled[1]                            |BiasDisabled[1]                            
+BiasDisabled[9]                            |BiasDisabled[9]                            
+BIT0[10]                                   |BIT0[10]                                   
+BIT0[8]                                    |BIT0[8]                                    
+BIT0[0]                                    |BIT0[0]                                    
+BIT0[5]                                    |BIT0[5]                                    
+BIT0[4]                                    |BIT0[4]                                    
+BIT0[3]                                    |BIT0[3]                                    
+BIT0[2]                                    |BIT0[2]                                    
+BIT0[7]                                    |BIT0[7]                                    
+BIT0[6]                                    |BIT0[6]                                    
+BIT0[1]                                    |BIT0[1]                                    
+BIT0[9]                                    |BIT0[9]                                    
+PadBias[10]                                |PadBias[10]                                
+PadBias[8]                                 |PadBias[8]                                 
+PadBias[0]                                 |PadBias[0]                                 
+PadBias[5]                                 |PadBias[5]                                 
+PadBias[4]                                 |PadBias[4]                                 
+PadBias[3]                                 |PadBias[3]                                 
+PadBias[2]                                 |PadBias[2]                                 
+PadBias[7]                                 |PadBias[7]                                 
+PadBias[6]                                 |PadBias[6]                                 
+PadBias[1]                                 |PadBias[1]                                 
+PadBias[9]                                 |PadBias[9]                                 
+PBiasEn[10]                                |PBiasEn[10]                                
+PBiasEn[8]                                 |PBiasEn[8]                                 
+PBiasEn[0]                                 |PBiasEn[0]                                 
+PBiasEn[5]                                 |PBiasEn[5]                                 
+PBiasEn[4]                                 |PBiasEn[4]                                 
+PBiasEn[3]                                 |PBiasEn[3]                                 
+PBiasEn[2]                                 |PBiasEn[2]                                 
+PBiasEn[7]                                 |PBiasEn[7]                                 
+PBiasEn[6]                                 |PBiasEn[6]                                 
+PBiasEn[1]                                 |PBiasEn[1]                                 
+PBiasEn[9]                                 |PBiasEn[9]                                 
+Bias[10]                                   |Bias[10]                                   
+Bias[8]                                    |Bias[8]                                    
+Bias[0]                                    |Bias[0]                                    
+Bias[5]                                    |Bias[5]                                    
+Bias[4]                                    |Bias[4]                                    
+Bias[3]                                    |Bias[3]                                    
+Bias[2]                                    |Bias[2]                                    
+Bias[7]                                    |Bias[7]                                    
+Bias[6]                                    |Bias[6]                                    
+Bias[1]                                    |Bias[1]                                    
+Bias[9]                                    |Bias[9]                                    
+VddA18                                     |VddA18                                     
+PowerDownM                                 |PowerDownM                                 
+CoarseOneHotBuffer[0]                      |CoarseOneHotBuffer[0]                      
+CoarseOneHot[80]                           |CoarseOneHot[80]                           
+CoarseOneHot[64]                           |CoarseOneHot[64]                           
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHot[40]                           |CoarseOneHot[40]                           
+CoarseOneHot[32]                           |CoarseOneHot[32]                           
+CoarseOneHot[24]                           |CoarseOneHot[24]                           
+CoarseOneHot[16]                           |CoarseOneHot[16]                           
+CoarseOneHot[56]                           |CoarseOneHot[56]                           
+CoarseOneHot[48]                           |CoarseOneHot[48]                           
+CoarseOneHot[8]                            |CoarseOneHot[8]                            
+CoarseOneHot[72]                           |CoarseOneHot[72]                           
+CoarseOneHotBuffer[1]                      |CoarseOneHotBuffer[1]                      
+CoarseOneHot[81]                           |CoarseOneHot[81]                           
+CoarseOneHot[65]                           |CoarseOneHot[65]                           
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[41]                           |CoarseOneHot[41]                           
+CoarseOneHot[33]                           |CoarseOneHot[33]                           
+CoarseOneHot[25]                           |CoarseOneHot[25]                           
+CoarseOneHot[17]                           |CoarseOneHot[17]                           
+CoarseOneHot[57]                           |CoarseOneHot[57]                           
+CoarseOneHot[49]                           |CoarseOneHot[49]                           
+CoarseOneHot[9]                            |CoarseOneHot[9]                            
+CoarseOneHot[73]                           |CoarseOneHot[73]                           
+CoarseOneHotBuffer[2]                      |CoarseOneHotBuffer[2]                      
+CoarseOneHotBuffer[3]                      |CoarseOneHotBuffer[3]                      
+CoarseOneHot[82]                           |CoarseOneHot[82]                           
+CoarseOneHot[66]                           |CoarseOneHot[66]                           
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[42]                           |CoarseOneHot[42]                           
+CoarseOneHot[34]                           |CoarseOneHot[34]                           
+CoarseOneHot[26]                           |CoarseOneHot[26]                           
+CoarseOneHot[18]                           |CoarseOneHot[18]                           
+CoarseOneHot[58]                           |CoarseOneHot[58]                           
+CoarseOneHot[50]                           |CoarseOneHot[50]                           
+CoarseOneHot[10]                           |CoarseOneHot[10]                           
+CoarseOneHot[74]                           |CoarseOneHot[74]                           
+CoarseOneHot[83]                           |CoarseOneHot[83]                           
+CoarseOneHot[67]                           |CoarseOneHot[67]                           
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[43]                           |CoarseOneHot[43]                           
+CoarseOneHot[35]                           |CoarseOneHot[35]                           
+CoarseOneHot[27]                           |CoarseOneHot[27]                           
+CoarseOneHot[19]                           |CoarseOneHot[19]                           
+CoarseOneHot[59]                           |CoarseOneHot[59]                           
+CoarseOneHot[51]                           |CoarseOneHot[51]                           
+CoarseOneHot[11]                           |CoarseOneHot[11]                           
+CoarseOneHot[75]                           |CoarseOneHot[75]                           
+nLowBiasInterfaceEnBuffer                  |nLowBiasInterfaceEnBuffer                  
+nLowBiasInterfaceEn[10]                    |nLowBiasInterfaceEn[10]                    
+nLowBiasInterfaceEn[8]                     |nLowBiasInterfaceEn[8]                     
+nLowBiasInterfaceEn[0]                     |nLowBiasInterfaceEn[0]                     
+nLowBiasInterfaceEn[5]                     |nLowBiasInterfaceEn[5]                     
+nLowBiasInterfaceEn[4]                     |nLowBiasInterfaceEn[4]                     
+nLowBiasInterfaceEn[3]                     |nLowBiasInterfaceEn[3]                     
+nLowBiasInterfaceEn[2]                     |nLowBiasInterfaceEn[2]                     
+nLowBiasInterfaceEn[7]                     |nLowBiasInterfaceEn[7]                     
+nLowBiasInterfaceEn[6]                     |nLowBiasInterfaceEn[6]                     
+nLowBiasInterfaceEn[1]                     |nLowBiasInterfaceEn[1]                     
+nLowBiasInterfaceEn[9]                     |nLowBiasInterfaceEn[9]                     
+nFineCodeBuffer[7]                         |nFineCodeBuffer[7]                         
+nFineCodeBuffer[6]                         |nFineCodeBuffer[6]                         
+nFineCodeBuffer[0]                         |nFineCodeBuffer[0]                         
+nFineCodeBuffer[1]                         |nFineCodeBuffer[1]                         
+nFineCodeBuffer[2]                         |nFineCodeBuffer[2]                         
+nFineCodeBuffer[4]                         |nFineCodeBuffer[4]                         
+nFineCodeBuffer[3]                         |nFineCodeBuffer[3]                         
+nFineCodeBuffer[5]                         |nFineCodeBuffer[5]                         
+rx                                         |rx                                         
+CoarseOneHotBuffer[7]                      |CoarseOneHotBuffer[7]                      
+CoarseOneHot[87]                           |CoarseOneHot[87]                           
+CoarseOneHot[71]                           |CoarseOneHot[71]                           
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[47]                           |CoarseOneHot[47]                           
+CoarseOneHot[39]                           |CoarseOneHot[39]                           
+CoarseOneHot[31]                           |CoarseOneHot[31]                           
+CoarseOneHot[23]                           |CoarseOneHot[23]                           
+CoarseOneHot[63]                           |CoarseOneHot[63]                           
+CoarseOneHot[55]                           |CoarseOneHot[55]                           
+CoarseOneHot[15]                           |CoarseOneHot[15]                           
+CoarseOneHot[79]                           |CoarseOneHot[79]                           
+CoarseOneHotBuffer[4]                      |CoarseOneHotBuffer[4]                      
+CoarseOneHot[84]                           |CoarseOneHot[84]                           
+CoarseOneHot[68]                           |CoarseOneHot[68]                           
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[44]                           |CoarseOneHot[44]                           
+CoarseOneHot[36]                           |CoarseOneHot[36]                           
+CoarseOneHot[28]                           |CoarseOneHot[28]                           
+CoarseOneHot[20]                           |CoarseOneHot[20]                           
+CoarseOneHot[60]                           |CoarseOneHot[60]                           
+CoarseOneHot[52]                           |CoarseOneHot[52]                           
+CoarseOneHot[12]                           |CoarseOneHot[12]                           
+CoarseOneHot[76]                           |CoarseOneHot[76]                           
+CoarseOneHotBuffer[6]                      |CoarseOneHotBuffer[6]                      
+CoarseOneHot[86]                           |CoarseOneHot[86]                           
+CoarseOneHot[70]                           |CoarseOneHot[70]                           
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[46]                           |CoarseOneHot[46]                           
+CoarseOneHot[38]                           |CoarseOneHot[38]                           
+CoarseOneHot[30]                           |CoarseOneHot[30]                           
+CoarseOneHot[22]                           |CoarseOneHot[22]                           
+CoarseOneHot[62]                           |CoarseOneHot[62]                           
+CoarseOneHot[54]                           |CoarseOneHot[54]                           
+CoarseOneHot[14]                           |CoarseOneHot[14]                           
+CoarseOneHot[78]                           |CoarseOneHot[78]                           
+CoarseOneHotBuffer[5]                      |CoarseOneHotBuffer[5]                      
+CoarseOneHot[85]                           |CoarseOneHot[85]                           
+CoarseOneHot[69]                           |CoarseOneHot[69]                           
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[45]                           |CoarseOneHot[45]                           
+CoarseOneHot[37]                           |CoarseOneHot[37]                           
+CoarseOneHot[29]                           |CoarseOneHot[29]                           
+CoarseOneHot[21]                           |CoarseOneHot[21]                           
+CoarseOneHot[61]                           |CoarseOneHot[61]                           
+CoarseOneHot[53]                           |CoarseOneHot[53]                           
+CoarseOneHot[13]                           |CoarseOneHot[13]                           
+CoarseOneHot[77]                           |CoarseOneHot[77]                           
+CoarseOneHotLowBiasEnBuffer                |CoarseOneHotLowBiasEnBuffer                
+CoarseOneHotLowBiasEn[10]                  |CoarseOneHotLowBiasEn[10]                  
+CoarseOneHotLowBiasEn[8]                   |CoarseOneHotLowBiasEn[8]                   
+CoarseOneHotLowBiasEn[0]                   |CoarseOneHotLowBiasEn[0]                   
+CoarseOneHotLowBiasEn[5]                   |CoarseOneHotLowBiasEn[5]                   
+CoarseOneHotLowBiasEn[4]                   |CoarseOneHotLowBiasEn[4]                   
+CoarseOneHotLowBiasEn[3]                   |CoarseOneHotLowBiasEn[3]                   
+CoarseOneHotLowBiasEn[2]                   |CoarseOneHotLowBiasEn[2]                   
+CoarseOneHotLowBiasEn[7]                   |CoarseOneHotLowBiasEn[7]                   
+CoarseOneHotLowBiasEn[6]                   |CoarseOneHotLowBiasEn[6]                   
+CoarseOneHotLowBiasEn[1]                   |CoarseOneHotLowBiasEn[1]                   
+CoarseOneHotLowBiasEn[9]                   |CoarseOneHotLowBiasEn[9]                   
+FineCodeBuffer[7]                          |FineCodeBuffer[7]                          
+FineCodeBuffer[6]                          |FineCodeBuffer[6]                          
+FineCodeBuffer[0]                          |FineCodeBuffer[0]                          
+FineCodeBuffer[1]                          |FineCodeBuffer[1]                          
+FineCodeBuffer[2]                          |FineCodeBuffer[2]                          
+FineCodeBuffer[4]                          |FineCodeBuffer[4]                          
+FineCodeBuffer[3]                          |FineCodeBuffer[3]                          
+FineCodeBuffer[5]                          |FineCodeBuffer[5]                          
+FineCode[87]                               |FineCode[87]                               
+FineCode[71]                               |FineCode[71]                               
+FineCode[7]                                |FineCode[7]                                
+FineCode[47]                               |FineCode[47]                               
+FineCode[39]                               |FineCode[39]                               
+FineCode[31]                               |FineCode[31]                               
+FineCode[23]                               |FineCode[23]                               
+FineCode[63]                               |FineCode[63]                               
+FineCode[55]                               |FineCode[55]                               
+FineCode[15]                               |FineCode[15]                               
+FineCode[79]                               |FineCode[79]                               
+FineCode[86]                               |FineCode[86]                               
+FineCode[70]                               |FineCode[70]                               
+FineCode[6]                                |FineCode[6]                                
+FineCode[46]                               |FineCode[46]                               
+FineCode[38]                               |FineCode[38]                               
+FineCode[30]                               |FineCode[30]                               
+FineCode[22]                               |FineCode[22]                               
+FineCode[62]                               |FineCode[62]                               
+FineCode[54]                               |FineCode[54]                               
+FineCode[14]                               |FineCode[14]                               
+FineCode[78]                               |FineCode[78]                               
+FineCode[80]                               |FineCode[80]                               
+FineCode[64]                               |FineCode[64]                               
+FineCode[0]                                |FineCode[0]                                
+FineCode[40]                               |FineCode[40]                               
+FineCode[32]                               |FineCode[32]                               
+FineCode[24]                               |FineCode[24]                               
+FineCode[16]                               |FineCode[16]                               
+FineCode[56]                               |FineCode[56]                               
+FineCode[48]                               |FineCode[48]                               
+FineCode[8]                                |FineCode[8]                                
+FineCode[72]                               |FineCode[72]                               
+FineCode[81]                               |FineCode[81]                               
+FineCode[65]                               |FineCode[65]                               
+FineCode[1]                                |FineCode[1]                                
+FineCode[41]                               |FineCode[41]                               
+FineCode[33]                               |FineCode[33]                               
+FineCode[25]                               |FineCode[25]                               
+FineCode[17]                               |FineCode[17]                               
+FineCode[57]                               |FineCode[57]                               
+FineCode[49]                               |FineCode[49]                               
+FineCode[9]                                |FineCode[9]                                
+FineCode[73]                               |FineCode[73]                               
+FineCode[83]                               |FineCode[83]                               
+FineCode[67]                               |FineCode[67]                               
+FineCode[3]                                |FineCode[3]                                
+FineCode[43]                               |FineCode[43]                               
+FineCode[35]                               |FineCode[35]                               
+FineCode[27]                               |FineCode[27]                               
+FineCode[19]                               |FineCode[19]                               
+FineCode[59]                               |FineCode[59]                               
+FineCode[51]                               |FineCode[51]                               
+FineCode[11]                               |FineCode[11]                               
+FineCode[75]                               |FineCode[75]                               
+FineCode[82]                               |FineCode[82]                               
+FineCode[66]                               |FineCode[66]                               
+FineCode[2]                                |FineCode[2]                                
+FineCode[42]                               |FineCode[42]                               
+FineCode[34]                               |FineCode[34]                               
+FineCode[26]                               |FineCode[26]                               
+FineCode[18]                               |FineCode[18]                               
+FineCode[58]                               |FineCode[58]                               
+FineCode[50]                               |FineCode[50]                               
+FineCode[10]                               |FineCode[10]                               
+FineCode[74]                               |FineCode[74]                               
+FineCode[84]                               |FineCode[84]                               
+FineCode[68]                               |FineCode[68]                               
+FineCode[4]                                |FineCode[4]                                
+FineCode[44]                               |FineCode[44]                               
+FineCode[36]                               |FineCode[36]                               
+FineCode[28]                               |FineCode[28]                               
+FineCode[20]                               |FineCode[20]                               
+FineCode[60]                               |FineCode[60]                               
+FineCode[52]                               |FineCode[52]                               
+FineCode[12]                               |FineCode[12]                               
+FineCode[76]                               |FineCode[76]                               
+FineCode[85]                               |FineCode[85]                               
+FineCode[69]                               |FineCode[69]                               
+FineCode[5]                                |FineCode[5]                                
+FineCode[45]                               |FineCode[45]                               
+FineCode[37]                               |FineCode[37]                               
+FineCode[29]                               |FineCode[29]                               
+FineCode[21]                               |FineCode[21]                               
+FineCode[61]                               |FineCode[61]                               
+FineCode[53]                               |FineCode[53]                               
+FineCode[13]                               |FineCode[13]                               
+FineCode[77]                               |FineCode[77]                               
+nFineCode[87]                              |nFineCode[87]                              
+nFineCode[71]                              |nFineCode[71]                              
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[47]                              |nFineCode[47]                              
+nFineCode[39]                              |nFineCode[39]                              
+nFineCode[31]                              |nFineCode[31]                              
+nFineCode[23]                              |nFineCode[23]                              
+nFineCode[63]                              |nFineCode[63]                              
+nFineCode[55]                              |nFineCode[55]                              
+nFineCode[15]                              |nFineCode[15]                              
+nFineCode[79]                              |nFineCode[79]                              
+nFineCode[80]                              |nFineCode[80]                              
+nFineCode[64]                              |nFineCode[64]                              
+nFineCode[0]                               |nFineCode[0]                               
+nFineCode[40]                              |nFineCode[40]                              
+nFineCode[32]                              |nFineCode[32]                              
+nFineCode[24]                              |nFineCode[24]                              
+nFineCode[16]                              |nFineCode[16]                              
+nFineCode[56]                              |nFineCode[56]                              
+nFineCode[48]                              |nFineCode[48]                              
+nFineCode[8]                               |nFineCode[8]                               
+nFineCode[72]                              |nFineCode[72]                              
+nFineCode[81]                              |nFineCode[81]                              
+nFineCode[65]                              |nFineCode[65]                              
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[41]                              |nFineCode[41]                              
+nFineCode[33]                              |nFineCode[33]                              
+nFineCode[25]                              |nFineCode[25]                              
+nFineCode[17]                              |nFineCode[17]                              
+nFineCode[57]                              |nFineCode[57]                              
+nFineCode[49]                              |nFineCode[49]                              
+nFineCode[9]                               |nFineCode[9]                               
+nFineCode[73]                              |nFineCode[73]                              
+nFineCode[83]                              |nFineCode[83]                              
+nFineCode[67]                              |nFineCode[67]                              
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[43]                              |nFineCode[43]                              
+nFineCode[35]                              |nFineCode[35]                              
+nFineCode[27]                              |nFineCode[27]                              
+nFineCode[19]                              |nFineCode[19]                              
+nFineCode[59]                              |nFineCode[59]                              
+nFineCode[51]                              |nFineCode[51]                              
+nFineCode[11]                              |nFineCode[11]                              
+nFineCode[75]                              |nFineCode[75]                              
+nFineCode[82]                              |nFineCode[82]                              
+nFineCode[66]                              |nFineCode[66]                              
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[42]                              |nFineCode[42]                              
+nFineCode[34]                              |nFineCode[34]                              
+nFineCode[26]                              |nFineCode[26]                              
+nFineCode[18]                              |nFineCode[18]                              
+nFineCode[58]                              |nFineCode[58]                              
+nFineCode[50]                              |nFineCode[50]                              
+nFineCode[10]                              |nFineCode[10]                              
+nFineCode[74]                              |nFineCode[74]                              
+nFineCode[84]                              |nFineCode[84]                              
+nFineCode[68]                              |nFineCode[68]                              
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[44]                              |nFineCode[44]                              
+nFineCode[36]                              |nFineCode[36]                              
+nFineCode[28]                              |nFineCode[28]                              
+nFineCode[20]                              |nFineCode[20]                              
+nFineCode[60]                              |nFineCode[60]                              
+nFineCode[52]                              |nFineCode[52]                              
+nFineCode[12]                              |nFineCode[12]                              
+nFineCode[76]                              |nFineCode[76]                              
+nFineCode[85]                              |nFineCode[85]                              
+nFineCode[69]                              |nFineCode[69]                              
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[45]                              |nFineCode[45]                              
+nFineCode[37]                              |nFineCode[37]                              
+nFineCode[29]                              |nFineCode[29]                              
+nFineCode[21]                              |nFineCode[21]                              
+nFineCode[61]                              |nFineCode[61]                              
+nFineCode[53]                              |nFineCode[53]                              
+nFineCode[13]                              |nFineCode[13]                              
+nFineCode[77]                              |nFineCode[77]                              
+nFineCode[86]                              |nFineCode[86]                              
+nFineCode[70]                              |nFineCode[70]                              
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[46]                              |nFineCode[46]                              
+nFineCode[38]                              |nFineCode[38]                              
+nFineCode[30]                              |nFineCode[30]                              
+nFineCode[22]                              |nFineCode[22]                              
+nFineCode[62]                              |nFineCode[62]                              
+nFineCode[54]                              |nFineCode[54]                              
+nFineCode[14]                              |nFineCode[14]                              
+nFineCode[78]                              |nFineCode[78]                              
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasBranchnMasterx11 and BiasBranchnMasterx11 are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ BiasBranchnMasterx11

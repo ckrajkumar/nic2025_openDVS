@@ -1,0 +1,5 @@
+pixel_4tile bbox (-75885,-75665;1616380,1713785) instances of 2x2 cells: 290 pixels (flat): 290
+== PDK deck FEOL+BEOL on rcc/pixel_4tile.r15a.gds  (21:17:27)
+real	6m9.270s
+report: rcc/pdkdrc_tile.r15a.lyrdb  items: 1850
+{'m1.1': 64, 'm1.3ab': 1402, 'm2.2': 384}

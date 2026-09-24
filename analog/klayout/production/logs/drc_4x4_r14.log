@@ -1,0 +1,14 @@
+DRC_COUNT 
+      1 This layer can't abut or partially overlap between subcells
+      1 MiM cap spacing to unrelated metal3 < 1.34um (capm.11)
+      1 Metal2 width < 0.14um (met2.1)
+      1 Metal2 spacing < 0.14um (met2.2)
+      1 Metal2 overlap of Via1 < 0.03um in one direction (met2.5 - met2.4)
+      1 Metal1 spacing < 0.14um (met1.2)
+   rules flagged:
+      1 Metal1 spacing < 0.14um (met1.2)
+      1 Metal2 overlap of Via1 < 0.03um in one direction (met2.5 - met2.4)
+      1 Metal2 spacing < 0.14um (met2.2)
+      1 Metal2 width < 0.14um (met2.1)
+      1 MiM cap spacing to unrelated metal3 < 1.34um (capm.11)
+      1 This layer can't abut or partially overlap between subcells

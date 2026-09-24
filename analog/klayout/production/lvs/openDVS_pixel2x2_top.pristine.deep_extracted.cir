@@ -1,0 +1,84 @@
+* Extracted by KLayout with SKY130 LVS runset on : 21/09/2026 20:27
+
+.SUBCKT openDVS_pixel2x2 GndA VddA18 DiffBn OffBn PrSFBp PrBp RefrBp OnBn
++ readLine[0] pixRst[0] pixRst[1] readLine[1] vpd[1] vpd[3] rowReadOFF[1]
++ rowReadON[1] GndD rowReadOFF[0] rowReadON[0] vpd[0] vpd[2]
+X$1 GndD \$I152 readLine[1] pixRst[1] VddA18 rowReadON[0] \$I32 rowReadOFF[0]
++ \$I24 GndA \$I142 OffBn vpd[2] \$I158 OnBn PrBp DiffBn openDVS_pixel
+X$2 GndD \$I152 readLine[0] pixRst[0] VddA18 rowReadON[0] \$I144 rowReadOFF[0]
++ \$I147 GndA \$I160 OffBn vpd[0] \$I162 OnBn PrBp DiffBn openDVS_pixel
+X$4 GndD \$I152 readLine[0] pixRst[0] VddA18 rowReadON[1] \$I146 rowReadOFF[1]
++ \$I149 GndA \$I140 OffBn vpd[1] \$I156 OnBn PrBp DiffBn openDVS_pixel
+X$5 GndD \$I152 readLine[1] pixRst[1] VddA18 rowReadON[1] \$I145 rowReadOFF[1]
++ \$I148 GndA \$I141 OffBn vpd[3] \$I157 OnBn PrBp DiffBn openDVS_pixel
+XM$1 \$I140 RefrBp VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 AS=0.126
++ AD=0.063 PS=1.44 PD=0.72
+XM$2 VddA18 RefrBp \$I141 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 AS=0.063
++ AD=0.126 PS=0.72 PD=1.44
+XM$3 \$I160 RefrBp VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 AS=0.126
++ AD=0.063 PS=1.44 PD=0.72
+XM$4 VddA18 RefrBp \$I142 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 AS=0.063
++ AD=0.126 PS=0.72 PD=1.44
+XM$5 VddA18 \$I140 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.45
++ AD=0.225 PS=3.6 PD=1.8
+XM$6 VddA18 \$I141 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.225
++ AD=0.45 PS=1.8 PD=3.6
+XM$7 VddA18 \$I160 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.45
++ AD=0.225 PS=3.6 PD=1.8
+XM$8 VddA18 \$I142 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.225
++ AD=0.45 PS=1.8 PD=3.6
+XM$9 \$I149 \$I146 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.45
++ AD=0.225 PS=3.6 PD=1.8
+XM$10 VddA18 \$I145 \$I148 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.225
++ AD=0.45 PS=1.8 PD=3.6
+XM$11 \$I147 \$I144 VddA18 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.45
++ AD=0.225 PS=3.6 PD=1.8
+XM$12 VddA18 \$I32 \$I24 \$I152 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.225
++ AD=0.45 PS=1.8 PD=3.6
+XM$13 \$I156 PrSFBp VddA18 \$I152 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42
++ AS=0.126 AD=0.063 PS=1.44 PD=0.72
+XM$14 VddA18 PrSFBp \$I157 \$I152 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42
++ AS=0.063 AD=0.126 PS=0.72 PD=1.44
+XM$15 \$I162 PrSFBp VddA18 \$I152 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42
++ AS=0.126 AD=0.063 PS=1.44 PD=0.72
+XM$16 VddA18 PrSFBp \$I158 \$I152 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42
++ AS=0.063 AD=0.126 PS=0.72 PD=1.44
+.ENDS openDVS_pixel2x2
+
+.SUBCKT openDVS_pixel GndD \$2 readLine pixRst VddA18 rowReadON vd rowReadOFF
++ vdiff GndA nRst OffBn vpd vsf OnBn PrBp DiffBn
+XM$1 vpr PrBp VddA18 \$2 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 AS=0.15 AD=0.15
++ PS=1.6 PD=1.6
+XM$2 ON vdiff VddA18 \$2 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.45 AD=0.225
++ PS=3.6 PD=1.8
+XM$3 VddA18 vdiff nOFF \$2 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 AS=0.225 AD=0.45
++ PS=1.8 PD=3.6
+XM$4 vsf vpr GndA \$2 sky130_fd_pr__pfet_01v8 L=0.25 W=0.42 AS=0.126 AD=0.126
++ PS=1.44 PD=1.44
+XM$5 vd nRst vdiff \$2 sky130_fd_pr__pfet_01v8_hvt L=0.42 W=0.42 AS=0.126
++ AD=0.126 PS=1.44 PD=1.44
+XM$6 GndA OnBn ON GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 AS=0.45 AD=0.45
++ PS=3.6 PD=3.6
+XM$7 GndA DiffBn vdiff GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 AS=0.45 AD=0.45
++ PS=3.6 PD=3.6
+XM$8 GndA vpd vpr GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 AS=0.126 AD=0.126
++ PS=1.44 PD=1.44
+XM$9 GndD ON \$17 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 AS=0.126 AD=0.105
++ PS=1.44 PD=0.92
+XM$10 \$17 rowReadON readLine GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42
++ AS=0.105 AD=0.105 PS=0.92 PD=0.92
+XM$11 readLine rowReadOFF \$18 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42
++ AS=0.105 AD=0.105 PS=0.92 PD=0.92
+XM$12 \$18 nOFF GndD GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 AS=0.105
++ AD=0.126 PS=0.92 PD=1.44
+XM$13 GndA OffBn nOFF GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 AS=0.45 AD=0.45
++ PS=3.6 PD=3.6
+XM$14 vpd vpr VddA18 GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 AS=0.15 AD=0.15
++ PS=1.6 PD=1.6
+XM$15 nRst pixRst \$22 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 AS=0.126
++ AD=0.105 PS=1.44 PD=0.92
+XM$16 \$22 rowReadON GndA GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 AS=0.105
++ AD=0.126 PS=0.92 PD=1.44
+XC$17 vsf vd sky130_fd_pr__model__cap_mim C=3.75666e-14 A=18.7833 P=28.46
+XC$19 vdiff vd sky130_fd_pr__model__cap_mim C=2e-15 A=1 P=4
+.ENDS openDVS_pixel

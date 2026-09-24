@@ -1,0 +1,25 @@
+== layout saved 2026-09-22 21:54:28
+== 1. export openDVS_pixel2x2_top -> rcc/openDVS_pixel2x2_top.r17.gds
+== 2. Magic RCC on rpgraca-ini.wg0
+{"accepted": true, "output_sha256": "375976e5c35fcb0ae0cabb80318b979ac038ea0635888e4f6f29e73b93fe7dcc", "report": "/home/rpgraca/.cache/opencode/opendvs-pex/edited-pixel-magic-20260921-v1/r17/composition_report.json"}
+== ngspice unit adapter (production_v2 transforms, hash/inventory gates lifted)
+   inventory {'capacitors': 683, 'resistors': 3182, 'mos': 80, 'mim': 12, 'diodes': 4}
+   sha256 dc6aeeb19f4b51b5523f7324edc6731c096984ca3493aa6b61a2649b62b2cb46
+   caps: 683  res: 3182
+== 3. install into /home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921 as source/openDVS_pixel2x2_magic_rcc_ngspice.reset_physical_pd.r17.spice
+Traceback (most recent call last):
+  File "/home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921/./validate_package.py", line 176, in <module>
+    main()
+    ~~~~^^
+  File "/home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921/./validate_package.py", line 168, in main
+    report = static_checks()
+  File "/home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921/./validate_package.py", line 79, in static_checks
+    require('main circuit differs beyond normalized include relocation, interactive save-all, and stop time', normalize_circuit(main) == expected_main_circuit)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921/./validate_package.py", line 45, in require
+    raise RuntimeError(label)
+RuntimeError: main circuit differs beyond normalized include relocation, interactive save-all, and stop time
+!! validate_package.py failed
+  File "/home/rpgraca/research/projects/telluride/2025/nic_eventcam/openDVS-layout/debug/opendvs_reset_rise_20260921/./validate_package.py", line 45, in require
+    raise RuntimeError(label)
+RuntimeError: main circuit differs beyond normalized include relocation, interactive save-all, and stop time

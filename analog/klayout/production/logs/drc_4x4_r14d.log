@@ -1,0 +1,6 @@
+DRC_COUNT 
+      1 This layer can't abut or partially overlap between subcells
+      1 MiM cap spacing to unrelated metal3 < 1.34um (capm.11)
+   rules flagged:
+      1 MiM cap spacing to unrelated metal3 < 1.34um (capm.11)
+      1 This layer can't abut or partially overlap between subcells

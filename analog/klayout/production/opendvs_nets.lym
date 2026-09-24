@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description>openDVS: extract nets (sky130 connectivity) + open Netlist Browser</description>
+ <version/>
+ <category>pymacros</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut>Ctrl+Shift+N</shortcut>
+ <show-in-menu>true</show-in-menu>
+ <group-name>opendvs</group-name>
+ <menu-path>tools_menu.end</menu-path>
+ <interpreter>python</interpreter>
+ <dsl-interpreter-name/>
+ <text>import os, sys, importlib
+p = os.path.expanduser("~/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/klayout/production")
+if p not in sys.path:
+    sys.path.insert(0, p)
+import opendvs_l2n
+importlib.reload(opendvs_l2n)
+opendvs_l2n.extract_view()
+</text>
+</klayout-macro>

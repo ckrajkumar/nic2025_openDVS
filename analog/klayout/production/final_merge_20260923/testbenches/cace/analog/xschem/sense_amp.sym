@@ -1,0 +1,42 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 20 -120 20 -100 {}
+L 4 -70 -120 -70 -100 {}
+L 4 -90 -120 -90 -100 {}
+L 4 130 -60 150 -60 {}
+L 4 -50 -120 -50 -100 {}
+L 4 -110 -120 -110 -100 {}
+L 4 0 -120 0 -100 {}
+L 7 90 -120 90 -100 {}
+L 7 110 -120 110 -100 {}
+L 7 -60 20 -60 40 {}
+B 5 87.5 -122.5 92.5 -117.5 {name=vdd dir=inout}
+B 5 17.5 -122.5 22.5 -117.5 {name=pbias dir=in}
+B 5 -72.5 -122.5 -67.5 -117.5 {name=vcascp dir=in}
+B 5 -92.5 -122.5 -87.5 -117.5 {name=bias_amp_cascn dir=in}
+B 5 147.5 -62.5 152.5 -57.5 {name=vsense_out dir=out}
+B 5 -52.5 -122.5 -47.5 -117.5 {name=vcascn dir=in}
+B 5 -112.5 -122.5 -107.5 -117.5 {name=bias_amp_cascp dir=in}
+B 5 107.5 -122.5 112.5 -117.5 {name=gnd dir=inout}
+B 5 -62.5 37.5 -57.5 42.5 {name=sense dir=inout}
+B 5 -2.5 -122.5 2.5 -117.5 {name=nbias dir=in}
+P 4 5 130 -100 -130 -100 -130 20 130 20 130 -100 {}
+T {@symname} 30.5 -36 0 0 0.3 0.3 {}
+T {@name} 85 -12 0 0 0.2 0.2 {}
+T {vdd} 86 -95 3 1 0.2 0.2 {}
+T {pbias} 24 -95 1 0 0.2 0.2 {}
+T {vcascp} -66 -95 1 0 0.2 0.2 {}
+T {bias_amp_cascn} -86 -95 1 0 0.2 0.2 {}
+T {vsense_out} 125 -64 0 1 0.2 0.2 {}
+T {vcascn} -46 -95 1 0 0.2 0.2 {}
+T {bias_amp_cascp} -106 -95 1 0 0.2 0.2 {}
+T {gnd} 106 -95 3 1 0.2 0.2 {}
+T {sense} -56 15 1 1 0.2 0.2 {}
+T {nbias} 4 -95 1 0 0.2 0.2 {}

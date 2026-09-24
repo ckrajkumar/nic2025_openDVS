@@ -1,0 +1,26 @@
+
+╭────────────────────────────────── Precheck ──────────────────────────────────╮
+│ CF Precheck v1.3.7                                                           │
+│ Project: project (digital, sky130A)                                          │
+│ Checks:  2                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+  [1/2] LVS ............................................... FAIL  (2250.7s)
+         LVS FAILED (stat=1), see 
+/home/rpgraca/opendvs_final/project/precheck_results/full_r20_lvs/logs/LVS_check
+.log
+  [2/2] OEB ............................................... FAIL  (4.1s)
+         OEB FAILED (stat=5), see 
+/home/rpgraca/opendvs_final/project/precheck_results/full_r20_lvs/logs/OEB_check
+.log
+
+                Precheck Summary                
+┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Check                ┃  Status  ┃   Duration ┃
+┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ LVS                  │   FAIL   │    2250.7s │
+│ OEB                  │   FAIL   │       4.1s │
+│ Magic DRC            │   SKIP   │          - │
+└──────────────────────┴──────────┴────────────┘
+Results saved to /home/rpgraca/opendvs_final/project/.cf/project.json
+Full log at /home/rpgraca/opendvs_final/project/precheck_results

@@ -1,0 +1,20 @@
+
+╭────────────────────────────────── Precheck ──────────────────────────────────╮
+│ CF Precheck v1.3.7                                                           │
+│ Project: proj_r21b (digital, sky130A)                                        │
+│ Checks:  1                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+  [1/1] Magic DRC ......................................... FAIL  (989.4s)
+         Violation: 'Local interconnect spacing < 0.17um (li.3)' found 27468 
+times
+
+                Precheck Summary                
+┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Check                ┃  Status  ┃   Duration ┃
+┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ Magic DRC            │   FAIL   │     989.4s │
+└──────────────────────┴──────────┴────────────┘
+Results saved to 
+/home/rpgraca/opendvs_final/audit_drc/proj_r21b/.cf/project.json
+Full log at /home/rpgraca/opendvs_final/audit_drc/proj_r21b/precheck_results
