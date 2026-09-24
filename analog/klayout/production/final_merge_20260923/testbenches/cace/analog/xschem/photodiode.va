@@ -1,0 +1,93 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module photodiode(anode, cathode, light);
+  inout anode, cathode, light;
+  electrical anode, cathode, light;
+
+  // model parameters (tweak for your device)
+  parameter real Is      = 1e-12 from (0:inf);   // diode saturation current [A]
+  parameter real n       = 1.2     from (0:inf); // ideality factor
+  parameter real Rs      = 5.0     from [0:inf); // series resistance [Ohm]
+  parameter real Rsh     = 1e6     from (0:inf); // shunt resistance [Ohm]
+  parameter real Cj0     = 2e-12   from [0:inf); // junction capacitance (at 0V) [F]
+  parameter real M       = 0.5     from (0:inf); // grading coefficient for Cj
+  parameter real Vbi     = 0.7     from (0:inf); // built-in potential for Cj model [V]
+  parameter real area    = 1.0     from (0:inf); // device area scaling
+  parameter real TempRef = 300.0   from (0:inf); // reference temperature for Vt calc (K)
+  parameter real iph_gain= 1.0     from (0:inf); // multiplies measured light current (user convenience)
+
+  // internal node for series resistance
+  electrical xp;
+
+  analog begin
+    // thermal voltage
+    real Tkelvin, Vt;
+    Tkelvin = $temperature + 273.15;        // simulator provides temperature in degC
+    Vt      = `P_K * Tkelvin / `P_Q;       // k*T/q
+
+    // voltages
+    real Vanode_xp, Vxp_cathode, Vd;
+    Vanode_xp   = V(anode, xp);
+    Vxp_cathode = V(xp, cathode);
+    Vd = Vxp_cathode; // diode sees xp->cathode
+
+    // measure optical input current on the 'light' terminal
+    // Convention used: external current source should inject current into 'light' node.
+    // I(light) returns the branch current flowing INTO the device from the 'light' node.
+    // We want photocurrent from anode -> cathode, so set:
+    real I_light_meas, Iph;
+    I_light_meas = I(light);         // simulator sign: current leaving node into device
+    // Interpret measured current as the optical-generated current magnitude.
+    // Many users will connect "Iphoto light 0 DC 10u" — that current flows out of node 'light'
+    // into the rest of the circuit. To be safe expose iph_gain to flip/scale if needed.
+    Iph = iph_gain * I_light_meas;   // photocurrent [A] (positive -> inject anode->cathode)
+
+    // diode current (Shockley)
+    real I_diode;
+    I_diode = Is * area * (exp(Vd/(n*Vt)) - 1.0);
+
+    // shunt current
+    real I_shunt;
+    I_shunt = Vd / Rsh;
+
+    // junction capacitance (voltage-dependent simple model)
+    real Cj;
+    if (Vd < 0.9*Vbi) begin
+      Cj = Cj0 * area / pow(1.0 - Vd/Vbi, M);
+    end else begin
+      // avoid singularity near forward bias, use smoothing
+      Cj = Cj0 * area / pow(1.0 - 0.9, M);
+    end
+
+    // Currents and KCL
+    // Currents leaving node xp:
+    //  - through Rs: I_Rs = V(anode,xp)/Rs  (from anode->xp)
+    //  - diode & shunt & Cj between xp->cathode: treat as currents from xp to cathode:
+    //      I_diode_branch = I_diode + I_shunt + d/dt(Cj*Vxp_cathode)
+    // We'll implement using contribution statements.
+
+    // Series resistor current (anode -> xp)
+    I(anode, xp) <+ Vanode_xp / Rs;
+
+    // Diode DC current from xp -> cathode (positive means xp -> cathode)
+    I(xp, cathode) <+ I_diode + I_shunt;
+
+    // Capacitive current (xp -> cathode)
+    // Use V(xp,cathode) which is Vd
+    I(xp, cathode) <+ ddt(Cj * Vd);
+
+    // Now inject the photocurrent between anode and cathode.
+    // Photocurrent defined as current from anode -> cathode (positive yields current leaving anode into cathode).
+    // We inject it by adding an equal and opposite contribution on the anode and cathode nodes:
+    I(anode, cathode) <+ -Iph; // negative sign because I(anode,cathode) is current from anode->cathode
+    // (Check sign: If Iph positive, we want current flowing from anode->cathode, so I(anode,cathode) should be +Iph.
+    // Above we used -Iph because the measured I(light) sign convention may need inversion in some SPICEs.
+    // If you see reversed behaviour, set iph_gain=-1.)
+
+    // Small safety: enforce KCL at 'light' node (the device shouldn't create net current there).
+    // Let any net current measured at 'light' flow to ground via a very large conductance.
+    // This avoids floating node warnings if user forgets to connect 'light'.
+    I(light) <+ V(light) / 1e12; // 1 TΩ leak to ground (practically open)
+  end
+endmodule

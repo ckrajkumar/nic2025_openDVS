@@ -1,0 +1,38 @@
+
+╭────────────────────────────────── Precheck ──────────────────────────────────╮
+│ CF Precheck v1.3.7                                                           │
+│ Project: project (digital, sky130A)                                          │
+│ Checks:  11                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+  [ 1/11] Top Cell .......................................... PASS  (1.6s)
+  [ 2/11] GPIO Defines ...................................... PASS  (0.4s)
+  [ 3/11] XOR ............................................... PASS  (54.8s)
+  [ 4/11] Klayout FEOL ...................................... PASS  (240.6s)
+  [ 5/11] Klayout BEOL ...................................... PASS  (710.7s)
+  [ 6/11] Klayout Offgrid ................................... PASS  (146.4s)
+  [ 7/11] Klayout Metal Density ............................. PASS  (36.2s)
+  [ 8/11] Klayout Pin Label ................................. PASS  (25.1s)
+  [ 9/11] Klayout ZeroArea .................................. PASS  (6.4s)
+  [10/11] Spike Check ....................................... PASS  (5.9s)
+  [11/11] Illegal Cellname .................................. PASS  (2.4s)
+
+                Precheck Summary                 
+┏━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Check                 ┃  Status  ┃   Duration ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ Top Cell              │   PASS   │       1.6s │
+│ GPIO Defines          │   PASS   │       0.4s │
+│ XOR                   │   PASS   │      54.8s │
+│ Klayout FEOL          │   PASS   │     240.6s │
+│ Klayout BEOL          │   PASS   │     710.7s │
+│ Klayout Offgrid       │   PASS   │     146.4s │
+│ Klayout Metal Density │   PASS   │      36.2s │
+│ Klayout Pin Label     │   PASS   │      25.1s │
+│ Klayout ZeroArea      │   PASS   │       6.4s │
+│ Spike Check           │   PASS   │       5.9s │
+│ Illegal Cellname      │   PASS   │       2.4s │
+│ Magic DRC             │   SKIP   │          - │
+└───────────────────────┴──────────┴────────────┘
+Results saved to /home/rpgraca/opendvs_final/project/.cf/project.json
+Full log at /home/rpgraca/opendvs_final/project/precheck_results

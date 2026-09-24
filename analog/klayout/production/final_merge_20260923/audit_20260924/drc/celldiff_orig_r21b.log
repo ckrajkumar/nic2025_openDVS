@@ -1,0 +1,192 @@
+ERROR: :/built-in-pymacros/xschem_bridge.py:290: AttributeError: 'NoneType' object has no attribute 'menu'
+  :/built-in-pymacros/xschem_bridge.py:290
+  :/built-in-pymacros/xschem_bridge.lym:3 (class AttributeError)
+top: user_project_wrapper user_project_wrapper dbu 0.001 0.001 cells 308 305
+cells only in A (3): ['m1_m2_density_tile', 'vias_gen$3', 'vias_gen$4']
+cells only in B (0): []
+layers only in A: []
+layers only in B: []
+subtree pixel_4tile: A 71 cells, B 68 cells
+subtree pixel_test_structure: A 13 cells, B 13 cells
+CELL GS_openDVS_pixel [pixel_4tile-subtree] bboxA (-2.53,-2.56;14.855,14.82) bboxB (-2.53,-2.56;14.855,14.82)
+  L65/20: 1 xor polys area 2.11500 um2 bbox (10.21,2.885;12.31,5.08)
+  L66/20: 2 xor polys area 2.56865 um2 bbox (9.86,2.685;12.01,11.2)
+  L66/44: 27 xor polys area 0.78030 um2 bbox (9.94,2.225;12.245,12.215)
+  L67/20: 10 xor polys area 4.48790 um2 bbox (0.02,0.03;12.245,11.655)
+  L67/44: 14 xor polys area 0.41850 um2 bbox (0.075,1.55;11.52,11.69)
+  L68/5 texts: -3 +2  removed [('GndA', 12.16, 9.035), ('nRst', 11.425, 11.175), ('vsf', 10.215, 7.3100000000000005)] added [('nRst', 9.08, 6.995), ('vsf', 11.645, 8.49)]
+  L68/20: 38 xor polys area 9.97677 um2 bbox (-0.16,-0.35;11.78,11.75)
+  L68/44: 27 xor polys area 0.63610 um2 bbox (-0.075,-0.265;11.31,8.315)
+  L69/20: 31 xor polys area 23.90600 um2 bbox (-0.16,-0.44;12.16,12.27)
+  L69/44: 3 xor polys area 0.04800 um2 bbox (1.9,3.56;9.82,6.2)
+  L70/20: 8 xor polys area 8.87800 um2 bbox (0.31,0.73;10.12,10.54)
+  L70/44: 15 xor polys area 0.48525 um2 bbox (0.375,0.28;9.89,11.05)
+  L71/20: 3 xor polys area 24.71298 um2 bbox (-0.7,-0.42;9.955,12.97)
+  L89/44: 2 xor polys area 0.66000 um2 bbox (8.08,0.87;9.08,2.2)
+  L94/20: 1 xor polys area 1.89700 um2 bbox (9.725,4.51;12.435,5.21)
+  L95/20: 4 xor polys area 1.08040 um2 bbox (9.84,3.85;11.985,11.215)
+  instances: A 24 B 0; removed 24 added 0
+    - ('m1_m2_density_tile', 'r0 5350,8040', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 2770,8040', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 4060,8040', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 5350,6750', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 2770,6750', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 4060,6750', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 5350,5460', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 2770,5460', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 4060,5460', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 5350,4170', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 2770,4170', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 4060,4170', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 7930,6750', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 6640,6750', 1, 1, '0,0', '0,0') x1
+    - ('m1_m2_density_tile', 'r0 7930,5460', 1, 1, '0,0', '0,0') x1
+CELL GS_openDVS_pixel2x2_bot [pixel_4tile-subtree] bboxA (-20.605,-14.87;8.775,14.51) bboxB (-20.605,-14.87;8.775,14.51)
+  L65/44: 2 xor polys area 4.54410 um2 bbox (-16.72,-0.56;4.89,0.205)
+  L66/44: 32 xor polys area 0.92480 um2 bbox (-16.51,-0.43;4.68,0.08)
+  L67/20: 2 xor polys area 4.54410 um2 bbox (-16.72,-0.56;4.89,0.205)
+  L69/5 texts: -10 +10  removed [('GndD', -17.785, -0.18), ('GndD', 5.955, -0.18), ('rowReadOFF[0]', -17.785, 1.06), ('rowReadOFF[0]', 5.955, 1.06), ('rowReadOFF[1]', -17.785, -1.42), ('rowReadOFF[1]', 5.955, -1.42), ('rowReadON[0]', -17.785, 0.66), ('rowReadON[0]', 5.955, 0.66), ('rowReadON[1]', -17.785, -1.02), ('rowReadON[1]', 5.955, -1.02)] added [('GndD', -17.785, -1.3800000000000001), ('GndD', 5.955, -1.3800000000000001), ('rowReadOFF[0]', -17.785, 0.24), ('rowReadOFF[0]', 5.955, 0.24), ('rowReadOFF[1]', -17.785, -0.6), ('rowReadOFF[1]', 5.955, -0.6), ('rowReadON[0]', -17.785, -0.04), ('rowReadON[0]', 5.955, -0.04), ('rowReadON[1]', -17.785, -0.32), ('rowReadON[1]', 5.955, -0.32)]
+  L69/16: 22 xor polys area 0.65520 um2 bbox (-17.915,-1.55;6.085,1.19)
+  L69/20: 10 xor polys area 1.13360 um2 bbox (-17.915,-1.55;6.085,1.19)
+  L70/20: 4 xor polys area 29.40960 um2 bbox (-17.765,-11.32;5.935,10.96)
+  L71/5 texts: -2 +2  removed [('VddA18', -17.915, -0.18), ('VddA18', 6.082, -0.18)] added [('VddA18', -16.075, -0.18), ('VddA18', 4.245, -0.18)]
+  L71/16: 4 xor polys area 108.34000 um2 bbox (-19.04,-12.18;7.205,11.82)
+  L71/20: 2 xor polys area 115.43160 um2 bbox (-19.04,-13.02;7.205,12.66)
+  L94/20: 2 xor polys area 6.53660 um2 bbox (-16.845,-0.685;5.015,0.33)
+  instances: A 26 B 24; removed 2 added 0
+    - ('vias_gen$4', 'r0 -16720,-560', 1, 1, '0,0', '0,0') x1
+    - ('vias_gen$4', 'r0 1920,-560', 1, 1, '0,0', '0,0') x1
+CELL GS_openDVS_pixel2x2_top [pixel_4tile-subtree] bboxA (-20.605,-14.87;8.775,14.51) bboxB (-20.605,-14.87;8.775,14.51)
+  L65/44: 2 xor polys area 4.54410 um2 bbox (-16.72,-0.56;4.89,0.205)
+  L66/44: 32 xor polys area 0.92480 um2 bbox (-16.51,-0.43;4.68,0.08)
+  L67/20: 2 xor polys area 4.54410 um2 bbox (-16.72,-0.56;4.89,0.205)
+  L68/20: 4 xor polys area 0.36480 um2 bbox (-7.915,-12.11;-3.915,12.06)
+  L69/5 texts: -10 +10  removed [('GndD', -17.785, -0.18), ('GndD', 5.955, -0.18), ('rowReadOFF[0]', -17.785, 1.06), ('rowReadOFF[0]', 5.955, 1.06), ('rowReadOFF[1]', -17.785, -1.42), ('rowReadOFF[1]', 5.955, -1.42), ('rowReadON[0]', -17.785, 0.66), ('rowReadON[0]', 5.955, 0.66), ('rowReadON[1]', -17.785, -1.02), ('rowReadON[1]', 5.955, -1.02)] added [('GndD', -17.785, -1.3800000000000001), ('GndD', 5.955, -1.3800000000000001), ('rowReadOFF[0]', -17.785, 0.24), ('rowReadOFF[0]', 5.955, 0.24), ('rowReadOFF[1]', -17.785, -0.6), ('rowReadOFF[1]', 5.955, -0.6), ('rowReadON[0]', -17.785, -0.04), ('rowReadON[0]', 5.955, -0.04), ('rowReadON[1]', -17.785, -0.32), ('rowReadON[1]', 5.955, -0.32)]
+  L69/16: 22 xor polys area 0.65520 um2 bbox (-17.915,-1.55;6.085,1.19)
+  L69/20: 10 xor polys area 1.13360 um2 bbox (-17.915,-1.55;6.085,1.19)
+  L70/20: 4 xor polys area 29.40960 um2 bbox (-17.765,-11.32;5.935,10.96)
+  L71/5 texts: -2 +2  removed [('VddA18', -17.915, -0.18), ('VddA18', 6.082, -0.18)] added [('VddA18', -16.075, -0.18), ('VddA18', 4.245, -0.18)]
+  L71/16: 4 xor polys area 108.34000 um2 bbox (-19.04,-12.18;7.205,11.82)
+  L71/20: 2 xor polys area 115.42320 um2 bbox (-19.04,-13.02;7.205,12.66)
+  L94/20: 2 xor polys area 3.53690 um2 bbox (-16.845,-0.685;5.015,0.33)
+  L95/20: 2 xor polys area 0.49300 um2 bbox (-17.74,11.735;5.91,11.905)
+  instances: A 26 B 24; removed 2 added 0
+    - ('vias_gen$4', 'r0 -16720,-560', 1, 1, '0,0', '0,0') x1
+    - ('vias_gen$4', 'r0 1920,-560', 1, 1, '0,0', '0,0') x1
+CELL GS_pixel_4tile_left_vdd_gnd_connectors [pixel_4tile-subtree] bboxA (-70,50.36;2.95,67.33) bboxB (-70,50.36;3.01,67.33)
+  L68/20: 1 xor polys area 2.38020 um2 bbox (0.1,62.01;3.01,64.43)
+  L68/44: 6 xor polys area 0.13500 um2 bbox (0.2,62.065;2.925,64.375)
+  L69/20: 1 xor polys area 1.45700 um2 bbox (0.6,62.91;2.95,63.53)
+CELL GS_pixel_layout_biasgen_connector_v2 [pixel_4tile-subtree] bboxA (26.59,0.9;99.38,24.76) bboxB (26.59,0.9;99.38,24.76)
+  L69/20: 1 xor polys area 7.40380 um2 bbox (26.6,12.43;31.27,15.09)
+CELL GS_pixel_layout_biasgen_connector_v3 [pixel_4tile-subtree] bboxA (-78.575,-0.47;0,3.21) bboxB (-78.575,-0.47;0.26,3.21)
+  L69/20: 2 xor polys area 1.25600 um2 bbox (-0.88,0;0.26,2.74)
+CELL GS_pixel_layout_tile [pixel_4tile-subtree] bboxA (0,0;773.38,897.255) bboxB (0,0;773.38,897.255)
+  L69/5 texts: -128 +128  removed [('rowReadOFF[0]', 2.82, 759.9300000000001), ('rowReadOFF[10]', 2.82, 639.9300000000001), ('rowReadOFF[11]', 2.82, 637.45), ('rowReadOFF[12]', 2.82, 615.9300000000001), ('rowReadOFF[13]', 2.82, 613.45), ('rowReadOFF[14]', 2.82, 591.9300000000001), ('rowReadOFF[15]', 2.82, 589.45), ('rowReadOFF[16]', 2.82, 567.9300000000001), ('rowReadOFF[17]', 2.82, 565.45), ('rowReadOFF[18]', 2.82, 543.9300000000001)] added [('rowReadOFF[0]', 2.82, 759.11), ('rowReadOFF[10]', 2.82, 639.11), ('rowReadOFF[11]', 2.82, 638.27), ('rowReadOFF[12]', 2.82, 615.11), ('rowReadOFF[13]', 2.82, 614.27), ('rowReadOFF[14]', 2.82, 591.11), ('rowReadOFF[15]', 2.82, 590.27), ('rowReadOFF[16]', 2.82, 567.11), ('rowReadOFF[17]', 2.82, 566.27), ('rowReadOFF[18]', 2.82, 543.11)]
+  L69/16: 256 xor polys area 13.31200 um2 bbox (2.69,13.32;2.95,760.06)
+  L69/20: 256 xor polys area 13.31200 um2 bbox (2.69,13.32;2.95,760.06)
+CELL GS_pixel_layout_tile_bot [pixel_4tile-subtree] bboxA (0,-123.875;773.38,773.38) bboxB (0,-123.875;773.38,773.38)
+  L69/5 texts: -129 +129  removed [('GND', 2.82, 14.69), ('rowReadOFF[0]', 2.82, 13.450000000000001), ('rowReadOFF[10]', 2.82, 133.45), ('rowReadOFF[11]', 2.82, 135.93), ('rowReadOFF[12]', 2.82, 157.45000000000002), ('rowReadOFF[13]', 2.82, 159.93), ('rowReadOFF[14]', 2.82, 181.45000000000002), ('rowReadOFF[15]', 2.82, 183.93), ('rowReadOFF[16]', 2.82, 205.45000000000002), ('rowReadOFF[17]', 2.82, 207.93)] added [('GND', 2.82, 15.67), ('rowReadOFF[0]', 2.82, 14.27), ('rowReadOFF[10]', 2.82, 134.27), ('rowReadOFF[11]', 2.82, 135.11), ('rowReadOFF[12]', 2.82, 158.27), ('rowReadOFF[13]', 2.82, 159.11), ('rowReadOFF[14]', 2.82, 182.27), ('rowReadOFF[15]', 2.82, 183.11), ('rowReadOFF[16]', 2.82, 206.27), ('rowReadOFF[17]', 2.82, 207.11)]
+  L69/16: 257 xor polys area 13.31720 um2 bbox (2.69,13.32;2.95,760.06)
+  L69/20: 257 xor polys area 13.31720 um2 bbox (2.69,13.32;2.95,760.06)
+CELL S7_openDVS_pixel [pixel_test_structure-subtree] bboxA (-2.56,-14.855;14.82,2.53) bboxB (-2.56,-14.855;14.82,2.53)
+  L22/24: 1 xor polys area 27.81525 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L33/24: 2 xor polys area 2.80050 um2 bbox (3.275,-9.01;8.98,-3.31)
+  L62/24: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L65/20: 8 xor polys area 13.96700 um2 bbox (0.065,-12.545;12.335,0.045)
+  L65/44: 7 xor polys area 15.62410 um2 bbox (0.065,-12.545;12.335,0.045)
+  L65/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L66/20: 2 xor polys area 2.56865 um2 bbox (2.685,-12.01;11.2,-9.86)
+  L66/44: 38 xor polys area 1.09820 um2 bbox (2.225,-12.245;12.215,-3.78)
+  L67/20: 12 xor polys area 8.25770 um2 bbox (0.03,-12.245;12.33,-0.02)
+  L67/44: 14 xor polys area 0.41850 um2 bbox (1.55,-11.52;11.69,-0.075)
+  L67/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L68/5 texts: -3 +2  removed [('GndA', 9.035, -12.16), ('nRst', 11.175, -11.425), ('vsf', 7.3100000000000005, -10.215)] added [('nRst', 6.995, -9.08), ('vsf', 8.49, -11.645)]
+  L68/20: 37 xor polys area 9.51717 um2 bbox (0.02,-11.78;11.75,0.16)
+  L68/44: 28 xor polys area 0.65860 um2 bbox (-0.265,-11.31;8.315,0.075)
+  L68/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L69/20: 29 xor polys area 23.61400 um2 bbox (-0.44,-12.16;12.27,0.16)
+  L69/44: 3 xor polys area 0.04800 um2 bbox (3.56,-9.82;6.2,-1.9)
+  L69/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L70/20: 8 xor polys area 8.87800 um2 bbox (0.73,-10.12;10.54,-0.31)
+  L70/44: 15 xor polys area 0.48525 um2 bbox (0.28,-9.89;11.05,-0.375)
+  L70/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L71/20: 3 xor polys area 24.71298 um2 bbox (-0.42,-9.955;12.97,0.7)
+  L71/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L72/98: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L89/44: 2 xor polys area 0.66000 um2 bbox (0.87,-9.08;2.2,-8.08)
+  L93/44: 1 xor polys area 1.34312 um2 bbox (10.92,-10.62;12.455,-9.745)
+  L94/20: 3 xor polys area 4.55772 um2 bbox (4.51,-12.435;10.705,-2.255)
+  L95/20: 4 xor polys area 1.08040 um2 bbox (3.85,-11.985;11.215,-9.84)
+  L105/52: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L107/24: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L112/4: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+  L117/4: 1 xor polys area 30.58725 um2 bbox (3.28,-9.01;8.98,-3.31)
+CELL S7_openDVS_pixel2x2_bot [pixel_test_structure-subtree] bboxA (-14.87,-8.775;14.51,20.605) bboxB (-14.87,-8.775;14.51,20.605)
+  L65/44: 2 xor polys area 4.54410 um2 bbox (-0.56,-4.89;0.205,16.72)
+  L66/44: 32 xor polys area 0.92480 um2 bbox (-0.43,-4.68;0.08,16.51)
+  L67/20: 2 xor polys area 4.54410 um2 bbox (-0.56,-4.89;0.205,16.72)
+  L69/16: 4 xor polys area 0.27040 um2 bbox (-0.75,-6.085;0.39,17.915)
+  L69/20: 10 xor polys area 1.13360 um2 bbox (-1.55,-6.085;1.19,17.915)
+  L70/20: 4 xor polys area 29.40960 um2 bbox (-11.32,-5.935;10.96,17.765)
+  L71/5 texts: -2 +2  removed [('VddA18', -0.18, -6.082), ('VddA18', -0.18, 17.915)] added [('VddA18', -0.18, -4.245), ('VddA18', -0.18, 16.075)]
+  L71/16: 4 xor polys area 108.34000 um2 bbox (-12.18,-7.205;11.82,19.04)
+  L71/20: 2 xor polys area 115.43160 um2 bbox (-13.02,-7.205;12.66,19.04)
+  L94/20: 2 xor polys area 6.53660 um2 bbox (-0.685,-5.015;0.33,16.845)
+CELL user_project_wrapper [OTHER] bboxA (-43.63,-38.27;2963.25,3557.95) bboxB (-43.63,-38.27;2963.25,3557.95)
+  L69/20: 1 xor polys area 0.06860 um2 bbox (403.4,2622.28;403.77,2622.56)
+      poly (403.4,2622.28;403.77,2622.56)
+  L69/44: 1 xor polys area 0.04000 um2 bbox (403.485,2622.32;403.685,2622.52)
+      poly (403.485,2622.32;403.685,2622.52)
+  L71/20: 20 xor polys area 4312.96000 um2 bbox (1263.04,584.49;2647.04,2379.41)
+      poly (1263.04,584.49;1264.64,725.715)
+      poly (1570.24,584.49;1571.84,725.715)
+      poly (1877.44,584.49;1879.04,725.715)
+      poly (2031.04,584.49;2032.64,725.715)
+      poly (2338.24,584.49;2339.84,725.715)
+      poly (2645.44,584.49;2647.04,725.715)
+      poly (1416.64,584.49;1418.24,728.165)
+      poly (2184.64,584.49;2186.24,728.165)
+      poly (1723.84,584.49;1725.44,755.715)
+      poly (2491.84,584.49;2493.44,755.715)
+      poly (1263.04,2264.055;1264.64,2379.41)
+      poly (1416.64,2261.605;1418.24,2379.41)
+      poly (1570.24,2264.055;1571.84,2379.41)
+      poly (1723.84,2234.055;1725.44,2379.41)
+      poly (1877.44,2264.055;1879.04,2379.41)
+      poly (2031.04,2264.055;2032.64,2379.41)
+      poly (2184.64,2261.605;2186.24,2379.41)
+      poly (2338.24,2264.055;2339.84,2379.41)
+      poly (2491.84,2234.055;2493.44,2379.41)
+      poly (2645.44,2264.055;2647.04,2379.41)
+  L72/20: 20 xor polys area 531.20000 um2 bbox (1190.29,809.13;2764.87,2189.35)
+      poly (1190.29,809.13;1206.885,810.73)
+      poly (2748.265,809.13;2764.87,810.73)
+      poly (1190.29,962.31;1206.885,963.91)
+      poly (2748.265,962.31;2764.87,963.91)
+      poly (1190.29,1115.49;1206.885,1117.09)
+      poly (2748.265,1115.49;2764.87,1117.09)
+      poly (1190.29,1268.67;1206.885,1270.27)
+      poly (2748.265,1268.67;2764.87,1270.27)
+      poly (1190.29,1421.85;1206.885,1423.45)
+      poly (2748.265,1421.85;2764.87,1423.45)
+      poly (1190.29,1575.03;1206.885,1576.63)
+      poly (2748.265,1575.03;2764.87,1576.63)
+      poly (1190.29,1728.21;1206.885,1729.81)
+      poly (2748.265,1728.21;2764.87,1729.81)
+      poly (1190.29,1881.39;1206.885,1882.99)
+      poly (2748.265,1881.39;2764.87,1882.99)
+      poly (1190.29,2034.57;1206.885,2036.17)
+      poly (2748.265,2034.57;2764.87,2036.17)
+      poly (1190.29,2187.75;1206.885,2189.35)
+      poly (2748.265,2187.75;2764.87,2189.35)
+common cells with differences: 11
+GONECELL m1_m2_density_tile parents ['GS_openDVS_pixel'] in4tile True inTS False
+GONECELL vias_gen$3 parents ['GS_openDVS_pixel'] in4tile True inTS False
+GONECELL vias_gen$4 parents ['GS_openDVS_pixel2x2_bot', 'GS_openDVS_pixel2x2_top'] in4tile True inTS False
+top instances: A 697306 B 697306
+A placement pixel_4tile r0 *1 1206.885,675.665 (1131,600;2823.265,2389.45)
+A placement pixel_test_structure r0 *1 518,1083.855 (518,880;638.24,1180)
+B placement pixel_4tile r0 *1 1206.885,675.665 (1131,600;2823.265,2389.45)
+B placement pixel_test_structure r0 *1 518,1083.855 (518,880;638.24,1180)
+done

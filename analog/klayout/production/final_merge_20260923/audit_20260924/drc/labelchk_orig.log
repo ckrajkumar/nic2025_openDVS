@@ -1,0 +1,29 @@
+GS_openDVS_pixel L68: 42 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+S7_openDVS_pixel L68: 42 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_bot L68: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_bot L69: 20 labels, off-drawing 0, off-pin 2, polys with >1 net 0
+    OFFPIN DiffBn 6.085 10.75
+    OFFPIN DiffBn 6.085 -11.11
+GS_openDVS_pixel2x2_bot L70: 20 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_bot L71: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_bot L72: 1 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_top L68: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_top L69: 20 labels, off-drawing 0, off-pin 2, polys with >1 net 0
+    OFFPIN DiffBn 6.085 10.75
+    OFFPIN DiffBn 6.085 -11.11
+GS_openDVS_pixel2x2_top L70: 20 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_top L71: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_openDVS_pixel2x2_top L72: 1 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+S7_openDVS_pixel2x2_bot L68: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+S7_openDVS_pixel2x2_bot L69: 20 labels, off-drawing 0, off-pin 2, polys with >1 net 0
+    OFFPIN DiffBn 10.75 -6.085
+    OFFPIN DiffBn -11.11 -6.085
+S7_openDVS_pixel2x2_bot L70: 20 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+S7_openDVS_pixel2x2_bot L71: 4 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+S7_openDVS_pixel2x2_bot L72: 1 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile L69: 261 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile L70: 198 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile L71: 1 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile_bot L69: 261 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile_bot L70: 390 labels, off-drawing 0, off-pin 0, polys with >1 net 0
+GS_pixel_layout_tile_bot L71: 33 labels, off-drawing 0, off-pin 0, polys with >1 net 0

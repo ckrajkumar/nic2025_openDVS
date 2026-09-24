@@ -1,0 +1,3108 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 02:55:14 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "ant.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "GS_L1M1_MAG_7849107791429".
+Reading "GS_L1M1_MAG_7849107791413".
+Reading "GS_sky130_fd_pr__nfet_01v8_V52S8A".
+Reading "GS_M1M2_MAG_7849107791423".
+Reading "GS_sky130_fd_pr__pfet_01v8_D48SMA".
+Reading "GS_sky130_fd_pr__pfet_01v8_U2XPXD".
+Reading "GS_M1M2_MAG_7849107791428".
+Reading "GS_sky130_fd_pr__pfet_01v8_KDZMJM".
+Reading "GS_L1M1_MAG_7849107791424".
+Reading "GS_sky130_fd_pr__nfet_01v8_ML4XRG".
+Reading "GS_L1M1_MAG_7849107791427".
+Reading "GS_M1M2_MAG_7849107791426".
+Reading "GS_M2M3_MAG_7849107791425".
+Reading "GS_sky130_fd_pr__nfet_01v8_9ZAZEB".
+Reading "GS_sky130_fd_pr__nfet_01v8_9ZWGZ9".
+Reading "GS_M1M2_MAG_7849107791416".
+Reading "GS_M1M2_MAG_7849107791419".
+Reading "GS_L1M1_MAG_7849107791410".
+Reading "GS_M2M3_MAG_7849107791415".
+Reading "LJ_BiasDividerCell".
+Reading "LJ_BiasMultiplierCell".
+Reading "GS_M3M4_MAG_7849107791418".
+Reading "GS_vias_gen".
+Reading "GS_dyn_comp_v1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "GS_M3M4_MAG_7849107791421".
+Reading "GS_M2M3_MAG_7849107791414".
+Reading "GS_M2M3_MAG_7849107791420".
+Reading "GS_M1M2_MAG_7849107791422".
+Reading "GS_M2M3_MAG_7849107791417".
+Reading "GS_pmos_MAG_784910779140".
+Reading "GS_L1M1_MAG_7849107791411".
+Reading "GS_M1M2_MAG_7849107791412".
+Reading "GS_nmos_MAG_784910779141".
+Reading "GS_M2M3_MAG_784910779145".
+Reading "vias_gen$7".
+Reading "LJ_BiasDivider".
+Reading "LJ_BiasMultiplier".
+Reading "LJ_BiasDividerFineCell".
+Reading "LJ_scs130hd_and2_1".
+Reading "LJ_scs130hd_inv_1".
+Reading "LJ_scs130hd_nor2_1".
+Reading "GS_M2M3_MAG_784910779148".
+Reading "GS_M2M3_MAG_784910779149".
+Reading "GS_col_periphery".
+Reading "GS_openDVS_pixel".
+Reading "GS_contact$26$1$1".
+Reading "GS_contact$25$1$1".
+Reading "GS_contact$1".
+Reading "GS_contact$30$1$1".
+Reading "LJ_BiasBranchBuffer_0".
+Reading "LJ_BiasCoarseMBDivider".
+Reading "LJ_BiasMasterBias".
+Reading "LJ_BiasBranch_0".
+CIF file read warning: Input off lambda grid by 3/5; snapped to grid.
+Reading "LJ_BiasCoarseSel8to1".
+Reading "LJ_BiasDividerFine".
+Reading "LJ_BiasCoarseFineInterface".
+Reading "LJ_BiasBuffers".
+Reading "LJ_vias_gen$9".
+Reading "LJ_mim_cap".
+Reading "LJ_mim_cap$1".
+Reading "LJ_vias_gen".
+Reading "LJ_vias_gen$3".
+Reading "S7_infiniamp_via_Mnbuff".
+Reading "S7_contact$30$1$1".
+Reading "S7_contact$1".
+Reading "S7_contact$25$1$1".
+Reading "S7_contact$26$1$1".
+Reading "S7_openDVS_pixel".
+Reading "IG_infiniamp_via_Mnbuff".
+Reading "GS_vias_gen$16".
+Reading "GS_vias_gen$18".
+Reading "GS_vias_gen$8".
+Reading "GS_vias_gen$19".
+Reading "GS_openDVS_pixel2x2_bot".
+Reading "GS_col_periphery_1x2".
+Reading "GS_openDVS_pixel2x2_top".
+Reading "GS_vias_gen$3".
+Reading "GS_vias_gen$14".
+Reading "GS_vias_gen$2".
+Reading "GS_vias_gen$1".
+Reading "GS_vias_gen$12".
+Reading "vias_gen$8".
+Reading "vias_gen$9".
+Reading "LJ_BiasBranchBuffer".
+Reading "LJ_BiasMasterCoarse".
+Reading "LJ_BiasBranch".
+Reading "LJ_vias_gen$8".
+Reading "LJ_vias_gen$7".
+Reading "LJ_vias_gen$6".
+Reading "LJ_vias_gen$5".
+Reading "LJ_vias_gen$4".
+Reading "LJ_vias_gen$2".
+Reading "LJ_vias_gen$11".
+Reading "S7_vias_gen".
+Reading "S7_infiniamp_xl".
+Reading "S7_openDVS_pixel2x2_bot".
+Reading "S7_scs130hd_inv_1".
+Reading "S7_scs130hd_inv_4".
+Reading "S7_vias_gen$3".
+Reading "IG_infiniamp_xl".
+Reading "GS_vias_gen$21".
+Reading "GS_M2M3_MAG_784910779140".
+Reading "GS_vias_gen$20".
+Reading "GS_pixel_layout_biasgen_connector_v2".
+Reading "GS_pixel_layout_tile_bot".
+Reading "GS_pixel_layout_tile".
+Reading "GS_M1M2_MAG_784910779144".
+Reading "GS_M2M3_MAG_784910779142".
+Reading "GS_pixel_layout_biasgen_connector_v3".
+Reading "GS_pixel_4tile_left_vdd_gnd_connectors".
+Reading "GS_vias_gen$10".
+Reading "GS_M3M4_MAG_784910779143".
+Reading "vias_gen".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "BiasBranchnMasterx11".
+Error while reading cell "BiasBranchnMasterx11" (byte position 15103392): Warning: cell "LJ_vias_gen$5" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15103454): Warning: cell "LJ_vias_gen$5" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15130486): Warning: cell "LJ_vias_gen$2" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159006): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159068): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159130): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159192): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159254): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159316): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159378): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159440): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159502): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15159564): Warning: cell "LJ_vias_gen$4" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15162044): Warning: cell "LJ_vias_gen$2" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "BiasBranchnMasterx11" (byte position 15162106): Warning: cell "LJ_vias_gen$2" placed on top of itself.  Ignoring the extra one.
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__a32o_4".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "pixel_test_structure".
+Reading "photodiode_test_structure".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "pixel_4tile".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_ef_sc_hd__decap_40_12".
+Reading "user_project_wrapper".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+    130000 uses
+    135000 uses
+    140000 uses
+    145000 uses
+    150000 uses
+    155000 uses
+    160000 uses
+    165000 uses
+    170000 uses
+    175000 uses
+    180000 uses
+    185000 uses
+    190000 uses
+    195000 uses
+    200000 uses
+    205000 uses
+    210000 uses
+    215000 uses
+    220000 uses
+    225000 uses
+    230000 uses
+    235000 uses
+    240000 uses
+    245000 uses
+    250000 uses
+    255000 uses
+    260000 uses
+    265000 uses
+    270000 uses
+    275000 uses
+    280000 uses
+    285000 uses
+    290000 uses
+    295000 uses
+    300000 uses
+    305000 uses
+    310000 uses
+    315000 uses
+    320000 uses
+    325000 uses
+    330000 uses
+    335000 uses
+    340000 uses
+    345000 uses
+    350000 uses
+    355000 uses
+    360000 uses
+    365000 uses
+    370000 uses
+    375000 uses
+    380000 uses
+    385000 uses
+    390000 uses
+    395000 uses
+    400000 uses
+    405000 uses
+    410000 uses
+    415000 uses
+    420000 uses
+    425000 uses
+    430000 uses
+    435000 uses
+    440000 uses
+    445000 uses
+    450000 uses
+    455000 uses
+    460000 uses
+    465000 uses
+    470000 uses
+    475000 uses
+    480000 uses
+    485000 uses
+    490000 uses
+    495000 uses
+    500000 uses
+    505000 uses
+    510000 uses
+    515000 uses
+    520000 uses
+    525000 uses
+    530000 uses
+    535000 uses
+    540000 uses
+    545000 uses
+    550000 uses
+    555000 uses
+    560000 uses
+    565000 uses
+    570000 uses
+    575000 uses
+    580000 uses
+    585000 uses
+    590000 uses
+    595000 uses
+    600000 uses
+    605000 uses
+    610000 uses
+    615000 uses
+    620000 uses
+    625000 uses
+    630000 uses
+    635000 uses
+    640000 uses
+    645000 uses
+    650000 uses
+    655000 uses
+    660000 uses
+    665000 uses
+    670000 uses
+    675000 uses
+    680000 uses
+    685000 uses
+    690000 uses
+    695000 uses
+Usage: extract do option
+   or  extract no option
+where option is one of:
+  adjust			compensate R and C hierarchically
+  all			all options
+  capacitance		extract substrate capacitance
+  corners [value]	extract corner fringe capacitance,
+			optionally setting the model scale factor
+  coupling		extract coupling capacitance
+  extresist		extract resistance
+  length			compute driver-receiver pathlengths
+  local			put all generated files in the current directory
+  lumped			estimate lumped resistance
+  labelcheck		check for connections through sticky labels
+  aliases		output all net name aliases
+  unique	 [notopports]	ensure unique node names during extraction
+  resistance		extract resistance (same as "do extresist")
+Extracting sky130_ef_sc_hd__decap_40_12 into sky130_ef_sc_hd__decap_40_12.ext:
+sky130_ef_sc_hd__decap_40_12: 2 warnings
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting sky130_fd_sc_hd__buf_12 into sky130_fd_sc_hd__buf_12.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+sky130_fd_sc_hd__decap_4: 2 warnings
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+sky130_fd_sc_hd__diode_2: 1 warning
+Extracting sky130_fd_sc_hd__dlygate4sd3_1 into sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_2 into sky130_fd_sc_hd__clkbuf_2.ext:
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+sky130_fd_sc_hd__decap_6: 2 warnings
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__buf_8 into sky130_fd_sc_hd__buf_8.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+sky130_fd_sc_hd__decap_8: 2 warnings
+Extracting sky130_fd_sc_hd__buf_6 into sky130_fd_sc_hd__buf_6.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__nand2_8 into sky130_fd_sc_hd__nand2_8.ext:
+Extracting sky130_fd_sc_hd__or3b_4 into sky130_fd_sc_hd__or3b_4.ext:
+Extracting sky130_fd_sc_hd__or3_4 into sky130_fd_sc_hd__or3_4.ext:
+Extracting sky130_fd_sc_hd__conb_1 into sky130_fd_sc_hd__conb_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__or4_4 into sky130_fd_sc_hd__or4_4.ext:
+Extracting sky130_fd_sc_hd__or4_1 into sky130_fd_sc_hd__or4_1.ext:
+Extracting sky130_fd_sc_hd__or4_2 into sky130_fd_sc_hd__or4_2.ext:
+Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
+Extracting sky130_fd_sc_hd__dfrtp_4 into sky130_fd_sc_hd__dfrtp_4.ext:
+Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__or4bb_1 into sky130_fd_sc_hd__or4bb_1.ext:
+Extracting sky130_fd_sc_hd__or4b_1 into sky130_fd_sc_hd__or4b_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting sky130_fd_sc_hd__dfrtp_2 into sky130_fd_sc_hd__dfrtp_2.ext:
+Extracting sky130_fd_sc_hd__dlymetal6s2s_1 into sky130_fd_sc_hd__dlymetal6s2s_1.ext:
+Extracting sky130_fd_sc_hd__clkinvlp_4 into sky130_fd_sc_hd__clkinvlp_4.ext:
+Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
+Extracting sky130_fd_sc_hd__dfrtp_1 into sky130_fd_sc_hd__dfrtp_1.ext:
+Extracting sky130_fd_sc_hd__dfxtp_1 into sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_4 into sky130_fd_sc_hd__clkinv_4.ext:
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Extracting sky130_fd_sc_hd__and2b_1 into sky130_fd_sc_hd__and2b_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__nor2_8 into sky130_fd_sc_hd__nor2_8.ext:
+Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
+Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
+Extracting sky130_fd_sc_hd__nand3_4 into sky130_fd_sc_hd__nand3_4.ext:
+Extracting sky130_fd_sc_hd__and3_2 into sky130_fd_sc_hd__and3_2.ext:
+Extracting sky130_fd_sc_hd__xnor2_1 into sky130_fd_sc_hd__xnor2_1.ext:
+Extracting sky130_fd_sc_hd__or2_2 into sky130_fd_sc_hd__or2_2.ext:
+Extracting sky130_fd_sc_hd__and3_4 into sky130_fd_sc_hd__and3_4.ext:
+Extracting sky130_fd_sc_hd__nand2_1 into sky130_fd_sc_hd__nand2_1.ext:
+Extracting sky130_fd_sc_hd__and4_4 into sky130_fd_sc_hd__and4_4.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Extracting sky130_fd_sc_hd__a221o_1 into sky130_fd_sc_hd__a221o_1.ext:
+Extracting sky130_fd_sc_hd__a211o_1 into sky130_fd_sc_hd__a211o_1.ext:
+Extracting sky130_fd_sc_hd__inv_6 into sky130_fd_sc_hd__inv_6.ext:
+Extracting sky130_fd_sc_hd__bufinv_16 into sky130_fd_sc_hd__bufinv_16.ext:
+Extracting sky130_fd_sc_hd__o32a_1 into sky130_fd_sc_hd__o32a_1.ext:
+Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
+Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
+Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
+Extracting sky130_fd_sc_hd__o31a_1 into sky130_fd_sc_hd__o31a_1.ext:
+Extracting sky130_fd_sc_hd__o22a_2 into sky130_fd_sc_hd__o22a_2.ext:
+Extracting sky130_fd_sc_hd__inv_12 into sky130_fd_sc_hd__inv_12.ext:
+Extracting sky130_fd_sc_hd__o221a_1 into sky130_fd_sc_hd__o221a_1.ext:
+Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
+Extracting sky130_fd_sc_hd__a31o_1 into sky130_fd_sc_hd__a31o_1.ext:
+Extracting sky130_fd_sc_hd__inv_4 into sky130_fd_sc_hd__inv_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting sky130_fd_sc_hd__clkinv_1 into sky130_fd_sc_hd__clkinv_1.ext:
+Extracting sky130_fd_sc_hd__o31a_4 into sky130_fd_sc_hd__o31a_4.ext:
+Extracting sky130_fd_sc_hd__o311a_1 into sky130_fd_sc_hd__o311a_1.ext:
+Extracting sky130_fd_sc_hd__o21a_4 into sky130_fd_sc_hd__o21a_4.ext:
+Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_16 into sky130_fd_sc_hd__clkinv_16.ext:
+Extracting sky130_fd_sc_hd__and2b_4 into sky130_fd_sc_hd__and2b_4.ext:
+Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__nor3b_4 into sky130_fd_sc_hd__nor3b_4.ext:
+Extracting sky130_fd_sc_hd__and3b_4 into sky130_fd_sc_hd__and3b_4.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__o31a_2 into sky130_fd_sc_hd__o31a_2.ext:
+Extracting sky130_fd_sc_hd__o211a_2 into sky130_fd_sc_hd__o211a_2.ext:
+Extracting sky130_fd_sc_hd__o21a_2 into sky130_fd_sc_hd__o21a_2.ext:
+Extracting sky130_fd_sc_hd__a41o_2 into sky130_fd_sc_hd__a41o_2.ext:
+Extracting sky130_fd_sc_hd__o311a_2 into sky130_fd_sc_hd__o311a_2.ext:
+Extracting sky130_fd_sc_hd__o32a_2 into sky130_fd_sc_hd__o32a_2.ext:
+Extracting sky130_fd_sc_hd__or3_2 into sky130_fd_sc_hd__or3_2.ext:
+Extracting sky130_fd_sc_hd__o221a_2 into sky130_fd_sc_hd__o221a_2.ext:
+Extracting sky130_fd_sc_hd__a311o_2 into sky130_fd_sc_hd__a311o_2.ext:
+Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting sky130_fd_sc_hd__a31o_4 into sky130_fd_sc_hd__a31o_4.ext:
+Extracting sky130_fd_sc_hd__inv_16 into sky130_fd_sc_hd__inv_16.ext:
+Extracting sky130_fd_sc_hd__clkinv_8 into sky130_fd_sc_hd__clkinv_8.ext:
+Extracting sky130_fd_sc_hd__a31o_2 into sky130_fd_sc_hd__a31o_2.ext:
+Extracting IG_infiniamp_via_Mnbuff into IG_infiniamp_via_Mnbuff.ext:
+Extracting IG_infiniamp_xl into IG_infiniamp_xl.ext:
+IG_infiniamp_xl: 17 warnings
+Extracting photodiode_test_structure into photodiode_test_structure.ext:
+Extracting S7_scs130hd_inv_4 into S7_scs130hd_inv_4.ext:
+Extracting S7_scs130hd_inv_1 into S7_scs130hd_inv_1.ext:
+Extracting S7_openDVS_pixel into S7_openDVS_pixel.ext:
+S7_openDVS_pixel: 11 warnings
+Extracting S7_contact$1 into S7_contact$1.ext:
+Extracting S7_contact$30$1$1 into S7_contact$30$1$1.ext:
+Extracting S7_contact$26$1$1 into S7_contact$26$1$1.ext:
+Extracting S7_contact$25$1$1 into S7_contact$25$1$1.ext:
+Extracting S7_openDVS_pixel2x2_bot into S7_openDVS_pixel2x2_bot.ext:
+S7_openDVS_pixel2x2_bot: 45 warnings
+Extracting S7_infiniamp_via_Mnbuff into S7_infiniamp_via_Mnbuff.ext:
+Extracting S7_infiniamp_xl into S7_infiniamp_xl.ext:
+S7_infiniamp_xl: 17 warnings
+Extracting S7_vias_gen$3 into S7_vias_gen$3.ext:
+Extracting S7_vias_gen into S7_vias_gen.ext:
+Extracting pixel_test_structure into pixel_test_structure.ext:
+pixel_test_structure: 4 warnings
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Extracting sky130_fd_sc_hd__dfstp_4 into sky130_fd_sc_hd__dfstp_4.ext:
+Extracting sky130_fd_sc_hd__nand2_4 into sky130_fd_sc_hd__nand2_4.ext:
+Extracting sky130_fd_sc_hd__mux4_1 into sky130_fd_sc_hd__mux4_1.ext:
+Extracting sky130_fd_sc_hd__o21ba_1 into sky130_fd_sc_hd__o21ba_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_2 into sky130_fd_sc_hd__o21ai_2.ext:
+Extracting sky130_fd_sc_hd__or2_4 into sky130_fd_sc_hd__or2_4.ext:
+Extracting sky130_fd_sc_hd__a21o_2 into sky130_fd_sc_hd__a21o_2.ext:
+Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Extracting sky130_fd_sc_hd__a22o_4 into sky130_fd_sc_hd__a22o_4.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_1 into sky130_fd_sc_hd__a2bb2o_1.ext:
+Extracting sky130_fd_sc_hd__a211o_4 into sky130_fd_sc_hd__a211o_4.ext:
+Extracting sky130_fd_sc_hd__a21bo_4 into sky130_fd_sc_hd__a21bo_4.ext:
+Extracting sky130_fd_sc_hd__o21ba_2 into sky130_fd_sc_hd__o21ba_2.ext:
+Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
+Extracting sky130_fd_sc_hd__nor3_1 into sky130_fd_sc_hd__nor3_1.ext:
+Extracting sky130_fd_sc_hd__a21bo_1 into sky130_fd_sc_hd__a21bo_1.ext:
+Extracting sky130_fd_sc_hd__and2_2 into sky130_fd_sc_hd__and2_2.ext:
+Extracting sky130_fd_sc_hd__nor3_2 into sky130_fd_sc_hd__nor3_2.ext:
+Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
+Extracting sky130_fd_sc_hd__xnor2_2 into sky130_fd_sc_hd__xnor2_2.ext:
+Extracting sky130_fd_sc_hd__xor2_2 into sky130_fd_sc_hd__xor2_2.ext:
+Extracting sky130_fd_sc_hd__or3b_1 into sky130_fd_sc_hd__or3b_1.ext:
+Extracting sky130_fd_sc_hd__a221o_4 into sky130_fd_sc_hd__a221o_4.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_4 into sky130_fd_sc_hd__a2bb2o_4.ext:
+Extracting sky130_fd_sc_hd__nand2b_1 into sky130_fd_sc_hd__nand2b_1.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_2 into sky130_fd_sc_hd__a2bb2o_2.ext:
+Extracting sky130_fd_sc_hd__nand3b_4 into sky130_fd_sc_hd__nand3b_4.ext:
+Extracting sky130_fd_sc_hd__and2b_2 into sky130_fd_sc_hd__and2b_2.ext:
+Extracting sky130_fd_sc_hd__a32o_2 into sky130_fd_sc_hd__a32o_2.ext:
+Extracting sky130_fd_sc_hd__o22a_4 into sky130_fd_sc_hd__o22a_4.ext:
+Extracting sky130_fd_sc_hd__a22o_2 into sky130_fd_sc_hd__a22o_2.ext:
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__o2111a_1 into sky130_fd_sc_hd__o2111a_1.ext:
+Extracting sky130_fd_sc_hd__a32o_4 into sky130_fd_sc_hd__a32o_4.ext:
+Extracting sky130_fd_sc_hd__nand2b_2 into sky130_fd_sc_hd__nand2b_2.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_1 into sky130_fd_sc_hd__o2bb2a_1.ext:
+Extracting sky130_fd_sc_hd__mux2_2 into sky130_fd_sc_hd__mux2_2.ext:
+Extracting sky130_fd_sc_hd__mux2_8 into sky130_fd_sc_hd__mux2_8.ext:
+Extracting sky130_fd_sc_hd__a22oi_4 into sky130_fd_sc_hd__a22oi_4.ext:
+Extracting sky130_fd_sc_hd__nor3_4 into sky130_fd_sc_hd__nor3_4.ext:
+Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
+Extracting sky130_fd_sc_hd__o41a_1 into sky130_fd_sc_hd__o41a_1.ext:
+Extracting sky130_fd_sc_hd__mux2_4 into sky130_fd_sc_hd__mux2_4.ext:
+Extracting sky130_fd_sc_hd__a221o_2 into sky130_fd_sc_hd__a221o_2.ext:
+Extracting sky130_fd_sc_hd__nand3_2 into sky130_fd_sc_hd__nand3_2.ext:
+Extracting sky130_fd_sc_hd__nand2b_4 into sky130_fd_sc_hd__nand2b_4.ext:
+Extracting sky130_fd_sc_hd__a2111o_1 into sky130_fd_sc_hd__a2111o_1.ext:
+Extracting sky130_fd_sc_hd__a2111o_4 into sky130_fd_sc_hd__a2111o_4.ext:
+Extracting sky130_fd_sc_hd__a211o_2 into sky130_fd_sc_hd__a211o_2.ext:
+Extracting sky130_fd_sc_hd__o211ai_1 into sky130_fd_sc_hd__o211ai_1.ext:
+Extracting sky130_fd_sc_hd__a41o_1 into sky130_fd_sc_hd__a41o_1.ext:
+Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_4 into sky130_fd_sc_hd__a21oi_4.ext:
+Extracting sky130_fd_sc_hd__or3b_2 into sky130_fd_sc_hd__or3b_2.ext:
+Extracting sky130_fd_sc_hd__a21o_4 into sky130_fd_sc_hd__a21o_4.ext:
+Extracting sky130_fd_sc_hd__dfstp_1 into sky130_fd_sc_hd__dfstp_1.ext:
+Extracting sky130_fd_sc_hd__a221oi_1 into sky130_fd_sc_hd__a221oi_1.ext:
+Extracting sky130_fd_sc_hd__xor2_4 into sky130_fd_sc_hd__xor2_4.ext:
+Extracting sky130_fd_sc_hd__a311o_1 into sky130_fd_sc_hd__a311o_1.ext:
+Extracting sky130_fd_sc_hd__o211ai_2 into sky130_fd_sc_hd__o211ai_2.ext:
+Extracting sky130_fd_sc_hd__a21boi_1 into sky130_fd_sc_hd__a21boi_1.ext:
+Extracting sky130_fd_sc_hd__o221ai_2 into sky130_fd_sc_hd__o221ai_2.ext:
+Extracting sky130_fd_sc_hd__o31ai_4 into sky130_fd_sc_hd__o31ai_4.ext:
+Extracting sky130_fd_sc_hd__a31oi_2 into sky130_fd_sc_hd__a31oi_2.ext:
+Extracting sky130_fd_sc_hd__a211oi_1 into sky130_fd_sc_hd__a211oi_1.ext:
+Extracting sky130_fd_sc_hd__o21bai_1 into sky130_fd_sc_hd__o21bai_1.ext:
+Extracting sky130_fd_sc_hd__a41oi_2 into sky130_fd_sc_hd__a41oi_2.ext:
+Extracting sky130_fd_sc_hd__a21boi_2 into sky130_fd_sc_hd__a21boi_2.ext:
+Extracting sky130_fd_sc_hd__xnor2_4 into sky130_fd_sc_hd__xnor2_4.ext:
+Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
+Extracting sky130_fd_sc_hd__nand4_2 into sky130_fd_sc_hd__nand4_2.ext:
+Extracting sky130_fd_sc_hd__and4bb_1 into sky130_fd_sc_hd__and4bb_1.ext:
+Extracting sky130_fd_sc_hd__o211ai_4 into sky130_fd_sc_hd__o211ai_4.ext:
+Extracting sky130_fd_sc_hd__nand3b_2 into sky130_fd_sc_hd__nand3b_2.ext:
+Extracting sky130_fd_sc_hd__and3b_1 into sky130_fd_sc_hd__and3b_1.ext:
+Extracting sky130_fd_sc_hd__and4b_1 into sky130_fd_sc_hd__and4b_1.ext:
+Extracting sky130_fd_sc_hd__nand4_1 into sky130_fd_sc_hd__nand4_1.ext:
+Extracting sky130_fd_sc_hd__o211a_4 into sky130_fd_sc_hd__o211a_4.ext:
+Extracting sky130_fd_sc_hd__or4b_2 into sky130_fd_sc_hd__or4b_2.ext:
+Extracting sky130_fd_sc_hd__a21bo_2 into sky130_fd_sc_hd__a21bo_2.ext:
+Extracting sky130_fd_sc_hd__o22ai_1 into sky130_fd_sc_hd__o22ai_1.ext:
+Extracting sky130_fd_sc_hd__a22oi_1 into sky130_fd_sc_hd__a22oi_1.ext:
+Extracting LJ_BiasBranch_0 into LJ_BiasBranch_0.ext:
+Extracting LJ_BiasCoarseSel8to1 into LJ_BiasCoarseSel8to1.ext:
+Extracting LJ_BiasDividerFineCell into LJ_BiasDividerFineCell.ext:
+Extracting LJ_BiasDividerFine into LJ_BiasDividerFine.ext:
+Extracting LJ_BiasCoarseFineInterface into LJ_BiasCoarseFineInterface.ext:
+Extracting LJ_scs130hd_and2_1 into LJ_scs130hd_and2_1.ext:
+Extracting LJ_scs130hd_inv_1 into LJ_scs130hd_inv_1.ext:
+Extracting LJ_scs130hd_nor2_1 into LJ_scs130hd_nor2_1.ext:
+Extracting LJ_BiasBuffers into LJ_BiasBuffers.ext:
+Extracting LJ_BiasBranch into LJ_BiasBranch.ext:
+Extracting LJ_BiasBranchBuffer_0 into LJ_BiasBranchBuffer_0.ext:
+Extracting LJ_BiasBranchBuffer into LJ_BiasBranchBuffer.ext:
+Extracting LJ_BiasDividerCell into LJ_BiasDividerCell.ext:
+Extracting LJ_BiasDivider into LJ_BiasDivider.ext:
+LJ_BiasDivider: 2 warnings
+Extracting LJ_BiasMultiplierCell into LJ_BiasMultiplierCell.ext:
+Extracting LJ_BiasMultiplier into LJ_BiasMultiplier.ext:
+Extracting LJ_BiasCoarseMBDivider into LJ_BiasCoarseMBDivider.ext:
+Extracting LJ_BiasMasterBias into LJ_BiasMasterBias.ext:
+LJ_BiasMasterBias: 2 warnings
+Extracting LJ_vias_gen$9 into LJ_vias_gen$9.ext:
+Extracting LJ_vias_gen$3 into LJ_vias_gen$3.ext:
+Extracting LJ_vias_gen into LJ_vias_gen.ext:
+Extracting LJ_mim_cap$1 into LJ_mim_cap$1.ext:
+Extracting LJ_mim_cap into LJ_mim_cap.ext:
+Extracting LJ_BiasMasterCoarse into LJ_BiasMasterCoarse.ext:
+Extracting LJ_vias_gen$7 into LJ_vias_gen$7.ext:
+Extracting LJ_vias_gen$2 into LJ_vias_gen$2.ext:
+Extracting LJ_vias_gen$5 into LJ_vias_gen$5.ext:
+Extracting LJ_vias_gen$6 into LJ_vias_gen$6.ext:
+Extracting LJ_vias_gen$4 into LJ_vias_gen$4.ext:
+Extracting LJ_vias_gen$8 into LJ_vias_gen$8.ext:
+Extracting LJ_vias_gen$11 into LJ_vias_gen$11.ext:
+Extracting BiasBranchnMasterx11 into BiasBranchnMasterx11.ext:
+Extracting sky130_fd_sc_hd__and4b_4 into sky130_fd_sc_hd__and4b_4.ext:
+Extracting vias_gen into vias_gen.ext:
+Extracting sky130_fd_sc_hd__o32a_4 into sky130_fd_sc_hd__o32a_4.ext:
+Extracting sky130_fd_sc_hd__o311a_4 into sky130_fd_sc_hd__o311a_4.ext:
+Extracting sky130_fd_sc_hd__a311o_4 into sky130_fd_sc_hd__a311o_4.ext:
+Extracting GS_M1M2_MAG_784910779144 into GS_M1M2_MAG_784910779144.ext:
+Extracting GS_M2M3_MAG_784910779142 into GS_M2M3_MAG_784910779142.ext:
+Extracting GS_vias_gen$20 into GS_vias_gen$20.ext:
+Extracting GS_vias_gen$21 into GS_vias_gen$21.ext:
+Extracting GS_M2M3_MAG_784910779140 into GS_M2M3_MAG_784910779140.ext:
+Extracting GS_M3M4_MAG_784910779143 into GS_M3M4_MAG_784910779143.ext:
+Extracting GS_vias_gen$10 into GS_vias_gen$10.ext:
+Extracting GS_vias_gen$16 into GS_vias_gen$16.ext:
+Extracting GS_vias_gen$18 into GS_vias_gen$18.ext:
+Extracting GS_vias_gen$8 into GS_vias_gen$8.ext:
+Extracting GS_vias_gen$19 into GS_vias_gen$19.ext:
+Extracting GS_M1M2_MAG_7849107791419 into GS_M1M2_MAG_7849107791419.ext:
+Extracting GS_M2M3_MAG_7849107791415 into GS_M2M3_MAG_7849107791415.ext:
+Extracting GS_pixel_layout_biasgen_connector_v2 into GS_pixel_layout_biasgen_connector_v2.ext:
+Extracting GS_M2M3_MAG_784910779145 into GS_M2M3_MAG_784910779145.ext:
+Extracting GS_M2M3_MAG_784910779148 into GS_M2M3_MAG_784910779148.ext:
+Extracting GS_M2M3_MAG_784910779149 into GS_M2M3_MAG_784910779149.ext:
+Extracting GS_L1M1_MAG_7849107791413 into GS_L1M1_MAG_7849107791413.ext:
+Extracting GS_M1M2_MAG_7849107791416 into GS_M1M2_MAG_7849107791416.ext:
+Extracting GS_M3M4_MAG_7849107791421 into GS_M3M4_MAG_7849107791421.ext:
+Extracting GS_M2M3_MAG_7849107791417 into GS_M2M3_MAG_7849107791417.ext:
+Extracting GS_M2M3_MAG_7849107791414 into GS_M2M3_MAG_7849107791414.ext:
+Extracting GS_M2M3_MAG_7849107791420 into GS_M2M3_MAG_7849107791420.ext:
+Extracting GS_M1M2_MAG_7849107791422 into GS_M1M2_MAG_7849107791422.ext:
+Extracting GS_L1M1_MAG_7849107791410 into GS_L1M1_MAG_7849107791410.ext:
+Extracting GS_pmos_MAG_784910779140 into GS_pmos_MAG_784910779140.ext:
+Extracting GS_nmos_MAG_784910779141 into GS_nmos_MAG_784910779141.ext:
+Extracting GS_L1M1_MAG_7849107791411 into GS_L1M1_MAG_7849107791411.ext:
+Extracting GS_vias_gen into GS_vias_gen.ext:
+Extracting GS_sky130_fd_pr__nfet_01v8_V52S8A into GS_sky130_fd_pr__nfet_01v8_V52S8A.ext:
+Extracting GS_M1M2_MAG_7849107791423 into GS_M1M2_MAG_7849107791423.ext:
+Extracting GS_sky130_fd_pr__pfet_01v8_D48SMA into GS_sky130_fd_pr__pfet_01v8_D48SMA.ext:
+Extracting GS_sky130_fd_pr__pfet_01v8_U2XPXD into GS_sky130_fd_pr__pfet_01v8_U2XPXD.ext:
+Extracting GS_sky130_fd_pr__pfet_01v8_KDZMJM into GS_sky130_fd_pr__pfet_01v8_KDZMJM.ext:
+Extracting GS_M1M2_MAG_7849107791428 into GS_M1M2_MAG_7849107791428.ext:
+Extracting GS_sky130_fd_pr__nfet_01v8_9ZWGZ9 into GS_sky130_fd_pr__nfet_01v8_9ZWGZ9.ext:
+Extracting GS_L1M1_MAG_7849107791429 into GS_L1M1_MAG_7849107791429.ext:
+Extracting GS_sky130_fd_pr__nfet_01v8_ML4XRG into GS_sky130_fd_pr__nfet_01v8_ML4XRG.ext:
+Extracting GS_L1M1_MAG_7849107791427 into GS_L1M1_MAG_7849107791427.ext:
+Extracting GS_M1M2_MAG_7849107791426 into GS_M1M2_MAG_7849107791426.ext:
+Extracting GS_M2M3_MAG_7849107791425 into GS_M2M3_MAG_7849107791425.ext:
+Extracting GS_L1M1_MAG_7849107791424 into GS_L1M1_MAG_7849107791424.ext:
+Extracting GS_sky130_fd_pr__nfet_01v8_9ZAZEB into GS_sky130_fd_pr__nfet_01v8_9ZAZEB.ext:
+Extracting GS_dyn_comp_v1 into GS_dyn_comp_v1.ext:
+Extracting GS_M1M2_MAG_7849107791412 into GS_M1M2_MAG_7849107791412.ext:
+Extracting GS_M3M4_MAG_7849107791418 into GS_M3M4_MAG_7849107791418.ext:
+Extracting vias_gen$7 into vias_gen$7.ext:
+Extracting GS_col_periphery into GS_col_periphery.ext:
+Extracting GS_col_periphery_1x2 into GS_col_periphery_1x2.ext:
+GS_col_periphery_1x2: 6 warnings
+Extracting GS_openDVS_pixel into GS_openDVS_pixel.ext:
+GS_openDVS_pixel: 11 warnings
+Extracting GS_contact$1 into GS_contact$1.ext:
+Extracting GS_contact$30$1$1 into GS_contact$30$1$1.ext:
+Extracting GS_contact$26$1$1 into GS_contact$26$1$1.ext:
+Extracting GS_contact$25$1$1 into GS_contact$25$1$1.ext:
+Extracting GS_openDVS_pixel2x2_bot into GS_openDVS_pixel2x2_bot.ext:
+GS_openDVS_pixel2x2_bot: 45 warnings
+Extracting vias_gen$9 into vias_gen$9.ext:
+Extracting GS_pixel_layout_tile_bot into GS_pixel_layout_tile_bot.ext:
+GS_pixel_layout_tile_bot: 423 warnings
+Extracting GS_openDVS_pixel2x2_top into GS_openDVS_pixel2x2_top.ext:
+GS_openDVS_pixel2x2_top: 45 warnings
+Extracting vias_gen$8 into vias_gen$8.ext:
+Extracting GS_pixel_layout_tile into GS_pixel_layout_tile.ext:
+GS_pixel_layout_tile: 198 warnings
+Extracting GS_pixel_layout_biasgen_connector_v3 into GS_pixel_layout_biasgen_connector_v3.ext:
+Extracting GS_vias_gen$3 into GS_vias_gen$3.ext:
+Extracting GS_vias_gen$14 into GS_vias_gen$14.ext:
+Extracting GS_vias_gen$2 into GS_vias_gen$2.ext:
+Extracting GS_vias_gen$1 into GS_vias_gen$1.ext:
+Extracting GS_vias_gen$12 into GS_vias_gen$12.ext:
+Extracting GS_pixel_4tile_left_vdd_gnd_connectors into GS_pixel_4tile_left_vdd_gnd_connectors.ext:
+Extracting pixel_4tile into pixel_4tile.ext:
+pixel_4tile: 71 warnings
+Extracting user_project_wrapper into user_project_wrapper.ext:
+Total of 908 warnings.
+Reading extract file.
+Building flattened netlist.
+Running antenna checks.
+   100 gates analyzed.
+   200 gates analyzed.
+   300 gates analyzed.
+   400 gates analyzed.
+   500 gates analyzed.
+   600 gates analyzed.
+   700 gates analyzed.
+   800 gates analyzed.
+   900 gates analyzed.
+   1000 gates analyzed.
+   1100 gates analyzed.
+   1200 gates analyzed.
+   1300 gates analyzed.
+   1400 gates analyzed.
+   1500 gates analyzed.
+   1600 gates analyzed.
+   1700 gates analyzed.
+   1800 gates analyzed.
+   1900 gates analyzed.
+   2000 gates analyzed.
+Cell: _17999_
+Antenna violation detected at plane metal1
+Effective antenna ratio 823.353 > limit 400
+Gate rect (77997 402063) to (78027 402263)
+Antenna rect (102520 402104) to (109034 402132)
+   2100 gates analyzed.
+   2200 gates analyzed.
+   2300 gates analyzed.
+   2400 gates analyzed.
+   2500 gates analyzed.
+   2600 gates analyzed.
+   2700 gates analyzed.
+   2800 gates analyzed.
+   2900 gates analyzed.
+   3000 gates analyzed.
+   3100 gates analyzed.
+Cell: _18052_
+Antenna violation detected at plane metal2
+Effective antenna ratio 508.813 > limit 400
+Gate rect (72467 450479) to (72497 450609)
+Antenna rect (72332 450774) to (72384 450780)
+   3200 gates analyzed.
+   3300 gates analyzed.
+Cell: hold8306
+Antenna violation detected at plane metal1
+Effective antenna ratio 854.422 > limit 400
+Gate rect (74941 536975) to (74971 537059)
+Antenna rect (75144 537140) to (75150 537192)
+   3400 gates analyzed.
+   3500 gates analyzed.
+   3600 gates analyzed.
+   3700 gates analyzed.
+   3800 gates analyzed.
+   3900 gates analyzed.
+   4000 gates analyzed.
+   4100 gates analyzed.
+   4200 gates analyzed.
+   4300 gates analyzed.
+   4400 gates analyzed.
+   4500 gates analyzed.
+   4600 gates analyzed.
+Cell: _19969_
+Antenna violation detected at plane metal1
+Effective antenna ratio 522.236 > limit 400
+Gate rect (309362 114287) to (309392 114371)
+Antenna rect (344980 114520) to (344986 114572)
+   4700 gates analyzed.
+   4800 gates analyzed.
+   4900 gates analyzed.
+   5000 gates analyzed.
+   5100 gates analyzed.
+   5200 gates analyzed.
+   5300 gates analyzed.
+   5400 gates analyzed.
+   5500 gates analyzed.
+   5600 gates analyzed.
+   5700 gates analyzed.
+   5800 gates analyzed.
+   5900 gates analyzed.
+   6000 gates analyzed.
+   6100 gates analyzed.
+   6200 gates analyzed.
+   6300 gates analyzed.
+   6400 gates analyzed.
+   6500 gates analyzed.
+   6600 gates analyzed.
+   6700 gates analyzed.
+   6800 gates analyzed.
+   6900 gates analyzed.
+   7000 gates analyzed.
+   7100 gates analyzed.
+   7200 gates analyzed.
+   7300 gates analyzed.
+   7400 gates analyzed.
+   7500 gates analyzed.
+   7600 gates analyzed.
+   7700 gates analyzed.
+   7800 gates analyzed.
+   7900 gates analyzed.
+   8000 gates analyzed.
+   8100 gates analyzed.
+   8200 gates analyzed.
+   8300 gates analyzed.
+   8400 gates analyzed.
+   8500 gates analyzed.
+   8600 gates analyzed.
+   8700 gates analyzed.
+   8800 gates analyzed.
+   8900 gates analyzed.
+   9000 gates analyzed.
+   9100 gates analyzed.
+   9200 gates analyzed.
+   9300 gates analyzed.
+   9400 gates analyzed.
+   9500 gates analyzed.
+   9600 gates analyzed.
+   9700 gates analyzed.
+   9800 gates analyzed.
+   9900 gates analyzed.
+   10000 gates analyzed.
+   10100 gates analyzed.
+   10200 gates analyzed.
+   10300 gates analyzed.
+   10400 gates analyzed.
+   10500 gates analyzed.
+   10600 gates analyzed.
+   10700 gates analyzed.
+   10800 gates analyzed.
+   10900 gates analyzed.
+   11000 gates analyzed.
+   11100 gates analyzed.
+   11200 gates analyzed.
+   11300 gates analyzed.
+   11400 gates analyzed.
+   11500 gates analyzed.
+   11600 gates analyzed.
+   11700 gates analyzed.
+   11800 gates analyzed.
+   11900 gates analyzed.
+   12000 gates analyzed.
+   12100 gates analyzed.
+   12200 gates analyzed.
+   12300 gates analyzed.
+   12400 gates analyzed.
+   12500 gates analyzed.
+   12600 gates analyzed.
+   12700 gates analyzed.
+   12800 gates analyzed.
+Cell: _13309_
+Antenna violation detected at plane metal1
+Effective antenna ratio 534.68 > limit 400
+Gate rect (75567 286735) to (75597 286935)
+Antenna rect (75549 286971) to (75607 286977)
+   12900 gates analyzed.
+   13000 gates analyzed.
+   13100 gates analyzed.
+   13200 gates analyzed.
+   13300 gates analyzed.
+   13400 gates analyzed.
+   13500 gates analyzed.
+   13600 gates analyzed.
+   13700 gates analyzed.
+   13800 gates analyzed.
+   13900 gates analyzed.
+   14000 gates analyzed.
+   14100 gates analyzed.
+   14200 gates analyzed.
+   14300 gates analyzed.
+   14400 gates analyzed.
+   14500 gates analyzed.
+   14600 gates analyzed.
+   14700 gates analyzed.
+   14800 gates analyzed.
+   14900 gates analyzed.
+   15000 gates analyzed.
+   15100 gates analyzed.
+   15200 gates analyzed.
+   15300 gates analyzed.
+   15400 gates analyzed.
+   15500 gates analyzed.
+   15600 gates analyzed.
+   15700 gates analyzed.
+   15800 gates analyzed.
+   15900 gates analyzed.
+   16000 gates analyzed.
+   16100 gates analyzed.
+   16200 gates analyzed.
+   16300 gates analyzed.
+   16400 gates analyzed.
+   16500 gates analyzed.
+   16600 gates analyzed.
+   16700 gates analyzed.
+   16800 gates analyzed.
+   16900 gates analyzed.
+   17000 gates analyzed.
+   17100 gates analyzed.
+   17200 gates analyzed.
+   17300 gates analyzed.
+   17400 gates analyzed.
+   17500 gates analyzed.
+   17600 gates analyzed.
+   17700 gates analyzed.
+   17800 gates analyzed.
+   17900 gates analyzed.
+   18000 gates analyzed.
+   18100 gates analyzed.
+   18200 gates analyzed.
+   18300 gates analyzed.
+   18400 gates analyzed.
+   18500 gates analyzed.
+   18600 gates analyzed.
+   18700 gates analyzed.
+   18800 gates analyzed.
+   18900 gates analyzed.
+   19000 gates analyzed.
+   19100 gates analyzed.
+   19200 gates analyzed.
+   19300 gates analyzed.
+   19400 gates analyzed.
+   19500 gates analyzed.
+   19600 gates analyzed.
+   19700 gates analyzed.
+   19800 gates analyzed.
+   19900 gates analyzed.
+   20000 gates analyzed.
+   20100 gates analyzed.
+   20200 gates analyzed.
+   20300 gates analyzed.
+   20400 gates analyzed.
+   20500 gates analyzed.
+   20600 gates analyzed.
+   20700 gates analyzed.
+   20800 gates analyzed.
+   20900 gates analyzed.
+   21000 gates analyzed.
+   21100 gates analyzed.
+   21200 gates analyzed.
+   21300 gates analyzed.
+   21400 gates analyzed.
+   21500 gates analyzed.
+   21600 gates analyzed.
+   21700 gates analyzed.
+   21800 gates analyzed.
+   21900 gates analyzed.
+   22000 gates analyzed.
+   22100 gates analyzed.
+   22200 gates analyzed.
+   22300 gates analyzed.
+   22400 gates analyzed.
+   22500 gates analyzed.
+   22600 gates analyzed.
+   22700 gates analyzed.
+   22800 gates analyzed.
+   22900 gates analyzed.
+   23000 gates analyzed.
+   23100 gates analyzed.
+   23200 gates analyzed.
+   23300 gates analyzed.
+   23400 gates analyzed.
+   23500 gates analyzed.
+   23600 gates analyzed.
+   23700 gates analyzed.
+   23800 gates analyzed.
+   23900 gates analyzed.
+   24000 gates analyzed.
+   24100 gates analyzed.
+   24200 gates analyzed.
+   24300 gates analyzed.
+   24400 gates analyzed.
+   24500 gates analyzed.
+   24600 gates analyzed.
+   24700 gates analyzed.
+   24800 gates analyzed.
+   24900 gates analyzed.
+   25000 gates analyzed.
+   25100 gates analyzed.
+   25200 gates analyzed.
+   25300 gates analyzed.
+   25400 gates analyzed.
+   25500 gates analyzed.
+   25600 gates analyzed.
+   25700 gates analyzed.
+   25800 gates analyzed.
+   25900 gates analyzed.
+   26000 gates analyzed.
+   26100 gates analyzed.
+Cell: _13768_
+Antenna violation detected at plane metal1
+Effective antenna ratio 492.837 > limit 400
+Gate rect (105754 255727) to (105784 255811)
+Antenna rect (109006 255768) to (117544 255796)
+   26200 gates analyzed.
+   26300 gates analyzed.
+   26400 gates analyzed.
+   26500 gates analyzed.
+   26600 gates analyzed.
+   26700 gates analyzed.
+   26800 gates analyzed.
+   26900 gates analyzed.
+   27000 gates analyzed.
+   27100 gates analyzed.
+   27200 gates analyzed.
+   27300 gates analyzed.
+   27400 gates analyzed.
+   27500 gates analyzed.
+   27600 gates analyzed.
+   27700 gates analyzed.
+   27800 gates analyzed.
+   27900 gates analyzed.
+   28000 gates analyzed.
+   28100 gates analyzed.
+   28200 gates analyzed.
+Cell: _13999_
+Antenna violation detected at plane metal1
+Effective antenna ratio 663.131 > limit 400
+Gate rect (134025 400975) to (134055 401175)
+Antenna rect (133892 401152) to (142154 401180)
+   28300 gates analyzed.
+   28400 gates analyzed.
+   28500 gates analyzed.
+   28600 gates analyzed.
+   28700 gates analyzed.
+   28800 gates analyzed.
+   28900 gates analyzed.
+   29000 gates analyzed.
+   29100 gates analyzed.
+   29200 gates analyzed.
+   29300 gates analyzed.
+   29400 gates analyzed.
+   29500 gates analyzed.
+   29600 gates analyzed.
+   29700 gates analyzed.
+   29800 gates analyzed.
+   29900 gates analyzed.
+   30000 gates analyzed.
+   30100 gates analyzed.
+   30200 gates analyzed.
+   30300 gates analyzed.
+   30400 gates analyzed.
+   30500 gates analyzed.
+   30600 gates analyzed.
+   30700 gates analyzed.
+   30800 gates analyzed.
+   30900 gates analyzed.
+   31000 gates analyzed.
+   31100 gates analyzed.
+   31200 gates analyzed.
+   31300 gates analyzed.
+   31400 gates analyzed.
+   31500 gates analyzed.
+   31600 gates analyzed.
+   31700 gates analyzed.
+   31800 gates analyzed.
+   31900 gates analyzed.
+   32000 gates analyzed.
+   32100 gates analyzed.
+   32200 gates analyzed.
+   32300 gates analyzed.
+   32400 gates analyzed.
+   32500 gates analyzed.
+   32600 gates analyzed.
+   32700 gates analyzed.
+   32800 gates analyzed.
+   32900 gates analyzed.
+   33000 gates analyzed.
+   33100 gates analyzed.
+   33200 gates analyzed.
+   33300 gates analyzed.
+   33400 gates analyzed.
+   33500 gates analyzed.
+   33600 gates analyzed.
+   33700 gates analyzed.
+   33800 gates analyzed.
+   33900 gates analyzed.
+   34000 gates analyzed.
+   34100 gates analyzed.
+   34200 gates analyzed.
+   34300 gates analyzed.
+   34400 gates analyzed.
+   34500 gates analyzed.
+   34600 gates analyzed.
+   34700 gates analyzed.
+   34800 gates analyzed.
+   34900 gates analyzed.
+   35000 gates analyzed.
+   35100 gates analyzed.
+   35200 gates analyzed.
+   35300 gates analyzed.
+   35400 gates analyzed.
+   35500 gates analyzed.
+   35600 gates analyzed.
+   35700 gates analyzed.
+   35800 gates analyzed.
+   35900 gates analyzed.
+   36000 gates analyzed.
+   36100 gates analyzed.
+   36200 gates analyzed.
+   36300 gates analyzed.
+   36400 gates analyzed.
+   36500 gates analyzed.
+   36600 gates analyzed.
+   36700 gates analyzed.
+   36800 gates analyzed.
+   36900 gates analyzed.
+   37000 gates analyzed.
+   37100 gates analyzed.
+   37200 gates analyzed.
+   37300 gates analyzed.
+   37400 gates analyzed.
+   37500 gates analyzed.
+   37600 gates analyzed.
+   37700 gates analyzed.
+   37800 gates analyzed.
+   37900 gates analyzed.
+   38000 gates analyzed.
+   38100 gates analyzed.
+   38200 gates analyzed.
+   38300 gates analyzed.
+   38400 gates analyzed.
+   38500 gates analyzed.
+   38600 gates analyzed.
+   38700 gates analyzed.
+   38800 gates analyzed.
+   38900 gates analyzed.
+   39000 gates analyzed.
+   39100 gates analyzed.
+   39200 gates analyzed.
+   39300 gates analyzed.
+   39400 gates analyzed.
+   39500 gates analyzed.
+   39600 gates analyzed.
+   39700 gates analyzed.
+   39800 gates analyzed.
+   39900 gates analyzed.
+   40000 gates analyzed.
+Cell: _13429_
+Antenna violation detected at plane metal1
+Effective antenna ratio 444.673 > limit 400
+Gate rect (91928 301967) to (91958 302167)
+Antenna rect (91925 302203) to (91983 302209)
+   40100 gates analyzed.
+   40200 gates analyzed.
+   40300 gates analyzed.
+   40400 gates analyzed.
+   40500 gates analyzed.
+   40600 gates analyzed.
+   40700 gates analyzed.
+   40800 gates analyzed.
+   40900 gates analyzed.
+   41000 gates analyzed.
+   41100 gates analyzed.
+   41200 gates analyzed.
+   41300 gates analyzed.
+   41400 gates analyzed.
+   41500 gates analyzed.
+   41600 gates analyzed.
+   41700 gates analyzed.
+   41800 gates analyzed.
+   41900 gates analyzed.
+   42000 gates analyzed.
+   42100 gates analyzed.
+   42200 gates analyzed.
+   42300 gates analyzed.
+   42400 gates analyzed.
+   42500 gates analyzed.
+   42600 gates analyzed.
+   42700 gates analyzed.
+   42800 gates analyzed.
+   42900 gates analyzed.
+   43000 gates analyzed.
+   43100 gates analyzed.
+   43200 gates analyzed.
+   43300 gates analyzed.
+   43400 gates analyzed.
+   43500 gates analyzed.
+   43600 gates analyzed.
+   43700 gates analyzed.
+   43800 gates analyzed.
+   43900 gates analyzed.
+   44000 gates analyzed.
+   44100 gates analyzed.
+   44200 gates analyzed.
+   44300 gates analyzed.
+   44400 gates analyzed.
+   44500 gates analyzed.
+   44600 gates analyzed.
+   44700 gates analyzed.
+   44800 gates analyzed.
+   44900 gates analyzed.
+   45000 gates analyzed.
+   45100 gates analyzed.
+   45200 gates analyzed.
+   45300 gates analyzed.
+   45400 gates analyzed.
+   45500 gates analyzed.
+   45600 gates analyzed.
+   45700 gates analyzed.
+   45800 gates analyzed.
+   45900 gates analyzed.
+   46000 gates analyzed.
+   46100 gates analyzed.
+   46200 gates analyzed.
+   46300 gates analyzed.
+   46400 gates analyzed.
+   46500 gates analyzed.
+   46600 gates analyzed.
+   46700 gates analyzed.
+   46800 gates analyzed.
+   46900 gates analyzed.
+   47000 gates analyzed.
+   47100 gates analyzed.
+   47200 gates analyzed.
+   47300 gates analyzed.
+   47400 gates analyzed.
+   47500 gates analyzed.
+   47600 gates analyzed.
+   47700 gates analyzed.
+   47800 gates analyzed.
+   47900 gates analyzed.
+   48000 gates analyzed.
+   48100 gates analyzed.
+   48200 gates analyzed.
+   48300 gates analyzed.
+   48400 gates analyzed.
+   48500 gates analyzed.
+   48600 gates analyzed.
+   48700 gates analyzed.
+   48800 gates analyzed.
+   48900 gates analyzed.
+   49000 gates analyzed.
+   49100 gates analyzed.
+   49200 gates analyzed.
+   49300 gates analyzed.
+   49400 gates analyzed.
+   49500 gates analyzed.
+   49600 gates analyzed.
+   49700 gates analyzed.
+   49800 gates analyzed.
+   49900 gates analyzed.
+   50000 gates analyzed.
+   50100 gates analyzed.
+   50200 gates analyzed.
+   50300 gates analyzed.
+   50400 gates analyzed.
+   50500 gates analyzed.
+   50600 gates analyzed.
+   50700 gates analyzed.
+   50800 gates analyzed.
+   50900 gates analyzed.
+   51000 gates analyzed.
+   51100 gates analyzed.
+   51200 gates analyzed.
+   51300 gates analyzed.
+   51400 gates analyzed.
+   51500 gates analyzed.
+   51600 gates analyzed.
+   51700 gates analyzed.
+   51800 gates analyzed.
+   51900 gates analyzed.
+   52000 gates analyzed.
+   52100 gates analyzed.
+   52200 gates analyzed.
+   52300 gates analyzed.
+   52400 gates analyzed.
+   52500 gates analyzed.
+   52600 gates analyzed.
+   52700 gates analyzed.
+   52800 gates analyzed.
+   52900 gates analyzed.
+   53000 gates analyzed.
+   53100 gates analyzed.
+   53200 gates analyzed.
+   53300 gates analyzed.
+   53400 gates analyzed.
+   53500 gates analyzed.
+   53600 gates analyzed.
+   53700 gates analyzed.
+   53800 gates analyzed.
+   53900 gates analyzed.
+   54000 gates analyzed.
+   54100 gates analyzed.
+   54200 gates analyzed.
+   54300 gates analyzed.
+   54400 gates analyzed.
+   54500 gates analyzed.
+   54600 gates analyzed.
+   54700 gates analyzed.
+   54800 gates analyzed.
+   54900 gates analyzed.
+   55000 gates analyzed.
+   55100 gates analyzed.
+   55200 gates analyzed.
+   55300 gates analyzed.
+   55400 gates analyzed.
+   55500 gates analyzed.
+   55600 gates analyzed.
+   55700 gates analyzed.
+   55800 gates analyzed.
+   55900 gates analyzed.
+   56000 gates analyzed.
+   56100 gates analyzed.
+   56200 gates analyzed.
+   56300 gates analyzed.
+   56400 gates analyzed.
+   56500 gates analyzed.
+   56600 gates analyzed.
+   56700 gates analyzed.
+   56800 gates analyzed.
+   56900 gates analyzed.
+   57000 gates analyzed.
+   57100 gates analyzed.
+   57200 gates analyzed.
+   57300 gates analyzed.
+   57400 gates analyzed.
+   57500 gates analyzed.
+   57600 gates analyzed.
+   57700 gates analyzed.
+   57800 gates analyzed.
+   57900 gates analyzed.
+   58000 gates analyzed.
+   58100 gates analyzed.
+   58200 gates analyzed.
+   58300 gates analyzed.
+   58400 gates analyzed.
+   58500 gates analyzed.
+   58600 gates analyzed.
+   58700 gates analyzed.
+   58800 gates analyzed.
+   58900 gates analyzed.
+   59000 gates analyzed.
+   59100 gates analyzed.
+   59200 gates analyzed.
+   59300 gates analyzed.
+   59400 gates analyzed.
+   59500 gates analyzed.
+   59600 gates analyzed.
+   59700 gates analyzed.
+   59800 gates analyzed.
+   59900 gates analyzed.
+   60000 gates analyzed.
+   60100 gates analyzed.
+   60200 gates analyzed.
+   60300 gates analyzed.
+   60400 gates analyzed.
+   60500 gates analyzed.
+   60600 gates analyzed.
+   60700 gates analyzed.
+   60800 gates analyzed.
+   60900 gates analyzed.
+   61000 gates analyzed.
+   61100 gates analyzed.
+   61200 gates analyzed.
+   61300 gates analyzed.
+   61400 gates analyzed.
+   61500 gates analyzed.
+   61600 gates analyzed.
+   61700 gates analyzed.
+   61800 gates analyzed.
+   61900 gates analyzed.
+   62000 gates analyzed.
+   62100 gates analyzed.
+   62200 gates analyzed.
+   62300 gates analyzed.
+   62400 gates analyzed.
+   62500 gates analyzed.
+   62600 gates analyzed.
+   62700 gates analyzed.
+   62800 gates analyzed.
+   62900 gates analyzed.
+   63000 gates analyzed.
+   63100 gates analyzed.
+   63200 gates analyzed.
+   63300 gates analyzed.
+   63400 gates analyzed.
+   63500 gates analyzed.
+   63600 gates analyzed.
+   63700 gates analyzed.
+   63800 gates analyzed.
+   63900 gates analyzed.
+   64000 gates analyzed.
+   64100 gates analyzed.
+   64200 gates analyzed.
+   64300 gates analyzed.
+   64400 gates analyzed.
+   64500 gates analyzed.
+   64600 gates analyzed.
+   64700 gates analyzed.
+   64800 gates analyzed.
+   64900 gates analyzed.
+   65000 gates analyzed.
+   65100 gates analyzed.
+   65200 gates analyzed.
+   65300 gates analyzed.
+   65400 gates analyzed.
+   65500 gates analyzed.
+   65600 gates analyzed.
+   65700 gates analyzed.
+   65800 gates analyzed.
+   65900 gates analyzed.
+   66000 gates analyzed.
+   66100 gates analyzed.
+   66200 gates analyzed.
+   66300 gates analyzed.
+   66400 gates analyzed.
+   66500 gates analyzed.
+   66600 gates analyzed.
+   66700 gates analyzed.
+   66800 gates analyzed.
+   66900 gates analyzed.
+   67000 gates analyzed.
+   67100 gates analyzed.
+   67200 gates analyzed.
+   67300 gates analyzed.
+   67400 gates analyzed.
+   67500 gates analyzed.
+   67600 gates analyzed.
+   67700 gates analyzed.
+   67800 gates analyzed.
+   67900 gates analyzed.
+   68000 gates analyzed.
+   68100 gates analyzed.
+   68200 gates analyzed.
+   68300 gates analyzed.
+   68400 gates analyzed.
+   68500 gates analyzed.
+   68600 gates analyzed.
+   68700 gates analyzed.
+   68800 gates analyzed.
+   68900 gates analyzed.
+   69000 gates analyzed.
+   69100 gates analyzed.
+   69200 gates analyzed.
+   69300 gates analyzed.
+   69400 gates analyzed.
+   69500 gates analyzed.
+   69600 gates analyzed.
+   69700 gates analyzed.
+   69800 gates analyzed.
+   69900 gates analyzed.
+   70000 gates analyzed.
+   70100 gates analyzed.
+   70200 gates analyzed.
+   70300 gates analyzed.
+   70400 gates analyzed.
+   70500 gates analyzed.
+   70600 gates analyzed.
+   70700 gates analyzed.
+   70800 gates analyzed.
+   70900 gates analyzed.
+   71000 gates analyzed.
+   71100 gates analyzed.
+   71200 gates analyzed.
+   71300 gates analyzed.
+   71400 gates analyzed.
+   71500 gates analyzed.
+   71600 gates analyzed.
+   71700 gates analyzed.
+   71800 gates analyzed.
+   71900 gates analyzed.
+   72000 gates analyzed.
+   72100 gates analyzed.
+   72200 gates analyzed.
+   72300 gates analyzed.
+   72400 gates analyzed.
+   72500 gates analyzed.
+   72600 gates analyzed.
+   72700 gates analyzed.
+   72800 gates analyzed.
+   72900 gates analyzed.
+   73000 gates analyzed.
+   73100 gates analyzed.
+   73200 gates analyzed.
+   73300 gates analyzed.
+   73400 gates analyzed.
+   73500 gates analyzed.
+   73600 gates analyzed.
+   73700 gates analyzed.
+   73800 gates analyzed.
+   73900 gates analyzed.
+   74000 gates analyzed.
+   74100 gates analyzed.
+   74200 gates analyzed.
+   74300 gates analyzed.
+   74400 gates analyzed.
+   74500 gates analyzed.
+   74600 gates analyzed.
+   74700 gates analyzed.
+   74800 gates analyzed.
+   74900 gates analyzed.
+   75000 gates analyzed.
+   75100 gates analyzed.
+   75200 gates analyzed.
+   75300 gates analyzed.
+   75400 gates analyzed.
+   75500 gates analyzed.
+   75600 gates analyzed.
+   75700 gates analyzed.
+   75800 gates analyzed.
+   75900 gates analyzed.
+   76000 gates analyzed.
+   76100 gates analyzed.
+   76200 gates analyzed.
+   76300 gates analyzed.
+   76400 gates analyzed.
+   76500 gates analyzed.
+   76600 gates analyzed.
+   76700 gates analyzed.
+   76800 gates analyzed.
+   76900 gates analyzed.
+   77000 gates analyzed.
+   77100 gates analyzed.
+   77200 gates analyzed.
+   77300 gates analyzed.
+   77400 gates analyzed.
+   77500 gates analyzed.
+   77600 gates analyzed.
+   77700 gates analyzed.
+   77800 gates analyzed.
+   77900 gates analyzed.
+   78000 gates analyzed.
+   78100 gates analyzed.
+   78200 gates analyzed.
+   78300 gates analyzed.
+   78400 gates analyzed.
+   78500 gates analyzed.
+   78600 gates analyzed.
+   78700 gates analyzed.
+   78800 gates analyzed.
+   78900 gates analyzed.
+   79000 gates analyzed.
+   79100 gates analyzed.
+   79200 gates analyzed.
+   79300 gates analyzed.
+   79400 gates analyzed.
+   79500 gates analyzed.
+   79600 gates analyzed.
+   79700 gates analyzed.
+   79800 gates analyzed.
+   79900 gates analyzed.
+   80000 gates analyzed.
+   80100 gates analyzed.
+   80200 gates analyzed.
+   80300 gates analyzed.
+   80400 gates analyzed.
+   80500 gates analyzed.
+   80600 gates analyzed.
+   80700 gates analyzed.
+   80800 gates analyzed.
+   80900 gates analyzed.
+   81000 gates analyzed.
+   81100 gates analyzed.
+   81200 gates analyzed.
+   81300 gates analyzed.
+   81400 gates analyzed.
+   81500 gates analyzed.
+   81600 gates analyzed.
+   81700 gates analyzed.
+   81800 gates analyzed.
+   81900 gates analyzed.
+   82000 gates analyzed.
+   82100 gates analyzed.
+   82200 gates analyzed.
+   82300 gates analyzed.
+   82400 gates analyzed.
+   82500 gates analyzed.
+   82600 gates analyzed.
+   82700 gates analyzed.
+   82800 gates analyzed.
+   82900 gates analyzed.
+   83000 gates analyzed.
+   83100 gates analyzed.
+   83200 gates analyzed.
+   83300 gates analyzed.
+   83400 gates analyzed.
+   83500 gates analyzed.
+   83600 gates analyzed.
+   83700 gates analyzed.
+   83800 gates analyzed.
+   83900 gates analyzed.
+   84000 gates analyzed.
+   84100 gates analyzed.
+   84200 gates analyzed.
+   84300 gates analyzed.
+   84400 gates analyzed.
+   84500 gates analyzed.
+   84600 gates analyzed.
+   84700 gates analyzed.
+   84800 gates analyzed.
+   84900 gates analyzed.
+   85000 gates analyzed.
+   85100 gates analyzed.
+   85200 gates analyzed.
+   85300 gates analyzed.
+   85400 gates analyzed.
+   85500 gates analyzed.
+   85600 gates analyzed.
+   85700 gates analyzed.
+   85800 gates analyzed.
+   85900 gates analyzed.
+   86000 gates analyzed.
+   86100 gates analyzed.
+   86200 gates analyzed.
+   86300 gates analyzed.
+   86400 gates analyzed.
+   86500 gates analyzed.
+   86600 gates analyzed.
+   86700 gates analyzed.
+   86800 gates analyzed.
+   86900 gates analyzed.
+   87000 gates analyzed.
+   87100 gates analyzed.
+   87200 gates analyzed.
+   87300 gates analyzed.
+   87400 gates analyzed.
+   87500 gates analyzed.
+   87600 gates analyzed.
+   87700 gates analyzed.
+   87800 gates analyzed.
+   87900 gates analyzed.
+   88000 gates analyzed.
+   88100 gates analyzed.
+   88200 gates analyzed.
+   88300 gates analyzed.
+   88400 gates analyzed.
+   88500 gates analyzed.
+   88600 gates analyzed.
+   88700 gates analyzed.
+   88800 gates analyzed.
+   88900 gates analyzed.
+   89000 gates analyzed.
+   89100 gates analyzed.
+   89200 gates analyzed.
+   89300 gates analyzed.
+   89400 gates analyzed.
+   89500 gates analyzed.
+   89600 gates analyzed.
+   89700 gates analyzed.
+   89800 gates analyzed.
+   89900 gates analyzed.
+   90000 gates analyzed.
+   90100 gates analyzed.
+   90200 gates analyzed.
+   90300 gates analyzed.
+   90400 gates analyzed.
+   90500 gates analyzed.
+   90600 gates analyzed.
+   90700 gates analyzed.
+   90800 gates analyzed.
+   90900 gates analyzed.
+   91000 gates analyzed.
+   91100 gates analyzed.
+   91200 gates analyzed.
+   91300 gates analyzed.
+   91400 gates analyzed.
+   91500 gates analyzed.
+   91600 gates analyzed.
+   91700 gates analyzed.
+   91800 gates analyzed.
+   91900 gates analyzed.
+   92000 gates analyzed.
+   92100 gates analyzed.
+   92200 gates analyzed.
+   92300 gates analyzed.
+   92400 gates analyzed.
+   92500 gates analyzed.
+   92600 gates analyzed.
+   92700 gates analyzed.
+   92800 gates analyzed.
+   92900 gates analyzed.
+   93000 gates analyzed.
+   93100 gates analyzed.
+   93200 gates analyzed.
+   93300 gates analyzed.
+   93400 gates analyzed.
+   93500 gates analyzed.
+   93600 gates analyzed.
+   93700 gates analyzed.
+   93800 gates analyzed.
+   93900 gates analyzed.
+   94000 gates analyzed.
+   94100 gates analyzed.
+   94200 gates analyzed.
+   94300 gates analyzed.
+   94400 gates analyzed.
+   94500 gates analyzed.
+   94600 gates analyzed.
+   94700 gates analyzed.
+   94800 gates analyzed.
+   94900 gates analyzed.
+   95000 gates analyzed.
+   95100 gates analyzed.
+   95200 gates analyzed.
+   95300 gates analyzed.
+   95400 gates analyzed.
+   95500 gates analyzed.
+   95600 gates analyzed.
+   95700 gates analyzed.
+   95800 gates analyzed.
+   95900 gates analyzed.
+   96000 gates analyzed.
+   96100 gates analyzed.
+   96200 gates analyzed.
+   96300 gates analyzed.
+   96400 gates analyzed.
+   96500 gates analyzed.
+   96600 gates analyzed.
+   96700 gates analyzed.
+   96800 gates analyzed.
+   96900 gates analyzed.
+   97000 gates analyzed.
+   97100 gates analyzed.
+   97200 gates analyzed.
+   97300 gates analyzed.
+   97400 gates analyzed.
+   97500 gates analyzed.
+   97600 gates analyzed.
+   97700 gates analyzed.
+   97800 gates analyzed.
+   97900 gates analyzed.
+   98000 gates analyzed.
+   98100 gates analyzed.
+   98200 gates analyzed.
+   98300 gates analyzed.
+   98400 gates analyzed.
+   98500 gates analyzed.
+   98600 gates analyzed.
+   98700 gates analyzed.
+   98800 gates analyzed.
+   98900 gates analyzed.
+   99000 gates analyzed.
+   99100 gates analyzed.
+   99200 gates analyzed.
+   99300 gates analyzed.
+   99400 gates analyzed.
+   99500 gates analyzed.
+   99600 gates analyzed.
+   99700 gates analyzed.
+   99800 gates analyzed.
+   99900 gates analyzed.
+   100000 gates analyzed.
+   100100 gates analyzed.
+   100200 gates analyzed.
+   100300 gates analyzed.
+   100400 gates analyzed.
+   100500 gates analyzed.
+   100600 gates analyzed.
+   100700 gates analyzed.
+   100800 gates analyzed.
+   100900 gates analyzed.
+   101000 gates analyzed.
+   101100 gates analyzed.
+   101200 gates analyzed.
+   101300 gates analyzed.
+   101400 gates analyzed.
+   101500 gates analyzed.
+   101600 gates analyzed.
+   101700 gates analyzed.
+   101800 gates analyzed.
+   101900 gates analyzed.
+   102000 gates analyzed.
+   102100 gates analyzed.
+   102200 gates analyzed.
+   102300 gates analyzed.
+   102400 gates analyzed.
+   102500 gates analyzed.
+   102600 gates analyzed.
+   102700 gates analyzed.
+   102800 gates analyzed.
+   102900 gates analyzed.
+   103000 gates analyzed.
+   103100 gates analyzed.
+   103200 gates analyzed.
+   103300 gates analyzed.
+   103400 gates analyzed.
+   103500 gates analyzed.
+   103600 gates analyzed.
+   103700 gates analyzed.
+   103800 gates analyzed.
+   103900 gates analyzed.
+   104000 gates analyzed.
+   104100 gates analyzed.
+   104200 gates analyzed.
+   104300 gates analyzed.
+   104400 gates analyzed.
+   104500 gates analyzed.
+   104600 gates analyzed.
+   104700 gates analyzed.
+   104800 gates analyzed.
+   104900 gates analyzed.
+   105000 gates analyzed.
+   105100 gates analyzed.
+   105200 gates analyzed.
+   105300 gates analyzed.
+   105400 gates analyzed.
+   105500 gates analyzed.
+   105600 gates analyzed.
+   105700 gates analyzed.
+   105800 gates analyzed.
+   105900 gates analyzed.
+   106000 gates analyzed.
+   106100 gates analyzed.
+   106200 gates analyzed.
+   106300 gates analyzed.
+   106400 gates analyzed.
+   106500 gates analyzed.
+   106600 gates analyzed.
+   106700 gates analyzed.
+   106800 gates analyzed.
+   106900 gates analyzed.
+   107000 gates analyzed.
+   107100 gates analyzed.
+   107200 gates analyzed.
+   107300 gates analyzed.
+   107400 gates analyzed.
+   107500 gates analyzed.
+   107600 gates analyzed.
+   107700 gates analyzed.
+   107800 gates analyzed.
+   107900 gates analyzed.
+   108000 gates analyzed.
+   108100 gates analyzed.
+   108200 gates analyzed.
+   108300 gates analyzed.
+   108400 gates analyzed.
+   108500 gates analyzed.
+   108600 gates analyzed.
+   108700 gates analyzed.
+   108800 gates analyzed.
+   108900 gates analyzed.
+   109000 gates analyzed.
+   109100 gates analyzed.
+   109200 gates analyzed.
+   109300 gates analyzed.
+   109400 gates analyzed.
+   109500 gates analyzed.
+   109600 gates analyzed.
+   109700 gates analyzed.
+   109800 gates analyzed.
+   109900 gates analyzed.
+   110000 gates analyzed.
+   110100 gates analyzed.
+   110200 gates analyzed.
+   110300 gates analyzed.
+   110400 gates analyzed.
+   110500 gates analyzed.
+   110600 gates analyzed.
+   110700 gates analyzed.
+   110800 gates analyzed.
+   110900 gates analyzed.
+   111000 gates analyzed.
+   111100 gates analyzed.
+   111200 gates analyzed.
+   111300 gates analyzed.
+   111400 gates analyzed.
+   111500 gates analyzed.
+   111600 gates analyzed.
+   111700 gates analyzed.
+   111800 gates analyzed.
+   111900 gates analyzed.
+   112000 gates analyzed.
+   112100 gates analyzed.
+   112200 gates analyzed.
+   112300 gates analyzed.
+   112400 gates analyzed.
+   112500 gates analyzed.
+   112600 gates analyzed.
+   112700 gates analyzed.
+   112800 gates analyzed.
+   112900 gates analyzed.
+   113000 gates analyzed.
+   113100 gates analyzed.
+   113200 gates analyzed.
+   113300 gates analyzed.
+   113400 gates analyzed.
+   113500 gates analyzed.
+   113600 gates analyzed.
+   113700 gates analyzed.
+   113800 gates analyzed.
+   113900 gates analyzed.
+   114000 gates analyzed.
+   114100 gates analyzed.
+   114200 gates analyzed.
+   114300 gates analyzed.
+   114400 gates analyzed.
+   114500 gates analyzed.
+   114600 gates analyzed.
+   114700 gates analyzed.
+   114800 gates analyzed.
+   114900 gates analyzed.
+   115000 gates analyzed.
+   115100 gates analyzed.
+   115200 gates analyzed.
+   115300 gates analyzed.
+   115400 gates analyzed.
+   115500 gates analyzed.
+   115600 gates analyzed.
+   115700 gates analyzed.
+   115800 gates analyzed.
+   115900 gates analyzed.
+   116000 gates analyzed.
+   116100 gates analyzed.
+   116200 gates analyzed.
+   116300 gates analyzed.
+   116400 gates analyzed.
+   116500 gates analyzed.
+   116600 gates analyzed.
+   116700 gates analyzed.
+   116800 gates analyzed.
+   116900 gates analyzed.
+   117000 gates analyzed.
+   117100 gates analyzed.
+   117200 gates analyzed.
+   117300 gates analyzed.
+   117400 gates analyzed.
+   117500 gates analyzed.
+   117600 gates analyzed.
+   117700 gates analyzed.
+   117800 gates analyzed.
+   117900 gates analyzed.
+   118000 gates analyzed.
+   118100 gates analyzed.
+   118200 gates analyzed.
+   118300 gates analyzed.
+   118400 gates analyzed.
+   118500 gates analyzed.
+   118600 gates analyzed.
+   118700 gates analyzed.
+   118800 gates analyzed.
+   118900 gates analyzed.
+   119000 gates analyzed.
+   119100 gates analyzed.
+   119200 gates analyzed.
+   119300 gates analyzed.
+   119400 gates analyzed.
+   119500 gates analyzed.
+   119600 gates analyzed.
+   119700 gates analyzed.
+   119800 gates analyzed.
+   119900 gates analyzed.
+   120000 gates analyzed.
+   120100 gates analyzed.
+   120200 gates analyzed.
+   120300 gates analyzed.
+   120400 gates analyzed.
+   120500 gates analyzed.
+   120600 gates analyzed.
+   120700 gates analyzed.
+   120800 gates analyzed.
+   120900 gates analyzed.
+   121000 gates analyzed.
+   121100 gates analyzed.
+   121200 gates analyzed.
+   121300 gates analyzed.
+   121400 gates analyzed.
+   121500 gates analyzed.
+   121600 gates analyzed.
+   121700 gates analyzed.
+   121800 gates analyzed.
+   121900 gates analyzed.
+   122000 gates analyzed.
+   122100 gates analyzed.
+   122200 gates analyzed.
+   122300 gates analyzed.
+   122400 gates analyzed.
+   122500 gates analyzed.
+   122600 gates analyzed.
+   122700 gates analyzed.
+   122800 gates analyzed.
+   122900 gates analyzed.
+   123000 gates analyzed.
+   123100 gates analyzed.
+   123200 gates analyzed.
+   123300 gates analyzed.
+   123400 gates analyzed.
+   123500 gates analyzed.
+   123600 gates analyzed.
+   123700 gates analyzed.
+   123800 gates analyzed.
+   123900 gates analyzed.
+   124000 gates analyzed.
+   124100 gates analyzed.
+   124200 gates analyzed.
+   124300 gates analyzed.
+   124400 gates analyzed.
+   124500 gates analyzed.
+   124600 gates analyzed.
+   124700 gates analyzed.
+   124800 gates analyzed.
+   124900 gates analyzed.
+   125000 gates analyzed.
+   125100 gates analyzed.
+   125200 gates analyzed.
+   125300 gates analyzed.
+   125400 gates analyzed.
+   125500 gates analyzed.
+   125600 gates analyzed.
+   125700 gates analyzed.
+   125800 gates analyzed.
+   125900 gates analyzed.
+   126000 gates analyzed.
+   126100 gates analyzed.
+   126200 gates analyzed.
+   126300 gates analyzed.
+   126400 gates analyzed.
+   126500 gates analyzed.
+   126600 gates analyzed.
+   126700 gates analyzed.
+   126800 gates analyzed.
+   126900 gates analyzed.
+   127000 gates analyzed.
+   127100 gates analyzed.
+   127200 gates analyzed.
+   127300 gates analyzed.
+   127400 gates analyzed.
+   127500 gates analyzed.
+   127600 gates analyzed.
+   127700 gates analyzed.
+   127800 gates analyzed.
+   127900 gates analyzed.
+   128000 gates analyzed.
+   128100 gates analyzed.
+   128200 gates analyzed.
+   128300 gates analyzed.
+   128400 gates analyzed.
+   128500 gates analyzed.
+   128600 gates analyzed.
+   128700 gates analyzed.
+   128800 gates analyzed.
+   128900 gates analyzed.
+   129000 gates analyzed.
+   129100 gates analyzed.
+   129200 gates analyzed.
+   129300 gates analyzed.
+   129400 gates analyzed.
+   129500 gates analyzed.
+   129600 gates analyzed.
+   129700 gates analyzed.
+   129800 gates analyzed.
+   129900 gates analyzed.
+   130000 gates analyzed.
+   130100 gates analyzed.
+   130200 gates analyzed.
+   130300 gates analyzed.
+   130400 gates analyzed.
+   130500 gates analyzed.
+   130600 gates analyzed.
+   130700 gates analyzed.
+   130800 gates analyzed.
+   130900 gates analyzed.
+   131000 gates analyzed.
+   131100 gates analyzed.
+   131200 gates analyzed.
+   131300 gates analyzed.
+   131400 gates analyzed.
+   131500 gates analyzed.
+   131600 gates analyzed.
+   131700 gates analyzed.
+   131800 gates analyzed.
+   131900 gates analyzed.
+   132000 gates analyzed.
+   132100 gates analyzed.
+   132200 gates analyzed.
+   132300 gates analyzed.
+   132400 gates analyzed.
+   132500 gates analyzed.
+   132600 gates analyzed.
+   132700 gates analyzed.
+   132800 gates analyzed.
+   132900 gates analyzed.
+   133000 gates analyzed.
+   133100 gates analyzed.
+   133200 gates analyzed.
+   133300 gates analyzed.
+   133400 gates analyzed.
+   133500 gates analyzed.
+   133600 gates analyzed.
+   133700 gates analyzed.
+   133800 gates analyzed.
+   133900 gates analyzed.
+   134000 gates analyzed.
+   134100 gates analyzed.
+   134200 gates analyzed.
+   134300 gates analyzed.
+   134400 gates analyzed.
+   134500 gates analyzed.
+   134600 gates analyzed.
+   134700 gates analyzed.
+   134800 gates analyzed.
+   134900 gates analyzed.
+   135000 gates analyzed.
+   135100 gates analyzed.
+   135200 gates analyzed.
+   135300 gates analyzed.
+   135400 gates analyzed.
+   135500 gates analyzed.
+   135600 gates analyzed.
+   135700 gates analyzed.
+   135800 gates analyzed.
+   135900 gates analyzed.
+   136000 gates analyzed.
+   136100 gates analyzed.
+   136200 gates analyzed.
+   136300 gates analyzed.
+   136400 gates analyzed.
+   136500 gates analyzed.
+   136600 gates analyzed.
+   136700 gates analyzed.
+   136800 gates analyzed.
+   136900 gates analyzed.
+   137000 gates analyzed.
+   137100 gates analyzed.
+   137200 gates analyzed.
+   137300 gates analyzed.
+   137400 gates analyzed.
+   137500 gates analyzed.
+   137600 gates analyzed.
+   137700 gates analyzed.
+   137800 gates analyzed.
+   137900 gates analyzed.
+   138000 gates analyzed.
+   138100 gates analyzed.
+   138200 gates analyzed.
+   138300 gates analyzed.
+   138400 gates analyzed.
+   138500 gates analyzed.
+   138600 gates analyzed.
+   138700 gates analyzed.
+   138800 gates analyzed.
+   138900 gates analyzed.
+   139000 gates analyzed.
+   139100 gates analyzed.
+   139200 gates analyzed.
+   139300 gates analyzed.
+   139400 gates analyzed.
+   139500 gates analyzed.
+   139600 gates analyzed.
+   139700 gates analyzed.
+   139800 gates analyzed.
+   139900 gates analyzed.
+   140000 gates analyzed.
+   140100 gates analyzed.
+   140200 gates analyzed.
+   140300 gates analyzed.
+   140400 gates analyzed.
+   140500 gates analyzed.
+   140600 gates analyzed.
+   140700 gates analyzed.
+   140800 gates analyzed.
+   140900 gates analyzed.
+   141000 gates analyzed.
+   141100 gates analyzed.
+   141200 gates analyzed.
+   141300 gates analyzed.
+   141400 gates analyzed.
+   141500 gates analyzed.
+   141600 gates analyzed.
+   141700 gates analyzed.
+   141800 gates analyzed.
+   141900 gates analyzed.
+   142000 gates analyzed.
+   142100 gates analyzed.
+   142200 gates analyzed.
+   142300 gates analyzed.
+   142400 gates analyzed.
+   142500 gates analyzed.
+   142600 gates analyzed.
+   142700 gates analyzed.
+   142800 gates analyzed.
+   142900 gates analyzed.
+   143000 gates analyzed.
+   143100 gates analyzed.
+   143200 gates analyzed.
+   143300 gates analyzed.
+   143400 gates analyzed.
+   143500 gates analyzed.
+   143600 gates analyzed.
+   143700 gates analyzed.
+   143800 gates analyzed.
+   143900 gates analyzed.
+   144000 gates analyzed.
+   144100 gates analyzed.
+   144200 gates analyzed.
+   144300 gates analyzed.
+   144400 gates analyzed.
+   144500 gates analyzed.
+   144600 gates analyzed.
+   144700 gates analyzed.
+   144800 gates analyzed.
+   144900 gates analyzed.
+   145000 gates analyzed.
+   145100 gates analyzed.
+   145200 gates analyzed.
+   145300 gates analyzed.
+   145400 gates analyzed.
+   145500 gates analyzed.
+   145600 gates analyzed.
+   145700 gates analyzed.
+   145800 gates analyzed.
+   145900 gates analyzed.
+   146000 gates analyzed.
+   146100 gates analyzed.
+   146200 gates analyzed.
+   146300 gates analyzed.
+   146400 gates analyzed.
+   146500 gates analyzed.
+   146600 gates analyzed.
+   146700 gates analyzed.
+   146800 gates analyzed.
+   146900 gates analyzed.
+   147000 gates analyzed.
+   147100 gates analyzed.
+   147200 gates analyzed.
+   147300 gates analyzed.
+   147400 gates analyzed.
+   147500 gates analyzed.
+   147600 gates analyzed.
+   147700 gates analyzed.
+   147800 gates analyzed.
+   147900 gates analyzed.
+   148000 gates analyzed.
+   148100 gates analyzed.
+   148200 gates analyzed.
+   148300 gates analyzed.
+   148400 gates analyzed.
+   148500 gates analyzed.
+   148600 gates analyzed.
+   148700 gates analyzed.
+   148800 gates analyzed.
+   148900 gates analyzed.
+   149000 gates analyzed.
+   149100 gates analyzed.
+   149200 gates analyzed.
+   149300 gates analyzed.
+   149400 gates analyzed.
+   149500 gates analyzed.
+   149600 gates analyzed.
+   149700 gates analyzed.
+   149800 gates analyzed.
+   149900 gates analyzed.
+   150000 gates analyzed.
+   150100 gates analyzed.
+   150200 gates analyzed.
+   150300 gates analyzed.
+   150400 gates analyzed.
+   150500 gates analyzed.
+   150600 gates analyzed.
+   150700 gates analyzed.
+   150800 gates analyzed.
+   150900 gates analyzed.
+   151000 gates analyzed.
+   151100 gates analyzed.
+   151200 gates analyzed.
+   151300 gates analyzed.
+   151400 gates analyzed.
+   151500 gates analyzed.
+   151600 gates analyzed.
+   151700 gates analyzed.
+   151800 gates analyzed.
+   151900 gates analyzed.
+   152000 gates analyzed.
+   152100 gates analyzed.
+   152200 gates analyzed.
+   152300 gates analyzed.
+   152400 gates analyzed.
+   152500 gates analyzed.
+   152600 gates analyzed.
+   152700 gates analyzed.
+   152800 gates analyzed.
+   152900 gates analyzed.
+   153000 gates analyzed.
+   153100 gates analyzed.
+   153200 gates analyzed.
+   153300 gates analyzed.
+   153400 gates analyzed.
+   153500 gates analyzed.
+   153600 gates analyzed.
+   153700 gates analyzed.
+   153800 gates analyzed.
+   153900 gates analyzed.
+   154000 gates analyzed.
+   154100 gates analyzed.
+   154200 gates analyzed.
+   154300 gates analyzed.
+   154400 gates analyzed.
+   154500 gates analyzed.
+   154600 gates analyzed.
+   154700 gates analyzed.
+   154800 gates analyzed.
+   154900 gates analyzed.
+   155000 gates analyzed.
+   155100 gates analyzed.
+   155200 gates analyzed.
+   155300 gates analyzed.
+   155400 gates analyzed.
+   155500 gates analyzed.
+   155600 gates analyzed.
+   155700 gates analyzed.
+   155800 gates analyzed.
+   155900 gates analyzed.
+   156000 gates analyzed.
+   156100 gates analyzed.
+   156200 gates analyzed.
+   156300 gates analyzed.
+   156400 gates analyzed.
+   156500 gates analyzed.
+   156600 gates analyzed.
+   156700 gates analyzed.
+   156800 gates analyzed.
+   156900 gates analyzed.
+   157000 gates analyzed.
+   157100 gates analyzed.
+   157200 gates analyzed.
+   157300 gates analyzed.
+   157400 gates analyzed.
+   157500 gates analyzed.
+   157600 gates analyzed.
+   157700 gates analyzed.
+   157800 gates analyzed.
+   157900 gates analyzed.
+   158000 gates analyzed.
+   158100 gates analyzed.
+   158200 gates analyzed.
+   158300 gates analyzed.
+   158400 gates analyzed.
+   158500 gates analyzed.
+   158600 gates analyzed.
+   158700 gates analyzed.
+   158800 gates analyzed.
+   158900 gates analyzed.
+   159000 gates analyzed.
+   159100 gates analyzed.
+   159200 gates analyzed.
+   159300 gates analyzed.
+   159400 gates analyzed.
+   159500 gates analyzed.
+   159600 gates analyzed.
+   159700 gates analyzed.
+   159800 gates analyzed.
+   159900 gates analyzed.
+   160000 gates analyzed.
+   160100 gates analyzed.
+   160200 gates analyzed.
+   160300 gates analyzed.
+   160400 gates analyzed.
+   160500 gates analyzed.
+   160600 gates analyzed.
+   160700 gates analyzed.
+   160800 gates analyzed.
+   160900 gates analyzed.
+   161000 gates analyzed.
+   161100 gates analyzed.
+   161200 gates analyzed.
+   161300 gates analyzed.
+   161400 gates analyzed.
+   161500 gates analyzed.
+   161600 gates analyzed.
+   161700 gates analyzed.
+   161800 gates analyzed.
+   161900 gates analyzed.
+   162000 gates analyzed.
+   162100 gates analyzed.
+   162200 gates analyzed.
+   162300 gates analyzed.
+   162400 gates analyzed.
+   162500 gates analyzed.
+   162600 gates analyzed.
+   162700 gates analyzed.
+   162800 gates analyzed.
+   162900 gates analyzed.
+   163000 gates analyzed.
+   163100 gates analyzed.
+   163200 gates analyzed.
+   163300 gates analyzed.
+   163400 gates analyzed.
+   163500 gates analyzed.
+   163600 gates analyzed.
+   163700 gates analyzed.
+   163800 gates analyzed.
+   163900 gates analyzed.
+   164000 gates analyzed.
+   164100 gates analyzed.
+   164200 gates analyzed.
+   164300 gates analyzed.
+   164400 gates analyzed.
+   164500 gates analyzed.
+   164600 gates analyzed.
+   164700 gates analyzed.
+   164800 gates analyzed.
+   164900 gates analyzed.
+   165000 gates analyzed.
+   165100 gates analyzed.
+   165200 gates analyzed.
+   165300 gates analyzed.
+   165400 gates analyzed.
+   165500 gates analyzed.
+   165600 gates analyzed.
+   165700 gates analyzed.
+   165800 gates analyzed.
+   165900 gates analyzed.
+   166000 gates analyzed.
+   166100 gates analyzed.
+   166200 gates analyzed.
+   166300 gates analyzed.
+   166400 gates analyzed.
+   166500 gates analyzed.
+   166600 gates analyzed.
+   166700 gates analyzed.
+   166800 gates analyzed.
+   166900 gates analyzed.
+   167000 gates analyzed.
+   167100 gates analyzed.
+   167200 gates analyzed.
+   167300 gates analyzed.
+   167400 gates analyzed.
+   167500 gates analyzed.
+   167600 gates analyzed.
+   167700 gates analyzed.
+   167800 gates analyzed.
+   167900 gates analyzed.
+   168000 gates analyzed.
+   168100 gates analyzed.
+   168200 gates analyzed.
+   168300 gates analyzed.
+   168400 gates analyzed.
+   168500 gates analyzed.
+   168600 gates analyzed.
+   168700 gates analyzed.
+   168800 gates analyzed.
+   168900 gates analyzed.
+   169000 gates analyzed.
+   169100 gates analyzed.
+   169200 gates analyzed.
+   169300 gates analyzed.
+   169400 gates analyzed.
+   169500 gates analyzed.
+   169600 gates analyzed.
+   169700 gates analyzed.
+   169800 gates analyzed.
+   169900 gates analyzed.
+   170000 gates analyzed.
+   170100 gates analyzed.
+   170200 gates analyzed.
+   170300 gates analyzed.
+   170400 gates analyzed.
+   170500 gates analyzed.
+   170600 gates analyzed.
+   170700 gates analyzed.
+   170800 gates analyzed.
+   170900 gates analyzed.
+   171000 gates analyzed.
+   171100 gates analyzed.
+   171200 gates analyzed.
+   171300 gates analyzed.
+   171400 gates analyzed.
+   171500 gates analyzed.
+   171600 gates analyzed.
+   171700 gates analyzed.
+   171800 gates analyzed.
+   171900 gates analyzed.
+   172000 gates analyzed.
+   172100 gates analyzed.
+   172200 gates analyzed.
+   172300 gates analyzed.
+   172400 gates analyzed.
+   172500 gates analyzed.
+   172600 gates analyzed.
+   172700 gates analyzed.
+   172800 gates analyzed.
+   172900 gates analyzed.
+   173000 gates analyzed.
+   173100 gates analyzed.
+   173200 gates analyzed.
+   173300 gates analyzed.
+   173400 gates analyzed.
+   173500 gates analyzed.
+   173600 gates analyzed.
+   173700 gates analyzed.
+   173800 gates analyzed.
+   173900 gates analyzed.
+   174000 gates analyzed.
+   174100 gates analyzed.
+   174200 gates analyzed.
+   174300 gates analyzed.
+   174400 gates analyzed.
+   174500 gates analyzed.
+   174600 gates analyzed.
+   174700 gates analyzed.
+   174800 gates analyzed.
+   174900 gates analyzed.
+   175000 gates analyzed.
+   175100 gates analyzed.
+   175200 gates analyzed.
+   175300 gates analyzed.
+   175400 gates analyzed.
+   175500 gates analyzed.
+   175600 gates analyzed.
+   175700 gates analyzed.
+   175800 gates analyzed.
+   175900 gates analyzed.
+   176000 gates analyzed.
+   176100 gates analyzed.
+   176200 gates analyzed.
+   176300 gates analyzed.
+   176400 gates analyzed.
+   176500 gates analyzed.
+   176600 gates analyzed.
+   176700 gates analyzed.
+   176800 gates analyzed.
+   176900 gates analyzed.
+   177000 gates analyzed.
+   177100 gates analyzed.
+   177200 gates analyzed.
+   177300 gates analyzed.
+   177400 gates analyzed.
+   177500 gates analyzed.
+   177600 gates analyzed.
+   177700 gates analyzed.
+   177800 gates analyzed.
+   177900 gates analyzed.
+   178000 gates analyzed.
+   178100 gates analyzed.
+   178200 gates analyzed.
+   178300 gates analyzed.
+   178400 gates analyzed.
+   178500 gates analyzed.
+   178600 gates analyzed.
+   178700 gates analyzed.
+   178800 gates analyzed.
+   178900 gates analyzed.
+   179000 gates analyzed.
+   179100 gates analyzed.
+Cell: _21852_
+Antenna violation detected at plane metal2
+Effective antenna ratio 753.967 > limit 400
+Gate rect (435026 96879) to (435056 96963)
+Antenna rect (441068 97174) to (441120 97180)
+   179200 gates analyzed.
+   179300 gates analyzed.
+   179400 gates analyzed.
+   179500 gates analyzed.
+   179600 gates analyzed.
+   179700 gates analyzed.
+   179800 gates analyzed.
+   179900 gates analyzed.
+   180000 gates analyzed.
+   180100 gates analyzed.
+   180200 gates analyzed.
+   180300 gates analyzed.
+   180400 gates analyzed.
+   180500 gates analyzed.
+   180600 gates analyzed.
+   180700 gates analyzed.
+   180800 gates analyzed.
+   180900 gates analyzed.
+   181000 gates analyzed.
+   181100 gates analyzed.
+   181200 gates analyzed.
+   181300 gates analyzed.
+   181400 gates analyzed.
+   181500 gates analyzed.
+   181600 gates analyzed.
+   181700 gates analyzed.
+   181800 gates analyzed.
+   181900 gates analyzed.
+   182000 gates analyzed.
+   182100 gates analyzed.
+   182200 gates analyzed.
+   182300 gates analyzed.
+   182400 gates analyzed.
+   182500 gates analyzed.
+   182600 gates analyzed.
+   182700 gates analyzed.
+   182800 gates analyzed.
+   182900 gates analyzed.
+   183000 gates analyzed.
+   183100 gates analyzed.
+   183200 gates analyzed.
+   183300 gates analyzed.
+   183400 gates analyzed.
+   183500 gates analyzed.
+   183600 gates analyzed.
+   183700 gates analyzed.
+   183800 gates analyzed.
+   183900 gates analyzed.
+   184000 gates analyzed.
+   184100 gates analyzed.
+   184200 gates analyzed.
+   184300 gates analyzed.
+   184400 gates analyzed.
+   184500 gates analyzed.
+   184600 gates analyzed.
+   184700 gates analyzed.
+   184800 gates analyzed.
+   184900 gates analyzed.
+   185000 gates analyzed.
+   185100 gates analyzed.
+   185200 gates analyzed.
+   185300 gates analyzed.
+   185400 gates analyzed.
+   185500 gates analyzed.
+   185600 gates analyzed.
+   185700 gates analyzed.
+   185800 gates analyzed.
+   185900 gates analyzed.
+   186000 gates analyzed.
+   186100 gates analyzed.
+   186200 gates analyzed.
+   186300 gates analyzed.
+   186400 gates analyzed.
+   186500 gates analyzed.
+   186600 gates analyzed.
+   186700 gates analyzed.
+   186800 gates analyzed.
+   186900 gates analyzed.
+   187000 gates analyzed.
+   187100 gates analyzed.
+   187200 gates analyzed.
+   187300 gates analyzed.
+   187400 gates analyzed.
+   187500 gates analyzed.
+   187600 gates analyzed.
+   187700 gates analyzed.
+   187800 gates analyzed.
+   187900 gates analyzed.
+   188000 gates analyzed.
+   188100 gates analyzed.
+   188200 gates analyzed.
+   188300 gates analyzed.
+   188400 gates analyzed.
+   188500 gates analyzed.
+   188600 gates analyzed.
+   188700 gates analyzed.
+   188800 gates analyzed.
+   188900 gates analyzed.
+   189000 gates analyzed.
+   189100 gates analyzed.
+   189200 gates analyzed.
+   189300 gates analyzed.
+   189400 gates analyzed.
+   189500 gates analyzed.
+   189600 gates analyzed.
+   189700 gates analyzed.
+   189800 gates analyzed.
+   189900 gates analyzed.
+   190000 gates analyzed.
+   190100 gates analyzed.
+   190200 gates analyzed.
+   190300 gates analyzed.
+   190400 gates analyzed.
+   190500 gates analyzed.
+   190600 gates analyzed.
+   190700 gates analyzed.
+   190800 gates analyzed.
+   190900 gates analyzed.
+   191000 gates analyzed.
+   191100 gates analyzed.
+   191200 gates analyzed.
+   191300 gates analyzed.
+   191400 gates analyzed.
+   191500 gates analyzed.
+   191600 gates analyzed.
+   191700 gates analyzed.
+   191800 gates analyzed.
+   191900 gates analyzed.
+   192000 gates analyzed.
+Cell: _17752_
+Antenna violation detected at plane metal3
+Effective antenna ratio 428.433 > limit 400
+Gate rect (77895 429379) to (77925 429463)
+Antenna rect (77017 425579) to (77083 425582)
+   192100 gates analyzed.
+   192200 gates analyzed.
+   192300 gates analyzed.
+   192400 gates analyzed.
+   192500 gates analyzed.
+   192600 gates analyzed.
+   192700 gates analyzed.
+   192800 gates analyzed.
+   192900 gates analyzed.
+   193000 gates analyzed.
+   193100 gates analyzed.
+   193200 gates analyzed.
+   193300 gates analyzed.
+   193400 gates analyzed.
+   193500 gates analyzed.
+   193600 gates analyzed.
+   193700 gates analyzed.
+   193800 gates analyzed.
+   193900 gates analyzed.
+   194000 gates analyzed.
+   194100 gates analyzed.
+   194200 gates analyzed.
+   194300 gates analyzed.
+   194400 gates analyzed.
+   194500 gates analyzed.
+   194600 gates analyzed.
+   194700 gates analyzed.
+   194800 gates analyzed.
+   194900 gates analyzed.
+   195000 gates analyzed.
+   195100 gates analyzed.
+   195200 gates analyzed.
+   195300 gates analyzed.
+   195400 gates analyzed.
+   195500 gates analyzed.
+   195600 gates analyzed.
+   195700 gates analyzed.
+   195800 gates analyzed.
+   195900 gates analyzed.
+   196000 gates analyzed.
+   196100 gates analyzed.
+   196200 gates analyzed.
+   196300 gates analyzed.
+   196400 gates analyzed.
+   196500 gates analyzed.
+   196600 gates analyzed.
+   196700 gates analyzed.
+   196800 gates analyzed.
+   196900 gates analyzed.
+   197000 gates analyzed.
+   197100 gates analyzed.
+   197200 gates analyzed.
+   197300 gates analyzed.
+   197400 gates analyzed.
+   197500 gates analyzed.
+   197600 gates analyzed.
+   197700 gates analyzed.
+   197800 gates analyzed.
+   197900 gates analyzed.
+   198000 gates analyzed.
+   198100 gates analyzed.
+   198200 gates analyzed.
+   198300 gates analyzed.
+   198400 gates analyzed.
+   198500 gates analyzed.
+   198600 gates analyzed.
+   198700 gates analyzed.
+   198800 gates analyzed.
+   198900 gates analyzed.
+   199000 gates analyzed.
+   199100 gates analyzed.
+   199200 gates analyzed.
+   199300 gates analyzed.
+   199400 gates analyzed.
+   199500 gates analyzed.
+   199600 gates analyzed.
+   199700 gates analyzed.
+   199800 gates analyzed.
+   199900 gates analyzed.
+   200000 gates analyzed.
+   200100 gates analyzed.
+   200200 gates analyzed.
+   200300 gates analyzed.
+   200400 gates analyzed.
+   200500 gates analyzed.
+   200600 gates analyzed.
+   200700 gates analyzed.
+   200800 gates analyzed.
+   200900 gates analyzed.
+   201000 gates analyzed.
+   201100 gates analyzed.
+   201200 gates analyzed.
+   201300 gates analyzed.
+   201400 gates analyzed.
+   201500 gates analyzed.
+   201600 gates analyzed.
+   201700 gates analyzed.
+   201800 gates analyzed.
+   201900 gates analyzed.
+   202000 gates analyzed.
+   202100 gates analyzed.
+   202200 gates analyzed.
+   202300 gates analyzed.
+   202400 gates analyzed.
+   202500 gates analyzed.
+   202600 gates analyzed.
+   202700 gates analyzed.
+   202800 gates analyzed.
+   202900 gates analyzed.
+   203000 gates analyzed.
+   203100 gates analyzed.
+   203200 gates analyzed.
+   203300 gates analyzed.
+   203400 gates analyzed.
+   203500 gates analyzed.
+   203600 gates analyzed.
+   203700 gates analyzed.
+   203800 gates analyzed.
+   203900 gates analyzed.
+   204000 gates analyzed.
+   204100 gates analyzed.
+   204200 gates analyzed.
+   204300 gates analyzed.
+   204400 gates analyzed.
+   204500 gates analyzed.
+   204600 gates analyzed.
+   204700 gates analyzed.
+   204800 gates analyzed.
+   204900 gates analyzed.
+   205000 gates analyzed.
+   205100 gates analyzed.
+   205200 gates analyzed.
+   205300 gates analyzed.
+   205400 gates analyzed.
+   205500 gates analyzed.
+   205600 gates analyzed.
+   205700 gates analyzed.
+   205800 gates analyzed.
+   205900 gates analyzed.
+   206000 gates analyzed.
+   206100 gates analyzed.
+   206200 gates analyzed.
+   206300 gates analyzed.
+   206400 gates analyzed.
+   206500 gates analyzed.
+   206600 gates analyzed.
+   206700 gates analyzed.
+   206800 gates analyzed.
+   206900 gates analyzed.
+   207000 gates analyzed.
+   207100 gates analyzed.
+   207200 gates analyzed.
+   207300 gates analyzed.
+   207400 gates analyzed.
+   207500 gates analyzed.
+   207600 gates analyzed.
+   207700 gates analyzed.
+   207800 gates analyzed.
+   207900 gates analyzed.
+   208000 gates analyzed.
+   208100 gates analyzed.
+   208200 gates analyzed.
+   208300 gates analyzed.
+   208400 gates analyzed.
+   208500 gates analyzed.
+   208600 gates analyzed.
+   208700 gates analyzed.
+   208800 gates analyzed.
+   208900 gates analyzed.
+   209000 gates analyzed.
+   209100 gates analyzed.
+   209200 gates analyzed.
+   209300 gates analyzed.
+   209400 gates analyzed.
+   209500 gates analyzed.
+   209600 gates analyzed.
+   209700 gates analyzed.
+   209800 gates analyzed.
+   209900 gates analyzed.
+   210000 gates analyzed.
+   210100 gates analyzed.
+   210200 gates analyzed.
+   210300 gates analyzed.
+   210400 gates analyzed.
+   210500 gates analyzed.
+   210600 gates analyzed.
+   210700 gates analyzed.
+   210800 gates analyzed.
+   210900 gates analyzed.
+   211000 gates analyzed.
+   211100 gates analyzed.
+   211200 gates analyzed.
+   211300 gates analyzed.
+   211400 gates analyzed.
+   211500 gates analyzed.
+   211600 gates analyzed.
+   211700 gates analyzed.
+   211800 gates analyzed.
+   211900 gates analyzed.
+   212000 gates analyzed.
+Cell: _13667_
+Antenna violation detected at plane metal1
+Effective antenna ratio 553.415 > limit 400
+Gate rect (89260 236687) to (89290 236887)
+Antenna rect (89257 236923) to (89315 236929)
+Cell: _18056_
+Antenna violation detected at plane metal2
+Effective antenna ratio 664.034 > limit 400
+Gate rect (66963 537519) to (66993 537649)
+Antenna rect (67088 537746) to (67140 537752)
+   212100 gates analyzed.
+   212200 gates analyzed.
+   212300 gates analyzed.
+   212400 gates analyzed.
+   212500 gates analyzed.
+   212600 gates analyzed.
+   212700 gates analyzed.
+   212800 gates analyzed.
+   212900 gates analyzed.
+   213000 gates analyzed.
+   213100 gates analyzed.
+   213200 gates analyzed.
+   213300 gates analyzed.
+   213400 gates analyzed.
+   213500 gates analyzed.
+   213600 gates analyzed.
+   213700 gates analyzed.
+   213800 gates analyzed.
+   213900 gates analyzed.
+   214000 gates analyzed.
+   214100 gates analyzed.
+   214200 gates analyzed.
+   214300 gates analyzed.
+   214400 gates analyzed.
+   214500 gates analyzed.
+   214600 gates analyzed.
+   214700 gates analyzed.
+   214800 gates analyzed.
+   214900 gates analyzed.
+   215000 gates analyzed.
+   215100 gates analyzed.
+   215200 gates analyzed.
+   215300 gates analyzed.
+   215400 gates analyzed.
+   215500 gates analyzed.
+   215600 gates analyzed.
+   215700 gates analyzed.
+   215800 gates analyzed.
+   215900 gates analyzed.
+   216000 gates analyzed.
+   216100 gates analyzed.
+   216200 gates analyzed.
+   216300 gates analyzed.
+   216400 gates analyzed.
+   216500 gates analyzed.
+   216600 gates analyzed.
+   216700 gates analyzed.
+   216800 gates analyzed.
+   216900 gates analyzed.
+   217000 gates analyzed.
+   217100 gates analyzed.
+   217200 gates analyzed.
+   217300 gates analyzed.
+   217400 gates analyzed.
+   217500 gates analyzed.
+   217600 gates analyzed.
+   217700 gates analyzed.
+   217800 gates analyzed.
+   217900 gates analyzed.
+   218000 gates analyzed.
+   218100 gates analyzed.
+   218200 gates analyzed.
+   218300 gates analyzed.
+Cell: _17270_
+Antenna violation detected at plane metal1
+Effective antenna ratio 482.157 > limit 400
+Gate rect (314791 501615) to (314821 501745)
+Antenna rect (314789 501783) to (314847 501789)
+   218400 gates analyzed.
+   218500 gates analyzed.
+   218600 gates analyzed.
+   218700 gates analyzed.
+   218800 gates analyzed.
+   218900 gates analyzed.
+   219000 gates analyzed.
+   219100 gates analyzed.
+   219200 gates analyzed.
+Cell: _17940_
+Antenna violation detected at plane metal2
+Effective antenna ratio 520.125 > limit 400
+Gate rect (68521 451573) to (68551 451657)
+Antenna rect (68560 451726) to (68612 451732)
+   219300 gates analyzed.
+   219400 gates analyzed.
+   219500 gates analyzed.
+   219600 gates analyzed.
+   219700 gates analyzed.
+   219800 gates analyzed.
+   219900 gates analyzed.
+   220000 gates analyzed.
+   220100 gates analyzed.
+   220200 gates analyzed.
+   220300 gates analyzed.
+   220400 gates analyzed.
+   220500 gates analyzed.
+   220600 gates analyzed.
+antennacheck finished.
+ANTENNA_DONE
+== 4432 s

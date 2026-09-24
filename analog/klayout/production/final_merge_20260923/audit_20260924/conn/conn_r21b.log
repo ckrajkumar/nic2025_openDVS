@@ -1,0 +1,9 @@
+ERROR: :/built-in-pymacros/xschem_bridge.py:290: AttributeError: 'NoneType' object has no attribute 'menu'
+  :/built-in-pymacros/xschem_bridge.py:290
+  :/built-in-pymacros/xschem_bridge.lym:3 (class AttributeError)
+extracted in 57 s
+BiasBranchnMasterx11 labelled nets 405 pins 404 57 s
+pixel_4tile labelled nets 784 pins 784 58 s
+pixel_test_structure labelled nets 27 pins 22 58 s
+photodiode_test_structure labelled nets 6 pins 5 58 s
+done 58 s unlabelled power nets 0

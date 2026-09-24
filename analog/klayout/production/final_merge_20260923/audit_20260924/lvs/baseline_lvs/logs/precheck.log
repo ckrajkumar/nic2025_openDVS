@@ -1,0 +1,33 @@
+2026-09-24 07:00:07 [INFO] Extracting compressed files in: /home/rpgraca/opendvs_final/project_audit_orig
+2026-09-24 07:00:07 [INFO] make uncompress produced 1 gds/*.gds file(s): user_project_wrapper.gds (make exit 0)
+2026-09-24 07:00:07 [INFO] Project type: digital
+2026-09-24 07:00:07 [INFO] GDS hash (user_project_wrapper): a56e2a2c0a5ece94a19e86e23e53ff42ab7507f1
+2026-09-24 07:00:07 [INFO] Tools: KLayout v0.29.12 | Magic v8.3.471
+2026-09-24 07:00:07 [INFO] PDK: SKY130A unknown
+2026-09-24 07:00:07 [INFO] Running 2 checks: [lvs, oeb]
+2026-09-24 07:00:07 [INFO] Loading LVS environment from /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/lvs_config.json
+2026-09-24 07:00:07 [INFO] EXTRACT_FLATGLOB: 
+2026-09-24 07:00:07 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_* *__decap_*
+2026-09-24 07:00:07 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-09-24 07:00:07 [INFO] LVS_FLATTEN: 
+2026-09-24 07:00:07 [INFO] LVS_NOFLATTEN: pixel_4tile BiasBranchnMasterx11 pixel_test_structure photodiode_test_structure sky130_ef_sc_hd__decap_* sky130_fd_sc_hd__decap_* sky130_fd_sc_hd__tapvpwrvgnd_* *__fill_*
+2026-09-24 07:00:07 [INFO] LVS_IGNORE: 
+2026-09-24 07:00:07 [INFO] LVS_SPICE_FILES: /home/rpgraca/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /home/rpgraca/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/pixel_4tile_layout_lvs2.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/BiasBranchnMasterx11_layout_lvs.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/photodiode_test_structure_layout_lvs.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/pixel_test_structure_layout_lvs.spice
+2026-09-24 07:00:07 [INFO] LVS_VERILOG_FILES: /home/rpgraca/opendvs_final/project_audit_orig/verilog/gl/user_project_wrapper.v
+2026-09-24 07:00:07 [INFO] LAYOUT_FILE: /home/rpgraca/opendvs_final/project_audit_orig/gds/user_project_wrapper.gds
+2026-09-24 07:00:07 [INFO] Running: run_be_checks --nooeb
+2026-09-24 07:00:07 [INFO] LVS output directory: /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs
+2026-09-24 07:44:33 [ERROR] LVS FAILED (stat=1), see /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/logs/LVS_check.log
+2026-09-24 07:44:33 [INFO] Loading LVS environment from /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/lvs_config.json
+2026-09-24 07:44:33 [INFO] EXTRACT_FLATGLOB: 
+2026-09-24 07:44:33 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_* *__decap_*
+2026-09-24 07:44:33 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-09-24 07:44:33 [INFO] LVS_FLATTEN: 
+2026-09-24 07:44:33 [INFO] LVS_NOFLATTEN: pixel_4tile BiasBranchnMasterx11 pixel_test_structure photodiode_test_structure sky130_ef_sc_hd__decap_* sky130_fd_sc_hd__decap_* sky130_fd_sc_hd__tapvpwrvgnd_* *__fill_*
+2026-09-24 07:44:33 [INFO] LVS_IGNORE: 
+2026-09-24 07:44:33 [INFO] LVS_SPICE_FILES: /home/rpgraca/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /home/rpgraca/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/pixel_4tile_layout_lvs2.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/BiasBranchnMasterx11_layout_lvs.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/photodiode_test_structure_layout_lvs.spice /home/rpgraca/opendvs_final/project_audit_orig/lvs/user_project_wrapper/pixel_test_structure_layout_lvs.spice
+2026-09-24 07:44:33 [INFO] LVS_VERILOG_FILES: /home/rpgraca/opendvs_final/project_audit_orig/verilog/gl/user_project_wrapper.v
+2026-09-24 07:44:33 [INFO] LAYOUT_FILE: /home/rpgraca/opendvs_final/project_audit_orig/gds/user_project_wrapper.gds
+2026-09-24 07:44:33 [INFO] Running: run_oeb_check --noextract
+2026-09-24 07:44:33 [INFO] OEB output directory: /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs
+2026-09-24 07:44:37 [ERROR] OEB FAILED (stat=5), see /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/logs/OEB_check.log

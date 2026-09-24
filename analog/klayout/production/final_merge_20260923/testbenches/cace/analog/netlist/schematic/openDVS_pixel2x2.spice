@@ -1,0 +1,121 @@
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/openDVS_pixel2x2.sch
+.subckt openDVS_pixel2x2 pixRst[1] pixRst[0] rowReadON[1] rowReadON[0] rowReadOFF[1] rowReadOFF[0] readLine[1] readLine[0] vpd[3]
++ vpd[2] vpd[1] vpd[0] VddA18 GndA GndD OnBn OffBn DiffBn PrSFBp RefrBp PrBp
+*.PININFO PrBp:B GndA:B VddA18:B PrSFBp:B DiffBn:B OnBn:B OffBn:B RefrBp:B GndD:B vpd[3:0]:B pixRst[1:0]:I rowReadON[1:0]:I
+*+ rowReadOFF[1:0]:I readLine[1:0]:B
+xPix[3] rowReadON[1] VddA18 PrBp GndA vpd[3] rowReadOFF[1] pixRst[1] PrSFBp DiffBn OnBn OffBn RefrBp readLine[1] GndD
++ openDVS_pixel
+xPix[2] rowReadON[0] VddA18 PrBp GndA vpd[2] rowReadOFF[0] pixRst[1] PrSFBp DiffBn OnBn OffBn RefrBp readLine[1] GndD
++ openDVS_pixel
+xPix[1] rowReadON[1] VddA18 PrBp GndA vpd[1] rowReadOFF[1] pixRst[0] PrSFBp DiffBn OnBn OffBn RefrBp readLine[0] GndD
++ openDVS_pixel
+xPix[0] rowReadON[0] VddA18 PrBp GndA vpd[0] rowReadOFF[0] pixRst[0] PrSFBp DiffBn OnBn OffBn RefrBp readLine[0] GndD
++ openDVS_pixel
+.ends
+
+* expanding   symbol:  openDVS_pixel.sym # of pins=14
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/openDVS_pixel.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/openDVS_pixel.sch
+.subckt openDVS_pixel rowReadON VddA18 PrBp GndA vpd rowReadOFF pixRst PrSFBp DiffBn OnBn OffBn RefrBp readLine GndD
+*.PININFO vpd:B PrBp:B GndA:B VddA18:B PrSFBp:B DiffBn:B OnBn:B OffBn:B RefrBp:B pixRst:I rowReadON:I rowReadOFF:I readLine:B
+*+ GndD:B
+xpr VddA18 PrBp GndA vpd vpr PixelPhotoreceptor
+xsf VddA18 PrSFBp GndA vpr vsf PixelSourceFollower
+xchAmp VddA18 DiffBn GndA vsf vdiff nRst PixelChangeAmplifier
+xcomp VddA18 OnBn GndA vdiff ON OffBn nOFF PixelComparators
+xhandshake rowReadOFF GndA rowReadON readLine ON nOFF GndD PixelHandshake
+xrst rowReadON GndA pixRst nRst RefrBp VddA18 PixelResetGen
+.ends
+
+
+* expanding   symbol:  PixelPhotoreceptor.sym # of pins=5
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelPhotoreceptor.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelPhotoreceptor.sch
+.subckt PixelPhotoreceptor VddA18 PrBp GndA vpd vpr
+*.PININFO PrBp:B VddA18:B vpd:B GndA:B vpr:B
+XMpd VddA18 vpr vpd GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XMpr_amp vpr vpd GndA GndA sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMprBias vpr PrBp VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1 ad=150e-3 as=150e-3 pd=1.6 ps=1.6 nrd=0.58 nrs=0.58 sa=0
++ sb=0 sd=0 mult=1
+XD1 GndA vpd sky130_fd_pr__model__parasitic__diode_ps2dn area=1e12 perim=4e6
+.ends
+
+
+* expanding   symbol:  PixelSourceFollower.sym # of pins=5
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelSourceFollower.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelSourceFollower.sch
+.subckt PixelSourceFollower VddA18 PrSFBp GndA vpr vsf
+*.PININFO GndA:B PrSFBp:B vpr:B vsf:B VddA18:B
+XMsfBias vsf PrSFBp VddA18 VddA18 sky130_fd_pr__pfet_01v8_hvt L=1.5 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMsf GndA vpr vsf VddA18 sky130_fd_pr__pfet_01v8 L=0.25 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  PixelChangeAmplifier.sym # of pins=6
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelChangeAmplifier.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelChangeAmplifier.sch
+.subckt PixelChangeAmplifier VddA18 DiffBn GndA vsf vdiff nRst
+*.PININFO DiffBn:B vsf:B VddA18:B GndA:B vdiff:B nRst:B
+XC1b vd vsf sky130_fd_pr__cap_mim_m3_1 W=6.47 L=1.05 MF=1
+XC2 vd vdiff sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1
+XMchAmpBias vdiff DiffBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58
++ nrd=0.193333333333333 nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XMrst vdiff nRst vd VddA18 sky130_fd_pr__pfet_01v8_hvt L=0.42 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMchAmp vdiff vd VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58 nrd=0.193333333333333
++ nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XC1a vd vsf sky130_fd_pr__cap_mim_m3_1 W=2.27 L=3.985 MF=1
+.ends
+
+
+* expanding   symbol:  PixelComparators.sym # of pins=7
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelComparators.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelComparators.sch
+.subckt PixelComparators VddA18 OnBn GndA vdiff ON OffBn nOFF
+*.PININFO OnBn:B OffBn:B VddA18:B vdiff:B GndA:B ON:B nOFF:B
+XMonBias ON OnBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58 nrd=0.193333333333333
++ nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XMoffBias nOFF OffBn GndA GndA sky130_fd_pr__nfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58 nrd=0.193333333333333
++ nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XMon ON vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58 nrd=0.193333333333333
++ nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XMoff nOFF vdiff VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58 nrd=0.193333333333333
++ nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  PixelHandshake.sym # of pins=7
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelHandshake.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelHandshake.sch
+.subckt PixelHandshake rowReadOFF GndA rowReadON readLine ON nOFF GndD
+*.PININFO rowReadON:I rowReadOFF:I readLine:B ON:B nOFF:B GndD:B GndA:B
+XMswON readLine rowReadON readLineONpd GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMoutON readLineONpd ON GndD GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMswOFF readLine rowReadOFF readLineOFFpd GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMoutOFF readLineOFFpd nOFF GndD GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+.ends
+
+
+* expanding   symbol:  PixelResetGen.sym # of pins=6
+** sym_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelResetGen.sym
+** sch_path: /home/rpgraca/opendvs-cace/analog/xschem/PixelResetGen.sch
+.subckt PixelResetGen rowRst GndA colRst nRst RefrBp VddA18
+*.PININFO rowRst:I colRst:I RefrBp:B GndA:B VddA18:B nRst:B
+XMPDrefrCol nRst colRst net1 GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMrefrBias nRst RefrBp VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMcapRefr VddA18 nRst VddA18 VddA18 sky130_fd_pr__pfet_01v8 L=1.5 W=1.5 nf=1 ad=0.435 as=0.435 pd=3.58 ps=3.58
++ nrd=0.193333333333333 nrs=0.193333333333333 sa=0 sb=0 sd=0 mult=1
+XMPDRefrRow net1 rowRst GndA GndA sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42
++ nrd=0.69047619047619 nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+.ends
+

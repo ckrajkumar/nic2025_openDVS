@@ -1,0 +1,5 @@
+ERROR: :/built-in-pymacros/xschem_bridge.py:290: AttributeError: 'NoneType' object has no attribute 'menu'
+  :/built-in-pymacros/xschem_bridge.py:290
+  :/built-in-pymacros/xschem_bridge.lym:3 (class AttributeError)
+cells A 68 B 68 onlyA [] onlyB []
+TOTAL cell/layer differences: 0

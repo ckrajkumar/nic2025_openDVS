@@ -1,0 +1,97 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dvs_readout_ctrl(readLine, rowReadON, rowReadOFF, pixRst,
+                        onEventCount, offEventCount, vdd, gnd);
+  input  readLine, vdd, gnd;
+  output rowReadON, rowReadOFF, pixRst, onEventCount, offEventCount;
+  electrical readLine, rowReadON, rowReadOFF, pixRst;
+  electrical onEventCount, offEventCount;
+  electrical vdd, gnd;
+
+  // timing parameters
+  parameter real xtperRead    = 3e-6    from (0:inf);    // read cycle period [s]
+  parameter real xtr          = 1e-9    from (0:inf);    // rise/fall time [s]
+  parameter real xtdReadON    = 100e-9  from [0:inf);    // delay of rowReadON pulse [s]
+  parameter real xtlenReadON  = 950e-9  from (0:inf);    // length of rowReadON pulse [s]
+  parameter real xtdReadOFF   = 1.06e-6 from [0:inf);    // delay of rowReadOFF pulse [s]
+  parameter real xtlenReadOFF = 950e-9  from (0:inf);    // length of rowReadOFF pulse [s]
+  parameter real xtdRstPhase  = 2.02e-6 from [0:inf);    // delay of reset-phase rowReadON [s]
+  parameter real xtlenRstPhase= 950e-9  from (0:inf);    // length of reset-phase pulse [s]
+  parameter real vth          = 0.9     from (0:inf);    // readLine threshold [V]
+
+  integer onCount, offCount;
+  real rowReadON_val, rowReadOFF_val, pixRst_val;
+  real vhi;
+
+  analog begin
+
+    @(initial_step) begin
+      onCount        = 0;
+      offCount       = 0;
+      rowReadON_val  = 0.0;
+      rowReadOFF_val = 0.0;
+      pixRst_val     = 0.0;
+    end
+
+    vhi = V(vdd, gnd);
+
+    // ---- cycle start: clear pixRst ----
+    @(timer(0, xtperRead)) begin
+      pixRst_val = 0.0;
+    end
+
+    // ---- rowReadON pulse (read phase) ----
+    @(timer(xtdReadON, xtperRead)) begin
+      rowReadON_val = vhi;
+    end
+
+    // sample readLine mid-pulse: low → ON event
+    @(timer(xtdReadON + xtlenReadON / 2.0, xtperRead)) begin
+      if (V(readLine, gnd) < vth) begin
+        onCount    = onCount + 1;
+        pixRst_val = vhi;
+        $strobe("[%e] ON event #%d  (readLine=%.3f V)", $abstime, onCount, V(readLine, gnd));
+      end
+    end
+
+    @(timer(xtdReadON + xtlenReadON, xtperRead)) begin
+      rowReadON_val = 0.0;
+    end
+
+    // ---- rowReadOFF pulse ----
+    @(timer(xtdReadOFF, xtperRead)) begin
+      rowReadOFF_val = vhi;
+    end
+
+    // sample readLine mid-pulse: high → OFF event
+    @(timer(xtdReadOFF + xtlenReadOFF / 2.0, xtperRead)) begin
+      if (V(readLine, gnd) > vth) begin
+        offCount   = offCount + 1;
+        pixRst_val = vhi;
+        $strobe("[%e] OFF event #%d (readLine=%.3f V)", $abstime, offCount, V(readLine, gnd));
+      end
+    end
+
+    @(timer(xtdReadOFF + xtlenReadOFF, xtperRead)) begin
+      rowReadOFF_val = 0.0;
+    end
+
+    // ---- rowReadON reset-phase pulse ----
+    @(timer(xtdRstPhase, xtperRead)) begin
+      rowReadON_val = vhi;
+    end
+
+    @(timer(xtdRstPhase + xtlenRstPhase, xtperRead)) begin
+      rowReadON_val = 0.0;
+    end
+
+    // ---- drive outputs ----
+    V(rowReadON, gnd)      <+ transition(rowReadON_val,  0, xtr, xtr);
+    V(rowReadOFF, gnd)     <+ transition(rowReadOFF_val, 0, xtr, xtr);
+    V(pixRst, gnd)         <+ transition(pixRst_val,     0, xtr, xtr);
+    V(onEventCount, gnd)   <+ transition(1.0 * onCount,  0, xtr, xtr);
+    V(offEventCount, gnd)  <+ transition(1.0 * offCount, 0, xtr, xtr);
+
+  end
+endmodule

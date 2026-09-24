@@ -1,0 +1,5 @@
+openDVS_pixel_4x4_bot = window col 15 row 10 of pixel_layout_tile_bot, box (360000,240000;408000,288000)
+   rules flagged (bot 4x4):
+Metal1 width < 0.14um (met1.1)
+MiM cap spacing to unrelated metal3 < 1.34um (capm.11)
+This layer can't abut or partially overlap between subcells

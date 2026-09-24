@@ -1,0 +1,225 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           BiasMasterBias
+description:    Master bias bootstrap startup transient characterization
+PDK:            sky130B
+
+cace_format:    5.2
+
+authorship:
+  designer:         Rui Graca
+  creation_date:    16 Apr, 2026
+
+paths:
+  root:             ..
+  schematic:        xschem
+  netlist:          netlist
+
+pins:
+  VddA18:
+    description: Positive analog power supply
+    type: power
+    direction: inout
+    Vmin: 1.53
+    Vmax: 2.07
+  GndA:
+    description: Analog ground
+    type: ground
+    direction: inout
+  BiasPowerDown:
+    description: If high, powers down bias generator
+    type: signal
+    direction: input
+  VMasterBiasN:
+    description: N-type master bias output
+    type: signal
+    direction: output
+  VMasterBiasP:
+    description: P-type master bias output
+    type: signal
+    direction: output
+  ICoarse1:
+    description: Coarse current output 1
+    type: signal
+    direction: output
+  ICoarse2:
+    description: Coarse current output 2
+    type: signal
+    direction: output
+  IR:
+    description: External resistor for the bias generator
+    type: signal
+    direction: inout
+
+default_conditions:
+  vdd:
+    description: Analog power supply voltage
+    display: Vdd
+    unit: V
+    minimum: 1.53
+    typical: 1.8
+    maximum: 2.07
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    minimum: -10
+    typical: 27
+    maximum: 70
+
+parameters:
+  bootstrap_startup:
+    display: Bootstrap startup characterization
+    spec:
+      vmasterbiasn:
+        display: VMasterBiasN
+        description: Final N-type master bias voltage
+        unit: V
+        minimum:
+          value: 0.1
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      vmasterbiasp:
+        display: VMasterBiasP
+        description: Final P-type master bias voltage
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vp_margin:
+        display: VDD - VMasterBiasP
+        description: Margin of VMasterBiasP from VDD (VDD - VMasterBiasP)
+        unit: V
+        minimum:
+          value: 0.1
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      tsettle_n:
+        display: Settling time N
+        description: Settling time of VMasterBiasN after PowerDown deasserts
+        unit: s
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 500e-6
+          fail: true
+      tsettle_p:
+        display: Settling time P
+        description: Settling time of VMasterBiasP after PowerDown deasserts
+        unit: s
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 500e-6
+          fail: true
+    tool:
+      ngspice:
+        template: tb_BiasMasterBias_bootstrap.sch
+        format: ascii
+        suffix: .data
+        variables: [vmasterbiasn, vmasterbiasp, vp_margin, tsettle_n, tsettle_p]
+    conditions:
+      vdd:
+        enumerate: [1.53, 1.8, 2.07]
+      temperature:
+        enumerate: [-10, 27, 70]
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
+
+  bootstrap_mc:
+    display: Bootstrap startup Monte Carlo
+    spec:
+      vmasterbiasn:
+        display: VMasterBiasN
+        description: Final N-type master bias voltage (MC)
+        unit: V
+        minimum:
+          value: 0.1
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      vmasterbiasp:
+        display: VMasterBiasP
+        description: Final P-type master bias voltage (MC)
+        unit: V
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: any
+      vp_margin:
+        display: VDD - VMasterBiasP
+        description: Margin of VMasterBiasP from VDD (MC)
+        unit: V
+        minimum:
+          value: 0.1
+          fail: true
+        typical:
+          value: any
+        maximum:
+          value: any
+      tsettle_n:
+        display: Settling time N
+        description: Settling time of VMasterBiasN (MC)
+        unit: s
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 500e-6
+          fail: true
+      tsettle_p:
+        display: Settling time P
+        description: Settling time of VMasterBiasP (MC)
+        unit: s
+        minimum:
+          value: any
+        typical:
+          value: any
+        maximum:
+          value: 500e-6
+          fail: true
+    tool:
+      ngspice:
+        template: tb_BiasMasterBias_bootstrap_mc.sch
+        collate: iterations
+        format: ascii
+        suffix: .data
+        variables: [vmasterbiasn, vmasterbiasp, vp_margin, tsettle_n, tsettle_p]
+    conditions:
+      vdd:
+        typical: 1.8
+      temperature:
+        typical: 27
+      corner:
+        typical: mc
+      iterations:
+        description: Monte Carlo iteration
+        display: Iteration
+        minimum: 0
+        maximum: 499
+        step: linear
+        stepsize: 1

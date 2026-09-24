@@ -1,0 +1,77 @@
+DESIGN NAME: user_project_wrapper
+WORK_ROOT   : /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb
+LOG_ROOT    : /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/logs
+SIGNOFF_ROOT: /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/outputs/reports
+ 
+Running CVC for oeb check...
+Creating /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/user_project_wrapper.cdl.gz
+CVC: Circuit Validation Check  Version 1.1.7
+CVC: Log output to /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvc.oeb.log
+CVC: Error output to /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvc.oeb.error.gz
+CVC: Debug output to /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvc.oeb.debug.gz
+CVC: Start: Thu Sep 24 07:44:35 2026
+
+Using the following parameters for CVC (Circuit Validation Check) from /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvcrc.oeb
+CVC_TOP = 'user_project_wrapper'
+CVC_NETLIST = '/home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/user_project_wrapper.cdl.gz'
+CVC_MODE = 'user_project_wrapper'
+CVC_MODEL_FILE = '/usr/local/lib/python3.9/site-packages/cf_precheck/be_checks/tech/sky130A/cvc.models'
+CVC_POWER_FILE = '/home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvc.power.user_project_wrapper'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/cvc.oeb.log'
+CVC_REPORT_TITLE = 'CVC user_project_wrapper'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+CVC_MODEL_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /home/rpgraca/opendvs_final/project_audit_orig/precheck_results/baseline_lvs/tmp_oeb/user_project_wrapper.cdl.gz
+
+Cdl fixed data size 13591838
+Usage CDL: Time: 1  Memory: 343332  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 1  Memory: 417040  I/O: 8  Swap: 0
+CVC: 730457(730457) instances, 362927(362927) nets, 759089(759089) devices.
+Setting power for mode...
+ERROR: could not expand signal vssa* signal vssa* not found
+ERROR: Could not find net vssa*
+Power definition error
+Setting models...
+CVC: Setting models ...
+Setting model tolerances...
+** Stage 1/7: Enter command ?> c 6
+
+> c 6
+continuing for 6 step(s)
+ERROR: skipped due to problems in model/power/fuse files
+ gpio/user/analog |   in   |   out  | analog |  oeb min/sim/max  | configuration
+
+No warnings or errors detected

@@ -1,0 +1,48 @@
+ERROR: :/built-in-pymacros/xschem_bridge.py:290: AttributeError: 'NoneType' object has no attribute 'menu'
+  :/built-in-pymacros/xschem_bridge.py:290
+  :/built-in-pymacros/xschem_bridge.lym:3 (class AttributeError)
+A placement pixel_4tile (1131,600;2823.265,2389.45)  B: (1131,600;2823.265,2389.45)
+A placement pixel_test_structure (518,880;638.24,1180)  B: (518,880;638.24,1180)
+L65/20: xor area inP 30965.760 inTS 54.618 elsewhere 0.00000 um2 (elsewhere polys 0)
+L65/44: xor area inP 19043.942 inTS 66.690 elsewhere 0.00000 um2 (elsewhere polys 0)
+L66/20: xor area inP 42084.762 inTS 10.275 elsewhere 0.00000 um2 (elsewhere polys 0)
+L66/44: xor area inP 15625.421 inTS 5.086 elsewhere 0.00000 um2 (elsewhere polys 0)
+L67/20: xor area inP 59627.008 inTS 34.401 elsewhere 0.00000 um2 (elsewhere polys 0)
+L67/44: xor area inP 6623.654 inTS 1.674 elsewhere 0.00000 um2 (elsewhere polys 0)
+L68/20: xor area inP 116540.557 inTS 36.529 elsewhere 0.00000 um2 (elsewhere polys 0)
+L68/44: xor area inP 8780.262 inTS 2.319 elsewhere 0.00000 um2 (elsewhere polys 0)
+L69/16: xor area inP 2683.699 inTS 0.270 elsewhere 0.00000 um2 (elsewhere polys 0)
+L69/20: xor area inP 250994.265 inTS 66.595 elsewhere 0.06860 um2 (elsewhere polys 1)
+   ELSE L69/20 (403.4,2622.28;403.77,2622.56) area 0.06860  added
+L69/44: xor area inP 786.432 inTS 0.192 elsewhere 0.04000 um2 (elsewhere polys 1)
+   ELSE L69/44 (403.485,2622.32;403.685,2622.52) area 0.04000  added
+L70/20: xor area inP 145457.152 inTS 35.512 elsewhere 0.00000 um2 (elsewhere polys 0)
+L70/44: xor area inP 7950.336 inTS 1.941 elsewhere 0.00000 um2 (elsewhere polys 0)
+L71/16: xor area inP 226516.480 inTS 108.340 elsewhere 0.00000 um2 (elsewhere polys 0)
+L71/20: xor area inP 192582.607 inTS 106.719 elsewhere 248.16000 um2 (elsewhere polys 10)
+   ELSE L71/20 (1263.04,584.49;1264.64,600) area 24.81600  added
+   ELSE L71/20 (1416.64,584.49;1418.24,600) area 24.81600  added
+   ELSE L71/20 (1570.24,584.49;1571.84,600) area 24.81600  added
+   ELSE L71/20 (1723.84,584.49;1725.44,600) area 24.81600  added
+   ELSE L71/20 (1877.44,584.49;1879.04,600) area 24.81600  added
+   ELSE L71/20 (2031.04,584.49;2032.64,600) area 24.81600  added
+   ELSE L71/20 (2184.64,584.49;2186.24,600) area 24.81600  added
+   ELSE L71/20 (2338.24,584.49;2339.84,600) area 24.81600  added
+   ELSE L71/20 (2491.84,584.49;2493.44,600) area 24.81600  added
+   ELSE L71/20 (2645.44,584.49;2647.04,600) area 24.81600  added
+L72/20: xor area inP 531.200 inTS 0.000 elsewhere 0.00000 um2 (elsewhere polys 0)
+L89/44: xor area inP 10813.440 inTS 2.640 elsewhere 0.00000 um2 (elsewhere polys 0)
+L93/44: xor area inP 30656.102 inTS 5.372 elsewhere 0.00000 um2 (elsewhere polys 0)
+L94/20: xor area inP 27926.528 inTS 23.490 elsewhere 0.00000 um2 (elsewhere polys 0)
+L95/20: xor area inP 17732.826 inTS 4.322 elsewhere 0.00000 um2 (elsewhere polys 0)
+elsewhere polygons total 12
+L68/5 labels: A 2063461 B 2055267, removed 40970 added 32776
+   - by region {'P4': 40960, 'TS': 10}
+   + by region {'P4': 32768, 'TS': 8}
+L69/5 labels: A 72586 B 72586, removed 41466 added 41466
+   - by region {'P4': 41466}
+   + by region {'P4': 41466}
+L71/5 labels: A 12769 B 12769, removed 8194 added 8194
+   - by region {'P4': 8192, 'TS': 2}
+   + by region {'P4': 8192, 'TS': 2}
+done

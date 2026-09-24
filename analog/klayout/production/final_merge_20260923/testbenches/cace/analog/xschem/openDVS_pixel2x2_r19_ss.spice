@@ -1,0 +1,4 @@
+* CACE DUT wrapper (r19, corner ss)
+.include /usr/local/share/pdk/sky130B/libs.tech/ngspice/corners/ss/nonfet.spice
+.include /usr/local/share/pdk/sky130B/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_ps2dn.model.spice
+.include /home/rpgraca/.cache/opencode/opendvs-pex/campaign-edit20260922r19-v1/sources/openDVS_pixel2x2_magic_rcc_ngspice.spice
