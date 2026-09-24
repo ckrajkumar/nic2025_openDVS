@@ -208,7 +208,7 @@ N -990 -40 -990 120 {lab=CoarseOneHot[3]}
 C {lab_wire.sym} -1800 120 2 0 {name=p54 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -1780 40 3 0 {name=p4 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} -1760 120 0 1 {name=MpswB0
-W=0.45
+W=0.55
 L=0.15
 nf=1
 mult=1
@@ -270,7 +270,7 @@ C {lab_wire.sym} -1680 370 3 1 {name=p9 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} -1560 120 2 0 {name=p11 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -1540 40 3 0 {name=p12 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} -1520 120 0 1 {name=MpswB1
-W=0.45
+W=0.55
 L=0.15
 nf=1
 mult=1
@@ -333,7 +333,7 @@ C {ipin.sym} -1800 530 0 0 {name=p18 lab=BiasCB[7:0]}
 C {lab_wire.sym} -1310 120 2 0 {name=p19 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -1290 40 3 0 {name=p20 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} -1270 120 0 1 {name=MpswB2
-W=0.45
+W=0.55
 L=0.15
 nf=1
 mult=1
@@ -500,7 +500,7 @@ C {lab_wire.sym} -1170 790 2 1 {name=p35 sig_type=std_logic lab=GndA}
 C {lab_wire.sym} -1060 120 2 0 {name=p36 sig_type=std_logic lab=VddA18}
 C {lab_wire.sym} -1040 40 3 0 {name=p37 sig_type=std_logic lab=VddA18}
 C {sky130_fd_pr/pfet_01v8.sym} -1020 120 0 1 {name=MpswB3
-W=0.45
+W=0.55
 L=0.15
 nf=1
 mult=1

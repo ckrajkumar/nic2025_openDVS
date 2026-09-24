@@ -1,0 +1,82 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1785869672
+<< error_p >>
+rect -36 181 36 187
+rect -36 147 -24 181
+rect -36 141 36 147
+rect -36 -147 36 -141
+rect -36 -181 -24 -147
+rect -36 -187 36 -181
+<< nwell >>
+rect -134 -200 134 200
+<< pmos >>
+rect -40 -100 40 100
+<< pdiff >>
+rect -98 88 -40 100
+rect -98 -88 -86 88
+rect -52 -88 -40 88
+rect -98 -100 -40 -88
+rect 40 88 98 100
+rect 40 -88 52 88
+rect 86 -88 98 88
+rect 40 -100 98 -88
+<< pdiffc >>
+rect -86 -88 -52 88
+rect 52 -88 86 88
+<< poly >>
+rect -40 181 40 197
+rect -40 147 -24 181
+rect 24 147 40 181
+rect -40 100 40 147
+rect -40 -147 40 -100
+rect -40 -181 -24 -147
+rect 24 -181 40 -147
+rect -40 -197 40 -181
+<< polycont >>
+rect -24 147 24 181
+rect -24 -181 24 -147
+<< locali >>
+rect -40 147 -24 181
+rect 24 147 40 181
+rect -86 88 -52 104
+rect -86 -104 -52 -88
+rect 52 88 86 104
+rect 52 -104 86 -88
+rect -40 -181 -24 -147
+rect 24 -181 40 -147
+<< viali >>
+rect -24 147 24 181
+rect -86 -88 -52 88
+rect 52 -88 86 88
+rect -24 -181 24 -147
+<< metal1 >>
+rect -36 181 36 187
+rect -36 147 -24 181
+rect 24 147 36 181
+rect -36 141 36 147
+rect -92 88 -46 100
+rect -92 -88 -86 88
+rect -52 -88 -46 88
+rect -92 -100 -46 -88
+rect 46 88 92 100
+rect 46 -88 52 88
+rect 86 -88 92 88
+rect 46 -100 92 -88
+rect -36 -147 36 -141
+rect -36 -181 -24 -147
+rect 24 -181 36 -147
+rect -36 -187 36 -181
+<< labels >>
+rlabel pdiffc -69 0 -69 0 0 D
+port 1 nsew
+rlabel pdiffc 69 0 69 0 0 S
+port 2 nsew
+rlabel polycont 0 164 0 164 0 G
+port 3 nsew
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 1.0 l 0.4 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 conn_gates 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
+<< end >>

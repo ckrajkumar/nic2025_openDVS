@@ -1,0 +1,1011 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Class BiasMultiplierCell (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplierCell              |Circuit 2: BiasMultiplierCell              
+-------------------------------------------|-------------------------------------------
+INext                                      |INext                                      
+VGate                                      |VGate                                      
+IPrev                                      |IPrev                                      
+IOut                                       |IOut                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasMultiplierCell and BiasMultiplierCell are equivalent.
+
+Class BiasDividerCell (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerCell                 |Circuit 2: BiasDividerCell                 
+-------------------------------------------|-------------------------------------------
+IPrev                                      |IPrev                                      
+VGate                                      |VGate                                      
+INext                                      |INext                                      
+IOut                                       |IOut                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerCell and BiasDividerCell are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Class BiasDividerFineCell (0):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (6->3)         
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFineCell             |Circuit 2: BiasDividerFineCell             
+-------------------------------------------|-------------------------------------------
+INext                                      |INext                                      
+IOut                                       |IOut                                       
+INOut                                      |INOut                                      
+nSel                                       |nSel                                       
+Sel                                        |Sel                                        
+VddA18                                     |VddA18                                     
+VGate                                      |VGate                                      
+IPrev                                      |IPrev                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDividerFineCell and BiasDividerFineCell are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class BiasMultiplier (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+BiasMultiplierCell (2)                     |BiasMultiplierCell (2)                     
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMultiplier                  |Circuit 2: BiasMultiplier                  
+-------------------------------------------|-------------------------------------------
+IIn                                        |IIn                                        
+IOut0                                      |IOut0                                      
+BiasMultiplierCell_1/INext                 |VddA18 **Mismatch**                        
+BiasMultiplierCell_1/IOut                  |IOut1 **Mismatch**                         
+GndA                                       |GndA                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasMultiplier and BiasMultiplier altered to match.
+Device classes BiasMultiplier and BiasMultiplier are equivalent.
+
+Class BiasDivider (0):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+-------------------------------------------|-------------------------------------------
+BiasDividerCell (6)                        |BiasDividerCell (6)                        
+sky130_fd_pr__pfet_01v8 (15->2)            |sky130_fd_pr__pfet_01v8 (15->2)            
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDivider                     |Circuit 2: BiasDivider                     
+-------------------------------------------|-------------------------------------------
+VddA18                                     |VddA18                                     
+IIn                                        |IIn                                        
+IOut0                                      |IOut0                                      
+GndA                                       |GndA                                       
+IOut5                                      |IOut5                                      
+IOut1                                      |IOut1                                      
+IOut2                                      |IOut2                                      
+IOut3                                      |IOut3                                      
+IOut4                                      |IOut4                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasDivider and BiasDivider are equivalent.
+
+Class BiasCoarseSel8to1 (0):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (41->27)       |sky130_fd_pr__nfet_01v8_lvt (41->27)       
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 51                         |Number of nets: 51                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseSel8to1               |Circuit 2: BiasCoarseSel8to1               
+-------------------------------------------|-------------------------------------------
+CoarseBias                                 |CoarseBias                                 
+BiasCB[0]                                  |BiasCB[0]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+GndA                                       |GndA                                       
+VddA18                                     |VddA18                                     
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseSel8to1 and BiasCoarseSel8to1 are equivalent.
+
+Class BiasCoarseFineInterface (0):  Merged 51 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (42->8)            |sky130_fd_pr__pfet_01v8 (26->8)            
+sky130_fd_pr__pfet_01v8_hvt (16->2)        |sky130_fd_pr__pfet_01v8_hvt (16->2)        
+sky130_fd_pr__pfet_01v8_lvt (6->3)         |sky130_fd_pr__pfet_01v8_lvt (6->3)         
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseFineInterface         |Circuit 2: BiasCoarseFineInterface         
+-------------------------------------------|-------------------------------------------
+GndA                                       |GndA                                       
+LowBiasEn                                  |LowBiasEn                                  
+nLowBiasEn                                 |nLowBiasEn                                 
+VddA18                                     |VddA18                                     
+IOut                                       |IOut                                       
+IIn                                        |IIn                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseFineInterface and BiasCoarseFineInterface are equivalent.
+Flattening unmatched subcell scs130hd_nor2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell scs130hd_inv_1 in circuit BiasBuffers (0)(4 instances)
+Flattening unmatched subcell scs130hd_and2_1 in circuit BiasBuffers (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit BiasBuffers (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit BiasBuffers (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit BiasBuffers (1)(4 instances)
+
+Class BiasBuffers (0):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (9)            |sky130_fd_pr__pfet_01v8_hvt (9)            
+sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
+sky130_fd_pr__pfet_01v8 (11->10)           |sky130_fd_pr__pfet_01v8 (11->10)           
+sky130_fd_pr__nfet_01v8_lvt (27->3)        |sky130_fd_pr__nfet_01v8_lvt (27->3)        
+sky130_fd_pr__pfet_01v8_lvt (9->3)         |sky130_fd_pr__pfet_01v8_lvt (9->3)         
+Number of devices: 45                      |Number of devices: 45                      
+Number of nets: 31                         |Number of nets: 31                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBuffers                     |Circuit 2: BiasBuffers                     
+-------------------------------------------|-------------------------------------------
+BufferNBias                                |BufferNBias                                
+BufferPBias                                |BufferPBias                                
+SplitterOutput                             |SplitterOutput                             
+PBiasEnabled                               |PBiasEnabled                               
+VBiasOut                                   |VBiasOut                                   
+PowerDown                                  |PowerDown                                  
+NBiasEnabled                               |NBiasEnabled                               
+PadBias                                    |PadBias                                    
+BiasDisabled                               |BiasDisabled                               
+BIT0                                       |BIT0                                       
+GND                                        |GndA **Mismatch**                          
+VddA18                                     |VddA18                                     
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBuffers and BiasBuffers altered to match.
+Device classes BiasBuffers and BiasBuffers are equivalent.
+
+Class BiasDividerFine (0):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+BiasDividerFineCell (8)                    |BiasDividerFineCell (8)                    
+sky130_fd_pr__pfet_01v8_lvt (2->1)         |sky130_fd_pr__pfet_01v8_lvt (2->1)         
+sky130_fd_pr__nfet_01v8_lvt (1)            |sky130_fd_pr__nfet_01v8_lvt (1)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasDividerFine                 |Circuit 2: BiasDividerFine                 
+-------------------------------------------|-------------------------------------------
+IOut                                       |IOut                                       
+nQ0                                        |nFineCode[0] **Mismatch**                  
+nQ1                                        |nFineCode[1] **Mismatch**                  
+nQ2                                        |nFineCode[2] **Mismatch**                  
+nQ3                                        |nFineCode[3] **Mismatch**                  
+nQ4                                        |nFineCode[4] **Mismatch**                  
+nQ5                                        |nFineCode[5] **Mismatch**                  
+nQ6                                        |nFineCode[6] **Mismatch**                  
+Q0                                         |FineCode[0] **Mismatch**                   
+Q1                                         |FineCode[1] **Mismatch**                   
+Q2                                         |FineCode[2] **Mismatch**                   
+Q3                                         |FineCode[3] **Mismatch**                   
+Q4                                         |FineCode[4] **Mismatch**                   
+Q5                                         |FineCode[5] **Mismatch**                   
+Q6                                         |FineCode[6] **Mismatch**                   
+IIn                                        |IIn                                        
+nQ7                                        |nFineCode[7] **Mismatch**                  
+Q7                                         |FineCode[7] **Mismatch**                   
+VGate                                      |VGate                                      
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasDividerFine and BiasDividerFine altered to match.
+Device classes BiasDividerFine and BiasDividerFine are equivalent.
+
+Class BiasMasterBias (0):  Merged 66 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (61->9)        |sky130_fd_pr__nfet_01v8_lvt (61->9)        
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (18->4)            |sky130_fd_pr__pfet_01v8 (18->4)            
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasMasterBias                  |Circuit 2: BiasMasterBias                  
+-------------------------------------------|-------------------------------------------
+BiasPowerDown                              |BiasPowerDown                              
+IR                                         |IR                                         
+ICoarse2                                   |ICoarse2                                   
+ICoarse1                                   |ICoarse1                                   
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+VMasterBiasN                               |VMasterBiasN                               
+VMasterBiasP                               |VMasterBiasP                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasMasterBias and BiasMasterBias are equivalent.
+
+Class BiasCoarseMBDivider (0):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+-------------------------------------------|-------------------------------------------
+BiasMultiplier (1)                         |BiasMultiplier (1)                         
+BiasDivider (1)                            |BiasDivider (1)                            
+sky130_fd_pr__nfet_01v8_lvt (64->50)       |sky130_fd_pr__nfet_01v8_lvt (64->50)       
+Number of devices: 52                      |Number of devices: 52                      
+Number of nets: 54                         |Number of nets: 54                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasCoarseMBDivider             |Circuit 2: BiasCoarseMBDivider             
+-------------------------------------------|-------------------------------------------
+BiasCB2                                    |BiasCB2                                    
+BiasCB3                                    |BiasCB3                                    
+BiasCB4                                    |BiasCB4                                    
+BiasCB5                                    |BiasCB5                                    
+BiasCB6                                    |BiasCB6                                    
+BiasCB7                                    |BiasCB7                                    
+GndA                                       |GndA                                       
+ICoarse2                                   |ICoarse2                                   
+ICoarse1                                   |ICoarse1                                   
+VddA18                                     |VddA18                                     
+BiasCB0                                    |BiasCB0                                    
+BiasCB1                                    |BiasCB1                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasCoarseMBDivider and BiasCoarseMBDivider are equivalent.
+
+Subcircuit summary:
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+-------------------------------------------|-------------------------------------------
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+BiasCoarseFineInterface (1)                |BiasCoarseFineInterface (1)                
+BiasBuffers (1)                            |BiasBuffers (1)                            
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 49                         |Number of nets: 49                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBranch                      |Circuit 2: BiasBranch                      
+-------------------------------------------|-------------------------------------------
+VddA18                                     |VddA18                                     
+GndA                                       |GndA                                       
+LowBiasInterfaceEn                         |LowBiasInterfaceEn                         
+nLowBiasInterfaceEn                        |nLowBiasInterfaceEn                        
+FineCode[7]                                |FineCode[7]                                
+FineCode[6]                                |FineCode[6]                                
+FineCode[5]                                |FineCode[5]                                
+FineCode[4]                                |FineCode[4]                                
+FineCode[3]                                |FineCode[3]                                
+FineCode[2]                                |FineCode[2]                                
+FineCode[1]                                |FineCode[1]                                
+FineCode[0]                                |FineCode[0]                                
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[0]                               |nFineCode[0]                               
+NBiasEn                                    |NBiasEn                                    
+PBiasEn                                    |PBiasEn                                    
+BiasDisable                                |BiasDisabled **Mismatch**                  
+BIT0                                       |BIT0                                       
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+VBiasOut                                   |VBiasOut                                   
+PadBias                                    |PadBias                                    
+PowerDown                                  |PowerDown                                  
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists for BiasBranch and BiasBranch altered to match.
+Device classes BiasBranch and BiasBranch are equivalent.
+
+Class BiasBranchBuffer (0):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+-------------------------------------------|-------------------------------------------
+BiasCoarseSel8to1 (1)                      |BiasCoarseSel8to1 (1)                      
+BiasCoarseFineInterface (1)                |BiasCoarseFineInterface (1)                
+BiasDividerFine (1)                        |BiasDividerFine (1)                        
+sky130_fd_pr__nfet_01v8_lvt (32->2)        |sky130_fd_pr__nfet_01v8_lvt (32->2)        
+sky130_fd_pr__pfet_01v8_lvt (2->1)         |sky130_fd_pr__pfet_01v8_lvt (2->1)         
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 41                         |Number of nets: 41                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBranchBuffer                |Circuit 2: BiasBranchBuffer                
+-------------------------------------------|-------------------------------------------
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+GndA                                       |GndA                                       
+VddA18                                     |VddA18                                     
+LowBiasInterfaceEn                         |LowBiasInterfaceEn                         
+nLowBiasInterfaceEn                        |nLowBiasInterfaceEn                        
+FineCode[7]                                |FineCode[7]                                
+FineCode[6]                                |FineCode[6]                                
+FineCode[5]                                |FineCode[5]                                
+FineCode[4]                                |FineCode[4]                                
+FineCode[3]                                |FineCode[3]                                
+FineCode[2]                                |FineCode[2]                                
+FineCode[1]                                |FineCode[1]                                
+FineCode[0]                                |FineCode[0]                                
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[0]                               |nFineCode[0]                               
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHotLowBiasEn                      |CoarseOneHotLowBiasEn                      
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasBranchBuffer and BiasBranchBuffer are equivalent.
+Flattening unmatched subcell mim_cap in circuit BiasMasterCoarse (0)(3 instances)
+Flattening unmatched subcell mim_cap$1 in circuit BiasMasterCoarse (0)(1 instance)
+
+Cell BiasMasterCoarse (0) disconnected node: BiasCB[7]
+Class BiasMasterCoarse (0):  Merged 3 parallel devices.
+Class BiasMasterCoarse (1):  Merged 3 parallel devices.
+Cell BiasMasterCoarse (0) disconnected node: BiasCB[7]
+Subcircuit summary:
+Circuit 1: BiasMasterCoarse                |Circuit 2: BiasMasterCoarse                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (4->1)          |sky130_fd_pr__cap_mim_m3_1 (4->1)          
+BiasMasterBias (1)                         |BiasMasterBias (1)                         
+BiasCoarseMBDivider (1)                    |BiasCoarseMBDivider (1)                    
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 17 **Mismatch**            |Number of nets: 16 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BiasMasterCoarse                |Circuit 2: BiasMasterCoarse                
+
+---------------------------------------------------------------------------------------
+Net: m2_n6031_n2033#                       |Net: VMasterBiasN                          
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  BiasMasterBias/VMasterBiasN = 1          
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |                                           
+Net: BiasMasterBias_0/VMasterBiasN         |(no matching net)                          
+  BiasMasterBias/VMasterBiasN = 1          |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits BiasMasterCoarse BiasMasterCoarse
+
+Subcircuit summary:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+BiasBranch (11)                            |BiasBranch (11)                            
+BiasBranchBuffer (1)                       |BiasBranchBuffer (1)                       
+sky130_fd_pr__cap_mim_m3_1 (4->1)          |sky130_fd_pr__cap_mim_m3_1 (4->1)          
+BiasMasterBias (1)                         |BiasMasterBias (1)                         
+BiasCoarseMBDivider (1)                    |BiasCoarseMBDivider (1)                    
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 419                        |Number of nets: 419                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BiasBranchnMasterx11            |Circuit 2: BiasBranchnMasterx11            
+-------------------------------------------|-------------------------------------------
+VMasterBiasN                               |VMasterBiasN                               
+BiasCB[7]                                  |BiasCB[7]                                  
+BiasCB[6]                                  |BiasCB[6]                                  
+BiasCB[5]                                  |BiasCB[5]                                  
+BiasCB[4]                                  |BiasCB[4]                                  
+BiasCB[3]                                  |BiasCB[3]                                  
+BiasCB[2]                                  |BiasCB[2]                                  
+BiasCB[1]                                  |BiasCB[1]                                  
+BiasCB[0]                                  |BiasCB[0]                                  
+PowerDownM                                 |PowerDownM                                 
+VMasterBiasP                               |VMasterBiasP                               
+rx                                         |rx                                         
+CoarseOneHotBuffer[7]                      |CoarseOneHotBuffer[7]                      
+CoarseOneHotBuffer[6]                      |CoarseOneHotBuffer[6]                      
+CoarseOneHotBuffer[5]                      |CoarseOneHotBuffer[5]                      
+CoarseOneHotBuffer[4]                      |CoarseOneHotBuffer[4]                      
+CoarseOneHotBuffer[3]                      |CoarseOneHotBuffer[3]                      
+CoarseOneHotBuffer[2]                      |CoarseOneHotBuffer[2]                      
+CoarseOneHotBuffer[1]                      |CoarseOneHotBuffer[1]                      
+CoarseOneHotBuffer[0]                      |CoarseOneHotBuffer[0]                      
+LowBiasInterfaceEnBuffer                   |LowBiasInterfaceEnBuffer                   
+nLowBiasInterfaceEnBuffer                  |nLowBiasInterfaceEnBuffer                  
+FineCodeBuffer[7]                          |FineCodeBuffer[7]                          
+FineCodeBuffer[6]                          |FineCodeBuffer[6]                          
+FineCodeBuffer[5]                          |FineCodeBuffer[5]                          
+FineCodeBuffer[4]                          |FineCodeBuffer[4]                          
+FineCodeBuffer[3]                          |FineCodeBuffer[3]                          
+FineCodeBuffer[2]                          |FineCodeBuffer[2]                          
+FineCodeBuffer[1]                          |FineCodeBuffer[1]                          
+FineCodeBuffer[0]                          |FineCodeBuffer[0]                          
+nFineCodeBuffer[7]                         |nFineCodeBuffer[7]                         
+nFineCodeBuffer[6]                         |nFineCodeBuffer[6]                         
+nFineCodeBuffer[5]                         |nFineCodeBuffer[5]                         
+nFineCodeBuffer[4]                         |nFineCodeBuffer[4]                         
+nFineCodeBuffer[3]                         |nFineCodeBuffer[3]                         
+nFineCodeBuffer[2]                         |nFineCodeBuffer[2]                         
+nFineCodeBuffer[1]                         |nFineCodeBuffer[1]                         
+nFineCodeBuffer[0]                         |nFineCodeBuffer[0]                         
+CoarseOneHotLowBiasEnBuffer                |CoarseOneHotLowBiasEnBuffer                
+Bias[9]                                    |Bias[9]                                    
+Bias[1]                                    |Bias[1]                                    
+Bias[6]                                    |Bias[6]                                    
+Bias[7]                                    |Bias[7]                                    
+Bias[2]                                    |Bias[2]                                    
+Bias[3]                                    |Bias[3]                                    
+Bias[4]                                    |Bias[4]                                    
+Bias[5]                                    |Bias[5]                                    
+Bias[0]                                    |Bias[0]                                    
+Bias[8]                                    |Bias[8]                                    
+Bias[10]                                   |Bias[10]                                   
+LowBiasInterfaceEn[9]                      |LowBiasInterfaceEn[9]                      
+LowBiasInterfaceEn[1]                      |LowBiasInterfaceEn[1]                      
+LowBiasInterfaceEn[6]                      |LowBiasInterfaceEn[6]                      
+LowBiasInterfaceEn[7]                      |LowBiasInterfaceEn[7]                      
+LowBiasInterfaceEn[2]                      |LowBiasInterfaceEn[2]                      
+LowBiasInterfaceEn[3]                      |LowBiasInterfaceEn[3]                      
+LowBiasInterfaceEn[4]                      |LowBiasInterfaceEn[4]                      
+LowBiasInterfaceEn[5]                      |LowBiasInterfaceEn[5]                      
+LowBiasInterfaceEn[0]                      |LowBiasInterfaceEn[0]                      
+LowBiasInterfaceEn[8]                      |LowBiasInterfaceEn[8]                      
+LowBiasInterfaceEn[10]                     |LowBiasInterfaceEn[10]                     
+nLowBiasInterfaceEn[9]                     |nLowBiasInterfaceEn[9]                     
+nLowBiasInterfaceEn[1]                     |nLowBiasInterfaceEn[1]                     
+nLowBiasInterfaceEn[6]                     |nLowBiasInterfaceEn[6]                     
+nLowBiasInterfaceEn[7]                     |nLowBiasInterfaceEn[7]                     
+nLowBiasInterfaceEn[2]                     |nLowBiasInterfaceEn[2]                     
+nLowBiasInterfaceEn[3]                     |nLowBiasInterfaceEn[3]                     
+nLowBiasInterfaceEn[4]                     |nLowBiasInterfaceEn[4]                     
+nLowBiasInterfaceEn[5]                     |nLowBiasInterfaceEn[5]                     
+nLowBiasInterfaceEn[0]                     |nLowBiasInterfaceEn[0]                     
+nLowBiasInterfaceEn[8]                     |nLowBiasInterfaceEn[8]                     
+nLowBiasInterfaceEn[10]                    |nLowBiasInterfaceEn[10]                    
+FineCode[79]                               |FineCode[79]                               
+FineCode[15]                               |FineCode[15]                               
+FineCode[55]                               |FineCode[55]                               
+FineCode[63]                               |FineCode[63]                               
+FineCode[23]                               |FineCode[23]                               
+FineCode[31]                               |FineCode[31]                               
+FineCode[39]                               |FineCode[39]                               
+FineCode[47]                               |FineCode[47]                               
+FineCode[7]                                |FineCode[7]                                
+FineCode[71]                               |FineCode[71]                               
+FineCode[87]                               |FineCode[87]                               
+CoarseOneHotLowBiasEn[9]                   |CoarseOneHotLowBiasEn[9]                   
+CoarseOneHotLowBiasEn[1]                   |CoarseOneHotLowBiasEn[1]                   
+CoarseOneHotLowBiasEn[6]                   |CoarseOneHotLowBiasEn[6]                   
+CoarseOneHotLowBiasEn[7]                   |CoarseOneHotLowBiasEn[7]                   
+CoarseOneHotLowBiasEn[2]                   |CoarseOneHotLowBiasEn[2]                   
+CoarseOneHotLowBiasEn[3]                   |CoarseOneHotLowBiasEn[3]                   
+CoarseOneHotLowBiasEn[4]                   |CoarseOneHotLowBiasEn[4]                   
+CoarseOneHotLowBiasEn[5]                   |CoarseOneHotLowBiasEn[5]                   
+CoarseOneHotLowBiasEn[0]                   |CoarseOneHotLowBiasEn[0]                   
+CoarseOneHotLowBiasEn[8]                   |CoarseOneHotLowBiasEn[8]                   
+CoarseOneHotLowBiasEn[10]                  |CoarseOneHotLowBiasEn[10]                  
+BIT0[9]                                    |BIT0[9]                                    
+BIT0[1]                                    |BIT0[1]                                    
+BIT0[6]                                    |BIT0[6]                                    
+BIT0[7]                                    |BIT0[7]                                    
+BIT0[2]                                    |BIT0[2]                                    
+BIT0[3]                                    |BIT0[3]                                    
+BIT0[4]                                    |BIT0[4]                                    
+BIT0[5]                                    |BIT0[5]                                    
+BIT0[0]                                    |BIT0[0]                                    
+BIT0[8]                                    |BIT0[8]                                    
+BIT0[10]                                   |BIT0[10]                                   
+NBiasEn[9]                                 |NBiasEn[9]                                 
+NBiasEn[1]                                 |NBiasEn[1]                                 
+NBiasEn[6]                                 |NBiasEn[6]                                 
+NBiasEn[7]                                 |NBiasEn[7]                                 
+NBiasEn[2]                                 |NBiasEn[2]                                 
+NBiasEn[3]                                 |NBiasEn[3]                                 
+NBiasEn[4]                                 |NBiasEn[4]                                 
+NBiasEn[5]                                 |NBiasEn[5]                                 
+NBiasEn[0]                                 |NBiasEn[0]                                 
+NBiasEn[8]                                 |NBiasEn[8]                                 
+NBiasEn[10]                                |NBiasEn[10]                                
+PBiasEn[9]                                 |PBiasEn[9]                                 
+PBiasEn[1]                                 |PBiasEn[1]                                 
+PBiasEn[6]                                 |PBiasEn[6]                                 
+PBiasEn[7]                                 |PBiasEn[7]                                 
+PBiasEn[2]                                 |PBiasEn[2]                                 
+PBiasEn[3]                                 |PBiasEn[3]                                 
+PBiasEn[4]                                 |PBiasEn[4]                                 
+PBiasEn[5]                                 |PBiasEn[5]                                 
+PBiasEn[0]                                 |PBiasEn[0]                                 
+PBiasEn[8]                                 |PBiasEn[8]                                 
+PBiasEn[10]                                |PBiasEn[10]                                
+BiasDisabled[9]                            |BiasDisabled[9]                            
+BiasDisabled[1]                            |BiasDisabled[1]                            
+BiasDisabled[6]                            |BiasDisabled[6]                            
+BiasDisabled[7]                            |BiasDisabled[7]                            
+BiasDisabled[2]                            |BiasDisabled[2]                            
+BiasDisabled[3]                            |BiasDisabled[3]                            
+BiasDisabled[4]                            |BiasDisabled[4]                            
+BiasDisabled[5]                            |BiasDisabled[5]                            
+BiasDisabled[0]                            |BiasDisabled[0]                            
+BiasDisabled[8]                            |BiasDisabled[8]                            
+BiasDisabled[10]                           |BiasDisabled[10]                           
+FineCode[78]                               |FineCode[78]                               
+FineCode[14]                               |FineCode[14]                               
+FineCode[54]                               |FineCode[54]                               
+FineCode[62]                               |FineCode[62]                               
+FineCode[22]                               |FineCode[22]                               
+FineCode[30]                               |FineCode[30]                               
+FineCode[38]                               |FineCode[38]                               
+FineCode[46]                               |FineCode[46]                               
+FineCode[6]                                |FineCode[6]                                
+FineCode[70]                               |FineCode[70]                               
+FineCode[86]                               |FineCode[86]                               
+FineCode[77]                               |FineCode[77]                               
+FineCode[13]                               |FineCode[13]                               
+FineCode[53]                               |FineCode[53]                               
+FineCode[61]                               |FineCode[61]                               
+FineCode[21]                               |FineCode[21]                               
+FineCode[29]                               |FineCode[29]                               
+FineCode[37]                               |FineCode[37]                               
+FineCode[45]                               |FineCode[45]                               
+FineCode[5]                                |FineCode[5]                                
+FineCode[69]                               |FineCode[69]                               
+FineCode[85]                               |FineCode[85]                               
+FineCode[76]                               |FineCode[76]                               
+FineCode[12]                               |FineCode[12]                               
+FineCode[52]                               |FineCode[52]                               
+FineCode[60]                               |FineCode[60]                               
+FineCode[20]                               |FineCode[20]                               
+FineCode[28]                               |FineCode[28]                               
+FineCode[36]                               |FineCode[36]                               
+FineCode[44]                               |FineCode[44]                               
+FineCode[4]                                |FineCode[4]                                
+FineCode[68]                               |FineCode[68]                               
+FineCode[84]                               |FineCode[84]                               
+FineCode[75]                               |FineCode[75]                               
+FineCode[11]                               |FineCode[11]                               
+FineCode[51]                               |FineCode[51]                               
+FineCode[59]                               |FineCode[59]                               
+FineCode[19]                               |FineCode[19]                               
+FineCode[27]                               |FineCode[27]                               
+FineCode[35]                               |FineCode[35]                               
+FineCode[43]                               |FineCode[43]                               
+FineCode[3]                                |FineCode[3]                                
+FineCode[67]                               |FineCode[67]                               
+FineCode[83]                               |FineCode[83]                               
+FineCode[74]                               |FineCode[74]                               
+FineCode[10]                               |FineCode[10]                               
+FineCode[50]                               |FineCode[50]                               
+FineCode[58]                               |FineCode[58]                               
+FineCode[18]                               |FineCode[18]                               
+FineCode[26]                               |FineCode[26]                               
+FineCode[34]                               |FineCode[34]                               
+FineCode[42]                               |FineCode[42]                               
+FineCode[2]                                |FineCode[2]                                
+FineCode[66]                               |FineCode[66]                               
+FineCode[82]                               |FineCode[82]                               
+FineCode[73]                               |FineCode[73]                               
+FineCode[9]                                |FineCode[9]                                
+FineCode[49]                               |FineCode[49]                               
+FineCode[57]                               |FineCode[57]                               
+FineCode[17]                               |FineCode[17]                               
+FineCode[25]                               |FineCode[25]                               
+FineCode[33]                               |FineCode[33]                               
+FineCode[41]                               |FineCode[41]                               
+FineCode[1]                                |FineCode[1]                                
+FineCode[65]                               |FineCode[65]                               
+FineCode[81]                               |FineCode[81]                               
+FineCode[72]                               |FineCode[72]                               
+FineCode[8]                                |FineCode[8]                                
+FineCode[48]                               |FineCode[48]                               
+FineCode[56]                               |FineCode[56]                               
+FineCode[16]                               |FineCode[16]                               
+FineCode[24]                               |FineCode[24]                               
+FineCode[32]                               |FineCode[32]                               
+FineCode[40]                               |FineCode[40]                               
+FineCode[0]                                |FineCode[0]                                
+FineCode[64]                               |FineCode[64]                               
+FineCode[80]                               |FineCode[80]                               
+nFineCode[79]                              |nFineCode[79]                              
+nFineCode[15]                              |nFineCode[15]                              
+nFineCode[55]                              |nFineCode[55]                              
+nFineCode[63]                              |nFineCode[63]                              
+nFineCode[23]                              |nFineCode[23]                              
+nFineCode[31]                              |nFineCode[31]                              
+nFineCode[39]                              |nFineCode[39]                              
+nFineCode[47]                              |nFineCode[47]                              
+nFineCode[7]                               |nFineCode[7]                               
+nFineCode[71]                              |nFineCode[71]                              
+nFineCode[87]                              |nFineCode[87]                              
+nFineCode[78]                              |nFineCode[78]                              
+nFineCode[14]                              |nFineCode[14]                              
+nFineCode[54]                              |nFineCode[54]                              
+nFineCode[62]                              |nFineCode[62]                              
+nFineCode[22]                              |nFineCode[22]                              
+nFineCode[30]                              |nFineCode[30]                              
+nFineCode[38]                              |nFineCode[38]                              
+nFineCode[46]                              |nFineCode[46]                              
+nFineCode[6]                               |nFineCode[6]                               
+nFineCode[70]                              |nFineCode[70]                              
+nFineCode[86]                              |nFineCode[86]                              
+nFineCode[77]                              |nFineCode[77]                              
+nFineCode[13]                              |nFineCode[13]                              
+nFineCode[53]                              |nFineCode[53]                              
+nFineCode[61]                              |nFineCode[61]                              
+nFineCode[21]                              |nFineCode[21]                              
+nFineCode[29]                              |nFineCode[29]                              
+nFineCode[37]                              |nFineCode[37]                              
+nFineCode[45]                              |nFineCode[45]                              
+nFineCode[5]                               |nFineCode[5]                               
+nFineCode[69]                              |nFineCode[69]                              
+nFineCode[85]                              |nFineCode[85]                              
+nFineCode[76]                              |nFineCode[76]                              
+nFineCode[12]                              |nFineCode[12]                              
+nFineCode[52]                              |nFineCode[52]                              
+nFineCode[60]                              |nFineCode[60]                              
+nFineCode[20]                              |nFineCode[20]                              
+nFineCode[28]                              |nFineCode[28]                              
+nFineCode[36]                              |nFineCode[36]                              
+nFineCode[44]                              |nFineCode[44]                              
+nFineCode[4]                               |nFineCode[4]                               
+nFineCode[68]                              |nFineCode[68]                              
+nFineCode[84]                              |nFineCode[84]                              
+nFineCode[75]                              |nFineCode[75]                              
+nFineCode[11]                              |nFineCode[11]                              
+nFineCode[51]                              |nFineCode[51]                              
+nFineCode[59]                              |nFineCode[59]                              
+nFineCode[19]                              |nFineCode[19]                              
+nFineCode[27]                              |nFineCode[27]                              
+nFineCode[35]                              |nFineCode[35]                              
+nFineCode[43]                              |nFineCode[43]                              
+nFineCode[3]                               |nFineCode[3]                               
+nFineCode[67]                              |nFineCode[67]                              
+nFineCode[83]                              |nFineCode[83]                              
+nFineCode[74]                              |nFineCode[74]                              
+nFineCode[10]                              |nFineCode[10]                              
+nFineCode[50]                              |nFineCode[50]                              
+nFineCode[58]                              |nFineCode[58]                              
+nFineCode[18]                              |nFineCode[18]                              
+nFineCode[26]                              |nFineCode[26]                              
+nFineCode[34]                              |nFineCode[34]                              
+nFineCode[42]                              |nFineCode[42]                              
+nFineCode[2]                               |nFineCode[2]                               
+nFineCode[66]                              |nFineCode[66]                              
+nFineCode[82]                              |nFineCode[82]                              
+nFineCode[73]                              |nFineCode[73]                              
+nFineCode[9]                               |nFineCode[9]                               
+nFineCode[49]                              |nFineCode[49]                              
+nFineCode[57]                              |nFineCode[57]                              
+nFineCode[17]                              |nFineCode[17]                              
+nFineCode[25]                              |nFineCode[25]                              
+nFineCode[33]                              |nFineCode[33]                              
+nFineCode[41]                              |nFineCode[41]                              
+nFineCode[1]                               |nFineCode[1]                               
+nFineCode[65]                              |nFineCode[65]                              
+nFineCode[81]                              |nFineCode[81]                              
+nFineCode[72]                              |nFineCode[72]                              
+nFineCode[8]                               |nFineCode[8]                               
+nFineCode[48]                              |nFineCode[48]                              
+nFineCode[56]                              |nFineCode[56]                              
+nFineCode[16]                              |nFineCode[16]                              
+nFineCode[24]                              |nFineCode[24]                              
+nFineCode[32]                              |nFineCode[32]                              
+nFineCode[40]                              |nFineCode[40]                              
+nFineCode[0]                               |nFineCode[0]                               
+nFineCode[64]                              |nFineCode[64]                              
+nFineCode[80]                              |nFineCode[80]                              
+CoarseOneHot[79]                           |CoarseOneHot[79]                           
+CoarseOneHot[15]                           |CoarseOneHot[15]                           
+CoarseOneHot[55]                           |CoarseOneHot[55]                           
+CoarseOneHot[63]                           |CoarseOneHot[63]                           
+CoarseOneHot[23]                           |CoarseOneHot[23]                           
+CoarseOneHot[31]                           |CoarseOneHot[31]                           
+CoarseOneHot[39]                           |CoarseOneHot[39]                           
+CoarseOneHot[47]                           |CoarseOneHot[47]                           
+CoarseOneHot[7]                            |CoarseOneHot[7]                            
+CoarseOneHot[71]                           |CoarseOneHot[71]                           
+CoarseOneHot[87]                           |CoarseOneHot[87]                           
+CoarseOneHot[78]                           |CoarseOneHot[78]                           
+CoarseOneHot[14]                           |CoarseOneHot[14]                           
+CoarseOneHot[54]                           |CoarseOneHot[54]                           
+CoarseOneHot[62]                           |CoarseOneHot[62]                           
+CoarseOneHot[22]                           |CoarseOneHot[22]                           
+CoarseOneHot[30]                           |CoarseOneHot[30]                           
+CoarseOneHot[38]                           |CoarseOneHot[38]                           
+CoarseOneHot[46]                           |CoarseOneHot[46]                           
+CoarseOneHot[6]                            |CoarseOneHot[6]                            
+CoarseOneHot[70]                           |CoarseOneHot[70]                           
+CoarseOneHot[86]                           |CoarseOneHot[86]                           
+CoarseOneHot[77]                           |CoarseOneHot[77]                           
+CoarseOneHot[13]                           |CoarseOneHot[13]                           
+CoarseOneHot[53]                           |CoarseOneHot[53]                           
+CoarseOneHot[61]                           |CoarseOneHot[61]                           
+CoarseOneHot[21]                           |CoarseOneHot[21]                           
+CoarseOneHot[29]                           |CoarseOneHot[29]                           
+CoarseOneHot[37]                           |CoarseOneHot[37]                           
+CoarseOneHot[45]                           |CoarseOneHot[45]                           
+CoarseOneHot[5]                            |CoarseOneHot[5]                            
+CoarseOneHot[69]                           |CoarseOneHot[69]                           
+CoarseOneHot[85]                           |CoarseOneHot[85]                           
+CoarseOneHot[76]                           |CoarseOneHot[76]                           
+CoarseOneHot[12]                           |CoarseOneHot[12]                           
+CoarseOneHot[52]                           |CoarseOneHot[52]                           
+CoarseOneHot[60]                           |CoarseOneHot[60]                           
+CoarseOneHot[20]                           |CoarseOneHot[20]                           
+CoarseOneHot[28]                           |CoarseOneHot[28]                           
+CoarseOneHot[36]                           |CoarseOneHot[36]                           
+CoarseOneHot[44]                           |CoarseOneHot[44]                           
+CoarseOneHot[4]                            |CoarseOneHot[4]                            
+CoarseOneHot[68]                           |CoarseOneHot[68]                           
+CoarseOneHot[84]                           |CoarseOneHot[84]                           
+CoarseOneHot[75]                           |CoarseOneHot[75]                           
+CoarseOneHot[11]                           |CoarseOneHot[11]                           
+CoarseOneHot[51]                           |CoarseOneHot[51]                           
+CoarseOneHot[59]                           |CoarseOneHot[59]                           
+CoarseOneHot[19]                           |CoarseOneHot[19]                           
+CoarseOneHot[27]                           |CoarseOneHot[27]                           
+CoarseOneHot[35]                           |CoarseOneHot[35]                           
+CoarseOneHot[43]                           |CoarseOneHot[43]                           
+CoarseOneHot[3]                            |CoarseOneHot[3]                            
+CoarseOneHot[67]                           |CoarseOneHot[67]                           
+CoarseOneHot[83]                           |CoarseOneHot[83]                           
+CoarseOneHot[74]                           |CoarseOneHot[74]                           
+CoarseOneHot[10]                           |CoarseOneHot[10]                           
+CoarseOneHot[50]                           |CoarseOneHot[50]                           
+CoarseOneHot[58]                           |CoarseOneHot[58]                           
+CoarseOneHot[18]                           |CoarseOneHot[18]                           
+CoarseOneHot[26]                           |CoarseOneHot[26]                           
+CoarseOneHot[34]                           |CoarseOneHot[34]                           
+CoarseOneHot[42]                           |CoarseOneHot[42]                           
+CoarseOneHot[2]                            |CoarseOneHot[2]                            
+CoarseOneHot[66]                           |CoarseOneHot[66]                           
+CoarseOneHot[82]                           |CoarseOneHot[82]                           
+CoarseOneHot[73]                           |CoarseOneHot[73]                           
+CoarseOneHot[9]                            |CoarseOneHot[9]                            
+CoarseOneHot[49]                           |CoarseOneHot[49]                           
+CoarseOneHot[57]                           |CoarseOneHot[57]                           
+CoarseOneHot[17]                           |CoarseOneHot[17]                           
+CoarseOneHot[25]                           |CoarseOneHot[25]                           
+CoarseOneHot[33]                           |CoarseOneHot[33]                           
+CoarseOneHot[41]                           |CoarseOneHot[41]                           
+CoarseOneHot[1]                            |CoarseOneHot[1]                            
+CoarseOneHot[65]                           |CoarseOneHot[65]                           
+CoarseOneHot[81]                           |CoarseOneHot[81]                           
+CoarseOneHot[72]                           |CoarseOneHot[72]                           
+CoarseOneHot[8]                            |CoarseOneHot[8]                            
+CoarseOneHot[48]                           |CoarseOneHot[48]                           
+CoarseOneHot[56]                           |CoarseOneHot[56]                           
+CoarseOneHot[16]                           |CoarseOneHot[16]                           
+CoarseOneHot[24]                           |CoarseOneHot[24]                           
+CoarseOneHot[32]                           |CoarseOneHot[32]                           
+CoarseOneHot[40]                           |CoarseOneHot[40]                           
+CoarseOneHot[0]                            |CoarseOneHot[0]                            
+CoarseOneHot[64]                           |CoarseOneHot[64]                           
+CoarseOneHot[80]                           |CoarseOneHot[80]                           
+PadBias[9]                                 |PadBias[9]                                 
+PadBias[1]                                 |PadBias[1]                                 
+PadBias[6]                                 |PadBias[6]                                 
+PadBias[7]                                 |PadBias[7]                                 
+PadBias[2]                                 |PadBias[2]                                 
+PadBias[3]                                 |PadBias[3]                                 
+PadBias[4]                                 |PadBias[4]                                 
+PadBias[5]                                 |PadBias[5]                                 
+PadBias[0]                                 |PadBias[0]                                 
+PadBias[8]                                 |PadBias[8]                                 
+PadBias[10]                                |PadBias[10]                                
+PowerDown[9]                               |PowerDown[9]                               
+PowerDown[1]                               |PowerDown[1]                               
+PowerDown[6]                               |PowerDown[6]                               
+PowerDown[7]                               |PowerDown[7]                               
+PowerDown[2]                               |PowerDown[2]                               
+PowerDown[3]                               |PowerDown[3]                               
+PowerDown[4]                               |PowerDown[4]                               
+PowerDown[5]                               |PowerDown[5]                               
+PowerDown[0]                               |PowerDown[0]                               
+PowerDown[8]                               |PowerDown[8]                               
+PowerDown[10]                              |PowerDown[10]                              
+BufferN                                    |BufferN                                    
+BufferP                                    |BufferP                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BiasBranchnMasterx11 and BiasBranchnMasterx11 are equivalent.
+
+Final result: Circuits match uniquely.
+.

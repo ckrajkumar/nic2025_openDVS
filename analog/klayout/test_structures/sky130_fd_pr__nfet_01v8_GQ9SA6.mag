@@ -1,0 +1,168 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1785868963
+<< error_p >>
+rect -36 581 36 587
+rect -36 547 -24 581
+rect -36 541 36 547
+rect -36 71 36 77
+rect -36 37 -24 71
+rect -36 31 36 37
+rect -36 -37 36 -31
+rect -36 -71 -24 -37
+rect -36 -77 36 -71
+rect -36 -547 36 -541
+rect -36 -581 -24 -547
+rect -36 -587 36 -581
+<< pwell >>
+rect -236 -719 236 719
+<< nmos >>
+rect -40 109 40 509
+rect -40 -509 40 -109
+<< ndiff >>
+rect -98 497 -40 509
+rect -98 121 -86 497
+rect -52 121 -40 497
+rect -98 109 -40 121
+rect 40 497 98 509
+rect 40 121 52 497
+rect 86 121 98 497
+rect 40 109 98 121
+rect -98 -121 -40 -109
+rect -98 -497 -86 -121
+rect -52 -497 -40 -121
+rect -98 -509 -40 -497
+rect 40 -121 98 -109
+rect 40 -497 52 -121
+rect 86 -497 98 -121
+rect 40 -509 98 -497
+<< ndiffc >>
+rect -86 121 -52 497
+rect 52 121 86 497
+rect -86 -497 -52 -121
+rect 52 -497 86 -121
+<< psubdiff >>
+rect -200 649 -104 683
+rect 104 649 200 683
+rect -200 587 -166 649
+rect 166 587 200 649
+rect -200 -649 -166 -587
+rect 166 -649 200 -587
+rect -200 -683 -104 -649
+rect 104 -683 200 -649
+<< psubdiffcont >>
+rect -104 649 104 683
+rect -200 -587 -166 587
+rect 166 -587 200 587
+rect -104 -683 104 -649
+<< poly >>
+rect -40 581 40 597
+rect -40 547 -24 581
+rect 24 547 40 581
+rect -40 509 40 547
+rect -40 71 40 109
+rect -40 37 -24 71
+rect 24 37 40 71
+rect -40 21 40 37
+rect -40 -37 40 -21
+rect -40 -71 -24 -37
+rect 24 -71 40 -37
+rect -40 -109 40 -71
+rect -40 -547 40 -509
+rect -40 -581 -24 -547
+rect 24 -581 40 -547
+rect -40 -597 40 -581
+<< polycont >>
+rect -24 547 24 581
+rect -24 37 24 71
+rect -24 -71 24 -37
+rect -24 -581 24 -547
+<< locali >>
+rect -200 649 -104 683
+rect 104 649 200 683
+rect -200 587 -166 649
+rect 166 587 200 649
+rect -40 547 -24 581
+rect 24 547 40 581
+rect -86 497 -52 513
+rect -86 105 -52 121
+rect 52 497 86 513
+rect 52 105 86 121
+rect -40 37 -24 71
+rect 24 37 40 71
+rect -40 -71 -24 -37
+rect 24 -71 40 -37
+rect -86 -121 -52 -105
+rect -86 -513 -52 -497
+rect 52 -121 86 -105
+rect 52 -513 86 -497
+rect -40 -581 -24 -547
+rect 24 -581 40 -547
+rect -200 -649 -166 -587
+rect 166 -649 200 -587
+rect -200 -683 -104 -649
+rect 104 -683 200 -649
+<< viali >>
+rect -24 547 24 581
+rect -86 121 -52 497
+rect 52 121 86 497
+rect -24 37 24 71
+rect -24 -71 24 -37
+rect -86 -497 -52 -121
+rect 52 -497 86 -121
+rect -24 -581 24 -547
+<< metal1 >>
+rect -36 581 36 587
+rect -36 547 -24 581
+rect 24 547 36 581
+rect -36 541 36 547
+rect -92 497 -46 509
+rect -92 121 -86 497
+rect -52 121 -46 497
+rect -92 109 -46 121
+rect 46 497 92 509
+rect 46 121 52 497
+rect 86 121 92 497
+rect 46 109 92 121
+rect -36 71 36 77
+rect -36 37 -24 71
+rect 24 37 36 71
+rect -36 31 36 37
+rect -36 -37 36 -31
+rect -36 -71 -24 -37
+rect 24 -71 36 -37
+rect -36 -77 36 -71
+rect -92 -121 -46 -109
+rect -92 -497 -86 -121
+rect -52 -497 -46 -121
+rect -92 -509 -46 -497
+rect 46 -121 92 -109
+rect 46 -497 52 -121
+rect 86 -497 92 -121
+rect 46 -509 92 -497
+rect -36 -547 36 -541
+rect -36 -581 -24 -547
+rect 24 -581 36 -547
+rect -36 -587 36 -581
+<< labels >>
+rlabel psubdiffcont 0 -666 0 -666 0 B
+port 8 nsew
+rlabel ndiffc -69 -309 -69 -309 0 D0
+port 9 nsew
+rlabel ndiffc 69 -309 69 -309 0 S0
+port 10 nsew
+rlabel polycont 0 -54 0 -54 0 G0
+port 11 nsew
+rlabel ndiffc -69 309 -69 309 0 D1
+port 12 nsew
+rlabel ndiffc 69 309 69 309 0 S1
+port 13 nsew
+rlabel polycont 0 564 0 564 0 G1
+port 14 nsew
+<< properties >>
+string FIXED_BBOX -183 -666 183 666
+string gencell sky130_fd_pr__nfet_01v8
+string library sky130
+string parameters w 2.0 l 0.4 m 2 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 conn_gates 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1 ad 0.58 as 0.58 pd 4.58 ps 4.58 nrd 0.145 nrs 0.145 sa 0 sb 0 sd 0 mult 2
+<< end >>

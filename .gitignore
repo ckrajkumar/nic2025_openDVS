@@ -14,7 +14,7 @@ __pycache__/
 analog/simulations/
 analog/spice/
 analog/magic/*.gds
-analog/magic/**/*.gds
+
 bak/
 \#*
 *.out

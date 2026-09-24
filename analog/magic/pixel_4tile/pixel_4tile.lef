@@ -1,0 +1,11 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO pixel_4tile
+  ORIGIN 75.885 75.665 ;
+  FOREIGN pixel_4tile -75.885 -75.665 ;
+  SIZE 1692.265 BY 1789.45 ;
+END pixel_4tile
+
+END LIBRARY

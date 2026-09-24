@@ -1,0 +1,33 @@
+** sch_path: /home/alienfalcon/Projects/skywater/open_dvs_py312/open_dvs/git_dvs/nic2025_openDVS/analog/xschem/infiniamp_xl_layout.sch
+**.subckt infiniamp_xl_layout VDD GndA VIN IBIAS VOUT
+*.iopin VDD
+*.iopin GndA
+*.ipin VIN
+*.iopin IBIAS
+*.iopin VOUT
+XMpBiasIn VBIAS_P VBIAS_P VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0
++ sb=0 sd=0 mult=1
+XMpAuxBias AUX_SOURCE VBIAS_P VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
++ sa=0 sb=0 sd=0 mult=1
+XMpSrcBias MAIN_SOURCE VBIAS_P VDD VDD sky130_fd_pr__pfet_01v8 L=0.4 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29
++ sa=0 sb=0 sd=0 mult=1
+XMpAuxNVin DIODE_LD N_VIN AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMpAuxVout MAIN_BIAS VOUT AUX_SOURCE AUX_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMpSrcVin N_VIN VIN MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMpSrcVout VOUT VOUT MAIN_SOURCE MAIN_SOURCE sky130_fd_pr__pfet_01v8_lvt L=0.4 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58
++ nrd=0.0483333333333333 nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1
+XMnBiasIn VBIAS_P IBIAS GndA GndA sky130_fd_pr__nfet_01v8 L=6 W=15 nf=1 ad=4.35 as=4.35 pd=30.58 ps=30.58 nrd=0.0193333333333333
++ nrs=0.0193333333333333 sa=0 sb=0 sd=0 mult=1
+XMnDiodeLD DIODE_LD DIODE_LD GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145
++ sa=0 sb=0 sd=0 mult=1
+XMnMainBias MAIN_BIAS MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145
++ nrs=0.145 sa=0 sb=0 sd=0 mult=1
+XMnNVin N_VIN MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0
++ sb=0 sd=0 mult=1
+XMnVout VOUT MAIN_BIAS GndA GndA sky130_fd_pr__nfet_01v8 L=0.4 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0
++ sb=0 sd=0 mult=1
+**.ends
+.end

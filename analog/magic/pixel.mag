@@ -1,9 +1,0 @@
-magic
-tech sky130A
-magscale 1 2
-timestamp 1752329519
-use sky130_fd_pr__photodiode_X26FU3  sky130_fd_pr__photodiode_X26FU3_0
-timestamp 1752329519
-transform 1 0 2440 0 1 2694
-box -2947 -2947 2947 2947
-<< end >>
