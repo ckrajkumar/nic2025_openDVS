@@ -12,6 +12,8 @@
 analog/runs/
 __pycache__/
 analog/simulations/
+analog/xschem/simulation/
+analog/xschem/cace_sims/
 analog/spice/
 analog/magic/*.gds
 

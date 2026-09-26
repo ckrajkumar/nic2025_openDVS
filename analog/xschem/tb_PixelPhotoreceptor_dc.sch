@@ -51,6 +51,7 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include [xschem get current_dirname]/dvs_readout_ctrl.spice
 "
 spice_ignore=false}
 C {devices/launcher.sym} -170 -300 2 1 {name=h1
@@ -60,7 +61,6 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {code_shown.sym} -1280 -550 0 0 {name=NGSPICE
 only_toplevel=true
 value="
-.include /home/rpgraca/research/projects/telluride/2025/nic_eventcam/nic2025_openDVS/analog/xschem/dvs_readout_ctrl.spice
 
 ** Convergence options for nA-range weak-inversion pixel circuit
 ** gmin=1e-15: at 1V node this is 1fA shunt, negligible vs nA signals

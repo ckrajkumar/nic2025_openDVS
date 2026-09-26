@@ -1,0 +1,64 @@
+* DVS Readout Controller
+*
+* rowReadON pulses twice per cycle: read phase + reset phase
+* readLine low during rowReadON read phase -> ON event
+* readLine high during rowReadOFF -> OFF event
+* pixRst set high on event, cleared at next cycle start
+* onEventCount / offEventCount: 1V step per event
+
+.subckt dvs_readout_ctrl readLine rowReadON rowReadOFF pixRst onEventCount offEventCount vdd gnd
+.param xtperRead=3u xtr=1n
+.param xtdReadON=100n xtlenReadON=950n
+.param xtdReadOFF=1.06u xtlenReadOFF=950n
+.param xtdRstPhase=2.02u xtlenRstPhase=950n
+.param vth=0.9 vhi=1.8
+.param tsampLen=50n
+
+*** Timing pulse generators ***
+
+Vron1 ron1 gnd pulse(0 {vhi} {xtdReadON} {xtr} {xtr} {xtlenReadON} {xtperRead})
+Vron2 ron2 gnd pulse(0 {vhi} {xtdRstPhase} {xtr} {xtr} {xtlenRstPhase} {xtperRead})
+BrowReadON rowReadON gnd V = max(v(ron1), v(ron2))
+
+VrowReadOFF rowReadOFF gnd pulse(0 {vhi} {xtdReadOFF} {xtr} {xtr} {xtlenReadOFF} {xtperRead})
+
+*** Sampling windows at mid-point of read phases ***
+
+VsampON sampON gnd pulse(0 {vhi} {xtdReadON+xtlenReadON/2} {xtr} {xtr} {tsampLen} {xtperRead})
+VsampOFF sampOFF gnd pulse(0 {vhi} {xtdReadOFF+xtlenReadOFF/2} {xtr} {xtr} {tsampLen} {xtperRead})
+
+*** Event detection (smooth thresholds) ***
+
+BonDet onDet gnd V = {vhi}*0.5*(1+tanh((v(sampON)-{vhi}/2)/0.1))*0.5*(1+tanh(({vth}-v(readLine,gnd))/0.05))
+BoffDet offDet gnd V = {vhi}*0.5*(1+tanh((v(sampOFF)-{vhi}/2)/0.1))*0.5*(1+tanh((v(readLine,gnd)-{vth})/0.05))
+Bevent event gnd V = max(v(onDet), v(offDet))
+
+*** Event counters (charge pump: 1A * tsampLen / C = 1V per event) ***
+
+GonCnt gnd onCnt cur='0.5*(1+tanh((v(onDet)-{vhi}/2)/0.1))'
+ConCnt onCnt gnd {tsampLen} ic=0
+RonCntLeak onCnt gnd 1T
+BonOut onEventCount gnd V = v(onCnt)
+
+GoffCnt gnd offCnt cur='0.5*(1+tanh((v(offDet)-{vhi}/2)/0.1))'
+CoffCnt offCnt gnd {tsampLen} ic=0
+RoffCntLeak offCnt gnd 1T
+BoffOut offEventCount gnd V = v(offCnt)
+
+*** pixRst: charge-pump latch (no feedback loop) ***
+* Charge cap on event, discharge at cycle start
+* Cap holds state between pulses (RC leak >> cycle period)
+
+VcycRst cycRst gnd pulse(0 {vhi} 0 {xtr} {xtr} {tsampLen} {xtperRead})
+
+* Charge: event pumps cap up
+GpixChg gnd pixCap cur='1m*0.5*(1+tanh((v(event)-{vhi}/2)/0.1))'
+* Discharge: cycle reset drains cap
+GpixDis pixCap gnd cur='1m*0.5*(1+tanh((v(cycRst)-{vhi}/2)/0.1))'
+CpixCap pixCap gnd 10p ic=0
+RpixLeak pixCap gnd 100G
+
+* Threshold cap voltage to clean digital output
+BpixRst pixRst gnd V = {vhi}*0.5*(1+tanh((v(pixCap)-0.5)/0.1))
+
+.ends dvs_readout_ctrl
